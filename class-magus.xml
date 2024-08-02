@@ -1,0 +1,2697 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+      <name></name>
+      <update version="4.2.1">
+          <file name="class-magus.xml" url="tmp.xml" />
+      </update>
+  </info>
+
+  <!--Version 4.2.1 -->
+  <element name="Magus" type="Class" source="laserllama's Magus" id="ID_LASERLL_CLASS_MAGUS">
+    <description>
+      <p>As the swordsman made his way through the busy marketplace, his eyes flashed green for a brief moment. He could see the unmistakable aura of arcane magic surrounding the humble dwarf shopping for wares. He had found his target. As the warrior drew his blade, what had appeared to be a mere dwarf peasant seconds before reverted to its true form. As the demon lunged forward, the swordsman met claw with his blade.</p>
+      <p class="indent">The assassin watched as the Duke walked the streets with a single guard at his side. As the would-be assassin's blade darted toward the Duke's exposed neck, glee turned to fear as the armored guard appeared where the Duke had been moments before. Before the killer could react, a blade of emerald flame had pierced his chest.</p>
+      <p class="indent">The halfling knelt before the three hooded figures that stood before her. She had spent nearly two years of her life searching for a member of this secret order, and now she had found three. Consumed by sorrow after her father's death at the hands of a wicked sorcerer, the young halfling swore she would do whatever it took to gain the power to exact her revenge. Now that the moment was at hand, she swore fealty to the secretive order, offering up her life in return for power.</p>
+      <p class="indent">All three of the warriors described above are Magi, users of sword and spell, weaving both together in a deadly dance.</p>
+      <h4>SWORD AND SPELL</h4>
+      <p>Known by many names throughout the multiverse, those who are able to wield both sword and spell are collectively known as Magi. Rather than dedicate their lives to studying arcane magic or mastering martial techniques, Magi are dedicated to a middle path. Though they may never command the earth-shattering magic of an archmage, or go toe to toe with a true master of the blade, a Magus is able to master a unique form of arcane combat only used by the members of their Order.</p>
+      <p class="indent">Their signature style of magic allows them to channel spells through their weapon strikes, sense the presence of arcane magic in the world around them, and even strike the weaves of spells from the air before they can take effect.</p>
+      <h4>SECRET ORDERS</h4>
+      <p>The magic of the Magi is not something everyone can learn. Over time, these arcane warriors have organized themselves into clandestine societies, content to operate in the shadows. Potential Magi are often identified from a young age and are inducted into an Order only after they have proven their skill and dedication. While some Orders are more secretive than others, nearly every Order of Magi is thought to be nothing more than legend to the vast majority common folk.</p>
+      <p class="indent">As Magi rise through the ranks of their secret society, they are expected to infiltrate and form relationships with those in positions of power. They often set themselves up as personal advisors, guards, and consorts to influential nobles, powerful archmages, and wealthy merchants. Though Magi may form relationships, their primary loyalty is always to their Order.</p>
+      <h4>CREATING A MAGUS</h4>
+      <p>Those who pursue life as a Magus often give up everything in order to be accepted and trained by a master. What motivates your Magus? Have you always had an unquenchable thirst for knowledge and skill? Was one of your loved ones slain by an evil mage, setting you on the path of revenge, no matter the personal cost? Or, do you simply desire to increase your skill with both sword and sorcery in tandem with one another?</p>
+      <p class="indent">Also, decide where you acquired your training as a Magi. Are you an initiate in a secret society of arcane warriors? Or, were you trained in secret by a renegade member of an order of powerful magi who work to control the world? Maybe you were raised from birth so as to perfectly develop your talent in the art of war alongside your arcane potential.</p>
+      <h5 class="caption">QUICK BUILD</h5>
+      <p>You can make a Magus quickly by using these suggestions. First, depending on the weapons you wish to use, make your Strength or Dexterity your highest ability score, followed by your Intelligence. Second, choose the Sage background.</p>
+
+      <h2>CLASS FEATURES</h2>
+      <p>As a Magus, you gain the following class features.</p>
+      <h5 class="caption">HIT POINTS</h5>
+      <ul class="unstyled">
+          <li><strong>Hit Dice:</strong> 1d10 per Magus level</li>
+          <li><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+          <li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per Magus level after 1st</li>
+      </ul>
+      <h5 class="caption">PROFICIENCIES</h5>
+      <ul class="unstyled mb">
+          <li><strong>Armor:</strong> Light armor, medium armor, shields</li>
+          <li><strong>Weapons:</strong>  Simple weapons, martial weapons</li>
+          <li><strong>Tools:</strong> None</li>
+      </ul>
+      <ul class="unstyled">
+          <li><strong>Saving Throws:</strong> Constitution, Intelligence</li>
+          <li><strong>Skills:</strong> Choose two from Acrobatics, Arcana, Athletics, History, Investigation, Nature, Performance</li>
+      </ul>
+      <h5 class="caption">EQUIPMENT</h5>
+      <p>As a Psion, you start with the following equipment:</p>
+      <ul>
+          <li>(a) a martial weapon and shield or (b) two martial weapons</li>
+          <li>(a) scale mail or (b) leather armor</li>
+          <li>(a) a light crossbow and 20 bolts or (b) five javelins</li>
+          <li>(a) an dungeoneer's pack or (b) an explorer's pack</li>
+      </ul>
+      <h5 class="caption">THE MAGUS</h5>
+      <table class="class-features">
+        <thead>
+          <tr><td class="col-5">Level</td><td class="col-5">PB</td><td class="col-60 left">Features</td><td class="col-5">Cantrips Known</td><td class="col-5">Spells Known</td><td class="col-5">1st</td><td class="col-5">2nd</td><td class="col-5">3rd</td><td class="col-5">4th</td><td class="col-5">5th</td></tr>
+        </thead>
+        <tr><td> 1st</td><td>+2</td><td class="left">Arcane Armory, Fighting Style</td><td>-</td><td>-</td><td>─</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td> 2nd</td><td>+2</td><td class="left">Spellcasting, Spellstrike</td><td>2</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td> 3rd</td><td>+2</td><td class="left">Arcane Regeneration, Esoteric Order</td><td>2</td><td>2</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>3</td><td>3</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td> 5th</td><td>+3</td><td class="left">Extra Attack, Spellsight</td><td>3</td><td>3</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td> 6th</td><td>+3</td><td class="left">Ethereal Jaunt</td><td>5</td><td>3</td><td>4</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
+        <tr><td> 7th</td><td>+3</td><td class="left">Esoteric Order Feature</td><td>3</td><td>4</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>3</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td> 9th</td><td>+4</td><td class="left">Spellsunder</td><td>3</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>10th</td><td>+4</td><td class="left">Mystical Ward</td><td>4</td><td>6</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td></tr>
+        <tr><td>11th</td><td>+4</td><td class="left">Arcane Conservation, Prismatic Strikes</td><td>4</td><td>6</td><td>4</td><td>3</td><td>3</td><td>-</td><td>-</td></tr>
+        <tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>4</td><td>7</td><td>4</td><td>3</td><td>3</td><td>-</td><td>-</td></tr>
+        <tr><td>13th</td><td>+5</td><td class="left">-</td><td>4</td><td>7</td><td>4</td><td>3</td><td>3</td><td>1</td><td>-</td></tr>
+        <tr><td>14th</td><td>+5</td><td class="left">Superior Spellsunder</td><td>4</td><td>8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>-</td></tr>
+        <tr><td>15th</td><td>+5</td><td class="left">Esoteric Order Feature</td><td>4</td><td>8</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td></tr>
+        <tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>4</td><td>9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td></tr>
+        <tr><td>17th</td><td>+6</td><td class="left">-</td><td>4</td><td>9</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+        <tr><td>18th</td><td>+6</td><td class="left">Improved Arcane Conservation</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+        <tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+        <tr><td>20th</td><td>+6</td><td class="left">Esoteric Order Feature</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+      </table>
+      <div element="ID_LASERLL_CLASS_FEATURE_MAGUS_ARCANE_ARMORY" />
+      <div element="ID_LASERLL_CLASS_FEATURE_MAGUS_FIGHTING_STYLE" />
+      <div element="ID_LASERLL_CLASS_FEATURE_MAGUS_SPELLCASTING" />
+      <div element="ID_LASERLL_CLASS_FEATURE_MAGUS_SPELLSTRIKE" />
+      <div element="ID_LASERLL_CLASS_FEATURE_MAGUS_ARCANE_REGENERATION" />
+      <div element="ID_LASERLL_CLASS_FEATURE_MAGUS_ESOTERIC_ORDER" />
+      <div element="ID_LASERLL_CLASS_FEATURE_MAGUS_ASI" />
+      <div element="ID_LASERLL_CLASS_FEATURE_MAGUS_EXTRA_ATTACK" />
+      <div element="ID_LASERLL_CLASS_FEATURE_MAGUS_SPELLSIGHT" />
+      <div element="ID_LASERLL_CLASS_FEATURE_MAGUS_ETHEREAL_JAUNT" />
+      <div element="ID_LASERLL_CLASS_FEATURE_MAGUS_SPELLSUNDER" />
+      <div element="ID_LASERLL_CLASS_FEATURE_MAGUS_MYSTICAL_WARD" />
+      <div element="ID_LASERLL_CLASS_FEATURE_MAGUS_ARCANE_CONSERVATION" />
+      <div element="ID_LASERLL_CLASS_FEATURE_MAGUS_PRISMATIC_STRIKES" />
+      <div element="ID_LASERLL_CLASS_FEATURE_MAGUS_SUPERIOR_SPELLSUNDER" />
+    </description>
+    <setters>
+      <set name="hd">d10</set>
+      <set name="short">A user of sword and spell that weaves both together in a deadly dance.</set>
+    </setters>
+    <sheet display="false" />
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_LASERLL_MULTICLASS_MAGUS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_LASERLL_MULTICLASS_MAGUS" />
+      <select type="Proficiency" name="Skill Proficiency, Magus" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERFORMANCE" requirements="!ID_LASERLL_MULTICLASS_MAGUS" number="2" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_LASERLL_MULTICLASS_MAGUS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_LASERLL_MULTICLASS_MAGUS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_LASERLL_MULTICLASS_MAGUS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_LASERLL_MULTICLASS_MAGUS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_LASERLL_MULTICLASS_MAGUS" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_ARCANE_ARMORY" level="1" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_FIGHTING_STYLE" level="1" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_SPELLCASTING" level="2" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_SPELLSTRIKE" level="2" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_ARCANE_REGENERATION" level="3" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_ESOTERIC_ORDER" level="3" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_ASI" level="4" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_EXTRA_ATTACK" level="5" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_SPELLSIGHT" level="5" requirements="!ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ESOTERIC_SIGHT" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_ETHEREAL_JAUNT" level="6" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_SPELLSUNDER" level="9" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_MYSTICAL_WARD" level="10" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_ARCANE_CONSERVATION" level="11" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_PRISMATIC_STRIKES" level="11" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_SUPERIOR_SPELLSUNDER" level="14" requirements="!ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_REFLECTIVE_SPELLSUNDER" />
+
+      <stat name="min 1 int" value="1" bonus="min 1 int" />
+      <stat name="min 1 int" value="intelligence:modifier" bonus="min 1 int" />
+    </rules>
+    <multiclass id="ID_LASERLL_MULTICLASS_MAGUS">
+        <prerequisite>intelligence 13, strength or dexterity 13</prerequisite>
+        <requirements>[int:13],([str:13]||[dex:13])</requirements>
+        <setters>
+            <set name="multiclass proficiencies">light and medium armor, shields and simple and martial weapons.</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+        </rules>
+    </multiclass>
+  </element>
+
+  <element name="Arcane Armory" type="Class Feature" source="laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_ARCANE_ARMORY">
+    <description>
+      <p>At 1st level, you learn the signature enchantment of the Magi, marking you as a member of their ranks. Over the course of 1 hour, which can be during a short or long rest, you can touch one melee weapon, shield, or set of armor to perform a ritual adding the item to your Arcane Armory. Your Arcane Armory is an extradimensional space that only its Magus can access.</p>
+      <p>Objects in your Arcane Armory gain the following benefits:</p>
+      <ul>
+        <li>They count as magical weapons, shields, or sets of armor.</li>
+        <li>You can use your Intelligence, in place of Dexterity, when calculating Armor Class in this light and medium armor, so long as you do not already add it to your Armor Class.</li>
+        <li>As a bonus action, you can shunt or summon any number of objects of your choice from within your Arcane Armory, instantly equipping, donning, or doffing those items.</li>
+      </ul>
+      <p class="indent">Your Arcane Armory can hold a total number of objects equal to 1 + your Intelligence modifier (a minimum of 1) at one time, but one of those objects must always be a weapon. If you perform this ritual on another object while the Armory is at its maximum, one object of your choice is removed.</p>
+    </description>
+    <sheet>
+      <description>Over one hour, which can be during a rest, you can touch a melee weapon, shield, or set of armor to add it to your extradimensional Arcane Armory accessible only to you. It can hold +{{min 1 int}} objects, one of which must be a weapon. These objects count as magical and can be instantly donned or doffed with a bonus action. If you are wearing light or medium armor from your Armory, use Intelligence in place of Dexterity to calculate your AC (-{{ac:regular ac magus diff}} AC for non-Arcane armor or if it is disabled by antimagic effects).</description>
+    </sheet>
+    <rules>
+        <stat name="ac:unarmored defense magus" value="10" />
+        <stat name="ac:unarmored defense magus" value="intelligence:modifier" />
+
+        <stat name="ac:regular ac magus diff" value="-dexterity:modifier" />
+        <stat name="ac:regular ac magus diff" value="intelligence:modifier" />
+
+        <stat name="ac" value="ac:regular ac magus diff" equipped="![armor:heavy]" alt="Arcane Armory (Magus)" />
+    </rules>
+  </element>
+
+  <element name="Fighting Style" type="Class Feature" source="laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_FIGHTING_STYLE">
+    <description>
+      <p>At 1st level, you adopt a Fighting Style that best reflects your training. You cannot select a Fighting Style more than once, even if a feature allows you to select another Fighting Style.</p>
+      <p class="indent">Whenever you gain a level in this class, you can switch your Fighting Style for another Fighting Style of your choice.</p>
+    </description>
+    <sheet><description>You can switch Fighting Styles upon gaining a Magus level.</description></sheet>
+    <rules>
+      <select type="Class Feature" name="Fighting Style" supports="Fighting Style,Magus" level="1" />
+    </rules>
+  </element>
+
+  <element name="Arcane Warrior" type="Class Feature" source="Laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_FIGHTING_STYLE_ARCANE_WARRIOR">
+    <supports>Fighting Style,Magus</supports>
+    <description>
+      <p>You learn two cantrips of your choice from the Wizard spell list, and Intelligence is your Spellcasting modifier for them.</p>
+      <p class="indent">At 2nd level, they become Magus spells for you, but they don't count against your total number of Cantrips Known.</p>
+    </description>
+    <sheet><description>You can switch Fighting Styles upon gaining a Magus level.</description></sheet>
+    <rules>
+  			<select type="Spell" name="Cantrip (Magus)" supports="$(Wizard),0" level="1" number="2" spellcasting="Magus" />
+    </rules>
+  </element>
+
+  <element name="Archery" type="Class Feature" source="Laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_FIGHTING_STYLE_ARCHERY">
+    <supports>Fighting Style,Magus</supports>
+    <description>
+      <p>You gain a +2 bonus to attack rolls with ranged weapons.</p>
+    </description>
+    <sheet><description>+2 to ranged weapon attack rolls.</description></sheet>
+  </element>
+
+  <element name="Classical Swordplay" type="Class Feature" source="Laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_FIGHTING_STYLE_CLASSICAL_SWORDPLAY">
+    <supports>Fighting Style,Magus</supports>
+    <description>
+      <p>While wielding a finesse weapon and no other weapons, you gain a +2 bonus to weapon attack rolls and a +1 to Armor Class so long as you are not using heavy armor or a shield.</p>
+    </description>
+    <sheet>
+      <description>While wielding a finesse weapon alone, +2 bonus to weapon attack rolls and a +1 to AC so long as you are not using heavy armor or a shield.</description>
+    </sheet>
+  </element>
+
+  <element name="Defense Fighting" type="Class Feature" source="Laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_FIGHTING_STYLE_DEFENSIVE_FIGHTING">
+    <supports>Fighting Style,Magus</supports>
+    <description>
+      <p>While you are wearing armor or wielding a shield, you gain a +1 bonus to your Armor Class.</p>
+    </description>
+    <sheet>
+      <description>While wearing armor or wielding a shield, +1 AC.</description>
+    </sheet>
+  </element>
+
+  <element name="Dual Wielding" type="Class Feature" source="Laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_FIGHTING_STYLE_DUAL_WIELDING">
+    <supports>Fighting Style,Magus</supports>
+    <description>
+      <p>While two-weapon fighting, you make your off-hand weapon attack as part of the Attack action instead of a bonus action, and can add your ability modifier to the damage of this attack.</p>
+      <p class="indent">When you do, you cannot also make a bonus action attack.</p>
+    </description>
+    <sheet>
+      <description>When two-weapon fighting, make your off-hand weapon attack as part of your Attack rather than bonus action, and add your ability modifier to its damage; you cannot also make a bonus action attack.</description>
+    </sheet>
+  </element>
+
+  <element name="Dueling" type="Class Feature" source="Laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_FIGHTING_STYLE_DUELING">
+    <supports>Fighting Style,Magus</supports>
+    <description>
+      <p>When wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to weapon damage rolls.</p>
+    </description>
+    <sheet>
+      <description>When wielding a melee weapon one-handed with other weapons, +2 bonus to weapon damage rolls.</description>
+    </sheet>
+  </element>
+
+  <element name="Protector" type="Class Feature" source="Laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_FIGHTING_STYLE_PROTECTOR">
+    <supports>Fighting Style,Magus</supports>
+    <description>
+      <p>When a creature you can see attacks you, or a target within 5 feet, you can use a reaction to add your proficiency bonus to the target's Armor Class against that attack. You must be wielding a shield or melee weapon to gain this benefit.</p>
+    </description>
+    <sheet>
+      <description usage="Reaction">When a creature you can see attacks you or a target within 5 feet while you are wielding a shield or melee weapon, add {{proficiency}} to the target's AC.</description>
+    </sheet>
+  </element>
+
+  <element name="Shield Warrior" type="Class Feature" source="Laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_FIGHTING_STYLE_SHIELD_WARRIOR">
+    <supports>Fighting Style,Magus</supports>
+    <description>
+      <p>You gain proficiency with shields as a martial melee weapon, and on hit, your shield deals 2d4 bludgeoning damage. If you are wielding a shield and nothing else, you gain a +1 bonus to attack rolls with your shield and to your Armor Class.</p>
+    </description>
+    <sheet>
+      <description>You are proficient in shields as martial melee weapons, dealing 2d4 bludgeoning damage on hit. If you are wielding only a shield, +1 to attack rolls and your AC.</description>
+    </sheet>
+  </element>
+
+  <element name="Thrown Weapon Fighting" type="Class Feature" source="Laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_FIGHTING_STYLE_THROWN_WEAPON_FIGHTING">
+    <supports>Fighting Style,Magus</supports>
+    <description>
+      <p>You can draw a weapon that has the thrown property as part of the attack you make with the weapon. Moreover, when you hit with a ranged weapon attack using a thrown weapon, you gain a +2 bonus to the damage roll of that attack.</p>
+    </description>
+    <sheet>
+      <description>You can draw throwable weapons as part of the weapon attack, and gain +2 to the damage roll for ranged weapon attacks.</description>
+    </sheet>
+  </element>
+
+  <element name="Versatile Fighting" type="Class Feature" source="Laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_FIGHTING_STYLE_VERSATILE_FIGHTING">
+    <supports>Fighting Style,Magus</supports>
+    <description>
+      <p>While wielding a single versatile weapon and no shield, you gain a +1 bonus to your attack rolls with that weapon. While doing so, you can also use your bonus action to make a single grapple or shove attack, or to take the Use an Object action.</p>
+    </description>
+    <sheet>
+      <description>While wielding a versatile weapon alone, +1 to weapon attack rolls, and you can use your bonus action to grapple, shove, or use an object.</description>
+    </sheet>
+  </element>
+
+  <element name="Spellcasting" type="Class Feature" source="Laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_SPELLCASTING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MAGUS_SPELLCASTING</requirements>
+		<description>
+			<p>At 2nd level, you have learned to cast arcane spells, much like a Wizard, which you use to enhance your abilities in combat:</p>
+			<h5>CANTRIPS</h5>
+			<p>You learn two cantrips of your choice from the Magus spell list, which can be found at the end of this class description. You learn another Magus cantrip at 4th and 10th level, as shown in the Cantrips Known column of the Magus table.</p>
+      <h5>SPELLCASTING FOCUS</h5>
+      <p>You can use any weapon or shield within your Arcane Armory as a spellcasting focus for your Magus spells. They can also be used to perform the somatic components of Magus spells.</p>
+      <p class="indent">You can also use an Arcane Focus as a spellcasting focus.</p>
+			<h5>SPELL SLOTS</h5>
+			<p>The Magus table shows how many spell slots you have to cast your spells of 1st-level and higher. To cast a spell you know, you must expend a spell slot of the spell's level or higher. You regain all expended spell slots each time you finish a long rest.</p>
+			<h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+			<p>You know two 1st-level spells of your choice from the sorcerer spell list.</p>
+			<p class="indent">You know two 1st-level spells of your choice from the Magus spell list. The Spells Known column of the Magus table shows when you learn more Magus spells. Each Magus spell you learn must be of a level for which you have spell slots. For instance, when you reach 6th level, you learn a spell of your choice from the Magus spell list of either 1st-level or 2nd-level.</p>
+			<p class="indent">Whenever you gain a Magus level, you can choose one Magus spell you know and replace it with another Magus spell of your choice, of a level that you have spell slots for.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>As you commit your spells to memory, Intelligence is your spellcasting ability for your Magus spells. Use Intelligence when a spell refers to your spellcasting ability, when you set a saving throw DC, or when you make a spell attack roll.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+		</description>
+		<sheet display="false">
+			<description>You have the ability to cast spells.</description>
+		</sheet>
+		<spellcasting name="Magus" ability="Intelligence" allowReplace="true">
+			<list>Magus</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<stat name="magus:spellcasting:slots:1" value="2" level="2" />
+			<stat name="magus:spellcasting:slots:1" value="1" level="3" />
+      <stat name="magus:spellcasting:slots:1" value="1" level="5" />
+			<stat name="magus:spellcasting:slots:2" value="2" level="5" />
+			<stat name="magus:spellcasting:slots:2" value="1" level="7" />
+			<stat name="magus:spellcasting:slots:3" value="2" level="9" />
+			<stat name="magus:spellcasting:slots:3" value="1" level="11" />
+			<stat name="magus:spellcasting:slots:4" value="1" level="13" />
+			<stat name="magus:spellcasting:slots:4" value="1" level="15" />
+			<stat name="magus:spellcasting:slots:4" value="1" level="17" />
+			<stat name="magus:spellcasting:slots:5" value="1" level="17" />
+			<stat name="magus:spellcasting:slots:5" value="1" level="19" />
+
+			<select type="Spell" name="Cantrip (Magus)" supports="$(spellcasting:list),0" level="2" number="2" spellcasting="Magus" />
+			<select type="Spell" name="Cantrip (Magus)" supports="$(spellcasting:list),0" level="4" spellcasting="Magus"/>
+			<select type="Spell" name="Cantrip (Magus)" supports="$(spellcasting:list),0" level="10" spellcasting="Magus"/>
+
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" number="2" spellcasting="Magus" requirements="!ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ARCANE_SPELLBOOK"/>
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Magus" requirements="!ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ARCANE_SPELLBOOK"/>
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="6" spellcasting="Magus" requirements="!ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ARCANE_SPELLBOOK"/>
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="8" spellcasting="Magus" requirements="!ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ARCANE_SPELLBOOK"/>
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="10" spellcasting="Magus" requirements="!ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ARCANE_SPELLBOOK"/>
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="12" spellcasting="Magus" requirements="!ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ARCANE_SPELLBOOK"/>
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="14" spellcasting="Magus" requirements="!ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ARCANE_SPELLBOOK"/>
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="16" spellcasting="Magus" requirements="!ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ARCANE_SPELLBOOK"/>
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Magus" requirements="!ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ARCANE_SPELLBOOK"/>
+			<select type="Spell" name="Spell (Magus)" supports="$(spellcasting:list),$(spellcasting:slots)" level="20" spellcasting="Magus" requirements="!ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ARCANE_SPELLBOOK"/>
+
+      <stat name="magus save:dc" value="8" />
+      <stat name="magus save:dc" value="proficiency" />
+      <stat name="magus save:dc:ability" value="intelligence:modifier" bonus="ability"/>
+      <stat name="magus save:dc" value="magus save:dc:ability" />
+		</rules>
+	</element>
+
+  <element name="Spellstrike" type="Class Feature" source="laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_SPELLSTRIKE">
+    <description>
+      <p>Starting at 2nd level, you learn to channel your spells through weapons. Once per turn when you would make an attack, you can cast a Magus spell, expending a spell slot as normal, and make an attack with a melee Arcane Armory weapon. To be channeled through a Spellstrike attack in this way, the spell must meet the following requirements:</p>
+      <ul>
+        <li>The Magus spell must have a casting time of 1 action.</li>
+        <li>The Magus spell must require a single spell attack roll, force its target to make a saving throw, or affect a total number of hit points worth of creatures (like sleep).</li>
+      </ul>
+      <p class="indent">If your attack misses, the spell fails and has no effect. On a hit, the spell takes effect immediately after the normal effects and damage of your weapon attack, using the rules below:</p>
+      <p class="indent"><strong><em>Area of Effect.</em></strong> If the spell targets an area greater than a 10-foot cube, it takes effect as a 15-foot cone originating from you, which must include your target, or it is contained to only affect the target of your attack (your choice on hit).</p>
+      <p class="indent"><strong><em>Cantrips.</em></strong> You do not deal the damage of the cantrip along with the damage of your weapon attack. Instead, your weapon attack deals the damage type dealt by the cantrip, and applies the cantrip's additional effects, other than damage, on hit.</p>
+      <p class="indent"><strong><em>Concentration.</em></strong> If the spell requires your concentration, you must concentrate on it as soon as it takes effect on hit.</p>
+      <p class="indent"><strong><em>Saving Throws.</em></strong> If the spell requires a saving throw when cast, the target makes the initial saving throw at disadvantage on hit. If you score a critical hit on the attack, it automatically fails this saving throw. Other targets (if any) save as normal.</p>
+      <p class="indent"><strong><em>Spell Attacks.</em></strong> If the spell requires a spell attack roll, it instantly takes effect when you hit with your weapon attack.</p>
+    </description>
+    <sheet>
+      <description level="2">Once per turn, you can both cast a Magus spell and make a melee Arcane Armory weapon attack to channel it; Magus spells with a 1 action casting time that require a single spell attack roll, force the target to make a saving throw, or affect a total number of hit points of creatures are eligible. If the attack misses, the spell fails. Otherwise deal weapon damage and resolve spells as follows:&#13;&#10;AoE spells that target more than a 10-ft. cube can either become a 15-ft. cone originating from the target or just affect the target.&#13;&#10;Cantrips do not deal damage but instead change the weapon damage type to their damage type and apply their effects via the weapon hit.&#13;&#10;Concentration spells must be concentrated on as soon as the apply.&#13;&#10;Spells that force saving throws are rolled with disadvantage by the target, and are automatically failed on a critical hit; non-targets roll as normal. Spell Attack rolls instantly take effect on weapon hit.
+      </description>
+      <description level="11">Once per turn, you can both cast a Magus spell and make a melee Arcane Armory weapon attack to channel it; Magus spells with a 1 action casting time that require a single spell attack roll, force the target to make a saving throw, or affect a total number of hit points of creatures are eligible. If the attack misses, the spell fails, and you can recover a spell slot of a lower level if you do not use Ethereal Jaunt. Otherwise deal weapon damage and resolve spells as follows:&#13;&#10;AoE spells that target more than a 10-ft. cube can either become a 15-ft. cone originating from the target or just affect the target.&#13;&#10;Cantrips do not deal damage but instead change the weapon damage type to their damage type and apply their effects via the weapon hit.&#13;&#10;Concentration spells must be concentrated on as soon as the apply.&#13;&#10;Spells that force saving throws are rolled with disadvantage by the target, and are automatically failed on a critical hit; non-targets roll as normal. Spell Attack rolls instantly take effect on weapon hit.
+      </description>
+      <description level="18">Once per turn, you can both cast a Magus spell and make a melee Arcane Armory weapon attack to channel it; Magus spells with a 1 action casting time that require a single spell attack roll, force the target to make a saving throw, or affect a total number of hit points of creatures are eligible. If the attack misses, the spell fails, and you can recover a spell slot of the same level if you do not use Ethereal Jaunt. Otherwise deal weapon damage and resolve spells as follows:&#13;&#10;AoE spells that target more than a 10-ft. cube can either become a 15-ft. cone originating from the target or just affect the target.&#13;&#10;Cantrips do not deal damage but instead change the weapon damage type to their damage type and apply their effects via the weapon hit.&#13;&#10;Concentration spells must be concentrated on as soon as the apply.&#13;&#10;Spells that force saving throws are rolled with disadvantage by the target, and are automatically failed on a critical hit; non-targets roll as normal. Spell Attack rolls instantly take effect on weapon hit.
+      </description>
+    </sheet>
+  </element>
+
+  <element name="Arcane Regeneration" type="Class Feature" source="laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_ARCANE_REGENERATION">
+    <description>
+      <p>Starting at 3rd level, you can meditate on your knowledge of the arcane to regenerate magic potential. During a short rest, you can recover spell slots of a combined level equal to your Intelligence modifier. Once you do so, you must finish a long rest before you can use this feature again.</p>
+    </description>
+    <sheet><description usage="1/Long Rest">You can recover a spell slots during one short rest up to a combined level of {{intelligence:modifier}}.</description></sheet>
+  </element>
+
+  <element name="Esoteric Order" type="Class Feature" source="laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_ESOTERIC_ORDER">
+    <description>
+      <p>At 3rd level, choose the Esoteric Order that best represents your Magus' skills: the Orders of Arcanists, Arcane Archers, Blade Dancers, Dragon Knights, Spellbreakers, or Warders.</p>
+      <p class="indent">Your Esoteric Order grants you features at 3rd level, and again when you reach 7th, 15th, and 20th level in this class.</p>
+      <h5>ORDER SPELLS</h5>
+      <p>Most Esoteric Orders include a list of Order Spells that you learn at the Magus levels noted in your Order's description. These Order Spells count as Magus spells for you, but they do not count against your number of Magus Spells Known.</p>
+    </description>
+    <rules>
+      <select type="Archetype" name="Esoteric Order" supports="Esoteric Order" level="3" />
+    </rules>
+  </element>
+
+  <element name="Ability Score Improvement" type="Class Feature" source="laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_ASI">
+      <compendium display="false" />
+    <description>
+      <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Class Feature" name="Improvement Option (Magus 4)" supports="Improvement Option,Magus,4" level="4" />
+      <select type="Class Feature" name="Improvement Option (Magus 8)" supports="Improvement Option,Magus,8" level="8" />
+      <select type="Class Feature" name="Improvement Option (Magus 12)" supports="Improvement Option,Magus,12" level="12" />
+      <select type="Class Feature" name="Improvement Option (Magus 16)" supports="Improvement Option,Magus,16" level="16" />
+      <select type="Class Feature" name="Improvement Option (Magus 19)" supports="Improvement Option,Magus,19" level="19" />
+    </rules>
+  </element>
+
+  <element name="Extra Attack" type="Class Feature" source="laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_EXTRA_ATTACK">
+    <description>
+      <p>Beginning at 5th level, you can attack twice, instead of once, when you take the Attack action on your turn.</p>
+      <p>You can still only make on Spellstrike per turn.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+    </rules>
+  </element>
+
+  <element name="Spellsight" type="Class Feature" source="laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_SPELLSIGHT" >
+    <description>
+      <p>Also at 5th level, you can use an action to awaken your senses to the presence of magic within 30 feet as if you had cast detect magic. While this sense is active, you can touch an object and gain knowledge as if you had cast identify. This special sense requires your concentration, and it lasts for 1 minute.</p>
+      <p class="indent">You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+    </description>
+    <sheet><description usage="{{min 1 int}}/Long Rest" action="Action">Awaken your senses as if you had cast detect magic within 30 ft., and touch an object while this active to gain knowledge as if you had cast identify; this requires your concentration.</description></sheet>
+  </element>
+
+  <element name="Ethereal Jaunt" type="Class Feature" source="laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_ETHEREAL_JAUNT">
+    <description>
+      <p>Starting at 6th level, you can focus residual power from spells to slip through the Ethereal Plane. On your turn, immediately before or after you cast a Magus spell or Spellstrike, you can teleport to an unoccupied space you can see within 10 feet.</p>
+      <p class="indent">The range of this feature is 10 feet, plus an extra 10 feet for each level of the spell slot you expended (maximum 60 feet).</p>
+    </description>
+    <sheet><description>Immediately before or after casting a Magus spell or Spellstrike, you can teleport to an unoccupied visible space within 10 ft., plus an extra 10 ft. per spell slot level you had expended (up to 60 ft.).</description></sheet>
+  </element>
+
+  <element name="Spellsunder" type="Class Feature" source="laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_SPELLSUNDER">
+    <description>
+      <p>You can use Spellstrike to cut down hostile spells. Starting at 9th level, when you see a creature cast a spell that will affect you, you can use a reaction to expend a spell slot and use an Arcane Armory weapon to attack the spell as it takes effect.</p>
+      <p class="indent">If the spell was cast at a level equal to the level of the spell slot you expended or lower, the spell fails and has no effect. If it was cast at a level higher than the slot you expended, make an attack roll with your weapon. If your attack roll exceeds 12 + twice the level of the spell, the spell fails and has no effect.</p>
+    </description>
+    <sheet>
+      <description action="Reaction" level="9">When you see a creature cast a spell that will affect you, expend a spell slot; if the expended slot level is equal to or greater than the spell's level, that spell fails. If it is lower, make a weapon attack roll, and if it exceeds 12 + twice the spell's level, that spell fails.</description>
+      <description action="Reaction" level="14">When you see a creature within 30 ft. is targeted by a spell, expend a spell slot and teleport within 5 ft. of it (or if you yourself are targeted by a spell); if the expended slot level is equal to or greater than the spell's level, that spell fails. If it is lower, make a weapon attack roll, and if it exceeds 12 + twice the spell's level, that spell fails.</description>
+    </sheet>
+  </element>
+
+  <element name="Mystical Ward" type="Class Feature" source="laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_MYSTICAL_WARD">
+    <description>
+      <p>You can cast your spells in battle and avoid their most potent effects. Beginning at 10th level, you are immune to the effects of any Magus spell you cast, unless you wish to be affected.</p>
+    </description>
+    <sheet>
+      <description>You are immune to the effects of your own Magus spells unless you wish otherwise.</description>
+    </sheet>
+  </element>
+
+  <element name="Arcane Conservation" type="Class Feature" source="laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_ARCANE_CONSERVATION">
+    <description>
+      <p>Starting at 11th level, when you use Spellstrike and miss with your weapon attack, you can regain one expended spell slot. When you do so, you cannot also use Ethereal Jaunt.</p>
+      <p class="indent">The spell slot you regain with this feature must be a lower level than the slot you expended as part of your Spellstrike.</p>
+      <p class="indent">At 18th level, you regain the same spell slot you expended.</p>
+    </description>
+    <sheet display="false">
+      <description></description>
+    </sheet>
+  </element>
+
+  <element name="Prismatic Strikes" type="Class Feature" source="laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_PRISMATIC_STRIKES">
+    <description>
+      <p>Your weapons are infused with the arcane power you channel through them. Starting at 11th level, your attacks with Arcane Armory weapons deal a bonus 1d8 damage on hit.</p>
+      <p class="indent">This bonus damage must be the damage type dealt by a Magus spell you know, and it can be chosen on hit.</p>
+    </description>
+    <sheet>
+      <description>Your Arcane Armory weapon attacks deal a bonus 1d8 damage in a damage type dealt by a Magus spell you know, chosen on hit.</description>
+    </sheet>
+  </element>
+
+  <element name="Superior Spellsunder" type="Class Feature" source="laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_SUPERIOR_SPELLSUNDER">
+    <description>
+      <p>Starting at 14th level, when a creature you can see within 30 feet is targeted by a spell you can see, you can use a reaction to teleport to an unoccupied space within 5 feet of it and use your Spellsunder reaction against the triggering spell.</p>
+    </description>
+    <sheet display="false"></sheet>
+  </element>
+
+  <element name="Order of Arcanists" type="Archetype" source="Laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_ORDER_OF_ARCANISTS">
+    <supports>Esoteric Order</supports>
+    <description>
+      <p>Magi who join the Order of Arcanists often find themselves in the service of Wizards and other learned practitioners of the arcane arts. While most Magi only study magic for its uses in combat, those who join this Order explore the broader uses of arcane magic, and will go so far as to keep a spellbook and learn rituals that will aid in their quest for knowledge.</p>
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ADVANCED_ARMORY" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ARCANE_SPELLBOOK" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_WAR_MAGIC" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ESOTERIC_SIGHT" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_GRAND_ARCANIST" />
+    </description>
+    <sheet display="false">
+      <description>Order of Arcanists Magi explorer the broader uses of arcane magic outside of combat.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ADVANCED_ARMORY" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ARCANE_SPELLBOOK" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_WAR_MAGIC" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ESOTERIC_SIGHT" level="15"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_GRAND_ARCANIST" level="20"/>
+    </rules>
+  </element>
+  <element name="Advanced Armory" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ADVANCED_ARMORY">
+    <description>
+      <p>Your Order has taught you to expand your Arcane Armory to hold more than the armaments of war. You can perform your Arcane Armory ritual on potions, spell scrolls, staffs, wands, Tiny wondrous items, and other Tiny items, storing them in your Arcane Armory. As normal, you can use a bonus action to shunt or summon these items from your Arcane Armory, but you must have a free hand to do so.</p>
+      <p class="indent">Also, the maximum number of objects you can have as part of your Arcane Armory is equal to your Intelligence modifier (minimum of 1) + your Magus level. All other rules for your Arcane Armory still apply.</p>
+    </description>
+    <sheet>
+      <description>Your Arcane Armory can also store potions, spell scrolls, staffs, wands, and Tiny items, and  your total storage capacity increase to {{arcanist storage}}.</description>
+    </sheet>
+    <rules>
+        <stat name="arcanist storage" value="modifier:intelligence" />
+        <stat name="arcanist storage" value="level:magus" />
+    </rules>
+  </element>
+  <element name="Arcane Spellbook" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ARCANE_SPELLBOOK">
+    <description>
+      <p>Unlike other Magi who memorize spells for use in battle, you maintain a spellbook from which you can prepare spells:</p>
+      <p><strong><em>Spellbook.</em></strong> You gain a Spellbook that contains a number of spells of your choice equal to your number of Spells Known, which replace your current Spells Known. You choose these new spells from the Magus or Wizard spell list, but they must be of a level that you have the spell slots for as shown on the Magus table. Your Arcane Spellbook is a Tiny item that can be enchanted as part of your Arcane Armory.</p>
+      <p><strong><em>Preparing Spells.</em></strong> Over the course of a long rest, you can spend 1 hour preparing your spells for the day. You prepare a number of spells from your Spellbook equal to half your level + your Intelligence modifier + your proficiency bonus. These are the only spells you can cast until you prepare other spells, and while prepared they count as Magus spells for you.</p>
+      <p><strong><em>Ritual Casting.</em></strong> You can cast the ritual version of any spell in your Spellbook even if you do not have the spell prepared.</p>
+      <p><strong><em>Learning New Spells.</em></strong> Whenever you gain a Magus level, you add another Magus or Wizard spell of your choice to your Spellbook. It must be of a level for which you have spell slots.</p>
+      <p class="indent">You can also copy any Magus or Wizard spell from a spell scroll or Spellbook into your Aracane Spellbook by spending 1 hour and 10 gold for rare inks, per spell level, so long as the spell is of a level for which you have spell slots.</p>
+    </description>
+    <sheet>
+      <description>You use an Arcane Spellbook, which can be added to your Arcane Armory, to replace your known spells. You can prepare up to {{arcanist:spellcasting:prepare}} spells each long rest.&#13;&#10;You can cast ritual spells even if they are not prepared.&#13;&#10;You can copy any Magus or Wizard spell into your Spellbook from a scroll for 10 gold in 1 hour, as long as you have sufficient spell slot level to cast it.</description>
+    </sheet>
+    <rules>
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="2" number="2" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="4" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="5" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="6" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="7" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="8" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="9" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="10" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="11" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="12" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="13" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="14" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="15" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="16" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="17" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="18" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="19" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="20" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="21" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="22" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="23" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="24" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="25" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="26" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="27" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="28" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="29" spellcasting="Magus" />
+			<select type="Spell" name="Spell (Magus, Arcanist)" supports="(Wizard,Magus),$(spellcasting:slots)" level="30" spellcasting="Magus" />
+
+      <stat name="arcanist:spellcasting:prepare" value="intelligence:modifier" />
+      <stat name="arcanist:spellcasting:prepare" value="level:magus:half" />
+      <stat name="arcanist:spellcasting:prepare" value="proficiency" />
+    </rules>
+  </element>
+  <element name="War Magic" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_WAR_MAGIC">
+    <description>
+      <p>You can seamlessly weave minor spells with weapon attacks. Whenever you use your action to cast a Magus spell you can make a weapon attack as a bonus action on that turn.</p>
+    </description>
+    <sheet>
+      <description action="Bonus Action">You can make a weapon attack after using your action to cast as Magus spell.</description>
+    </sheet>
+  </element>
+  <element name="Esoteric Sight" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_ESOTERIC_SIGHT">
+    <description>
+      <p>The duration of your Spellsight increases to 10 minutes, it no longer requires concentration, and while it is active you gain Truesight out to a 30-foot radius and you have advantage on any weapon attack rolls you make as part of Spellsunder.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_SPELLSIGHT_ESOTERIC_SIGHT" />
+    </rules>
+  </element>
+  <element name="Spellsight" type="Class Feature" source="laserllama's Magus" id="ID_LASERLL_CLASS_FEATURE_MAGUS_SPELLSIGHT_ESOTERIC_SIGHT" >
+    <description>
+      <p>Also at 5th level, you can use an action to awaken your senses to the presence of magic within 30 feet as if you had cast detect magic. While this sense is active, you can touch an object and gain knowledge as if you had cast identify. This special sense requires your concentration, and it lasts for 1 minute.</p>
+      <p class="indent">You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+    </description>
+    <sheet><description usage="{{min 1 int}}/Long Rest" action="Action">Awaken your senses for 10 minutes as if you had cast detect magic within 30 ft., and touch an object while this active to gain knowledge as if you had cast identify; this does not require your concentration.&#13;&#10;You also gain 30-ft. Truesight and have advantage on Spellsunder weapon attack rolls while this is active.</description></sheet>
+  </element>
+  <element name="Grand Arcanist" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANIST_GRAND_ARCANIST">
+    <description>
+      <p>You wield arcane magic that rivals an archmage. You add one 6th-level and one 7th-level Wizard spell of your choice to your Spellbook. You can cast each spell once without expending a spell slot, and regain the ability to do so after a long rest.</p>
+    </description>
+    <sheet>
+      <description usage="1/Long Rest">You can cast the 6th and 7th level spells added to your Spellbook as part of this feature once each without a spell slot.</description>
+    </sheet>
+    <rules>
+      <select type="Spell" name="Spell (Grand Arcanist)" supports="Wizard,6"  spellcasting="Magus" />
+      <select type="Spell" name="Spell (Grand Arcanist)" supports="Wizard,7" spellcasting="Magus" />
+    </rules>
+  </element>
+
+  <element name="Order of Arcane Archers" type="Archetype" source="Laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_ORDER_OF_ARCANE_ARCHERS">
+    <supports>Esoteric Order</supports>
+    <description>
+      <p>Originally founded by a sect of elvish mage hunters, the Magi known as Arcane Archers are masters of bow, arrow and spell. While most Magi thrive in close-quarters combat, Arcane Archers strike at foes from afar, raining magic arrows down on foes. Most members of this Order are guardians, but some Arcane Archers strike out as adventurers.</p>
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_ARCANE_ARCHER_ARCANE_ARCHER_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_ARCANE_ARCHER_ARCANE_QUIVER" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_ARCANE_ARCHER_ENCHANTED_SHOT" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_ARCANE_ARCHER_RANGED_TRANSPOSITION" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_ARCANE_ARCHER_ELITE_ARCHER" />
+    </description>
+    <sheet display="false">
+      <description>Arcane Archers are masters of bow, arrow and spell.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANE_ARCHER_ARCANE_ARCHER_SPELLS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANE_ARCHER_ARCANE_QUIVER" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANE_ARCHER_ENCHANTED_SHOT" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANE_ARCHER_RANGED_TRANSPOSITION" level="15"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANE_ARCHER_ELITE_ARCHER" level="20"/>
+    </rules>
+  </element>
+  <element name="Arcane Archer Spells" type="Archetype Feature" source="Laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANE_ARCHER_ARCANE_ARCHER_SPELLS">
+    <description>
+      <p>When you gain a level in this class, you can replace one spell from this feature with an evocation spell of the same level of your choice from either the Magus or Sorcerer spell list.</p>
+      <table>
+        <thead>
+          <tr><td>Magus Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>ensnaring strike<sup>LL</sup>, hail of thorns<sup>LL</sup></em></td></tr>
+        <tr><td>5th</td><td><em>acid arrow, cordon of arrows<sup>LL</sup></em></td></tr>
+        <tr><td>7th</td><td><em>conjure volley<sup>LL</sup>, lightning arrow<sup>LL</sup></em></td></tr>
+        <tr><td>9th</td><td><em>arcane eye, elemental bane<sup>XGTE</sup></em></td></tr>
+        <tr><td>13th</td><td><em>scrying, swift quiver<sup>LL</sup></em></td></tr>
+      </table>
+    </description>
+    <sheet>
+      <description>When you gain a Magus level, you can replace one spell from this feature with an evocation spell from the Magus or Sorcerer spell lists of the same level.</description>
+    </sheet>
+    <rules>
+      <select type="Spell" name="1st Additional Spell (Arcane Archer)" supports="1,Evocation,(Magus||Sorcerer)||Ensnaring Strike" level="3" default="ID_LASERLL_SPELL_ENSNARING_STRIKE" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="2nd Additional Spell (Arcane Archer)" supports="1,Evocation,(Magus||Sorcerer)||Hail of Thorns" level="3" default="ID_LASERLL_SPELL_HAIL_OF_THORNS" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="3rd Additional Spell (Arcane Archer)" supports="2,Evocation,(Magus||Sorcerer)||Melfs Acid Arrow" level="5" default="ID_PHB_SPELL_MELFS_ACID_ARROW" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="4th Additional Spell (Arcane Archer)" supports="2,Evocation,(Magus||Sorcerer)||Cordon of Arrows" level="5" default="ID_LASERLL_SPELL_CORDON_OF_ARROWS" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="5th Additional Spell (Arcane Archer)" supports="3,Evocation,(Magus||Sorcerer)||Conjure Volley" level="9" default="ID_LASERLL_SPELL_CONJURE_VOLLEY" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="6th Additional Spell (Arcane Archer)" supports="3,Evocation,(Magus||Sorcerer)||Lightning Arrow" level="9" default="ID_LASERLL_SPELL_LIGHTNING_ARROW" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="7th Additional Spell (Arcane Archer)" supports="4,Evocation,(Magus||Sorcerer)||Arcane Eye" level="13" default="ID_PHB_SPELL_ARCANE_EYE" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="8th Additional Spell (Arcane Archer)" supports="4,Evocation,(Magus||Sorcerer)||Elemental Bane" level="13" default="ID_XGTE_SPELL_ELEMENTAL_BANE" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="9th Additional Spell (Arcane Archer)" supports="5,Evocation,(Magus||Sorcerer)||Scrying" level="17" default="ID_PHB_SPELL_SCRYING" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="10th Additional Spell (Arcane Archer)" supports="5,Evocation,(Magus||Sorcerer)||Swift Quiver" level="17" default="ID_LASERLL_SPELL_SWIFT_QUIVER" spellcasting="Magus" allowReplace="false" />
+    </rules>
+  </element>
+
+  <append id="ID_LASERLL_SPELL_ENSNARING_STRIKE">
+    <supports>Ensnaring Strike</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_HAIL_OF_THORNS">
+    <supports>Hail of Thorns</supports>
+  </append>
+  <append id="ID_PHB_SPELL_MELFS_ACID_ARROW">
+    <supports>Melfs Acid Arrow</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_CORDON_OF_ARROWS">
+    <supports>Cordon of Arrows</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_CONJURE_VOLLEY">
+    <supports>Conjure Volley</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_LIGHTNING_ARROW">
+    <supports>Lightning Arrow</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ARCANE_EYE">
+    <supports>Arcane Eye</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_ELEMENTAL_BANE">
+    <supports>Elemental Bane</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SCRYING">
+    <supports>Scrying</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_SWIFT_QUIVER">
+    <supports>Swift Quiver</supports>
+  </append>
+
+  <element name="Arcane Quiver" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANE_ARCHER_ARCANE_QUIVER">
+    <description>
+      <p>You have learned to use the signature enchantments of the Magi with ranged weapons. You gain the following benefits:</p>
+      <ul>
+        <li>You can add ranged weapons and quivers containing upto 20 pieces of ammunition each to your Arcane Armory.</li>
+        <li>You can use Spellstrike with ranged weapons that are part of your Arcane Armory. However, any spells that have an area of effect are contained to only affect your target.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description action="Reaction">You can add ranged weapons and quivers with up to 20 pcs. of ammunition to your Arcane Amory.&#13;&#10;You can use Spellstrike with ranged Arcane Armory weapons; AoE spells will only affect the attack target.</description>
+    </sheet>
+  </element>
+
+  <element name="Enchanted Shot" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANE_ARCHER_ENCHANTED_SHOT">
+    <description>
+      <p>When you make an attack roll with a ranged Arcane Armory weapon and miss, you can use a reaction to magically curve your shot and re-roll that attack against a different target that you can see within 60 feet of your attack's original target.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When you miss a ranged Arcane Armory weapon attack, reroll that attack against a different visible target within 60 ft. of the original target.</description>
+    </sheet>
+  </element>
+
+  <element name="Ranged Transposition" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANE_ARCHER_RANGED_TRANSPOSITION">
+    <description>
+      <p>As an action, you can enchant a piece of ammunition with conjuration magic and fire it from a ranged Arcane Armory weapon at a point you can see. When it comes to a stop, you instantly teleport to an unoccupied space within 5 feet of it.</p>
+      <p class="indent">Once you use this feature you must finish a short or long rest before you can use it again. If you have no uses left, you can expend a spell slot to use this feature again.</p>
+    </description>
+    <sheet>
+      <description usage="1/Short Rest" action="Action">Fire an enchanted piece of ammunition to a visible location and teleport to an unoccupied space within 5 ft. of its destination. You can expend a spell slot to regain this feature before a rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Elite Archer" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_ARCANE_ARCHER_ELITE_ARCHER">
+    <description>
+      <p>As a bonus action, you can enter a heightened state of arcane focus which grants you the following benefits:</p>
+      <ul>
+        <li>Ranged attacks with your Arcane Armory weapons deal force damage in place of their normal damage. You can use Ethereal Jaunt to teleport up to 10 feet after each ranged Arcane Armory attack you make.</li>
+        <li>When you hit a target with a ranged Arcane Armory attack, you can expend a spell slot to deal extra force damage to the target. This bonus damage is 2d4 per level of the spell slot you expended.</li>
+        <li>This heightened state lasts for 1 minute, but ends early if you are incapacitated or you end it as a bonus action. Once you use this feature, you must finish a long rest before you can use it again. If you have no uses left, you can expend a 5th-level spell slot to enter this heightened state again.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description usage="1/Long Rest" action="Bonus Action">Enter a heightened state for 1 minute, causing your ranged attacks with Arcane Armory weapons to deal force damage in place of their normal damage; you can use Ethereal Jump to teleport up to 10 ft. after making such an attack.&#13;&#10;When you hit with a ranged Arcane Armory attack, you can expend a spell slot to deal an additional 2d4 force damage. per spell slot level.&#13;&#10;This state ends if you are incapacitated or end it with a bonus action, and can be regained before a rest by expending a 5th-level spell slot.</description>
+    </sheet>
+  </element>
+
+  <element name="Order of Blade Dancers" type="Archetype" source="Laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_ORDER_OF_BLADE_DANCERS">
+    <supports>Esoteric Order</supports>
+    <description>
+      <p>The Magi known as Blade Dancers dedicate their lives to the art of the Blade Dance. This mystical trance allows the Magi to empty their mind of all emotion and distraction to become one their blade. Masters of this trance are deadly whirlwinds of arcane power and savage steel in battle.</p>
+      <p class="indent">Typically, Magi of this Order take on a single apprentice, teaching them, and only them, the secrets of their Order.</p>
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_BLADE_DANCE" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_BLADE_DANCER_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_FLUID_STEPS" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_DEADLY_DANCE" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_MASTER_OF_BLADES" />
+    </description>
+    <sheet display="false">
+      <description>Blade Dancers are deadly whirlwinds of arcane power and savage steel in battle.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_BLADE_DANCE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_BLADE_DANCER_SPELLS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_FLUID_STEPS" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_DEADLY_DANCE" level="15"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_MASTER_OF_BLADES" level="20"/>
+    </rules>
+  </element>
+  <element name="Blade Dance" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_BLADE_DANCE">
+    <description>
+      <p>Your Order's style of combat is an art. You gain proficiency in Performance, and you can use your Strength or Dexterity, in place of Charisma, when making a Performance check.</p>
+      <p class="indent">So long as you are not wearing heavy armor or wielding a heavy weapon, you can use your bonus action to enter the trance known as the Blade Dance. This trance lasts for 1 minute, and while it is active, you gain the benefits below:</p>
+      <ul>
+        <li>Your walking speed increases by 10 feet.</li>
+        <li>You gain a +1 bonus to your Armor Class.</li>
+        <li>When you roll damage for an attack or spell, you can roll the damage dice twice and use the higher result. Once you do, you cannot do so again until the start of your next turn.</li>
+        <li>You add your Intelligence modifier (minimum of +1) to all Strength (Athletics) and Dexterity (Acrobatics) checks.</li>
+      </ul>
+      <p class="indent">Your Blade Dance ends if you are incapacitated, if you don heavy armor or a heavy weapon, or if you use a bonus action to end it. Once you enter a Blade Dance you must complete a short or long rest before you can do so again. When you have no uses of this feature remaining, you can expend a spell slot of 1st-level or higher to enter the Blade Dance again.</p>
+    </description>
+    <sheet>
+      <description usage="1/Short Rest" action="Bonus Action" level="3">While not wearing heavy armor or wielding a heavy weapon enter the Blade Dance for 1 minute. While active, gain the following:&#13;&#10;+10 ft. walking speed and +1 AC&#13;&#10;When you roll attack or spell damage, you can roll twice and use the higher result once per turn.&#13;&#10;Add {{min 1 int}} to Strength (Athletics) and Dexterity (Acrobatics) checks.&#13;&#10;The Blade Dance ends if you are incapacitated, don heavy armor or weaponry, or end it with a bonus action; you can expend a spell slot to reenter before resting.</description>
+      <description usage="1/Short Rest" action="Bonus Action" level="7">While not wearing heavy armor or wielding a heavy weapon enter the Blade Dance for 1 minute. While active, gain the following:&#13;&#10;+10 ft. walking speed and +2 AC&#13;&#10;When you roll attack or spell damage, you can roll twice and use the higher result once per turn.&#13;&#10;Add {{min 1 int}} to Strength (Athletics) and Dexterity (Acrobatics) checks.&#13;&#10;The Blade Dance ends if you are incapacitated, don heavy armor or weaponry, or end it with a bonus action; you can expend a spell slot to reenter before resting.</description>
+      <description usage="1/Short Rest" action="Bonus Action" level="15">While not wearing heavy armor or wielding a heavy weapon enter the Blade Dance for 1 minute. While active, gain the following:&#13;&#10;+10 ft. walking speed and +3 AC&#13;&#10;When you roll attack or spell damage, you can roll twice and use the higher result once per turn.&#13;&#10;Add {{min 1 int}} to Spellsunder attack rolls, and to Strength (Athletics) and Dexterity (Acrobatics) checks.&#13;&#10;When forced to make a Dexterity saving throw to take half damage, take no damage on a success and half damage on a fail.&#13;&#10;The Blade Dance ends if you are incapacitated, don heavy armor or weaponry, or end it with a bonus action; you can expend a spell slot to reenter before resting.</description>
+      <description action="Bonus Action" level="20">While not wearing heavy armor or wielding a heavy weapon you are in the Blade Dance. While active, gain the following:&#13;&#10;+10 ft. walking speed and +3 AC&#13;&#10;When you take the Attack action, attack twice.&#13;&#10;When you roll attack or spell damage, you can roll twice and use the higher result once per turn.&#13;&#10;Add {{min 1 int}} to Spellsunder attack rolls, and to Strength (Athletics) and Dexterity (Acrobatics) checks.&#13;&#10;When forced to make a Dexterity saving throw to take half damage, take no damage on a success and half damage on a fail.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_BLADE_DANCE_PERFORMANCE_BONUS" />
+    </rules>
+  </element>
+  <element name="" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_BLADE_DANCE_PERFORMANCE_BONUS">
+    <description>
+    </description>
+    <sheet>
+      <description>You can use your Strength or Dexterity in place of Charisma when making a performance check.</description>
+    </sheet>
+  </element>
+  <element name="Blade Dancer Spells" type="Archetype Feature" source="Laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_BLADE_DANCER_SPELLS">
+    <description>
+      <p>When you gain a level in this class, you can replace one spell from this feature with abjuration or transmutation spell of the same level from the Magus or Paladin spell list.</p>
+      <table>
+        <thead>
+          <tr><td>Magus Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>compelled duel, zephyr strike<sup>XGTE</sup></em></td></tr>
+        <tr><td>5th</td><td><em>blur, misty step</em></td></tr>
+        <tr><td>9th</td><td><em>elemental weapon, haste</em></td></tr>
+        <tr><td>13th</td><td><em>fire shield, freedom of movement</em></td></tr>
+        <tr><td>13th</td><td><em>steel wind strike<sup>LL</sup>, vorpal blade<sup>LL</sup></em></td></tr>
+      </table>
+    </description>
+    <sheet>
+      <description>When you gain a Magus level, you can replace one spell from this feature with an abjuration or transmutation spell from the Magus or Paladin spell lists of the same level.</description>
+    </sheet>
+    <rules>
+      <select type="Spell" name="1st Additional Spell (Blade Dancer)" supports="1,(Abjuration||Transmutation),(Magus||Paladin)||Compelled Duel" level="3" default="ID_PHB_SPELL_COMPELLED_DUEL" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="2nd Additional Spell (Blade Dancer)" supports="1,(Abjuration||Transmutation),(Magus||Paladin)||Zephyr Strike" level="3" default="ID_XGTE_SPELL_ZEPHYR_STRIKE" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="3rd Additional Spell (Blade Dancer)" supports="2,(Abjuration||Transmutation),(Magus||Paladin)||Blur" level="5" default="ID_PHB_SPELL_BLUR" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="4th Additional Spell (Blade Dancer)" supports="2,(Abjuration||Transmutation),(Magus||Paladin)||Misty Step" level="5" default="ID_PHB_SPELL_MISTY_STEP" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="5th Additional Spell (Blade Dancer)" supports="3,(Abjuration||Transmutation),(Magus||Paladin)||Elemental Weapon" level="9" default="ID_PHB_SPELL_ELEMENTAL_WEAPON" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="6th Additional Spell (Blade Dancer)" supports="3,(Abjuration||Transmutation),(Magus||Paladin)||Haste" level="9" default="ID_PHB_SPELL_HASTE" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="7th Additional Spell (Blade Dancer)" supports="4,(Abjuration||Transmutation),(Magus||Paladin)||Fire Shield" level="13" default="ID_PHB_SPELL_FIRE_SHIELD" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="8th Additional Spell (Blade Dancer)" supports="4,(Abjuration||Transmutation),(Magus||Paladin)||Freedom of Movement" level="13" default="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="9th Additional Spell (Blade Dancer)" supports="5,(Abjuration||Transmutation),(Magus||Paladin)||Steel Wind Strike" level="17" default="ID_LASERLL_SPELL_STEEL_WIND_STRIKE" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="10th Additional Spell (Blade Dancer)" supports="5,(Abjuration||Transmutation),(Magus||Paladin)||Vorpal Blade" level="17" default="ID_LASERLL_SPELL_VORPAL_BLADE" spellcasting="Magus" allowReplace="false" />
+    </rules>
+  </element>
+
+  <append id="ID_PHB_SPELL_COMPELLED_DUEL">
+      <supports>Compelled Duel</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_ZEPHYR_STRIKE">
+      <supports>Zephyr Strike</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BLUR">
+      <supports>Blur</supports>
+  </append>
+  <append id="ID_PHB_SPELL_MISTY_STEP">
+      <supports>Misty Step</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ELEMENTAL_WEAPON">
+      <supports>Elemental Weapon</supports>
+  </append>
+  <append id="ID_PHB_SPELL_HASTE">
+      <supports>Haste</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FIRE_SHIELD">
+      <supports>Fire Shield</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT">
+      <supports>Freedom of Movement</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_STEEL_WIND_STRIKE">
+      <supports>Steel Wind Strike</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_VORPAL_BLADE">
+      <supports>Vorpal Blade</supports>
+  </append>
+
+  <element name="Fluid Steps" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_FLUID_STEPS">
+    <description>
+      <p>Your Order's emphasis on fluidity and martial skill has honed your reflexes. You gain proficiency in Dexterity saving throws, and you add your proficiency bonus to initiative rolls.</p>
+      <p>Also, your Blade Dance Armor Class bonus becomes +2.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+        <stat name="initiative:misc" value="{{proficiency}}" />
+    </rules>
+  </element>
+
+  <element name="Deadly Dance" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_DEADLY_DANCE">
+    <description>
+      <p>You have become an expert of the Blade Dance, and while you are in this trance you gain the additional benefits below:</p>
+      <ul>
+        <li>Whenever you are forced to make a Dexterity saving throw to take half damage, you take no damage on a successful save, and only have damage on a failed save.</li>
+        <li>Whenever you use Spellsunder, you add your Intelligence modifier (minimum of +1) to the attack roll you make.</li>
+        <li>Your Blade Dance Armor Class bonus becomes +3.</li>
+      </ul>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+    </rules>
+  </element>
+
+  <element name="Master of Blades" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_BLADE_DANCER_MASTER_OF_BLADES">
+    <description>
+      <p>You have reached the apex of your Order and been granted the title of Master of Blades. You are always considered to be under the effects of your Blade Dance so long as you are not wearing heavy armor or wielding a heavy weapon.</p>
+      <p class="indent">Also, when you take the Attack action while in your Blade Dance, you make one additional attack as part of that action.</p>
+
+    </description>
+    <sheet>
+      <description>You are considered to always be in the Blade Dance while not wielding heavy armor or weaponry.</description>
+    </sheet>
+  </element>
+
+  <element name="Order of Dragon Knights" type="Archetype" source="Laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_ORDER_OF_DRAGON_KNIGHTS">
+    <supports>Esoteric Order</supports>
+    <description>
+      <p>Magi of this legendary Esoteric Order have their soul bound to a Draconic Companion. Using ancient magic, they infuse their Companion with draconic might beyond its years, and should their bond grow strong enough, they can mount their Draconic Companion, becoming a Dragon Knight of legend.</p>
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_DRACONIC_COMPANION" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_WYRMSOUL" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_DRAGON_KNIGHT_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GREATER_COMPANION" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_ELEMENTAL_BREATH" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_MYTHIC_COMPANION" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" />
+    </description>
+    <sheet display="false">
+      <description>Dragon Knights have their soul bound to a Draconic Companion.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_DRACONIC_COMPANION" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_WYRMSOUL_ACID" level="3" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_ACID" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_WYRMSOUL_COLD" level="3" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_COLD" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_WYRMSOUL_FIRE" level="3" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_FIRE" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_WYRMSOUL_LIGHTNING" level="3" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_LIGHTNING" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_WYRMSOUL_POISON" level="3" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_POISON" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_DRAGON_KNIGHT_SPELLS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GREATER_COMPANION" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_ELEMENTAL_BREATH_ACID" level="15" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_ACID,!ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_ELEMENTAL_BREATH_COLD" level="15" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_COLD,!ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_ELEMENTAL_BREATH_FIRE" level="15" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_FIRE,!ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_ELEMENTAL_BREATH_LIGHTNING" level="15" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_LIGHTNING,!ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_ELEMENTAL_BREATH_POISON" level="15" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_POISON,!ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_MYTHIC_COMPANION" level="15"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" level="20"/>
+    </rules>
+  </element>
+  <element name="Draconic Companion" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_DRACONIC_COMPANION">
+    <description>
+      <p>Your soul has been bound to that of a Draconic Companion. You choose its Essence from the following options: acid, cold, fire, lightning, or poison. Its Essence influences the color of its scales, and once it is chosen it cannot be changed.</p>
+      <p class="indent">Your Companion uses the Draconic Companion stat block on this page, which uses your proficiency bonus (PB) and Magus Spell save DC throughout. It cannot bear a rider.</p>
+      <p class="indent">Your Draconic Companion is friendly to you and your allies and it obeys your commands. In combat, it acts on your turn. It can move and use its reaction on its own, but it only takes the Dodge action on its turn unless you use a bonus action to order it to take an action from its stat block or another action. Also, whenever you take the attack action, you can forgo one of your attacks to command your Companion to attack. If you are incapacitated, your Companion can act on its own, and it will defend both itself and you to the best of its abilities.</p>
+      <p class="indent">When your Companion is reduced to 0 hit points it makes death saving throws like a player character would. When it dies, you can perform a special 1-hour ritual, which can be during a short or long rest, that restores it to life with 1 hit point. As a part of this ritual, you can spend your Companion's hit dice so that it regains additional hit points equal to the hit dice rolled when it is returned to life.</p>
+      <div element="ID_LASERLL_INFORMATION_DRACONIC_COMPANION" />
+    </description>
+    <sheet>
+      <description>Your Draconic Companion has a PB of {{proficiency}} and a save DC of {{magus save:dc}}; it cannot bear a rider. If it dies, you can perform a 1-hour ritual during a rest to revive it with 1 hit point; you can spend its hit dice so it regains additional rolled hit points.</description>
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Draconic Companion Essence" supports="Draconic Companion Essence" />
+
+      <select type="Companion" name="Draconic Companion (Acid)" supports="Draconic Companion" default="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_ACID" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_ACID,!ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GREATER_COMPANION" />
+      <select type="Companion" name="Draconic Companion (Cold)" supports="Draconic Companion" default="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_COLD" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_COLD,!ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GREATER_COMPANION" />
+      <select type="Companion" name="Draconic Companion (Fire)" supports="Draconic Companion" default="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_FIRE" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_FIRE,!ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GREATER_COMPANION" />
+      <select type="Companion" name="Draconic Companion (Lightning)" supports="Draconic Companion" default="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_LIGHTNING" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_LIGHTNING,!ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GREATER_COMPANION" />
+      <select type="Companion" name="Draconic Companion (Poison)" supports="Draconic Companion" default="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_POISON" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_POISON,!ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GREATER_COMPANION" />
+
+      <select type="Companion" name="Draconic Companion (Acid)" supports="Draconic Companion" default="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_GREATER_ACID" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_ACID,ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GREATER_COMPANION,!ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" />
+      <select type="Companion" name="Draconic Companion (Cold)" supports="Draconic Companion" default="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_GREATER_COLD" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_COLD,ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GREATER_COMPANION,!ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" />
+      <select type="Companion" name="Draconic Companion (Fire)" supports="Draconic Companion" default="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_GREATER_FIRE" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_FIRE,ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GREATER_COMPANION,!ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" />
+      <select type="Companion" name="Draconic Companion (Lightning)" supports="Draconic Companion" default="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_GREATER_LIGHTNING" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_LIGHTNING,ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GREATER_COMPANION,!ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" />
+      <select type="Companion" name="Draconic Companion (Poison)" supports="Draconic Companion" default="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_GREATER_POISON" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_POISON,ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GREATER_COMPANION,!ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" />
+
+      <select type="Companion" name="Exalted Companion (Acid)" supports="Draconic Companion" default="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_EXALTED_ACID" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_ACID,ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" />
+      <select type="Companion" name="Exalted Companion (Cold)" supports="Draconic Companion" default="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_EXALTED_COLD" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_COLD,ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" />
+      <select type="Companion" name="Exalted Companion (Fire)" supports="Draconic Companion" default="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_EXALTED_FIRE" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_FIRE,ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" />
+      <select type="Companion" name="Exalted Companion (Lightning)" supports="Draconic Companion" default="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_EXALTED_LIGHTNING" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_LIGHTNING,ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" />
+      <select type="Companion" name="Exalted Companion (Poison)" supports="Draconic Companion" default="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_EXALTED_POISON" requirements="ID_LASERLL_MAGUS_DRAGON_KNIGHT_POISON,ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT" />
+    </rules>
+  </element>
+
+  <element name="Draconic Companion (Acid)" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_MAGUS_DRAGON_KNIGHT_ACID">
+    <supports>Draconic Companion Essence</supports>
+  </element>
+  <element name="Draconic Companion (Cold)" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_MAGUS_DRAGON_KNIGHT_COLD">
+    <supports>Draconic Companion Essence</supports>
+  </element>
+  <element name="Draconic Companion (Fire)" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_MAGUS_DRAGON_KNIGHT_FIRE">
+    <supports>Draconic Companion Essence</supports>
+  </element>
+  <element name="Draconic Companion (Lightning)" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_MAGUS_DRAGON_KNIGHT_LIGHTNING">
+    <supports>Draconic Companion Essence</supports>
+  </element>
+  <element name="Draconic Companion (Poison)" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_MAGUS_DRAGON_KNIGHT_POISON">
+    <supports>Draconic Companion Essence</supports>
+  </element>
+
+  <element name="Draconic Companion (Acid)" type="Companion" source="laserllama's Magus" id="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_ACID">
+    <supports>Draconic Companion</supports>
+    <description>
+      <p>Your Draconic Companion of acidic Essence.</p>
+    </description>
+    <setters>
+      <set name="size">Small</set>
+      <set name="type">Dragon</set>
+      <set name="alignment">Lawful</set>
+      <set name="challenge">0</set>
+      <set name="ac">14 + PB (natural armor)</set>
+      <set name="hp">5 + five times your Magus level</set>
+      <set name="speed">30 ft., fly 30 ft. (hover)</set>
+      <set name="strength">16</set>
+      <set name="dexterity">12</set>
+      <set name="constitution">15</set>
+      <set name="intelligence">8</set>
+      <set name="wisdom">10</set>
+      <set name="charisma">14</set>
+      <set name="immunities">acid</set>
+      <set name="senses">darkvision 60 ft., passive Perception 10</set>
+      <set name="languages">Draconic, understands any languages you know</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE,ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_SOUL_BOUND</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_CLAW_ACID</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="14" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:speed" value="30" bonus="base" />
+      <stat name="companion:speed:fly" value="30" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Draconic Companion (Cold)" type="Companion" source="laserllama's Magus" id="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_COLD">
+    <supports>Draconic Companion</supports>
+    <description>
+      <p>Your Draconic Companion of cold Essence.</p>
+    </description>
+    <setters>
+      <set name="size">Small</set>
+      <set name="type">Dragon</set>
+      <set name="alignment">Lawful</set>
+      <set name="challenge">0</set>
+      <set name="ac">14 + PB (natural armor)</set>
+      <set name="hp">5 + five times your Magus level</set>
+      <set name="speed">30 ft., fly 30 ft. (hover)</set>
+      <set name="strength">16</set>
+      <set name="dexterity">12</set>
+      <set name="constitution">15</set>
+      <set name="intelligence">8</set>
+      <set name="wisdom">10</set>
+      <set name="charisma">14</set>
+      <set name="immunities">cold</set>
+      <set name="senses">darkvision 60 ft., passive Perception 10</set>
+      <set name="languages">Draconic, understands any languages you know</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE,ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_SOUL_BOUND</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_CLAW_COLD</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="14" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:speed" value="30" bonus="base" />
+      <stat name="companion:speed:fly" value="30" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Draconic Companion (Lightning)" type="Companion" source="laserllama's Magus" id="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_LIGHTNING">
+    <supports>Draconic Companion</supports>
+    <description>
+      <p>Your Draconic Companion of lightning Essence.</p>
+    </description>
+    <setters>
+      <set name="size">Small</set>
+      <set name="type">Dragon</set>
+      <set name="alignment">Lawful</set>
+      <set name="challenge">0</set>
+      <set name="ac">14 + PB (natural armor)</set>
+      <set name="hp">5 + five times your Magus level</set>
+      <set name="speed">30 ft., fly 30 ft. (hover)</set>
+      <set name="strength">16</set>
+      <set name="dexterity">12</set>
+      <set name="constitution">15</set>
+      <set name="intelligence">8</set>
+      <set name="wisdom">10</set>
+      <set name="charisma">14</set>
+      <set name="immunities">lightning</set>
+      <set name="senses">darkvision 60 ft., passive Perception 10</set>
+      <set name="languages">Draconic, understands any languages you know</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE,ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_SOUL_BOUND</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_CLAW_LIGHTNING</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="14" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:speed" value="30" bonus="base" />
+      <stat name="companion:speed:fly" value="30" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Draconic Companion (Fire)" type="Companion" source="laserllama's Magus" id="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_FIRE">
+    <supports>Draconic Companion</supports>
+    <description>
+      <p>Your Draconic Companion of fiery Essence.</p>
+    </description>
+    <setters>
+      <set name="size">Small</set>
+      <set name="type">Dragon</set>
+      <set name="alignment">Lawful</set>
+      <set name="challenge">0</set>
+      <set name="ac">14 + PB (natural armor)</set>
+      <set name="hp">5 + five times your Magus level</set>
+      <set name="speed">30 ft., fly 30 ft. (hover)</set>
+      <set name="strength">16</set>
+      <set name="dexterity">12</set>
+      <set name="constitution">15</set>
+      <set name="intelligence">8</set>
+      <set name="wisdom">10</set>
+      <set name="charisma">14</set>
+      <set name="immunities">fire</set>
+      <set name="senses">darkvision 60 ft., passive Perception 10</set>
+      <set name="languages">Draconic, understands any languages you know</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE,ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_SOUL_BOUND</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_CLAW_FIRE</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="14" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:speed" value="30" bonus="base" />
+      <stat name="companion:speed:fly" value="30" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Draconic Companion (Poison)" type="Companion" source="laserllama's Magus" id="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_POISON">
+    <supports>Draconic Companion</supports>
+    <description>
+      <p>Your Draconic Companion of poisonous Essence.</p>
+    </description>
+    <setters>
+      <set name="size">Small</set>
+      <set name="type">Dragon</set>
+      <set name="alignment">Lawful</set>
+      <set name="challenge">0</set>
+      <set name="ac">14 + PB (natural armor)</set>
+      <set name="hp">5 + five times your Magus level</set>
+      <set name="speed">30 ft., fly 30 ft. (hover)</set>
+      <set name="strength">16</set>
+      <set name="dexterity">12</set>
+      <set name="constitution">15</set>
+      <set name="intelligence">8</set>
+      <set name="wisdom">10</set>
+      <set name="charisma">14</set>
+      <set name="immunities">poison</set>
+      <set name="senses">darkvision 60 ft., passive Perception 10</set>
+      <set name="languages">Draconic, understands any languages you know</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE,ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_SOUL_BOUND</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_CLAW_POISON</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="14" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:speed" value="30" bonus="base" />
+      <stat name="companion:speed:fly" value="30" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Draconic Companion (Acid)" type="Companion" source="laserllama's Magus" id="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_GREATER_ACID">
+    <supports>Draconic Companion</supports>
+    <description>
+      <p>Your Draconic Companion of acidic Essence.</p>
+    </description>
+    <setters>
+      <set name="size">Medium</set>
+      <set name="type">Dragon</set>
+      <set name="alignment">Lawful</set>
+      <set name="challenge">0</set>
+      <set name="ac">14 + PB (natural armor)</set>
+      <set name="hp">5 + five times your Magus level</set>
+      <set name="speed">30 ft., fly 30 ft. (hover)</set>
+      <set name="strength">16</set>
+      <set name="dexterity">12</set>
+      <set name="constitution">15</set>
+      <set name="intelligence">8</set>
+      <set name="wisdom">10</set>
+      <set name="charisma">14</set>
+      <set name="immunities">acid</set>
+      <set name="senses">darkvision 60 ft., passive Perception 10</set>
+      <set name="languages">Draconic, understands any languages you know</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE,ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_SOUL_BOUND</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_GREATER_CLAW_ACID</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="14" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:speed" value="30" bonus="base" />
+      <stat name="companion:speed:fly" value="30" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Draconic Companion (Cold)" type="Companion" source="laserllama's Magus" id="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_GREATER_COLD">
+    <supports>Draconic Companion</supports>
+    <description>
+      <p>Your Draconic Companion of cold Essence.</p>
+    </description>
+    <setters>
+      <set name="size">Medium</set>
+      <set name="type">Dragon</set>
+      <set name="alignment">Lawful</set>
+      <set name="challenge">0</set>
+      <set name="ac">14 + PB (natural armor)</set>
+      <set name="hp">5 + five times your Magus level</set>
+      <set name="speed">30 ft., fly 30 ft. (hover)</set>
+      <set name="strength">16</set>
+      <set name="dexterity">12</set>
+      <set name="constitution">15</set>
+      <set name="intelligence">8</set>
+      <set name="wisdom">10</set>
+      <set name="charisma">14</set>
+      <set name="immunities">cold</set>
+      <set name="senses">darkvision 60 ft., passive Perception 10</set>
+      <set name="languages">Draconic, understands any languages you know</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE,ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_SOUL_BOUND</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_GREATER_CLAW_COLD</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="14" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:speed" value="30" bonus="base" />
+      <stat name="companion:speed:fly" value="30" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Draconic Companion (Lightning)" type="Companion" source="laserllama's Magus" id="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_GREATER_LIGHTNING">
+    <supports>Draconic Companion</supports>
+    <description>
+      <p>Your Draconic Companion of lightning Essence.</p>
+    </description>
+    <setters>
+      <set name="size">Medium</set>
+      <set name="type">Dragon</set>
+      <set name="alignment">Lawful</set>
+      <set name="challenge">0</set>
+      <set name="ac">14 + PB (natural armor)</set>
+      <set name="hp">5 + five times your Magus level</set>
+      <set name="speed">30 ft., fly 30 ft. (hover)</set>
+      <set name="strength">16</set>
+      <set name="dexterity">12</set>
+      <set name="constitution">15</set>
+      <set name="intelligence">8</set>
+      <set name="wisdom">10</set>
+      <set name="charisma">14</set>
+      <set name="immunities">lightning</set>
+      <set name="senses">darkvision 60 ft., passive Perception 10</set>
+      <set name="languages">Draconic, understands any languages you know</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE,ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_SOUL_BOUND</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_GREATER_CLAW_LIGHTNING</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="14" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:speed" value="30" bonus="base" />
+      <stat name="companion:speed:fly" value="30" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Draconic Companion (Fire)" type="Companion" source="laserllama's Magus" id="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_GREATER_FIRE">
+    <supports>Draconic Companion</supports>
+    <description>
+      <p>Your Draconic Companion of fiery Essence.</p>
+    </description>
+    <setters>
+      <set name="size">Medium</set>
+      <set name="type">Dragon</set>
+      <set name="alignment">Lawful</set>
+      <set name="challenge">0</set>
+      <set name="ac">14 + PB (natural armor)</set>
+      <set name="hp">5 + five times your Magus level</set>
+      <set name="speed">30 ft., fly 30 ft. (hover)</set>
+      <set name="strength">16</set>
+      <set name="dexterity">12</set>
+      <set name="constitution">15</set>
+      <set name="intelligence">8</set>
+      <set name="wisdom">10</set>
+      <set name="charisma">14</set>
+      <set name="immunities">fire</set>
+      <set name="senses">darkvision 60 ft., passive Perception 10</set>
+      <set name="languages">Draconic, understands any languages you know</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE,ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_SOUL_BOUND</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_GREATER_CLAW_FIRE</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="14" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:speed" value="30" bonus="base" />
+      <stat name="companion:speed:fly" value="30" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Draconic Companion (Poison)" type="Companion" source="laserllama's Magus" id="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_GREATER_POISON">
+    <supports>Draconic Companion</supports>
+    <description>
+      <p>Your Draconic Companion of poisonous Essence.</p>
+    </description>
+    <setters>
+      <set name="size">Medium</set>
+      <set name="type">Dragon</set>
+      <set name="alignment">Lawful</set>
+      <set name="challenge">0</set>
+      <set name="ac">14 + PB (natural armor)</set>
+      <set name="hp">5 + five times your Magus level</set>
+      <set name="speed">30 ft., fly 30 ft. (hover)</set>
+      <set name="strength">16</set>
+      <set name="dexterity">12</set>
+      <set name="constitution">15</set>
+      <set name="intelligence">8</set>
+      <set name="wisdom">0</set>
+      <set name="charisma">14</set>
+      <set name="immunities">poison</set>
+      <set name="senses">darkvision 60 ft., passive Perception 10</set>
+      <set name="languages">Draconic, understands any languages you know</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE,ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_SOUL_BOUND</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_GREATER_CLAW_POISON</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="14" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:speed" value="30" bonus="base" />
+      <stat name="companion:speed:fly" value="30" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Exalted Companion (Acid)" type="Companion" source="laserllama's Magus" id="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_EXALTED_ACID">
+    <supports>Draconic Companion</supports>
+    <description>
+      <p>Your Draconic Companion of acidic Essence.</p>
+    </description>
+    <setters>
+      <set name="size">Large</set>
+      <set name="type">Dragon</set>
+      <set name="alignment">Lawful</set>
+      <set name="challenge">0</set>
+      <set name="ac">20 (natural armor)</set>
+      <set name="hp">125</set>
+      <set name="speed">40 ft., climb 40 ft., fly 60 ft.</set>
+      <set name="strength">20</set>
+      <set name="dexterity">12</set>
+      <set name="constitution">18</set>
+      <set name="intelligence">14</set>
+      <set name="wisdom">10</set>
+      <set name="charisma">18</set>
+      <set name="immunities">acid</set>
+      <set name="senses">blindsight 30 ft., darkvision 60 ft., passive Perception 16</set>
+      <set name="languages">Draconic, understands any languages you know</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE_EXALTED,ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_SOUL_BOUND</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_EXALTED_CLAW_ACID,ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_ESSENCE_BREATH_ACID</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="14" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:speed" value="30" bonus="base" />
+      <stat name="companion:speed:fly" value="30" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Exalted Companion (Cold)" type="Companion" source="laserllama's Magus" id="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_EXALTED_COLD">
+    <supports>Draconic Companion</supports>
+    <description>
+      <p>Your Draconic Companion of cold Essence.</p>
+    </description>
+    <setters>
+      <set name="size">Large</set>
+      <set name="type">Dragon</set>
+      <set name="alignment">Lawful</set>
+      <set name="challenge">0</set>
+      <set name="ac">20 (natural armor)</set>
+      <set name="hp">125</set>
+      <set name="speed">40 ft., climb 40 ft., fly 60 ft.</set>
+      <set name="strength">20</set>
+      <set name="dexterity">12</set>
+      <set name="constitution">18</set>
+      <set name="intelligence">14</set>
+      <set name="wisdom">10</set>
+      <set name="charisma">18</set>
+      <set name="immunities">cold</set>
+      <set name="senses">blindsight 30 ft., darkvision 60 ft., passive Perception 16</set>
+      <set name="languages">Draconic, understands any languages you know</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE_EXALTED,ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_SOUL_BOUND</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_EXALTED_CLAW_ACID,ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_ESSENCE_BREATH_COLD</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="14" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:speed" value="30" bonus="base" />
+      <stat name="companion:speed:fly" value="30" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Exalted Companion (Fire)" type="Companion" source="laserllama's Magus" id="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_EXALTED_FIRE">
+    <supports>Draconic Companion</supports>
+    <description>
+      <p>Your Draconic Companion of fiery Essence.</p>
+    </description>
+    <setters>
+      <set name="size">Large</set>
+      <set name="type">Dragon</set>
+      <set name="alignment">Lawful</set>
+      <set name="challenge">0</set>
+      <set name="ac">20 (natural armor)</set>
+      <set name="hp">125</set>
+      <set name="speed">40 ft., climb 40 ft., fly 60 ft.</set>
+      <set name="strength">20</set>
+      <set name="dexterity">12</set>
+      <set name="constitution">18</set>
+      <set name="intelligence">14</set>
+      <set name="wisdom">10</set>
+      <set name="charisma">18</set>
+      <set name="immunities">fire</set>
+      <set name="senses">blindsight 30 ft., darkvision 60 ft., passive Perception 16</set>
+      <set name="languages">Draconic, understands any languages you know</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE_EXALTED,ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_SOUL_BOUND</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_EXALTED_CLAW_ACID,ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_ESSENCE_BREATH_FIRE</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="14" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:speed" value="30" bonus="base" />
+      <stat name="companion:speed:fly" value="30" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Exalted Companion (Lightning)" type="Companion" source="laserllama's Magus" id="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_EXALTED_LIGHTNING">
+    <supports>Draconic Companion</supports>
+    <description>
+      <p>Your Draconic Companion of lightning Essence.</p>
+    </description>
+    <setters>
+      <set name="size">Large</set>
+      <set name="type">Dragon</set>
+      <set name="alignment">Lawful</set>
+      <set name="challenge">0</set>
+      <set name="ac">20 (natural armor)</set>
+      <set name="hp">125</set>
+      <set name="speed">40 ft., climb 40 ft., fly 60 ft.</set>
+      <set name="strength">20</set>
+      <set name="dexterity">12</set>
+      <set name="constitution">18</set>
+      <set name="intelligence">14</set>
+      <set name="wisdom">10</set>
+      <set name="charisma">18</set>
+      <set name="immunities">lightning</set>
+      <set name="senses">blindsight 30 ft., darkvision 60 ft., passive Perception 16</set>
+      <set name="languages">Draconic, understands any languages you know</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE_EXALTED,ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_SOUL_BOUND</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_EXALTED_CLAW_ACID,ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_ESSENCE_BREATH_LIGHTNING</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="14" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:speed" value="30" bonus="base" />
+      <stat name="companion:speed:fly" value="30" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Exalted Companion (Poison)" type="Companion" source="laserllama's Magus" id="ID_LASERLL_COMPANION_MAGUS_DRACONIC_COMPANION_EXALTED_POISON">
+    <supports>Draconic Companion</supports>
+    <description>
+      <p>Your Draconic Companion of poisonous Essence.</p>
+    </description>
+    <setters>
+      <set name="size">Large</set>
+      <set name="type">Dragon</set>
+      <set name="alignment">Lawful</set>
+      <set name="challenge">0</set>
+      <set name="ac">20 (natural armor)</set>
+      <set name="hp">125</set>
+      <set name="speed">40 ft., climb 40 ft., fly 60 ft.</set>
+      <set name="strength">20</set>
+      <set name="dexterity">12</set>
+      <set name="constitution">18</set>
+      <set name="intelligence">14</set>
+      <set name="wisdom">10</set>
+      <set name="charisma">18</set>
+      <set name="immunities">poison</set>
+      <set name="senses">blindsight 30 ft., darkvision 60 ft., passive Perception 16</set>
+      <set name="languages">Draconic, understands any languages you know</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE_EXALTED,ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_SOUL_BOUND</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_EXALTED_CLAW_ACID,ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_ESSENCE_BREATH_POISON</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="14" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:hp:max" value="level:magus" />
+      <stat name="companion:speed" value="30" bonus="base" />
+      <stat name="companion:speed:fly" value="30" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Hit Dice" type="Companion Trait" source="laserllama's Magus" id="ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE">
+    <description>
+      <p>Your Companion has a total number of d8 Hit Dice equal to your Magus level. It also gains all the normal benefits of both short and long rests</p>
+    </description>
+    <sheet>
+      <description>Your Companion has a number of d8 hit dice equal to your Magus level and gains all normal benefits of short and long rests.</description>
+    </sheet>
+  </element>
+
+  <element name="Hit Dice" type="Companion Trait" source="laserllama's Magus" id="ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_HIT_DICE_EXALTED">
+    <description>
+      <p>Your Companion has a total number of d10 Hit Dice equal to your Magus level. It also gains all the normal benefits of both short and long rests</p>
+    </description>
+    <sheet>
+      <description>Your Companion has a number of d10 hit dice equal to your Magus level and gains all normal benefits of short and long rests.</description>
+    </sheet>
+  </element>
+
+  <element name="Soul Bound" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_TRAIT_MAGUS_DRACONIC_COMPANION_SOUL_BOUND">
+    <description>
+      <p>You add your PB to any ability check or saving throw that your Draconic Companion makes.</p>
+    </description>
+    <sheet>
+      <description>Add your PB to your Draconic Companion's ability checks and saving throws</description>
+    </sheet>
+  </element>
+
+  <element name="Claw" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_CLAW_COLD">
+    <description>
+      <p><em>Melee Weapon Attack:</em> +3 +PB to hit, reach 5 ft., one target. Hit: 1d4 +3 +PB slashing damage + 1d4 Essence damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: +3 +PB to hit, reach 5 ft., one target. Hit: 1d4 +3 +PB slashing damage + 1d4 cold damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Claw" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_GREATER_CLAW_COLD">
+    <description>
+      <p><em>Magical Melee Weapon Attack:</em> +3 +PB to hit, reach 5 ft., one target. Hit: 1d6 +3 +PB slashing damage + 1d6 Essence damage.</p>
+    </description>
+    <sheet>
+      <description>Magical Melee Weapon Attack: +3 +PB to hit, reach 5 ft., one target. Hit: 1d6 +3 +PB slashing damage + 1d6 cold damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Claw" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_EXALTED_CLAW_COLD">
+    <description>
+      <p><em>Melee Weapon Attack:</em> +11 +PB to hit, reach 5 ft., one target. Hit: 2d6 +5 magical slashing damage + 1d6 Essence damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: +11 +PB to hit, reach 5 ft., one target. Hit: 2d6 +5 magical slashing damage + 1d6 cold damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Claw" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_CLAW_FIRE">
+    <description>
+      <p><em>Melee Weapon Attack:</em> +3 +PB to hit, reach 5 ft., one target. Hit: 1d4 +3 +PB slashing damage + 1d4 Essence damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: +3 +PB to hit, reach 5 ft., one target. Hit: 1d4 +3 +PB slashing damage + 1d4 fire damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Claw" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_GREATER_CLAW_FIRE">
+    <description>
+      <p><em>Magical Melee Weapon Attack:</em> +3 +PB to hit, reach 5 ft., one target. Hit: 1d6 +3 +PB slashing damage + 1d6 Essence damage.</p>
+    </description>
+    <sheet>
+      <description>Magical Melee Weapon Attack: +3 +PB to hit, reach 5 ft., one target. Hit: 1d6 +3 +PB slashing damage + 1d6 fire damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Claw" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_EXALTED_CLAW_FIRED">
+    <description>
+      <p><em>Melee Weapon Attack:</em> +11 +PB to hit, reach 5 ft., one target. Hit: 2d6 +5 magical slashing damage + 1d6 Essence damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: +11 +PB to hit, reach 5 ft., one target. Hit: 2d6 +5 magical slashing damage + 1d6 fire damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Claw" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_CLAW_LIGHTNING">
+    <description>
+      <p><em>Melee Weapon Attack:</em> +3 +PB to hit, reach 5 ft., one target. Hit: 1d4 +3 +PB slashing damage + 1d4 Essence damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: +3 +PB to hit, reach 5 ft., one target. Hit: 1d4 +3 +PB slashing damage + 1d4 lightning damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Claw" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_GREATER_CLAW_LIGHTNING">
+    <description>
+      <p><em>Magical Melee Weapon Attack:</em> +3 +PB to hit, reach 5 ft., one target. Hit: 1d6 +3 +PB slashing damage + 1d6 Essence damage.</p>
+    </description>
+    <sheet>
+      <description>Magical Melee Weapon Attack: +3 +PB to hit, reach 5 ft., one target. Hit: 1d6 +3 +PB slashing damage + 1d6 lightning damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Claw" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_EXALTED_CLAW_LIGHTNING">
+    <description>
+      <p><em>Melee Weapon Attack:</em> +11 +PB to hit, reach 5 ft., one target. Hit: 2d6 +5 magical slashing damage + 1d6 Essence damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: +11 +PB to hit, reach 5 ft., one target. Hit: 2d6 +5 magical slashing damage + 1d6 lightning damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Claw" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_CLAW_POISON">
+    <description>
+      <p><em>Melee Weapon Attack:</em> +3 +PB to hit, reach 5 ft., one target. Hit: 1d4 +3 +PB slashing damage + 1d4 poison damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: +3 +PB to hit, reach 5 ft., one target. Hit: 1d4 +3 +PB slashing damage + 1d4 acid damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Claw" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_GREATER_CLAW_POISON">
+    <description>
+      <p><em>Magical Melee Weapon Attack:</em> +3 +PB to hit, reach 5 ft., one target. Hit: 1d6 +3 +PB slashing damage + 1d6 Essence damage.</p>
+    </description>
+    <sheet>
+      <description>Magical Melee Weapon Attack: +3 +PB to hit, reach 5 ft., one target. Hit: 1d6 +3 +PB slashing damage + 1d6 poison damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Claw" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_EXALTED_CLAW_POISON">
+    <description>
+      <p><em>Melee Weapon Attack:</em> +11 +PB to hit, reach 5 ft., one target. Hit: 2d6 +5 magical slashing damage + 1d6 Essence damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: +11 +PB to hit, reach 5 ft., one target. Hit: 2d6 +5 magical slashing damage + 1d6 poison damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Claw" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_CLAW_ACID">
+    <description>
+      <p><em>Melee Weapon Attack:</em> +3 +PB to hit, reach 5 ft., one target. Hit: 1d4 +3 +PB slashing damage + 1d4 Essence damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: +3 +PB to hit, reach 5 ft., one target. Hit: 1d4 +3 +PB slashing damage + 1d4 acid damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Claw" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_GREATER_CLAW_ACID">
+    <description>
+      <p><em>Magical Melee Weapon Attack:</em> +3 +PB to hit, reach 5 ft., one target. Hit: 1d6 +3 +PB slashing damage + 1d6 Essence damage.</p>
+    </description>
+    <sheet>
+      <description>Magical Melee Weapon Attack: +3 +PB to hit, reach 5 ft., one target. Hit: 1d6 +3 +PB slashing damage + 1d6 acid damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Claw" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_EXALTED_CLAW_ACID">
+    <description>
+      <p><em>Melee Weapon Attack:</em> +11 +PB to hit, reach 5 ft., one target. Hit: 2d6 +5 magical slashing damage + 1d6 Essence damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: +11 +PB to hit, reach 5 ft., one target. Hit: 2d6 +5 magical slashing damage + 1d6 acid damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Essence Breath (Recharge 5-6)" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_ESSENCE_BREATH_ACID">
+    <description>
+      <p>Your Companion can exhale elemental energy in a 30-foot cone, forcing any creatures in that area to make a Dexterity saving throw. Creatures take 12d6 Essence damage on a failure, and half as much damage on a success.</p>
+      <p class="indent">This replaces your Elemental Breath feature</p>
+    </description>
+    <sheet>
+      <description>Your Companion exhales a 30 ft. cone of acid breath that forces targets to make a Dexterity saving throw (DC {{magus save:dc}}), taking 12d6 acid damage on a failure and half that on a success.</description>
+    </sheet>
+  </element>
+
+  <element name="Essence Breath (Recharge 5-6)" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_ESSENCE_BREATH_COLD">
+    <description>
+      <p>Your Companion can exhale elemental energy in a 30-foot cone, forcing any creatures in that area to make a Dexterity saving throw. Creatures take 12d6 Essence damage on a failure, and half as much damage on a success.</p>
+      <p class="indent">This replaces your Elemental Breath feature</p>
+    </description>
+    <sheet>
+      <description>Your Companion exhales a 30 ft. cone of cold breath that forces targets to make a Dexterity saving throw (DC {{magus save:dc}}), taking 12d6 acid damage on a failure and half that on a success.</description>
+    </sheet>
+  </element>
+
+  <element name="Essence Breath (Recharge 5-6)" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_ESSENCE_BREATH_FIRE">
+    <description>
+      <p>Your Companion can exhale elemental energy in a 30-foot cone, forcing any creatures in that area to make a Dexterity saving throw. Creatures take 12d6 Essence damage on a failure, and half as much damage on a success.</p>
+      <p class="indent">This replaces your Elemental Breath feature</p>
+    </description>
+    <sheet>
+      <description>Your Companion exhales a 30 ft. cone of fiery breath that forces targets to make a Dexterity saving throw (DC {{magus save:dc}}), taking 12d6 acid damage on a failure and half that on a success.</description>
+    </sheet>
+  </element>
+
+  <element name="Essence Breath (Recharge 5-6)" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_ESSENCE_BREATH_LIGHTNING">
+    <description>
+      <p>Your Companion can exhale elemental energy in a 30-foot cone, forcing any creatures in that area to make a Dexterity saving throw. Creatures take 12d6 Essence damage on a failure, and half as much damage on a success.</p>
+      <p class="indent">This replaces your Elemental Breath feature</p>
+    </description>
+    <sheet>
+      <description>Your Companion exhales a 30 ft. cone of lightning breath that forces targets to make a Dexterity saving throw (DC {{magus save:dc}}), taking 12d6 acid damage on a failure and half that on a success.</description>
+    </sheet>
+  </element>
+
+  <element name="Essence Breath (Recharge 5-6)" type="Companion Action" source="laserllama's Magus" id="ID_LASERLL_COMPANION_ACTION_MAGUS_DRACONIC_COMPANION_ESSENCE_BREATH_POISON">
+    <description>
+      <p>Your Companion can exhale elemental energy in a 30-foot cone, forcing any creatures in that area to make a Dexterity saving throw. Creatures take 12d6 Essence damage on a failure, and half as much damage on a success.</p>
+      <p class="indent">This replaces your Elemental Breath feature</p>
+    </description>
+    <sheet>
+      <description>Your Companion exhales a 30 ft. cone of poison breath that forces targets to make a Dexterity saving throw (DC {{magus save:dc}}), taking 12d6 acid damage on a failure and half that on a success.</description>
+    </sheet>
+  </element>
+
+  <element name="Draconic Companion" type="Information" source="laserllama's Magus" id="ID_LASERLL_INFORMATION_DRACONIC_COMPANION">
+    <description>
+      <p style="margin-bottom:-5px"><em>Small Dragon</em></p>
+      <h4 style="margin-top:5px" />
+      <ul class="unstyled">
+        <li><strong>Armor Class</strong> 14 + PB</li>
+        <li><strong>Speed</strong> 30 ft., fly 30 ft.</li>
+      </ul>
+      <ul class="unstyled">
+        <li><strong>Damage Immunities</strong> Essence type</li>
+        <li><strong>Senses</strong> darkvision 60 ft., passive Perception 10</li>
+        <li><strong>Languages</strong> Draconic, understand any languages spoken by the Magus bound to it</li>
+      </ul>
+      <h4 style="margin-top:5px; margin-bottom:10px" />
+      <ul class="unstyled">
+        <li><strong><em>Hit Dice.</em></strong> Your Companion has a total number of d8 Hit Dice equal to your Magus level. It also gains all the normal benefits of both short and long rests.</li>
+        <li><strong><em>Soul Bound.</em></strong> You add your PB to any ability check or saving throw that your Draconic Companion makes.</li>
+      </ul>
+      <h4 style="margin-top:10px">Actions</h4>
+      <ul class="unstyled">
+        <li><em><strong>Claw.</strong></em><em>Melee Weapon Attack:</em> +3 +PB to hit, reach 5 ft., one target. Hit: 1d4 +3 +PB slashing damage + 1d4 Essence damage.</li>
+      </ul>
+    </description>
+  </element>
+
+  <element name="Exalted Companion" type="Information" source="laserllama's Magus" id="ID_LASERLL_INFORMATION_EXALTED_COMPANION">
+    <description>
+      <p style="margin-bottom:-5px"><em>Large Dragon</em></p>
+      <h4 style="margin-top:5px" />
+      <ul class="unstyled">
+        <li><strong>Armor Class</strong> 20</li>
+        <li><strong>Speed</strong> 40 ft., climb 30 ft., fly 60 ft.</li>
+      </ul>
+      <ul class="unstyled">
+        <li><strong>Damage Immunities</strong> Essence type</li>
+        <li><strong>Senses</strong> blindsight 30 ft., darkvision 60 ft., passive Perception 10</li>
+        <li><strong>Languages</strong> Draconic, understand any languages spoken by the Magus bound to it</li>
+      </ul>
+      <h4 style="margin-top:5px; margin-bottom:10px" />
+      <ul class="unstyled">
+        <li><strong><em>Hit Dice.</em></strong> Your Companion has a total number of d10 Hit Dice equal to your Magus level. It also gains all the normal benefits of both short and long rests.</li>
+        <li><strong><em>Soul Bound.</em></strong> You add your PB to any ability check or saving throw that your Draconic Companion makes.</li>
+      </ul>
+      <h4 style="margin-top:10px">Actions</h4>
+      <ul class="unstyled">
+        <li><em><strong>Claw.</strong></em><em>Melee Weapon Attack:</em> +11 to hit, reach 5 ft., one target. Hit: 2d6 +5 slashing damage + 1d6 Essence damage.</li>
+        <li><em><strong>Essence Breath (Recharge 5-6).</strong></em>Your Companion can exhale elemental energy in a 30-foot cone, forcing any creatures in that area to make a Dexterity saving throw. Creatures take 12d6 Essence damage on a failure, and half as much damage on a success.&#13;&#10;This replaces your Elemental Breath feature</li>
+      </ul>
+    </description>
+  </element>
+
+  <element name="Wyrmsoul" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_WYRMSOUL">
+    <description>
+      <p>The bond has infused your soul with draconic power. You learn to speak, read, and write Draconic.</p>
+      <p class="indent">Also, if you cast a Magus spell that deals acid, cold, fire, lightning, or poison damage, you can cause it to deal the damage type of your Companion's Essence instead of its damage type.</p>
+    </description>
+    <sheet display="false">
+      <description></description>
+    </sheet>
+    <rules>
+    </rules>
+  </element>
+
+  <element name="Wyrmsoul" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_WYRMSOUL_ACID">
+    <description>
+      <p>The bond has infused your soul with draconic power. You learn to speak, read, and write Draconic.</p>
+      <p class="indent">Also, if you cast a Magus spell that deals acid, cold, fire, lightning, or poison damage, you can cause it to deal the damage type of your Companion's Essence instead of its damage type.</p>
+    </description>
+    <sheet>
+      <description>When you cast a Magus spell that deals cold, fire, lightning, or poison damage, you can convert it to acid damage instead.</description>
+    </sheet>
+    <rules>
+      <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+    </rules>
+  </element>
+  <element name="Wyrmsoul" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_WYRMSOUL_COLD">
+    <description>
+      <p>The bond has infused your soul with draconic power. You learn to speak, read, and write Draconic.</p>
+      <p class="indent">Also, if you cast a Magus spell that deals acid, cold, fire, lightning, or poison damage, you can cause it to deal the damage type of your Companion's Essence instead of its damage type.</p>
+    </description>
+    <sheet>
+      <description>When you cast a Magus spell that deals acid, fire, lightning, or poison damage, you can convert it to cold damage instead.</description>
+    </sheet>
+    <rules>
+      <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+    </rules>
+  </element>
+  <element name="Wyrmsoul" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_WYRMSOUL_FIRE">
+    <description>
+      <p>The bond has infused your soul with draconic power. You learn to speak, read, and write Draconic.</p>
+      <p class="indent">Also, if you cast a Magus spell that deals acid, cold, fire, lightning, or poison damage, you can cause it to deal the damage type of your Companion's Essence instead of its damage type.</p>
+    </description>
+    <sheet>
+      <description>When you cast a Magus spell that deals acid, cold, lightning, or poison damage, you can convert it to fire damage instead.</description>
+    </sheet>
+    <rules>
+      <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+    </rules>
+  </element>
+  <element name="Wyrmsoul" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_WYRMSOUL_LIGHTNING">
+    <description>
+      <p>The bond has infused your soul with draconic power. You learn to speak, read, and write Draconic.</p>
+      <p class="indent">Also, if you cast a Magus spell that deals acid, cold, fire, lightning, or poison damage, you can cause it to deal the damage type of your Companion's Essence instead of its damage type.</p>
+    </description>
+    <sheet>
+      <description>When you cast a Magus spell that deals acid, cold, fire, or poison damage, you can convert it to lightning damage instead.</description>
+    </sheet>
+    <rules>
+      <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+    </rules>
+  </element>
+  <element name="Wyrmsoul" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_WYRMSOUL_POISON">
+    <description>
+      <p>The bond has infused your soul with draconic power. You learn to speak, read, and write Draconic.</p>
+      <p class="indent">Also, if you cast a Magus spell that deals acid, cold, fire, lightning, or poison damage, you can cause it to deal the damage type of your Companion's Essence instead of its damage type.</p>
+    </description>
+    <sheet>
+      <description>When you cast a Magus spell that deals acid, cold, fire, or lightning damage, you can convert it to poison damage instead.</description>
+    </sheet>
+    <rules>
+      <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+    </rules>
+  </element>
+
+  <element name="Dragon Knight Spells" type="Archetype Feature" source="Laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_DRAGON_KNIGHT_SPELLS">
+    <description>
+      <p>When you gain a level in this class, you can replace one spell from this feature with abjuration or evocation spell of the same level from the Magus or Sorcerer spell list.</p>
+      <table>
+        <thead>
+          <tr><td>Magus Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>compelled duel, zephyr strike<sup>XGTE</sup></em></td></tr>
+        <tr><td>5th</td><td><em>blur, misty step</em></td></tr>
+        <tr><td>9th</td><td><em>elemental weapon, haste</em></td></tr>
+        <tr><td>13th</td><td><em>fire shield, freedom of movement</em></td></tr>
+        <tr><td>13th</td><td><em>steel wind strike<sup>LL</sup>, vorpal blade<sup>LL</sup></em></td></tr>
+      </table>
+    </description>
+    <sheet>
+      <description>When you gain a Magus level, you can replace one spell from this feature with an abjuration spell from the Magus or Sorcerer spell lists of the same level.</description>
+    </sheet>
+    <rules>
+      <select type="Spell" name="1st Additional Spell (Dragon Knight)" supports="1,(Abjuration||Evocation),(Magus||Sorcerer)||Absorb Elements" level="3" default="ID_XGTE_SPELL_ABSORB_ELEMENTS" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="2nd Additional Spell (Dragon Knight)" supports="1,(Abjuration||Evocation),(Magus||Sorcerer)||Command" level="3" default="ID_PHB_SPELL_COMMAND" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="3rd Additional Spell (Dragon Knight)" supports="2,(Abjuration||Evocation),(Magus||Sorcerer)||Dragons Breath" level="5" default="ID_XGTE_SPELL_DRAGONS_BREATH" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="4th Additional Spell (Dragon Knight)" supports="2,(Abjuration||Evocation),(Magus||Sorcerer)||Warding Bond" level="5" default="ID_PHB_SPELL_WARDING_BOND" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="5th Additional Spell (Dragon Knight)" supports="3,(Abjuration||Evocation),(Magus||Sorcerer)||Elemental Weapon" level="9" default="ID_PHB_SPELL_ELEMENTAL_WEAPON" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="6th Additional Spell (Dragon Knight)" supports="3,(Abjuration||Evocation),(Magus||Sorcerer)||Fear" level="9" default="ID_PHB_SPELL_FEAR" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="7th Additional Spell (Dragon Knight)" supports="4,(Abjuration||Evocation),(Magus||Sorcerer)||Dominate Beast" level="13" default="ID_PHB_SPELL_DOMINATE_BEAST" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="8th Additional Spell (Dragon Knight)" supports="4,(Abjuration||Evocation),(Magus||Sorcerer)|Elemental Bane" level="13" default="ID_XGTE_SPELL_ELEMENTAL_BANE" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="9th Additional Spell (Dragon Knight)" supports="5,(Abjuration||Evocation),(Magus||Sorcerer)||Awaken" level="17" default="ID_PHB_SPELL_AWAKEN" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="10th Additional Spell (Dragon Knight)" supports="5,(Abjuration||Evocation),(Magus||Sorcerer)||Dominate Person" level="17" default="ID_PHB_SPELL_DOMINATE_PERSON" spellcasting="Magus" allowReplace="false" />
+    </rules>
+  </element>
+
+  <append id="ID_XGTE_SPELL_ABSORB_ELEMENTS">
+      <supports>Absorb Elements</supports>
+  </append>
+  <append id="ID_PHB_SPELL_WARDING_BOND">
+      <supports>Warding Bond</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_DRAGONS_BREATH">
+      <supports>Dragons Breath</supports>
+  </append>
+  <append id="ID_PHB_SPELL_WARDING_BOND">
+      <supports>Warding Bond</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ELEMENTAL_WEAPON">
+      <supports>Elemental Weapon</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FEAR">
+      <supports>Fear</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DOMINATE_BEAST">
+      <supports>Dominate Beast</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_ELEMENTAL_BANE">
+      <supports>Elemental Bane</supports>
+  </append>
+  <append id="ID_PHB_SPELL_AWAKEN">
+      <supports>Awaken</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DOMINATE_PERSON">
+      <supports>Dominate Person</supports>
+  </append>
+
+
+  <element name="Greater Companion" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GREATER_COMPANION">
+    <description>
+      <p>As your power increases, so does that of your Companion. Your Companion becomes Medium in size and can bear you as a rider so long as you are Medium or smaller. However, its flying speed is halved while you are riding it.</p>
+      <p class="indent">Your Companion's claw attacks also count as magical, and you roll d6s in place of d4s for its Claw attack damage rolls.</p>
+    </description>
+    <sheet>
+      <description>If you are Medium or smaller, you can ride your Draconic Companion; its flying speed is halved while being ridden.</description>
+    </sheet>
+  </element>
+
+  <element name="Elemental Breath" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_ELEMENTAL_BREATH">
+    <description>
+      <p>Your Companion can channel its Essence into a blast of pure elemental power. As an action, it can exhale a 30-foot cone of elemental breath. Targets in that area must make a Dexterity saving throw against your Magus Spell save DC. Targets take 10d6 Essence damage on a failure, and half on a success.</p>
+      <p class="indent">Your Companion can use its Elemental Breath a number of times equal to your Intelligence modifier (minimum of once), and it regains all expended uses when it finishes a long rest. If it has no uses left, you can expend a spell slot of 3rd-level or higher to command it to use its Elemental Breath again.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Elemental Breath" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_ELEMENTAL_BREATH_ACID">
+    <description>
+      <p>Your Companion can channel its Essence into a blast of pure elemental power. As an action, it can exhale a 30-foot cone of elemental breath. Targets in that area must make a Dexterity saving throw against your Magus Spell save DC. Targets take 10d6 Essence damage on a failure, and half on a success.</p>
+      <p class="indent">Your Companion can use its Elemental Breath a number of times equal to your Intelligence modifier (minimum of once), and it regains all expended uses when it finishes a long rest. If it has no uses left, you can expend a spell slot of 3rd-level or higher to command it to use its Elemental Breath again.</p>
+    </description>
+    <sheet>
+      <description usage="{{min 1 int}}/Long Rest" action="Action">Command your Companion to exhale a 30 ft. cone of acid breath that forces targets to make a Dexterity saving throw (DC {{magus save:dc}}), taking 10d6 acid damage on a failure and half that on a success. If out of uses, you can expend a 3rd-level spell slot or higher instead.</description>
+    </sheet>
+  </element>
+
+  <element name="Elemental Breath" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_ELEMENTAL_BREATH_COLD">
+    <description>
+      <p>Your Companion can channel its Essence into a blast of pure elemental power. As an action, it can exhale a 30-foot cone of elemental breath. Targets in that area must make a Dexterity saving throw against your Magus Spell save DC. Targets take 10d6 Essence damage on a failure, and half on a success.</p>
+      <p class="indent">Your Companion can use its Elemental Breath a number of times equal to your Intelligence modifier (minimum of once), and it regains all expended uses when it finishes a long rest. If it has no uses left, you can expend a spell slot of 3rd-level or higher to command it to use its Elemental Breath again.</p>
+    </description>
+    <sheet>
+      <description usage="{{min 1 int}}/Long Rest" action="Action">Command your Companion to exhale a 30 ft. cone of cold breath that forces targets to make a Dexterity saving throw (DC {{magus save:dc}}), taking 10d6 cold damage on a failure and half that on a success. If out of uses, you can expend a 3rd-level spell slot or higher instead.</description>
+    </sheet>
+  </element>
+
+  <element name="Elemental Breath" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_ELEMENTAL_BREATH_FIRE">
+    <description>
+      <p>Your Companion can channel its Essence into a blast of pure elemental power. As an action, it can exhale a 30-foot cone of elemental breath. Targets in that area must make a Dexterity saving throw against your Magus Spell save DC. Targets take 10d6 Essence damage on a failure, and half on a success.</p>
+      <p class="indent">Your Companion can use its Elemental Breath a number of times equal to your Intelligence modifier (minimum of once), and it regains all expended uses when it finishes a long rest. If it has no uses left, you can expend a spell slot of 3rd-level or higher to command it to use its Elemental Breath again.</p>
+    </description>
+    <sheet>
+      <description usage="{{min 1 int}}/Long Rest" action="Action">Command your Companion to exhale a 30 ft. cone of fire breath that forces targets to make a Dexterity saving throw (DC {{magus save:dc}}), taking 10d6 fire damage on a failure and half that on a success. If out of uses, you can expend a 3rd-level spell slot or higher instead.</description>
+    </sheet>
+  </element>
+
+  <element name="Elemental Breath" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_ELEMENTAL_BREATH_LIGHTNING">
+    <description>
+      <p>Your Companion can channel its Essence into a blast of pure elemental power. As an action, it can exhale a 30-foot cone of elemental breath. Targets in that area must make a Dexterity saving throw against your Magus Spell save DC. Targets take 10d6 Essence damage on a failure, and half on a success.</p>
+      <p class="indent">Your Companion can use its Elemental Breath a number of times equal to your Intelligence modifier (minimum of once), and it regains all expended uses when it finishes a long rest. If it has no uses left, you can expend a spell slot of 3rd-level or higher to command it to use its Elemental Breath again.</p>
+    </description>
+    <sheet>
+      <description usage="{{min 1 int}}/Long Rest" action="Action">Command your Companion to exhale a 30 ft. cone of lightning breath that forces targets to make a Dexterity saving throw (DC {{magus save:dc}}), taking 10d6 lightning damage on a failure and half that on a success. If out of uses, you can expend a 3rd-level spell slot or higher instead.</description>
+    </sheet>
+  </element>
+
+  <element name="Elemental Breath" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_ELEMENTAL_BREATH_POISON">
+    <description>
+      <p>Your Companion can channel its Essence into a blast of pure elemental power. As an action, it can exhale a 30-foot cone of elemental breath. Targets in that area must make a Dexterity saving throw against your Magus Spell save DC. Targets take 10d6 Essence damage on a failure, and half on a success.</p>
+      <p class="indent">Your Companion can use its Elemental Breath a number of times equal to your Intelligence modifier (minimum of once), and it regains all expended uses when it finishes a long rest. If it has no uses left, you can expend a spell slot of 3rd-level or higher to command it to use its Elemental Breath again.</p>
+    </description>
+    <sheet>
+      <description usage="{{min 1 int}}/Long Rest" action="Action">Command your Companion to exhale a 30 ft. cone of poison breath that forces targets to make a Dexterity saving throw (DC {{magus save:dc}}), taking 10d6 poison damage on a failure and half that on a success. If out of uses, you can expend a 3rd-level spell slot or higher instead.</description>
+    </sheet>
+  </element>
+
+  <element name="Mythic Companion" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_MYTHIC_COMPANION">
+    <description>
+      <p>Your bond with your Companion has unlocked its true power. As an action, your Companion can change its size, choosing to be Small, Medium, or Large. If it is Large in size, its flying speed is no longer halved while it bears you as its rider. Also, once per turn when you command your Companion to attack, it can make two attacks instead of one.</p>
+    </description>
+    <sheet>
+      <description usage="Action">Command your Companion to change its size to Small, Medium, or Large; if Large, its flying speed is no longer halved while being ridden. Once a day, when you command it to attack, it attacks twice.</description>
+    </sheet>
+  </element>
+
+  <element name="Grand Dragon Knight" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_DRAGON_KNIGHT_GRAND_DRAGON_KNIGHT">
+    <description>
+      <p>Empowered by your bond, your Draconic Companion has realized its true power. Your Companion uses the Exalted Companion stat block below in place of its previous statistics:</p>
+      <div element="ID_LASERLL_INFORMATION_EXALTED_COMPANION" />
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Order of Spellbreakers" type="Archetype" source="Laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_ORDER_OF_SPELLBREAKERS">
+    <supports>Esoteric Order</supports>
+    <description>
+      <p>Magi who join the Order of Spellbreakers are known for their ruthless dedication to achieving their goals. This fraternity of arcane warriors and mage hunters use their Order's abilities to slay any who abuse magic power. While most Spellbreakers are discerning as they deliver judgment, some swear an oath to destroy any who utilize the arcane arts.</p>
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_BALEFUL_MARK" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_SPELLBREAKER_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_MANTLE_OF_DEFENSE" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_CRIPPLING_MARK" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_REFLECTIVE_SPELLSUNDER" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_MASTER_SPELLBREAKER" />
+    </description>
+    <sheet display="false">
+      <description>Spellbreakers use their Order's abilities to slay any who abuse magic power.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_BALEFUL_MARK" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_SPELLBREAKER_SPELLS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_MANTLE_OF_DEFENSE" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_CRIPPLING_MARK" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_REFLECTIVE_SPELLSUNDER" level="15"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_MASTER_SPELLBREAKER" level="20"/>
+    </rules>
+  </element>
+  <element name="Baleful Mark" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_BALEFUL_MARK">
+    <description>
+      <p>As a bonus action on your turn, you can place a Baleful Mark on a creature you can see. This Mark lasts until you use this feature on another creature, the target dies, or it is removed by an equally powerful spell.</p>
+      <p class="indent">This Mark is only visible to you, and while it is active, you gain the benefits listed below:</p>
+      <ul>
+        <li>You know the exact direction of your Mark, so long as you both remain on the same plane of existence.</li>
+        <li>You learn its spellcasting ability and the level of the highest level spell it can cast, if any.</li>
+        <li>When you roll damage for an attack or spell, you can roll the damage dice twice and use the higher result. Once you do, you cannot do so again until the start of your next turn.</li>
+        <li>If your Mark attempts to cast a spell while it is within your reach, you can use your reaction to make an opportunity attack against it.</li>
+        <li>Whenever you damage your Mark, it has disadvantage on its subsequent saving throw to maintain concentration.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description action="Bonus Action">Mark a target wih Baleful Mark, lasting until you mark another creature, it dies, or it is removed by another spell. While active:&#13;&#10;You know which direction the Mark is from you as long as you are on the same plane of existence.&#13;&#10;You know its spellcasting ability and highest spell level.&#13;&#10;Once per turn when you roll attack or spell damage against it, roll twice and use the higher result.&#13;&#10;If the Mark attempts to cast a spell while within your reach, you can use your reaction to make an opportunity attack against it.&#13;&#10;When you damage your Mark it has disadvantage to saving throws to maintain concentration.</description>
+    </sheet>
+  </element>
+  <element name="Spellbreaker Spells" type="Archetype Feature" source="Laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_SPELLBREAKER_SPELLS">
+    <description>
+      <p>When you gain a level in this class, you can replace one spell from this feature with enchantment or illusion spell of the same level from the Magus or Wizard spell list.</p>
+      <table>
+        <thead>
+          <tr><td>Magus Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>bane, detect evil and good</em></td></tr>
+        <tr><td>5th</td><td><em>blindness/deafness, silence</em></td></tr>
+        <tr><td>9th</td><td><em>counterspell, magic circle</em></td></tr>
+        <tr><td>13th</td><td><em>banishment, resilient sphere</em></td></tr>
+        <tr><td>13th</td><td><em>dispel evil and good, planar binding</em></td></tr>
+      </table>
+    </description>
+    <sheet>
+      <description>When you gain a Magus level, you can replace one spell from this feature with an enchantment or illusion spell from the Magus or Wizard spell lists of the same level.</description>
+    </sheet>
+    <rules>
+      <select type="Spell" name="1st Additional Spell (Spellbreaker)" supports="1,(Enchantment||Illusion),(Magus||Wizard)||Bane" level="3" default="ID_PHB_SPELL_BANE" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="2nd Additional Spell (Spellbreaker)" supports="1,(Enchantment||Illusion),(Magus||Wizard)||Detect Evil and Good" level="3" default="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="3rd Additional Spell (Spellbreaker)" supports="2,(Enchantment||Illusion),(Magus||Wizard)||BlindnessDeafness" level="5" default="ID_PHB_SPELL_BLINDNESS_DEAFNESS" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="4th Additional Spell (Spellbreaker)" supports="2,(Enchantment||Illusion),(Magus||Wizard)||Silence" level="5" default="ID_PHB_SPELL_SILENCE" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="5th Additional Spell (Spellbreaker)" supports="3,(Enchantment||Illusion),(Magus||Wizard)||Counterspell" level="9" default="ID_PHB_SPELL_COUNTERSPELL" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="6th Additional Spell (Spellbreaker)" supports="3,(Enchantment||Illusion),(Magus||Wizard)||Magic Circle" level="9" default="ID_PHB_SPELL_MAGIC_CIRCLE" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="7th Additional Spell (Spellbreaker)" supports="4,(Enchantment||Illusion),(Magus||Wizard)||Banishment" level="13" default="ID_PHB_SPELL_BANISHMENT" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="8th Additional Spell (Spellbreaker)" supports="4,(Enchantment||Illusion),(Magus||Wizard)||Otilukes Resilient Sphere" level="13" default="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="9th Additional Spell (Spellbreaker)" supports="5,(Enchantment||Illusion),(Magus||Wizard)||Dispel Evil and Good" level="17" default="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="10th Additional Spell (Spellbreaker)" supports="5,(Enchantment||Illusion),(Magus||Wizard)||Planar Binding" level="17" default="ID_PHB_SPELL_PLANAR_BINDING" spellcasting="Magus" allowReplace="false" />
+    </rules>
+  </element>
+
+  <append id="ID_PHB_SPELL_BANE">
+      <supports>Bane</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD">
+      <supports>Detect Evil and Good</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BLINDNESS_DEAFNESS">
+      <supports>BlindnessDeafness</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SILENCE">
+      <supports>Silence</supports>
+  </append>
+  <append id="ID_PHB_SPELL_COUNTERSPELL">
+      <supports>Counterspell</supports>
+  </append>
+  <append id="ID_PHB_SPELL_MAGIC_CIRCLE">
+      <supports>Magic Circle</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BANISHMENT">
+      <supports>Banishment</supports>
+  </append>
+  <append id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE">
+      <supports>Resilient Sphere</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD">
+      <supports>Dispel Evil and Good</supports>
+  </append>
+  <append id="ID_PHB_SPELL_PLANAR_BINDING">
+      <supports>Planar Binding</supports>
+  </append>
+
+  <element name="Mantle of Defense" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_MANTLE_OF_DEFENSE">
+    <description>
+      <p>You can steel yourself to better resist the magic of your hated foes. Whenever your Mark forces you to make a saving throw to resist a spell or another magical effect, you gain a bonus to your roll equal to your Intelligence modifier (minimum of +1).</p>
+    </description>
+    <sheet>
+      <description>When your Mark forces you to make a saving throw to resist a spell or magical effect, gain +{{min 1 int}} on the roll.</description>
+    </sheet>
+  </element>
+
+  <element name="Crippling Mark" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_CRIPPLING_MARK">
+    <description>
+      <p>Whenever you see your Mark make an ability check or saving throw and you are within 30 feet, you can use your reaction to end your Baleful Mark and impose disadvantage on its roll.</p>
+      <p class="indent">However, when you end your Baleful Mark in this way, you cannot Mark that creature again until you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When you see your Mark makes an ability check or saving throw within 30 ft, end your Baleful Mark to impose disadvantage on it. Once ended, you cannot mark it again until after a long rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Reflective Spellsunder" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_REFLECTIVE_SPELLSUNDER">
+    <description>
+      <p>You can use the magic of your Order to reflect your enemy's magic back upon themselves. When you use Spellsunder and cause the spell to fail, you can force the creature that cast the spell to become the new target of their own spell.</p>
+      <p class="indent">The spell uses the caster's spell attack roll and Spell save DC. If it requires concentration, you must concentrate on it.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When you see a creature within 30 ft. is targeted by a spell, expend a spell slot and teleport within 5 ft. of it (or if you yourself are targeted by a spell); if the expended slot level is equal to or greater than the spell's level, that spell fails. If it is lower, make a weapon attack roll, and if it exceeds 12 + twice the spell's level, that spell fails.&#13;&#10;When you cause a spell to fail with this you can force its caster to become the target of their own spell, and they must roll with their own spell attack and spell save DC. If the spell required concentration, you must concentrate to redirect it.</description>
+    </sheet>
+  </element>
+
+  <element name="Master Spellbreaker" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_SPELLBREAKER_MASTER_SPELLBREAKER">
+    <description>
+      <p>you have risen through the ranks of your Order to become an unparalleled hunter of mages. You gain the benefits below:</p>
+      <ul>
+        <li>When you roll initiative, so long as you are not surprised, you can mark a creature you can see with Baleful Mark.</li>
+        <li>You have advantage on any weapon attack rolls you make as part of Spellstrike and Spellsunder against your Mark.</li>
+        <li>When you hit your Mark with a Spellstrike attack, you can end your Baleful Mark to cause your attack, including the spell, to deal maximum damage. After you do so, you can't Mark that creature again until you finish a long rest.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description >When you roll initiative, if you are not surprised, you can mark a visible creature with Baleful Mark.&#13;&#10;You have advantage on Spellstrike and Spellsunder weapon attack rolls against your Mark.&#13;&#10;When you hit your Mark with a Spellstrike attack, you can end your Baleful mark to cause both the attack and spell to deal maximum damage; once ended, you cannot mark it again until after a long rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Order of Warders" type="Archetype" source="Laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_ORDER_OF_WARDERS">
+    <supports>Esoteric Order</supports>
+    <description>
+      <p>Magi who join the Order of Warders almost always do so for noble reasons. Combining their talent for the arcane with their signature style of defensive combat to serve as guardians for mages, nobles, and other important figures. While they are ultimately loyal to their Order, Warders make fierce friends and will stand side by side with their allies against any foe.</p>
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_WARDER_WARDER_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_WARDER_WARDERS_BOND" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_WARDER_ARCANE_AEGIS" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_WARDER_BOND_PERFECTED" />
+      <div element="ID_LASERLL_ARCHETYPE_MAGUS_WARDER_HIGH_WARDER" />
+    </description>
+    <sheet display="false">
+      <description>Warders make fierce friends and will stand side by side with their allies against any foe.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_WARDER_WARDER_SPELLS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_WARDER_WARDERS_BOND" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_WARDER_ARCANE_AEGIS" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_WARDER_BOND_PERFECTED" level="15"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_MAGUS_WARDER_HIGH_WARDER" level="20"/>
+    </rules>
+  </element>
+  <element name="Warder Spells" type="Archetype Feature" source="Laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_WARDER_WARDER_SPELLS">
+    <description>
+      <p>When you gain a level in this class, you can replace one spell from this feature with abjuration or divination spell of the same level from the Cleric or Magus spell list.</p>
+      <table>
+        <thead>
+          <tr><td>Magus Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>compelled duel, sanctuary</em></td></tr>
+        <tr><td>5th</td><td><em>aid, warding bond</em></td></tr>
+        <tr><td>9th</td><td><em>beacon of hope, life transference<sup>XGTE</sup></em></td></tr>
+        <tr><td>13th</td><td><em>faithful hound, death ward</em></td></tr>
+        <tr><td>13th</td><td><em>antilife shell, circle of power</em></td></tr>
+      </table>
+    </description>
+    <sheet>
+      <description>When you gain a Magus level, you can replace one spell from this feature with an abjuration or divination spell from the Cleric or Magus spell lists of the same level.</description>
+    </sheet>
+    <rules>
+      <select type="Spell" name="1st Additional Spell (Warder)" supports="1,(Abjuration||Divination),(Cleric||Magus)||Compelled Duel" level="3" default="ID_PHB_SPELL_COMPELLED_DUEL" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="2nd Additional Spell (Warder)" supports="1,(Abjuration||Divination),(Cleric||Magus)||Sanctuary" level="3" default="ID_PHB_SPELL_SANCTUARY" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="3rd Additional Spell (Warder)" supports="2,(Abjuration||Divination),(Cleric||Magus)||Aid" level="5" default="ID_PHB_SPELL_AID" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="4th Additional Spell (Warder)" supports="2,(Abjuration||Divination),(Cleric||Magus)||Warding Bond" level="5" default="ID_PHB_SPELL_WARDING_BOND" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="5th Additional Spell (Warder)" supports="3,(Abjuration||Divination),(Cleric||Magus)||Beacon of Hope" level="9" default="ID_PHB_SPELL_BEACON_OF_HOPE" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="6th Additional Spell (Warder)" supports="3,(Abjuration||Divination),(Cleric||Magus)||Life Transference" level="9" default="ID_XGTE_SPELL_LIFE_TRANSFERENCE" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="7th Additional Spell (Warder)" supports="4,(Abjuration||Divination),(Cleric||Magus)||Mordenkainens Faithful Hound" level="13" default="ID_PHB_SPELL_MORDENKAINENS_FAITHFUL_HOUND" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="8th Additional Spell (Warder)" supports="4,(Abjuration||Divination),(Cleric||Magus)||Death Ward" level="13" default="ID_PHB_SPELL_DEATH_WARD" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="9th Additional Spell (Warder)" supports="5,(Abjuration||Divination),(Cleric||Magus)||Antilife Shell" level="17" default="ID_PHB_SPELL_ANTILIFE_SHELL" spellcasting="Magus" allowReplace="false" />
+      <select type="Spell" name="10th Additional Spell (Warder)" supports="5,(Abjuration||Divination),(Cleric||Magus)||Circle of Power" level="17" default="ID_PHB_SPELL_CIRCLE_OF_POWER" spellcasting="Magus" allowReplace="false" />
+    </rules>
+  </element>
+
+  <append id="ID_PHB_SPELL_COMPELLED_DUEL">
+      <supports>Compelled Duel</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SANCTUARY">
+      <supports>Sanctuary</supports>
+  </append>
+  <append id="ID_PHB_SPELL_AID">
+      <supports>Aid</supports>
+  </append>
+  <append id="ID_PHB_SPELL_WARDING_BOND">
+      <supports>Warding Bond</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BEACON_OF_HOPE">
+      <supports>Beacon of Hope</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_LIFE_TRANSFERENCE">
+      <supports>Life Transference</supports>
+  </append>
+  <append id="ID_PHB_SPELL_MORDENKAINENS_FAITHFUL_HOUND">
+      <supports>Mordenkainens Faithful Hound</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DEATH_WARD">
+      <supports>Death Ward</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ANTILIFE_SHELL">
+      <supports>Antilife Shell</supports>
+  </append>
+  <append id="ID_PHB_SPELL_CIRCLE_OF_POWER">
+      <supports>Circle of Power</supports>
+  </append>
+
+  <element name="Warder's Bond" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_WARDER_WARDERS_BOND">
+    <description>
+      <p>You are taught the signature protective style of your Order. You gain proficiency in heavy armor. Also, at the end of a long rest, you can touch a willing creature, forging a mystical bond that designates it as your Ward until your next long rest.</p>
+      <p class="indent">When your Ward is targeted by an attack or forced to make a saving throw and you are within 10 feet of it, you can use a reaction to instantly switch places and become the target of the triggering attack or effect. You must be able to see your Ward to use this reaction.</p>
+      <p class="indent">At certain Magus levels, the range of this reaction increases: at 7th level (30 feet), at 15th level (60 feet), and finally at 20th level the range is limited only by your line of sight.</p>
+    </description>
+    <sheet>
+      <description action="Reaction" level="3">When your Ward is targeted by an attack or forced to make a saving throw while visible and within 10 ft. of you, instantly switch place with it and become the new target.&#13;&#10;At the end of a long rest, you can touch a willing creature to make it your Ward until the next long rest.</description>
+      <description action="Reaction" level="7">When your Ward is targeted by an attack or forced to make a saving throw while visible and within 30 ft. of you, instantly switch place with it and become the new target; if you take damage from this, you can expend a spell slot as part of the same reaction to reduce the damage by 2d8 per expended spell slot level.&#13;&#10;At the end of a long rest, you can touch a willing creature to make it your Ward until the next long rest.</description>
+      <description action="Reaction" level="15">When your Ward is targeted by an attack or forced to make a saving throw while visible and within 60 ft. of you, instantly switch place with it and become the new target; if you take damage from this, it is considered resisted, and you can expend a spell slot as part of the same reaction to reduce the damage by 2d8 per expended spell slot level.&#13;&#10;At the end of a long rest, you can touch a willing creature to make it your Ward until the next long rest.</description>
+      <description action="Reaction" level="20">When your Ward is targeted by an attack or forced to make a saving throw while visible to you, instantly switch place with it and become the new target; if you take damage from this, it is considered resisted, you can expend a spell slot as part of the same reaction to reduce the damage by 2d8 per expended spell slot level.&#13;&#10;If this is triggered by a spell, you can use Spellsunder as part of the same reaction, and can use Arcane Aegis if Spellsunder fails.&#13;&#10;At the end of a long rest, you can touch up to five willing creature to make them your Wards until the next long rest.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+    </rules>
+  </element>
+
+  <element name="Arcane Aegis" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_WARDER_ARCANE_AEGIS">
+    <description>
+      <p>You can temporarily infuse your Warder's Bond with arcane power to absorb damage. When you use your Warder's Bond reaction and you take damage, you can expend a spell slot as part of the same reaction to reduce that damage by 2d8 per level of the spell slot you expended.</p>
+      <p class="indent">Moreover, whenever you start your turn within 10 feet of your Ward, you can grant one of you temporary hit points equal to your Intelligence modifier (minimum of 1).</p>
+    </description>
+    <sheet>
+      <description>When you start your turn within 10 ft. of your ward, you can grant either it or you up to {{min 1 int}} of your temporary hit points.</description>
+    </sheet>
+  </element>
+
+  <element name="Bond Perfected" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_WARDER_BOND_PERFECTED">
+    <description>
+      <p>The magic of your Bond has reached its apex. When you use your Warder's Bond reaction you are considered resistant to any damage you take from the triggering attack or effect.</p>
+      <p class="indent">In addition, while you are within 10 feet of your Ward you are both immune to the charmed and frightened conditions. If either of you is charmed or frightened and is within 10 feet of the other, the effects of the condition are temporarily suppressed, so long as you remain within 10 feet.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">While within 10 ft. of one another you and your Ward are both immune to the charmed and frightened conditions; if one of you is already afflicted by one of these conditions, the effects are suppressed while in this radius.</description>
+    </sheet>
+  </element>
+
+  <element name="High Warder" type="Archetype Feature" source="laserllama's Magus" id="ID_LASERLL_ARCHETYPE_MAGUS_WARDER_HIGH_WARDER">
+    <description>
+      <p>You have risen to the highest rank in the Order of Warders and stand as a stalwart arcane shield for any who are under your protection. At the end of each long rest, you can bond up to five willing creatures as your Wards with Warder's Bond. All other rules for your Warder's Bond still apply for you.</p>
+      <p class="indent">Also, when you use your Warder's Bond reaction because your Ward was targeted by a spell, you can use Spellsunder as part of the same reaction. When you do so, you have advantage on your Spellsunder attack roll. If your Spellsunder fails, you can still use Arcane Aegis to reduce the damage.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When you see your Mark makes an ability check or saving throw within 30 ft, end your Baleful Mark to impose disadvantage on it. Once ended, you cannot mark it again until after a long rest.</description>
+    </sheet>
+  </element>
+
+
+  <append id="ID_PHB_SPELL_ACID_SPLASH">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BLADE_WARD">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_BOOMING_BLADE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_CHILL_TOUCH">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DANCING_LIGHTS">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FIRE_BOLT">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_FROSTBITE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_GLITTERBEAM">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_GREENFLAME_BLADE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_LIGHT">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_WOTC_TCOE_SPELL_LIGHTNING_LURE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_MAGE_HAND">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_MINOR_ILLUSION">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_POISON_SPRAY">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_PRESTIDIGITATION">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_RESISTANCE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_RAY_OF_FROST">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SHOCKING_GRASP">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_WTOC_TCOE_SPELL_SWORD_BURST">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_TEMPESTUOUS_BLADE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_TRUE_STRIKE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_ABSORB_ELEMENTS">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_ARCANE_LANCE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ARMOR_OF_AGATHYS">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BURNING_HANDS">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_WOTC_TCOE_SPELL_TASHAS_CAUSTIC_BREW">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_CHROMATIC_ORB">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_COLOR_SPRAY">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DETECT_MAGIC">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_EARTH_TREMOR">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FAERIE_FIRE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FEATHER_FALL">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FOG_CLOUD">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_GREASE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_ICE_KNIFE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_IDENTIFY">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_JUMP">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_MAGE_ARMOR">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_MAGIC_MISSILE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_RAY_OF_SICKNESS">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_SHIELD">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SLEEP">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_THUNDERWAVE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_TORRENT">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_WITCH_BOLT">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XTGE_SPELL_ZEPHYR_STRIKE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_MELFS_ACID_ARROW">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_ARCANE_SCORCHER">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_AURA_OF_FROST">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BLINDNESS_DEAFNESS">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BLUR">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_CHROMATIC_BLADE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_CLOUD_OF_DAGGERS">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DARKNESS">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DARVISION">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_EARTHEN_GRASP">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ENHANCE_ABILITY">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ENLARGE_REDUCE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_GUST_OF_WIND">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_HOLD_PERSON">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_INVISIBILITY">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_KNOCK">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_LEVITATE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_MAGIC_AURA">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_MAGIC_WEAPON">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_MIRROR_IMAGE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_MISTY_STEP">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_PROTECTION_FROM_POISON">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SCORCHING_RAY">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SHATTER">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SPIDER_CLIMB">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_CORROSIVE_BOLT">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_COUNTERSPELL">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DISPEL_MAGIC">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ELEMENTAL_WEAPON">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_ERUPTING_EARTH">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FIREBALL">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FLY">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_HASTE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_LIGHTNING_BOLT">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_MAGIC_CIRCLE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_MELFS_MINUTE_METEORS">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SLEET_STORM">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SLOW">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_SONIC_WAVE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_TIDAL_WAVE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_TINY_HUT">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_THUNDER_STEP">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_WALL_OF_SAND">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_WALL_OF_WATER">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_WIND_WALL">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_ACCURSED_TOUCH">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ARCANE_EYE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BANISHMENT">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DEATH_WARD">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DIMENSION_DOOR">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_ELEMENTAL_BANE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FIRE_SHIELD">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_GREATER_INVISIBILITY">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ICE_STORM">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_POLYMORPH">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_SICKENING_RADIANCE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_STONESKIN">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_VITRIOLIC_SPHERE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_WALL_OF_FIRE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_WATERY_SPHERE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ANIMATE_OBJECTS">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_CONE_OF_COLD">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_CONTAGION">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_FAR_STEP">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_HOLD_MONSTER">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_PASSWALL">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SCRYING">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_SKILL_EMPOWERMENT">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_STEEL_WIND_STRIKE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_TELEPORTATION_CIRCLE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_VORPAL_BLADE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_WALL_OF_FORCE">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_WALL_OF_LIGHT">
+      <supports>Magus</supports>
+  </append>
+  <append id="ID_PHB_SPELL_WALL_OF_STONE">
+      <supports>Magus</supports>
+  </append>
+
+</elements>

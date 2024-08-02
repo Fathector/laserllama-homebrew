@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+      <name></name>
+      <update version="3.1.0">
+          <file name="class-warlord.xml" url="tmp.xml" />
+      </update>
+  </info>
+
+  <!--Version 3.1.0 -->
+  <element name="Warlord" type="Class" source="laserllama's Warlord" id="ID_LASERLL_CLASS_WARLORD">
+    <description>
+      <p>As the aging man struggled to keep up with his companions, he started to regret his decision to join the young adventurers. His days of glory had long passed, but hearing the poorly devised plan of the aspiring heroes had rekindled something inside his soul that he thought gone forever. The old man couldn't use a sword like he used to, but if his young companions took his advice, they may yet be able to survive the dangerous life an adventure for a few days.</p>
+      <p class="indent">The dwarven lord ordered his soldiers to form ranks as the uncountable horde of horrors poured forth from the tunnel ahead. He positioned his platoon of elite warriors in the final tunnel before the entrance of his clan's great city. His clan had delved too greedily and they had freed something from the depths below. The lord muttered a final prayer and prepared to lead his men to their deaths, hopefully giving the rest of his clan time to escape the unstoppable horde of monstrosities.</p>
+      <p class="indent">A lithe wood elf quietly led her hunting party through the underbrush of the great wood. They had tracked their foe, a great two-headed troll, for almost two days. As it rested in a clearing, she gave the signal and her fellow hunters fanned out around the beast, blending in with the natural landscape. On her mark, the hunting party lunged forward with their spears, and the troll was felled before it could react.</p>
+      <p class="indent">All of these warriors are considered Warlords, martial leaders who use their knowledge of tactics and warfare to empower their allies and thwart the plans of their foes.</p>
+      <h4>DECISIVE LEADERS</h4>
+      <p>While Warlords are as varied as styles of leadership, they all share one thing in common: a commitment to their decisions. Once a true Warlord decides on a course of action, whether it was their idea or not, they will see the plan through to its end.</p>
+      <p class="indent">These natural-born leaders stand as stalwart figures in the face of danger and can rally their allies to overcome whatever obstacles may stand between them and their goals. Though they are not always formally appointed leaders, the presence of a Warlord, both on and off the field of battle, can motivate any who follow them to be the best version of themselves.</p>
+      <h4>FROM MANY, ONE</h4>
+      <p>Alone, a Warlord is a minor threat, but with loyal companions to organize and command, the greatest Warlords are capable of toppling empires. Known for their keen use of tactics and knowledge of warfare, a Warlord is able to draw out the true potential of their allies. Leaders to their core, a Warlord will make sure to understand the capabilities and weaknesses of their allies so they can help them to reach their true potential.</p>
+      <p class="indent">These exceptional strategists are able to step back and allow their allies to excel in combat. Though they are able to hold their own in battle, a warlord's true strength lies in the potent orders they issue to their allies. These insights push their comrades from mundane warriors to true heroes.</p>
+      <h4>CREATING YOUR WARLORD</h4>
+      <p>When creating your Warlord, consider where they learned to be a leader. Did they serve as the squire of a world-renowned general? Were they the star pupil of their kingdom's military academy? Or, did they slowly rise through the bloody ranks of a band of mercenaries, learning to lead through necessity?</p>
+      <p class="indent">Also, consider why your Warlord would lead others rather than improve their own individual martial skill. Do they see value in teamwork and coordination? Does their age or some other impairment prevent them from fighting on their own? Have they always had a sharp mind and a knack for leading others, maybe even from a young age?</p>
+      <h5 class="caption">QUICK BUILD</h5>
+      <p>You can make a Warlord quickly by using these suggestions. First, make Dexterity or Strength your highest ability score, followed by Charisma, Wisdom, or Intelligence, depending on your Leadership Style. Second, take the noble background.</p>
+      <h2>CLASS FEATURES</h2>
+      <p>As a Warlord, you gain the following class features.</p>
+      <h5 class="caption">HIT POINTS</h5>
+      <ul class="unstyled">
+          <li><strong>Hit Dice:</strong> 1d8 per Warlord level</li>
+          <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+          <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per Warlord level after 1st</li>
+      </ul>
+      <h5 class="caption">PROFICIENCIES</h5>
+      <ul class="unstyled mb">
+          <li><strong>Armor:</strong> Light armor, medium armor, shields</li>
+          <li><strong>Weapons:</strong>  Simple weapons, hand crossbows, longbows, longswords, rapiers, scimitars, and shortswords</li>
+          <li><strong>Tools:</strong> One gaming set of your choice</li>
+      </ul>
+      <ul class="unstyled">
+          <li><strong>Saving Throws:</strong> Wisdom, Charisma</li>
+          <li><strong>Skills:</strong> Choose two from Athletics, Deception, History, Insight, Intimidation, Investigation, and Persuasion</li>
+      </ul>
+      <h5 class="caption">EQUIPMENT</h5>
+      <p>As a Warlord, you start with the following equipment:</p>
+      <ul>
+          <li>(a) scale mail or (b) leather armor</li>
+          <li>(a) a simple weapon, (b) a longsword, or (c) a rapier</li>
+          <li>(a) a light crossbow and 20 bolts or (b) five javeliins</li>
+          <li>(a) an scholar's pack or (b) an explorer's pack</li>
+      </ul>
+      <h5 class="caption">THE WARLORD</h5>
+      <table class="class-features">
+        <thead>
+          <tr><td class="col-5">Level</td><td class="col-5">PB</td><td class="col-60 left">Class Features</td><td class="col-5">Inspiring Word</td><td class="col-5">Exploits Known</td><td class="col-5">Exploit Die</td><td class="col-5">Exploit Dice</td></tr>
+        </thead>
+        <tr><td> 1st</td><td>+2</td><td class="left">Leadership Style, Inspiring Word</td><td>3</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td> 2nd</td><td>+2</td><td class="left">Fighting Style, Tactical Exploits</td><td>3</td><td>2</td><td>d4</td><td>2</td></tr>
+        <tr><td> 3rd</td><td>+2</td><td class="left">Academy of War</td><td>3</td><td>3</td><td>d4</td><td>2</td></tr>
+        <tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>4</td><td>3</td><td>d4</td><td>2</td></tr>
+        <tr><td> 5th</td><td>+3</td><td class="left">Extra Attack</td><td>4</td><td>4</td><td>d6</td><td>3</td></tr>
+        <tr><td> 6th</td><td>+3</td><td class="left">Academy Feature</td><td>4</td><td>4</td><td>d6</td><td>3</td></tr>
+        <tr><td> 7th</td><td>+3</td><td class="left">Valiant Leader</td><td>4</td><td>5</td><td>d6</td><td>3</td></tr>
+        <tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>5</td><td>5</td><td>d6</td><td>3</td></tr>
+        <tr><td> 9th</td><td>+4</td><td class="left">Rallying Cry (1)</td><td>5</td><td>6</td><td>d6</td><td>3</td></tr>
+        <tr><td>10th</td><td>+4</td><td class="left">Unwavering Will</td><td>5</td><td>6</td><td>d6</td><td>3</td></tr>
+        <tr><td>11th</td><td>+4</td><td class="left">Tactical Superiority</td><td>5</td><td>7</td><td>d8</td><td>4</td></tr>
+        <tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>5</td><td>7</td><td>d8</td><td>4</td></tr>
+        <tr><td>13th</td><td>+5</td><td class="left">Rallying Cry (2)</td><td>6</td><td>8</td><td>d8</td><td>4</td></tr>
+        <tr><td>14th</td><td>+5</td><td class="left">Academy Feature</td><td>6</td><td>8</td><td>d8</td><td>4</td></tr>
+        <tr><td>15th</td><td>+5</td><td class="left">Exalted Leader</td><td>6</td><td>9</td><td>d8</td><td>4</td></tr>
+        <tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>6</td><td>9</td><td>d8</td><td>4</td></tr>
+        <tr><td>17th</td><td>+6</td><td class="left">Rallying Cry (3)</td><td>7</td><td>10</td><td>d10</td><td>5</td></tr>
+        <tr><td>18th</td><td>+6</td><td class="left">Academy Feature</td><td>7</td><td>10</td><td>d10</td><td>5</td></tr>
+        <tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td><td>7</td><td>10</td><td>d10</td><td>5</td></tr>
+        <tr><td>20th</td><td>+6</td><td class="left">Dauntless</td><td>7</td><td>10</td><td>d10</td><td>5</td></tr>
+      </table>
+      <div element="ID_LASERLL_CLASS_FEATURE_WARLORD_LEADERSHIP_STYLE" />
+      <div element="ID_LASERLL_CLASS_FEATURE_WARLORD_INSPIRING_WORD" />
+      <div element="ID_LASERLL_CLASS_FEATURE_WARLORD_FIGHTING_STYLE" />
+      <div element="ID_LASERLL_CLASS_FEATURE_WARLORD_TACTICAL_EXPLOITS" />
+      <div element="ID_LASERLL_CLASS_FEATURE_WARLORD_ACADEMY_OF_WAR" />
+      <div element="ID_LASERLL_CLASS_FEATURE_WARLORD_ASI" />
+      <div element="ID_LASERLL_CLASS_FEATURE_WARLORD_EXTRA_ATTACK" />
+      <div element="ID_LASERLL_CLASS_FEATURE_WARLORD_VALIANT_LEADER" />
+      <div element="ID_LASERLL_CLASS_FEATURE_WARLORD_RALLYING_CRY" />
+      <div element="ID_LASERLL_CLASS_FEATURE_WARLORD_UNWAVERING_WILL" />
+      <div element="ID_LASERLL_CLASS_FEATURE_WARLORD_TACTICAL_SUPERIORITY" />
+      <div element="ID_LASERLL_CLASS_FEATURE_WARLORD_EXALTED_LEADER" />
+      <div element="ID_LASERLL_CLASS_FEATURE_WARLORD_DAUNTLESS" />
+    </description>
+    <setters>
+      <set name="hd">d8</set>
+      <set name="short">An exceptional strategist able to step back and allow their allies to excel in combat.</set>
+    </setters>
+    <sheet display="false" />
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_LASERLL_MULTICLASS_WARLORD" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_LASERLL_MULTICLASS_WARLORD" />
+      <select type="Proficiency" name="Skill Proficiency, Warlord" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_HISTORY||ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERSUASION" requirements="!ID_LASERLL_MULTICLASS_WARLORD" number="2" />
+      <select type="Proficiency" name="Gaming Set, Warlord" supports="Gaming Set" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_LASERLL_MULTICLASS_WARLORD" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_LASERLL_MULTICLASS_WARLORD" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_LASERLL_MULTICLASS_WARLORD" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_LASERLL_MULTICLASS_WARLORD" />
+      <select type="Proficiency" name="Hand Crossbow Proficiency, Warlord" supports="Hand Crossbows" />
+      <select type="Proficiency" name="Longbow Proficiency, Warlord" supports="Longbows" />
+      <select type="Proficiency" name="Longsword Proficiency, Warlord" supports="Longswords" />
+      <select type="Proficiency" name="Rapier Proficiency, Warlord" supports="Rapiers" />
+      <select type="Proficiency" name="Scimitar Proficiency, Warlord" supports="Scimitars" />
+      <select type="Proficiency" name="Shortsword Proficiency, Warlord" supports="Shortswords" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_WARLORD_LEADERSHIP_STYLE" level="1" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_WARLORD_INSPIRING_WORD" level="1" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_WARLORD_FIGHTING_STYLE" level="2" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_WARLORD_TACTICAL_EXPLOITS" level="2" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_WARLORD_ACADEMY_OF_WAR" level="3" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_WARLORD_ASI" level="4" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_WARLORD_EXTRA_ATTACK" level="5" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_WARLORD_VALIANT_LEADER" level="7" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_WARLORD_RALLYING_CRY" level="9" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_WARLORD_UNWAVERING_WILL" level="10" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_WARLORD_TACTICAL_SUPERIORITY" level="11" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_WARLORD_EXALTED_LEADER" level="15" />
+      <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_WARLORD_DAUNTLESS" level="20" />
+
+      <stat name="min 1 int" value="1" bonus="min 1 int" />
+      <stat name="min 1 int" value="intelligence:modifier" bonus="min 1 int" />
+      <stat name="min 1 wis" value="1" bonus="min 1 wis" />
+      <stat name="min 1 wis" value="wisdom:modifier" bonus="min 1 wis" />
+      <stat name="min 1 cha" value="1" bonus="min 1 cha" />
+      <stat name="min 1 cha" value="charisma:modifier" bonus="min 1 cha" />
+    </rules>
+    <multiclass id="ID_LASERLL_MULTICLASS_WARLORD">
+        <prerequisite>strength or dexterity 13, intelligence, wisdom, or charisma 13</prerequisite>
+        <requirements>([str:13]||[dex:13]),([int:13]||[wis:13]||[cha:13])</requirements>
+        <setters>
+            <set name="multiclass proficiencies">light and medium armor, shields, simple weapons, and one gaming set.</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <select type="Proficiency" name="Gaming Set, Warlord" supports="Gaming Set" />
+        </rules>
+    </multiclass>
+  </element>
+
+  <element name="Leadership Style" type="Class Feature" source="Laserllama's Warlord" id="ID_LASERLL_CLASS_FEATURE_WARLORD_LEADERSHIP_STYLE">
+    <description>
+      <p>At 1st level, you choose the Leadership Style of your Warlord, gaining the corresponding benefits and Leadership modifier:</p>
+      <h5>Captain</h5>
+      <p>You lead from the front with presence. You use Charisma as your Leadership modifier. You also gain proficiency in heavy armor and your choice of either Intimidation or Persuasion.</p>
+      <h5>Mentor</h5>
+      <p>You counsel others with wise insights. You use Wisdom as your Leadership modifier. Also, whenever a creature within 15 feet misses with an attack or fails an ability check you can use your reaction to roll a d4 and add the result to its roll.</p>
+      <h5>Strategist</h5>
+      <p>You guide others with cunning and wit. You use Intelligence as your Leadership modifier, and when you roll initiative you can switch places in initiative order with a willing creature.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <select type="Class Feature" name="Leadership Style" supports="Leadership Style" />
+    </rules>
+  </element>
+
+  <element name="Captain" type="Class Feature" source="laserllama's Warlord" id="ID_LASERLL_CLASS_FEATURE_WARLORD_LEADERSHIP_STYLE_CAPTAIN">
+    <supports>Leadership Style</supports>
+    <description>
+      <p>You lead from the front with presence. You use Charisma as your Leadership modifier. You also gain proficiency in heavy armor and your choice of either Intimidation or Persuasion.</p>
+    </description>
+    <sheet>
+      <description level="1"></description>
+      <description level="7">You can target creatures that are at 0 hit points, but not dead, with an Inspiring Word, despite them not being able to hear you.</description>
+      <description level="15">You can target creatures that are at 0 hit points, but not dead, with an Inspiring Word, despite them not being able to hear you.&#13;&#10;When you target creatures with Inspiring Word, Rallying Cry, or a Tactical Exploit, grant one target {{charisma:modifier}} temporary hit points.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency, Captain" supports="ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERSUASION" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+      <stat name="leadership:modifier" value="charisma:modifier" bonus="base" />
+      <stat inline="true" name="leadership ability" value="Charisma" />
+    </rules>
+  </element>
+
+  <element name="Mentor" type="Class Feature" source="laserllama's Warlord" id="ID_LASERLL_CLASS_FEATURE_WARLORD_LEADERSHIP_STYLE_MENTOR">
+    <supports>Leadership Style</supports>
+    <description>
+      <p>You counsel others with wise insights. You use Wisdom as your Leadership modifier. Also, whenever a creature within 15 feet misses with an attack or fails an ability check you can use your reaction to roll a d4 and add the result to its roll.</p>
+    </description>
+    <sheet>
+      <description action="Reaction" level="1">When a creature within 15 ft. misses an attack or fails an ability check, add 1d4 to the roll.&#13;&#10;</description>
+      <description action="Reaction" level="7">When a creature within 30 ft. misses an attack or fails an ability check, add 1d{{exploit dice:size}} to the roll.&#13;&#10;</description>
+      <description action="Reaction" level="15">When a creature within 30 ft. misses an attack or fails an ability check, add 1d{{exploit dice:size}} to the roll.&#13;&#10;When you use Inspiring Word on a creature, end one of the following conditions: blinded, charmed, deafened, frightened, poisoned, or stunned.</description>
+    </sheet>
+    <rules>
+      <stat name="leadership:modifier" value="wisdom:modifier" bonus="base" />
+      <stat inline="true" name="leadership ability" value="Wisdom" />
+    </rules>
+  </element>
+
+  <element name="Strategist" type="Class Feature" source="laserllama's Warlord" id="ID_LASERLL_CLASS_FEATURE_WARLORD_LEADERSHIP_STYLE_STRATEGIST">
+    <supports>Leadership Style</supports>
+    <description>
+      <p>You guide others with cunning and wit. You use Intelligence as your Leadership modifier, and when you roll initiative you can switch places in initiative order with a willing creature.</p>
+    </description>
+    <sheet>
+      <description level="1">When you roll initiative, you can switch places in the initiative order with a willing creature.</description>
+      <description level="7">When you roll initiative, you can switch places in the initiative order with a willing creature.&#13;&#10;You and creatures of your choice within 15 ft. gain a {{+intelligence:modifier}} initiative rolls as long as you are not surprised or incapacitated.</description>
+      <description level="15">When you roll initiative, you can switch places in the initiative order with a willing creature.&#13;&#10;You and creatures of your choice within 15 ft. gain a {{+intelligence:modifier}} initiative rolls as long as you are not surprised or incapacitated.&#13;&#10;When you use Inspiring Word on a creature it can move up to its walking speed without provoking opportunity attacks.</description>
+    </sheet>
+    <rules>
+      <stat name="leadership:modifier" value="intelligence:modifier" bonus="base" />
+      <stat inline="true" name="leadership ability" value="Intelligence" />
+    </rules>
+  </element>
+
+  <element name="Inspiring Word" type="Class Feature" source="Laserllama's Warlord" id="ID_LASERLL_CLASS_FEATURE_WARLORD_INSPIRING_WORD">
+    <description>
+      <p>Your words encourage others to fight on. At 1st level, you use a bonus action to shout an inspiring word at another creature that can hear you within 30 feet. It regains hit points equal to one roll of its Hit Die + your Leadership modifier. The target does not expend its Hit Dice as part of this ability.</p>
+      <p class="indent">You can use this feature the number of times indicated in the Inspiring Word column on the Warlord table. You regain all expended uses when you finish a short or long rest.</p>
+    </description>
+    <sheet>
+      <description usage="{{inspiring word count}}/Short Rest" action="Bonus Action" level="1">Restore hit points of another creature within 30 ft. that can hear you equal to a roll of one its Hit Die + {{leadership:modifier}}; this does not expend their Hit Die.</description>
+      <description usage="{{inspiring word count}}/Short Rest" action="Bonus Action" level="11">Restore hit points of another creature within 60 ft. that can hear you equal to a roll of one its Hit Die + {{leadership:modifier}}; this does not expend their Hit Die.</description>
+      <description usage="{{inspiring word count}}/Short Rest" action="Bonus Action" level="20">Restore hit points of another creature within 60 ft. that can hear you equal to the max roll of one of its Hit Die + {{leadership:modifier}}; this does not expend their Hit Die.</description>
+    </sheet>
+    <rules>
+      <stat name="inspiring word count" value="3" bonus="base" />
+      <stat name="inspiring word count" value="1" level="4" />
+      <stat name="inspiring word count" value="1" level="8" />
+      <stat name="inspiring word count" value="1" level="13" />
+      <stat name="inspiring word count" value="1" level="17" />
+    </rules>
+  </element>
+
+  <element name="Fighting Style" type="Class Feature" source="Laserllama's Warlord" id="ID_LASERLL_CLASS_FEATURE_WARLORD_FIGHTING_STYLE">
+    <description>
+      <p>At 2nd level, you adopt a Fighting Style that best reflects your training. You cannot select a Fighting Style more than once, even if a feature allows you to select another Fighting Style.</p>
+      <p class="indent">Whenever you gain a level in this class, you can switch your Fighting Style for another Fighting Style of your choice.</p>
+    </description>
+    <sheet>
+      <description>You can switch Fighting Style when you gain a Warlord level.</description>
+    </sheet>
+    <rules>
+      <select type="Class Feature" name="Fighting Style" supports="Fighting Style, Warlord" level="2"/>
+    </rules>
+  </element>
+
+  <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY">
+    <supports>Warlord</supports>
+  </append>
+  <append id="ID_LASERLL_CLASS_FEATURE_FIGHTINGSTYLE_CLASSICAL_SWORDPLAY">
+    <supports>Warlord</supports>
+  </append>
+  <append id="ID_LASERLL_CLASS_FEATURE_MAGUS_FIGHTING_STYLE_DEFENSIVE_FIGHTING">
+    <supports>Warlord</supports>
+  </append>
+  <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
+    <supports>Warlord</supports>
+  </append>
+  <append id="ID_LASERLL_CLASS_FEATURE_FIGHTINGSTYLE_MOUNTED_WARRIOR">
+    <supports>Warlord</supports>
+  </append>
+  <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION">
+    <supports>Warlord</supports>
+  </append>
+  <append id="ID_LASERLL_CLASS_FEATURE_FIGHTINGSTYLE_STANDARD_BEARER">
+    <supports>Warlord</supports>
+  </append>
+  <append id="ID_LASERLL_CLASS_FEATURE_FIGHTINGSTYLE_STRONGBOW">
+    <supports>Warlord</supports>
+  </append>
+  <append id="ID_LASERLL_CLASS_FEATURE_FIGHTINGSTYLE_VERSATILE_FIGHTING">
+    <supports>Warlord</supports>
+  </append>
+
+  <element name="Tactical Exploits" type="Class Feature" source="Laserllama's Warlord" id="ID_LASERLL_CLASS_FEATURE_WARLORD_TACTICAL_EXPLOITS">
+    <description>
+      <p>Your knowledge of warfare allows you to employ potent strategies in battle. At 2nd level, you learn to use Tactical Exploits as detailed below:</p>
+      <h5>EXPLOIT DICE</h5>
+      <p>The Warlord table shows the number of Exploit Dice you have to perform any Tactical Exploits you know. Some Exploits require you to expend these Exploit Dice in order to use them. You can only use one Exploit per attack, ability check, or saving throw. You regain all expended Exploit Dice when you finish a short or long rest.</p>
+      <p class="indent">Your Exploit Dice begin as d4s and increase in size as you gain Warlord levels, as indicated in the Warlord table.</p>
+      <h5>EXPLOITS KNOWN</h5>
+      <p>You know two Tactical Exploits of your choice from the list at the end of this class description. The Exploits Known column of the Warlord table shows when you learn more Exploits. To learn an Exploit you must meet any prerequisites it may have, like a minimum Ability Score or a certain Warlord level.</p>
+      <p class="indent">Whenever you gain a Warlord level, you can replace one of the Exploits you know with a Tactical Exploit of your choice.</p>
+      <h5>SAVING THROWS</h5>
+      <p>If one of your Tactical Exploits requires a creature to make a saving throw, your Exploit save DC is calculated as follows:</p>
+      <center>
+        <p><strong>Exploit save DC</strong> = 8 + your proficiency bonus + your Leadership modifier</p>
+      </center>
+    </description>
+    <sheet>
+      <description>You can switch Fighting Style when you gain a Warlord level.</description>
+    </sheet>
+    <rules>
+      <stat name="exploit dice:dc" value="8" bonus="base" />
+      <stat name="exploit dice:dc" value="proficiency" />
+      <stat name="exploit dice:dc" value="leadership:modifier" />
+
+      <stat name="exploit dice:num" value="2" level="2" bonus="num"/>
+      <stat name="exploit dice:num" value="3" level="5" bonus="num"/>
+      <stat name="exploit dice:num" value="4" level="11" bonus="num"/>
+      <stat name="exploit dice:num" value="5" level="17" bonus="num"/>
+
+      <stat name="exploit dice:size" value="4" level="2" bonus="size"/>
+      <stat name="exploit dice:size" value="6" level="5" bonus="size"/>
+      <stat name="exploit dice:size" value="8" level="11" bonus="size"/>
+      <stat name="exploit dice:size" value="10" level="17" bonus="size"/>
+
+      <grant id="ID_LASERLL_MARTIAL_EXPLOIT_LEVEL_2" requirements="[level:warlord:5]" />
+      <grant id="ID_LASERLL_MARTIAL_EXPLOIT_LEVEL_3" requirements="[level:warlord:9]" />
+      <grant id="ID_LASERLL_MARTIAL_EXPLOIT_LEVEL_4" requirements="[level:warlord:13]" />
+      <grant id="ID_LASERLL_MARTIAL_EXPLOIT_LEVEL_5" requirements="[level:warlord:17]" />
+
+      <select type="Archetype Feature" name="Martial Exploit" number="2" supports="Martial Exploit,Warlord" />
+    </rules>
+  </element>
+
+  <element name="Academy of War" type="Class Feature" source="Laserllama's Warlord" id="ID_LASERLL_CLASS_FEATURE_WARLORD_ACADEMY_OF_WAR">
+    <description>
+      <p>At 3rd level, choose the Academy of War that best represents your Warlord: the Academy of Chivalry, Ferocity, Schemes, Skalds, or Tactics, each detailed at the end of this class.</p>
+      <p class="indent">Your Academy of War grants you features at 3rd level, and again when you reach 6th, 14th, and 18th level in this class.</p>
+      <h5>Academy Exploits</h5>
+      <p>Some Academies of War include a list of Exploits that all Warlords in the Academy learn at the levels in its description. These Exploits don't count against your total Exploits Known and can't be replaced when you gain a level. If you do not meet its prerequisites, you learn them regardless.</p>
+    </description>
+    <sheet>
+      <description>You can switch Fighting Style when you gain a Warlord level.</description>
+    </sheet>
+    <rules>
+      <select type="Archetype" name="Academy of War" supports="Academy of War" level="3" />
+    </rules>
+  </element>
+
+  <element name="Ability Score Improvement" type="Class Feature" source="laserllama's Warlord" id="ID_LASERLL_CLASS_FEATURE_WARLORD_ASI">
+      <compendium display="false" />
+    <description>
+      <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Class Feature" name="Improvement Option (Warlord 4)" supports="Improvement Option,Warlord,4" level="4" />
+      <select type="Class Feature" name="Improvement Option (Warlord 8)" supports="Improvement Option,Warlord,8" level="8" />
+      <select type="Class Feature" name="Improvement Option (Warlord 12)" supports="Improvement Option,Warlord,12" level="12" />
+      <select type="Class Feature" name="Improvement Option (Warlord 16)" supports="Improvement Option,Warlord,16" level="16" />
+      <select type="Class Feature" name="Improvement Option (Warlord 19)" supports="Improvement Option,Warlord,19" level="19" />
+    </rules>
+  </element>
+
+  <element name="Extra Attack" type="Class Feature" source="laserllama's Warlord" id="ID_LASERLL_CLASS_FEATURE_WARLORD_EXTRA_ATTACK">
+    <description>
+      <p>Starting at 5th level, when you take the Attack action, you can attack twice instead of once.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+       <stat name="extra attack:count" value="2" level="6" bonus="extra attack" />
+    </rules>
+  </element>
+
+  <element name="Valiant Leader" type="Class Feature" source="Laserllama's Warlord" id="ID_LASERLL_CLASS_FEATURE_WARLORD_VALIANT_LEADER">
+    <description>
+      <p>You have honed your Leadership Style with practice and study. Starting at 7th level, your Leadership Style grants you further benefits:</p>
+      <h5>Captain</h5>
+      <p>You can target creatures that are at 0 hit points, but not dead, with an Inspiring Word, even though they can't hear you and normally would not benefit from this feature.</p>
+      <h5>Mentor</h5>
+      <p>When you use your Mentor reaction its range is 30 feet. Also, the bonus increases to match one roll of the die in the Exploit Die column for your level on the Warlord table.</p>
+      <h5>Strategist</h5>
+      <p>You, and creatures of your choice within 15 feet of you gain a bonus to initiative rolls equal to your Intelligence modifier, so long as you are not surprised or incapacitated.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Rallying Cry" type="Class Feature" source="Laserllama's Warlord" id="ID_LASERLL_CLASS_FEATURE_WARLORD_RALLYING_CRY">
+    <description>
+      <p>You can encourage allies to find success when they otherwise would fail. Beginning at 9th level, when another creature that can see or hear you within 30 feet fails a saving throw, you can use your reaction to encourage it with a rallying cry. The creature immediately re-rolls its saving throw and adds your Leadership modifier (minimum of +1) to its result.</p>
+      <p class="indent">Once you use this feature you must finish a short or long rest before you can use it again. You gain an additional use of this feature when you reach 13th and 17th level in this class.</p>
+    </description>
+    <sheet>
+      <description action="Reaction" usage="1/Short Rest" level="9">When another creature that can see or hear you within 30 ft. fails a saving throw, let it reroll with a +{{leadership:modifier}} bonus.</description>
+      <description action="Reaction" usage="1/Short Rest" level="11">When another creature that can see or hear you within 60 ft. fails a saving throw, let it reroll with a +{{leadership:modifier}} bonus.</description>
+      <description action="Reaction" usage="2/Short Rest" level="13">When another creature that can see or hear you within 60 ft. fails a saving throw, let it reroll with a +{{leadership:modifier}} bonus.</description>
+      <description action="Reaction" usage="3/Short Rest" level="17">When another creature that can see or hear you within 60 ft. fails a saving throw, let it reroll with a +{{leadership:modifier}} bonus.</description>
+      <description action="Reaction" level="20">When another creature that can see or hear you within 60 ft. fails a saving throw, let it reroll with a +{{leadership:modifier}} bonus.</description>
+    </sheet>
+  </element>
+
+  <element name="Unwavering Will" type="Class Feature" source="Laserllama's Warlord" id="ID_LASERLL_CLASS_FEATURE_WARLORD_UNWAVERING_WILL">
+    <description>
+      <p>As a leader, you do not have the luxury of succumbing to your base instincts. Beginning at 10th level, you have advantage on saving throws to resist being charmed, frightened, or stunned.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on saving throws against being charmed, frightened, or stunned.</description>
+    </sheet>
+  </element>
+
+  <element name="Tactical Superiority" type="Class Feature" source="Laserllama's Warlord" id="ID_LASERLL_CLASS_FEATURE_WARLORD_TACTICAL_SUPERIORITY">
+    <description>
+      <p>Your leadership skills eclipse even those of other professional commanders. Starting at 11th level, when you roll in initiative you regain one use of both Inspiring Word and Rallying Cry.</p>
+      <p class="indent">Also, the range of your Inspiring Word, Rallying Cry, and any Tactical Exploits that you know are doubled.</p>
+    </description>
+    <sheet>
+      <description>Regain one use of both Inspiring Word and Rallying Cry upon rolling initiative. Your Tactical Exploit ranges are all doubled.</description>
+    </sheet>
+  </element>
+
+  <element name="Exalted Leader" type="Class Feature" source="Laserllama's Warlord" id="ID_LASERLL_CLASS_FEATURE_WARLORD_EXALTED_LEADER">
+    <description>
+      <p>You are a true master of your Leadership Style. At 15th level, your Leadership Style grants you the benefits listed below:</p>
+      <h5>Captain</h5>
+      <p>Whenever you target a creature with Inspiring Word, Rallying Cry, or a Tactical Exploit, you can grant one target temporary hit points equal to your Charisma modifier (minimum of +1).</p>
+      <h5>Mentor</h5>
+      <p>When you use Inspiring Word on a creature you also end one of the following conditions affecting it (your choice): blinded, charmed, deafened, frightened, poisoned, or stunned.</p>
+      <h5>Strategist</h5>
+      <p>When you use Inspiring Word on a creature it can move up to its walking speed without provoking opportunity attacks.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Dauntless" type="Class Feature" source="Laserllama's Warlord" id="ID_LASERLL_CLASS_FEATURE_WARLORD_DAUNTLESS">
+    <description>
+      <p>You rival the great commanders and conquerors of legend. At 20th level, you can use Rallying Cry an unlimited number of times. Moreover, whenever you use Inspiring Word you treat the hit points it restores as the maximum possible result.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Academy of Chivalry" type="Archetype" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY">
+    <supports>Academy of War</supports>
+    <description>
+      <p>Warlords that choose the Academy of Chivalry often hail from the ranks of nobility and are almost always formal knights. As leaders, they hold themselves and those who follow them to a lofty code of conduct. These knights stand as beacons of fair play, honor, and justice, both on and off the field of battle.</p>
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_ANOINTED_KNIGHT" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_CHIVALRIC_EXPLOITS" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_INSPIRING_PRESENCE" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_LEAD_THE_CHARGE" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_FLAMES_OF_HOPE" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_PARAGON_OF_CHIVALRY" />
+    </description>
+    <sheet display="false">
+      <description>These Warlords stand as beacons of fair play, honor, and justice, both on and off the field of battle.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_ANOINTED_KNIGHT" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_CHIVALRIC_EXPLOITS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_INSPIRING_PRESENCE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_LEAD_THE_CHARGE" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_FLAMES_OF_HOPE" level="14"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_PARAGON_OF_CHIVALRY" level="18"/>
+    </rules>
+  </element>
+
+  <element name="Anointed Knight" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_ANOINTED_KNIGHT">
+    <description>
+      <p>You have been trained in the classical skills of knighthood. You gain proficiency with all martial weapons, one musical instrument, and in either History, Performance, or Religion.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+      <select type="Proficiency" name="Musical Instrument (Anointed Knight)" supports="Musical Instrument" />
+      <select type="Proficiency" name="Skill Proficiency (Anointed Knight)" supports="ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_RELIGION" />
+    </rules>
+  </element>
+
+  <element name="Chivalric Exploits" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_CHIVALRIC_EXPLOITS">
+    <description>
+      <p>You learn certain Exploits at the Warlord levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.</p>
+      <table>
+        <thead>
+          <tr><td>Warlord Level</td><td>Exploit</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>attack order, commanding presence</em></td></tr>
+        <tr><td>5th</td><td><em>hold the line, rejuvenating order</em></td></tr>
+        <tr><td>9th</td><td><em>daring rescue</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_ATTACK_ORDER" level="3" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_COMMANDING_PRESENCE" level="3" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_HOLD_THE_LINE" level="5" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_REJUVENATING_ORDER" level="5" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_DARING_RESCUE" level="9" />
+    </rules>
+  </element>
+
+  <element name="Inspiring Presence" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_INSPIRING_PRESENCE">
+    <description>
+      <p>Your presence on the field of battle inspires those who fight beside you. When you roll initiative you can expend one use of Inspiring Word to grant a number of creatures equal to your Leadership modifier (minimum of 1) that can see or hear you within 30 feet temporary hit points equal to a roll of your Exploit Die + your Leadership modifier.</p>
+    </description>
+    <sheet>
+      <description>When you roll initiative, expend an Inspiring Word use to grant up to {{leadership:modifier}} creatures within 30 ft. that can see or hear you 1d{{exploit dice:size}} + {{leadership:modifier}} temporary hit points.</description>
+    </sheet>
+  </element>
+
+  <element name="Lead the Charge" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_LEAD_THE_CHARGE">
+    <description>
+      <p>You lead best from the front lines. When you take the Attack action on your turn and make at least one melee attack, you can issue an attack order as a bonus action on that turn.</p>
+    </description>
+    <sheet>
+      <description>When you take the Attack action on your turn and make at least 1 melee attack, you can issue an Attack Order as a bonus action that turn.</description>
+    </sheet>
+  </element>
+
+  <element name="Flames of Hope" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_FLAMES_OF_HOPE">
+    <description>
+      <p>As an action, you can let forth a cry that inflames the hearts of allies and inspires terror in your foes. Creatures that can hear you within 30 feet gain one of the following effects:</p>
+      <ul>
+        <li>Friendly creatures gain temporary hit points equal to one roll of your Exploit Die + your Leadership modifier, and while they last, the creature cannot be frightened.</li>
+        <li>Enemy creatures must succeed on a Wisdom saving throw against your Exploit Save DC or be frightened of you for 1 minute. Frightened creatures can repeat this saving throw at the end of each of their turns, and each time they take damage, ending the effect on a success.</li>
+      </ul>
+      <p class="indent">Once you use this feature you must complete a short or long rest before you can use it again.</p>
+    </description>
+    <sheet>
+      <description action="Action" usage="1/Short Rest">Grant friendly creatures that can hear you within 30 ft. 1d{{exploit dice:size}} + {{leadership:modifier}} temporary hit points and prevent them from being frightend while they last, and force enemy creatures that can hear you in the same range to make a Wisdom saving throw (DC {{exploit dice:dc}}); if they fail, they are frightened of you for 1 minute. They repeat the saving throw at the end of each of their turns and each time they take damage, ending the effect on a success.</description>
+    </sheet>
+  </element>
+
+  <element name="Paragon of Chivalry" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_CHIVALRY_PARAGON_OF_CHIVALRY">
+    <description>
+      <p>You stand as an exemplar of chivalric virtue, a shining beacon for those who follow you. You are immune to the frightened and charmed conditions, and creatures of your choice within 30 feet that can see you have advantage on saving throws to resist and end the charmed and frightened conditions.</p>
+    </description>
+    <sheet>
+      <description>Creatures of your choice within 30 ft. that can see you have advantage on saving throws to resist and end the charmed and frightened conditions.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_CHARMED" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FRIGHTENED" />
+    </rules>
+  </element>
+
+  <element name="Immunity (Charmed)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_CHARMED">
+      <supports>Immunity</supports>
+  </element>
+  <element name="Immunity (Frightened)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FRIGHTENED">
+      <supports>Immunity</supports>
+  </element>
+
+  <element name="Academy of Ferocity" type="Archetype" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY">
+    <supports>Academy of War</supports>
+    <description>
+      <p>The Warlords that hail from this Academy rarely study in formal schools of war. In place of military theory, their tactics are based on the instincts of wild animals. These leaders are famous for ruthless treatment of foes, but would lay down their life for any member of their pack.</p>
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_BESTIAL_INSTINCTS" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_FEROCIOUS_EXPLOITS" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_PACKLEADER" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_PRIMAL_AMBUSH" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_THRILL_OF_THE_HUNT" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_APEX_PREDATOR" />
+    </description>
+    <sheet display="false">
+      <description>These Warlords base their tactics on the instincts of wild animals.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_BESTIAL_INSTINCTS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_FEROCIOUS_EXPLOITS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_PACKLEADER" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_PRIMAL_AMBUSH" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_THRILL_OF_THE_HUNT" level="14"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_APEX_PREDATOR" level="18"/>
+    </rules>
+  </element>
+
+  <element name="Bestial Instincts" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_BESTIAL_INSTINCTS">
+    <description>
+      <p>You learn to track and hunt as well as the great predators of the wilds. You gain proficiency with martial weapons and in your choice of either Perception or Survival.</p>
+      <p class="indent">In addition, whenever you make a Wisdom (Survival) or a Wisdom (Perception) check based on your sense of smell or hearing, you can treat a roll of 7 or lower on the d20 as an 8.</p>
+    </description>
+    <sheet>
+      <description>When you make a Wisdom (Survival) or Wisdom (Perception) check based on smell or hearing, treat rolls of 7 or lower as 8s.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+      <select type="Proficiency" name="Skill Proficiency, Bestial Instincts" supports="ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" />
+    </rules>
+  </element>
+
+  <element name="Ferocious Exploits" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_FEROCIOUS_EXPLOITS">
+    <description>
+      <p>You learn certain Exploits at the Warlord levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.</p>
+      <table>
+        <thead>
+          <tr><td>Warlord Level</td><td>Exploit</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>cunning instinct, maneuvering order</em></td></tr>
+        <tr><td>5th</td><td><em>crescendo of violence, wild charge</em></td></tr>
+        <tr><td>9th</td><td><em>pack tactics</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_CUNNING_INSTINCT" level="3" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_MANEUVERING_ORDER" level="3" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_CRESCENDO_OF_VIOLENCE" level="5" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_WILD_CHARGE" level="5" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_PACK_TACTICS" level="9" />
+    </rules>
+  </element>
+
+  <element name="Packleader" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_PACKLEADER">
+    <description>
+      <p>You lead your allies in the hunt. As a bonus action, you can mark one creature you can see within 30 feet as your Prey. Any creature you target with an Inspiring Word or a Tactical Exploit has advantage on the first attack it makes against your Prey before the beginning of your next turn.</p>
+      <p class="indent">The mark ends early if your Prey is reduced to 0 hit points, if you mark another creature, or if you are incapacitated.</p>
+      <p class="indent">Once you mark a creature as Prey, you must finish a short or long rest before you can mark another. If you have no uses left, you can expend an Exploit Die to mark another creature.</p>
+    </description>
+    <sheet>
+      <description action="Bonus Action" usage="1/Short Rest" level="3">Mark a visible creature within 30 ft. as your Prey; creatures targeted by your Inspiring Word or Tactical Exploits have advantage on the first attack they make against your Prey before your next turn. The mark ends if you reduce the Prey to 0 hit points, mark another creature, or are incapacitated. You can expend an Exploit Die to reuse this feature before a rest.</description>
+      <description action="Bonus Action" usage="1/Short Rest" level="6">Mark a visible creature within 30 ft. as your Prey; creatures targeted by your Inspiring Word or Tactical Exploits have advantage on the first attack they make against your Prey before your next turn. While you have marked Prey you can issue a Maneuvering Order as a bonus action. The mark ends if you reduce the Prey to 0 hit points, mark another creature, or are incapacitated. You can expend an Exploit Die to reuse this feature before a rest.</description>
+      <description action="Bonus Action" usage="1/Short Rest" level="18">Mark a visible creature within 30 ft. as your Prey; creatures targeted by your Inspiring Word or Tactical Exploits have advantage on the first attack they make against your Prey before your next turn. While you have marked Prey you can issue a Maneuvering Order as a bonus action. The mark ends if you switch your mark or are incapacitated. If you reduce your Prey to 0 hit points, gain {{level:warlord}} temporary hit points, regain one expended Inspiring Word use and Exploit Die, and you can use a Reaction to mark another creature. You can expend an Exploit Die to reuse this feature before a rest.</description>
+      <description action="Bonus Action" usage="1/Short Rest" level="18">Mark a visible creature within 30 ft. as your Prey; creatures targeted by your Inspiring Word or Tactical Exploits have advantage on the first attack they make against your Prey before your next turn. While you have marked Prey you can issue a Maneuvering Order as a bonus action, and you deal 1d{{exploit dice:size}} additional damage to it with weapon attacks. The mark ends if you switch your mark or are incapacitated. If you reduce your Prey to 0 hit points, gain {{level:warlord}} temporary hit points, regain one expended Inspiring Word use and Exploit Die, and you can use a Reaction to mark another creature. You can expend an Exploit Die to reuse this feature before a rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Primal Ambush" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_PRIMAL_AMBUSH">
+    <description>
+      <p>Under your leadership, your pack moves and hunts as one. You and creatures of your choice within 30 feet of your have advantage on your Dexterity (Stealth) checks and can travel stealthily while moving at a normal pace.</p>
+      <p class="indent">Also, while you have a creature marked as your Prey, you can issue a maneuvering order as a bonus action.</p>
+    </description>
+    <sheet>
+      <description>You and creatures of your choice within 30 ft. have advantage on Dexterity (Stealth) checks and can move stealthily at normal speed.</description>
+    </sheet>
+  </element>
+
+  <element name="Thrill of the Hunt" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_THRILL_OF_THE_HUNT">
+    <description>
+      <p>A successful hunt stokes your blood lust. When your Prey is reduced to 0 hit points you can use your reaction to mark another creature, and you gain one of the following benefits:</p>
+      <ul>
+        <li>You gain temporary hit points equal to your Warlord level.</li>
+        <li>You regain one expended use of Inspiring Word.</li>
+        <li>You regain one expended Exploit Die.</li>
+      </ul>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Apex Predator" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_FEROCITY_APEX_PREDATOR">
+    <description>
+      <p>Your primal bearing invigorates your pack mates. Your speed increases by 10 feet, and your weapon attacks against your Prey deal bonus damage equal to a roll of your Exploit Die.</p>
+      <p class="indent">Moreover, any creature you target with an Inspiring Word, Rallying Cry, or one of your Tactical Exploits also gains the benefits above until the beginning of your next turn.</p>
+    </description>
+    <sheet>
+      <description>Your Inspiring Word, Rallying Cry, and Tactical Exploits grant targets 10 ft. of movement speed and 1d{{exploit dice:size}} bonus damage on weapon attacks against your Prey until your next turn.</description>
+    </sheet>
+    <rules>
+      <stat name="innate speed:misc" value="10"/>
+    </rules>
+  </element>
+
+  <element name="Academy of Schemes" type="Archetype" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES">
+    <supports>Academy of War</supports>
+    <description>
+      <p>Warlords of the Academy of Schemes will secure their victory at any cost. They do not care how they achieve their goals and they will cheat, deceive, and sacrifice whatever they believe is necessary to succeed. These ruthless utilitarians always have a backup plan should things not work out as they predicted.</p>
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_CHEAP_SHOT" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_DASTARDLY_TALENTS" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_SCHEMING_EXPLOITS" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_RUTHLESS_FOCUS" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_DEVIOUS_TACTICS" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_INSCRUTABLE_MIND" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_MARKED_FOR_DEATH" />
+    </description>
+    <sheet display="false">
+      <description>These Warlords will secure their victory at any cost.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_CHEAP_SHOT" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_DASTARDLY_TALENTS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_SCHEMING_EXPLOITS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_RUTHLESS_FOCUS" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_DEVIOUS_TACTICS" level="14"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_INSCRUTABLE_MIND" level="18"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_MARKED_FOR_DEATH" level="18"/>
+    </rules>
+  </element>
+
+  <element name="Cheap Shot" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_CHEAP_SHOT">
+    <description>
+      <p>You are not above dishonorable tricks to secure your victory. Once per turn when you hit a creature with a weapon attack, you can force it to make a Dexterity saving throw against your Exploit Save DC in addition to the damage of your attack.</p>
+      <p class="indent">On a failure, the creature's speed is halved and it can't take reactions until the start of your next turn, and on its next turn it can only take one action or one bonus action, but not both.</p>
+    </description>
+    <sheet>
+      <description>Once per turn when you hit a creature with a weapon attack, force it to make a Dexterity saving throw (DC {{exploit dice:dc}}); if they fail, their speed is halved and they can't take reactions until your next turn; also, on their next turn, they can make either one action or one bonus action, but not both.</description>
+    </sheet>
+  </element>
+
+  <element name="Dastardly Talents" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_DASTARDLY_TALENTS">
+    <description>
+      <p>You will use any method necessary to achieve your aims. You gain proficiency in Deception, Disguise Kits, and Poisoner's Kits. You can make Leadership Ability (Deception) checks in place of the normal Charisma (Deception) check.</p>
+    </description>
+    <sheet>
+      <description>You can make Deception checks with {{leadership ability}}.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+    </rules>
+  </element>
+
+  <element name="Scheming Exploits" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_SCHEMING_EXPLOITS">
+    <description>
+      <p>You learn certain Exploits at the Warlord levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.</p>
+      <table>
+        <thead>
+          <tr><td>Warlord Level</td><td>Exploit</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>insightful order, subtle con</em></td></tr>
+        <tr><td>5th</td><td><em>exposing strike, surprise attack</em></td></tr>
+        <tr><td>9th</td><td><em>perilous gambit</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_INSIGHTFUL_ORDER" level="3" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_SUBTLE_CON" level="3" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_EXPOSING_STRIKE" level="5" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_SURPRISE_ATTACK" level="5" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_PERILOUS_GAMBIT" level="9" />
+    </rules>
+  </element>
+
+  <element name="Ruthless Focus" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_RUTHLESS_FOCUS">
+    <description>
+      <p>You encourage allies to prey upon the weak. Any creature you target with an Inspiring Word or a Tactical Exploit adds your Leadership modifier to the first attack roll it makes against a creature suffering from the effects of Cheap Shot before the start of your next turn.</p>
+      <p class="indent">Also, whenever you use a Tactical Exploit as part of your action, you can take the Disengage or Hide action as a bonus action on that turn.</p>
+    </description>
+    <sheet>
+      <description>Creatures you target with Inspiring Word or a Tactical Exploit can add +{{leadership:modifier}} to their first attack roll against a creature suffering from your Cheap Shot before your next turn.&#13;&#10;When you use a Tactical Exploit as part of your action, you can Disenage or Hide as a bonus action.</description>
+    </sheet>
+  </element>
+
+  <element name="Devious Tactics" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_DEVIOUS_TACTICS">
+    <description>
+      <p>You have no qualms about leaving others in danger. When a creature you can see targets you with an attack, you can use your reaction to force another creature within 5 feet to make a Dexterity saving throw against your Exploit Save DC. On a failed save, you switch places with the creature and it becomes the target of the attack that triggered the reaction. A creature can willingly fail this saving throw.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When a visible creature targets you with an attack, force another creature within 5 ft. to make a Dexterity saving throw (DC {{exploit dice:dc}}); if they fail, you switch places with it, and it becomes the target of the attack instead. A creature can willingly fail the saving throw.</description>
+    </sheet>
+  </element>
+
+  <element name="Inscrutable Mind" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_INSCRUTABLE_MIND">
+    <description>
+      <p>Your thoughts and dreams cannot be read by magical means, unless you allow it. If a creature attempts to read your mind you can present false thoughts and motivations by making a Leadership Ability (Deception) check.</p>
+    </description>
+    <sheet>
+      <description>When a creature attempts to read your mind, you can present false thoughts to it by making a {{leadership ability}} (Deception) check.</description>
+    </sheet>
+  </element>
+
+  <element name="Marked for Death" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_MARKED_FOR_DEATH">
+    <description>
+      <p>You relentlessly pursue the destruction of your foes. When a creature fails its saving throw against Cheap Shot, you can choose to mark the creature for death. The first attack to hit that creature before the beginning of your next turn becomes an automatic critical hit.</p>
+      <p class="indent">Once you mark a creature for death you must complete a short or long rest before you can use this feature again.</p>
+    </description>
+    <sheet>
+      <description usage="1/Short Rest">When a creature fails its saving throw against Cheap Shot, you can mark it; the next attack that hits the marked target automatically becomes a critical hit.</description>
+    </sheet>
+  </element>
+
+  <element name="Academy of Skalds" type="Archetype" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS">
+    <supports>Academy of War</supports>
+    <description>
+      <p>Warlords of the Academy of Skalds wield the power of music and song to inspire their comrades. When they combine their bardic magic with their understanding of strategy, they can turn even an unskilled rabble into a heroic fighting force.</p>
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_SKALDIC_EXPLOITS" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_WARRIOR_POET" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_SPELLCASTING_CAPTAIN" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_GALLANT_CHARGE" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_SONGS_OF_WAR_AND_PEACE" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_WARSONG" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_SKALD_OF_LEGEND" />
+    </description>
+    <sheet display="false">
+      <description>Skalds wield the power of music and song to inspire their comrades.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_SKALDIC_EXPLOITS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_WARRIOR_POET" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_SPELLCASTING_CAPTAIN" level="3" requirements="ID_LASERLL_CLASS_FEATURE_WARLORD_LEADERSHIP_STYLE_CAPTAIN"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_SPELLCASTING_MENTOR" level="3" requirements="ID_LASERLL_CLASS_FEATURE_WARLORD_LEADERSHIP_STYLE_MENTOR"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_SPELLCASTING_STRATEG" level="3" requirements="ID_LASERLL_CLASS_FEATURE_WARLORD_LEADERSHIP_STYLE_STRATEGIST"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_GALLANT_CHARGE" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_SONGS_OF_WAR_AND_PEACE" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_WARSONG" level="14"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_SKALD_OF_LEGEND" level="18"/>
+    </rules>
+  </element>
+
+  <element name="Skaldic Exploits" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SCHEMES_SKALDIC_EXPLOITS">
+    <description>
+      <p>You learn certain Exploits at the Warlord levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.</p>
+      <table>
+        <thead>
+          <tr><td>Warlord Level</td><td>Exploit</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>commanding presence, attack order</em></td></tr>
+        <tr><td>5th</td><td><em>enlivening order, heroic will</em></td></tr>
+        <tr><td>9th</td><td><em>stand the fallen</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_COMMANDING_PRESENCE" level="3" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_ATTACK_ORDER" level="3" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_ENLIVENING_ORDER" level="5" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_HEROIC_WILL" level="5" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_STAND_THE_FALLEN" level="9" />
+    </rules>
+  </element>
+
+  <element name="Spellcasting" type="Class Feature" source="Laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_SPELLCASTING_CAPTAIN">
+    <description>
+      <p>Your talent in poetry and music allows you to produce spells, much like the Bard does. You gain the following benefits:</p>
+      <h5>SPELL SLOTS</h5>
+      <p>The Skald Spellcasting table shows how many spell slots you have to cast your spells of 1st-level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest. For example, if you know the thunderwave spell and have both a 1st and a 2nd-level spell slot, you can cast thunderwave using either spell slot.</p>
+      <h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+      <p>You know three 1st-level spells of your choice from the Bard spell list. The Spells Known column of the Skald Spellcasting table shows when you learn more Bard spells of your choice of 1st-level or higher. Any Bard spell you learn through this feature must be of a level for which you have spell slots.</p>
+      <p class="indent">When you gain a level, you can replace one of your Spells Known with another spell from the Bard Spell List. The spell must also be of a level for which you have spell slots.</p>
+      <h5>SPELLCASTING FOCUS</h5>
+      <p>You can use any musical instrument you are proficient with as a spellcasting focus for your Bard spells. Skalds are known for using one-handed instruments, like war horns, while holding a weapon in their other hand.</p>
+      <h5>SPELLCASTING ABILITY</h5>
+      <p>You use your Leadership modifier when setting the saving throw DC or making a spell attack roll for any Bard spells you know through this feature.</p>
+      <center>
+        <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Leadership modifier</p>
+        <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Leadership modifier</p>
+      </center>
+
+      <table class="skald-spellcasting">
+        <thead>
+          <tr><td class="col-5">Warlord Level</td><td class="col-5">Spells Known</td><td class="col-5">1st level</td><td class="col-5">2nd Level</td><td class="col-5">3rd Level</td><td class="col-5">4th Level</td></tr>
+        </thead>
+        <tr><td> 3rd</td><td>3</td><td>2</td><td>-</td><td>-</td><td>─</td></tr>
+        <tr><td> 4th</td><td>4</td><td>3</td><td>-</td><td>-</td><td>─</td></tr>
+        <tr><td> 5th</td><td>4</td><td>3</td><td>-</td><td>-</td><td>─</td></tr>
+        <tr><td> 6th</td><td>4</td><td>3</td><td>-</td><td>-</td><td>─</td></tr>
+        <tr><td> 7th</td><td>5</td><td>4</td><td>2</td><td>-</td><td>─</td></tr>
+        <tr><td> 8th</td><td>6</td><td>4</td><td>2</td><td>-</td><td>─</td></tr>
+        <tr><td> 9th</td><td>6</td><td>4</td><td>3</td><td>-</td><td>─</td></tr>
+        <tr><td> 10th</td><td>7</td><td>4</td><td>3</td><td>-</td><td>─</td></tr>
+        <tr><td> 11th</td><td>8</td><td>4</td><td>3</td><td>-</td><td>─</td></tr>
+        <tr><td> 12th</td><td>8</td><td>4</td><td>3</td><td>-</td><td>─</td></tr>
+        <tr><td> 13th</td><td>9</td><td>4</td><td>3</td><td>2</td><td>─</td></tr>
+        <tr><td> 14th</td><td>10</td><td>4</td><td>3</td><td>2</td><td>─</td></tr>
+        <tr><td> 15th</td><td>10</td><td>4</td><td>3</td><td>2</td><td>─</td></tr>
+        <tr><td> 16th</td><td>11</td><td>4</td><td>3</td><td>3</td><td>─</td></tr>
+        <tr><td> 17th</td><td>11</td><td>4</td><td>3</td><td>3</td><td>─</td></tr>
+        <tr><td> 18th</td><td>11</td><td>4</td><td>3</td><td>3</td><td>─</td></tr>
+        <tr><td> 19th</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+        <tr><td> 20th</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+      </table>
+
+    </description>
+    <sheet display="false">
+      <description>You have the ability to cast spells.</description>
+    </sheet>
+    <spellcasting name="Captain Skald" ability="Charisma" allowReplace="true">
+      <list>Bard</list>
+    </spellcasting>
+    <rules>
+      <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+      <stat name="magus:spellcasting:slots:1" value="2" level="3" />
+      <stat name="magus:spellcasting:slots:1" value="1" level="4" />
+      <stat name="magus:spellcasting:slots:1" value="1" level="7" />
+      <stat name="magus:spellcasting:slots:2" value="2" level="7" />
+      <stat name="magus:spellcasting:slots:2" value="1" level="10" />
+      <stat name="magus:spellcasting:slots:3" value="2" level="13" />
+      <stat name="magus:spellcasting:slots:3" value="1" level="16" />
+      <stat name="magus:spellcasting:slots:4" value="1" level="19" />
+
+
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" number="3" spellcasting="Captain Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Captain Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Captain Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="10" spellcasting="Captain Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Captain Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Captain Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="14" spellcasting="Captain Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="16" spellcasting="Captain Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Captain Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="20" spellcasting="Captain Skald" />
+
+      <stat name="skald save:dc" value="8" />
+      <stat name="skald save:dc" value="proficiency" />
+      <stat name="skald save:dc:ability" value="leadership:modifier" bonus="ability"/>
+      <stat name="skald save:dc" value="skald save:dc:ability" />
+    </rules>
+  </element>
+
+  <element name="Spellcasting" type="Class Feature" source="Laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_SPELLCASTING_MENTOR">
+    <description>
+      <p>Your talent in poetry and music allows you to produce spells, much like the Bard does. You gain the following benefits:</p>
+      <h5>SPELL SLOTS</h5>
+      <p>The Skald Spellcasting table shows how many spell slots you have to cast your spells of 1st-level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest. For example, if you know the thunderwave spell and have both a 1st and a 2nd-level spell slot, you can cast thunderwave using either spell slot.</p>
+      <h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+      <p>You know three 1st-level spells of your choice from the Bard spell list. The Spells Known column of the Skald Spellcasting table shows when you learn more Bard spells of your choice of 1st-level or higher. Any Bard spell you learn through this feature must be of a level for which you have spell slots.</p>
+      <p class="indent">When you gain a level, you can replace one of your Spells Known with another spell from the Bard Spell List. The spell must also be of a level for which you have spell slots.</p>
+      <h5>SPELLCASTING FOCUS</h5>
+      <p>You can use any musical instrument you are proficient with as a spellcasting focus for your Bard spells. Skalds are known for using one-handed instruments, like war horns, while holding a weapon in their other hand.</p>
+      <h5>SPELLCASTING ABILITY</h5>
+      <p>You use your Leadership modifier when setting the saving throw DC or making a spell attack roll for any Bard spells you know through this feature.</p>
+      <center>
+        <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Leadership modifier</p>
+        <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Leadership modifier</p>
+      </center>
+
+      <table class="skald-spellcasting">
+        <thead>
+          <tr><td class="col-5">Warlord Level</td><td class="col-5">Spells Known</td><td class="col-5">1st level</td><td class="col-5">2nd Level</td><td class="col-5">3rd Level</td><td class="col-5">4th Level</td></tr>
+        </thead>
+        <tr><td> 3rd</td><td>3</td><td>2</td><td>-</td><td>-</td><td>─</td></tr>
+        <tr><td> 4th</td><td>4</td><td>3</td><td>-</td><td>-</td><td>─</td></tr>
+        <tr><td> 5th</td><td>4</td><td>3</td><td>-</td><td>-</td><td>─</td></tr>
+        <tr><td> 6th</td><td>4</td><td>3</td><td>-</td><td>-</td><td>─</td></tr>
+        <tr><td> 7th</td><td>5</td><td>4</td><td>2</td><td>-</td><td>─</td></tr>
+        <tr><td> 8th</td><td>6</td><td>4</td><td>2</td><td>-</td><td>─</td></tr>
+        <tr><td> 9th</td><td>6</td><td>4</td><td>3</td><td>-</td><td>─</td></tr>
+        <tr><td> 10th</td><td>7</td><td>4</td><td>3</td><td>-</td><td>─</td></tr>
+        <tr><td> 11th</td><td>8</td><td>4</td><td>3</td><td>-</td><td>─</td></tr>
+        <tr><td> 12th</td><td>8</td><td>4</td><td>3</td><td>-</td><td>─</td></tr>
+        <tr><td> 13th</td><td>9</td><td>4</td><td>3</td><td>2</td><td>─</td></tr>
+        <tr><td> 14th</td><td>10</td><td>4</td><td>3</td><td>2</td><td>─</td></tr>
+        <tr><td> 15th</td><td>10</td><td>4</td><td>3</td><td>2</td><td>─</td></tr>
+        <tr><td> 16th</td><td>11</td><td>4</td><td>3</td><td>3</td><td>─</td></tr>
+        <tr><td> 17th</td><td>11</td><td>4</td><td>3</td><td>3</td><td>─</td></tr>
+        <tr><td> 18th</td><td>11</td><td>4</td><td>3</td><td>3</td><td>─</td></tr>
+        <tr><td> 19th</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+        <tr><td> 20th</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+      </table>
+
+    </description>
+    <sheet display="false">
+      <description>You have the ability to cast spells.</description>
+    </sheet>
+    <spellcasting name="Mentor Skald" ability="Wisdom" allowReplace="true">
+      <list>Bard</list>
+    </spellcasting>
+    <rules>
+      <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+      <stat name="magus:spellcasting:slots:1" value="2" level="3" />
+      <stat name="magus:spellcasting:slots:1" value="1" level="4" />
+      <stat name="magus:spellcasting:slots:1" value="1" level="7" />
+      <stat name="magus:spellcasting:slots:2" value="2" level="7" />
+      <stat name="magus:spellcasting:slots:2" value="1" level="10" />
+      <stat name="magus:spellcasting:slots:3" value="2" level="13" />
+      <stat name="magus:spellcasting:slots:3" value="1" level="16" />
+      <stat name="magus:spellcasting:slots:4" value="1" level="19" />
+
+
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" number="3" spellcasting="Mentor Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Mentor Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Mentor Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="10" spellcasting="Mentor Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Mentor Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Mentor Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="14" spellcasting="Mentor Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="16" spellcasting="Mentor Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Mentor Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="20" spellcasting="Mentor Skald" />
+
+      <stat name="skald save:dc" value="8" />
+      <stat name="skald save:dc" value="proficiency" />
+      <stat name="skald save:dc:ability" value="leadership:modifier" bonus="ability"/>
+      <stat name="skald save:dc" value="skald save:dc:ability" />
+    </rules>
+  </element>
+
+  <element name="Spellcasting" type="Class Feature" source="Laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_SPELLCASTING_STRATEGIST">
+    <description>
+      <p>Your talent in poetry and music allows you to produce spells, much like the Bard does. You gain the following benefits:</p>
+      <h5>SPELL SLOTS</h5>
+      <p>The Skald Spellcasting table shows how many spell slots you have to cast your spells of 1st-level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest. For example, if you know the thunderwave spell and have both a 1st and a 2nd-level spell slot, you can cast thunderwave using either spell slot.</p>
+      <h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+      <p>You know three 1st-level spells of your choice from the Bard spell list. The Spells Known column of the Skald Spellcasting table shows when you learn more Bard spells of your choice of 1st-level or higher. Any Bard spell you learn through this feature must be of a level for which you have spell slots.</p>
+      <p class="indent">When you gain a level, you can replace one of your Spells Known with another spell from the Bard Spell List. The spell must also be of a level for which you have spell slots.</p>
+      <h5>SPELLCASTING FOCUS</h5>
+      <p>You can use any musical instrument you are proficient with as a spellcasting focus for your Bard spells. Skalds are known for using one-handed instruments, like war horns, while holding a weapon in their other hand.</p>
+      <h5>SPELLCASTING ABILITY</h5>
+      <p>You use your Leadership modifier when setting the saving throw DC or making a spell attack roll for any Bard spells you know through this feature.</p>
+      <center>
+        <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Leadership modifier</p>
+        <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Leadership modifier</p>
+      </center>
+
+      <table class="skald-spellcasting">
+        <thead>
+          <tr><td class="col-5">Warlord Level</td><td class="col-5">Spells Known</td><td class="col-5">1st level</td><td class="col-5">2nd Level</td><td class="col-5">3rd Level</td><td class="col-5">4th Level</td></tr>
+        </thead>
+        <tr><td> 3rd</td><td>3</td><td>2</td><td>-</td><td>-</td><td>─</td></tr>
+        <tr><td> 4th</td><td>4</td><td>3</td><td>-</td><td>-</td><td>─</td></tr>
+        <tr><td> 5th</td><td>4</td><td>3</td><td>-</td><td>-</td><td>─</td></tr>
+        <tr><td> 6th</td><td>4</td><td>3</td><td>-</td><td>-</td><td>─</td></tr>
+        <tr><td> 7th</td><td>5</td><td>4</td><td>2</td><td>-</td><td>─</td></tr>
+        <tr><td> 8th</td><td>6</td><td>4</td><td>2</td><td>-</td><td>─</td></tr>
+        <tr><td> 9th</td><td>6</td><td>4</td><td>3</td><td>-</td><td>─</td></tr>
+        <tr><td> 10th</td><td>7</td><td>4</td><td>3</td><td>-</td><td>─</td></tr>
+        <tr><td> 11th</td><td>8</td><td>4</td><td>3</td><td>-</td><td>─</td></tr>
+        <tr><td> 12th</td><td>8</td><td>4</td><td>3</td><td>-</td><td>─</td></tr>
+        <tr><td> 13th</td><td>9</td><td>4</td><td>3</td><td>2</td><td>─</td></tr>
+        <tr><td> 14th</td><td>10</td><td>4</td><td>3</td><td>2</td><td>─</td></tr>
+        <tr><td> 15th</td><td>10</td><td>4</td><td>3</td><td>2</td><td>─</td></tr>
+        <tr><td> 16th</td><td>11</td><td>4</td><td>3</td><td>3</td><td>─</td></tr>
+        <tr><td> 17th</td><td>11</td><td>4</td><td>3</td><td>3</td><td>─</td></tr>
+        <tr><td> 18th</td><td>11</td><td>4</td><td>3</td><td>3</td><td>─</td></tr>
+        <tr><td> 19th</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+        <tr><td> 20th</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+      </table>
+
+    </description>
+    <sheet display="false">
+      <description>You have the ability to cast spells.</description>
+    </sheet>
+    <spellcasting name="Strategist Skald" ability="Intelligence" allowReplace="true">
+      <list>Bard</list>
+    </spellcasting>
+    <rules>
+      <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+      <stat name="magus:spellcasting:slots:1" value="2" level="3" />
+      <stat name="magus:spellcasting:slots:1" value="1" level="4" />
+      <stat name="magus:spellcasting:slots:1" value="1" level="7" />
+      <stat name="magus:spellcasting:slots:2" value="2" level="7" />
+      <stat name="magus:spellcasting:slots:2" value="1" level="10" />
+      <stat name="magus:spellcasting:slots:3" value="2" level="13" />
+      <stat name="magus:spellcasting:slots:3" value="1" level="16" />
+      <stat name="magus:spellcasting:slots:4" value="1" level="19" />
+
+
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" number="3" spellcasting="Strategist Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Strategist Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Strategist Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="10" spellcasting="Strategist Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Strategist Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Strategist Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="14" spellcasting="Strategist Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="16" spellcasting="Strategist Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Strategist Skald" />
+      <select type="Spell" name="Spell (Skald)" supports="$(spellcasting:list),$(spellcasting:slots)" level="20" spellcasting="Strategist Skald" />
+
+      <stat name="skald save:dc" value="8" />
+      <stat name="skald save:dc" value="proficiency" />
+      <stat name="skald save:dc:ability" value="leadership:modifier" bonus="ability"/>
+      <stat name="skald save:dc" value="skald save:dc:ability" />
+    </rules>
+  </element>
+
+  <element name="Gallant Charge" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_GALLANT_CHARGE">
+    <description>
+      <p>When you roll initiative, you can expend a use of Inspiring Word to rally a heroic charge. You, and any creatures of your choice within 15 feet that can hear you gain a bonus to your initiative rolls equal to one roll of your Exploit Die. You cannot use this feature if you are surprised or incapacitated when rolling initiative.</p>
+    </description>
+    <sheet>
+      <description>When you roll initiative, unless you are surprised or incapacitated, you can expend an Inspiring Word use to grant you and any creatures of your choice within 15 ft. that can hear you a +1d{{exploit dice:size}} bonus to their initiative rolls.</description>
+    </sheet>
+  </element>
+
+  <element name="Songs of War and Peace" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_SONGS_OF_WAR_AND_PEACE">
+    <description>
+      <p>Your music can soothe and inspire. Creatures that spend a short rest with you have advantage on their Hit Die rolls.</p>
+      <p class="indent">Also, whenever you use your action to cast a Bard spell of 1st-level or higher or expend an Exploit Die to use a Tactical Exploit, you can make one weapon attack as a bonus action.</p>
+    </description>
+    <sheet>
+      <description>Creatures that take a short rest with you have advantage on their Hit Die rolls.&#13;&#10;When you use your action to cast a Bard spell or expend an Exploit Die on a tactical exploit, you can make a weapon attack as a bonus action.</description>
+    </sheet>
+  </element>
+
+  <element name="Warsong" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_WARSONG">
+    <description>
+      <p>You inspire your comrades to stand and fight against all odds. When you target a friendly creature with an Inspiring Word, a Rallying Cry, or Tactical Exploit, it has advantage on the first saving throw it makes before the start of your next turn.</p>
+    </description>
+    <sheet>
+      <description>When you target a friendly creature with Inspiring Word, Rallying Cry, or a Tactical Exploit, it has advantage on the first saving throw it makes until your next turn.</description>
+    </sheet>
+  </element>
+
+  <element name="Skald of Legend" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_SKALDS_SKALD_OF_LEGEND">
+    <description>
+      <p>The Skalds of legend were said to be able to turn the tide of the most desperate battles. When you use a Tactical Exploit you can grant one target temporary hit points equal to your Leadership modifier (minimum of 1 temporary hit point).</p>
+      <p class="indent">Also, when you take the Attack action on your turn, you can cast a Bard spell in place of one of your weapon attacks.</p>
+    </description>
+    <sheet>
+      <description>When you use a Tactical Exploit, you can grant one target {{leadership:modifier}} temporary hit points.&#13;&#10;When you take the Attack action on your turn, you can cast a Bard spell in place of one of your weapon attacks.</description>
+    </sheet>
+  </element>
+
+  <element name="Academy of Tactics" type="Archetype" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS">
+    <supports>Academy of War</supports>
+    <description>
+      <p>Warlords of this Academy most often come from the ranks of formal organizations that serve the elite. Tacticians are highly educated commanders and are known for their dedication to those who follow them. Their understanding of how to best utilize each of their allies' strengths and avoid weaknesses makes them especially deadly opponents on the battlefield.</p>
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_ADVANCED_TACTICS" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_THE_ART_OF_WAR" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_STRATEGIC_ADJUSTMENTS" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_BRAINS_OVER_BRAWN" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_KNOW_YOUR_ENEMY" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_GIFTED_STRATEGIST" />
+      <div element="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_MASTER_TACTICIAN" />
+    </description>
+    <sheet display="false">
+      <description>Tacticians are highly educated commanders and are known for their dedication to those who follow them.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_ADVANCED_TACTICS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_THE_ART_OF_WAR" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_STRATEGIC_ADJUSTMENTS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_BRAINS_OVER_BRAWN" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_KNOW_YOUR_ENEMY" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_GIFTED_STRATEGIST" level="14"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_MASTER_TACTICIAN" level="18"/>
+    </rules>
+  </element>
+
+  <element name="Advanced Tactics" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_ADVANCED_TACTICS">
+    <description>
+      <p>Your ability to learn and execute strategies in combat exceeds that of most commanders and even other trained Warlords. You gain the following benefits to your Warlord features:</p>
+      <p class="indent"><b><em>Exploits.</em></b> You learn two 1st-degree Tactical Exploits of your choice from the list at the end of this class. These Exploits do not count against your total number of Exploits Known.</p>
+      <p class="indent">You learn additional Tactical Exploits following the same rules at certain levels: at 5th level you learn two 2nd-degree Exploits, and at 9th level you learn one 3rd-degree Exploit.</p>
+      <p class="indent"><b><em>Exploit Dice.</em></b> Your total number of Exploit Dice increases by 1, and all of your Exploit Dice increase to become d6s.</p>
+      <p class="indent">At certain Warlord levels your Exploit Dice increase again; at 5th level (d8), at 11th level (d10), and at 17th level (d12).</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Tactical Exploit (Advanced Tactics)" supports="Martial Exploit,Warlord,1" level="3"/>
+      <select type="Archetype Feature" name="Tactical Exploit (Advanced Tactics)" supports="Martial Exploit,Warlord,2" number="2" level="5"/>
+      <select type="Archetype Feature" name="Tactical Exploit (Advanced Tactics)" supports="Martial Exploit,Warlord,3" level="9"/>
+
+      <stat name="exploit dice:num" value="4" level="5" bonus="num"/>
+      <stat name="exploit dice:num" value="5" level="11" bonus="num"/>
+      <stat name="exploit dice:num" value="6" level="17" bonus="num"/>
+
+      <stat name="exploit dice:size" value="6" level="2" bonus="size"/>
+      <stat name="exploit dice:size" value="8" level="5" bonus="size"/>
+      <stat name="exploit dice:size" value="10" level="11" bonus="size"/>
+      <stat name="exploit dice:size" value="12" level="17" bonus="size"/>
+    </rules>
+  </element>
+
+  <element name="The Art of War" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_THE_ART_OF_WAR">
+    <description>
+      <p>You have studied the great histories of warfare and combat. You gain proficiency in History and with two gaming sets of your choice. Whenever you make an ability check with any of these proficiencies you can double your proficiency bonus.</p>
+    </description>
+    <sheet>
+      <description>+{{proficiency}} to History checks or checks performed with the two gaming sets chosen for this feature.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="PROFICIENCY_SKILL_HISTORY" />
+      <select type="Proficiency" name="Gaming Set, The Art of War" supports="Gaming Set" number="2"/>
+    </rules>
+  </element>
+
+  <element name="The Art of War" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_THE_ART_OF_WAR">
+    <description>
+      <p>You are constantly adapting to meet any challenge. When you complete a long rest, you can replace one Tactical Exploit you currently know with a Tactical Exploit of your choice of the same degree.</p>
+      <p class="indent">When you reach 6th level in this class, you can do so whenever you finish a short or long rest.</p>
+    </description>
+    <sheet>
+      <description action="1/Long Rest">You can replace a Tactical Exploit with another of the same degree after a long rest.</description>
+      <description action="1/Short Rest" level="6">You can replace a Tactical Exploit with another of the same degree after a rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Brains Over Brawn" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_BRAINS_OVER_BRAWN">
+    <description>
+      <p>You wield your comrades as other warriors wield weapons. If you use a Tactical Exploit as your action, or use a Tactical Exploit in place of each attack you can make, you can use a bonus action on that turn to take the Disengage action, or to use one Order Exploit (such as attack order) that you know.</p>
+    </description>
+    <sheet>
+      <description>If you use a Tactical Exploit as your action or in place of an attack, you can use a bonus action to Disengage or use a known Order Exploit.</description>
+    </sheet>
+  </element>
+
+  <element name="Know Your Enemy" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_KNOW_YOUR_ENEMY">
+    <description>
+      <p>You evaluate the potential of others at a glance. As an action, choose a creature you can see within 60 feet. You learn if it is your equal, superior, or inferior in one of the following areas:</p>
+      <table>
+      <tr><td>Armor Class</td><td>Intelligence Score</td></tr>
+      <tr><td>Current Hit Points</td><td>Wisdom Score</td></tr>
+      <tr><td>Walking Speed</td><td>Charisma Score</td></tr>
+    </table>
+      <p class="indent"> Once you use this feature on a creature you cannot use it on that creature again until you finish a short or long rest.</p>
+    </description>
+    <sheet>
+      <description>Learn if a visible creature within 60 ft. is superior, inferior, or equal to you in AC, current hit points, walking speed, Intelligence, Wisdom, or Charisma (once per creature per rest).</description>
+    </sheet>
+  </element>
+
+  <element name="Gifted Strategist" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_GIFTED_STRATEGIST">
+    <description>
+      <p>You cannot be surprised while you are conscious, and when you roll initiative, you gain a special action that you can take at the start of combat before any other creature has a chance to act. This special action can only be used to use a Tactical Exploit you know or to take the Ready action.</p>
+    </description>
+    <sheet>
+      <description>You cannot be surprised while conscious.&#13;&#10;You gain a special action taken at the start of combat, before any other creature acts, that can be used to either take the Ready action or use a Tactical Exploit.</description>
+    </sheet>
+  </element>
+
+  <element name="Master Tactician" type="Archetype Feature" source="laserllama's Warlord" id="ID_LASERLL_ARCHETYPE_WARLORD_TACTICS_MASTER_TACTICIAN">
+    <description>
+      <p>You have a plan in place for every eventuality. You learn the contingency plan Exploit, but it doesn't count against your total number of Exploits Known. At the end of a long rest, you can use contingency plan without expending an Exploit Die to put the plan in place. You can only have a single contingency plan in place at any one time.</p>
+    </description>
+    <sheet>
+      <description usage="1/Long Rest">Use the Contingency Plan Exploit at the end of a long rest without expending an Exploit Die; you can only have a single contingency plan in place at a time.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_FIGHTER_MARTIAL_EXPLOIT_CONTINGENCY_PLAN"/>
+    </rules>
+  </element>
+
+</elements>

@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	<name></name>
+		<update version="1.0">
+				<file name="companion-modifiers-by-level.xml" url="tmp.xml" />
+		</update>
+	</info>
+
+	<element name="Companion Strength +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_STR_INCREASE_2">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's strength is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:strength" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion Strength +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_STR_INCREASE_3">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's strength is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:strength" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion Strength +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_STR_INCREASE_4">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's strength is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:strength" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion Strength +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_STR_INCREASE_5">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's strength is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:strength" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion Strength +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_STR_INCREASE_6">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's strength is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:strength" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion Strength +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_STR_INCREASE_7">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's strength is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:strength" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion Strength +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_STR_INCREASE_8">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's strength is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:strength" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion Strength +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_STR_INCREASE_9">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's strength is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:strength" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion Strength +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_STR_INCREASE_10">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's strength is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:strength" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion Dexterity +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_DEX_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's dexterity is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:dexterity" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion Dexterity -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_DEX_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's dexterity is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:dexterity" value="-1" />
+		</rules>
+	</element>
+
+	<element name="Companion Constitution +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_CON_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's constitution is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:constitution" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion Constitution -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_CON_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's constitution is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:constitution" value="-1" />
+		</rules>
+	</element>
+
+	<element name="Companion Intelligence +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_INT_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's intelligence is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:intelligence" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion Intelligence -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_INT_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's intelligence is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:intelligence" value="-1" />
+		</rules>
+	</element>
+
+	<element name="Companion Wisdom +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_WIS_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's wisdom is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:wisdom" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion Wisdom -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_WIS_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's wisdom is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:wisdom" value="-1" />
+		</rules>
+	</element>
+
+	<element name="Companion Charisma +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_CHA_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's charisma is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:charisma" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion Charisma -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_CHA_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's charisma is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:charisma" value="-1" />
+		</rules>
+	</element>
+
+	<element name="Companion AC +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_AC_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's AC is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion AC -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_AC_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's AC is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="-1" />
+		</rules>
+	</element>
+
+	<element name="Companion Attack +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_ATTACK_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's attack is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:attack" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion Attack -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_ATTACK_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's attack is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:attack" value="-1" />
+		</rules>
+	</element>
+
+	<element name="Companion Damage +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_DAMAGE_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's damage is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:damage" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion Damage -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_DAMAGE_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's damage is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:damage" value="-1" />
+		</rules>
+	</element>
+
+	<element name="Companion HP +1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_HP_INCREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's health is 1 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:hp:max" value="1" />
+		</rules>
+	</element>
+
+	<element name="Companion HP -1" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_HP_DECREASE_1">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's health is 1 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:hp:max" value="-1" />
+		</rules>
+	</element>
+
+	<element name="Companion HP +10" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_HP_INCREASE_10">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's health is 10 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:hp:max" value="10" />
+		</rules>
+	</element>
+
+	<element name="Companion HP -10" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_HP_DECREASE_10">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's health is 10 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:hp:max" value="-10" />
+		</rules>
+	</element>
+
+	<element name="Companion HP +100" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_HP_INCREASE_100">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's health is 100 more.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:hp:max" value="100" />
+		</rules>
+	</element>
+
+	<element name="Companion HP -100" type="Item" source="More Modifiers" id="ID_INTERNAL_ITEM_COMPANION_HP_DECREASE_100">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>Your companion's health is 100 less.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="companion:hp:max" value="-100" />
+		</rules>
+	</element>
+
+</elements>

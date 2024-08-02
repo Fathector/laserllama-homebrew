@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+      <name></name>
+      <update version="2.0.1">
+          <file name="subclasses-wizard-laserll.xml" url="tmp.xml" />
+      </update>
+  </info>
+
+  <element name="Hedge Magic" type="Archetype" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEDGE_MAGIC">
+    <supports>Arcane Tradition</supports>
+    <description>
+      <p>While almost all wizards study in formal schools under the tutelage of a wise master, some wizards reject traditional arcane schooling and strike out into the world to learn by doing. These rare few who hone their craft out in the wilds are referred to as Hedge Wizards. Though their methods are frowned upon by formal wizarding schools, any archmage worthy of his station will reluctantly recognize that Hedge Wizards are the true masters of the low magics.</p>
+      <p class="indent">Regardless of their background, all Hedge Wizards reject the traditional methods of wizardry. When creating your Hedge Wizard consider how your spellcasting and spellbook may differ from a wizard who attended a formal school</p>
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_HEDGE_MAGIC_CANTRIP_SAVANT" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_HEDGE_MAGIC_SELF_TAUGHT" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_HEDGE_MAGIC_ON_THE_FLY" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_HEDGE_MAGIC_HARDY_MAGIC" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_HEDGE_MAGIC_ARCANE_CONSERVATION" />
+    </description>
+    <sheet display="false">
+      <description>Hedge Wizards reject traditional arcane schooling and strike out into the world to learn by doing.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_HEDGE_MAGIC_CANTRIP_SAVANT" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_HEDGE_MAGIC_SELF_TAUGHT" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_HEDGE_MAGIC_ON_THE_FLY" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_HEDGE_MAGIC_HARDY_MAGIC" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_HEDGE_MAGIC_ARCANE_CONSERVATION" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Cantrip Savant" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEDGE_MAGIC_CANTRIP_SAVANT">
+    <description>
+      <p>Your unorthodox relationship with arcane magic allows you to you learn fundamental magics not traditionally associated with wizards. When you adopt this Arcane Tradition at 2nd level, you learn one cantrip of your choice from any spell list. The chosen cantrip counts as a wizard spell for you, but does not count against your total number of Cantrips Known.</p>
+      <p class="indent">You learn additional cantrips in this way as you gain levels in this class; one each at 6th level, 10th level, and 14th level.</p>
+    </description>
+    <sheet description="false">
+    </sheet>
+    <rules>
+      <select type="Spell" name="1st Additional Cantrip (Arcana Domain)" supports="0" level="2" spellcasting="Wizard" allowReplace="false" />
+      <select type="Spell" name="2nd Additional Cantrip (Arcana Domain)" supports="0" level="2" spellcasting="Wizard" allowReplace="false" />
+      <select type="Spell" name="3rd Additional Cantrip (Arcana Domain)" supports="0" level="6" spellcasting="Wizard" allowReplace="false" />
+      <select type="Spell" name="4th Additional Cantrip (Arcana Domain)" supports="0" level="10" spellcasting="Wizard" allowReplace="false" />
+      <select type="Spell" name="5th Additional Cantrip (Arcana Domain)" supports="0" level="14" spellcasting="Wizard" allowReplace="false" />
+    </rules>
+  </element>
+
+  <element name="Self-Taught" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEDGE_MAGIC_SELF_TAUGHT">
+    <description>
+      <p>Your deep understanding of the low magics allows you to add them to your spellbook at a discount. Starting at 2nd level, the time you must spend to copy any spell of a level equal to half your proficiency bonus or lower into your spellbook is halved, and the cost of the materials and inks is reduced by 50 gold.</p>
+    </description>
+    <sheet>
+      <description>You can copy spells of a level equal to or lower than half of your proficiency bonus in half the time, and the material cost is 50 gold less.</description>
+    </sheet>
+  </element>
+
+  <element name="On the Fly" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEDGE_MAGIC_ON_THE_FLY">
+    <description>
+      <p>Your skill with basic magic is second to none, allowing you to spontaneously cast low-level spells that you haven't prepared. Beginning at 6th level, you can use your action to cast any spell of 2nd-level or lower from your spellbook, even if you don't have the spell prepared, expending the appropriate spell slot. The spell must have a casting time of one action.</p>
+      <p class="indent">You can cast a spell in this way a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+      <p class="indent">As you gain levels in this class, you can cast more powerful spells with this feature: 3rd-level spells at 10th level, 4th-level spells at 14th level, and finally 5th-level spells at 18th level.</p>
+    </description>
+    <sheet>
+      <description usage="{{intelligence:modifier}}/Long Rest" action="Action" level="6">You can cast a known but unprepared 2nd-level spell or lower that has a casting time of one action, expending the appropriate spell slot.</description>
+      <description usage="{{intelligence:modifier}}/Long Rest" action="Action" level="10">You can cast a known but unprepared 3rd-level spell or lower that has a casting time of one action, expending the appropriate spell slot.</description>
+      <description usage="{{intelligence:modifier}}/Long Rest" action="Action" level="14">You can cast a known but unprepared 4th-level spell or lower that has a casting time of one action, expending the appropriate spell slot.</description>
+      <description usage="{{intelligence:modifier}}/Long Rest" action="Action" level="18">You can cast a known but unprepared 5th-level spell or lower that has a casting time of one action, expending the appropriate spell slot.</description>
+    </sheet>
+  </element>
+
+  <element name="Hardy Magic" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEDGE_MAGIC_HARDY_MAGIC">
+    <description>
+      <p>Learning your magic out in the wild instead of the controlled environment of a formal school has made you hardier than most wizards. Starting at 10th level, when you are forced to make a Constitution saving throw to maintain concentration on a spell, you can use a reaction to grant yourself a bonus to the roll equal to your Intelligence modifier (minimum of +1).</p>
+      <p class="indent">You can use this reaction after you roll, but before you determine whether you succeed or fail.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When forced to make a Constitution saving throw to maintain spell concentration, add +{{intelligence:modifier}} to the roll (after you roll but before you know if it succeeds).</description>
+    </sheet>
+  </element>
+
+  <element name="Arcane Conservation" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEDGE_MAGIC_ARCANE_CONSERVATION">
+    <description>
+      <p>our understanding of arcane fundamentals allows you to recycle the energy of failed spells. Beginning at 14th level, when you cast a wizard spell of 4th-level or lower and the spell fails, you regain one expended spell slot. The spell slot regained must be a lower level than the spell slot used to cast the failed spell. This feature applies to all spells of 4th-level or lower, even if they are cast with a higher level spell slot.</p>
+      <p class="indent">When you reach 18th level in this class, this ability affects any wizard spells of 5th-level and lower.</p>
+    </description>
+    <sheet>
+      <description level="14">When a spell you cast of 4th-level of lower fails, you regain a spell slot of a level lower than the spell's level.</description>
+      <description level="18">When a spell you cast of 5th-level of lower fails, you regain a spell slot of a level lower than the spell's level.</description>
+    </sheet>
+  </element>
+
+  <element name="Familiarist" type="Archetype" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_FAMILIARIST">
+    <supports>Arcane Tradition</supports>
+    <description>
+      <p>While many a mage may form a bond with their familiar, none are as strong as the wizards known as Familiarists. They use their knowledge of conjuration and transmutation magic to enhance the standard familiar with wondrous arcane power.</p>
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_FAMILIARIST_FAMILIAR_SAVANT" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_FAMILIARIST_GREATER_FAMILIAR" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_FAMILIARIST_BONDED_TRANSPOSITION" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_FAMILIARIST_ARCANE_COORDINATION" />
+      <div element="ID_LASERLL_CLASS_FEATURE_WIZARD_FAMILIARIST_ARCHFAMILIAR" />
+    </description>
+    <sheet display="false">
+      <description>Familiarists use their knowledge of conjuration and transmutation magic to enhance the standard familiar with wondrous arcane power.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_FAMILIARIST_FAMILIAR_SAVANT" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_FAMILIARIST_GREATER_FAMILIAR" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_FAMILIARIST_BONDED_TRANSPOSITION" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_FAMILIARIST_ARCANE_COORDINATION" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_CLASS_FEATURE_WIZARD_FAMILIARIST_ARCHFAMILIAR" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Familiar Savant" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_FAMILIARIST_FAMILIAR_SAVANT">
+		<description>
+			<p>When you adopt this Arcane Tradition at 2nd level, you add the <em>find familiar</em> spell to your spellbook. In addition, when you cast <em>find familiar</em> as a ritual, you do not need to provide the normal material components for the spell.</p>
+      <div class="reference">
+        <div element="ID_PHB_SPELL_FIND_FAMILIAR" />
+      </div>
+		</description>
+		<sheet>
+			<description>When you cast find familiar as a ritual you do not need to provide material components.</description>
+		</sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" spellcasting="Wizard" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Greater Familiar" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_FAMILIARIST_GREATER_FAMILIAR">
+		<description>
+			<p>When you adopt this Arcane Tradition at 2nd level, you learn to enhance your familiar with your arcane power. When you cast find familiar, you use the Greater Familiar stat block at the end of this Tradition, which uses your proficiency bonus (PB) and Intelligence modifier (INT) in several places.</p>
+      <p class="indent">Each time you conjure your Greater Familiar it gains a number of Arcane Amalgamation features equal to your proficiency bonus from the list at the end of this Tradition. You can change these features each time you conjure it.</p>
+      <p class="indent">In combat, your Greater Familiar acts during your turn. It can move and use its reaction on its own, but it only takes the Dodge action unless you use your action or bonus action to command it to take an action from its stat block, or another action. If you are incapacitated, your Greater Familiar acts independently to protect you as best as it can.</p>
+      <p class="indent">Other then the differences described here, your Greater Familiar uses the same features as a normal familiar.</p>
+      <div element="ID_LASERLL_INFORMATION_WIZARD_GREATER_FAMILIAR" />
+		</description>
+		<sheet>
+			<description>Your Greater Familiar gains {{proficiency}} Arcane Amalgamation features upon being conjured. You can command it with a bonus action, otherwise it will Dodge. It will defend you if you are incapacitated.</description>
+		</sheet>
+    <rules>
+      <select type="Companion" supports="ID_LASERLL_COMPANION_WIZARD_GREATER_FAMILIAR_CELESTIAL|ID_LASERLL_COMPANION_WIZARD_GREATER_FAMILIAR_FEY|ID_LASERLL_COMPANION_WIZARD_GREATER_FAMILIAR_FIEND" />
+    </rules>
+  </element>
+
+  <element name="Greater Familiar (Celestial)" type="Companion" source="laserllama's Arcane Traditions" id="ID_LASERLL_COMPANION_WIZARD_GREATER_FAMILIAR_CELESTIAL">
+    <description>
+      <p>Your familiar is enhanced with arcane power.</p>
+    </description>
+    <setters>
+      <set name="size">Medium</set>
+      <set name="type">Celestial</set>
+      <set name="alignment">Good</set>
+      <set name="challenge">0</set>
+      <set name="ac">8 + PB + your Intelligence modifier</set>
+      <set name="hp">4 + five times your Wizard level.</set>
+      <set name="speed">30 ft., climb 20 ft.</set>
+      <set name="strength">4</set>
+      <set name="dexterity">16</set>
+      <set name="constitution">12</set>
+      <set name="intelligence">10</set>
+      <set name="wisdom">12</set>
+      <set name="charisma">10</set>
+      <set name="senses">passive Perception 11 +PB</set>
+      <set name="languages">understands the languages you speak</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_WIZARD_GREATER_FAMILIAR_CONJURERS_BOND,ID_LASERLL_COMPANION_TRAIT_WIZARD_GREATER_FAMILIAR_ARCANE_AMALGAMATION</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_WIZARD_GREATER_FAMILIAR_BITE</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="13" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:ac" value="intelligence:modifier" />
+      <stat name="additional:hp:max" value="level:wizard" />
+      <stat name="additional:hp:max" value="level:wizard" />
+      <stat name="additional:hp:max" value="level:wizard" />
+      <stat name="additional:hp:max" value="level:wizard" />
+      <stat name="additional:hp:max" value="level:wizard" />
+      <stat name="companion:hp:max" value="4" />
+      <stat name="companion:speed" value="30" bonus="base" />
+    	<stat name="companion:speed:climb" value="20" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Conjurer's Bond" type="Companion Trait" source="laserllama's Arcane Traditions" id="ID_LASERLL_COMPANION_TRAIT_WIZARD_GREATER_FAMILIAR_CONJURERS_BOND">
+    <description>
+      <p>You add your PB to any ability check or saving throw that your familiar makes.</p>
+    </description>
+    <sheet>
+      <description>+PB to any ability check or saving throw your familiar makes.</description>
+    </sheet>
+  </element>
+
+  <element name="Arcane Amalgamation" type="Companion Trait" source="laserllama's Arcane Traditions" id="ID_LASERLL_COMPANION_TRAIT_WIZARD_GREATER_FAMILIAR_ARCANE_AMALGAMATION">
+    <description>
+      <p>Each time you summon your familiar it gains a number of Amalgamation features of your choice equal to your PB.</p>
+      <p class="indent"><b><em>Amphibious.</em></b> The familiar gains a swimming speed equal to its walking speed and can breath both air and water.</p>
+      <p class="indent"><b><em>Camoflague.</em></b> The familiar has advantage on Dexterity (Stealth) checks when it holding still or lightly obscured.</p>
+      <p class="indent"><b><em>Elusive.</em></b> The familiar does not provoke opportunity attacks when it moves out of an enemy creature's reach.</p>
+      <p class="indent"><b><em>Enhanced Sight.</em></b> The familiar gains Darkvision out to a radius of 60 ft. If you choose this feature a second time the familiar also gains Blindsight within that 60-foot radius.</p>
+      <p class="indent"><b><em>Flight.</em></b> The familiar gains a flying speed equal to its walking speed, and while it is conscious it can hover.</p>
+      <p class="indent"><b><em>Fortified Frame.</em></b> The familiar gains 1 additional hit point per wizard level. You can choose this feature multiple times.</p>
+      <p class="indent"><b><em>Keen Senses.</em></b> The familiar has advantage on Wisdom (Perception) checks that rely on its hearing, smell, or sight.</p>
+      <p class="indent"><b><em>Telepathy.</em></b> The familiar can magically communicate simple ideas, emotions, and images telepathically with any creature within 100 ft. of it that can understand at least one language.</p>
+      <p class="indent"><b><em>Mimicry.</em></b> TThe familiar can mimic simple sounds it has heard, such as a person whispering or an animal chittering.
+      A creature can tell the sounds are imitations by succeeding on a Wisdom (Insight) check against your spell save DC.</p>
+      <p class="indent"><b><em>Pack Tactics.</em></b> The familiar has advantage on attack rolls if a conscious allied creature is within 5 feet of it's target.</p>
+      <p class="indent"><b><em>Swift.</em></b> The familiar's walking and climb speed increase by 10 feet. You can choose this feature multiple times.</p>
+      <p class="indent"><b><em>Tunneler.</em></b> The familiar gains a 10 ft. burrow speed that it can use to tunnel through loose rocks, dirt, sand, and soil.</p>
+    </description>
+    <sheet>
+      <description>Gain a number of Amalgamation features of your choice equal to your PB.</description>
+    </sheet>
+  </element>
+
+  <element name="Bite" type="Companion Action" source="laserllama's Arcane Traditions" id="ID_LASERLL_COMPANION_ACTION_WIZARD_GREATER_FAMILIAR_BITE">
+    <description>
+      <p><em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d4 +3 +PB piercing damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d4 +3 +PB piercing damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Greater Familiar" type="Information" source="laserllama's Shaman Expanded" id="ID_LASERLL_INFORMATION_WIZARD_GREATER_FAMILIAR">
+    <description>
+      <p style="margin-bottom:-5px"><em>Tiny celestial (good), fey (neutral), or fiend (evil)</em></p>
+      <h4 style="margin-top:5px" />
+      <ul class="unstyled">
+        <li><strong>Armor Class</strong> 8 + PB + your Intelligence Modifier</li>
+        <li><strong>Hit Points</strong> 4 + five times your Wizard level</li>
+        <li><strong>Speed</strong> 30 ft., fly 20 ft. climb</li>
+      </ul>
+      <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+        <thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+        <tr><td>4 (-3)</td><td>16 (+3)</td><td>12 (+1)</td><td>10 (+0)</td><td>12 (+1)</td><td>10 (+0)</td></tr>
+      </table>
+      <ul class="unstyled">
+        <li><strong>Senses</strong> passive Perception 11 +PB.</li>
+        <li><strong>Languages</strong>understands the languages you speak</li>
+      </ul>
+      <h4 style="margin-top:5px; margin-bottom:10px" />
+      <ul class="unstyled">
+        <li><strong><em>Conjurer's Bond.</em></strong> You add your PB to any ability check or saving throw that your familiar makes.</li>
+        <li><strong><em>Arcane Amalgamation.</em></strong> Each time you summon your familiar it gains a number of Amalgamation features of your choice equal to your PB.</li>
+      </ul>
+      <h4 style="margin-top:10px">Actions</h4>
+      <ul class="unstyled">
+        <li><em><strong>Bite.</strong></em> <em>Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d4 +3 +PB piercing damage.</li>
+      </ul>
+    </description>
+  </element>
+
+  <element name="Bonded Transposition" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_FAMILIARIST_BONDED_TRANSPOSITION">
+		<description>
+			<p>The otherworldly bond between you and your familiar has grown. Starting at 6th level, you can use an action to switch places with your familiar, each instantly teleporting to the other's space, so long as you can see your Greater Familiar.</p>
+      <p class="indent">You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses each time you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description usage="{{intelligence:modifier}}/Long Rest" action="Action">Instantly switch places with your familiar as long as you can see it.</description>
+		</sheet>
+  </element>
+
+  <element name="Arcane Coordination" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_FAMILIARIST_ARCANE_COORDINATION">
+    <description>
+      <p>Beginning at 10th level, while you are within 30 feet of your Greater Familiar and either you or your Greater Familiar is forced to make a saving throw, either of you can use your reaction to give the other advantage on their saving throw.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">While within 30 ft. of your familiar, if either of you is forced to make a saving throw, the other can use a reaction to grant advantage.</description>
+    </sheet>
+  </element>
+
+  <element name="Archfamiliar" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_FAMILIARIST_ARCHFAMILIAR">
+    <description>
+      <p>Your familiar towers over those of other wizards. Starting at 14th level, when you conjure your Greater Familiar, you can choose for its size to be Tiny, Small, Medium, or Large.</p>
+      <p class="indent">For each size category your Greater Familiar is above Tiny, its Strength score and total hit points each increase by 5.</p>
+    </description>
+    <sheet>
+      <description>You can conjure your Greater Familiar as Tiny, Small, Medium, or Large; it gains +5 Strength and hit points per size above Tiny.</description>
+    </sheet>
+  </element>
+
+  <element name="Ritualist" type="Archetype" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_RITUALIST">
+    <supports>Arcane Tradition</supports>
+    <description>
+      <p>Wizards spend their lives memorizing esoteric formulas that allow them to produce wondrous arcane effects. However, when produced spontaneously, spells are extremely taxing on the caster. To preserve their power, most wizards learn to cast ritual spells, spells that take longer to produce, but aren't as draining on said wizard's magical stamina. Some wizards, known as Ritualists, dedicate their great intellect to mastery over the deliberate and reliable magic of ritual spellcasting.</p>
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_RITUALIST_RITUAL_SAVANT" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_RITUALIST_ARCANE_ANTHOLOGY" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_RITUALIST_ACCELERATED_RITUALS" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_RITUALIST_FORMULAIC_BREAKTHROUGH" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_RITUALIST_MASTER_RITUALIST" />
+    </description>
+    <sheet display="false">
+      <description>Ritualists dedicate their great intellect to mastery over the deliberate and reliable magic of ritual spellcasting.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_RITUALIST_RITUAL_SAVANT" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_RITUALIST_ARCANE_ANTHOLOGY" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_RITUALIST_ACCELERATED_RITUALS" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_RITUALIST_FORMULAIC_BREAKTHROUGH" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_RITUALIST_MASTER_RITUALIST" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Ritual Savant" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_RITUALIST_RITUAL_SAVANT">
+		<description>
+			<p>Starting at 2nd level, the gold and time you must spend to copy a ritual spell into your spellbook is halved.</p>
+		</description>
+		<sheet>
+			<description>The time and gold needed to copy a ritual spell into your spellbook is halved.</description>
+		</sheet>
+	</element>
+
+  <element name="Arcane Anthology" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_RITUALIST_ARCANE_ANTHOLOGY">
+		<description>
+			<p>You have learned to perform arcane rituals not normally known to wizards. At 2nd level, you add two 1st-level ritual spells of your choice from any spell list to your spellbook. In addition, you can copy ritual spells from any class's spell list into your spellbook, though you must otherwise follow the normal rules for copying these spells into your spellbook.</p>
+      <p class="indent">Any non-wizard spell you add to your spellbook with this feature counts as wizard spell for you, but you can only cast it as a ritual, unless you've learned it by some other means.</p>
+		</description>
+		<sheet>
+			<description>You can cast the two spells added from this feature only as rituals; they count as wizard spells.</description>
+		</sheet>
+    <rules>
+      <select type="Spell" name="1st Additional Ritual Spell (Arcane Anthology)" supports="1,Ritual" level="2" spellcasting="Wizard" allowReplace="false" />
+      <select type="Spell" name="2nd Additional Ritual Spell (Arcane Anthology)" supports="1,Ritual" level="2" spellcasting="Wizard" allowReplace="false" />
+    </rules>
+	</element>
+
+  <element name="Accelerated Rituals" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_RITUALIST_ACCELERATED_RITUALS">
+		<description>
+			<p>You can accelerate the ritual process for spells with which you are exceptionally familiar. Beginning at 6th level, you can cast the ritual version of any 1st-level spell from your spellbook without the additional 10 minute casting time.</p>
+      <p class="indent">You can accelerate a ritual spell in this way a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+      <p class="indent">As you gain levels in this class, you learn to accelerate higher-level ritual spells: 2nd-level rituals at 10th level, 3rd-level rituals at 14th level, and 4th-level rituals at 18th level.</p>
+		</description>
+		<sheet>
+			<description usage="{{intelligence:modifier}}/Long Rest" level="6">You can cast a 1st-level ritual spell without the additional 10 minute casting time.</description>
+      <description usage="{{intelligence:modifier}}/Long Rest" level="10">You can cast a 2nd-level or lower ritual spell without the additional 10 minute casting time.</description>
+      <description usage="{{intelligence:modifier}}/Long Rest" level="14">You can cast a 3rd-level or lower ritual spell without the additional 10 minute casting time.</description>
+      <description usage="{{intelligence:modifier}}/Long Rest" level="18">You can cast a 4rth-level or lower ritual spell without the additional 10 minute casting time.</description>
+		</sheet>
+	</element>
+
+  <element name="Formulaic Breakthrough" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_RITUALIST_FORMULAIC_BREAKTHROUGH">
+		<description>
+			<p>Your deep knowledge of ritual magic allows you to ritualize even non-ritual spells. Starting at 10th level, you can cast any 1st-level spell in your spellbook as a ritual so long as it deals no damage and does not require a saving throw.</p>
+      <p class="indent">As you gain levels in this class you learn to ritualize higher level spells that don't deal damage or require a saving throw; 2nd-level spells at 14th level, and 3rd-level spells at 18th level.</p>
+		</description>
+		<sheet>
+			<description level="10">You can cast any 1st-level spell that does not deal damage or require a saving throw as a ritual.</description>
+      <description level="14">You can cast any 2nd-level or lower spell that does not deal damage or require a saving throw as a ritual.</description>
+      <description level="18">You can cast any 3rd-level or lower spell that does not deal damage or require a saving throw as a ritual.</description>
+		</sheet>
+	</element>
+
+  <element name="Master Ritualist" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_RITUALIST_MASTER_RITUALIST">
+		<description>
+			<p>ou have reached an unparalleled understanding of ritualistic magic and its applications. Beginning at 14th level, you can concentrate on the effects of up to two ritual spells at once.</p>
+      <p class="indent">The total levels of the spells you concentrate on cannot exceed your Intelligence modifier (minimum of 1st-level), and when you are forced to make a Constitution saving throw to maintain concentration on your spells, you make one saving throw for both concentration effects.</p>
+      <p class="indent">In addition, whenever you cast the ritual version of a spell that has a duration longer than instantaneous, the duration of the spell's effect is doubled.</p>
+		</description>
+		<sheet>
+			<description>You can concentrate on two ritual spells at once; their total spell level cannot exceed {{intelligence:modifier}}, and if forced to make a saving throw to maintain concentration, you make one for both.&#13;&#10;When you cast a ritual spell that has a duration longer than instantaneous, the duration is doubled.</description>
+		</sheet>
+	</element>
+
+  <element name="School of Alchemy" type="Archetype" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_ALCHEMY">
+    <supports>Arcane Tradition</supports>
+    <description>
+      <p>Alchemy is a delicate art, tip the ratio of reagents too far out of line and the effects are disastrous. Wizards that pursue the art of alchemy are experts at combining exotic ingredients to produce a variety of arcane effects. From brews that grow or shrink a creature, to sticky goo that explodes when it comes in contact with flame. With access to the right reagents, and a bit of luck, students of alchemy use their wondrous Arcane Elixirs aid their allies and leech life away from their enemies.</p>
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_ALCHEMY_ALCHEMICAL_SAVANT" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_ALCHEMY_ARCANE_ELIXIRS" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_ALCHEMY_EFFICIENT_ARCANA" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_ALCHEMY_EXPERIMENTAL_FORTITUDE" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_ALCHEMY_GREATER_HOMUNCULUS" />
+    </description>
+    <sheet display="false">
+      <description>Students of Alchemy use their wondrous Arcane Elixirs aid their allies and leech life away from their enemies.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_ALCHEMY_ALCHEMICAL_SAVANT" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_ALCHEMY_ARCANE_ELIXIRS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_ALCHEMY_EFFICIENT_ARCANA" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_ALCHEMY_EXPERIMENTAL_FORTITUDE" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_ALCHEMY_GREATER_HOMUNCULUS" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Alchemical Savant" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_ALCHEMY_ALCHEMICAL_SAVANT">
+		<description>
+			<p>When you adopt this Arcane Tradition at 2nd level, you learn the secrets of arcane alchemy. You gain proficiency with both alchemist's supplies and glassblower's tools. When you reach 10th level in this class, you can add double your proficiency bonus to any ability check you make that uses these tools.</p>
+		</description>
+		<sheet>
+			<description level="10">+{{proficiency}} to checks using alchemist's supplies and glassblower's tools.</description>
+		</sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_ALCHEMISTS_SUPPLIES" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_GLASSBLOWERS_TOOLS" />
+    </rules>
+	</element>
+
+  <element name="Arcane Elixirs" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_ALCHEMY_ARCANE_ELIXIRS">
+		<description>
+			<p>Also at 2nd level, you learn to create potent potions known as Arcane Elixirs. During a long rest, you can spend 1 hour with your alchemist's supplies to create your Arcane Elixirs, which can mimic the effects of certain spells in your spellbook.</p>
+      <p class="indent">You can create an Arcane Elixir that mimics the effect of any spell from your spellbook that has a casting time of one action and targets only one creature. Any Arcane Elixirs you create appear as Tiny glass vials or flasks of iridescent liquid, and reproduce the spell effect at its lowest possible level.</p>
+      <p class="indent">As an action, a creature can drink an Elixir, administer an Elixir to a willing creature within 5 feet, or throw an Elixir at a point within 30 feet to produce its spell's effect at the point of impact. If an Elixir's spell effect requires concentration, the creature that drinks it must concentrate on the effect. Elixirs use your wizard spell save DC and spellcasting modifier.</p>
+      <p class="indent">During each long rest, you can create a number of Arcane Elixirs with a combined spell level equal to your proficiency bonus + your Intelligence modifier. At the end of your next long rest, any unused Elixirs become inert and unusable.</p>
+		</description>
+		<sheet>
+			<description level="2">During a long rest you can create Arcane Elixirs with a combined spell level of {{total arcane elixir}} that last until your next long rest. Each Elixir mimics a spell from your spellbook at its lowest level that has a casting time of one action and targets one creature. A creature can drink an Elixir or administer it to a willing creature within 5 ft. as an action, or throw it 30 ft. Effects that require concentration are concentrated on by the consuming creature; effects that require saving throws or spellcasting modifiers use your own.</description>
+      <description level="10">During a long rest you can create Arcane Elixirs with a combined spell level of {{total arcane elixir}} that last until your next long rest. Each Elixir mimics a spell from your spellbook at its lowest level that has a casting time of one action and targets one creature. A creature can drink an Elixir or administer it to a willing creature within 5 ft. as an action, or throw it 30 ft. Effects that require concentration are concentrated on by the consuming creature; effects that require saving throws or spellcasting modifiers use your own.&#13;&#10;You can spend 10 minutes, which can be during a rest, to recycle an unused Elixir into another of the same level.</description>
+		</sheet>
+    <rules>
+      <stat name="total arcane elixir" value="proficiency" />
+      <stat name="total arcane elixir" value="intelligence:modifier" />
+    </rules>
+	</element>
+
+  <element name="Efficient Arcana" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_ALCHEMY_EFFICIENT_ARCANA">
+		<description>
+			<p>Your alchemical knowledge and skill has improved. Starting at 6th level, you can spend 10 minutes with your alchemist's supplies, which can be during a short rest, to recycle one of your unused Arcane Elixirs, changing its effect to another spell of your choice of the same level from your spellbook.</p>
+      <p class="indent">Moreover, you can use an action to create an Arcane Elixir of a spell you have prepared, expending the spell slot as you normally would. An Arcane Elixir of the spell then appears in your empty hand. A spell used to create an Elixir in this way must meet all the requirements for being an Arcane Elixir.</p>
+		</description>
+		<sheet>
+			<description action="Action">Create an Elixir of a valid spell you have prepared, expending a spell slot as if cast.</description>
+		</sheet>
+	</element>
+
+  <element name="Experimental Fortitude" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_ALCHEMY_EXPERIMENTAL_FORTITUDE">
+		<description>
+			<p>At 10th level, your work with strange and wondrous arcane reagents has fortified your body. You gain resistance to both acid and poison damage, and you have advantage on saving throws to resist being poisoned.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being poisoned.</description>
+		</sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+    </rules>
+	</element>
+
+  <element name="Greater Homunculus" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_ALCHEMY_GREATER_HOMUNCULUS">
+		<description>
+			<p>Upon reaching 14th level, you achieve the ultimate goal of every alchemist, the creation of artificial life. You learn the clone spell. Using your alchemist's supplies, you can cast a special version of clone by spending 8 hours, which can be during a long rest, molding organic material into an exact copy of yourself. All of your clone's game statistics are the same as yours, but you share Hit Dice and spell slots.</p>
+      <p class="indent">In combat, your clone shares your initiative and acts on your turn. Though, it can only take the Dodge action unless you use your bonus action to issue it a telepathic command.</p>
+      <p class="indent">If your clone is reduced to 0 hit points it is immediately destroyed, and reverts to a pile of raw organic materials.</p>
+      <div class="reference">
+        <div element="ID_PHB_SPELL_CLONE" />
+      </div>
+		</description>
+		<sheet>
+			<description>You can cast a special version of clone by spending 8 hours, which can be during a rest, to mold organic material into a copy of yourself; the copy has your exact statistics, but you share Hit Dice and spell slots. It also shares your initiative and acts on your turn, and can be commanded telepathically with a bonus action. It is destroyed immediately upon reaching 0 hit points.</description>
+		</sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_CLONE" spellcasting="Wizard" prepared="true" />
+    </rules>
+	</element>
+
+  <element name="School of Biomancy" type="Archetype" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_BIOMANCY">
+    <supports>Arcane Tradition</supports>
+    <description>
+      <p>While most scholars of the arcane arts pursue metaphysical power, some focus their study on more concrete applications of magic. Wizards that join the School of Biomancy combine powerful transmutation and necromancy magic to alter and enhance their own physical forms. These strange mages are masters of manipulating the organic matter that makes up all living things, and they do not hesitate to make evolutionary adjustments to themselves, or those who travel with them.</p>
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_BIOMANCY_BIOMANCY_SAVANT" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_BIOMANCY_ORGANIC_FAMILIAR" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_BIOMANCY_MODULAR_BIOLOGY" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_BIOMANCY_ARCANE_VIGOR" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_BIOMANCY_EVOLUTIONARY_BREAKTHROUGH" />
+    </description>
+    <sheet display="false">
+      <description>Biomancers combine powerful transmutation and necromancy magic to alter and enhance their own physical forms.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_BIOMANCY_BIOMANCY_SAVANT" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_BIOMANCY_ORGANIC_FAMILIAR" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_BIOMANCY_MODULAR_BIOLOGY" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_BIOMANCY_ARCANE_VIGOR" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_BIOMANCY_EVOLUTIONARY_BREAKTHROUGH" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Biomancy Savant" type="Class Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_BIOMANCY_BIOMANCY_SAVANT">
+		<description>
+			<p>Beginning when you adopt this Arcane Tradition 2nd level, the spells in the Biomancy Spells table below count as wizard spells for you, and they are considered to be Biomancy spells in addition to their normal schools of magic.</p>
+      <p class="indent">Moreover, the gold and time you must spend to copy one of these Biomancy spells into your spellbook is halved. Finally, each time you gain a wizard level, the spells you add to your spell book can be chosen from the Biomancy spells below.</p>
+		</description>
+		<sheet>
+			<description>The gold and time you must spend to copy an biomancy spell into your spellbook is halved.</description>
+		</sheet>
+    <spellcasting name="Wizard" extend="true">
+      <extend>ID_PHB_SPELL_FALSE_LIFE</extend>
+      <extend>ID_PHB_SPELL_JUMP</extend>
+      <extend>ID_PHB_SPELL_LONGSTRIDER</extend>
+      <extend>ID_PHB_SPELL_ALTER_SELF</extend>
+      <extend>ID_PHB_SPELL_ENLARGE_REDUCE</extend>
+      <extend>ID_PHB_SPELL_SPIDER_CLIMB</extend>
+      <extend>ID_PHB_SPELL_HASTE</extend>
+      <extend>ID_XGTE_SPELL_LIFE_TRANSFERENCE</extend>
+      <extend>ID_PHB_SPELL_WATER_BREATHING</extend>
+      <extend>ID_PHB_SPELL_BLIGHT</extend>
+      <extend>ID_LASERLL_SPELL_POLYMORPH</extend>
+      <extend>ID_PHB_SPELL_STONESKIN</extend>
+      <extend>ID_PHB_SPELL_REINCARNATE</extend>
+      <extend>ID_XGTE_SPELL_SKILL_EMPOWERMENT</extend>
+      <extend>ID_XGTE_SPELL_CREATE_HOMUNCULUS</extend>
+      <extend>ID_PHB_SPELL_FLESH_TO_STONE</extend>
+      <extend>ID_PHB_SPELL_REGENERATE</extend>
+      <extend>ID_PHB_SPELL_SIMULACRUM</extend>
+      <extend>ID_PHB_SPELL_CLONE</extend>
+      <extend>ID_XGTE_SPELL_ABI_DALZIMS_HORRID_WILTING</extend>
+      <extend>ID_PHB_SPELL_SHAPECHANGE</extend>
+      <extend>ID_PHB_SPELL_TRUE_POLYMOPRH</extend>
+    </spellcasting>
+	</element>
+
+  <append id="ID_PHB_SPELL_FALSE_LIFE">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_JUMP">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_LONGSTRIDER">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ALTER_SELF">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ENLARGE_REDUCE">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SPIDER_CLIMB">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_HASTE">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_LIFE_TRANSFERENCE">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_WATER_BREATHING">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BLIGHT">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_POLYMORPH">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_STONESKIN">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_REINCARNATE">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_SKILL_EMPOWERMENT">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_CREATE_HOMUNCULUS">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FLESH_TO_STONE">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_REGENERATE">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SIMULACRUM">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_CLONE">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_ABI_DALZIMS_HORRID_WILTING">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SHAPECHANGE">
+    <supports>Biomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_TRUE_POLYMOPRH">
+    <supports>Biomancy</supports>
+  </append>
+
+  <element name="Organic Familiar" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_BIOMANCY_ORGANIC_FAMILIAR">
+		<description>
+			<p>You can use the magic of Biomancy to create a facsimile life. At 2nd level, you add the find <em>find familiar</em> to your spellbook, and when you cast find familiar it has the following changes:</p>
+      <ul>
+        <li>The material component is 1 pound of organic matter.</li>
+        <li>It is a monstrosity (instead of a celestial, fey, or fiend)</li>
+        <li>It has additional hit points equal to your wizard level.</li>
+      </ul>.
+        <p>In addition, your familiar can heal others by grafting its own flesh onto the creature's wounds. As an action, your familiar can sacrifice any amount of its hit points, touching a willing creature and healing them for the same amount.</p>
+      <div class="reference">
+        <div element="ID_PHB_SPELL_FIND_FAMILIAR" />
+      </div>
+		</description>
+		<sheet>
+			<description>When you cast find familiar, your familiar instead costs 1 lb. of organic matter, is a monstrosity, and has {{level:wizard}} additional hit points. It can also use an action to transfer any amount of its own hit points to another willing creature it touches.</description>
+		</sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" spellcasting="Wizard" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Modular Biology" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_BIOMANCY_MODULAR_BIOLOGY">
+		<description>
+			<p>Beginning at 6th level, you use your knowledge of Biomancy to enhance your own physical form. At the end of each long rest, choose one of the body modifications listed below, the benefits of which last until the end of your next long rest.</p>
+      <p class="indent"><b><em>Amphibious Physiology.</em></b> You develop gills and webbing between your digits. You can breathe both air and water, and you gain a swimming speed equal to your walking speed.</p>
+      <p class="indent"><b><em>Resilient Hide.</em></b> Your flesh becomes thick and knotted. While not wearing any armor, your Armor Class is equal to 10 + your Intelligence modifier + your Constitution modifier.</p>
+      <p class="indent"><b><em>Vestigial Limb.</em></b> You grow an additional limb resembling a smaller version of your other limbs. It has a reach of 5 feet, and it can lift a number of pounds equal to your Intelligence score. The limb cannot use weapons or shields nor can it do anything that requires manual precision, such as using tools.</p>
+		</description>
+		<sheet>
+			<description>After a long rest, choose one of the following modifications to apply until your next long rest.</description>
+		</sheet>
+    <rules>
+      <select type="Class Feature" name="Amphibious Physiology (Modular Biology)" supports="ID_LASERLL_CLASS_FEATURE_WIZARD_MODULAR_BIOLOGY_AMPHIBIOUS_PHYSIOLOGY|ID_LASERLL_CLASS_FEATURE_WIZARD_MODULAR_BIOLOGY_RESILIENT_HIDE|ID_LASERLL_CLASS_FEATURE_WIZARD_MODULAR_BIOLOGY_VESTIGIAL_LIMB" default="ID_LASERLL_CLASS_FEATURE_WIZARD_MODULAR_BIOLOGY_AMPHIBIOUS_PHYSIOLOGY" />
+      <select type="Class Feature" name="Amphibious Physiology (Modular Biology)" supports="ID_LASERLL_CLASS_FEATURE_WIZARD_MODULAR_BIOLOGY_AMPHIBIOUS_PHYSIOLOGY|ID_LASERLL_CLASS_FEATURE_WIZARD_MODULAR_BIOLOGY_RESILIENT_HIDE|ID_LASERLL_CLASS_FEATURE_WIZARD_MODULAR_BIOLOGY_VESTIGIAL_LIMB" default="ID_LASERLL_CLASS_FEATURE_WIZARD_MODULAR_BIOLOGY_RESILIENT_HIDE" />
+      <select type="Class Feature" name="Amphibious Physiology (Modular Biology)" supports="ID_LASERLL_CLASS_FEATURE_WIZARD_MODULAR_BIOLOGY_AMPHIBIOUS_PHYSIOLOGY|ID_LASERLL_CLASS_FEATURE_WIZARD_MODULAR_BIOLOGY_RESILIENT_HIDE|ID_LASERLL_CLASS_FEATURE_WIZARD_MODULAR_BIOLOGY_VESTIGIAL_LIMB" default="ID_LASERLL_CLASS_FEATURE_WIZARD_MODULAR_BIOLOGY_VESTIGIAL_LIMB" />
+    </rules>
+	</element>
+
+  <element name="Amphibious Physiology" type="Class Feature" source="laserllama's Savant" id="ID_LASERLL_CLASS_FEATURE_WIZARD_MODULAR_BIOLOGY_AMPHIBIOUS_PHYSIOLOGY">
+    <supports>Modular Biology</supports>
+    <description>
+      <p>You develop gills and webbing between your digits. You can breathe both air and water, and you gain a swimming speed equal to your walking speed.</p>
+    </description>
+    <sheet>
+      <description>Your swimming speed equals your walking speed, and you can breathe both air and water.</description>
+    </sheet>
+  </element>
+
+  <element name="Resilient Hide" type="Class Feature" source="laserllama's Savant" id="ID_LASERLL_CLASS_FEATURE_WIZARD_MODULAR_BIOLOGY_RESILIENT_HIDE">
+    <supports>Modular Biology</supports>
+    <description>
+      <p>Your flesh becomes thick and knotted. While not wearing any armor, your Armor Class is equal to 10 + your Intelligence modifier + your Constitution modifier.</p>
+    </description>
+    <sheet>
+      <description>While not wearing armor, your have AC {{resilient hide ac}}.</description>
+    </sheet>
+    <rules>
+      <stat name="resilient hide ac" value="10" bonus="base" />
+      <stat name="resilient hide ac" value="intelligence:modifier" />
+      <stat name="resilient hide ac" value="constitution:modifier" />
+    </rules>
+  </element>
+
+  <element name="Vestigial Limb" type="Class Feature" source="laserllama's Savant" id="ID_LASERLL_CLASS_FEATURE_WIZARD_MODULAR_BIOLOGY_VESTIGIAL_LIMB">
+    <supports>Modular Biology</supports>
+    <description>
+      <p>You grow an additional limb resembling a smaller version of your other limbs. It has a reach of 5 feet, and it can lift a number of pounds equal to your Intelligence score. The limb cannot use weapons or shields nor can it do anything that requires manual precision, such as using tools.</p>
+    </description>
+    <sheet>
+      <description>You grow an additional limb with a reach of 5 ft. and it can lift {{intelligence:score}} lbs. It cannot wield weapons or shields or use tools.</description>
+    </sheet>
+  </element>
+
+  <element name="Arcane Vigor" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_BIOMANCY_ARCANE_VIGOR">
+		<description>
+			<p>Your biomagic enhances the life force of other creatures. Starting at 10th level, when you target a creature with a Biomancy spell, or your Organic Familiar heals a creature, you can grant the creature temporary hit points equal to your Intelligence modifier (minimum of 1 temporary hit point).</p>
+		</description>
+		<sheet>
+			<description>When you target a creature with a Biomancy spell or when your Organic Familiar heals a creature, the target gains {{intelligence:modifier}} temporary hit points.</description>
+		</sheet>
+	</element>
+
+  <element name="Evolutionary Breakthrough" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_BIOMANCY_EVOLUTIONARY_BREAKTHROUGH">
+		<description>
+			<p>Beginning at 14th level, your familiar can graft itself onto a willing creature as an action, granting them temporary hit points equal to its remaining hit points. The creature then gains a Modular Biology modification of your choice, which lasts until their temporary hit points are depleted.</p>
+      <p class="indent">Casting <em>find familiar</em> again while this ability is active causes any benefits of this feature to immediately dispel.</p>
+		</description>
+		<sheet>
+			<description>Your familiar can graft itself onto a willing creature as an action, granting its host its remaining hit points as temporary hit points as well as a Modular Biology modification of your choice; this lasts until the temporary hit points are depleted or you cast find familiar again.</description>
+		</sheet>
+	</element>
+
+  <element name="School of Chronomancy (Alternate Chronurgy)" type="Archetype" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_CHRONOMANCY">
+    <supports>Arcane Tradition</supports>
+    <description>
+      <p>Considered by many scholars to be the ninth school of magic, Chronomancy, the magic of time, is only studied by a rare few. Usually, magic that affects the flow of time is forbidden. If a Chronomancer outwardly announces their focus on this magic they often bring unintended consequences down on themselves in the form of inquisitors seeking to prevent the catastrophe that comes with changing the flow of time.</p>
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_CHRONOMANCY_SAVANT" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_CHRONOMANCY_VISIONS_OF_THE_PAST" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_CHRONOMANCY_ARCANE_FORESIGHT" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_CHRONOMANCY_PARADOXICAL_SPELLCASTING" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_CHRONOMANCY_MASTER_CHRONOMANCER" />
+    </description>
+    <sheet display="false">
+      <description>Students of Chronomancy change the flow of time itself.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_CHRONOMANCY_CHRONOMANCY_SAVANT" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_CHRONOMANCY_VISIONS_OF_THE_PAST" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_CHRONOMANCY_ARCANE_FORESIGHT" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_CHRONOMANCY_PARADOXICAL_SPELLCASTING" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_CHRONOMANCY_MASTER_CHRONOMANCER" level="14"/>
+    </rules>
+  </element>
+
+  <append id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FEATHER_FALL">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_LONGSTRIDER">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BLUR">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_HOLD_PERSON">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_GENTLE_REPOSE">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_CATNAP">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_HASTE">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SLOW">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BLIGHT">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_HOLD_MONSTER">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_MODIFY_MEMORY">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_CONTINGENCY">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DISINTEGRATE">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DELAYED_BLAST_FIREBALL">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SEQUESTER">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_MAZE">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_POWER_WORD_STUN">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FORESIGHT">
+    <supports>Chronomancy</supports>
+  </append>
+  <append id="ID_PHB_SPELL_TIME_STOP">
+    <supports>Chronomancy</supports>
+  </append>
+
+  <element name="Chronomancy Savant" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_CHRONOMANCY_CHRONOMANCY_SAVANT">
+		<description>
+			<p>Beginning when you adopt this Arcane Tradition 2nd level, the spells in the Chronomancy Spells table below count as wizard spells for you, and they count as Chronomancy spells in addition to their normal schools of magic.</p>
+      <p class="indent">Moreover, the gold and time you must spend to copy a Chronomancy spell into your spellbook is halved. Finally, each time you gain a wizard level, the spells you add to your spellbook can be from the Chronomancy Spells table below.</p>
+		</description>
+		<sheet>
+			<description>The gold and time you must spend to copy an chronomancy spell into your spellbook is halved.</description>
+		</sheet>
+    <spellcasting name="Wizard" extend="true">
+      <extend>ID_PHB_SPELL_EXPEDITIOUS_RETREAT</extend>
+      <extend>ID_PHB_SPELL_FEATHER_FALL</extend>
+      <extend>ID_PHB_SPELL_LONGSTRIDER</extend>
+      <extend>ID_PHB_SPELL_BLUR</extend>
+      <extend>ID_PHB_SPELL_HOLD_PERSON</extend>
+      <extend>ID_PHB_SPELL_GENTLE_REPOSE</extend>
+      <extend>ID_XGTE_SPELL_CATNAP</extend>
+      <extend>ID_PHB_SPELL_HASTE</extend>
+      <extend>ID_PHB_SPELL_SLOW</extend>
+      <extend>ID_PHB_SPELL_BLIGHT</extend>
+      <extend>ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE</extend>
+      <extend>ID_PHB_SPELL_HOLD_MONSTER</extend>
+      <extend>ID_PHB_SPELL_MODIFY_MEMORY</extend>
+      <extend>ID_PHB_SPELL_CONTINGENCY</extend>
+      <extend>ID_PHB_SPELL_DISINTEGRATE</extend>
+      <extend>ID_PHB_SPELL_DELAYED_BLAST_FIREBALL</extend>
+      <extend>ID_PHB_SPELL_SEQUESTER</extend>
+      <extend>ID_PHB_SPELL_MAZE</extend>
+      <extend>ID_PHB_SPELL_POWER_WORD_STUN</extend>
+      <extend>ID_PHB_SPELL_FORESIGHT</extend>
+      <extend>ID_PHB_SPELL_TIME_STOP</extend>
+    </spellcasting>
+	</element>
+
+  <element name="Visions of the Past" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_CHRONOMANCY_VISIONS_OF_THE_PAST">
+    <description>
+      <p>Starting at 2nd level, you can see echoes of past events in the present. Whenever you make an Intelligence (History) check while you are in the location where the event took place, you can add double your proficiency bonus to your roll.</p>
+      <p class="indent">Your unique perspective on the flow of time is also source of guidance and insight. At 2nd level you learn the guidance cantrip, which counts as a wizard spell for you, but it doesn't count against your total number of Cantrips Known.</p>
+      <div class="reference">
+        <div element="ID_PHB_SPELL_GUIDANCE" />
+      </div>
+		</description>
+		<sheet>
+			<description>+{{proficiency}} to Intelligence (History) regarding a past event checks while in the location where the event took place.</description>
+		</sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" spellcasting="Wizard" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Arcane Foresight" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_CHRONOMANCY_ARCANE_FORESIGHT">
+    <description>
+      <p>You have gained the ability manipulate the flow of time for creatures around you, if only for a moment. Starting at 6th level, when you roll initiative and are not surprised, you can force a creature of your choice within 60 feet to make a Charisma saving throw. On a failed save, your initiatives are switched for the duration of that combat encounter.</p>
+      <p class="indent">A friendly creature can willingly fail their saving throw.</p>
+		</description>
+		<sheet>
+			<description>When you roll initiative, force a creature within 60 ft. to make a Charisma saving throw; if they fail, swich initiatives with them. A friendly creature can fail willingly.</description>
+		</sheet>
+  </element>
+
+  <element name="Paradoxical Spellcasting" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_CHRONOMANCY_PARADOXICAL_SPELLCASTING">
+    <description>
+      <p>Beginning at 10th level, your mastery over the flow of time allows you to borrow arcane power from your future self. As a bonus action on your turn, can draw a spell slot from a future version of yourself to recover one of your expended spell slots of 5th-level or lower.</p>
+      <p class="indent">You can draw a maximum number of spell slots through this ability with a combined level equal to your Intelligence modifier (minimum of 1). At the end of a short or long rest, you can complete a brief ritual where you expend spell slots that you drew from your future self, regaining expended uses of this feature equal to the level of the spell slots you expend.</p>
+		</description>
+		<sheet>
+			<description usage="{{intelligence:modifier}}/Short Rest" action="Bonus Action">Recover a spell slot of 5th-level of lower; you can do so up to a combined recovered spell slot level of {{intelligence:modifier}}.</description>
+		</sheet>
+  </element>
+
+  <element name="Master Chronomancer" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_CHRONOMANCY_MASTER_CHRONOMANCER">
+    <description>
+      <p>Your mastery over the magic of time rivals the most powerful creatures of the multiverse. Starting at 14th level, you can use your power to undo events in time. When a creature within 60 feet of you ends its turn, you can choose to undo anything that occurred during that creature's turn. The target instantly returns to the space it began its turn, regains any expended spell slots or abilities, and any effects of their actions are undone. The creature then repeats its turn exactly as before, though you are aware of the actions it will take.</p>
+      <p class="indent">Once you use this reaction to rewind time, you must finish a long rest before you can use it again, unless you expend a spell slot of 6th-level or higher to use it an additional time.</p>
+		</description>
+		<sheet>
+			<description usage="1/Long Rest">When a creature within 60 ft. ends its turn, undo its turn. It returns to where it was before, regains any spell slots and abilities, and undoes the effects of any actions. It must repeat its turn exactly as before. You can expend a 6th-level or higher spell slot to regain use of this feature before a long rest.</description>
+		</sheet>
+  </element>
+
+  <element name="School of Hemomancy" type="Archetype" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEMOMANCY">
+    <supports>Arcane Tradition</supports>
+    <description>
+      <p>Though considered barbaric by most wizards, Hemomancy, also known as blood magic, is one of the most powerful and ancient Arcane Traditions. Discovered in ages long forgotten by priests of dark gods, Hemomancers use the power of their own lifeblood to work sinister spells of overwhelming power.</p>
+      <h5>WARNING: THE DANGERS OF BLOOD MAGIC</h5>
+      <p class="indent">The School of Hemomancy has the potential for great power, but at great risk. Any reduction to the already low maximum hit points of a wizard is dangerous, and reducing a player's maximum hit points to 0 causes instant death. This Arcane Tradition is not recommended for beginner players.</p>
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_HEMOMANCY_HEMOMANCY_SAVANT" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_HEMOMANCY_BLOOD_MAGIC" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_HEMOMANCY_VAMPIRIC_RESTORATION" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_HEMOMANCY_SANGUINE_VIGOR" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_HEMOMANCER_SINISTER_EMPOWERMENT" />
+    </description>
+    <sheet display="false">
+      <description>Hemomancers use the power of their own lifeblood to work sinister spells of overwhelming power.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_HEMOMANCY_HEMOMANCY_SAVANT" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_HEMOMANCY_BLOOD_MAGIC" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_HEMOMANCY_VAMPIRIC_RESTORATION" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_HEMOMANCY_SANGUINE_VIGOR" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_HEMOMANCER_SINISTER_EMPOWERMENT" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Hemomancy Savant" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEMOMANCY_HEMOMANCY_SAVANT">
+    <description>
+      <p>When you adopt this Arcane Tradition at 2nd level, you learn to copy spells into your spellbook in your blood. When you do so, both your current and maximum hit points are reduced by 1 per level of the spell you copy in place of expending the gold and ink. Any reduction to your maximum hit points from this feature cannot be reduced in any way.</p>
+      <p class="indent">You are also able to learn dark magic unknown to most wizards. You can copy any spell you find in a spell scroll or spellbook into your own spellbook, so long as it deals only poison or necrotic damage. Any spell you gain through this feature must be copied into your spellbook in your blood. It then counts as a wizard spell for you if it wasn't already.</p>
+		</description>
+		<sheet>
+			<description>In place of gold and ink, you can copy spells by reducing your current and maximum hit points by 1 per level of spell being copied; this reduction cannot be mitigated.&#13;&#10;You can copy any spell you find in a scroll or spellbook that deals only poison or necrotic damage into your own spellbook using hit points.&#13;&#10;At the end of a long rest, the total reduction to maximum hit points from Hemomancy features is reduced by 1; you can expend a Hit Die to further reduce the reduction by {{constitution:modifier}}.</description>
+		</sheet>
+  </element>
+
+  <element name="Blood Magic" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEMOMANCY_BLOOD_MAGIC">
+    <description>
+      <p>At 2nd level, you learn to use the ancient and sinister magic of Hemomancy to sacrifice your lifeblood to fuel your arcane abilities. As a bonus action, you can regain one expended wizard spell slot by reducing both your current hit points, and maximum hit points by an amount equal to twice the level of the spell slot you wish to regain. This reduction to your hit points cannot be lessened in any way. You cannot use this feature to regain a spell slot higher then 5th-level.</p>
+      <p class="indent">At the end of each long rest, if your maximum hit points have been reduced by one of your Hemomamcy features, that reduction is reduced by 1. You can also choose to expend Hit Dice at the end of a long rest, reducing any reduction to your hit point maximum by a number of hit points equal to your Constitution modifier (minimum of 1 hit point).</p>
+		</description>
+		<sheet>
+			<description action="Bonus Action">Regain one expended spell slot of 5th-level or lower by reducing both your current and maximum hit points by twice the spell slot level; this reduction cannot be mitigated.</description>
+		</sheet>
+  </element>
+
+  <element name="Vampiric Restoration" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEMOMANCY_VAMPIRIC_RESTORATION">
+    <description>
+      <p>You can use Hemomancy magic to drain life from your foes. Beginning at 6th level, whenever you deal poison or necrotic damage to a creature with a wizard spell, you can choose to gain temporary hit points equal to half the damage dealt.</p>
+      <p class="indent">You can use this ability a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description usage="{{intelligence:modifier}}/Long Rest">When you deal poison or necrotic damage with a wizard spell, you can gain temporary hit points equal to half the daamge dealt.</description>
+		</sheet>
+  </element>
+
+  <element name="Sanguine Vigor" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEMOMANCY_SANGUINE_VIGOR">
+    <description>
+      <p>Your use of blood magic fortifies your body. At 10th level you gain resistance to necrotic and poison damage, and you have advantage on saving throws against poison and disease.</p>
+      <p class="indent">Your magic also allows you to regenerate more quickly. At the end of each long rest, you regain additional expended Hit Dice equal to your Constitution modifier (minimum of 1).</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being poisoned or afflicted with disease.&#13;&#10;Gain {{constitution:modifier}} additional Hit Dice at the end of each long rest.</description>
+		</sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+    </rules>
+  </element>
+
+  <element name="Sinister Empowerment" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEMOMANCY_SINISTER_EMPOWERMENT">
+    <description>
+      <p>Beginning at 14th level, you can increase the power of spells that sap the life from others. When you cast a wizard spell of 1st-level or higher that deals poison or necrotic damage you can choose to deal maximum damage in place of rolling.</p>
+      <p class="indent">The first time you do so each day, you suffer no adverse effects. However, each subsequent time you use this ability before you finish a long rest, your current and maximum hit points are reduced by an amount equal to twice the level at which you cast the spell you maximized with this feature.</p>
+		</description>
+		<sheet>
+			<description usage="1/Long Rest">When you cast a wizard spell of 1st-level or higher that deals poison or necrotic damage, you can choose to deal maximum damage. Each time after the first you do so before a long rest, reduce your current and maximum hit points by twice the level of spell cast.</description>
+		</sheet>
+  </element>
+
+  <element name="School of Hexcraft" type="Archetype" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEXCRAFT">
+    <supports>Arcane Tradition</supports>
+    <description>
+      <p>Some who study the arcane aren't satisfied with traditional schools of wizardry and turn to the dark arts in their hunger for power. Striking out into the wild, they seek out beings from the lower planes, creatures from the Shadowfell, or vile covens of hags in order to learn otherworldly eldritch magic.</p>
+      <p class="indent">Many who follow this path are willing to sacrifice anything, even their eternal soul, in order to learn sinister magics often reserved for those who enter pacts with eldritch entities.</p>
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_HEXCRAFT_ELDRITCH_SAVANT" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_HEXCRAFT_FORBIDDEN_ARCANA" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_HEXCRAFT_PROFANE_RITUAL" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_HEXCRAFT_INSCRUTABLE" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_HEXCRAFT_HEART_OF_DARKNESS" />
+    </description>
+    <sheet display="false">
+      <description>Students of Hexcraft learn sinister magics often reserved for those who enter pacts with eldritch entities.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_HEXCRAFT_ELDRITCH_SAVANT" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_HEXCRAFT_FORBIDDEN_ARCANA" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_HEXCRAFT_PROFANE_RITUAL" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_HEXCRAFT_INSCRUTABLE" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_HEXCRAFT_HEART_OF_DARKNESS" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Eldritch Savant" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEXCRAFT_ELDRITCH_SAVANT">
+    <description>
+      <p>When you adopt this Arcane Tradition at 2nd level, you gain access to magic that is shunned by all by the most unhinged. You can copy warlock spells that you find in other spellbooks or spell scrolls into your spellbook. Warlock spells gained through this feature count as wizard spells for you.</p>
+      <p class="indent">Also, when you gain a level in this class, one of the spells you add to your spellbook must be from the warlock spell list.</p>
+		</description>
+		<sheet>
+			<description>You can copy warlock spells, and they count as wizard spells for you.</description>
+		</sheet>
+    <spellcasting name="Wizard" extend="true">
+			<extend>Warlock</extend>
+		</spellcasting>
+    <rules>
+      <!-- <grant type="Grants" id="ID_INTERNAL_FEATURE_REPLACEMENT_WIZARD_SPELLCASTING" />-
+
+      <grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_ARCANE_FOCUS" />
+
+			<stat name="wizard:spellcasting:slots:1" value="2" level="1" />
+			<stat name="wizard:spellcasting:slots:1" value="1" level="2" />
+			<stat name="wizard:spellcasting:slots:1" value="1" level="3" />
+
+			<stat name="wizard:spellcasting:slots:2" value="2" level="3" />
+			<stat name="wizard:spellcasting:slots:2" value="1" level="4" />
+			<stat name="wizard:spellcasting:slots:3" value="2" level="5" />
+			<stat name="wizard:spellcasting:slots:3" value="1" level="6" />
+			<stat name="wizard:spellcasting:slots:4" value="1" level="7" />
+			<stat name="wizard:spellcasting:slots:4" value="1" level="8" />
+			<stat name="wizard:spellcasting:slots:4" value="1" level="9" />
+			<stat name="wizard:spellcasting:slots:5" value="1" level="9" />
+			<stat name="wizard:spellcasting:slots:5" value="1" level="10" />
+			<stat name="wizard:spellcasting:slots:5" value="1" level="18" />
+			<stat name="wizard:spellcasting:slots:6" value="1" level="11" />
+			<stat name="wizard:spellcasting:slots:6" value="1" level="19" />
+			<stat name="wizard:spellcasting:slots:7" value="1" level="13" />
+			<stat name="wizard:spellcasting:slots:7" value="1" level="20" />
+			<stat name="wizard:spellcasting:slots:8" value="1" level="15" />
+			<stat name="wizard:spellcasting:slots:9" value="1" level="17" />
+
+			<stat name="wizard:spellcasting:prepare" value="intelligence:modifier" />
+			<stat name="wizard:spellcasting:prepare" value="level:wizard" />
+
+			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Wizard" />
+			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Wizard" />
+			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Wizard" />
+
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" spellcasting="Wizard" />
+
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="3" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="4" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="5" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="6" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="7" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="8" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="9" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="10" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="11" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="12" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="13" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="14" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="15" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="16" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="17" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="18" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="19" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Hexcraft)" supports="Warlock, $(spellcasting:slots)" level="20" spellcasting="Wizard" /> -->
+    </rules>
+  </element>
+
+  <element name="Forbidden Arcana" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEXCRAFT_FORBIDDEN_ARCANA">
+    <description>
+      <p>In your study of dark magics you have gained for yourself strange and sinister abilities. At 2nd level, you learn of two Eldritch Invocations of your choice from the list below.</p>
+      <p class="indent">When you gain a level in this class, you can switch your Invocation for another of your choice from the list below.</p>
+      <p class="indent">You learn an additional Eldritch Invocation from this list when you reach 6th, 10th, and 14th level in this class.</p>
+      <p class="indent"><b><em>Beast Speech.</em></b> You can cast speak with animals at will, without expending a spell slot or material components.</p>
+      <p class="indent"><b><em>Beguiling Influence.</em></b> You gain proficiency in both the Deception and Persuasion skills.</p>
+      <p class="indent"><b><em>Devil's Sight.</em></b> You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.</p>
+      <p class="indent"><b><em>Eldritch Sight.</em></b> You can cast detect magic, at will, without expending a spell slot or material components.</p>
+      <p class="indent"><b><em>Eyes of the Rune Keeper.</em></b> You can read and understand all written symbols and writing.</p>
+      <p class="indent"><b><em>Misty Visions.</em></b> You can cast silent image at will, without expending a spell slot or material components.</p>
+      <p class="indent"><b><em>One with Shadows.</em></b> When you are in an area of dim light or darkness, you can use your action to become invisible until you move or take an action or a reaction.</p>
+		</description>
+		<sheet>
+			<description>You can switch an Eldritch Invocation when you gain a Wizard level.</description>
+		</sheet>
+    <rules>
+      <select type="Class Feature" name="Eldritch Invocation (Forbidden Arcana)" level="2" number="2"  supports="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BEGUILING_INFLUENCE|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BEAST_SPEECH|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_DEVILS_SIGHT|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SIGHT|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BEGUILING_INFLUENCE|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_EYES_OF_THE_RUNE_KEEPER|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_MISTY_VISIONS|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ONE_WITH_SHADOWS" />
+      <select type="Class Feature" name="Eldritch Invocation (Forbidden Arcana)" level="6" supports="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BEGUILING_INFLUENCE|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BEAST_SPEECH|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_DEVILS_SIGHT|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SIGHT|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BEGUILING_INFLUENCE|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_EYES_OF_THE_RUNE_KEEPER|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_MISTY_VISIONS|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ONE_WITH_SHADOWS" />
+      <select type="Class Feature" name="Eldritch Invocation (Forbidden Arcana)" level="10" supports="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BEGUILING_INFLUENCE|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BEAST_SPEECH|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_DEVILS_SIGHT|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SIGHT|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BEGUILING_INFLUENCE|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_EYES_OF_THE_RUNE_KEEPER|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_MISTY_VISIONS|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ONE_WITH_SHADOWS" />
+      <select type="Class Feature" name="Eldritch Invocation (Forbidden Arcana)" level="14" supports="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BEGUILING_INFLUENCE|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BEAST_SPEECH|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_DEVILS_SIGHT|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SIGHT|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_BEGUILING_INFLUENCE|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_EYES_OF_THE_RUNE_KEEPER|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_MISTY_VISIONS|ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ONE_WITH_SHADOWS" />
+    </rules>
+  </element>
+
+  <element name="Profane Ritual" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEXCRAFT_PROFANE_RITUAL">
+    <description>
+      <p>You can use your knowledge of dark magic to enhance your life force at the cost of your surroundings. Beginning at 6th level, when you finish casting the ritual version of a wizard spell, you can grant yourself temporary hit points equal to the level at which you cast the ritual spell + your wizard level. When you complete a ritual in this way, area around you is noticeably withered and sickly, and delicate life dies.</p>
+		</description>
+		<sheet>
+			<description usage="1/Long Rest">When you complete a ritual wizard spell, you can grant yourself temporary hit points equal to {{level:wizard}} + the ritual spell level; if you do so, the area around you becomes sickly and withers.</description>
+		</sheet>
+  </element>
+
+  <element name="Inscrutable" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEXCRAFT_INSCRUTABLE">
+    <description>
+      <p>You have learned to hide yourself from spellcasters and other powerful creatures that would stand in your way. Starting at 10th level, you are immune to any effect that would sense your emotions, read your thoughts, or detect your alignment, as well as any divination spell that you refuse. Also, when a creature makes a Wisdom (Insight) check to ascertain your true intentions or sincerity they do so at disadvantage.</p>
+		</description>
+		<sheet>
+			<description>You are immune to having your emotions, thoughts, or alignment read, as well as to divination spells, unless you wish to be affected. Creatures that make Wisdom (Insight) checks to determine your intentions or sincerity do so at disadvantage.</description>
+		</sheet>
+  </element>
+
+  <element name="Heart of Darkness" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_HEXCRAFT_HEART_OF_DARKNESS">
+    <description>
+      <p>You have mastered the sinister magic of drawing power from death. Beginning at 14th level, when you kill a creature with a wizard spell of 1st-level or higher, you can use your reaction to regain one of your expended spell slots. The spell slot you recover must be of at least one level lower then the spell cast to kill the creature, and it cannot be higher than 5th-level.</p>
+      <p class="indent">You can use this ability a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you complete a long rest.</p>
+    </description>
+    <sheet>
+      <description usage="{{intelligence:modifier}}/Long Rest" action="Reaction">When you kill a creature with a 1st-level or higher wizard spell, regain use of an expended spell slot of lower level than the expended one (and no higher than 5th-level).</description>
+    </sheet>
+  </element>
+
+  <element name="School of Metallurgy" type="Archetype" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_METALLURGY">
+    <supports>Arcane Tradition</supports>
+    <description>
+      <p>Originally developed by dwarves, the School of Metallurgy emphasizes order, organization, and community. Known as Metallurgists, wizards who belong to this Arcane Tradition use their magic to impose order on a disordered world.</p>
+      <p class="indent">Masters of powerful abjuration and transmutation magic, Metallurgists wield an arcane alloy known as Arcanometal to great effect. Mages of this School are almost always Lawful in their outlook. Some seek to do the most good for the most people, while others use force to impose order on the world.</p>
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_METALLURGY_ARCANOMETAL_ADEPT" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_METALLURGY_METALLURGIST" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_METALLURGY_ARCANOMETAL_SHIELD" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_METALLURGY_MASTER_METALLURGIST" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_METALLURGY_METALLUM_ARCANUS" />
+    </description>
+    <sheet display="false">
+      <description>Metallurgists use their magic to impose order on a disordered world.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_METALLURGY_ARCANOMETAL_ADEPT" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_METALLURGY_METALLURGIST" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_METALLURGY_ARCANOMETAL_SHIELD" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_METALLURGY_MASTER_METALLURGIST" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_METALLURGY_METALLUM_ARCANUS" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Arcanometal Adept" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_METALLURGY_ARCANOMETAL_ADEPT">
+    <description>
+      <p>When you adopt this Arcane Tradition at 2nd level, you are taught the secret ritual that Metallurgists use to synthesize Arcanometal, the signature alloy of the School of Metallurgy.</p>
+      <p class="indent">You can synthesize gold into liquid Arcanometal that you use to copy spells into your spellbook. For each level of the spell, you must expend 70 gold to create liquid Arcanometal to copy it. Spells added to your spellbook in this way become Arcanometal Spells for you, and gain the following benefits:</p>
+      <ul>
+        <li>When you cast an Arcanometal spell that deals damage you can choose for the spell to deal force or magical bludgeoning damage in place of its normal damage.</li>
+        <li>When you cast an Arcanometal spell that targets one or more friendly creatures, one target of the spell gains temporary hit points equal to your wizard level.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>Copying spells into your spellbook costs you 70 gold per spell level; they are considered Arcanometal spells and gain the following benefits:&#13;&#10;Damaging spells can deal force or magical bludgeoning instead of normal damage.&#13;&#10;Spells that target friendly creatures can grant one of them {{level:wizard}} temporary hit points.
+      </description>
+    </sheet>
+  </element>
+
+  <element name="Metallurgist" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_METALLURGY_METALLURGIST">
+    <description>
+      <p>At 2nd level, you learn to create simple Arcanometal items. You conduct a 1-hour ritual that crafts a Small or Tiny item made only of metal. The creation is completed at the end of the ritual, and the item appears in an unoccupied space of your choice within 5 feet of you. Any Arcanometal object that you create with this feature is visibly magical in appearance.</p>
+      <p class="indent">The object you create must be worth less than 100 gold. As part of this ritual, you must lay out metal raw material, which can include coins, with a value equal to the object you wish to create. The metal irretrievably coalesces and transforms into the creation at the ritual’s end. In place of providing metal, you can instead expend a spell slot of 1st-level or higher.</p>
+      <p>Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+    </description>
+    <sheet>
+      <description usage="1/Short Rest" level="2">Conduct a 1-hour ritual to craft a Small or Tiny item out of metal or with a spell slot; it is visibly magical in appearance and must be worth less than 100 gold.</description>
+      <description usage="1/Short Rest" level="10">Conduct a 1-hour ritual to craft a Small or Tiny item out of metal or with a spell slot; you can also expend a 3rd-level slot for a Medium item, 5th-level for Large, 7th-level for Huge, or 9th-level for Gargantuan. It is visibly magical in appearance and must be worth less than 1000 gold.</description>
+    </sheet>
+  </element>
+
+  <element name="Arcanometal Shield" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_METALLURGY_ARCANOMETAL_SHIELD">
+    <description>
+      <p>Beginning at 6th level, when you cast an Arcanometal Spell, you can siphon some of its power to create a shimmering shield of Arcanometal around yourself, granting yourself temporary hit points equal to twice the level of the spell slot you expended to cast the spell. While you have temporary hit points from this feature, you are resistant to all non-magical bludgeoning, piercing, and slashing damage.</p>
+    </description>
+    <sheet>
+      <description level="6">When you cast an Arcanometal spell, grant yourself temporary hit points equal to twice the level of the expended spell slot; while they remain, you are resistant to non-magical bludgeoning, piercing, and slashing damage.</description>
+      <description level="14">When you cast an Arcanometal spell, grant yourself temporary hit points equal to twice the level of the expended spell slot; while they remain, you are resistant to all bludgeoning, force, piercing, and slashing damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Master Metallurgist" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_METALLURGY_MASTER_METALLURGIST">
+    <description>
+      <p>You wield your Arcanometal as an extension of your very self. Starting at 10th level, you can use your Metallurgist feature to create metal objects with a value of up to 1000 gold.</p>
+      <p class="indent">In addition, when you use your Metallurgist feature you can create larger metal objects, by spending higher level spell slots depending on the size as indicated in the table below:</p>
+      <table>
+				<thead>
+					<tr><td>Spell Slot</td><td>Object Size</td><td>Spell Slot</td><td>Object Size</td></tr>
+				</thead>
+				<tr><td>3rd</td><td>Medium</td><td>7th</td><td>Huge</td></tr>
+				<tr><td>5th</td><td>Large</td><td>9th</td><td>Gargantuan</td></tr>
+			</table>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Metallum Arcanus" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_METALLURGY_METALLUM_ARCANUS">
+    <description>
+      <p>Your Arcanometal is a conduit for your overwhelming arcane power. Beginning at 14th level, when you have temporary hit points from your Arcanometal Shield, you gain resistance to all bludgeoning, force, piercing, and slashing damage.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="School of Theurgy" type="Archetype" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_THEURGY">
+    <supports>Arcane Tradition</supports>
+    <description>
+      <p>Not all who serve deities of the upper planes do so as clerics, priests, and paladins. Some wizards focus their great intellect on studies of the divine, and in turn learn to produce divine magic. Wizards who join this school often reside in temples rather then towers, and tend to be more benevolent then their arcane counterparts. In their studies of the upper planes and their magic, these sages often find themselves sympathizing with the causes of the deities they spend their lives studying.</p>
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_THEURGY_ARCANE_THEOLOGIAN" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_THEURGY_CHANNEL_DIVINITY" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_THEURGY_CHANNEL_DIVINITY_HARNESS_DIVINE_POWER" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_THEURGY_DIVINE_PROTECTION" />
+      <div element="ID_LASERLL_ARCHETYPE_WIZARD_THEURGY_BLESSED_INTERVENTION" />
+    </description>
+    <sheet display="false">
+      <description>Theologians focus their great intellect on studies of the divine, and in turn learn to produce divine magic.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_THEURGY_ARCANE_THEOLOGIAN" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_THEURGY_CHANNEL_DIVINITY" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_THEURGY_CHANNEL_DIVINITY_HARNESS_DIVINE_POWER" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_THEURGY_DIVINE_PROTECTION" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_WIZARD_THEURGY_BLESSED_INTERVENTION" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Arcane Theologian" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_THEURGY_ARCANE_THEOLOGIAN">
+    <description>
+      <p>When you adopt this Arcane Tradition at 2nd level, you gain access to divine magics unavailable to most wizards. You can copy any cleric spell that you find in other spellbooks or spell scrolls into your spellbook, so long as it does not restore hit points to its target. Any cleric spell you add to your spellbook through this feature counts as wizard spells for you.</p>
+      <p class="indent">Moreover, when you gain a wizard level, one of the spells you add to your spellbook can be from the cleric spell list, so long as the spell does not restore hit points to its target.</p>
+    </description>
+    <sheet>
+      <display>You can copy cleric spells that do not restore hit points to the target into your spellbook, and they cound as wizard spells for you.</display>
+    </sheet>
+    <spellcasting name="Wizard" extend="true">
+			<extend>Cleric</extend>
+		</spellcasting>
+    <rules>
+      <!-- <grant type="Grants" id="ID_INTERNAL_FEATURE_REPLACEMENT_WIZARD_SPELLCASTING" />
+
+      <grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_ARCANE_FOCUS" />
+
+			<stat name="wizard:spellcasting:slots:1" value="2" level="1" />
+			<stat name="wizard:spellcasting:slots:1" value="1" level="2" />
+			<stat name="wizard:spellcasting:slots:1" value="1" level="3" />
+
+			<stat name="wizard:spellcasting:slots:2" value="2" level="3" />
+			<stat name="wizard:spellcasting:slots:2" value="1" level="4" />
+			<stat name="wizard:spellcasting:slots:3" value="2" level="5" />
+			<stat name="wizard:spellcasting:slots:3" value="1" level="6" />
+			<stat name="wizard:spellcasting:slots:4" value="1" level="7" />
+			<stat name="wizard:spellcasting:slots:4" value="1" level="8" />
+			<stat name="wizard:spellcasting:slots:4" value="1" level="9" />
+			<stat name="wizard:spellcasting:slots:5" value="1" level="9" />
+			<stat name="wizard:spellcasting:slots:5" value="1" level="10" />
+			<stat name="wizard:spellcasting:slots:5" value="1" level="18" />
+			<stat name="wizard:spellcasting:slots:6" value="1" level="11" />
+			<stat name="wizard:spellcasting:slots:6" value="1" level="19" />
+			<stat name="wizard:spellcasting:slots:7" value="1" level="13" />
+			<stat name="wizard:spellcasting:slots:7" value="1" level="20" />
+			<stat name="wizard:spellcasting:slots:8" value="1" level="15" />
+			<stat name="wizard:spellcasting:slots:9" value="1" level="17" />
+
+			<stat name="wizard:spellcasting:prepare" value="intelligence:modifier" />
+			<stat name="wizard:spellcasting:prepare" value="level:wizard" />
+
+			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Wizard" />
+			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Wizard" />
+			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Wizard" />
+
+			<select type="Spell" name="Spellbook (Wizard)" supports="($(spellcasting:list)), 1" level="1" number="6" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" spellcasting="Wizard" />
+
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="2" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="3" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="4" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="5" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="6" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="7" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="8" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="9" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="10" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="11" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="12" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="13" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="14" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="15" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="16" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="17" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="18" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="19" spellcasting="Wizard" />
+      <select type="Spell" name="Spellbook (Theurgy)" supports="($(spellcasting:list)||Cleric), $(spellcasting:slots)" level="20" spellcasting="Wizard" /> -->
+    </rules>
+  </element>
+
+  <element name="Channel Divinity" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_THEURGY_CHANNEL_DIVINITY">
+    <description>
+      <p>Also at 2nd level, you learn to channel divine energy directly from the upper planes, and use it to fuel magical effects. You start with one such Channel Divinity effect: Turn Undead.</p>
+      <p class="indent">Once you use your Channel Divinity to produce one of the divine effects you know, you must finish a short or long rest before you can use any of your Channel Divinities again.</p>
+      <p class="indent">If one of your Channel Divinity effects requires a creature to make a saving throw, it uses your wizard spell save DC.</p>
+      <p class="indent">Should you find a scroll, tome, or a willing teacher, you can copy additional Channel Divinities into your spellbook. To do so, you must spend 100 gold on blessed inks and parchment and spend 8 hours copying the prayers into your spellbook.</p>
+      <div element="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_TURN_UNDEAD" />
+    </description>
+    <sheet>
+      <description usage="1/Short Rest">Your Channel Divinity effects use your wizard spell save DC; you can only cast one per rest. Spend 100 gold and 8 hours to copy new Channel Divinity effects into your spellbook.</description>
+    </sheet>
+    <rules>
+      <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_TURN_UNDEAD" />
+    </rules>
+  </element>
+
+  <element name="Channel Divinity: Harness Divine Power" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_THEURGY_CHANNEL_DIVINITY_HARNESS_DIVINE_POWER">
+    <description>
+      <p>Upon reaching 6th level you gain the Channel Divinity option here. As a bonus action, you can grasp a holy symbol, utter a prayer, and regain one expended 1st-level spell slot.</p>
+      <p class="indent">At certain wizard levels, you can use this Channel Divinity to regain expended spell slots of higher levels: at 10th level (2nd-level spell slots) and 14th level (3rd-level spell slots).</p>
+    </description>
+    <sheet>
+      <description alt="Harness Divine Power" action="Bonus Action" usage="Channel Divinity" level="6">Regain one expended 1st-level spell slot.</description>
+      <description alt="Harness Divine Power" action="Bonus Action" usage="Channel Divinity" level="10">Regain one expended 2nd-level spell slot.</description>
+      <description alt="Harness Divine Power" action="Bonus Action" usage="Channel Divinity" level="14">Regain one expended 3rd-level spell slot.</description>
+    </sheet>
+  </element>
+
+  <element name="Divine Protection" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_THEURGY_DIVINE_PROTECTION">
+    <description>
+      <p>Your knowledge of the upper planes grants you a measure of protection against evil. Beginning at 10th level, When a fiend or undead attacks you, it must make a Wisdom saving throw. On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours.</p>
+      <p class="indent">Any creature with an Intelligence of 4 or higher is aware of this effect before it makes its attack against you.</p>
+    </description>
+    <sheet>
+      <description>When a fiend or undead attacks you, it must make a Wisdom saving throw; if it fails, it must choose a different target, or the attack misses. On a save it is immune to this effect for 24 hrs. Creatures with an Intelligence of 4 or higher are aware of this effect before attacking.</description>
+    </sheet>
+  </element>
+
+  <element name="Blessed Intervention" type="Archetype Feature" source="laserllama's Arcane Traditions" id="ID_LASERLL_ARCHETYPE_WIZARD_THEURGY_BLESSED_INTERVENTION">
+    <description>
+      <p>Beginning at 14th level, you can use your knowledge of the divine to implore a being of the upper planes for direct aid.</p>
+      <p class="indent">As an action, you can grasp a holy symbol and beseech that deity for aid, naming a cleric or wizard spell of your choice, of a level for which you have a spell slot. Roll percentile dice. If the result is equal to, or higher, then the number on the table below for the level of spell you wish the deity to cast, you are successful. On a success, the spell is instantly cast as if you had cast it without expending a spell slot or components.</p>
+      <p class="indent">Once you use this feature to successfully cast a spell, you must complete 1d6 +1 long rests before you can use it again.</p>
+      <table>
+        <thead>
+            <tr><td class="col-5">Level</td><td class="col-5">d100</td><td class="col-5">Level</td><td class="col-5">d100</td><td class="col-5">Level</td><td class="col-5">d100</td></tr>
+        </thead>
+        <tr><td>1st</td><td>10 +</td><td>4th</td><td>40 +</td><td>7th</td><td>70 +</td></tr>
+        <tr><td>2nd</td><td>20 +</td><td>5th</td><td>50 +</td><td>8th</td><td>80 +</td></tr>
+        <tr><td>3rd</td><td>30 +</td><td>6+</td><td>60 +</td><td>9th</td><td>90 +</td></tr>
+      </table>
+    </description>
+    <sheet>
+      <description action="Action" usage="1/1d6+1 Long Rest">Name a cleric of wizard spell of oyur choice for which you have an available spell slot. Roll a d100; if the result is higher than 10 times the spell level, the spell is cast without expending a spell slot. Once successful you must complete 1d6 + 1 long rests to regain use of this feature.</description>
+    </sheet>
+  </element>
+
+</elements>

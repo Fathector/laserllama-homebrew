@@ -1,0 +1,1769 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+      <name></name>
+      <update version="2.1.0">
+          <file name="subclasses-bard-laserll.xml" url="tmp.xml" />
+      </update>
+  </info>
+
+  <element name="College of Chance" type="Archetype" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CHANCE">
+    <supports>Bard College</supports>
+    <description>
+      <p>Gamblers, risk-takers, and daredevils alike all find a home in the College of Chance. Bards that dedicate themselves to this way of life live for the adrenaline that comes with great risks. These whimsical wanderers wield songs that draw upon the ambient wild magic in the world, channeling its risky power.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARD_CHANCE_RISK_TAKER" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_CHANCE_WILD_INSPIRATION" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_CHANCE_WHIMSICAL_SONG" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_CHANCE_MASTER_OF_CHANCE" />
+    </description>
+    <sheet display="false">
+      <description>Bards of Chance wield songs that draw upon the ambient wild magic in the world, channeling its risky power.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_CHANCE_RISK_TAKER" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_CHANCE_WILD_INSPIRATION" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_CHANCE_WHIMSICAL_SONG" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_CHANCE_MASTER_OF_CHANCE" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Risk-Taker" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CHANCE_RISK_TAKER">
+    <description>
+      <p>When you fall short you can enhance your abilities with wild magic, possibly turning a failure into a success or a success into a failure. When you make an ability check, but before you know if you succeed or fail, you can grant yourself a bonus to your roll equal to a roll of your Bardic Inspiration die.</p>
+      <p class="indent">If you roll an even number on this bonus die, you add the result to your ability check. If you roll an odd number on this bonus die you subtract the result from your ability check.</p>
+      <p class="indent">This feature improves when you reach certain levels in this class. At 6th level, you can use this feature when you make a weapon or spell attack roll. Finally, at 14th level, you can use the feature whenever you make a saving throw.</p>
+    </description>
+    <sheet>
+      <description level="3">When you make an ability check, before you know if it is a success, you can roll a 1d{{inspiration:dice}}. If it is even, add it to your result; if it is odd, subtract it.</description>
+      <description level="6">When you make an ability check or a weapon or spell attack roll, before you know if it is a success, you can roll a 1d{{inspiration:dice}}. If it is even, add it to your result; if it is odd, subtract it.</description>
+      <description level="3">When you make an ability check, a weapon or spell attack roll, or a saving throw, before you know if it is a success, you can roll a 1d{{inspiration:dice}}. If it is even, add it to your result; if it is odd, subtract it.</description>
+    </sheet>
+  </element>
+
+  <element name="Wild Inspiration" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CHANCE_WILD_INSPIRATION">
+    <description>
+      <p>The nature of your magic bleeds into your other abilities. When a creature that can hear you within 30 feet makes an attack roll, ability check, or saving throw, you can use your reaction to expend a use of Bardic Inspiration, roll the Bardic Inspiration die, and add the result to the creature's roll.</p>
+    </description>
+    <sheet>
+      <description usage="Reaction">When a creature within 30 ft. makes an attack roll, ability check, or saving throw, expend a use of Bardic Inspiration to roll 1d{{inspiration:dice}} and add it to its roll.</description>
+    </sheet>
+  </element>
+
+  <element name="Whimsical Song" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CHANCE_WHIMSICAL_SONG">
+    <description>
+      <p>You enhance your bardic song with the power of wild magic. When a creature under the effect of your Countercharm uses one of your Bardic Inspiration dice, it can choose to use the maximum possible result for that die in place of rolling. However, if it uses Bardic Inspiration in this way and still misses its attack roll or fails its ability check or saving throw, it must immediately roll on the Wild Magic table found in the Sorcerer class on page 104 of <em>the Player's Handbook</em>.</p>
+    </description>
+    <sheet>
+      <description>When a creature affected by your Countercharm uses one of your Bardic Inspiration dice, it can use the maximum result in place of rolling; if it still misses its attack roll or fails its ability check or saving throw, it must immediately roll on the Wild Magic table.</description>
+    </sheet>
+  </element>
+
+  <element name="Master of Chance" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CHANCE_MASTER_OF_CHANCE">
+    <description>
+      <p>The forces of chance favor your wild lifestyle. Whenever you or another creature uses one of your Bardic Inspiration dice and rolls the maximum possible result, it gains an additional bonus to the roll equal to a roll of your Bardic Inspiration die.</p>
+    </description>
+    <sheet>
+      <description>When a creature uses one of your Bardic Inspiration dice and rolls the maximum result, it gains an additional +1d{{inspiration:dice}} to the roll.</description>
+    </sheet>
+  </element>
+
+  <element name="College of Chaos" type="Archetype" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CHAOS">
+    <supports>Bard College</supports>
+    <description>
+      <p>While most Bards use their skill with words to entertain and support, some choose to spread confusion, misinformation, and distrust. Though they reject the idea of formal leaders, some discordant Bards join the College of Chaos, a loose association of misanthropes that study discordant magics.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARD_CHAOS_BEWILDERING_WHISPER" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_CHAOS_SOWER_OF_DISCORD" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_CHAOS_PANDEMONIUM" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_CHAOS_REIGN_OF_CHAOS" />
+    </description>
+    <sheet display="false">
+      <description>Bards of Chaos use their skill with words to spread confusion, misinformation, and distrust.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_CHAOS_BEWILDERING_WHISPER" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_CHAOS_SOWER_OF_DISCORD" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_CHAOS_PANDEMONIUM" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_CHAOS_REIGN_OF_CHAOS" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Bewildering Whisper" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CHAOS_BEWILDERING_WHISPER">
+    <description>
+      <p>You use your magic to sow chaos in the midst of battle. When a creature within 60 feet that can hear you makes an attack roll, you can use your reaction to expend a Bardic Inspiration die and force it to make a Wisdom saving throw. On a failed save, the creature must use the same attack against another creature of your choice within the range of its attack.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When a creature within 60 ft. that can hear you makes an attack roll, expend a Bardic Inspiration die to force it to make a Wisdom saving throw; if it fails, it must use the same attack on another creature of your choice within its range.</description>
+    </sheet>
+  </element>
+
+  <element name="Sower of Discord" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CHAOS_SOWER_OF_DISCORD">
+    <description>
+      <p>You gain the skills to sow strife amongst your foes. You gain proficiency with disguise kits, forgery kits, and thieves' tools.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
+    </rules>
+  </element>
+
+  <element name="Pandemonium" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CHAOS_PANDEMONIUM">
+    <description>
+      <p>You infuse your bardic songs with chaotic magic. When you use Countercharm, you can force a creature within range of the effect to make a Wisdom saving throw. On a failed save, roll a d8 and the creature suffers the corresponding effect from the table below until the end of your Countercharm.</p>
+      <table>
+        <thead>
+            <tr><td class="col-5">d8</td><td class="col-20">effect</td></tr>
+        </thead>
+        <tr><td>1</td><td>It retreats into its mind and is Paralyzed. The effect ends early if it takes damage.</td></tr>
+        <tr><td>2</td><td>It is Incapacitated and convinced that its allies are secretly plotting against it.</td></tr>
+        <tr><td>3</td><td>It is Frightened of the closest creature and uses its turn to flee from it.</td></tr>
+        <tr><td>4</td><td>It cannot speak or cast spells and it feels if it opens its mouth its voice will escape.</td></tr>
+        <tr><td>5</td><td>It experiences vivid hallucinations and has disadvantage on all attack rolls.</td></tr>
+        <tr><td>6</td><td>It is highly suggestible and will do anything it is told to do that isn't self-destructive.</td></tr>
+        <tr><td>7</td><td>It experiences insatiable hunger and uses its action to eat anything it can.</td></tr>
+        <tr><td>8</td><td>It uses its turn to repeat its previous turn or action to the best of its ability.</td></tr>
+      </table>
+      <p class="indent">A creature suffering from this effect can make a Wisdom saving throw at the start of each of its turns, ending the effect on a success. Once a creature succeeds on its saving throw it is immune to this feature for the next 24 hours.</p>
+    </description>
+    <sheet>
+      <description>When you Countercharm, force a creature within the effect's range to make a Wisdom saving throw; if it fails, roll a d8 an consult the Pandemonium table to afflict it with the corresponding effect. The creature repeats it saving throw at the start of each turn, ending it on a success; creatures that succeed are immune for 24 hrs.</description>
+    </sheet>
+  </element>
+
+  <element name="Reign of Chaos" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CHAOS_REIGN_OF_CHAOS">
+    <description>
+      <p>You have mastered the chaotic magic that is the source of your power. You learn confusion, but it doesn't count against your total number of Spells Known. If you already know this spell you instead learn another enchantment spell of your choice from the Bard spell list.</p>
+      <p class="indent">As a bonus action, you can expend a use of your Bardic Inspiration to cast confusion with the following changes:</p>
+      <ul>
+        <li>You can only target one creature.</li>
+        <li>It does not require your concentration, but you can't have more than one instance of the spell active.</li>
+        <li>When a creature makes a saving throw to resist the effects of this spell you can expend a use of your Bardic Inspiration to impose disadvantage on its saving throw.</li>
+      </ul>
+      <div class="reference">
+        <div element="ID_PHB_SPELL_CONFUSION" />
+      </div>
+    </description>
+    <sheet>
+      <description action="Bonus Action">Expend a Bardic Inspiration use to cast confusion targeting one creature without concentration; youv cannot have more than 1 instance of the spell active at a time. When the creature makes a saving throw to resist, you can expend an additional Bardic Inspiration use to impose disadvantage on the throw.</description>
+    </sheet>
+    <rules>
+      <select type="Spell" name="Confusion (Reign of Chaos)" supports="(Enchantment,Bard)||Confusion" level="1" default="ID_PHB_SPELL_CONFUSION" spellcasting="Bard" allowReplace="false" />
+    </rules>
+  </element>
+
+  <append id="ID_PHB_SPELL_CONFUSION">
+    <supports>Confusion</supports>
+  </append>
+
+  <element name="College of Command" type="Archetype" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_COMMAND">
+    <supports>Bard College</supports>
+    <description>
+      <p>Bards of the College of Command infuse their voice with the magic to inspire others to feats of heroism in battle. Rather than use their abilities to empower themselves, they bring out the best in their allies. For some Bards of this College, their days of gallantry are long behind them. For others, they lead allies from the front, issuing orders and drawing swords.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARD_COMMAND_COMMANDERS_TRAINING" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_COMMAND_INSPIRING_ORDERS" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_COMMAND_GALLANT_LEADER" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_COMMAND_MASTERFUL_COMMANDER" />
+    </description>
+    <sheet display="false">
+      <description>Bards of Command use their abilities to bring out the best in their allies.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_COMMAND_COMMANDERS_TRAINING" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_COMMAND_INSPIRING_ORDERS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_COMMAND_GALLANT_LEADER" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_COMMAND_MASTERFUL_COMMANDER" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Commander's Training" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_COMMAND_COMMANDERS_TRAINING">
+    <description>
+      <p>You have honed both your body and mind for battle. You gain proficiency with medium armor, shields, and martial weapons that lack the heavy or two-handed properties.</p>
+      <p class="indent">In addition, you gain proficiency with two gaming sets of your choice, and you can add double your proficiency bonus to any ability check that uses these gaming sets.</p>
+    </description>
+    <sheet>
+      <description>Add an additional +{{proficiency}} to ability checks using your two chosen gaming sets.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+      <select type="Proficiency" name="Gaming Set, Commander's Training" supports="Gaming Set" number="2"/>
+    </rules>
+  </element>
+
+  <element name="Inspiring Orders" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_COMMAND_INSPIRING_ORDERS">
+    <description>
+      <p>As an action, you can expend a use of Bardic Inspiration to issue one of the Orders detailed below, targeting a willing creature within 60 feet that can either see or hear you:</p>
+      <p class="indent"><strong><em>Attack Order.</em></strong> The next time the target takes the Attack action before the start of your next turn, it can make one additional weapon attack as part of its Attack action.</p>
+      <p class="indent"><strong><em>Defensive Order.</em></strong> The target gains a bonus to its Armor Class equal to one roll of your Bardic Inspiration until the start of your next turn.</p>
+      <p class="indent"><strong><em>Maneuvering Order.</em></strong> The target can immediately move up to its full speed without provoking opportunity attacks.</p>
+      <p class="indent"><strong><em>Steadfast Order.</em></strong> Whenever the target makes an ability check or saving throw that uses its Strength, Dexterity, or Constitution before the start of your next turn, it gains a bonus to the result of its roll equal to one roll of your Bardic Inspiration.</p>
+      <p class="indent"><strong><em>Support Order.</em></strong> The target can immediately take the Help, Hide, Search, or Use an Object action. If it makes an ability check as part of this action it adds one roll of Bardic Inspiration to the result.</p>
+    </description>
+    <sheet>
+      <description action="Action" level="3">Expend a Bardic Inspiration use to issue an Order to a willing creature within 60 ft. that can see or hear you.</description>
+      <description action="Action" level="14">Expend a Bardic Inspiration use to issue an Order to a willing creature within 60 ft. that can see or hear you; the target gains 1d{{inspiration:dice}} temporary hit points. You can also choose to issue an Order without expending a Bardic Inspiration use, in which case the target does not gain temporary hit points and you use a d6 in place of the Inspiration dice for the Order if required.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_BARD_COMMAND_INSPIRING_ORDERS_ATTACK" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_BARD_COMMAND_INSPIRING_ORDERS_DEFEND" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_BARD_COMMAND_INSPIRING_ORDERS_MANEUVER" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_BARD_COMMAND_INSPIRING_ORDERS_STEADFAST" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_BARD_COMMAND_INSPIRING_ORDERS_SUPPORT" />
+    </rules>
+  </element>
+
+  <element name="Attack Order" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_FEATURE_BARD_COMMAND_INSPIRING_ORDERS_ATTACK">
+    <description>
+      <p>The next time the target takes the Attack action before the start of your next turn, it can make one additional weapon attack as part of its Attack action.</p>
+    </description>
+    <sheet>
+      <description>The next time the target takes the Attack action before your next turn, it can make an additional weapon attack as part of it.</description>
+    </sheet>
+  </element>
+
+  <element name="Defensive Order" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_FEATURE_BARD_COMMAND_INSPIRING_ORDERS_DEFEND">
+    <description>
+      <p>The target gains a bonus to its Armor Class equal to one roll of your Bardic Inspiration until the start of your next turn.</p>
+    </description>
+    <sheet>
+      <description>The target gains +1d{{inspiration:dice}} AC until your next turn.</description>
+    </sheet>
+  </element>
+
+  <element name="Maneuvering Order" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_FEATURE_BARD_COMMAND_INSPIRING_ORDERS_MANEUVER">
+    <description>
+      <p>The target can immediately move up to its full speed without provoking opportunity attacks.</p>
+    </description>
+    <sheet>
+      <description>The target can immediately move its full speed without provoking opportunity attacks.</description>
+    </sheet>
+  </element>
+
+  <element name="Steadfast Order" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_FEATURE_BARD_COMMAND_INSPIRING_ORDERS_STEADFAST">
+    <description>
+      <p>Whenever the target makes an ability check or saving throw that uses its Strength, Dexterity, or Constitution before the start of your next turn, it gains a bonus to the result of its roll equal to one roll of your Bardic Inspiration.</p>
+    </description>
+    <sheet>
+      <description>+1d{{inspiration:dice}} to the next ability check or saving throw using Strength, Dexterity, or Constitution that the target makes before your next turn.</description>
+    </sheet>
+  </element>
+
+  <element name="Support Order" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_FEATURE_BARD_COMMAND_INSPIRING_ORDERS_SUPPORT">
+    <description>
+      <p>The target can immediately take the Help, Hide, Search, or Use an Object action. If it makes an ability check as part of this action it adds one roll of Bardic Inspiration to the result.</p>
+    </description>
+    <sheet>
+      <description>+The target can immediately Help, Hide, Search, or Use an Object; if it makes an ability check as part of it, add 1d{{inspiration:dice}} to the result.</description>
+    </sheet>
+  </element>
+
+  <element name="Gallant Leader" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_COMMAND_GALLANT_LEADER">
+    <description>
+      <p>You can seamlessly fight and issue Orders to your allies. Whenever you use your action to issue an Order, you can make a single weapon attack or cast one Bard cantrip you know as a bonus action.</p>
+      <p class="indent">In addition, when you are forced to make a saving throw to resist being charmed or frightened you can add your Bardic Inspiration bonus to your roll.</p>
+    </description>
+    <sheet>
+      <description>When you use your action to issue an Order, you can make a single weapon attack or cast a Bard cantrip as a bonus action.&#13;&#10;Add +1d{{inspiration:dice}} to your saving throws against being charmed or frightened.</description>
+    </sheet>
+  </element>
+
+  <element name="Masterful Commander" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_COMMAND_MASTERFUL_COMMANDER">
+    <description>
+      <p>Your confident Orders embolden your allies. You can issue your Orders without expending Bardic Inspiration, rolling a d6 in place of your Bardic Inspiration die for that Order.</p>
+      <p class="indent">If you do expend a use of Bardic Inspiration to issue an Order, the target of the Order gains temporary hit points equal to one roll of your Bardic Inspiration in addition to the normal benefits of the Order.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="College of Crossroads" type="Archetype" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS">
+    <supports>Bard College</supports>
+    <description>
+      <p>While most Bards are naturally skilled musicians, singers, or storytellers, some gained their talent through more nefarious means. Known informally as the College of Crossroads, this organization is named for the traditional location where such mortal bargains are made. An agreement with a devil, demon, or other denizen of the lower planes is the start of such an infernal Bard's quest for personal power, fame, and fortune.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_INFERNAL_MUSICIAN" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_FORBIDDEN_ARCANA" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_ELDRITCH_RECOVERY" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_SINISTER_SONG" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_OTHERWORLDLY_VIRTUOSO" />
+    </description>
+    <sheet display="false">
+      <description>Bards of the Crossroads gain their talent through an agreement with a devil, demon, or other denizen of the lower planes.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_INFERNAL_MUSICIAN" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_FORBIDDEN_ARCANA" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_ELDRITCH_RECOVERY" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_SINISTER_SONG" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_OTHERWORLDLY_VIRTUOSO" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Infernal Musician" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_INFERNAL_MUSICIAN">
+    <description>
+      <p>You have gained strange and sinister skills from an infernal deal at a Crossroads. You gain the following benefits:</p>
+      <ul>
+        <li>You gain proficiency in Performance, and whenever you make a Charisma (Performance) check you can treat a d20 roll of 7 or lower as an 8.</li>
+        <li>You gain proficiency with one musical instrument.</li>
+        <li>You learn to speak, read, write, and sing in Infernal.</li>
+      </ul>
+      <p class="indent">In addition, whenever you make a Charisma check that includes Infernal speech or lyrics, you gain a bonus to the roll equal to your Bardic Inspiration roll.</p>
+    </description>
+    <sheet>
+      <description>When you make a Charisma (Performance) check, treat rolls of 7 or lower as 8s.&#13;&#10;When you make Charisma checks involving Infernal speech or lyrics, +{{inspiration:dice}} to the roll.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+      <grant type="Language" id="ID_LANGUAGE_INFERNAL" />
+      <select type="Proficiency" name="Instrument Proficiency, Infernal Musician" supports="Musical Instrument" />
+    </rules>
+  </element>
+
+  <element name="Forbidden Arcana" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_FORBIDDEN_ARCANA">
+    <description>
+      <p>Your nefarious dealings with the lower planes have granted you access to dark magics. When you learn a new Bard spell you can choose the spell from the Bard or the Warlock spell list. It then becomes a Bard spell for you.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <spellcasting name="Bard" extend="true">
+			<extend>Warlock</extend>
+		</spellcasting>
+  </element>
+
+  <element name="Eldritch Recovery" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_ELDRITCH_RECOVERY">
+    <description>
+      <p>You can draw upon the dark arts to regenerate your magic, much as a Warlock does. When you finish a short rest, you can regain one expended Bard spell slot of a level equal to your Charisma modifier (minimum of 1st-level) or lower.</p>
+      <p class="indent">However, if you choose to use this feature during a short rest then you cannot use Song of Rest.</p>
+    </description>
+    <sheet>
+      <description>When you finish a short rest, regain an expended Bard spell slot equal or lower in level than {{charisma:modifer}}; you cannot use both this feature and Song of Rest in the same short rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Sinister Song" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_SINISTER_SONG">
+    <description>
+      <p>Your bardic magic is infused with the power of the lower planes. When a creature under the effect of Countercharm succeeds on a saving throw to resist being charmed or frightened, you can use a reaction to expend a use of Bardic Inspiration and force a creature of your choice within range of your Countercharm to make a Wisdom saving throw.</p>
+      <p class="indent">On a failed save, it is charmed or frightened (your choice) for the duration of Countercharm. The creature can repeat its saving at the end of each turn, and each time it takes damage, ending the charm or frighten effect on a success.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When a creature affected by your Countercharm succeeds on a saving throw against being charmed or frightened, expend a Bardic Inspiration use to force a creature of your choice within your Countercharm's range to make a Wisdom saving throw; if it fails, it is charmed or frightened for Countercharm's duration. It can repeat the saving throw at the end of each turn as well as each time it takes damage, ending it on a success.</description>
+    </sheet>
+  </element>
+
+  <element name="Otherworldly Virtuoso" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_OTHERWORLDLY_VIRTUOSO">
+    <description>
+      <p>You have mastered the Infernal musical power imparted to you. When you cast a Bard spell with a verbal component you can expend a Bardic Inspiration to enhance the spell in one of the following ways:</p>
+      <h5>EMBOLDENING MELODY</h5>
+      <p>If the Bard spell restores hit points, one target of the spell regains additional hit points equal to your Charisma modifier (minimum of 1). All targets of the spell have advantage on the next attack roll, ability check, or saving throw they make.</p>
+      <h5>INFECTIOUS TUNE</h5>
+      <p>If the Bard spell requires your concentration, the first time you are forced to make a Constitution saving throw to maintain concentration on that spell you gain a bonus to your roll equal to one roll of your Bardic Inspiration.</p>
+      <h5>RESOUNDING NOTE</h5>
+      <p>If the Bard spell deals damage, you can cause it to deal thunder damage in place of its normal damage. Large or smaller creatures affected by the spell must succeed on an (additional) Strength saving throw or fall prone.</p>
+    </description>
+    <sheet>
+      <description>When you cast a Bard spell with a verbal component, expend a Bardic Inspiration use to enhance it:</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_OTHERWORLDLY_VIRTUOSO_EMBOLDENING_MELODY" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_OTHERWORLDLY_VIRTUOSO_INFECTIOUS_TUNE" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_OTHERWORLDLY_VIRTUOSO_RESOUNDING_NOTE" />
+    </rules>
+  </element>
+
+  <element name="Emboldening Melody" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_OTHERWORLDLY_VIRTUOSO_EMBOLDENING_MELODY">
+    <description>
+      <p>If the Bard spell restores hit points, one target of the spell regains additional hit points equal to your Charisma modifier (minimum of 1). All targets of the spell have advantage on the next attack roll, ability check, or saving throw they make.</p>
+    </description>
+    <sheet>
+      <description>If the Bard spell restores hit points, grant one of its targets an additional +{{charisma:modifier}} hit points. All spell targets have advantage on their next attack roll, ability check, or saving throw.</description>
+    </sheet>
+  </element>
+
+  <element name="Infectious Tune" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_OTHERWORLDLY_VIRTUOSO_INFECTIOUS_TUNE">
+    <description>
+      <p>If the Bard spell requires your concentration, the first time you are forced to make a Constitution saving throw to maintain concentration on that spell you gain a bonus to your roll equal to one roll of your Bardic Inspiration.</p>
+    </description>
+    <sheet>
+        <description>If the Bard spell requires concentration, +{{inspiration:dice}} to the first Constitution saving throw you make to maintain concentration on it.</description>
+    </sheet>
+  </element>
+
+  <element name="Resounding Note" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_CROSSROADS_OTHERWORLDLY_VIRTUOSO_RESOUNDING_NOTE">
+    <description>
+      <p>If the Bard spell deals damage, you can cause it to deal thunder damage in place of its normal damage. Large or smaller creatures affected by the spell must succeed on an (additional) Strength saving throw or fall prone.</p>
+    </description>
+    <sheet>
+        <description>If the Bard spell deals damage, cause it to deal thunder damage in place of normal damage; Large and smaller creatures affected by the spell must make a Strength saving throw; if they fail, they fall prone.</description>
+    </sheet>
+  </element>
+
+  <element name="College of Drama" type="Archetype" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_DRAMA">
+    <supports>Bard College</supports>
+    <description>
+      <p>Long have the performing arts been a favorite pastime for people of all walks of life. Performers and thespians use the stage to tell stories that while fictional, can reveal great truths about life, death, and the struggles in between. The Muse, the ancient spirit of inspiration, moves the hearts of these actors, both great and small, to give their all in every performance.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARD_DRAMA_CHANNEL_THE_MUSE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_DRAMA_THESPIANS_CRAFT" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_DRAMA_SOLILOQUY" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_DRAMA_FINAL_CURTAIN" />
+    </description>
+    <sheet display="false">
+      <description>Drama Bards use the stage to tell stories that reveal great turths about life, death, and the struggles in between.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_DRAMA_CHANNEL_THE_MUSE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_DRAMA_THESPIANS_CRAFT" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_DRAMA_SOLILOQUY" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_DRAMA_FINAL_CURTAIN" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Channel the Muse" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_DRAMA_CHANNEL_THE_MUSE">
+    <description>
+      <p>You have learned to channel songs of The Muse to magically manifest two masks. One, a laughing Mask of Comedy, the other, a weeping Mask of Tragedy. At the end of a long rest, you choose which Mask manifests, which lasts until the end of your next long rest, and grants you the abilities below:</p>
+      <h5>MASK OF COMEDY</h5>
+      <p>You use your talent for the dramatic to inspire your allies in combat. When a friendly creature that can see or hear you within 30 feet fails an ability check or saving throw, or misses with an attack roll, you can use your reaction to expend a use of Bardic Inspiration, roll it, and the result to the creature's roll, possibly turning its failure into a success.</p>
+      <h5>MASK OF TRAGEDY</h5>
+      <p>Your flair for tragedy allows you to inflict sorrow upon your foes. When a hostile creature that can see or hear you within 30 feet succeeds on an ability check or saving throw, or hits with an attack roll, you can use your reaction to expend a use of Bardic Inspiration, roll it, and subtract the result from its roll, possibly turning its success into a failure.</p>
+    </description>
+    <sheet>
+        <description usage="1/Long Rest">After a long rest, choose whether to don the Mask of Comedy or Mask of Tragedy, which lasts until your next long rest.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_DRAMA_CHANNEL_THE_MUSE_COMEDY" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_DRAMA_CHANNEL_THE_MUSE_TRAGEDY" />
+    </rules>
+  </element>
+
+  <element name="Mask of Comedy" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_DRAMA_CHANNEL_THE_MUSE_COMEDY">
+    <description>
+      <p>You use your talent for the dramatic to inspire your allies in combat. When a friendly creature that can see or hear you within 30 feet fails an ability check or saving throw, or misses with an attack roll, you can use your reaction to expend a use of Bardic Inspiration, roll it, and the result to the creature's roll, possibly turning its failure into a success.</p>
+    </description>
+    <sheet>
+        <description action="Reaction" level="3">When a friendly creature within 30 ft. that can see or hear you fails an ability check or saving throw, or misses an attack roll, expend a Bardic Inspiration use to grant it 1d{{inspiration:dice}} to the failing roll.</description>
+        <description level="6">When a friendly creature within 30 ft. that can see or hear you fails an ability check or saving throw, or misses an attack roll, use a reaction and expend a Bardic Inspiration use to grant it 1d{{inspiration:dice}} to the failing roll.&#13;&#10;Creatures within your Countercharm's range gain +{{charisma:modifier}} at the starts of their turns.</description>
+        <description level="14">When a friendly creature within 30 ft. that can see or hear you fails an ability check or saving throw, or misses an attack roll, use a reaction and expend a Bardic Inspiration use to grant it 1d{{inspiration:dice}} to the failing roll.&#13;&#10;Creatures within your Countercharm's range gain +{{charisma:modifier}} at the starts of their turns.&#13;&#10;When an ally within 30 ft. makes a death saving throw, use a reaction and expend a Bardic Inspiration use to make a Charisma (Performance) check; the target can your check result in place of their death saving roll.</description>
+    </sheet>
+  </element>
+
+  <element name="Mask of Tragedy" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_DRAMA_CHANNEL_THE_MUSE_TRAGEDY">
+    <description>
+      <p>Your flair for tragedy allows you to inflict sorrow upon your foes. When a hostile creature that can see or hear you within 30 feet succeeds on an ability check or saving throw, or hits with an attack roll, you can use your reaction to expend a use of Bardic Inspiration, roll it, and subtract the result from its roll, possibly turning its success into a failure.</p>
+    </description>
+    <sheet>
+        <description action="Reaction" level="3">When a hostile creature within 30 ft. that can see or hear you succeeds on an ability check or saving throw, or hits an attack roll, expend a Bardic Inspiration use to subtract 1d{{inspiration:dice}} to the succeeding roll.</description>
+        <description level="6">When a hostile creature within 30 ft. that can see or hear you succeeds on an ability check or saving throw, or hits an attack roll, use a reaction and expend a Bardic Inspiration use to subtract 1d{{inspiration:dice}} to the succeeding roll.&#13;&#10;Creatures within your Countercharm's range have disadvantage against spells with a verbal component.</description>
+        <description level="14">When a hostile creature within 30 ft. that can see or hear you succeeds on an ability check or saving throw, or hits an attack roll, use a reaction and expend a Bardic Inspiration use to subtract 1d{{inspiration:dice}} to the succeeding roll.&#13;&#10;Creatures within your Countercharm's range have disadvantage against spells with a verbal component.&#13;&#10;When you are reduced to 0 hit points but not killed outright, expend a Bardic Inspiration use to make a Charisma (Performance) check; if your result is 20 or higher, fall to 1 hit point instead of 0.</description>
+    </sheet>
+  </element>
+
+  <element name="Thespian's Craft" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_DRAMA_THESPIANS_CRAFT">
+    <description>
+      <p>The Muse has granted the skills of a master stage performer. You gain proficiency in Performance and with disguise kits, and whenever you make an ability check with either of these proficiencies you can treat a d20 roll of 7 or lower as an 8.</p>
+    </description>
+    <sheet>
+        <description>When you make an ability check in Performance or with a disguise kit, treat rolls of 7 or lower as 8s.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+    </rules>
+  </element>
+
+  <element name="Soliloquy" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_DRAMA_SOLILOQUY">
+    <description>
+      <p>Your bardic magic and song is infused with the performative power of The Muse. When you use Countercharm it gains the effects below based on the Mask you are currently wearing:</p>
+      <h5>MASK OF COMEDY</h5>
+      <p>The sound of your music inspires great deeds. Creatures of your choice that can hear you within range of Countercharm gain temporary hit points equal to your Charisma modifier (minimum of 1) at the start of each of their turns.</p>
+      <h5>MASK OF TRAGEDY</h5>
+      <p>Your bardic magic and song undermine the resolve of your enemies. Creatures of your choice that can hear you within range of Countercharm have disadvantage on saving throws to resist any spell that includes a verbal component.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Final Curtain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_DRAMA_FINAL_CURTAIN">
+    <description>
+      <p>The Muse grants you the ability to enthrall Death itself, if only for a short while. Your Masks grant the benefits below:</p>
+      <h5>MASK OF COMEDY</h5>
+      <p>You can bring allies back from the brink of death. When a creature you can see within 30 feet makes a death saving throw, you can use your reaction to expend a use of Bardic Inspiration and make a Charisma (Performance) check. The creature can choose to use the result of your check in place of making a normal death saving throw roll.</p>
+      <h5>MASK OF TRAGEDY</h5>
+      <p>You can bargain with death itself for more time. When you are reduced to 0 hit points but not killed outright, you can expend a use of Bardic Inspiration die to immediately make a Charisma (Performance) check. If the result of your check is a 20 or greater, you fall to 1 hit point instead of 0.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="College of Eulogies" type="Archetype" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_EULOGIES">
+    <supports>Bard College</supports>
+    <description>
+      <p>Bards are masters of eliciting all types of emotions with their music. They use their magic to make audiences feel a longing for places they have never been and love for people long dead. Those who join the College of Eulogies have a fondness for the more negative emotions; grief, sorrow, and fear. They take their name from the speeches typically delivered in memory of the deceased, for they see themselves as bringers of death.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARD_EULOGIES_BARDIC_DIRGE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_EULOGIES_LAMENT_FOR_THE_DEAD" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_EULOGIES_RESTLESS_SPIRIT" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_EULOGIES_INFECTIOUS_DESPAIR" />
+    </description>
+    <sheet display="false">
+      <description>Eulogy Bards have a fondness for the more negative emotions; grief, sorrow, and fear.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_EULOGIES_BARDIC_DIRGE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_EULOGIES_LAMENT_FOR_THE_DEAD" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_EULOGIES_RESTLESS_SPIRIT" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_EULOGIES_INFECTIOUS_DESPAIR" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Bardic Dirge" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_EULOGIES_BARDIC_DIRGE">
+    <description>
+      <p>You wield the melancholic magic of negative emotions and can use it to inflict minor curses. When a creature that can hear you within 60 feet, makes an attack roll, ability check, or saving throw, you can use your reaction to expend a use of Bardic Inspiration to impose disadvantage on its roll.</p>
+    </description>
+    <sheet>
+      <description action="Reaction" level="3">When a creature within 60 ft. that can hear you makes an attack roll, ability check, or saving throw, expend a Bardic Inspiration use to impose disadvantage on it.</description>
+      <description action="Reaction" level="3">When a creature within 60 ft. that can hear you makes an attack roll, ability check, or saving throw, expend a Bardic Inspiration use to impose disadvantage on it. If it succeeds despite disadvantage, it has disadvantage on its next roll as well (the feature ends after the second roll even if they succeed again).</description>
+    </sheet>
+  </element>
+
+  <element name="Lament for the Dead" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_EULOGIES_LAMENT_FOR_THE_DEAD">
+    <description>
+      <p>You have steeped yourself in strange magic and ancient lore associated with death. Whenever you make an Intelligence check to recall knowledge pertaining to rituals or lore related to death, the undead, or the magic of necromancy, you can add double your proficiency bonus to your roll.</p>
+      <p class="indent">Also, whenever you learn a new Bard spell, you can choose to learn a necromancy spell of your choice from any spell list.</p>
+    </description>
+    <spellcasting name="Bard" extend="true">
+      <extend>Necromancy</extend>
+    </spellcasting>
+    <sheet>
+      <description>+{{proficiency}} on top of your proficiency when you make an Intelligence check to recall knowledge pertaining to rituals or lore related to the dead, undead, or necromancy.</description>
+    </sheet>
+  </element>
+
+  <element name="Restless Spirit" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_EULOGIES_RESTLESS_SPIRIT">
+    <description>
+      <p>You can conjure and bind Restless Spirits that died with unfinished business. At the end of each long rest, you can perform a short ritual that summons such a Spirit. It is friendly to both you and your allies, obeys your commands, and uses the Restless Spirit stat block, which uses your Spell Save DC, and proficiency bonus (PB).</p>
+      <p class="indent">In combat, the Spirit acts during your turn. It can move and use its reaction on its own, but the only action it takes is the Dodge action, unless you used your bonus action to command it to take one of the actions in its stat block, or another action. If you are incapacitated, the Restless Spirit can take any action it chooses.</p>
+      <p class="indent">If your Spirit was destroyed within the last hour, you can expend a spell slot of 1st-level or higher. After 1 minute, it returns from beyond the veil with all its hit points restored.</p>
+      <div element="ID_LASERLL_INFORMATION_BARD_RESTLESS_SPIRIT" />
+    </description>
+    <sheet>
+      <description>At the end of a long rest, summon a Restless Spirit; it is friendly to you and your allies and acts on your turn. You can command it with your bonus action, and it Dodges otherwise. If it is destroyed, you can expend a 1st-level spell slot in the next hour to re-summon it over 1 minute.</description>
+    </sheet>
+    <rules>
+      <select type="Companion" supports="Undead,Medium" default="ID_LASERLL_COMPANION_BARD_RESTLESS_SPIRIT" />
+    </rules>
+  </element>
+
+  <element name="Restless Spirit" type="Companion" source="laserllama's Bard Colleges" id="ID_LASERLL_COMPANION_BARD_RESTLESS_SPIRIT">
+    <description>
+      <p>You can conjure and bind Restless Spirits that died with unfinished business.</p>
+    </description>
+    <setters>
+      <set name="size">Medium</set>
+      <set name="type">Undead</set>
+      <set name="alignment">unaligned</set>
+      <set name="challenge">0</set>
+      <set name="ac">13 + PB (natural armor)</set>
+      <set name="hp">5 + five times your Bard level</set>
+      <set name="speed">30 ft.</set>
+      <set name="strength">14</set>
+      <set name="dexterity">14</set>
+      <set name="constitution">15</set>
+      <set name="intelligence">10</set>
+      <set name="wisdom">14</set>
+      <set name="charisma">11</set>
+      <set name="resistances">necrotic</set>
+      <set name="immunities">frightened, grappled</set>
+      <set name="senses">darkvisio 60 ft., passive Perception 12</set>
+      <set name="languages">understands the languages you speak, but cannot speak itself</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_BARD_RESTLESS_SPIRIT_MISERYS_COMPANY,ID_LASERLL_COMPANION_TRAIT_BARD_RESTLESS_SPIRIT_SPIRIT_BOND</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_BARD_RESTLESS_SPIRIT_MOURNFUL_WAIL,ID_LASERLL_COMPANION_ACTION_BARD_RESTLESS_SPIRIT_SPECTRAL_CLAW</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="13" bonus="base" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:speed" value="30" bonus="base" />
+
+      <stat name="companion:ac" value="13" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="additional:hp:max" value="level:bard" />
+      <stat name="additional:hp:max" value="level:bard" />
+      <stat name="additional:hp:max" value="level:bard" />
+      <stat name="additional:hp:max" value="level:bard" />
+      <stat name="additional:hp:max" value="level:bard" />
+    </rules>
+  </element>
+
+  <element name="Misery's Company" type="Companion Trait" source="laserllama's Bard Colleges" id="ID_LASERLL_COMPANION_TRAIT_BARD_RESTLESS_SPIRIT_MISERYS_COMPANY">
+    <description>
+      <p>The Spirit has advantage on attack rolls against creatures that are frightened of it.</p>
+    </description>
+    <sheet>
+      <description>The Spirit has advantage on attack rolls against creatures that are frightened of it.</description>
+    </sheet>
+  </element>
+
+  <element name="Spirit Bond" type="Companion Trait" source="laserllama's Bard Colleges" id="ID_LASERLL_COMPANION_TRAIT_BARD_RESTLESS_SPIRIT_SPIRIT_BOND">
+    <description>
+      <p>When the Spirit makes an ability check or saving throw you can use your reaction to expend a use of Bardic Inspiration and add it to its roll.</p>
+    </description>
+    <sheet>
+      <description>When the Spirit makes an ability check or saving throw you can use your reaction to expend a use of Bardic Inspiration and add it to its roll.</description>
+    </sheet>
+  </element>
+
+  <element name="Mournful Wail" type="Companion Action" source="laserllama's Bard Colleges" id="ID_LASERLL_COMPANION_ACTION_BARD_RESTLESS_SPIRIT_MOURNFUL_WAIL">
+    <description>
+      <p>One creature of your choice within 30 feet of the Spirit that can hear it must succeed on a Wisdom saving throw or be frightened of it for 1 minute. It can repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
+    </description>
+    <sheet>
+      <description>Force a creature of your choice within 30 ft. that can hear the Spirit to make a Wisdom saving throw or be frightened of it for 1 minute. It can repeat the saving throw at the end of each of its turns, ending the effect on a success.</description>
+    </sheet>
+  </element>
+
+  <element name="Spectral Claw" type="Companion Action" source="laserllama's Bard Colleges" id="ID_LASERLL_COMPANION_ACTION_BARD_RESTLESS_SPIRIT_SPECTRAL_CLAW">
+    <description>
+      <p><em>Melee Spell Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d8 + your Charisma modifier necrotic damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Spell Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d8 + your Charisma modifier necrotic damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Restless Spirit" type="Information" source="laserllama's Bardic Colleges" id="ID_LASERLL_INFORMATION_BARD_RESTLESS_SPIRIT">
+    <description>
+      <p style="margin-bottom:-5px"><em>Medium Undead, Unaligned</em></p>
+      <h4 style="margin-top:5px" />
+      <ul class="unstyled">
+        <li><strong>Armor Class</strong> 13 + PB (natural armor)</li>
+        <li><strong>Hit Points</strong> 5 + five times your Bard level</li>
+        <li><strong>Speed</strong> 30 ft.</li>
+      </ul>
+      <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+        <thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>CHA</td><td>WIS</td></tr></thead>
+        <tr><td>14 (+2)</td><td>14 (+2)</td><td>15 (+2)</td><td>10 (+0)</td><td>14 (+2)</td><td>11 (+0)</td></tr>
+      </table>
+      <ul class="unstyled">
+        <li><strong>Damage Resistances</strong> necrotic</li>
+        <li><strong>Condition Immunities</strong> frightened, grappled</li>
+        <li><strong>Senses</strong> darkvision 60 ft., passive Perception 12</li>
+        <li><strong>Languages</strong>understands the languages you speak, but cannot speak itself</li>
+      </ul>
+      <h4 style="margin-top:5px; margin-bottom:10px" />
+      <ul class="unstyled">
+        <li><strong><em>Misery's Company.</em></strong> The Spirit has advantage on attack rolls against creatures that are frightened of it.</li>
+        <li><strong><em>Spirit Bond.</em></strong> When the Spirit makes an ability check or saving throw you can use your reaction to expend a use of Bardic Inspiration and add it to its roll.</li>
+      </ul>
+      <h4 style="margin-top:10px">Actions</h4>
+      <ul class="unstyled">
+        <li><em><strong>Mournful Wail.</strong></em> One creature of your choice within 30 feet of the Spirit that can hear it must succeed on a Wisdom saving throw or be frightened of it for 1 minute. It can repeat the saving throw at the end of each of its turns, ending the effect on a success.</li>
+        <li><em><strong>Spectral Claw.</strong> Melee Spell Attack:</em>  your spell attack modifier to hit, reach 5 ft., one target. <em>Hit:</em> 1d8 + your Charisma modifier necrotic damage.</li>
+      </ul>
+    </description>
+  </element>
+
+  <element name="Infectious Despair" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_EULOGIES_INFECTIOUS_DESPAIR">
+    <description>
+      <p>The sadness and despair that you inflict upon your foes cloys to them until it exacts its toll. When you use Bardic Dirge on a creature, and that creature succeeds on its roll despite the disadvantage, it also has disadvantage on its next attack roll, ability check, or saving throw it makes as well.</p>
+      <p class="indent">Regardless of the outcome of the second roll, this feature ends after its next attack roll, ability check, or saving throw.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="College of Fine Art" type="Archetype" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_FINE_ART">
+    <supports>Bard College</supports>
+    <description>
+      <p>While most Bards unlock their signature magic with song, some learn to channel magic through visual mediums. Most often using ink or paint, these whimsical artists animate wondrous images to both entertain and adventure with. They can channel bardic illusion magic through art and bring the strange and wonderful figments of their imagination to life.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARD_FINE_ART_CLASSICAL_ARTIST" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_FINE_ART_LIVING_ART" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_FINE_ART_ILLUSORY_ARTWORK" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_FINE_ART_BARDIC_MASTERPIECE" />
+    </description>
+    <sheet display="false">
+      <description>Bards of Fine Arts channel illusion magic through art and bring the strange and wonderful figments of their imagination to life.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_FINE_ART_CLASSICAL_ARTIST" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_FINE_ART_LIVING_ART" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_FINE_ART_ILLUSORY_ARTWORK" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_FINE_ART_BARDIC_MASTERPIECE" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Classical Artist" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_FINE_ART_CLASSICAL_ARTIST">
+    <description>
+      <p>You have mastered the use of visual art forms for your bardic magic. You gain proficiency with calligrapher's and painter's supplies, and whenever you make an ability check with either tool you can add double your proficiency bonus to your roll.</p>
+      <p class="indent">Moreover, you can use calligrapher's supplies or painter's supplies as a spellcasting focus for any Bard spell you know.</p>
+      <p class="indent">Finally, whenever you learn a Bard spell, you can choose to learn an illusion spell of your choice from any spell list.</p>
+    </description>
+    <sheet>
+      <description>+{{proficiency}} on top of your proficiency when you make an ability check involving calligrapher's or painter's supplies, and you can use these tools as a spellcasting focus for Bard spells.</description>
+    </sheet>
+    <spellcasting name="Bard" extend="true">
+      <extend>Illusion</extend>
+    </spellcasting>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES" />
+    </rules>
+  </element>
+
+  <element name="Living Art" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_FINE_ART_LIVING_ART">
+    <description>
+      <p>Your signature bardic magic can bring your artwork to life. You learn the find familiar spell, but it doesn't count against your total number of Spells Known. Though, you can only cast find familiar using calligrapher's supplies or painter's supplies as your spellcasting focus.</p>
+      <p class="indent">When you cast find familiar in this way, your familiar resembles a living two-dimensional piece of artwork. As an action, your familiar can flatten itself against any surface to appear as mundane art or graffiti. If a creature succeeds on an Intelligence (Investigation) check against your Spell Save DC it realizes that the artwork is a living familiar.</p>
+      <div class="reference">
+        <div element="ID_PHB_SPELL_FIND_FAMILIAR" />
+      </div>
+    </description>
+    <sheet>
+      <description>Cast find familiar with your calligrapher's or painter's supplies as your focus; by doing so, your familiar becomes a living, 2D piece of art. It can flatten itself against a surface to appear as mundane art, and is only recognized by another creature as alive upon an Intelligence (Investigation) check against your spell save DC.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" spellcasting="Bard" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Illusory Art" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_FINE_ART_ILLUSORY_ARTWORK">
+    <description>
+      <p>If you cast an illusion spell and use calligrapher's supplies or painter's supplies as your spellcasting focus you can expend a use of Bardic Inspiration to cast the spell with a spell slot one level lower than you normally would (minimum of 1st-level).</p>
+    </description>
+    <sheet>
+      <description>When you cast an illusion spell with calligrapher's or painter's supplies as your focus, you can expend a Bardic Inspiration use to cast it with a spell slot one level lower than normal (minimum 1st-level).</description>
+    </sheet>
+  </element>
+
+  <element name="Bardic Masterpiece" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_FINE_ART_BARDIC_MASTERPIECE">
+    <description>
+      <p>As an action you can use calligrapher's or painter's supplies to paint a picture of a beast of CR 4 or lower that you have seen before in an unoccupied space adjacent to you, bringing the artistic depiction on the beast to life for 1 minute.</p>
+      <p class="indent">While it is animated, the artwork beast is completely under your control, is friendly toward you and your allies, and it uses the stat block of the beast you depicted. In combat, the beast shares your initiative, but it can only take the Dodge action unless you use your bonus action to command it to take an action from its stat block or another action.</p>
+      <p class="indent">If the artwork beast is reduced to zero hit points it is dispelled and melts into a puddle of ink or paint.</p>
+      <p class="indent">Once you use this feature you must finish a long rest before you can use it again. When you have no uses of this feature remaining, you can expend a spell slot of 5th-level or higher to use it again.</p>
+    </description>
+    <sheet>
+      <description action="Action" usage="1/Long Rest">Use your calligrapher's or painter's supplies to paint a CR4 or lower beast that you have seen before in an adjacent unoccupied space, bringing it to life for 1 minute. While animated it is friendly towards allies and uses the painted beast's stat block; it shares you initiative and can be commanded with a bonus action, Dodging if not commanded. It is dispelled upon reaching 0 hit points. You can expend a 5th-level or higher spell slot to reuse this feature before a long rest.</description>
+    </sheet>
+  </element>
+
+  <element name="College of Fools" type="Archetype" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_FOOLS">
+    <supports>Bard College</supports>
+    <description>
+      <p>Bards who join the College of Fools use crude stories, daring acrobatics, and cutting jokes to entertain audiences, ranging from tavern crowds to royal courts. Where other Bards seek out forgotten lore or tales of bravery, Fools tell embarrassing and hilarious stories of all kinds. Fools undermine the plans of the powerful, and their acrobatic ability to tumble, dodge, leap, and climb makes them slippery opponents in battle.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARD_FOOLS_SATIRICAL_THEATRICS" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_FOOLS_TUMBLING_FOOL" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_FOOLS_SHARP_TONGUE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_FOOLS_SHARPER_WIT" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_FOOLS_FOOLS_LUCK" />
+    </description>
+    <sheet display="false">
+      <description>Fools utlize their acrobatic ability to tumble, dodge, leap, and climb, making them slippery opponents in battle.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_FOOLS_SATIRICAL_THEATRICS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_FOOLS_TUMBLING_FOOL" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_FOOLS_SHARP_TONGUE" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_FOOLS_SHARPER_WIT" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_FOOLS_FOOLS_LUCK" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Satirical Theatrics" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_FOOLS_SATIRICAL_THEATRICS">
+    <description>
+      <p>You gain the skills to pass as a bumbling nincompoop. You gain proficiency in Acrobatics and Sleight of Hand, and when you make an ability check with either of these skills, you can treat a d20 roll of 7 or lower as an 8.</p>
+    </description>
+    <sheet>
+      <description>When you make an ability check in Acrobatics or Sleight of Hand, treat rolls of 7 or lower as 8s.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+    </rules>
+  </element>
+
+  <element name="Tumbling Theatrics" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_FOOLS_STUMBLING_THEATRICS">
+    <description>
+      <p>Your training allows you to move about in strange and bizarrely entertaining ways. You can take the Dash action as a bonus action. When you take the Dash action, you gain the following benefits, which last until the end of your turn:</p>
+      <ul>
+        <li>Opportunity attacks against you have disadvantage.</li>
+        <li>You gain a climbing speed equal to your walking speed.</li>
+        <li>You can reduce any falling damage you take by an amount equal to your Bard level + your Charisma modifier.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>You can Dash as a bonus action; when you do so, until the end of your turn opportunity attacks against you have disadvantage, you gain a climbing speed equal to your walking speed, and you reduce falling damage by {{tumbling theatrics reduction}}.</description>
+    </sheet>
+    <rules>
+      <stat name="tumbling theatrics reduction" value="level:bard" />
+      <stat name="tumbling theatrics reduction" value="charisma:modifier" />
+    </rules>
+  </element>
+
+  <element name="Sharp Tongue" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_FOOLS_SHARP_TONGUE">
+    <description>
+      <p>You learn vicious mockery, but it doesn't count against your total number of Cantrips Known, and when you use vicious mockery you add your Charisma modifier to the damage roll.</p>
+      <p class="indent">If you already know vicious mockery you learn another cantrip of your choice from the Bard spell list.</p>
+      <div class="reference">
+        <div element="ID_LASERLL_SPELL_VICIOUS_MOCKERY" />
+      </div>
+    </description>
+    <sheet>
+      <description>When you cast vicious mockery, add +{{charisma:modifier}} damage.</description>
+    </sheet>
+    <rules>
+      <select type="Spell" name="Vicious Mockery (Sharp Tongue)" supports="0,(Bard||Vicious Mockery)" level="1" default="ID_LASERLL_SPELL_VICIOUS_MOCKERY" spellcasting="Bard" allowReplace="false" />
+    </rules>
+  </element>
+
+  <append id="ID_LASERLL_SPELL_VICIOUS_MOCKERY">
+    <supports>Vicious Mockery</supports>
+  </append>
+
+  <element name="Sharper Wit" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_FOOLS_SHARPER_WIT">
+    <description>
+      <p>When a creature that you can see targets you with an attack, you can use your reaction to cast vicious mockery targeting the attacker. If it fails its saving throw, it must choose another target within range of its attack. If there are no other targets in range then its attack misses.</p>
+      <p class="indent">You can cast vicious mockery as a reaction a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description action="Reaction" usage="{{charisma:modifier}}/Long Rest">When a visible creature targets you with an attack, cast vicious mockery targeting it; if it fails its saving throw, it must choose another target within that its attack range instead, or the attack misses if no other targets are available.</description>
+    </sheet>
+  </element>
+
+  <element name="Fool's Luck" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_FOOLS_FOOLS_LUCK">
+    <description>
+      <p>You combine bardic magic with foolish antics to manipulate luck. When you make an ability check, attack roll, or saving throw with advantage, you can choose to automatically fail in comical fashion and gain one point of Fool's Luck.</p>
+      <p class="indent">When a creature within 30 feet that can see or hear you, makes an attack roll, ability check, or saving throw, you can use your reaction to expend a point of Fool's Luck to impose advantage or disadvantage (your choice) on its roll.</p>
+      <p class="indent">You can have a total number of points of Fool's Luck equal to your Charisma modifier (minimum of 1). Unused Fool's Luck fades at the end of your next long rest.</p>
+    </description>
+    <sheet>
+      <description>When you make an ability check, attack roll, or saving throw with advantage, you can choose to automatically fail in a comical fashion to gain one point of Fool's Luck, up to {{charisma:modifier}}; it fades at the end of a long rest. When a creature within 30 ft. that can see or hear you makes an attack roll, ability check, or saving throw, you can use a reaction to expend a Fool's Luck point to impose advantage or disadvantage on the roll.</description>
+    </sheet>
+  </element>
+
+  <element name="College of Glory" type="Archetype" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_GLORY">
+    <supports>Bard College</supports>
+    <description>
+      <p>Bards are known for telling the tale and ballads that laud the heroic action of others. While most are satisfied by this role, others strive to be the hero themselves. Many a brave Bard has joined the ranks of the College of Glory for this reason.</p>
+      <p class="indent">Valuing bravery and decisive action above all, Glory Bards emulate heroes of legend. Augmented by magic, they cultivate larger-than-life personas and hone physical abilities to match.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARD_GLORY_HEROIC_STATURE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_GLORY_GLORIOUS_PURPOSE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_GLORY_EXTRA_ATTACK" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_GLORY_HERO_OF_LEGEND" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_GLORY_PARAGON_OF_GLORY" />
+    </description>
+    <sheet display="false">
+      <description>Glory Bards emulate heroes of legend.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_GLORY_HEROIC_STATURE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_GLORY_GLORIOUS_PURPOSE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_GLORY_EXTRA_ATTACK" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_GLORY_HERO_OF_LEGEND" level="14"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_GLORY_PARAGON_OF_GLORY" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Heroic Stature" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_GLORY_HEROIC_STATURE">
+    <description>
+      <p>You have decided to become the hero that other Bards will sing of. You gain the following benefits so long as you are not wearing armor or wielding a shield:</p>
+      <ul>
+        <li>Your Armor Class is equal to 10 + your Strength modifier + your Charisma modifier.</li>
+        <li>Your unarmed strikes deal bludgeoning damage equal to one roll of your Bardic Inspiration die + your Strength modifier on hit.</li>
+        <li>Whenever you make a Strength (Athletics) check or roll damage for an unarmed strike, you can expend a use of Bardic Inspiration and add it to the result of your roll.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>While unarmored and not wielding a shield, your unarmed strikes deal 1d{{inspiration:dice}} + {{strength:modifier}} bludgeoning damage.&#13;&#10;When you make a Strength (Athletics) check or roll unarmed strike damage, you can expend a Bardic Inspiration use to roll 1d{{inspiration:dice}} and add it to your roll.</description>
+    </sheet>
+    <rules>
+      <stat name="ac:unarmored defense glory bard:base" value="10" />
+      <stat name="ac:unarmored defense glory bard:strength" value="strength:modifier" />
+      <stat name="ac:unarmored defense glory bard:charisma" value="charisma:modifier" />
+      <stat name="ac:unarmored defense glory bard" value="ac:unarmored defense glory bard:base" />
+      <stat name="ac:unarmored defense glory bard" value="ac:unarmored defense glory bard:strength" />
+      <stat name="ac:unarmored defense glory bard" value="ac:unarmored defense glory bard:charisma" />
+      <stat name="ac:calculation" value="ac:unarmored defense glory bard" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Bard, Glory)" />
+    </rules>
+  </element>
+
+  <element name="Glorious Purpose" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_GLORY_GLORIOUS_PURPOSE">
+    <description>
+      <p>You have trained to overcome any obstacle that may stand in the path of your legend. You gain proficiency in Athletics and have advantage on saving throws to resist being frightened.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on saving throws against being frightened.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+    </rules>
+  </element>
+
+  <element name="Extra Attack" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_BARD_GLORY_EXTRA_ATTACK">
+		<description>
+			<p>You can attack twice, instead of once, when you take the Attack action on your turn. Moreover, you can cast one of your Bard cantrips in place of one of those attacks.</p>
+		</description>
+		<sheet>
+      <description>You can cast a cantrip in place of one of your attacks.</description>
+    </sheet>
+    <rules>
+  	   <stat name="extra attack:count" value="2" level="6" bonus="extra attack" />
+    </rules>
+	</element>
+
+  <element name="Hero of Legend" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_GLORY_HERO_OF_LEGEND">
+    <description>
+      <p>You take up the mantle of a legendary hero, transforming to match the legend. You can use a bonus action to transform into your Heroic Form, gaining the following benefits:</p>
+      <ul>
+        <li>You gain temporary hit points equal to your Bard level.</li>
+        <li>You can take the Dash action as a bonus action so long as you end your movement closer to a hostile creature.</li>
+        <li>As a reaction when a creature targets you with a melee attack, you can make one attack against that creature.</li>
+      </ul>
+      <p>These benefits last for 1 minute and end early if you fall unconscious or die. Once you use this feature you must finish a short or long rest before you can transform again.</p>
+    </description>
+    <sheet>
+      <description action="Bonus Action" usage="1/Short Rest">Transform into your Heroic Form, gaining the following for 1 minute or until you fall unconscious or die:&#13;&#10;+{{level:bard}} temporary hit points;&#13;&#10;You can Dash as a bonus action as long as you end your movement closer to a hostile creature than you began;&#13;&#10;You can take a reaction when a creature targets you with a melee attack to make one attack against it</description>
+    </sheet>
+    <rules>
+      <stat name="ac:unarmored defense glory bard:base" value="10" />
+      <stat name="ac:unarmored defense glory bard:strength" value="strength:modifier" />
+      <stat name="ac:unarmored defense glory bard:charisma" value="charisma:modifier" />
+      <stat name="ac:unarmored defense glory bard" value="ac:unarmored defense glory bard:base" />
+      <stat name="ac:unarmored defense glory bard" value="ac:unarmored defense glory bard:strength" />
+      <stat name="ac:unarmored defense glory bard" value="ac:unarmored defense glory bard:charisma" />
+      <stat name="ac:calculation" value="ac:unarmored defense glory bard" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Bard, Glory)" />
+    </rules>
+  </element>
+
+  <element name="Paragon of Glory" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_GLORY_PARAGON_OF_GLORY">
+    <description>
+      <p>You are immune to the frightened condition, and whenever you make a death saving throw you can expend a use of Bardic Inspiration, roll it, and add the result to your roll.</p>
+    </description>
+    <sheet>
+      <description>When you make a death saving throw, you can expend a Bardic Inspiration use to roll 1d{{inspiration:dice}} and add it to your roll.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FRIGHTENED" />
+    </rules>
+  </element>
+
+  <element name="Immunity (Frightened)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FRIGHTENED">
+    <supports>Immunity</supports>
+  </element>
+
+  <element name="College of Radiance" type="Archetype" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE">
+    <supports>Bard College</supports>
+    <description>
+      <p>Worship takes on many forms across the multiverse; the quiet contemplation of the monastic hermit, the insightful guidance of the temple priest, the resolute dedication of the faith-filled zealot, and the impassioned preacher spreading the tenants of their faith across the land with word and song.</p>
+      <p class="indent">Bards of the College of Radiance are devout preachers of the divine, and all their performances sing the praise of their deity. These bards use the power of their voice to further the will of their god and inspire devotion in their followers.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_WORDS_OF_HEALING" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_HEAVENLY_CHORUS" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_BEATIFIC_VISION" />
+    </description>
+    <sheet display="false">
+      <description>Radiant Bards use the power of their voice to further the will of their god and inspire devotion in their followers.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_WORDS_OF_HEALING" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_HEAVENLY_CHORUS" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_BEATIFIC_VISION" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Divine Revelation" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION">
+    <description>
+      <p>Your deity has blessed you with a measure of their divine power in return for your service. Choose a Divine Domain from those available to the Cleric that best fits the deity you serve. Whenever you learn a new Bard spell, you can choose from the Bard spell list, the Cleric spell list, or your list of Domain Spells, and the spell becomes a Bard spell for you. You must obey all other rules from learning a new spell.</p>
+      <p class="indent">You also gain proficiency in Religion, and you add double your proficiency bonus to Intelligence (Religion) checks.</p>
+    </description>
+    <spellcasting name="Bard" extend="true">
+      <extend>Cleric</extend>
+    </spellcasting>
+    <sheet>
+      <description>+{{proficiency}} to Intelligence (Religion) checks.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+      <select type="Archetype Feature" name="Divine Domain (Divine Revelation)" supports="Bard Divine Domains" />
+    </rules>
+  </element>
+
+  <element name="Death Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_DEATH">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_FALSE_LIFE</extend>
+      <extend>ID_PHB_SPELL_RAY_OF_SICKNESS</extend>
+      <extend>ID_PHB_SPELL_BLINDNESS_DEAFNESS</extend>
+      <extend>ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT</extend>
+      <extend>ID_PHB_SPELL_ANIMATE_DEAD</extend>
+      <extend>ID_PHB_SPELL_VAMPIRIC_TOUCH</extend>
+      <extend>ID_PHB_SPELL_BLIGHT</extend>
+      <extend>ID_PHB_SPELL_DEATH_WARD</extend>
+      <extend>ID_PHB_SPELL_ANTILIFE_SHELL</extend>
+      <extend>ID_PHB_SPELL_CLOUDKILL</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Arcana Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_ARCANA">
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_MAGIC_MISSILE</extend>
+      <extend>ID_PHB_SPELL_SHIELD</extend>
+      <extend>ID_LASERLL_SPELL_MAGIC_WEAPON</extend>
+      <extend>ID_PHB_SPELL_ROPE_TRICK</extend>
+      <extend>ID_PHB_SPELL_COUNTERSPELL</extend>
+      <extend>ID_XGTE_SPELL_TINY_SERVANT</extend>
+      <extend>ID_PHB_SPELL_ARCANE_EYE</extend>
+      <extend>ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE</extend>
+      <extend>ID_PHB_SPELL_BIGBYS_HAND</extend>
+      <extend>ID_LASERLL_SPELL_WALL_OF_FORCE</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Forge Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_FORGE">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_IDENTIFY</extend>
+      <extend>ID_LASERLL_SPELL_SEARING_SMITE</extend>
+      <extend>ID_PHB_SPELL_HEAT_METAL</extend>
+      <extend>ID_LASERLL_SPELL_MAGIC_WEAPON</extend>
+      <extend>ID_PHB_SPELL_ELEMENTAL_WEAPON</extend>
+      <extend>ID_PHB_SPELL_PROTECTION_FROM_ENERGY</extend>
+      <extend>ID_PHB_SPELL_FABRICATE</extend>
+      <extend>ID_PHB_SPELL_WALL_OF_FIRE</extend>
+      <extend>ID_PHB_SPELL_ANIMATE_OBJECTS</extend>
+      <extend>ID_PHB_SPELL_CREATION</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Grave Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_GRAVE">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_BANE</extend>
+      <extend>ID_PHB_SPELL_FALSE_LIFE</extend>
+      <extend>ID_PHB_SPELL_GENTLE_REPOSE</extend>
+      <extend>ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT</extend>
+      <extend>ID_PHB_SPELL_REVIVIFY</extend>
+      <extend>ID_PHB_SPELL_VAMPIRIC_TOUCH</extend>
+      <extend>ID_PHB_SPELL_BLIGHT</extend>
+      <extend>ID_PHB_SPELL_DEATH_WARD</extend>
+      <extend>ID_PHB_SPELL_ANTILIFE_SHELL</extend>
+      <extend>ID_PHB_SPELL_RAISE_DEAD</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Grave Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_GRAVE">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_COMMAND</extend>
+      <extend>ID_PHB_SPELL_IDENTIFY</extend>
+      <extend>ID_PHB_SPELL_AUGURY</extend>
+      <extend>ID_PHB_SPELL_SUGGESTION</extend>
+      <extend>ID_PHB_SPELL_NONDETECTION</extend>
+      <extend>ID_PHB_SPELL_SPEAK_WITH_DEAD</extend>
+      <extend>ID_PHB_SPELL_ARCANE_EYE</extend>
+      <extend>ID_PHB_SPELL_CONFUSION</extend>
+      <extend>ID_PHB_SPELL_LEGEND_LORE</extend>
+      <extend>ID_PHB_SPELL_SCRYING</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Life Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_LIFE">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_BLESS</extend>
+      <extend>ID_PHB_SPELL_CURE_WOUNDS</extend>
+      <extend>ID_PHB_SPELL_LESSER_RESTORATION</extend>
+      <extend>ID_PHB_SPELL_SPIRITUAL_WEAPON</extend>
+      <extend>ID_PHB_SPELL_BEACON_OF_HOPE</extend>
+      <extend>ID_PHB_SPELL_REVIVIFY</extend>
+      <extend>ID_PHB_SPELL_DEATH_WARD</extend>
+      <extend>ID_PHB_SPELL_GUARDIAN_OF_FAITH</extend>
+      <extend>ID_PHB_SPELL_MASS_CURE_WOUNDS</extend>
+      <extend>ID_PHB_SPELL_RAISE_DEAD</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Light Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_LIGHT">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_BURNING_HANDS</extend>
+      <extend>ID_PHB_SPELL_FAERIE_FIRE</extend>
+      <extend>ID_PHB_SPELL_FLAMING_SPHERE</extend>
+      <extend>ID_PHB_SPELL_SCORCHING_RAY</extend>
+      <extend>ID_PHB_SPELL_DAYLIGHT</extend>
+      <extend>ID_PHB_SPELL_FIREBALL</extend>
+      <extend>ID_PHB_SPELL_GUARDIAN_OF_FAITH</extend>
+      <extend>ID_PHB_SPELL_WALL_OF_FIRE</extend>
+      <extend>ID_PHB_SPELL_FLAME_STRIKE</extend>
+      <extend>ID_PHB_SPELL_SCRYING</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Nature Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_NATURE">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_ANIMAL_FRIENDSHIP</extend>
+      <extend>ID_PHB_SPELL_SPEAK_WITH_ANIMALS</extend>
+      <extend>ID_PHB_SPELL_BARKSKIN</extend>
+      <extend>ID_PHB_SPELL_SPIKE_GROWTH</extend>
+      <extend>ID_PHB_SPELL_PLANT_GROWTH</extend>
+      <extend>ID_PHB_SPELL_WIND_WALL</extend>
+      <extend>ID_PHB_SPELL_DOMINATE_BEAST</extend>
+      <extend>ID_PHB_SPELL_GRASPING_VINE</extend>
+      <extend>ID_PHB_SPELL_INSECT_PLAGUE</extend>
+      <extend>ID_PHB_SPELL_TREE_STRIDE</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Order Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_ORDER">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_COMMAND</extend>
+      <extend>ID_PHB_SPELL_HEROISM</extend>
+      <extend>ID_PHB_SPELL_HOLD_PERSON</extend>
+      <extend>ID_PHB_SPELL_ZONE_OF_TRUTH</extend>
+      <extend>ID_PHB_SPELL_MASS_HEALING_WORD</extend>
+      <extend>ID_PHB_SPELL_SLOW</extend>
+      <extend>ID_PHB_SPELL_LOCATE_CREATURE</extend>
+      <extend>ID_PHB_SPELL_COMPULSION</extend>
+      <extend>ID_PHB_SPELL_COMMUNE</extend>
+      <extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Peace Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_PEACE">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_HEROISM</extend>
+      <extend>ID_PHB_SPELL_SANCTUARY</extend>
+      <extend>ID_PHB_SPELL_AID</extend>
+      <extend>ID_PHB_SPELL_WARDING_BOND</extend>
+      <extend>ID_PHB_SPELL_BEACON_OF_HOPE</extend>
+      <extend>ID_PHB_SPELL_SENDING</extend>
+      <extend>ID_PHB_SPELL_AURA_OF_PURITY</extend>
+      <extend>ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE</extend>
+      <extend>ID_PHB_SPELL_GREATER_RESTORATION</extend>
+      <extend>ID_PHB_SPELL_RARYS_TELEPATHIC_BOND</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Tempest Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_TEMPEST">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_FOG_CLOUD</extend>
+      <extend>ID_PHB_SPELL_THUNDERWAVE</extend>
+      <extend>ID_PHB_SPELL_GUST_OF_WIND</extend>
+      <extend>ID_PHB_SPELL_SHATTER</extend>
+      <extend>ID_PHB_SPELL_CALL_LIGHTNING</extend>
+      <extend>ID_PHB_SPELL_SLEET_STORM</extend>
+      <extend>ID_PHB_SPELL_CONTROL_WATER</extend>
+      <extend>ID_PHB_SPELL_ICE_STORM</extend>
+      <extend>ID_PHB_SPELL_DESTRUCTIVE_WAVE</extend>
+      <extend>ID_PHB_SPELL_INSECT_PLAGUE</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Trickery Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_TRICKERY">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_CHARM_PERSON</extend>
+      <extend>ID_PHB_SPELL_DISGUISE_SELF</extend>
+      <extend>ID_PHB_SPELL_MIRROR_IMAGE</extend>
+      <extend>ID_LASERLL_SPELL_PASS_WITHOUT_TRACE</extend>
+      <extend>ID_PHB_SPELL_BLINK</extend>
+      <extend>ID_PHB_SPELL_DISPEL_MAGIC</extend>
+      <extend>ID_PHB_SPELL_DIMENSION_DOOR</extend>
+      <extend>ID_LASERLL_SPELL_POLYMORPH</extend>
+      <extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+      <extend>ID_PHB_SPELL_MODIFY_MEMORY</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Twilight Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_TWILIGHT">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_FAERIE_FIRE</extend>
+      <extend>ID_PHB_SPELL_SLEEP</extend>
+      <extend>ID_PHB_SPELL_MOONBEAM</extend>
+      <extend>ID_PHB_SPELL_SEE_INVISIBILITY</extend>
+      <extend>ID_PHB_SPELL_AURA_OF_VITALITY</extend>
+      <extend>ID_PHB_SPELL_LEOMONDS_TINY_HUT</extend>
+      <extend>ID_PHB_SPELL_AURA_OF_LIFE</extend>
+      <extend>ID_PHB_SPELL_GREATER_INVISIBILITY</extend>
+      <extend>ID_PHB_SPELL_CIRCLE_OF_POWER</extend>
+      <extend>ID_PHB_SPELL_MISLEAD</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="War Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_WAR">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_DIVINE_FAVOR</extend>
+      <extend>ID_PHB_SPELL_SHIELD_OF_FAITH</extend>
+      <extend>ID_LASERLL_SPELL_MAGIC_WEAPON</extend>
+      <extend>ID_PHB_SPELL_SPIRITUAL_WEAPON</extend>
+      <extend>ID_PHB_SPELL_CRUSADERS_MANTLE</extend>
+      <extend>ID_PHB_SPELL_SPIRIT_GUARDIANS</extend>
+      <extend>ID_PHB_SPELL_FREEDOM_OF_MOVEMENT</extend>
+      <extend>ID_PHB_SPELL_STONESKIN</extend>
+      <extend>ID_PHB_SPELL_FLAME_STRIKE</extend>
+      <extend>ID_PHB_SPELL_HOLD_MONSTER</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Beauty Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_BEAUTY">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_FRIENDS</extend>
+      <extend>ID_PHB_SPELL_CHARM_PERSON</extend>
+      <extend>ID_PHB_SPELL_HEROISM</extend>
+      <extend>ID_PHB_SPELL_ENTHRALL</extend>
+      <extend>ID_PHB_SPELL_SUGGESTION</extend>
+      <extend>ID_LASERLL_SPELL_HYPNOTIC_PATTERN</extend>
+      <extend>ID_PHB_SPELL_BEACON_OF_HOPE</extend>
+      <extend>ID_XGTE_SPELL_CHARM_MONSTER</extend>
+      <extend>ID_PHB_SPELL_COMPULSION</extend>
+      <extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+      <extend>ID_PHB_SPELL_HOLD_MONSTER</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Blood Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_BLOOD">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_INFLICT_WOUNDS</extend>
+      <extend>ID_PHB_SPELL_RAY_OF_SICKNESS</extend>
+      <extend>ID_PHB_SPELL_HOLD_PERSON</extend>
+      <extend>ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT</extend>
+      <extend>ID_PHB_SPELL_BESTOW_CURSE</extend>
+      <extend>ID_PHB_SPELL_VAMPIRIC_TOUCH</extend>
+      <extend>ID_PHB_SPELL_BLIGHT</extend>
+      <extend>ID_PHB_SPELL_DOMINATE_BEAST</extend>
+      <extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+      <extend>ID_PHB_SPELL_HOLD_MONSTER</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Cataclysm Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_CATACLYSM">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_XGTE_SPELL_EARTH_TREMOR</extend>
+      <extend>ID_LASERLL_SPELL_SEARING_SMITE</extend>
+      <extend>ID_PHB_SPELL_FLAMING_SPHERE</extend>
+      <extend>ID_PHB_SPELL_SPIKE_GROWTH</extend>
+      <extend>ID_XGTE_SPELL_ERUPTING_EARTH</extend>
+      <extend>ID_XGTE_SPELL_MELFS_MINUTE_METEORS</extend>
+      <extend>ID_PHB_SPELL_STONE_SHAPE</extend>
+      <extend>ID_PHB_SPELL_WALL_OF_FIRE</extend>
+      <extend>ID_XGTE_SPELL_IMMOLATION</extend>
+      <extend>ID_PHB_SPELL_WALL_OF_STONE</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Chaos Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_CHAOS">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_LASERLL_SPELL_VICIOUS_MOCKERY</extend>
+      <extend>ID_PHB_SPELL_DISSONANT_WHISPERS</extend>
+      <extend>ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER</extend>
+      <extend>ID_PHB_SPELL_CROWN_OF_MADNESS</extend>
+      <extend>ID_PHB_SPELL_PHANTASMAL_FORCE</extend>
+      <extend>ID_PHB_SPELL_BESTOW_CURSE</extend>
+      <extend>ID_PHB_SPELL_FEAR</extend>
+      <extend>ID_PHB_SPELL_CONFUSION</extend>
+      <extend>ID_PHB_SPELL_HALLUCINATORY_TERRAIN</extend>
+      <extend>ID_PHB_SPELL_ANTILIFE_SHELL</extend>
+      <extend>ID_XGTE_SPELL_SYNAPTIC_STATIC</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Hearth Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_HEARTH">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_XGTE_SPELL_CREATE_BONFIRE</extend>
+      <extend>ID_PHB_SPELL_GOODBERRY</extend>
+      <extend>ID_PHB_SPELL_SANCTUARY</extend>
+      <extend>ID_XGTE_SPELL_HEALING_SPIRIT</extend>
+      <extend>ID_PHB_SPELL_ROPE_TRICK</extend>
+      <extend>ID_XGTE_SPELL_CATNAP</extend>
+      <extend>ID_PHB_SPELL_LEOMONDS_TINY_HUT</extend>
+      <extend>ID_PHB_SPELL_MORDENKAINENS_FAITHFUL_HOUND</extend>
+      <extend>ID_PHB_SPELL_PRIVATE_SANCTUM</extend>
+      <extend>ID_PHB_SPELL_CIRCLE_OF_POWER</extend>
+      <extend>ID_PHB_SPELL_HALLOW</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Luck Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_LUCK">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_BANE</extend>
+      <extend>ID_PHB_SPELL_BLESS</extend>
+      <extend>ID_PHB_SPELL_ENHANCE_ABILITY</extend>
+      <extend>ID_PHB_SPELL_ROPE_TRICK</extend>
+      <extend>ID_PHB_SPELL_BESTOW_CURSE</extend>
+      <extend>ID_PHB_SPELL_REMOVE_CURSE</extend>
+      <extend>ID_PHB_SPELL_BANISHMENT</extend>
+      <extend>ID_PHB_SPELL_DIMENSION_DOOR</extend>
+      <extend>ID_PHB_SPELL_REINCARNATE</extend>
+      <extend>ID_XGTE_SPELL_SKILL_EMPOWERMENT</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Mysticism Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_MYSTICISM">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_XGTE_SPELL_CATAPULT</extend>
+      <extend>ID_PHB_SPELL_DISSONANT_WHISPERS</extend>
+      <extend>ID_PHB_SPELL_DETECT_THOUGHTS</extend>
+      <extend>ID_PHB_SPELL_HOLD_PERSON</extend>
+      <extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+      <extend>ID_XGTE_SPELL_ENEMIES_ABOUND</extend>
+      <extend>ID_PHB_SPELL_CONFUSION</extend>
+      <extend>ID_PHB_SPELL_PHANTASMAL_KILLER</extend>
+      <extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+      <extend>ID_PHB_SPELL_TELEKINESIS</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Poverty Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_POVERTY">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_SANCTUARY</extend>
+      <extend>ID_PHB_SPELL_SLEEP</extend>
+      <extend>ID_PHB_SPELL_HOLD_PERSON</extend>
+      <extend>ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT</extend>
+      <extend>ID_PHB_SPELL_HYPNOTIC_PATTERN</extend>
+      <extend>ID_PHB_SPELL_SLOW</extend>
+      <extend>ID_PHB_SPELL_DEATH_WARD</extend>
+      <extend>ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE</extend>
+      <extend>ID_PHB_SPELL_HOLD_MONSTER</extend>
+      <extend>ID_LASERLL_SPELL_WALL_OF_FORCE</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Prosperity Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_PROSPERITY">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_XGTE_SPELL_MAGIC_STONE</extend>
+      <extend>ID_PHB_SPELL_ALARM</extend>
+      <extend>ID_PHB_SPELL_IDENTIFY</extend>
+      <extend>ID_PHB_SPELL_ARCANE_LOCK</extend>
+      <extend>ID_PHB_SPELL_HEAT_METAL</extend>
+      <extend>ID_PHB_SPELL_SENDING</extend>
+      <extend>ID_XGTE_SPELL_TINY_SERVANT</extend>
+      <extend>ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE</extend>
+      <extend>ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST</extend>
+      <extend>ID_PHB_SPELL_ANIMATE_OBJECTS</extend>
+      <extend>ID_PHB_SPELL_LEGEND_LORE</extend>
+      <extend>ID_WOTC_TCOE_SPELL_SUMMON_CONSTRUCT</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Shadow Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_SHADOW">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_ARMS_OF_HADAR</extend>
+      <extend>ID_XGTE_SPELL_CAUSE_FEAR</extend>
+      <extend>ID_PHB_SPELL_DARKNESS</extend>
+      <extend>ID_XGTE_SPELL_SHADOW_BLADE</extend>
+      <extend>ID_XGTE_SPELL_ENEMIES_ABOUND</extend>
+      <extend>ID_PHB_SPELL_FEAR</extend>
+      <extend>ID_PHB_SPELL_EVARDS_BLACK_TENTACLES</extend>
+      <extend>ID_PHB_SPELL_PHANTASMAL_KILLER</extend>
+      <extend>ID_PHB_SPELL_DREAM</extend>
+      <extend>ID_XGTE_SPELL_ENERVATION</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Thieves Domain" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_DIVINE_REVELATION_THIEVES">
+    <supports>Bard Divine Domains</supports>
+    <compendium display="false" />
+    <description></description>
+    <spellcasting name="Bard" extend="true">
+      <extend>ID_PHB_SPELL_FOG_CLOUD</extend>
+      <extend>ID_PHB_SPELL_SLEEP</extend>
+      <extend>ID_PHB_SPELL_ARCANE_LOCK</extend>
+      <extend>ID_LASERLL_SPELL_PASS_WITHOUT_TRACE</extend>
+      <extend>ID_PHB_SPELL_GASEOUS_FORM</extend>
+      <extend>ID_PHB_SPELL_NONDETECTION</extend>
+      <extend>ID_PHB_SPELL_GREATER_INVISIBILITY</extend>
+      <extend>ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST</extend>
+      <extend>ID_PHB_SPELL_LEGEND_LORE</extend>
+      <extend>ID_PHB_SPELL_PASSWALL</extend>
+    </spellcasting>
+    <sheet display="false"/>
+  </element>
+
+  <element name="Words of Healing" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_WORDS_OF_HEALING">
+    <description>
+      <p>The god you serve empowers your healing magic. When you cast a Bard spell of 1st-level or higher that restores hit points to a creature, the target regains additional hit points equal to your Charisma modifier (minimum of 1).</p>
+    </description>
+    <sheet>
+      <description>When you cast a 1st-level or higher Bard spell that restores hit points, the target regains an additional {{charisma:modifier}} hit points.</description>
+    </sheet>
+  </element>
+
+  <element name="Heavenly Chorus" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_HEAVENLY_CHORUS">
+    <description>
+      <p>Your faith empowers your bardic song. When you use Countercharm, you can expend a use of Bardic Inspiration to empower it with one of the following celestial effects:</p>
+      <h5>GUIDANCE</h5>
+      <p>Creatures of your choice within range add your Charisma modifier (minimum of +1) to the first ability check, attack roll, or saving throw they make before the start of your next turn.</p>
+      <h5>JUDGEMENT</h5>
+      <p>One creature of your choice within range that can hear you must succeed on a Wisdom saving throw or be frightened of you until the start of your next turn. Once a creature succeeds on this saving throw, or the effect ends for it, that creature is immune to this effect for the next 24 hours.</p>
+      <h5>PROTECTION</h5>
+      <p>For the duration, creatures of your choice within range are resistant to necrotic and radiant damage, and their maximum hit points cannot be reduced.</p>
+      <h5>RESTORATION</h5>
+      <p>One creature of your choice within range that can hear you gains temporary hit points equal to your Bardic Inspiration.</p>
+    </description>
+    <sheet>
+      <description>Expend a Bardic Inspiration use when you use Countercharm to empower it with one of the following:</description>
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Guidance (Heavenly Chorus)" supports="Heavenly Chorus Features" default="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_HEAVENLY_CHORUS_GUIDANCE" />
+      <select type="Archetype Feature" name="Guidance (Heavenly Chorus)" supports="Heavenly Chorus Features" default="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_HEAVENLY_CHORUS_JUDGEMENT" />
+      <select type="Archetype Feature" name="Guidance (Heavenly Chorus)" supports="Heavenly Chorus Features" default="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_HEAVENLY_CHORUS_PROTECTION" />
+      <select type="Archetype Feature" name="Guidance (Heavenly Chorus)" supports="Heavenly Chorus Features" default="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_HEAVENLY_CHORUS_RESTORATION" />
+    </rules>
+  </element>
+
+  <element name="Guidance" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_HEAVENLY_CHORUS_GUIDANCE">
+    <supports>Heavenly Chorus Features</supports>
+    <description>
+      <p>Creatures of your choice within range add your Charisma modifier (minimum of +1) to the first ability check, attack roll, or saving throw they make before the start of your next turn.</p>
+    </description>
+    <sheet>
+      <description>Creatures of your choice within range add +{{charisma:modifier}} to the first ability check, attack roll, or saving throw they make before your next turn.</description>
+    </sheet>
+  </element>
+
+  <element name="Judgement" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_HEAVENLY_CHORUS_JUDGEMENT">
+    <supports>Heavenly Chorus Features</supports>
+    <description>
+      <p>One creature of your choice within range that can hear you must succeed on a Wisdom saving throw or be frightened of you until the start of your next turn. Once a creature succeeds on this saving throw, or the effect ends for it, that creature is immune to this effect for the next 24 hours.</p>
+    </description>
+    <sheet>
+      <description>Force one creature of your choice within range that can hear you to make a Wisdom saving throw; if they fail, they are frightened of you until your next turn; a creature that succeeds on the throw or has the effect end is immune for 24 hrs.</description>
+    </sheet>
+  </element>
+
+  <element name="Protection" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_HEAVENLY_CHORUS_PROTECTION">
+    <supports>Heavenly Chorus Features</supports>
+    <description>
+      <p>For the duration, creatures of your choice within range are resistant to necrotic and radiant damage, and their maximum hit points cannot be reduced.</p>
+    </description>
+    <sheet>
+      <description>For the duration, creatures of your choice within range are resistant to necrotic and radiant damage, and their maximum hit points cannot be reduced.</description>
+    </sheet>
+  </element>
+
+  <element name="Restoration" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_HEAVENLY_CHORUS_RESTORATION">
+    <supports>Heavenly Chorus Features</supports>
+    <description>
+      <p>One creature of your choice within range that can hear you gains temporary hit points equal to your Bardic Inspiration.</p>
+    </description>
+    <sheet>
+      <description>Grant one creature of your choice within range that can hear you 1d{{inspiration:dice}} temporary hit points.</description>
+    </sheet>
+  </element>
+
+  <element name="Beatific Vision" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_RADIANCE_BEATIFIC_VISION">
+    <description>
+      <p>You can allow the power of your deity to shine forth from you. When you cast a Bard spell that forces at least one creature to make a saving throw, you can expend Bardic Inspiration to impose disadvantage on one creature's saving throw for each Bardic Inspiration you expend as part of this spell.</p>
+    </description>
+    <sheet>
+      <description>When you cast Bard spell that forces at least 1 creature to make a saving throw, you can expend Bardic Inspiration uses to impose disadvantage on the saving throw, on one target per expended use.</description>
+    </sheet>
+  </element>
+
+  <element name="College of Revelry" type="Archetype" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_REVELRY">
+    <supports>Bard College</supports>
+    <description>
+      <p>Bards that join the College of Revelry somehow seem to be the center of attention wherever they go. They enjoy the after-party more than their performance, and they never turn down an invitation to a good time. From formal banquets to harvest celebrations of small towns, Revelry Bards live for the party.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARD_REVELRY_CHARMING_PRESENCE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_REVELRY_DEPRAVED_ENCHANTMENTS" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_REVELRY_STIRRING_PERFORMANCE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_REVELRY_HEDONISTIC_TRANCE" />
+    </description>
+    <sheet display="false">
+      <description>Revelry Bards seem to be the center of attention wherever they go.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_REVELRY_CHARMING_PRESENCE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_REVELRY_DEPRAVED_ENCHANTMENTS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_REVELRY_STIRRING_PERFORMANCE" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_REVELRY_HEDONISTIC_TRANCE" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Charming Presence" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_REVELRY_CHARMING_PRESENCE">
+    <description>
+      <p>Your natural charm makes others uniquely comfortable around you. You gain proficiency in Persuasion. If you are already proficient in Persuasion you instead gain proficiency in either Deception, Performance, or Sleight of Hand.</p>
+      <p class="indent">If you are currently carousing with a creature, you have advantage on any Deception, Performance, Persuasion, or Sleight of Hand checks you make directed at that creature.</p>
+      <p class="indent">For the purposes of this feature, carousing could be any of the following activities: drinking, dancing, feasting, partying, gambling, or any other activity that lowers inhibitions.</p>
+    </description>
+    <sheet>
+      <description>While carousing with a creature, you have advantage on any Deception, Performance, Persuasion, or Sleight of Hand checks you make directed at them.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency, Charming Presence" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_PERSUASION" default="ID_PROFICIENCY_SKILL_PERSUASION" />
+    </rules>
+  </element>
+
+  <element name="Depraved Enchantments" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_REVELRY_DEPRAVED_ENCHANTMENTS">
+    <description>
+      <p>Your voice drips with debilitating pleasure and weakens the mental resolve of your enemies. Whenever you cast an enchantment spell of 1st-level or higher with a verbal component, you can expend a use of Bardic Inspiration to impose disadvantage on the target's saving throw.</p>
+    </description>
+    <sheet>
+      <description>When you cast a 1st-level or higher enchantment spell with a verbal component, you can expend a Bardic Inspiration use to impose disadvantage on the target's saving throw.</description>
+    </sheet>
+  </element>
+
+  <element name="Stirring Performance" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_REVELRY_STIRRING_PERFORMANCE">
+    <description>
+      <p>Your presence during rests enlivens your allies and assuages their worries. Any creature that benefits from your Song of Rest feature regains additional hit points equal to your Charisma modifier (minimum of 1 hit point). Moreover, any creature that benefits from your Song of Rest feature also has advantage on the first ability check, attack roll, or saving throw it makes after it completes a short rest with you.</p>
+    </description>
+    <sheet>
+      <description>Creatures that benefit from your Song of Rest regain an additional {{charisma:modifier}} hit points, and also gain advantage on the first ability check, attack roll, or saving throw they make after completing the short rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Hedonistic Trance" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_REVELRY_HEDONISTIC_TRANCE">
+    <description>
+      <p>Your bardic songs send creatures into a state of ecstasy. As an action, you can expend a use of Bardic Inspiration to force a creature that can hear you within 30 feet to make a Wisdom saving throw. On a failed save, it is stunned for 1 minute. If the creature takes damage, it can immediately repeat the saving throw, ending the effect on a success. If the creature succeeds on its saving throw, or the effect ends for it, it is immune to this feature for the next 24 hours.</p>
+      <p class="indent">While stunned, the creature is in state of pure ecstasy of your choosing. It could be a drunken stupor, a fit of uncontrollable laughter, sensual hallucinations, or overwhelming pleasure.</p>
+      <p class="indent">When you use this feature, you can expend an additional use of your Bardic Inspiration to impose disadvantage on its initial saving throw.</p>
+    </description>
+    <sheet>
+      <description action="Action">Expend a Bardic Inspiration use to force a creature that can hear you within 30 ft. to make a Wisdom saving throw; you can expend an additional use to impose disadvantage on the roll. If the target fails, it is stunned in a state of pure ectasy for 1 minute. It repeats the saving throw upon taking daamge; once the effect ends, the creature is immune to this feature for 24 hrs.</description>
+    </sheet>
+  </element>
+
+  <element name="College of the Wilds" type="Archetype" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_WILDS">
+    <supports>Bard College</supports>
+    <description>
+      <p>Some Bards are so inspired by the majesty of nature they can draw musical magic from nature itself. Often more at home in nature than on the stage, Bards who join the College of the Wilds feel a special kinship with wild plants and animals of all kinds. They can use their enchanting music to soothe even the most savage beasts, turning them from enemy to ally.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARD_WILDS_FRIEND_OF_NATURE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_WILDS_PRIMAL_INSPIRATION" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_WILDS_WILD_COMPANION" />
+      <div element="ID_LASERLL_ARCHETYPE_BARD_WILDS_SOOTHE_THE_SAVAGE_BEAST" />
+    </description>
+    <sheet display="false">
+      <description>Wild Bards feel a special kinship with wild plants and animals of all kinds.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_WILDS_FRIEND_OF_NATURE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_WILDS_PRIMAL_INSPIRATION" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_WILDS_WILD_COMPANION" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARD_WILDS_SOOTHE_THE_SAVAGE_BEAST" level="14"/>
+    </rules>
+  </element>
+
+
+  <element name="Friend of Nature" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_WILDS_FRIEND_OF_NATURE">
+    <description>
+      <p>You have gained the skills to charm and subdue wild plants and animals of all kinds. You gain proficiency in both Animal Handling and Performance and whenever you would make a Wisdom (Animal Handling) check you can choose to make a Charisma (Animal Handling) check instead.</p>
+      <p class="indent">Also, whenever you cast an enchantment spell from the Bard spell list that can target a humanoid, you can choose to target beasts and plants with that spell as well.</p>
+    </description>
+    <sheet>
+      <description level="3">You can make Charisma (Animal Handling) in place of Wisdom (Animal Handling) checks.&#13;&#10;Your Bard enchantment spells that can target humanoids can target plants and animals as well.</description>
+        <description level="14">You can make Charisma (Animal Handling) in place of Wisdom (Animal Handling) checks.&#13;&#10;Your Bard enchantment spells that can target humanoids can target plants, animals, aberrations, dragons, giants, and monstrosities as well.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+    </rules>
+  </element>
+
+  <element name="Primal Inspiration" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_WILDS_PRIMAL_INSPIRATION">
+    <description>
+      <p>Your bardic magic can bestow primal on others. As a bonus action, you can expend a use of Bardic Inspiration and grant one of the effects below to one creature of your choice within 60 feet that can hear you. The abilities last for 1 hour, but they end early if the creature uses a bonus action to end it if you grant it another ability, or it is incapacitated:</p>
+      <h5>FLIGHT OF THE SQUIRREL</h5>
+      <p>The creature sprouts lightweight flaps or fins. When it falls, it subtracts 60 feet from its fall when calculating fall damage, and it can move horizontally 2 feet for every 1 foot it falls.</p>
+      <h5>GRIP OF THE MONKEY</h5>
+      <p>The creature gains the ability to grip almost any surface. It gains a 30-foot climbing speed and it has advantage on any Strength (Athletics) checks it makes to grapple creatures.</p>
+      <h5>RESILIENCE OF THE FOREST</h5>
+      <p>The creature's skin becomes rough and bark-like. It gains the benefits of the <em>barkskin</em> spell for the duration.</p>
+      <h5>SPEED OF THE DEER</h5>
+      <p>The creature's legs grow limber and its pace quickens. Its movement speed increases by 15 feet.</p>
+      <h5>SWIFTNESS OF THE DOLPHIN</h5>
+      <p>The creature grows webbing between its digits. It gains a 30-foot swimming speed and it can hold its breath for 1 hour.</p>
+    </description>
+    <sheet>
+      <description>Expend a Bardic Inspiration use to grant a creature that can hear you within 60 ft. one of the following; they last for 1 hr. unless the target uses a bonus action to end it early, you grant it another ability, or it is incapactitated:</description>
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Flight of the Squirrel (Primal Inspiration)" supports="Primal Inspiration Abilities" default="ID_LASERLL_ARCHETYPE_BARD_WILDS_PRIMAL_INSPIRATION_SQUIRREL" />
+      <select type="Archetype Feature" name="Grip of the Monkey (Primal Inspiration)" supports="Primal Inspiration Abilities" default="ID_LASERLL_ARCHETYPE_BARD_WILDS_PRIMAL_INSPIRATION_MONKEY" />
+      <select type="Archetype Feature" name="Resilience of the Forest (Primal Inspiration)" supports="Primal Inspiration Abilities" default="ID_LASERLL_ARCHETYPE_BARD_WILDS_PRIMAL_INSPIRATION_FOREST" />
+      <select type="Archetype Feature" name="Speed of the Deer (Primal Inspiration)" supports="Primal Inspiration Abilities" default="ID_LASERLL_ARCHETYPE_BARD_WILDS_PRIMAL_INSPIRATION_DEER" />
+      <select type="Archetype Feature" name="Swiftness of the Dolphin (Primal Inspiration)" supports="Primal Inspiration Abilities" default="ID_LASERLL_ARCHETYPE_BARD_WILDS_PRIMAL_INSPIRATION_DOLPHIN" />
+    </rules>
+  </element>
+
+  <element name="Flight of the Squirrel" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_WILDS_PRIMAL_INSPIRATION_SQUIRREL">
+    <supports>Primal Inspiration Abilities</supports>
+    <compendium display="false" />
+    <description>
+      <p>The creature sprouts lightweight flaps or fins. When it falls, it subtracts 60 feet from its fall when calculating fall damage, and it can move horizontally 2 feet for every 1 foot it falls.</p>
+    </description>
+    <sheet>
+      <description>When this creature falls, it subtacts 60 ft. from the fall damage calculation and can move 2 ft. horizontally for each ft. descended.</description>
+    </sheet>
+  </element>
+
+  <element name="Grip of the Monkey" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_WILDS_PRIMAL_INSPIRATION_MONKEY">
+    <supports>Primal Inspiration Abilities</supports>
+    <compendium display="false" />
+    <description>
+      <p>The creature gains the ability to grip almost any surface. It gains a 30-foot climbing speed and it has advantage on any Strength (Athletics) checks it makes to grapple creatures.</p>
+    </description>
+    <sheet>
+      <description>This creature gains a 30-ft. climbing speed and has advantage on Strength (Athletics) checks to grapple creatures.</description>
+    </sheet>
+  </element>
+
+  <element name="Resilience of the Forest" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_WILDS_PRIMAL_INSPIRATION_FOREST">
+    <supports>Primal Inspiration Abilities</supports>
+    <compendium display="false" />
+    <description>
+      <p>The creature's skin becomes rough and bark-like. It gains the benefits of the barkskin spell for the duration.</p>
+    </description>
+    <sheet>
+      <description>This creature's gains the benefits of the barkskin spell.</description>
+    </sheet>
+  </element>
+
+  <element name="Speed of the Deer" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_WILDS_PRIMAL_INSPIRATION_DEER">
+    <supports>Primal Inspiration Abilities</supports>
+    <compendium display="false" />
+    <description>
+      <p>The creature's legs grow limber and its pace quickens. Its movement speed increases by 15 feet.</p>
+    </description>
+    <sheet>
+      <description>This creature gains +15 ft. movement speed.</description>
+    </sheet>
+  </element>
+
+  <element name="Swiftness of the Dolphin" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_WILDS_PRIMAL_INSPIRATION_DOLPHIN">
+    <supports>Primal Inspiration Abilities</supports>
+    <compendium display="false" />
+    <description>
+      <p>The creature grows webbing between its digits. It gains a 30-foot swimming speed and it can hold its breath for 1 hour.</p>
+    </description>
+    <sheet>
+      <description>This creature gains a 30-ft. swimming speed and can hold its breath for 1 hr.</description>
+    </sheet>
+  </element>
+
+  <element name="Wild Companion" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_WILDS_WILD_COMPANION">
+    <description>
+      <p>At the end of a long rest, you can call a creature of the wild to your side. One beast or plant of your choice native to the area appears. It is friendly to you and obeys you completely. In combat, it shares your turn in initiative order. It can move and use its reaction on its own, but it can only take the dodge action unless you use your bonus action to command it to take an action from its stat block or another action.</p>
+      <p class="indent">Your Bard level determines the maximum CR of the beast or plant you can summon, as shown in the table below:</p>
+      <table>
+        <thead>
+            <tr><td class="col-5">Bard Level</td><td class="col-5">Max. CR</td><td class="col-20">Example Companions</td></tr>
+        </thead>
+        <tr><td>6th</td><td>1</td><td>Brown Bear, Vine Blight</td></tr>
+        <tr><td>14th</td><td>2</td><td>Awakened Tree, Giant Elk</td></tr>
+        <tr><td>17th</td><td>4</td><td>Elephant, Giant Scorpion</td></tr>
+      </table>
+    </description>
+    <sheet>
+      <description usage="1/Long Rest" level="6">At the end of a long rest, you can summon a native beast or plant oF CR 1 or lower; it is friendly to you and shares your initiative order. It can be commanded with a bonus action and will dodge otherwise.</description>
+      <description usage="1/Long Rest" level="14">At the end of a long rest, you can summon a native beast or plant oF CR 2 or lower; it is friendly to you and shares your initiative order. It can be commanded with a bonus action and will dodge otherwise.</description>
+      <description usage="1/Long Rest" level="17">At the end of a long rest, you can summon a native beast or plant oF CR 4 or lower; it is friendly to you and shares your initiative order. It can be commanded with a bonus action and will dodge otherwise.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+    </rules>
+  </element>
+
+  <element name="Soothe the Savage Beast" type="Archetype Feature" source="laserllama's Bard Colleges" id="ID_LASERLL_ARCHETYPE_BARD_WILDS_SOOTHE_THE_SAVAGE_BEAST">
+    <description>
+      <p>Your mastery of music allows you to soothe any creature, no matter how savage it is. You can target aberrations, dragons, giants, monstrosities with enchantment spells that normally can only target humanoids.</p>
+      <p class="indent">You also learn dominate beast, but it doesn't count against your total number of Spells Known.</p>
+      <div class="reference">
+				<div element="ID_PHB_SPELL_DOMINATE_BEAST" />
+			</div>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" spellcasting="Bard" prepared="true" />
+    </rules>
+  </element>
+
+</elements>

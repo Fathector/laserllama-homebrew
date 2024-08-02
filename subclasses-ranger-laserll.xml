@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+      <name></name>
+      <update version="3.0.0">
+          <file name="subclasses-ranger-laserll.xml" url="tmp.xml" />
+      </update>
+  </info>
+
+  <element name="Bounty Hunter" type="Archetype" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER">
+    <supports>Ranger Archetype</supports>
+    <description>
+      <p>Bounty Hunters protect humanoids from their own. Trained to hunt in cities and towns, they can track their prey through the dark alleyways and underbelly of any human settlement. Skilled in the use various martial techniques, these rangers are able to confront and subdue any dangerous humanoid.</p>
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER_EAR_TO_THE_GROUND" />
+      <div element="ID_LASERLL_ARCHETYPE_PALADIN_BLADE_MARTIAL_SUPERIORITY" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER_DEAD_OR_ALIVE" />
+      <div element="ID_LASERLL_ARCHETYPE_PALADIN_BLADE_MASTERFUL_TECHNIQUE" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER_UNWAVERING" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER_THE_MOST_DANGEROUS_GAME" />
+    </description>
+    <sheet display="false">
+      <description>Bounty Hunters protect humanoids from their own.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER_EAR_TO_THE_GROUND" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER_MARTIAL_SUPERIORITY" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER_DEAD_OR_ALIVE" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER_MASTERFUL_TECHNIQUE" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER_UNWAVERING" level="11"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER_THE_MOST_DANGEROUS_GAME" level="15"/>
+    </rules>
+  </element>
+
+  <element name="Ear to the Ground" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER_EAR_TO_THE_GROUND">
+    <description>
+      <p>Your line of work has granted you a unique familiarity with the underbelly of civilization. After you complete a long rest in a settlement, you have advantage on all ability checks to gather information on its contacts, factions, or underworld.</p>
+      <p class="indent">You also learn to speak, decipher, and leave messages in Thieves' Cant, the language of the criminal underworld.</p>
+    </description>
+    <sheet>
+      <description>After completing a long rest in a settlement, you have advantage on all ability checks to gather information regarding its factions, contacts, and underworld.</description>
+    </sheet>
+    <rules>
+      <grant type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
+    </rules>
+  </element>
+
+  <element name="Martial Superiority" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER_MARTIAL_SUPERIORITY">
+    <description>
+      <p>You have honed your martial skill, gaining the benefits below:</p>
+      <p><b><em>Maneuvers.</em></b> You learn two Maneuvers of your choice from the list of Maneuvers available to the Battle Master Archetype in the <em>Player's Handbook</em>. You can use only one Maneuver per attack. Each time you gain a Ranger level you can replace a Maneuver you know with another Maneuver of your choice.</p>
+      <p><b><em>Superiority Dice.</em></b> You gain three Superiority Dice, which start as d6s. To use one of your Maneuvers you must expend one Superiority Die. You regain all of your expended Superiority Dice each time you finish a short or long rest.</p>
+      <p><b><em>Saving Throws.</em></b> Some of your Maneuvers may require the target to make a saving throw to resist its effects. The saving throw DC for your Maneuvers is calculated as follows:</p>
+      <center>
+        <p><strong>Maneuver save DC</strong> = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice)</p>
+      </center>
+    </description>
+    <sheet>
+      <description>You have {{superiority dice:amount}} d{{superiority dice:size}} superiority dice, and the DC for your Maneuvers is {{superiority dice:dc}}. You can replace one Maneuver you know with another upon gaining a Ranger level, and regain all expended Dice upon a short or long rest.</description>
+    </sheet>
+    <rules>
+      <stat name="superiority dice:amount" value="3" />
+      <stat name="superiority dice:amount" value="1" level="7" />
+      <stat name="superiority dice:amount" value="1" level="18" />
+      <stat name="superiority dice:size" value="6" bonus="size"/>
+      <stat name="superiority dice:size" value="8" bonus="size" level="7"/>
+      <stat name="superiority dice:size" value="10" bonus="size" level="18"/>
+      <stat name="superiority dice:dc" value="8" />
+      <stat name="superiority dice:dc" value="proficiency" />
+      <stat name="superiority dice:dc:ability" value="strength:modifier" bonus="ability"/>
+      <stat name="superiority dice:dc:ability" value="dexterity:modifier" bonus="ability"/>
+      <stat name="superiority dice:dc" value="superiority dice:dc:ability" />
+      <select type="Archetype Feature" name="Martial Superiority (Level 3)" supports="Maneuver,Battle Master" number="2" />
+      <select type="Archetype Feature" name="Martial Superiority (Level 7)" supports="Maneuver,Battle Mastern" number="2" level="7" />
+      <select type="Archetype Feature" name="Martial Superiority (Level 18)" supports="Maneuver,Battle Master" number="2" level="18" />
+    </rules>
+  </element>
+
+  <element name="Dead or Alive" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER_DEAD_OR_ALIVE">
+    <description>
+      <p>Whenever you make a Strength (Athletics) check to grapple or shove a creature prone, you gain a bonus to your ability check equal to your Wisdom modifier (minimum of +1).</p>
+      <p class="indent">Also, being within 5 feet of a hostile creature does not impose disadvantage on your attack rolls with nets.</p>
+    </description>
+    <sheet>
+      <description>+{{wisdom:modifier}} to Strength (Athletics) checks to grapple or shove a creature prone.&#13;&#10;Being within 5 ft. of a hostile creature does not impose disadvantage on your attack rolls with nets.</description>
+    </sheet>
+  </element>
+
+  <element name="Masterful Techniqe" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER_MASTERFUL_TECHNIQUE">
+    <description>
+      <p>Your skill at disabling foes grows. You gain one additional Superiority Die, and your Superiority Dice all become d8s. You also learn two additional Maneuvers of your choice.</p>
+      <p class="indent">When you reach 18th level in this class you gain another Superiority Die (for a total of five), and your Superiority Dice become d10s. You also learn two additional Maneuvers.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Unwavering" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER_UNWAVERING">
+    <description>
+      <p>You are a master of disabling foes. When a Large of smaller creature you can see misses you with a melee attack, you can use your reaction to force it to make a Dexterity saving throw against your Maneuver save DC. On a failed save, the attacker suffers one of the following effects of your choice:</p>
+      <ul>
+        <li>You can knock it prone if it is Large or smaller.</li>
+        <li>You can automatically grapple it if you have a free hand.</li>
+        <li>You can make a single melee weapon attack against it.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description action="Reaction">When a Large or smaller creature misses you with a melee attack, force it to make a Dexterity saving throw (DC {{superiority dice:dc}}); if it fails, choose one of the following:&#13;&#10;Knock it prone of it is Large of smaller;&#13;&#10;Automatically grapple it if you have a free hand;&#13;&#10;Make one weapon attack against it</description>
+    </sheet>
+  </element>
+
+  <element name="The Most Dangerous Game" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_BOUNTY_HUNTER_THE_MOST_DANGEROUS_GAME">
+    <description>
+      <p>Your supernatural instincts allow you to predict your foe's attacks. After you hit a creature with a weapon attack, any time that creature damages you until the start of your next turn, the damage is reduced by an amount equal to your Wisdom modifier.</p>
+    </description>
+    <sheet>
+      <description>After you hit a creature with a weapon attack, reduce the damage it deals to you by {{wisdom:modifier}} until your next turn.</description>
+    </sheet>
+  </element>
+
+  <element name="Buccaneer" type="Archetype" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER">
+    <supports>Ranger Archetype</supports>
+    <description>
+      <p>Combining their survival skills, affinity for nature magic, and passion for the high seas, Buccaneers are Rangers who feel more at home on the water than on solid ground. Serving as sailors, pirates, marines, and privateers, they are often one of the most valuable members of their vessel's crew. What drove you to the sea? Were you pressed into service by a pirate king? Or, have you sworn to slay a sea monster?</p>
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_BUCCANEER_MAGIC" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_SEA_LEGS" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_WINDSWEPT_HIDE" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_DEEP_SEA_DIVER" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_WRATH_OF_THE_WAVES" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_WATERY_RESILIENCE" />
+    </description>
+    <sheet display="false">
+      <description>Buccaneers are Rangers who feel more at home on the water than on solid ground.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_BUCCANEER_MAGIC" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_SEA_LEGS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_WINDSWEPT_HIDE" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_DEEP_SEA_DIVER" level="11"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_WRATH_OF_THE_WAVES" level="11"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_WATERY_RESILIENCE" level="15"/>
+    </rules>
+  </element>
+
+  <element name="Buccaneer Magic" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_BUCCANEER_MAGIC">
+    <description>
+      <p>You learn certain spells at the Ranger levels noted in the table below. These spells count as Ranger spells for you, but do not count against your total number of Ranger Spells Known.</p>
+      <table>
+        <thead>
+          <tr><td>Ranger Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>fog cloud</em></td></tr>
+        <tr><td>5th</td><td><em>misty step</em></td></tr>
+        <tr><td>9th</td><td><em>call lightning<sup>XGTE</sup></em></td></tr>
+        <tr><td>13th</td><td><em>watery sphere<sup>XGTE</sup></em></td></tr>
+        <tr><td>17th</td><td><em>control winds<sup>XGTE</sup></em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+        <grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="3" spellcasting="Ranger" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="5" spellcasting="Ranger" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" level="9" spellcasting="Ranger" prepared="true" />
+        <grant type="Spell" id="ID_XGTE_SPELL_WATERY_SPHERE" level="13" spellcasting="Ranger" prepared="true" />
+        <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" level="17" spellcasting="Ranger" prepared="true" />
+      </rules>
+  </element>
+
+  <element name="Sea Legs" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_SEA_LEGS">
+    <description>
+      <p>The time you have spent at sea grants you abilities that land-locked Rangers lack. You gain the benefits listed below:</p>
+      <ul>
+        <li>You learn the Mariner Fighting Style from the list at the end of this document. If you already know that Fighting Style, you learn a Ranger Fighting Style of your choice.</li>
+        <li>You gain a swimming speed equal to your walking speed.</li>
+        <li>You can hold your breath underwater for up to 1 hour.</li>
+        <li>When you make a Wisdom (Perception) check that relies on sight, you can treat a d20 roll of 7 or lower as an 8.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description level="3">When you make a Wisodm (Perception) check relying on sight, treat rolls of 7 or lower as 8s.&#13;&#10;You can hold your breath underwater for 1 hr.</description>
+      <description level="7">When you make a Wisdom (Perception) check relying on sight, treat rolls of 7 or lower as 8s. You also have advantage on Wisdom (Perception) checks when you have a clear line of sight and clear skies.&#13;&#10;You can hold your breath underwater for 1 hr.</description>
+    </sheet>
+    <rules>
+      <select type="Class Feature" supports="Fighting Style" default="ID_LASERLL_CLASS_FEATURE_FIGHTINGSTYLE_MARINER" />
+      <stat name="speed:swim" value="speed" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Windswept Hide" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_WINDSWEPT_HIDE">
+    <description>
+      <p>Your experience has granted you increased resistance to the dangers of the sea. You gain resistance to cold and lightning damage, and you have advantage on saving throws to resist being knocked prone or moved against your will.</p>
+      <p>You can also see twice as far as the average member of your race, and you have advantage on Wisdom (Perception) checks when you have a clear line of sight and clear skies.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on throws to resist being knocked prone or moved against your will.&#13;&#10;You can see twice as far as far as an average member of your race.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+    </rules>
+  </element>
+
+  <element name="Deep Sea Diver" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_DEEP_SEA_DIVER">
+    <description>
+      <p>You move in the water as a creature of the sea. While you are underwater, you can take the Dash action as a bonus action, and you gain darkvision out to a 60-foot radius. If you already have darkvision its radius increases by 30 feet.</p>
+    </description>
+    <sheet>
+      <description>While underwater, you can Dash as a bonus action and gain 60-ft. darkvision (or +30 ft. if you already have it).</description>
+    </sheet>
+  </element>
+
+  <element name="Wrath of the Waves" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_WRATH_OF_THE_WAVES">
+    <description>
+      <p>You bear the watery magic of the high seas whether on sea or on land. Once per turn when you hit a creature with a weapon attack, you can imbue the strike with watery magic, forcing it to make a Strength saving throw against your Spell save DC. On a failed save, the creature takes 1d8 cold damage and is knocked back 10 feet in a straight line away from you.</p>
+      <p class="indent">Creatures at least one size larger then you have advantage on this Strength saving throw to resist being knocked back.</p>
+    </description>
+    <sheet>
+      <description>Once per turn when you hit a creature with a weapon attack, force it to make a Strength saving throw against your spell save DC; if it fails, it takes 1d8 cold damage and is knocked back 10 ft. in a straight line. Creatures at least one size larger than you have advantage on the saving throw.</description>
+    </sheet>
+  </element>
+
+  <element name="Watery Resilience" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_BUCCANEER_WATERY_RESILIENCE">
+    <description>
+      <p>When a creature you can see hits you with an attack, you can use a reaction to temporarily take on a watery form, halving the damage you would take from the triggering attack.</p>
+      <p class="indent">As part of this reaction, you can also move up to 10 feet without provoking opportunity attacks.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When a creature hits you with an attack, halve the damage; you can move up to 10 ft. as part of the reaction without provoking opportunity attacks.</description>
+    </sheet>
+  </element>
+
+  <element name="Grim Warden" type="Archetype" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN">
+    <supports>Ranger Archetype</supports>
+    <description>
+      <p>Sometimes it takes a monster to destroy a monster. Rangers that take up the mantle of the Grim Warden undergo a dark alchemical ritual, known as the Warden's Rite, where they inject sinister alchemical compounds into their bloodstream to enhance their physical abilities. They sacrifice any chance for a normal life, mingling their blood with that of monsters, in order to gain sinister power to destroy their foes.</p>
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_WARDENS_RITE" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_CRIMSON_BRAND" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_WARDENS_MAGIC" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_GRIM_AUGMENTATION" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_GREATER_CRIMSON_BRAND" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_SANGUINE_MASTERY" />
+    </description>
+    <sheet display="false">
+      <description>Grim Wardens inject sinister alchemical compounds into their bloodstream to enhance their physical abilities.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_WARDENS_RITE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_CRIMSON_BRAND" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_WARDENS_MAGIC" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_GRIM_AUGMENTATION" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_GREATER_CRIMSON_BRAND" level="11"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_SANGUINE_MASTERY" level="15"/>
+    </rules>
+  </element>
+
+  <element name="Warden's Rite" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_WARDENS_RITE">
+    <description>
+      <p>You have undergone the Warden's Rite, an alchemical ritual that suffuses your blood with the sinister power of monsters. You change in the ways below, which cannot be reversed:</p>
+      <ul>
+        <li>You count as both a humanoid and a monstrosity.</li>
+        <li>You gain darkvision out to a radius of 60 feet. If you already have darkvision, it radius increases by 30 feet.</li>
+        <li>When you make an Intelligence (Religion) check related to fiends, undead, or the dark magic of necromancy, you can add double your proficiency bonus to the roll.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>+{{proficiency}} on top of proficiency when you make an Intelligence (Religion) check related to fiends, undead, or necromancy.&#13;&#10;You count as both a human and a monstrosity.</description>
+    </sheet>
+    <rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="30" bonus="base" />
+			<stat name="darkvision:range" value="30" bonus="wardens rite" />
+		</rules>
+  </element>
+
+  <element name="Crimson Brand" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_CRIMSON_BRAND">
+    <description>
+      <p>You can empower your attacks with dark blood magic. When you hit a creature with a weapon attack, you can expend Hit Dice (up to your Wisdom modifier) to deal an additional 1d8 necrotic damage per Hit Die expended.</p>
+      <p class="indent">This additional necrotic damage increases by 1d8 if your target is a fiend or undead.</p>
+    </description>
+    <sheet>
+      <description level="3">When you hit a creature with a weapon attack, expend up to {{wisdom:modifier}} Hit Dice to deal 1d8 necrotic damage per expended Die (2d8 if the target is a fiend or undead).</description>
+      <description level="11">When you hit a creature with a weapon attack, expend up to {{wisdom:modifier}} Hit Dice to deal 1d8 necrotic damage per expended Die (2d8 if the target is a fiend or undead). Once per turn you can also deal an additional 1d10 necrotic damage without expendin a Hit Die.</description>
+    </sheet>
+  </element>
+
+  <element name="Warden Magic" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_WARDEN_MAGIC">
+    <description>
+      <p>You learn certain spells at the Ranger levels noted in the table below. These spells count as Ranger spells for you, but do not count against your total number of Ranger Spells Known.</p>
+      <table>
+        <thead>
+          <tr><td>Ranger Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>bane</em></td></tr>
+        <tr><td>5th</td><td><em>hold person</em></td></tr>
+        <tr><td>9th</td><td><em>bestow curse</em></td></tr>
+        <tr><td>13th</td><td><em>shadow of moil<sup>XGTE</sup></em></td></tr>
+        <tr><td>17th</td><td><em>hold monster</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_BANE" level="3" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="5" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="9" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_XGTE_SPELL_SHADOW_OF_MOIL" level="13" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="17" spellcasting="Ranger" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Grim Augmentation" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_GRIM_AUGMENTATION">
+    <description>
+      <p>The sinister magic in enhances your physical capabilities. Your walking speed increases by 10 feet. Also, whenever you make a Strength, Dexterity, or Constitution ability check, you gain a bonus to your roll equal to your Wisdom modifier.</p>
+    </description>
+    <sheet>
+      <description>+{{wisdom:modifier}} to Strength, Dexterity, and Constitution abiltiy checks.</description>
+    </sheet>
+    <rules>
+      <stat name="innate speed:misc" value="10"/>
+    </rules>
+  </element>
+
+  <element name="Greater Crimson Brand" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_GREATER_CRIMSON_BRAND">
+    <description>
+      <p>Powerful blood magic infuses all of your strikes. Once per turn, when you hit a creature with a melee weapon attack, you can deal an additional 1d10 necrotic damage to it.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Sanguine Mastery" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_GRIM_WARDEN_SANGUINE_MASTERY">
+    <description>
+      <p>The magic of your Warden's Rite manifests its full potential. You have advantage on saving throws to resist the frightened condition, and you are always under the effects of <em>protection from good and evil</em> while you are conscious.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on saving throws to resist being frightened.&#13;&#10;You are always under the effects of protection from good and evil while conscious.</description>
+    </sheet>
+  </element>
+
+  <element name="Nomad" type="Archetype" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD">
+    <supports>Ranger Archetype</supports>
+    <description>
+      <p>Whether by birth, happenstance, or a ritual, the mind of every Nomad has been connected to the mystical web of knowledge known as the Noosphere. This psionic link allows Nomads to access knowledge from far-off places and distant lives. These strange wanderers spend their lives collecting hidden lore to add to this web of information that connects every Nomad.</p>
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_NOMADIC_MAGIC" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_EXPUNGING_STRIKE" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_MYSTICAL_KNOWLEDGE" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_NOMADS_STEP" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_STRANGE_MOVEMENT" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_MYSTICAL_BURST" />
+    </description>
+    <sheet display="false">
+      <description>Nomads spend their lives collecting hidden lore to add to this web of information that connects every Nomad.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_RANGER_NOMAD_PSIONIC_SPELLCASTING" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_NOMADIC_MAGIC" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_EXPUNGING_STRIKE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_MYSTICAL_KNOWLEDGE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_NOMADS_STEP" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_STRANGE_MOVEMENT" level="11"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_MYSTICAL_BURST" level="15"/>
+    </rules>
+  </element>
+
+  <element name="Psionic Spellcasting (Optional)" type="Archetype Feature" source="laserllama's Roguish Archetypes" id="ID_LASERLL_ARCHETYPE_FEATURE_RANGER_NOMAD_PSIONIC_SPELLCASTING">
+    <compendium display="false" />
+    <description>
+      <p>For mechanics to match the fantasy of a psionic Ranger, replace all Ranger and Nomad Archetype features that use Wisdom with Intelligence.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Enable Psionic Spellcasting" supports="ID_LASERLL_ARCHETYPE_FEATURE_RANGER_NOMAD_PSIONIC_SPELLCASTING_ENABLE|ID_LASERLL_ARCHETYPE_FEATURE_RANGER_NOMAD_PSIONIC_SPELLCASTING_DISABLE" default="ID_LASERLL_ARCHETYPE_FEATURE_RANGER_NOMAD_PSIONIC_SPELLCASTING_DISABLE" />
+    </rules>
+  </element>
+
+  <element name="Enable Psionic Spellcasting" type="Archetype Feature" source="laserllama's Roguish Archetypes" id="ID_LASERLL_ARCHETYPE_FEATURE_RANGER_NOMAD_PSIONIC_SPELLCASTING_ENABLE">
+    <compendium display="false" />
+    <description>
+      <p>For mechanics to match the fantasy of a psionic Ranger, replace all Ranger and Nomad Archetype features that use Wisdom with Intelligence.</p>
+    </description>
+    <sheet>
+      <description alt="The Science of Medicine">Intelligence is your ability for subclass features; modify any precalculated Wisdom modifier values by {{wis int diff}}.</description>
+    </sheet>
+    <rules>
+      <stat name="wis int diff" value="charisma:modifier" />
+      <stat name="wis int diff" value="-intelligence:modifier" />
+    </rules>
+  </element>
+
+  <element name="Disable Psionic Spellcasting" type="Archetype Feature" source="laserllama's Roguish Archetypes" id="ID_LASERLL_ARCHETYPE_FEATURE_RANGER_NOMAD_PSIONIC_SPELLCASTING_DISABLE">
+    <compendium display="false" />
+    <description>
+      <p>For mechanics to match the fantasy of a psionic Ranger, replace all Ranger and Nomad Archetype features that use Wisdom with Intelligence.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Nomadic Magic" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_NOMADIC_MAGIC">
+    <description>
+      <p>You learn certain spells at the Ranger levels noted in the table below. These spells count as Ranger spells for you, but do not count against your total number of Ranger Spells Known.</p>
+      <table>
+        <thead>
+          <tr><td>Ranger Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>disguise self</em></td></tr>
+        <tr><td>5th</td><td><em>misty step</em></td></tr>
+        <tr><td>9th</td><td><em>clairvoyance</em></td></tr>
+        <tr><td>13th</td><td><em>dimension door</em></td></tr>
+        <tr><td>17th</td><td><em>seeming</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" level="3" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="5" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" level="9" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="13" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_SEEMING" level="17" spellcasting="Ranger" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Expunging Strike" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_EXPUNGING_STRIKE">
+    <description>
+      <p>You can imbue your strikes with the psionic power of the noosphere to disrupt your foe's mind. Once per turn when you hit a creature with a weapon attack, you can force it to make an Intelligence saving throw against your Ranger Spell save DC. On a failure, you deal a bonus 1d4 psychic damage to the target and it cannot see, hear, or sense you in any way until the beginning of your next turn.</p>
+    </description>
+    <sheet>
+      <description level="3">Once per turn when you hit a creature with a weapon attack, force it to make an Intelligence saving throw against your Ranger spell save DC; if it fails, deal 1d4 psychic damage to it and it cannot see, hear, or sense you until your next turn.</description>
+      <description level="11">Once per turn when you hit a creature with a weapon attack, force it to make an Intelligence saving throw against your Ranger spell save DC; if it fails, deal 2d4 psychic damage to it and it cannot see, hear, or sense you until your next turn.</description>
+    </sheet>
+  </element>
+
+  <element name="Mystical Knowledge" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_MYSTICAL_KNOWLEDGE">
+    <description>
+      <p>You can use your connection to the Noosphere to draw knowledge from the Nomads of past and present. Each time you finish a long rest, you gain proficiency in one skill or tool, or learn to speak, read, and write a language of your choice. You retain the knowledge of this language or skill proficiency until the end of your next long rest.</p>
+      <p class="indent">Beginning at 11th level in this class, you gain two proficiencies or languages of your choice through this feature at the end of a long rest, following these rules.</p>
+    </description>
+    <sheet>
+      <description level="3">When you finish a long rest, choose a skill proficiency, tool proficiency, or language to learn that lasts until your next long rest.</description>
+      <description level="11">When you finish a long rest, choose 2 skill proficiencies, tool proficiencies, or languages to learn that last until your next long rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Nomad's Step" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_NOMADS_STEP">
+    <description>
+      <p>You can temporarily merge your consciousness with the Noosphere to avoid harm and move through the world in strange ways. You gain the two features below. You can use these features a combined number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+      <p class="indent"><b><em>Phase Defense.</em></b> When you are hit by an attack you can see, you can use a reaction to disappear into the Noosphere, causing the attack to miss. You then appear in an unoccupied space that you occupied since the start of your previous turn.</p>
+      <p class="indent"><b><em>Psionic Jaunt.</em></b> As a bonus action, you expend any amount of your remaining movement to instantly teleport a number of feet equal to the movement you expended, reappearing in an unoccupied space you can see within that range.</p>
+    </description>
+    <sheet>
+      <description usage="{{wisdom:modifier}}/Long Rest" level="7">You can use either Phase Defense of Psionic Jaunt.</description>
+      <description usage="{{wisdom:modifier}}/Short Rest" level="11">You can use either Phase Defense of Psionic Jaunt.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_NOMADS_STEP_PHASE_DEFENSE" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_NOMADS_STEP_PSIONIC_JAUNT" />
+    </rules>
+  </element>
+
+  <element name="Phase Defense" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_NOMADS_STEP_PHASE_DEFENSE">
+    <description>
+      <p>When you are hit by an attack you can see, you can use a reaction to disappear into the Noosphere, causing the attack to miss. You then appear in an unoccupied space that you occupied since the start of your previous turn.</p>
+    </description>
+    <sheet>
+      <description usage="Nomad's Step" action="Reaction">When you are hit by an attack you can see, disappear and cause the attack to miss; then, reappear in a currently-unoccupied space that you had occupied since your prior turn.</description>
+    </sheet>
+  </element>
+
+  <element name="Psionic Jaunt" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_NOMADS_STEP_PSIONIC_JAUNT">
+    <description>
+      <p>As a bonus action, you expend any amount of your remaining movement to instantly teleport a number of feet equal to the movement you expended, reappearing in an unoccupied space you can see within that range.</p>
+    </description>
+    <sheet>
+      <description usage="Nomad's Step" action="Bonus Action">Expend your remaining movement to instantly teleport to an unoccupied space that far away.</description>
+    </sheet>
+  </element>
+
+  <element name="Strange Movement" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_STRANGE_MOVEMENT">
+    <description>
+      <p>Your connection to the Noosphere has grown. You regain all uses of Nomad's Step when you finish a short or long rest.</p>
+      <p class="indent">Also, the damage of Expunging Strike increases to 2d4.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Mystical Burst" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_NOMAD_MYSTICAL_BURST">
+    <description>
+      <p>When reappearing from the Noosphere you can assault your foes with the residual psionic power. When you teleport with a Nomad Spell or feature, creatures of your choice within 10 feet of the point you appear must make an Intelligence saving throw against your Spell save DC. Targets take 2d8 psychic damage on a failed save, and half as much psychic damage on a successful saving throw.</p>
+    </description>
+    <sheet>
+      <description>After teleporting with a Nomad spell or feature, force creatures of your choice within 10 ft. of the point where you reappeared to make an Intelligence saving throw against your spell save DC; if they fail, they take 2d8 psychic damage, or half that on a success.</description>
+    </sheet>
+  </element>
+
+  <element name="Shifter" type="Archetype" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_SHIFTER">
+    <supports>Ranger Archetype</supports>
+    <description>
+      <p>While all Rangers have a bond with wild beasts, those known as Shifters take this to its extreme. Using an ancient Druidic magic, these Rangers are able to change their physical forms to take on the shapes of the beasts they defend. They use this primal power to stand as the guardians of all wild animals.</p>
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SHIFTER_WILD_SHAPE" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SHIFTER_DRUIDIC_MAGIC" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SHIFTER_DRUIDIC_SOUL" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SHIFTER_EMPOWERED_SHAPES" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SHIFTER_THOUSAND_FORMS" />
+    </description>
+    <sheet display="false">
+      <description>Shifters are able to change their physical forms to take on the shapes of the beasts they defend.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_SHIFTER_WILD_SHAPE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_SHIFTER_DRUIDIC_MAGIC" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_SHIFTER_DRUIDIC_SOUL" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_SHIFTER_EMPOWERED_SHAPES" level="11"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_SHIFTER_THOUSAND_FORMS" level="15"/>
+    </rules>
+  </element>
+
+  <element name="Wild Shape" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_SHIFTER_WILD_SHAPE">
+    <description>
+      <p>You can draw on primal nature magic to take on the shape of beasts, much like Druids do. As a bonus action, you can shift, transforming into a Beast Shape you know. To learn a Beast Shape, you must touch a non-hostile, living beast.</p>
+      <p class="indent">Your Ranger level determines the maximum CR of beasts that you can transform into, as shown in the table below. You obey all the other rules for Wild Shape as they are detailed in Druid's Wild Shape feature in the Player's Handbook, except you retain your hit points in place of the beast's hit points.</p>
+      <table>
+        <thead>
+          <tr><td>Level</td><td>Max CR</td><td>Limitations</td><td>Example</td></tr>
+        </thead>
+        <tr><td>3rd</td><td>1</td><td>No Flight or Swim Speed</td><td>Brown Bear</td></tr>
+        <tr><td>7th</td><td>2</td><td>No Flight Speed</td><td>Hunter Shark</td></tr>
+        <tr><td>11th</td><td>3</td><td>-</td><td>Giant Scorpion</td></tr>
+        <tr><td>15th</td><td>4</td><td>-</td><td>Elephant</td></tr>
+        <tr><td>19th</td><td>5</td><td>-</td><td>Giant Crocodile</td></tr>
+      </table>
+      <p class="indent">You can stay in Wild Shape for up to one hour, at which point you revert to your normal form. You can revert to your normal form earlier if you use a bonus action to do so, if you fall unconscious, you drop to 0 hit points, or you die.</p>
+      <p class="indent">Once you use Wild Shape you must complete a short or long rest before you can use it again. When you have no uses left, you can expend a spell slot to use it again.</p>
+    </description>
+    <sheet>
+      <description level="3" usage="1/Short Rest">Assume the form of a beast you have touched before, of CR 1 or lower and no flight or swim speed. You retain your own hit points and it lasts for 1 hr., or until you revert with a bonus action, fall unconscious, or drop to 0 hit points. You can expend a spell slot to reuse this feature before a rest.</description>
+      <description level="7" usage="1/Short Rest">Assume the form of a beast you have touched before, of CR 2 or lower and no flight speed. You retain your own hit points and it lasts for 1 hr., or until you revert with a bonus action, fall unconscious, or drop to 0 hit points. Your Wild Shape form's attacks count as magical for overcoming resistances. You can expend a spell slot to reuse this feature before a rest.</description>
+      <description level="11" usage="1/Short Rest">Assume the form of a beast you have touched before, of CR 3 or lower. You retain your own hit points plus an additional {{level:ranger}} temporary hit points.It lasts for 1 hr., or until you revert with a bonus action, fall unconscious, or drop to 0 hit points. Your Wild Shape form's attacks count as magical for overcoming resistances, and its natural weapon rolls and ability checks gain an additional +{{wisdom:modiifer}}. You can expend a spell slot to reuse this feature before a rest.</description>
+      <description level="15" usage="1/Short Rest">Assume the form of a beast you have touched before, of CR 4 or lower. You retain your own hit points plus an additional {{level:ranger}} temporary hit points.It lasts for 1 hr., or until you revert with a bonus action, fall unconscious, or drop to 0 hit points. Your Wild Shape form's attacks count as magical for overcoming resistances, and its natural weapon rolls and ability checks gain an additional +{{wisdom:modiifer}}. You can expend a spell slot to reuse this feature before a rest.</description>
+      <description level="19" usage="1/Short Rest">Assume the form of a beast you have touched before, of CR 5 or lower. You retain your own hit points plus an additional {{level:ranger}} temporary hit points.It lasts for 1 hr., or until you revert with a bonus action, fall unconscious, or drop to 0 hit points. Your Wild Shape form's attacks count as magical for overcoming resistances, and its natural weapon rolls and ability checks gain an additional +{{wisdom:modiifer}}. You can expend a spell slot to reuse this feature before a rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Druidic Magic" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_SHIFTER_DRUIDIC_MAGIC">
+    <description>
+      <p>You learn certain spells at the Ranger levels noted in the table below. These spells count as Ranger spells for you, but do not count against your total number of Ranger Spells Known.</p>
+      <p class="indent">When you learn a new Ranger spell, you can choose from the Druid spell list, and it becomes a Ranger spell for you.</p>
+      <table>
+        <thead>
+          <tr><td>Ranger Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>animal friendship</em></td></tr>
+        <tr><td>5th</td><td><em>alter self</em></td></tr>
+        <tr><td>9th</td><td><em>conjure animals</em></td></tr>
+        <tr><td>13th</td><td><em>guardian of nature<sup>XGTE</sup></em></td></tr>
+        <tr><td>17th</td><td><em>commune with nature</em></td></tr>
+      </table>
+    </description>
+    <spellcasting name="Ranger" extend="true">
+      <extend>Druid</extend>
+    </spellcasting>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_ANIMAL_FRIENDSHIP" level="3" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" level="5" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_CONJURE_ANIMALS" level="9" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_XGTE_SPELL_GUARDIAN_OF_NATURE" level="13" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" level="17" spellcasting="Ranger" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Druidic Soul" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_SHIFTER_DRUIDIC_SOUL">
+    <description>
+      <p>The primal power you channel grants you the abilities of a true Druid. You learn to speak Druidic, and you can use it to decode and leave hidden messages for other Druids. While speaking Druidic you also gain the benefits of speak with animals without expending a spell slot. You also count as a Druid for the purposes of attuning to magic items.</p>
+      <p class="indent">Finally, your Wild Shape form's attacks count as magical for the purpose of overcoming resistances and immunities.</p>
+    </description>
+    <sheet>
+      <description>While speaking Druidic you gain the benefits of speak with animals without expending a spell slot.&#13;&#10;You also count as a Druid when attuning magic items.</description>
+    </sheet>
+    <rules>
+      <grant type="Language" id="ID_LANGUAGE_DRUIDIC" />
+    </rules>
+  </element>
+
+  <element name="Empowered Shapes" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_SHIFTER_EMPOWERED_SHAPES">
+    <description>
+      <p>Druidic magic empowers your Wild Shapes. Whenever you use Wild Shape, you gain temporary hit points equal to your Ranger level, and you add your Wisdom modifier (minimum of +1) to its Natural Weapon attack rolls and ability checks.</p>
+    </description>
+    <sheet>
+      <description>While speaking Druidic you gain the benefits of speak with animals without expending a spell slot.&#13;&#10;You also count as a Druid when attuning magic items.</description>
+    </sheet>
+  </element>
+
+  <element name="Thousand Forms" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_SHIFTER_THOUSAND_FORMS">
+    <description>
+      <p>You are so in tune with the primal magic you wield that you can alter your normal form in subtle ways at will. You can cast alter self at will, targeting only yourself, without expending a spell slot.</p>
+      <div class="reference">
+        <div element="ID_PHB_SPELL_ALTER_SELF" />
+      </div>
+    </description>
+    <sheet>
+      <description>You can cast alter self on yourself at will without expending a spell slot.</description>
+    </sheet>
+  </element>
+
+  <element name="Spellbreaker" type="Archetype" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER">
+    <supports>Ranger Archetype</supports>
+    <description>
+      <p>Spellbreakers are a small but dedicated group of Rangers that specialize in hunting mages who use their arcane power for evil. While most pursue the life of a Spellbreaker for noble reasons, there are some who seek to destroy anyone with the potential to use magic. Most Spellbreakers work in secrecy, only striking when success is a certainty. If a wrong move could end in disintegration, there is no room for error.</p>
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_MAGE_BREAKER" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_SPELLSIGHT" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_SPELLBREAKER_MAGIC" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_ARCANE_DEFENSE" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_SPELLBANE" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_MANTLE_OF_THE_MASTER" />
+    </description>
+    <sheet display="false">
+      <description>Spellbreakers are a small but dedicated group of Rangers that specialize in hunting mages who use their arcane power for evil.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_MAGE_BREAKER" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_MAGE_BREAKER_REACTION" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_SPELLSIGHT" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_SPELLBREAKER_MAGIC" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_ARCANE_DEFENSE" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_SPELLBANE" level="11"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_MANTLE_OF_THE_MASTER" level="15"/>
+    </rules>
+  </element>
+
+  <element name="Mage Breaker" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_MAGE_BREAKER">
+    <description>
+      <p>You ward your weapons with antimagic enchantments. When you hit a creature with a weapon attack, it has disadvantage on its Constitution saving throw to maintain concentration.</p>
+      <p class="indent">Also, when you see or hear a creature within your reach attempt to cast a spell, you can use your reaction to make an opportunity attack against it.</p>
+    </description>
+    <sheet>
+      <description>When you hit a creature that is concentrating with a weapon attack, it has disadvantage on its Constitution saving throw to maintain concentration.</description>
+    </sheet>
+  </element>
+
+  <element name="Mage Breaker" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_MAGE_BREAKER_REACTION">
+    <description>
+      <p>You ward your weapons with antimagic enchantments. When you hit a creature with a weapon attack, it has disadvantage on its Constitution saving throw to maintain concentration.</p>
+      <p class="indent">Also, when you see or hear a creature within your reach attempt to cast a spell, you can use your reaction to make an opportunity attack against it.</p>
+    </description>
+    <sheet>
+      <description alt=" " usage="Reaction">When you see or hear a creature within your reach attempt to cast a spell, make an opportunity attack against it.</description>
+    </sheet>
+  </element>
+
+  <element name="Spellsight" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_SPELLSIGHT">
+    <description>
+      <p>You have learned to see the arcane potential of others. As a bonus action, you can focus on a creature and instantly learn its spellcasting ability (if it has one) and the highest level spell that it has the ability to cast. If it is hidden from divination magic, such as by nondetection, this feature fails.</p>
+      <p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a short or long rest.</p>
+    </description>
+    <sheet>
+      <description usage="{{wisdom:modifier}}/Long Rest" action="Bonus Action">Focus on a creature to learn its spellcasting ability and its highest level spell unless it is hidden from divination magic.</description>
+    </sheet>
+  </element>
+
+  <element name="Spellbreaker Magic" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_SPELLBREAKER_MAGIC">
+    <description>
+      <p>You learn certain spells at the Ranger levels noted in the table below. These spells count as Ranger spells for you, but do not count against your total number of Ranger Spells Known.</p>
+      <table>
+        <thead>
+          <tr><td>Ranger Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>absorb elements<sup>XGTE</sup></em></td></tr>
+        <tr><td>5th</td><td><em>blindness/deafness</em></td></tr>
+        <tr><td>9th</td><td><em>counterspell</em></td></tr>
+        <tr><td>13th</td><td><em>resilient sphere</em></td></tr>
+        <tr><td>17th</td><td><em>wall of force</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" level="3" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" level="5" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" level="9" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" level="13" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_LASERLL_SPELL_WALL_OF_FORCE" level="17" spellcasting="Ranger" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Arcane Defense" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_ARCANE_DEFENSE">
+    <description>
+      <p>You can steel yourself to better resist the magics of your foes. Whenever you are forced to make a saving throw to resist a spell or another magical effect, you gain a bonus to your roll equal to your Wisdom modifier (minimum of +1).</p>
+      <p class="indent">Moreover, whenever you are subjected you to a spell or magical effect that allows you to make a saving throw to take only half damage, you instead take no damage on a success, and only half damage on a failed saving throw.</p>
+    </description>
+    <sheet>
+      <description>+{{wisdom:modifier}} to saving throws to resist spells and magical effects. If the saving throw is to take only half damage, instead take no damage on a success and half damage on a failure.</description>
+    </sheet>
+  </element>
+
+  <element name="Spellbane" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_SPELLBANE">
+    <description>
+      <p>You are an unparalleled hunter of mages. Whenever you hit a creature with a weapon attack, you can expend a spell slot of 1st-level or higher to deal bonus force damage to your target equal to 1d8 per level of the spell slot you expended.</p>
+      <p class="indent">Also, when you cast counterspell or dispel magic, you add your Wisdom modifier (minimum of +1) to the ability check.</p>
+    </description>
+    <sheet>
+      <description>When you hit a creature with a weapon attack, expend a 1st-level spell slot or higher to deal 1d8 bonus force damage per level of spell slot expended.&#13;&#10;+{{wisdom:modifier}} to the ability check when you cast counterspell or dispel magic.</description>
+    </sheet>
+  </element>
+
+  <element name="Mantle of the Master" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_MANTLE_OF_THE_MASTER">
+    <description>
+      <p>Your Spellbreaker training has reached its pinnacle. You are resistant to damage from spells and all other magical effects so long as you are not unconscious or incapacitated.</p>
+    </description>
+    <sheet>
+      <description>You resist damage from spells and magical effects while not unconscious or incapacitated.</description>
+    </sheet>
+  </element>
+
+  <element name="Stargazer" type="Archetype" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER">
+    <supports>Ranger Archetype</supports>
+    <description>
+      <p>Since ancient times, mortals have looked to the stars of night for stories of the past, omens for the present, and portents of the future. The Rangers known as Stargazers dedicate their lives to the study of stars and constellations, and can draw on their radiant power to conjure celestial magic, vanquish their foes, and twist the threads of fate for those around them.</p>
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_CONSTELLATION_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_CELESTIAL_GUIDANCE" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_STARGAZER_MAGIC" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_THREADS_OF_FATE" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_STARLIGHT_STRIKES" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_RESPLENDENT_SOUL" />
+    </description>
+    <sheet display="false">
+      <description>Stargazers dedicate their lives to the study of stars and constellations.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_CONSTELLATION_SPELLS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_CELESTIAL_GUIDANCE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_STARGAZER_MAGIC" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_THREADS_OF_FATE" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_STARLIGHT_STRIKES" level="11"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_RESPLENDENT_SOUL" level="15"/>
+    </rules>
+  </element>
+
+  <element name="Constellation Spells" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_CONSTELLATION_SPELLS">
+    <description>
+      <p>You draw your power from the stars of the night sky. When you finish a long rest, you attune to one of the Constellations below. While attuned, you know its Constellation spells, one Cantrip and one 1st-level spell. They count as Ranger spells for you but don't count against your Ranger Spells Known.</p>
+      <p class="indent">You can cast your 1st-level Constellation spell once without expending a spell slot, at the level of your highest level slot as shown on the Ranger table for your level, and you regain the ability to do so when you finish a short or long rest.</p>
+      <table>
+        <thead>
+          <tr><td>Constellation</td><td>Cantrip</td><td>1st-level Spell</td></tr>
+        </thead>
+        <tr><td>Adder</td><td><em>thorn whip</em></td><td><em>inflict wounds</em></td></tr>
+        <tr><td>Bear</td><td><em>resistance</em></td><td><em>wrathful smite</em></td></tr>
+        <tr><td>Elephant</td><td><em>guidance</em></td><td><em>bless</em></td></tr>
+        <tr><td>Snow Hare</td><td><em>minor illusion</em></td><td><em>armor of agathys</em></td></tr>
+        <tr><td>Stag</td><td><em>shillegah</em></td><td><em>heroism</em></td></tr>
+        <tr><td>Wolf</td><td><em>true strike</em></td><td><em>guiding bolt</em></td></tr>
+      </table>
+    </description>
+    <sheet>
+      <description>You attune to a Constellation at the end of a long rest and can cast its 1st-level Constellation spell at your highest spell slot level wtthout expending a spell slot once per rest.</description>
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Constellation" supports="Stargazer Constellation" />
+    </rules>
+  </element>
+
+  <element name="Adder" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_CONSTELLATION_SPELLS_ADDER">
+    <compendium display="false" />
+    <supports>Stargazer Constellation</supports>
+    <description>
+    </description>
+    <sheet>
+      <description>Cantrip: thorn whip | 1st-level Spell: inflict wounds</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_THORN_WHIP" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_INFLICT_WOUNDS" spellcasting="Ranger" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Bear" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_CONSTELLATION_SPELLS_BEAR">
+    <compendium display="false" />
+    <supports>Stargazer Constellation</supports>
+    <description>
+    </description>
+    <sheet>
+      <description>Cantrip: resistance | 1st-level Spell: wrathful smite</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_RESISTANCE" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_LASERLL_SPELL_WRATHFUL_SMITE" spellcasting="Ranger" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Elephant" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_CONSTELLATION_SPELLS_ELEPHANT">
+    <compendium display="false" />
+    <supports>Stargazer Constellation</supports>
+    <description>
+    </description>
+    <sheet>
+      <description>Cantrip: guidance | 1st-level Spell: bless</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_BLESS" spellcasting="Ranger" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Snow Hare" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_CONSTELLATION_SPELLS_SNOW_HARE">
+    <compendium display="false" />
+    <supports>Stargazer Constellation</supports>
+    <description>
+    </description>
+    <sheet>
+      <description>Cantrip: minor illusion | 1st-level Spell: armor of agathys</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_ARMOR_OF_AGATHYS" spellcasting="Ranger" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Wolf" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_CONSTELLATION_SPELLS_WOLF">
+    <compendium display="false" />
+    <supports>Stargazer Constellation</supports>
+    <description>
+    </description>
+    <sheet>
+      <description>Cantrip: true strike | 1st-level Spell: guiding bolt</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_LASERLL_SPELL_TRUE_STRIKE" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" spellcasting="Ranger" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Celestial Guidance" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_CELESTIAL_GUIDANCE">
+    <description>
+      <p>The constellations of the night sky guide your steps. You gain proficiency in cartographer's or navigator's tools, and you cannot become lost, even by magical means so long as you can see the stars of the night sky.</p>
+    </description>
+    <sheet>
+      <description>You cannot become lost, even by magical means, if you can see the stars of the night sky.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Tool Proficiency, Celestial Guidance" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+    </rules>
+  </element>
+
+  <element name="Stargazer Magic" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_STARGAZER_MAGIC">
+    <description>
+      <p>You learn certain spells at the Ranger levels noted in the table below. These spells count as Ranger spells for you, but do not count against your total number of Ranger Spells Known.</p>
+      <table>
+        <thead>
+          <tr><td>Ranger Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>Constellation Spells</em></td></tr>
+        <tr><td>5th</td><td><em>moonbeam</em></td></tr>
+        <tr><td>9th</td><td><em>clairvoyance</em></td></tr>
+        <tr><td>13th</td><td><em>divination</em></td></tr>
+        <tr><td>17th</td><td><em>wall of light</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="5" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" level="9" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_DIVINATION" level="13" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_XGTE_SPELL_WALL_OF_LIGHT" level="17" spellcasting="Ranger" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Threads of Fate" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_THREADS_OF_FATE">
+    <description>
+      <p>You can use the insights you gain from the stars to twist fate. When a creature you can see within 30 feet makes an ability check or saving throw, you can use your reaction to add your Wisdom modifier (minimum of +1) to the result of its roll. You must use this reaction before you know if it succeeds or fails.</p>
+      <p class="indent">You can use this reaction a number of times equal to your Wisdom modifier (a minimum of once), and you regain all of your expended uses when you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description action="Reaction" usage="{{wisdom:modifier}}/Long Rest">When a creature within 30 ft. makes an ability check or saving throw, add +{{wisdom:modifier}} to its roll (before you know if it succeeded).</description>
+    </sheet>
+  </element>
+
+  <element name="Starlight Strikes" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_STARLIGHT_STRIKES">
+    <description>
+      <p>You infuse your weapons with the power of celestial starlight. Once per turn, when you hit a creature with a weapon attack or damage it with a Ranger spell, you deal an additional 1d8 radiant damage to your target.</p>
+      <p class="indent">Also, whenever you cast a Ranger spell, you can choose for it to deal radiant damage in place of its normal damage type.</p>
+    </description>
+    <sheet>
+      <description>Once per turn when you hit a creature with a weapon attack or damage it with a Ranger spell, deal an additional 1d8 radiant damage.&#13;&#10;When you cast a Ranger spell, you can choose for it to deal radiant damage instead.</description>
+    </sheet>
+  </element>
+
+  <element name="Resplendent Soul" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_STARGAZER_RESPLENDENT_SOUL">
+    <description>
+      <p>Your very soul is filled with starlight and you can release it in bursts to blind foes. When a creature you can see targets you with an attack, you can use your reaction to release a flash of light toward it, forcing it to make a Constitution saving throw against your Spell save DC. On a failed save, it takes 3d10 radiant damage and its attack automatically misses you.</p>
+      <p class="indent">You can use this reaction a number of times equal to your Wisdom modifier (a minimum of once), and you regain all expended uses of when you finish a long rest. If you have no uses left, you can expend a spell slot of 1st-level or higher to use this again.</p>
+    </description>
+    <sheet>
+      <description usage="{{wisdom:modifier}}/Long Rest" action="Reaction">When a visible creature targets you with an attack, force it to make a Constitution saving throw against your spell save DC; if it fails, it takes 3d10 radiant damage and its attack misses. You can expend a 1st-level spell slot to regain a use of this feature before a long rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Trapper" type="Archetype" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_TRAPPER">
+    <supports>Ranger Archetype</supports>
+    <description>
+      <p>While all Rangers have some skill with snares and traps, few are true masters of the craft. These Trappers are meticulous planners with mechanical minds who use their skills to plan ambushes and set snares for their foes. They have a talent for anticipating their foe's next move and laying the perfect trap.</p>
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_MAGE_BREAKER" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_SPELLSIGHT" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_SPELLBREAKER_MAGIC" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_ARCANE_DEFENSE" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_SPELLBANE" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_SPELLBREAKER_MANTLE_OF_THE_MASTER" />
+    </description>
+    <sheet display="false">
+      <description>Trappers are meticulous planners with mechanical minds who use their skills to plan ambushes and set snares for their foes.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_TRAPPER_TRAPPER_MAGIC" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_TRAPPER_METICULOUS_FINGERS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_TRAPPER_TRAP_ADEPT" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_TRAPPER_COMBAT_SNARES" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_TRAPPER_DEADLY_SNARES" level="11"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_TRAPPER_MASTER_TRAPPER" level="15"/>
+    </rules>
+  </element>
+
+  <element name="Trapper Magic" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_TRAPPER_TRAPPER_MAGIC">
+    <description>
+      <p>You learn certain spells at the Ranger levels noted in the table below. These spells count as Ranger spells for you, but do not count against your total number of Ranger Spells Known.</p>
+      <table>
+        <thead>
+          <tr><td>Ranger Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>alarm</em></td></tr>
+        <tr><td>5th</td><td><em>cordon of arrows</em></td></tr>
+        <tr><td>9th</td><td><em>slow</em></td></tr>
+        <tr><td>13th</td><td><em>grasping vine</em></td></tr>
+        <tr><td>17th</td><td><em>planar binding</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_ALARM" level="3" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_LASERLL_SPELL_CORDON_OF_ARROWS" level="5" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_SLOW" level="9" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_GRASPING_VINE" level="13" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_PLANAR_BINDING" level="17" spellcasting="Ranger" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Meticulous Fingers" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_TRAPPER_METICULOUS_FINGERS">
+    <description>
+      <p>You are exceptionally gifted with mechanical objects. You gain proficiency in Sleight of Hand and with thieves' tools and tinker's tools. You can also take the Use an Object action as a bonus action on your turns.</p>
+      <p class="indent">Also, if you have access to the inner workings of a disarmed trap, you can use tinker's tools to rearm the trap (so long as reaming it is possible). If you do, its new DC equals your Spell save DC.</p>
+    </description>
+    <sheet>
+      <description>You can Use an Object as a bonus action.&#13;&#10;If you can access the inner workings of a disarmed trap, you can use tinker's tools to rearm it if possible; its new DC is your spell save DC.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+    </rules>
+  </element>
+
+  <element name="Trap Adept" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_TRAPPER_TRAP_ADEPT">
+    <description>
+      <p>You can construct natural traps. Over the course of 1 hour, which can be during a short or long rest, you can use a knife, natural materials, and expend 10 feet of rope to craft a Trap.</p>
+      <p class="indent">As an action, you can set one of the Traps in an adjacent unoccupied 5-foot space. The first Large or smaller creature to move into that space must make a Dexterity saving throw against your Ranger Spell save DC or become restrained.</p>
+      <p class="indent">As an action, the restrained creature, or another within 5 feet, can use an action to make a Strength check against your Ranger Spell save DC, freeing the restrained creature on a success.</p>
+      <p class="indent">As an action (separate from setting the Trap), you can hide a Trap. If hidden, a successful Intelligence (Investigation) against your Ranger Spell save DC is required to detect the Trap.</p>
+      <p class="indent">You can maintain a number of Traps equal to your Ranger level. If you create more, your oldest trap falls into disrepair and no longer functions.</p>
+    </description>
+    <sheet>
+      <description level="3">Craft a trap over 1 hr., up to {{level:ranger}} traps at once, with a knife, natural materials, and 10 ft. of rope.&#13;&#10;Use an action to set a Trap in an unoccupied space within 5 ft.; you can use a separate action to hide the placed trap. If the trap was hidden, a successful Intelligence (Investigation) check against your Ranger spell save DC is required to detect it.&#13;&#10;The first Large of smaller creature to enter itss space must make a Dexterity saving throw against your Ranger spell DC or become restrained. The restrained creature or another creature within 5 ft. can use an action to make a Strength check against your spell save DC to free it.</description>
+      <description level="11">Craft a trap over 1 hr., up to {{level:ranger}} traps at once, with a knife, natural materials, and 10 ft. of rope.&#13;&#10;Use an action to set a Trap in an unoccupied space within 5 ft.; you can use a separate action to hide the placed trap. If the trap was hidden, a successful Intelligence (Investigation) check against your Ranger spell save DC is required to detect it.&#13;&#10;The first Huge of smaller creature to enter its space must make a Dexterity saving throw against your Ranger spell DC or become restrained. It also takes 3d8 bludgeoning, piercing, or slashing damage on a failure and half that on a success. If the creature was unaware of the trap, it fails the saving throw automatically. The restrained creature or another creature within 5 ft. can use an action to make a Strength check against your spell save DC to free it.</description>
+      <description level="15">Craft a trap over 1 hr., up to {{level:ranger}} traps at once, with a knife, natural materials, and 10 ft. of rope; it can take the shape of a 5-foot square, a 10-foot square, or a 15-foot line, and you can use an action after creation to change this.&#13;&#10;Use an action to set a Trap in an unoccupied space within 5 ft.; you can use a separate action to hide the placed trap. If the trap was hidden, a successful Intelligence (Investigation) check against your Ranger spell save DC is required to detect it.&#13;&#10;The first Huge of smaller creature to enter its space must make a Dexterity saving throw against your Ranger spell DC or become restrained. It also takes 3d8 bludgeoning, piercing, or slashing damage on a failure and half that on a success. If the creature was unaware of the trap, it fails the saving throw automatically. The restrained creature or another creature within 5 ft. can use an action to make a Strength check against your spell save DC to free it.</description>
+    </sheet>
+  </element>
+
+  <element name="Combat Snares" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_TRAPPER_COMBAT_SNARES">
+    <description>
+      <p>You can quickly assemble and use makeshift traps in combat. As an action, you can craft a Trap and throw it at a space you can see within 20 feet. Creatures in that area make a saving throw as if they had moved into the Trap's space, suffering its effects on a failure. Traps crafted this way last for 1 minute.</p>
+      <p class="indent">You can also take the Use an Object action to throw a Trap that you had already crafted at a creature in this way.</p>
+    </description>
+    <sheet>
+      <description action="Action">Craft and throw a trap into a space within 20 ft., which lasts for 1 minute. Creatures in the target area must make a saving throw as if they had moved into the trap's space, or suffer its effects on a failure. You acn also take the Use an Object reaction to throw a pre-crafted Trap in this way.</description>
+    </sheet>
+  </element>
+
+  <element name="Deadly Snares" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_TRAPPER_DEADLY_SNARES">
+    <description>
+      <p>Your skill has grown and increased the potency of your traps. Creatures automatically fail the initial saving throw against your Traps they are unaware of the Trap's location. Moreover, any Traps you craft now work on creatures that are Huge or smaller, and if a creature makes a saving throw against your Trap, it takes 3d8 magical bludgeoning, piercing, or slashing damage (your choice) on a failure, and half that on a success.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Master Trapper" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_TRAPPER_MASTER_TRAPPER">
+    <description>
+      <p>You are always ready to lay a trap. When you roll initiative you can use your reaction to craft one Trap and throw it to one unoccupied space you can see within 20 feet of you.</p>
+      <p class="indent">Also, whenever you craft a Trap, you can choose whether that Trap will take up a 10-foot square, a single 5-foot square, or a 15-foot line. You can use an action to adjust this area.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When you roll initiative, craft a Trap and throw it onto a visible, unoccupied space within 20 ft.</description>
+    </sheet>
+  </element>
+
+  <element name="Wastelander" type="Archetype" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER">
+    <supports>Ranger Archetype</supports>
+    <description>
+      <p>While all Rangers have the skills to survive in the wilds, those known as Wastelanders are true masters of survival. Rugged wanderers, they have adapted to survive in the harshest lands imaginable; arid deserts, frozen tundra, great alpine heights, and magical wastelands. These survivalists combine a talent for illusion magic and protective gear to survive anywhere.</p>
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WASTELANDER_MAGIC" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WASTELAND_WEAVER" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WILDERNESS_ADEPT" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_RUGGED_RESILIENCE" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_ILLUSORY_STRIKES" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_MIRAGE_TRANSPOSITION" />
+    </description>
+    <sheet display="false">
+      <description>Wastelanders combine a talent for illusion magic and protective gear to survive anywhere.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WASTELANDER_MAGIC" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WASTELAND_WEAVER" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WILDERNESS_ADEPT" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_RUGGED_RESILIENCE" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_ILLUSORY_STRIKES" level="11"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_MIRAGE_TRANSPOSITION" level="15"/>
+    </rules>
+  </element>
+
+  <element name="Wastelander Magic" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WASTELANDER_MAGIC">
+    <description>
+      <p>You learn certain spells at the Ranger levels noted in the table below. These spells count as Ranger spells for you, but do not count against your total number of Ranger Spells Known.</p>
+      <table>
+        <thead>
+          <tr><td>Ranger Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>silent image</em></td></tr>
+        <tr><td>5th</td><td><em>invisibility</em></td></tr>
+        <tr><td>9th</td><td><em>wall of sand<sup>XGTE</sup></em></td></tr>
+        <tr><td>13th</td><td><em>hallucinatory terrain</em></td></tr>
+        <tr><td>17th</td><td><em>mislead</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" level="3" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="5" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_XGTE_SPELL_WALL_OF_SAND" level="9" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" level="13" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_MISLEAD" level="17" spellcasting="Ranger" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Wasteland Weaver" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WASTELAND_WEAVER">
+    <description>
+      <p>You have mastered an ancient pattern of enhancing clothing. You gain proficiency with weaver's tools, and you add double your proficiency bonus to your checks with weaver's tools.</p>
+      <p class="indent">At the end of each long rest, you can use weaver's tools to enhance one set of clothing or cloak. While a creature wears this enhanced garment it gains the following benefits:</p>
+      <ul>
+        <li>It gains a bonus to Dexterity (Stealth) checks to hide in the wild equal to your Wisdom modifier (minimum of +1).</li>
+        <li>It requires one-quarter as much water in order to survive.</li>
+        <li>It has advantage on saving throws to resist the effects of harsh environments and subsequent exhaustion levels.</li>
+        <li>During each long rest, you must spend 1 hour maintaining any garments you have enhanced or they lose these beneficial properties. You can maintain a number of garments equal to your Wisdom modifier (a minimum of 1 set of garments).</li>
+      </ul>
+    </description>
+    <sheet>
+      <description level="3">+{{proficiency}} on top of proficiency to checks with weaver's tools.&#13;&#10;At the end of a long rest, use your weaver's tools to enhance a set of clothing or cloak, up to {{wisdom:modifier}} at a time. It grants its wearer +{{wisdom:modifier}} to Dexterity (Stealth) checks to hide in the wild, the ability to survive on 1/4 the usual water requirement, and advantage on saving throws to resist the effects of harsh environments. You must spend 1 hr. maintaining such garments during subsequent long rests to retain their benefits.</description>
+      <description level="7">+{{proficiency}} on top of proficiency to checks with weaver's tools.&#13;&#10;At the end of a long rest, use your weaver's tools to enhance a set of clothing or cloak, up to {{wisdom:modifier}} at a time. It grants its wearer +{{wisdom:modifier}} to Dexterity (Stealth) checks to hide in the wild, the ability to survive on 1/4 the usual water requirement, and advantage on saving throws to resist the effects of harsh environments. The wearer can also cast invisibility on itself as a bonus action 3 times, with the garment losing all magical properties until it is maintained after the last use. You must spend 1 hr. maintaining such garments during subsequent long rests to retain their benefits.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS" />
+    </rules>
+  </element>
+
+  <element name="Wilderness Adept" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WILDERNESS_ADEPT">
+    <description>
+      <p>You have trained to survive the most extreme environments. You gain one of these benefits at 3rd, 7th, and 11th levels:</p>
+      <p class="indent"><b><em>Alpine Adept.</em></b> You gain a 30-foot climbing speed, and you can use your reaction to reduce any falling damage you take by an amount equal to your Ranger level.</p>
+      <p class="indent"><b><em>Aquatic Adept.</em></b> You gain a 30-foot swimming speed, and while underwater, you can hold your breath for up to 1 hour.</p>
+      <p class="indent"><b><em>Underground Adept.</em></b> You gain darkvision out to a range of 60 feet. If you have darkvision its range increases by 30 feet.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Wilderness Adept (3rd level)" supports="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WILDERNESS_ADEPT_ALPINE|ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WILDERNESS_ADEPT_AQUATIC|ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WILDERNESS_ADEPT_UNDERGROUND" level="3" />
+      <select type="Archetype Feature" name="Wilderness Adept (7th level)" supports="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WILDERNESS_ADEPT_ALPINE|ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WILDERNESS_ADEPT_AQUATIC|ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WILDERNESS_ADEPT_UNDERGROUND" level="7" />
+      <select type="Archetype Feature" name="Wilderness Adept (11th level)" supports="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WILDERNESS_ADEPT_ALPINE|ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WILDERNESS_ADEPT_AQUATIC|ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WILDERNESS_ADEPT_UNDERGROUND" level="11" />
+    </rules>
+  </element>
+
+  <element name="Alpine Adept" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WILDERNESS_ADEPT_ALPINE">
+    <description>
+      <p>You gain a 30-foot climbing speed, and you can use your reaction to reduce any falling damage you take by an amount equal to your Ranger level.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">Reduce your fallen damage taken by {{level:ranger}}.</description>
+    </sheet>
+    <rules>
+      <stat name="speed:climb" value="speed" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Aquatic Adept" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WILDERNESS_ADEPT_AQUATIC">
+    <description>
+      <p>You gain a 30-foot swimming speed, and while underwater, you can hold your breath for up to 1 hour.</p>
+    </description>
+    <sheet>
+      <description>You can hold your breath for 1 hr.</description>
+    </sheet>
+    <rules>
+      <stat name="speed:swim" value="speed" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Underground Adept" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_WILDERNESS_ADEPT_UNDERGROUND">
+    <description>
+      <p>You gain darkvision out to a range of 60 feet. If you have darkvision its range increases by 30 feet.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="30" bonus="base" />
+			<stat name="darkvision:range" value="30" bonus="underground adept" />
+		</rules>
+  </element>
+
+  <element name="Rugged Resilience" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_RUGGED_RESILIENCE">
+    <description>
+      <p>You imbue the mystical weave of your enhanced garments with illusion magic. A creature wearing one of your enhanced garments can use a bonus action to cast invisibility on itself.</p>
+      <p class="indent">It can do so three times, but when the last use is expended, the garment loses any beneficial properties. Your enhanced garments regain all uses of this feature when you spend time during a long rest maintaining your enhanced garments.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Illusory Strikes" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_ILLUSORY_STRIKES">
+    <description>
+      <p>You enhance your combat style with potent illusion magic. When you take the Attack action on your turn, you can use a bonus action to create an Illusory Duplicate of yourself in an unoccupied space you can see within 30 feet. It makes one attack with a duplicate of your weapon, which deals force damage in place of your weapon's damage and disappears.</p>
+    </description>
+    <sheet>
+      <description level="11">When you take the Attack action on your turn, use a bonus action to create an Illusory Duplicate of yourself in an unoccupied visible space within 30 ft. It makes one attack with a duplicate of your weapon, dealing force damage in place of the usual damage, and then disappears.</description>
+      <description level="15" action="Bonus Action">Create an Illusory Duplicate of yourself in an unoccupied visible space within 30 ft.; you can instantly switch places with it if desired. It then makes one attack with a duplicate of your weapon, dealing force damage in place of the usual damage, and then disappears.</description>
+    </sheet>
+  </element>
+
+  <element name="Mirage Transposition" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WASTELANDER_MIRAGE_TRANSPOSITION">
+    <description>
+      <p>You can use a bonus action to create your Illusory Duplicate even if you do not take the Attack action. When you conjure an Illusory Duplicate, you can instantly switch places with it.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Wrangler" type="Archetype" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER">
+    <supports>Ranger Archetype</supports>
+    <description>
+      <p>While most Rangers have some skill with animals, those who pursue the life of a Wrangler are true masters at taming wild beasts. Drawing upon their intimate understanding of animal behavior, they tame and guide all sorts of fantastical animals. Rugged and wild, Wranglers are always on the hunt for ever more strange and exotic creatures to tame and befriend.</p>
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BEAST_TAMER" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_WRANGLER_MAGIC" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BRING_TO_HEEL" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_MONSTER_TAMER" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_WRANGLER_OF_LEGENDS" />
+    </description>
+    <sheet display="false">
+      <description>Wranglers are always on the hunt for ever more strange and exotic creatures to tame and befriend.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BEAST_TAMER" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_WRANGLER_MAGIC" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BRING_TO_HEEL_REACTION" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BRING_TO_HEEL" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_MONSTER_TAMER" level="11"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_WRANGLER_OF_LEGENDS" level="15"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_WRANGLER_OF_LEGENDS_REACTION" level="15"/>
+    </rules>
+  </element>
+
+  <element name="Wrangler Magic" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_WRANGLER_MAGIC">
+    <description>
+      <p>You learn certain spells at the Ranger levels noted in the table below. These spells count as Ranger spells for you, but do not count against your total number of Ranger Spells Known.</p>
+      <table>
+        <thead>
+          <tr><td>Ranger Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>charm person</em></td></tr>
+        <tr><td>5th</td><td><em>calm emotions</em></td></tr>
+        <tr><td>9th</td><td><em>conjure animals</em></td></tr>
+        <tr><td>13th</td><td><em>charm monster<sup>XGTE</sup></em></td></tr>
+        <tr><td>17th</td><td><em>hold monster</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" level="3" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="5" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_CONJURE_ANIMALS" level="9" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_XGTE_SPELL_CHARM_MONSTER" level="13" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="17" spellcasting="Ranger" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Beast Tamer" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BEAST_TAMER">
+    <description>
+      <p>Your intimate understanding of animal behaviors and habits grants you certain benefits. You gain proficiency in Athletics or Animal Handling, and you can add double your proficiency bonus to any checks you make with that skill.</p>
+      <p class="indent">In addition, any enchantment spells you know that can normally only target humanoids can also target beasts and monstrosities when you cast them.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Skill Proficiency, Beast Tamer" supports="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BEAST_TAMER_ATHLETICS|ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BEAST_TAMER_ANIMAL_HANDLING" />
+    </rules>
+  </element>
+
+  <element name="Beast Tamer" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BEAST_TAMER_ATHLETICS">
+    <description>
+      <p>Your intimate understanding of animal behaviors and habits grants you certain benefits. You gain proficiency in Athletics or Animal Handling, and you can add double your proficiency bonus to any checks you make with that skill.</p>
+      <p class="indent">In addition, any enchantment spells you know that can normally only target humanoids can also target beasts and monstrosities when you cast them.</p>
+    </description>
+    <sheet>
+      <description level="3">+{{proficiency}} to Athletics checks.&#13;&#10;You can also target beasts and monstrosities with ennchantment spells that normally only target humanoids.</description>
+      <description level="11">+{{proficiency}} to Athletics checks.&#13;&#10;You can also target creatures listed in the Monster Tamer feature with ennchantment spells that normally only target humanoids.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+    </rules>
+  </element>
+
+  <element name="Beast Tamer" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BEAST_TAMER_ANIMAL_HANDLING">
+    <description>
+      <p>Your intimate understanding of animal behaviors and habits grants you certain benefits. You gain proficiency in Athletics or Animal Handling, and you can add double your proficiency bonus to any checks you make with that skill.</p>
+      <p class="indent">In addition, any enchantment spells you know that can normally only target humanoids can also target beasts and monstrosities when you cast them.</p>
+    </description>
+    <sheet>
+      <description level="3">+{{proficiency}} to Animal Handling checks.&#13;&#10;You can also target beasts and monstrosities with ennchantment spells that normally only target humanoids.</description>
+      <description level="11">+{{proficiency}} to Animal Handling checks.&#13;&#10;You can also target creatures listed in the Monster Tamer feature with ennchantment spells that normally only target humanoids.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+    </rules>
+  </element>
+
+  <element name="Bring to Heel" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BRING_TO_HEEL_REACTION">
+    <description>
+      <p>You can bend creatures of the wild to your will. Whenever a beast or monstrosity that is charmed by you makes a saving throw to end the charmed condition, you can use a reaction to shout at that creature and subtract your Wisdom modifier (minimum of 1) from the result of its saving throw.</p>
+      <p class="indent">You can also command the monsters you tame. Any beast or monstrosity charmed by you acts during your turn for the duration of that charm effect. If you are within 30 feet of the creature and it can hear you, you can use a bonus action to order it to take one of the actions from its stat block.</p>
+    </description>
+    <sheet>
+      <description action="Reaction" level="7">When a beast or monstrosity you have charmed makes a saving throw to end the condition, shout at it and subtract {{wisdom:modifier}} from its roll.</description>
+      <description action="Reaction" level="11">When a creature listed in the Monster Tamer feature that you have charmed makes a saving throw to end the condition, shout at it and subtract {{wisdom:modifier}} from its roll.</description>
+    </sheet>
+  </element>
+
+  <element name="Bring to Heel" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BRING_TO_HEEL">
+    <description>
+      <p>You can bend creatures of the wild to your will. Whenever a beast or monstrosity that is charmed by you makes a saving throw to end the charmed condition, you can use a reaction to shout at that creature and subtract your Wisdom modifier (minimum of 1) from the result of its saving throw.</p>
+      <p class="indent">You can also command the monsters you tame. Any beast or monstrosity charmed by you acts during your turn for the duration of that charm effect. If you are within 30 feet of the creature and it can hear you, you can use a bonus action to order it to take one of the actions from its stat block.</p>
+    </description>
+    <sheet>
+      <description alt=" " level="7">You can command charmed beasts and monstrosities with a bonus action to take an action from their stat blocks; they act during your turn for the duration of the charm.</description>
+      <description alt=" " level="11">You can command all charmed creatures listed in the Monster Tamer feature with a bonus action to take an action from their stat blocks; they act during your turn for the duration of the charm.</description>
+    </sheet>
+  </element>
+
+  <element name="Monster Tamer" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_MONSTER_TAMER">
+    <description>
+      <p>Your ability to tame and train creatures is near-supernatural in scope. Any Wrangler feature that normally affects beasts and monstrosities also affects celestials, dragons, fey, fiends, giants, plants, and oozes that have an Intelligence score less than or equal to your Ranger level.</p>
+    </description>
+    <sheet>
+      <description>Your Wrangler features apply to all beasts and monstrosities, as well as celestials, dragons, fey, fiends, giants, plants, and oozes with Intelligence scores less than {{level:ranger}}.</description>
+    </sheet>
+  </element>
+
+  <element name="Wrangler of Legend" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_WRANGLER_OF_LEGEND">
+    <description>
+      <p>Once you charm a creature, there is little it can do to escape. When you cast an enchantment spell on a beast, monstrosity, or one of the creature types listed for Monster Tamer, your concentration cannot be broken unless you wish it to be.</p>
+      <p class="indent">Moreover, when a creature that is charmed by you is forced to make a saving throw while it is within 30 feet, you can use your reaction to add your Wisdom modifier (minimum of +1) to its roll. It must be able to hear you to gain this benefit.</p>
+    </description>
+    <sheet>
+      <description>When you cast an enchantment spell on a creature listed in the Monster Tamer feature, you concentration cannot be broken unwillingly.</description>
+    </sheet>
+  </element>
+
+  <element name="Wrangler of Legend" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_WRANGLER_OF_LEGEND_REACTION">
+    <description>
+      <p>Once you charm a creature, there is little it can do to escape. When you cast an enchantment spell on a beast, monstrosity, or one of the creature types listed for Monster Tamer, your concentration cannot be broken unless you wish it to be.</p>
+      <p class="indent">Moreover, when a creature that is charmed by you is forced to make a saving throw while it is within 30 feet, you can use your reaction to add your Wisdom modifier (minimum of +1) to its roll. It must be able to hear you to gain this benefit.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When a creature charmed by you within 30 ft. that can hear you is forced to make a saving throw, add +{{wisdom:modifier}} to the roll.</description>
+    </sheet>
+  </element>
+
+  <element name="Wrangler" type="Archetype" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER">
+    <supports>Ranger Archetype</supports>
+    <description>
+      <p>While most Rangers have some skill with animals, those who pursue the life of a Wrangler are true masters at taming wild beasts. Drawing upon their intimate understanding of animal behavior, they tame and guide all sorts of fantastical animals. Rugged and wild, Wranglers are always on the hunt for ever more strange and exotic creatures to tame and befriend.</p>
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BEAST_TAMER" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_WRANGLER_MAGIC" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BRING_TO_HEEL" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_MONSTER_TAMER" />
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_WRANGLER_OF_LEGENDS" />
+    </description>
+    <sheet display="false">
+      <description>Wranglers are always on the hunt for ever more strange and exotic creatures to tame and befriend.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BEAST_TAMER" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_WRANGLER_MAGIC" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BRING_TO_HEEL_REACTION" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_BRING_TO_HEEL" level="7"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_MONSTER_TAMER" level="11"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_WRANGLER_OF_LEGENDS" level="15"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_WRANGLER_WRANGLER_OF_LEGENDS_REACTION" level="15"/>
+    </rules>
+  </element>
+
+  <append id="ID_WOTC_ARCHETYPE_RANGER_BEAST_MASTER">
+    <description>
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_BEAST_MASTER_BEAST_MASTER_MAGIC" />
+    </description>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_BEAST_MASTER_BEAST_MASTER_MAGIC" level="3"/>
+    </rules>
+  </append>
+
+  <element name="Beast Master Magic" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_BEAST_MASTER_BEAST_MASTER_MAGIC">
+    <description>
+      <p>You learn certain spells at the Ranger levels noted in the table below. These spells count as Ranger spells for you, but do not count against your total number of Ranger Spells Known.</p>
+      <table>
+        <thead>
+          <tr><td>Ranger Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>beast bond<sup>XGTE</sup></em></td></tr>
+        <tr><td>5th</td><td><em>warding bond</em></td></tr>
+        <tr><td>9th</td><td><em>haste</em></td></tr>
+        <tr><td>13th</td><td><em>freedom of movement</em></td></tr>
+        <tr><td>17th</td><td><em>awaken</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_BEAST_BOND" level="3" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" level="5" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_AWAKEN" level="17" spellcasting="Ranger" prepared="true" />
+    </rules>
+  </element>
+
+  <append id="ID_WOTC_ARCHETYPE_RANGER_BEAST_MASTER">
+    <description>
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_BEAST_MASTER_BEAST_MASTER_MAGIC" />
+    </description>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_BEAST_MASTER_BEAST_MASTER_MAGIC" level="3"/>
+    </rules>
+  </append>
+
+  <element name="Beast of the Cave" type="Companion" source="laserllama's Ranger Archetypes" id="ID_LASERLL_CLASS_FEATURE_RANGER_PRIMAL_COMPANION_BEAST_OF_THE_CAVE">
+    <requirements>ID_WOTC_TCOE_ITEM_OCF_RANGER_PRIMAL_COMPANION</requirements>
+    <setters>
+      <set name="size">Medium</set>
+      <set name="type">Beast</set>
+      <set name="alignment">unaligned</set>
+      <set name="ac">13 + PB (natural armor)</set>
+      <set name="hp">5 + five times your ranger level (the beast has a number of Hit Dice [d8s] equal to your ranger level)</set>
+      <set name="speed">30 ft., burrow 40 ft.</set>
+      <set name="strength">14</set>
+      <set name="dexterity">14</set>
+      <set name="constitution">15</set>
+      <set name="intelligence">8</set>
+      <set name="wisdom">14</set>
+      <set name="charisma">11</set>
+      <set name="senses">darkvision 120 ft., passive Perception 12</set>
+      <set name="languages">understands the languages you speak</set>
+      <set name="challenge">—</set>
+      <set name="traits">ID_LASERLL_CLASS_FEATURE_RANGER_PRIMAL_COMPANION_BEAST_OF_THE_CAVE_PRIMAL_BOND,ID_LASERLL_CLASS_FEATURE_RANGER_PRIMAL_COMPANION_BEAST_OF_THE_CAVE_TREMORSENSE</set>
+      <set name="actions">ID_LASERLL_CLASS_FEATURE_RANGER_PRIMAL_COMPANION_BEAST_OF_THE_CAVE_CLAW</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="13" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:hp:max" value="5" bonus="base" />
+      <stat name="companion:hp:max" value="level:ranger" />
+      <stat name="companion:hp:max" value="level:ranger" />
+      <stat name="companion:hp:max" value="level:ranger" />
+      <stat name="companion:hp:max" value="level:ranger" />
+      <stat name="companion:hp:max" value="level:ranger" />
+      <stat name="companion:speed" value="40" bonus="base" />
+      <stat name="companion:speed:climb" value="40" bonus="base" />
+      <stat name="companion:proficiency" value="proficiency" bonus="base" />
+      <stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
+      <grant type="Companion Trait" id="ID_LASERLL_CLASS_FEATURE_RANGER_PRIMAL_COMPANION_BEAST_OF_THE_CAVE_PRIMAL_BOND" />
+    </rules>
+  </element>
+
+  <element name="Primal Bond" type="Companion Trait" source="laserllama's Ranger Archetypes" id="ID_LASERLL_CLASS_FEATURE_RANGER_PRIMAL_COMPANION_BEAST_OF_THE_CAVE_PRIMAL_BOND">
+    <description>
+      <p>You can add your proficiency bonus to any ability check or saving throw that the beast makes.</p>
+    </description>
+    <sheet display="false">
+      <description>You can add your proficiency bonus to any ability check or saving throw that the beast makes.</description>
+    </sheet>
+    <rules>
+      <stat name="companion:acrobatics:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:animal handling:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:arcana:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:athletics:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:deception:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:history:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:insight:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:intimidation:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:investigation:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:medicine:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:nature:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:performance:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:persuasion:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:religion:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:sleight of hand:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:survival:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:strength:save:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base" />
+      <stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Tremorsense" type="Companion Trait" source="laserllama's Ranger Archetypes" id="ID_LASERLL_CLASS_FEATURE_RANGER_PRIMAL_COMPANION_BEAST_OF_THE_CAVE_TREMORSENSE">
+    <description>
+      <p>The Beast knows the location of anything in contact with the ground within 30 feet.</p>
+    </description>
+    <sheet>
+      <description>The Beast knows the location of anything in contact with the ground within 30 feet.</description>
+    </sheet>
+  </element>
+
+  <element name="Claw" type="Companion Action" source="Tasha’s Cauldron of Everything" id="ID_LASERLL_CLASS_FEATURE_RANGER_PRIMAL_COMPANION_BEAST_OF_THE_CAVE_CLAW>">
+    <description>
+      <p><i>Melee Weapon Attack:</i> your spell attack modifier to hit, reach 5 ft., one target. <i>Hit:</i> 1d6 +2 +PB piercing or slashing damage (your choice).</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d6+2+PB piercing or slashing damage (your choice).</description>
+    </sheet>
+  </element>
+
+  <append id="ID_WOTC_ARCHETYPE_RANGER_HUNTER">
+    <description>
+      <div element="ID_LASERLL_ARCHETYPE_RANGER_HUNTER_HUNTER_MAGIC" />
+    </description>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_RANGER_HUNTER_HUNTER_MAGIC" level="3"/>
+    </rules>
+  </append>
+
+  <element name="Hunter Magic" type="Archetype Feature" source="laserllama's Ranger Archetypes" id="ID_LASERLL_ARCHETYPE_RANGER_HUNTER_HUNTER_MAGIC">
+    <description>
+      <p>You learn certain spells at the Ranger levels noted in the table below. These spells count as Ranger spells for you, but do not count against your total number of Ranger Spells Known.</p>
+      <table>
+        <thead>
+          <tr><td>Ranger Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>snare<sup>XGTE</sup></em></td></tr>
+        <tr><td>5th</td><td><em>pass without trace</em></td></tr>
+        <tr><td>9th</td><td><em>conjure barrage</em></td></tr>
+        <tr><td>13th</td><td><em>locate creature</em></td></tr>
+        <tr><td>17th</td><td><em>conjure volley</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_SNARE" level="3" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_LASERLL_SPELL_PASS_WITHOUT_TRACE" level="5" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_CONJURE_BARRAGE" level="9" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" level="13" spellcasting="Ranger" prepared="true" />
+      <grant type="Spell" id="ID_LASERLL_SPELL_CONJURE_VOLLEY" level="17" spellcasting="Ranger" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Crippling Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_LASERLL_ARCHETYPE_FEATURE_RANGER_HUNTERS_PREY_CRIPPLING_STRIKE">
+    <supports>Hunters Pray</supports>
+    <description>
+      <p>Once per turn when you hit a creature with a weapon attack, you can force it to make a Constitution saving throw against your Ranger Spell save DC. On a failure, its speed is reduced to 0 until the start of your next turn.</p>
+    </description>
+    <sheet>
+      <description>Once per turn when you hit a creature with a weapon attack, force it to make a Constitution saving throw against your Ranger spell DC; if it fails, its speed is reduced to 0 until your next turn.</description>
+    </sheet>
+  </element>
+
+  <element name="Stout Frame" type="Archetype Feature" source="Player’s Handbook" id="ID_LASERLL_ARCHETYPE_FEATURE_RANGER_DEFENSIVE_TACTICS_STOUT_FRAME">
+    <supports>Defensive Tactics</supports>
+    <description>
+      <p>As a reaction when you take bludgeoning, piercing, or slashing damage you reduce the damage by an amount equal to your Constitution modifier (minimum of 1).</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When you take bludgeoning, piercing, or slashing damage, reduce the damage by {{constitution:modifier}}.</description>
+    </sheet>
+  </element>
+
+  <element name="Rapid Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_LASERLL_ARCHETYPE_FEATURE_RANGER_MULTIATTACK_RAPID_STRIKE">
+    <supports>Multiattack</supports>
+    <description>
+      <p>If you take the Attack action on your turn and have advantage on an attack roll against against one of the targets, you can forgo the advantage for that roll to make one additional weapon attack against that target, as part of the same action. You can do so no more than once per turn.</p>
+    </description>
+    <sheet>
+      <description>Once per turn, if you take the Attack action on your turn with advantage on the attack roll against a target, you can forgo advantage on that roll to make an additional weapon attack on the target, as part of the same action.</description>
+    </sheet>
+  </element>
+
+
+</elements>

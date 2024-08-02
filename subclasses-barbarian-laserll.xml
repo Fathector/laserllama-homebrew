@@ -1,0 +1,1987 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+      <name></name>
+      <update version="2.1.1">
+          <file name="subclasses-barbarian-laserll.xml" url="tmp.xml" />
+      </update>
+  </info>
+
+  <element name="Path of the Brute" type="Archetype" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE">
+    <supports>Primal Path</supports>
+    <description>
+      <p>While most barbarians hail from the wild places of the world, brutes discovered their Rage in the underbelly of civilization. Their abilities stem from a combination of street smarts and pure grit. All those who follow this Path share one thing in common, they prefer to solve their problems with their fists.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_THE_WRONG_CROWD" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_UNARMED_AND_DANGEROUS" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_CONCUSSIVE_BLOWS" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_IRON_GRIP" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_BRUTISH_DETERMINATION" />
+    </description>
+    <sheet display="false">
+      <description>Brutes prefer to solve their problems with their fists.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_THE_WRONG_CROWD" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_UNARMED_AND_DANGEROUS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_CONCUSSIVE_BLOWS" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_CONCUSSIVE_BLOWS_MAGICAL" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_IRON_GRIP" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_BRUTISH_DETERMINATION" level="14"/>
+    </rules>
+  </element>
+
+  <element name="The Wrong Crowd" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_THE_WRONG_CROWD">
+    <description>
+      <p>You have a way of connecting with the less savory members of society. Once you spend a night carousing in a settlement, you have advantage on ability checks to gather information on the settlement, its culture, factions, and powerful figures.</p>
+    </description>
+    <sheet>
+      <description>Once you spend a night out in a settlement, you have advantage on ability checks to gather information about it.</description>
+    </sheet>
+  </element>
+
+  <element name="Unarmed and Dangerous" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_UNARMED_AND_DANGEROUS">
+    <description>
+      <p>You have honed your body into a deadly weapon. When you hit a creature with an unarmed strike, you deal bludgeoning damage equal to 1d4 + your Strength modifier instead of the normal damage of an unarmed strike. If you have two free hands, the d4 damage die becomes a d6.</p>
+      <p class="indent">You also gain the benefits below while you are Raging:</p>
+      <ul>
+        <li>When you take the Attack action on your turn and make only unarmed strike attacks, you can make an additional unarmed strike as part of that same Attack action.</li>
+        <li>Once per turn, when you hit with an unarmed strike, you can attempt to grapple the target as part of that same attack so long you have a free hand to grapple the target.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description level="3">When you hit a creature with an unarmed strike, deal 1d4 + {{strength:modifier}} (single-handed) or 1d6 + {{strength:modifier}} (both hands free) damage in place of the normal damage.&#13;&#10;While Raging, once per turn when you hit with an unarmed strike, you can grapple the target as part of the strike as long as you have a free hand.</description>
+      <description level="10">When you hit a creature with an unarmed strike, deal 1d4 + {{strength:modifier}} (single-handed) or 1d6 + {{strength:modifier}} (both hands free) damage in place of the normal damage.&#13;&#10;While Raging, this becomes 1d6 (single-handed) + {{strength:modifier}} or 1d8 + {{strength:modifier}} (both hands free), and once per turn when you hit with an unarmed strike, you can grapple the target as part of the strike as long as you have a free hand.</description>
+      <description level="14">When you hit a creature with an unarmed strike, deal 1d4 + {{strength:modifier}} (single-handed) or 1d6 + {{strength:modifier}} (both hands free) damage in place of the normal damage.&#13;&#10;While Raging, this becomes 1d8 (single-handed) + {{strength:modifier}} or 1d10 + {{strength:modifier}} (both hands free), and once per turn when you hit with an unarmed strike, you can grapple the target as part of the strike as long as you have a free hand.</description>
+    </sheet>
+  </element>
+
+  <element name="Concussive Blows" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_CONCUSSIVE_BLOWS">
+    <description>
+      <p>Your powerful strikes send your foes reeling. While Raging, your unarmed strikes count as magical for the purposes of overcoming resistance and immunity to nonmagical damage.</p>
+      <p class="indent">In addition, when you hit a creature with an unarmed strike, you can force it to make a Constitution saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a failure, it is stunned until the start of your next turn.</p>
+      <p class="indent">You can use this feature a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description usage="{{constitution:modifier}}/Long Rest">When you hit a creature with an unarmed strike, force it to make a Constitution saving throw (DC {{concussive blows:dc}}); if it fails, stun it until your next turn.</description>
+    </sheet>
+    <rules>
+      <stat name="concussive blows:dc" value="8" />
+      <stat name="concussive blows:dc" value="proficiency" />
+      <stat name="concussive blows:dc" value="strength:modifier" />
+    </rules>
+  </element>
+
+  <element name="Concussive Blows" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_CONCUSSIVE_BLOWS_MAGICAL">
+    <compendium display="false" />
+    <description>
+      <p>Your powerful strikes send your foes reeling. While Raging, your unarmed strikes count as magical for the purposes of overcoming resistance and immunity to nonmagical damage.</p>
+      <p class="indent">In addition, when you hit a creature with an unarmed strike, you can force it to make a Constitution saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a failure, it is stunned until the start of your next turn.</p>
+      <p class="indent">You can use this feature a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description>While Raging your unarmed strikes count as magical for overcoming resistances.</description>
+    </sheet>
+  </element>
+
+  <element name="Iron Grip" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_IRON_GRIP">
+    <description>
+      <p>Once you have a hold of something it is nearly impossible for it to escape your grasp. You gain the following benefits:</p>
+      <ul>
+        <li>The size of creatures that you can grapple increases by one size. When you grapple a creature more than one size larger than you, it can move as normal, but you move with it so long as there is an unoccupied space adjacent to it.</li>
+        <li>While you are dragging a grappled creature that is one size larger than you or smaller, your speed isnt reduced.</li>
+        <li>While Raging, the damage die for your unarmed strikes becomes 1d6, or 1d8 if you have two free hands.</li>
+        <li>You gain a climbing speed equal to your walking speed.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>You can grapple creatures of one size larger than normal. If grappling a creature more than one size larger than you, it can move as normal, and you are moved along with it as long as there is space. For creatures one size larger than you or smaller, your speed is not reduced.</description>
+    </sheet>
+    <rules>
+      <stat name="speed:fly" value="speed" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Brutish Determination" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BRUTE_BRUTISH_DETERMINATION">
+    <description>
+      <p>You can shrug off physical blows that would devastate lesser warriors. When you make a Strength, Dexterity, Constitution, or death saving throw, you roll a d4 and add it to your roll.</p>
+      <p class="indent">Should you roll a 20 or higher on a death saving throw, you instantly regain consciousness and stand up with 1 hit point.</p>
+      <p class="indent">Finally, while Raging the damage die for your unarmed strikes becomes 1d8, or 1d10 if you have two free hands.</p>
+    </description>
+    <sheet>
+      <description>Add 1d4 to Strength, Dexterity, Constitution, and death saving throws; if the result is 20 or higher on a death saving throw, instantly regain consciousness and stand up with 1 hit point.</description>
+    </sheet>
+  </element>
+
+  <element name="Path of the Champion" type="Archetype" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION">
+    <supports>Primal Path</supports>
+    <description>
+      <p>At the front of every great fighting force stands a Champion. These elite warriors are true masters of battle that stand as paragons of honorable combat and fair play. Often, they seek out the most powerful of their foes and look to swiftly end conflicts with honorable duels or athletic competitions.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_FIGHTING_STYLE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_MARTIAL_TRAINING" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_MIGHTY_BLOW" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_REMARKABLE_ATHLETE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_INVIGORATING_CRITICAL" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_SURVIVOR" />
+    </description>
+    <sheet display="false">
+      <description>Champions are true masters of battle that stand as paragons of honorable combat and fair play.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_FIGHTING_STYLE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_MARTIAL_TRAINING" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_MIGHTY_BLOW" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_REMARKABLE_ATHLETE" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_INVIGORATING_CRITICAL" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_SURVIVOR" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Fighting Style" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_FIGHTING_STYLE">
+    <description>
+      <p>Your enhance your Rage with martial technique. You learn a Fighting Style from the list below. You can't learn a Fighting Style more than once, even if you gain this feature again.</p>
+      <p>Whenever you gain a level in this class, you can switch your Fighting Style for another option from the list below.</p>
+    </description>
+    <sheet>
+      <description>You can switch your Fighting Style upon gaining a Barbarian level.</description>
+    </sheet>
+    <rules>
+      <select type="Class Feature" name="Fighting Style, Champion" supports="ID_LASERLL_CLASS_FEATURE_FIGHTINGSTYLE_DUAL_WIELDING|ID_LASERLL_CLASS_FEATURE_MAGUS_FIGHTING_STYLE_GREAT_WEAPON_FIGHTING|ID_LASERLL_CLASS_FEATURE_FIGHTINGSTYLE_IMPROVISED_FIGHTING|ID_LASERLL_CLASS_FEATURE_FIGHTINGSTYLE_STRONGBOW" />
+    </rules>
+  </element>
+
+  <element name="Martial Training" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_MARTIAL_TRAINING">
+    <description>
+      <p>Your great strength makes your attacks especially deadly. While you are Raging, your melee and thrown weapon attacks score a critical hit on a roll of 19 or 20 on the d20.</p>
+      <p>At 14th level, all of your melee and thrown weapon attacks score a critical hit on a roll of 18 through 20 on the d20.</p>
+    </description>
+    <sheet>
+      <description level="3">While Raging, your melee and thrown weapona ttacks score a critical hit on a 19 or 20.</description>
+      <description level="14">While Raging, your melee and thrown weapona ttacks score a critical hit on an 18 through 20.</description>
+    </sheet>
+  </element>
+
+  <element name="Mighty Blow" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_MIGHTY_BLOW">
+    <description>
+      <p>You can use your Rage to fuel a single mighty blow. When you hit a creature with an attack while you are Raging, you can instantly end your Rage to turn the attack into a critical hit.</p>
+      <p>Once you use this feature you must finish a short or long rest before you can use your Rage to fuel a blow like this again.</p>
+    </description>
+    <sheet>
+      <description usage="1/Short Rest">While Raging, when you hit a creature with an attack, end your Rage to turn it into a critical hit.</description>
+    </sheet>
+  </element>
+
+  <element name="Remarkable Athlete" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_REMARKABLE_ATHLETE">
+    <description>
+      <p>You can regularly perform feats of athleticism that would be impossible for most mortals. Whenever you make a Strength or Constitution check, or calculate the distance you can jump, you add your Rage Damage bonus to your result.</p>
+    </description>
+    <sheet>
+      <description>When making a Strength or Constitution check or calculating jump distance, add {{barbarian rage:damage}} to the total.</description>
+    </sheet>
+  </element>
+
+  <element name="Invigorating Critical" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_INVIGORATING_CRITICAL">
+    <description>
+      <p>The chaos and adrenaline of battle fuel your fighting spirit. Whenever you score a critical hit with a weapon attack, you instantly regain hit points hit points equal to your Rage Damage bonus + your Constitution modifier (minimum of 1).</p>
+    </description>
+    <sheet>
+      <description>When you score a critical hit with a weapon attack, regain {{barbarian rage:damage}} + {{constitution:modifier}} hit points.</description>
+    </sheet>
+  </element>
+
+  <element name="Survivor" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_CHAMPION_SURVIVOR">
+    <description>
+      <p>You are a near-perfect specimen of physical vigor. You gain temporary hit points equal to your Constitution modifier (minimum of 1 temporary hit point) at the start of each of your turns so long as you are not incapacitated.</p>
+    </description>
+    <sheet>
+      <description>At the start of each turn if not incapacitated, gain {{constitution:modifier}} temporary hit points.</description>
+    </sheet>
+  </element>
+
+  <element name="Path of the Deep" type="Archetype" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_DEEP">
+    <supports>Primal Path</supports>
+    <description>
+      <p>Encounters with the great and terrible things that dwell deep beneath the waves often irreparably shatter the minds of the weak willed. However, some who live through these traumatic experiences with eldritch horrors awaken an otherworldly Rage that is rarely experienced on the material plane.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_DEEP_GIFT_OF_THE_DEPTHS" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_DEEP_OTHERWORLDLY_GRASP" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_DEEP_REALITY_WARP" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_DEEP_ELDRITCH_TENTACLES" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_DEEP_THE_HORRORS_BELOW" />
+    </description>
+    <sheet display="false">
+      <description>Deep Barbarians have experienced eldritch horrors that have awakened an otherworldly Rage within them.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_DEEP_GIFT_OF_THE_DEPTHS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_DEEP_OTHERWORLDLY_GRASP" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_DEEP_REALITY_WARP" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_DEEP_ELDRITCH_TENTACLES" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_DEEP_THE_HORRORS_BELOW" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Gift of the Depths" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_DEEP_GIFT_OF_THE_DEPTHS">
+    <description>
+      <p>You have been irreparably changed by your exposure to the unknowable horrors of the deep. You gain a swimming speed equal to your walking speed, you can breathe both air and water, and you gain resistance to cold damage.</p>
+    </description>
+    <sheet>
+      <description>You can breathe both air and water.</description>
+    </sheet>
+    <rules>
+      <stat name="speed:swim" value="speed" bonus="base" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+    </rules>
+  </element>
+
+  <element name="Otherworldly Grasp" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_DEEP_OTHERWORLDLY_GRASP">
+    <description>
+      <p>Your eldritch influence manifests itself when you Rage. Whenever you Rage, you manifest one additional appendage, the appearance of which reflects the nature of the eldritch creature that infused you with strange power. Your eldritch appendage lasts for the duration of your Rage.</p>
+      <p class="indent">As a bonus action on your turn, you can cause this appendage to lash out, forcing one target you can see within 15 feet to make a Strength saving throw (Save DC = 8 + your proficiency bonus + your Constitution modifier). On a failure, it is pulled up to 15 feet toward you in a line.</p>
+      <p class="indent">If your target is one size larger than you or larger, it has advantage on its Strength saving throw to resist this feature.</p>
+    </description>
+    <sheet>
+      <description level="3">When you Rage, grow an additional appendage that lasts until you end your Rage. You can use a bonus action on your turn to lash out with this appendage and force a visible target within 15 ft. to make a Strength saving throw (dc {{otherworldly grasp:dc}}); if they fail, they are pulled 15 ft. towards you in a line. If they are a size or more larger than you, it has advantage on the saving throw.</description>
+      <description level="10">When you Rage, grow up to two additional appendages that last until you end your Rage. You can use one bonus action on your turn to lash out with both independently; within 15 ft., you can either grapple a target or force it to make a Strength saving throw (dc {{otherworldly grasp:dc}}) with each tentacle; if they fail, they are pulled 15 ft. towards you in a line. If it is a size or more larger than you, it has advantage on the saving throw. If both tentacles target the same target, it has disadvantage on the saving throw to resist being pulled or the ability check to avoid being grappled.</description>
+    </sheet>
+    <rules>
+      <stat name="otherworldly grasp:dc" value="8" />
+      <stat name="otherworldly grasp:dc" value="proficiency" />
+      <stat name="otherworldly grasp:dc" value="constitution:modifier" />
+    </rules>
+  </element>
+
+  <element name="Reality Warp" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_DEEP_REALITY_WARP">
+    <description>
+      <p>Your mind-altering experiences allow you to identify, and slip through, the cracks in reality. As an action, you can teleport along with any equipment you are wearing or carrying, to an unoccupied space you can see within 30 feet. This does not provoke opportunity attacks. Immediately before or after you do so, you can make one attack as part of the same action.</p>
+      <p class="indent">You can use this feature a number of times equal to your Constitution modifier (minimum of once), and you regain all of your expended uses when you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description usage="{{constitution:modifier}}/Long Rest" action="Action" level="6">Teleport to a visible unoccupied space within 30 ft. without triggering opportunity attacks; immediately before or after doing so, you can make one attack as part of the same action.</description>
+      <description usage="{{constitution:modifier}}/Long Rest" action="Action" level="14">Teleport to a visible unoccupied space within 30 ft. without triggering opportunity attacks; immediately before or after doing so, you can make one attack as part of the same action. Upon reappearing, force creatures that are not immune to the frightened condition within 10 ft. to make a Wisdom saving throw (DC {{horrors below:dc}}); if they fail, they take 2d8 psychic damage and are frightened of you until your next turn, or half that without being frightened on a success.</description>
+    </sheet>
+    <rules>
+      <stat name="horrors below:dc" value="8" />
+      <stat name="horrors below:dc" value="proficiency" />
+      <stat name="horrors below:dc" value="constitution:modifier" />
+    </rules>
+  </element>
+
+  <element name="Eldritch Tentacles" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_DEEP_ELDRITCH_TENTACLES">
+    <description>
+      <p>The otherworldly eldritch influence within your body truly reveals itself in your fury. When you Rage, you can manifest up to two eldritch appendages which last until the end of your Rage.</p>
+      <p class="indent">As a bonus action, you can cause both appendages to use Otherworldly Grasp, or try to grapple a creature you can see within 15 feet. Each appendage can target the same, or different, creatures. If they target the same creature, it the target disadvantage on its saving throw (Otherworldly Grasp) or ability check (grapple). Each appendage can use the same, or a different feature as part of the same bonus action.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="The Horrors Below" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_DEEP_THE_HORRORS_BELOW">
+    <description>
+      <p>When you travel through the cracks in reality, you can reveal the eldritch horrors beyond this world. When you use Reality Warp, you can force creatures within 10 feet of the point you appear to make a Wisdom saving throw (Save DC = 8 + your proficiency bonus + your Constitution modifier). On a failed save, creatures take 2d8 psychic damage and are frightened of you until the start of your next turn. On a successful save, they take half as much psychic damage and aren't frightened.</p>
+      <p class="indent">Creatures that are immune to the frightened condition are immune to the effects of this feature, including any damage.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Path of the Favored" type="Archetype" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED">
+    <supports>Primal Path</supports>
+    <description>
+      <p>For most Barbarians, their Rage is drawn from their lust for battle or a desire for revenge, but for others, their Rage is a gift. Warriors who walk the Path of the Favored receive their Rage from an outside source. Some are blessed by Fate to be mighty warriors, others are the scions of gods or archfey, and others are the descendants of legendary adventurers. These warriors use this favor to find success where all others fail.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_FAVORED_PRESENCE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_FATE_TOUCHED" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_GLORIOUS_CAUSE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_TIRELESS_HERO" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_WONDROUS_SUCCESS" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_STRENGTH_OVERWHELMING" />
+    </description>
+    <sheet display="false">
+      <description>Favored Barbarians use their favor to find success where all others fail.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_FAVORED_PRESENCE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_FATE_TOUCHED" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_GLORIOUS_CAUSE" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_TIRELESS_HERO" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_WONDROUS_SUCCESS" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_STRENGTH_OVERWHELMING" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Favored Presence" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_FAVORED_PRESENCE">
+    <description>
+      <p>There is something about your physicality that causes others view you more favorably. When you meet a creature for the first time, its starting attitude is one level higher than normal. For example, a hostile creature would view you indifferently, or a creature that would view you indifferently may consider you friendly. This feature doesn't effect those you travel with.</p>
+    </description>
+    <sheet>
+      <description>When you first meet a creature (other than your travel companions), its starting attitude is one level higher than normal.</description>
+    </sheet>
+  </element>
+
+  <element name="Fate-Touched" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_FATE_TOUCHED">
+    <description>
+      <p>An outside force has blessed you find success where others would fail. You gain a number of d6 Fate Dice equal to 1 + your Constitution modifier (minimum of 1). Whenever you miss with an attack roll, or you fail an ability check or saving throw you can expend one of these Fate Dice and add it to your roll, possibly turning a failure or miss into a success.</p>
+      <p class="indent">You regain all of your expended Fate Dice when you finish a long rest. Moreover, if you score a critical hit or roll a 20 on a d20 for a saving throw, you regain one expended Fate Die.</p>
+    </description>
+    <sheet>
+      <description usage="{{fate dice:count}}/Long Rest">You have {{fate dice:count}} d6 Fate Dice; when you miss an attack roll or fail an ability check or saving throw, expend a Fate Dice and add it to your roll. If you score a critical hit or roll a 20 on a d20 for a saving throw, regain an expended Die before a long rest.</description>
+    </sheet>
+    <rules>
+      <stat name="fate dice:count" value="1" />
+      <stat name="fate dice:count" value="constitution:modifier" />
+    </rules>
+  </element>
+
+  <element name="Glorious Cause" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_GLORIOUS_CAUSE">
+    <description>
+      <p>Your near-supernatural ability to succeed motivates all who follow you into battle. When you Rage, you can expend a Fate Die. You, and a number of creatures of your choice within 30 feet, up to your Constitution modifier (minimum of 1), gain temporary hit points equal to 1 + your Fate Die roll.</p>
+    </description>
+    <sheet>
+      <description>When you Rage, expend a Fate Die to grant you and {{constitution:modifier}} creatures of your choice within 30 ft. temporary hit points equal to 1 + your Fate Die roll.</description>
+    </sheet>
+  </element>
+
+  <element name="Tireless Hero" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_TIRELESS_HERO">
+    <description>
+      <p>When you enter a Rage or roll initiative and have no Fate Dice remaining, you regain one of your expended Fate Dice.</p>
+    </description>
+    <sheet>
+      <description>When you Rage or roll initiative without any Fate Die remaining, regain one.</description>
+    </sheet>
+  </element>
+
+  <element name="Wondrous Success" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_WONDROUS_SUCCESS">
+    <description>
+      <p>You have learned to channel the supernatural power that guides your favored path through life. When you make an ability check, attack roll, or saving throw, you can choose to use your Barbarian level in place of the d20 roll. You can use this feature after you roll, but before you know if your ability check, attack roll, or saving throw succeeds or fails.</p>
+      <p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+    </description>
+    <sheet>
+      <description usage="1/Short Rest">When you make an ability check, attack roll, or saving throw, you can substitute your roll with {{level:barbarian}}, after rolling but before knowing if it is a success.</description>
+    </sheet>
+  </element>
+
+  <element name="Strength Overwhelming" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_STRENGTH_OVERWHELMING">
+    <description>
+      <p>You have become more than mortal, and can perform feats of supernatural strength that rival heroes of legend. As an action you can expend one use of Rage to attempt a feat of godlike strength. For this action, the amount of weight you can move is equal to 50 times your Strength score.</p>
+      <p class="indent">Moreover, when you use this feature, you can expend Hit Dice to increase your strength even further. You can expend a total number of your Hit Dice, up to your Strength modifier, multiplying the amount of weight you can move as part of this action by 10 for each Hit Die you expend.</p>
+      <p class="indent">For each size category you are above Medium, the amount of weight you can move as part of this feature doubles again.</p>
+      <p class="indent">For example, a Medium sized Barbarian with 20 Strength could expend one Hit Die when they this feature, multiplying their 20 Strength by 60 (50 + 10), to lift up to 1,200 pounds. If they were Large, they would double this to 2,400 pounds.</p>
+    </description>
+    <sheet>
+      <description action="Action">Expend a Rage use to attempt a feat of strength and move an object up to 50 times your Strength score in lbs. You can expend up to {{strength:modifier}} Hit Dice to further increase the multiplier by 10 (additive) per expended Dice. Finally, for each size above Medium you are, double the total weight.</description>
+    </sheet>
+  </element>
+
+  <element name="Path of the Inferno" type="Archetype" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO">
+    <supports>Primal Path</supports>
+    <description>
+      <p>Across the lower planes, the eternal conflict between law and chaos rages. Devils against Demons, vying for control of the hells. Sometimes this conflict spills over into material plane and the corrupting influence of the Abyss infects the souls of mortals. Cultists and worshipers of Archdemons that seek out affliction with this power walk the Path of the Inferno.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_ABYSSAL_HIDE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_HELLISH_PRESENCE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_UNBRIDLED_FURY" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_CORRUPT_RESILIENCE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_FAVORED_STRENGTH_OVERWHELMING" />
+    </description>
+    <sheet display="false">
+      <description>Barbarians of the Inferno are afflicted with power from the lower planes.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_ABYSSAL_HIDE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_HELLISH_PRESENCE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_UNBRIDLED_FURY" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_CORRUPT_RESILIENCE" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_CHAOS_OVERWHELMING" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Abyssal Hide" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_ABYSSAL_HIDE">
+    <description>
+      <p>The corruption of the Abyss overtakes you when you Rage, causing your physical features to become demonic in nature. While Raging, you gain the following additional benefits:</p>
+      <ul>
+        <li>You can take the Dash action as a bonus action, so long as you use this movement to move toward a hostile creature.</li>
+        <li>When you make a Reckless Attack, you gain temporary hit points equal to your Constitution modifier.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>When you are Raging, you can Dash as a bonus action towards a hostile creature, and your Reckless Attacks grant you {{constitution:modifier}} temporary hit points.</description>
+    </sheet>
+  </element>
+
+  <element name="Hellish Presence" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_HELLISH_PRESENCE">
+    <description>
+      <p>The chaotic power of the Abyss empowers your force of personality. You gain proficiency in Intimidation, and when you make a Strength (Intimidation) or Charisma (Intimidation) check you can treat a d20 roll of 7 or lower as an 8.</p>
+      <p class="indent">In addition, you learn to speak Abyssal, the blasphemous language of Demons and the Abyss.</p>
+    </description>
+    <sheet>
+      <description>When you make a Strength (Intimidation) or Charisma (Intimidation) check, treat rolls of 7 or lower as 8s.</description>
+    </sheet>
+    <rules>
+      <grant type="Language" id="ID_LANGUAGE_ABYSSAL" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+    </rules>
+  </element>
+
+  <element name="Unbridled Fury" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_UNBRIDLED_FURY">
+    <description>
+      <p>The chaos of the Abyss infects your Rage. When a creature you can see hits you with a melee attack while you are Raging, you can use your reaction to make one melee attack against that creature. You can make this attack as a Reckless Attack.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">While Raging, when a visible creature hits you with a melee attack, make one melee attack against it; it can be a Reckless Attack.</description>
+    </sheet>
+  </element>
+
+  <element name="Corrupt Resilience" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_CORRUPT_RESILIENCE">
+    <description>
+      <p>The power of the Abyss increases your resilience. You gain resistance to fire and poison damage.</p>
+      <p class="indent">Moreover, when you are forced to make a saving throw to resist being charmed or frightened, you gain a bonus to your roll equal to your Constitution modifier (minimum of +1).</p>
+    </description>
+    <sheet>
+      <description>+{{constitution:modifier}} to saving throws against being charmed or frightened.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+    </rules>
+  </element>
+
+  <element name="Chaos Overwhelming" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_CHAOS_OVERWHELMING">
+    <description>
+      <p>You can draw out the full power of the Abyssal influence that fuels you. When you Rage, you gain one of the abilities below for the duration of that Rage. As a bonus action while Raging, you can expend a use of Rage to switch to another feature:</p>
+      <p class="indent"><b><em>Accursed Limbs.</em></b> Your limbs grow unnaturally muscular and lengthen. Your walking speed increases by 10 feet, and the range of your melee attacks and reach increase by 5 feet.</p>
+      <p class="indent"><b><em>Defiled Hide.</em></b> Your skin becomes blighted and covered in hair, boils, or oily scales. You are immune to bludgeoning, piercing, and slashing damage from nonmagical weapons. Attacks from silvered weapons ignore this immunity.</p>
+      <p class="indent"><b><em>Vile Flight.</em></b> You sprout leathery demonic wings from your back which burst through any clothing you are wearing. You gain a flying speed equal to your walking speed.</p>
+    </description>
+    <sheet>
+      <description>Gain Accursed Limbs, Defiled Hide, or Vile Flight when you Rage; you can expend a use of Rage as a Bonus Action to switch features.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_CHAOS_OVERWHELMING_ACCURSED_LIMBS" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_CHAOS_OVERWHELMING_DEFILED_HIDE" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_CHAOS_OVERWHELMING_VILE_FLIGHT" />
+    </rules>
+  </element>
+
+  <element name="Accursed Limbs" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_CHAOS_OVERWHELMING_ACCURSED_LIMBS">
+    <description>
+      <p>Your limbs grow unnaturally muscular and lengthen. Your walking speed increases by 10 feet, and the range of your melee attacks and reach increase by 5 feet.</p>
+    </description>
+    <sheet>
+      <description>Your walking speed increases by 10 ft. and your melee attack range increases by 5 ft.</description>
+    </sheet>
+  </element>
+
+  <element name="Defiled Hide" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_CHAOS_OVERWHELMING_DEFILED_HIDE">
+    <description>
+      <p>Your skin becomes blighted and covered in hair, boils, or oily scales. You are immune to bludgeoning, piercing, and slashing damage from nonmagical weapons. Attacks from silvered weapons ignore this immunity.</p>
+    </description>
+    <sheet>
+      <description>You are immune to nonmagical bludgeoning, piercing, and slashing damage from non-silvered weapons.</description>
+    </sheet>
+  </element>
+
+  <element name="Vile Flight" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_INFERNO_CHAOS_OVERWHELMING_VILE_FLIGHT">
+    <description>
+      <p>You sprout leathery demonic wings from your back which burst through any clothing you are wearing. You gain a flying speed equal to your walking speed.</p>
+    </description>
+    <sheet>
+      <description>You gain a flying speed equal to your walking speed.</description>
+    </sheet>
+  </element>
+
+  <element name="Path of the Lycan" type="Archetype" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_LYCAN">
+    <supports>Primal Path</supports>
+    <description>
+      <p>Lycanthropy is an ancient curse that changes those afflicted into mindless beasts with a wild hunger for flesh. However, there are some who purposefully contract this dreaded curse. Willing to give themselves over so that they may use this feral power to rid the world of other lycanthropes.</p>
+      <p class="indent">The barbarians who walk this Path often gain their power from an aging mentor who seeks an apprentice to take up the mantle of the hunt for the monsters cursed with lycanthropy.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_LYCAN_ANIMAL_FORM" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_LYCAN_HYBRID_FORM" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_LYCAN_SAVAGE_INSTINCT" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_LYCAN_LYCAN_WARRIOR" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_LYCAN_HOWL_OF_PRIMAL_FURY" />
+    </description>
+    <sheet display="false">
+      <description>Lycan Barbarians use their feral power to rid the world of other lycanthropes.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_LYCAN_ANIMAL_FORM" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_LYCAN_HYBRID_FORM" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_LYCAN_SAVAGE_INSTINCT" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_LYCAN_LYCAN_WARRIOR" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_LYCAN_HOWL_OF_PRIMAL_FURY" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Animal Form" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_LYCAN_ANIMAL_FORM">
+    <description>
+      <p>You have learned to control your lycanthropy and can shift your physical form at will. As an action on your turn, you can transform into the Animal Form of your lycanthropy, much like a Druid takes the shapes of beasts with Wild Shape.</p>
+      <p class="indent">Choose a beast of CR 1 or lower that best represents the animal your lycanthropic curse is based on. Common beasts include boars, brown bears, dire wolves, tigers, and rats. This choice is permanent as it reflects the unchanging nature of your curse, and cannot be changed short of a wish spell.</p>
+      <p class="indent">When you transform into your Animal Form, you follow all the rules of the Wild Shape feature from the Druid class, which can be found in Chapter 3 of the Player's Handbook.</p>
+      <p class="indent">You can remain in your Animal form for up to 1 hour. Your transformation ends early if you drop to 0 hit points, or you use a bonus action to revert back to your normal form.</p>
+      <p class="indent">Once you shift into your Animal Form, you must finish a short or long rest before you can do so again. If you have no uses left, you can expend a use of Rage to transform again.</p>
+    </description>
+    <sheet>
+      <description action="Action" usage="1/Short Rest" level="3">Transform into your Animal Form (prechosen CR 1 or lower beast) for up to 1 hr., or until you drop to 0 hit points or revert with a bonus action. You can expend a Rage use to transform again prior to a rest.</description>
+      <description action="Action" usage="1/Short Rest" level="6">Transform into your Animal Form (prechosen CR 1 or lower beast) for up to 1 hr., or until you drop to 0 hit points or revert with a bonus action. Your natural weapon attacks count as magical for overcoming resistances. You can expend a Rage use to transform again prior to a rest.</description>
+      <description action="Action" usage="1/Short Rest" level="10">Transform into your Animal Form (prechosen CR 1 or lower beast) for up to 1 hr., or until you drop to 0 hit points or revert with a bonus action. Your natural weapon attacks count as magical for overcoming resistances and deal 1d8 damage. You can choose to grow 1 size larger, you have +5 ft. reach on melee attacks and +10 ft. walking speed, and you regain +{{constitution:modifier}} hit points if you have less than half your health at the start of your turn. You can expend a Rage use to transform again prior to a rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Hybrid Form" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_LYCAN_HYBRID_FORM">
+    <description>
+      <p>Your Rage draws out the power of your inner beast. When you Rage, you can transform into a Hybrid Form, a fusion between beast and humanoid. While in your Hybrid Form, you gain the benefits below for the duration of your Rage:</p>
+      <ul>
+        <li>You gain a +1 bonus to your Armor Class.</li>
+        <li>Your fingers and teeth become claws and fangs that count as simple weapons with the light property. On hit, they deal 1d6 slashing (claws) or piercing (fangs) damage.</li>
+        <li>Your walking speed increases by 10 feet.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description level="3">You can transform into Hybrid Form when you Rage, gaining +1 AC, +10 walking speed, and claws and fangs that count as light simple weapons and deal 1d6 slashing or piercing damage respectively.</description>
+      <description level="6">You can transform into Hybrid Form when you Rage, gaining +1 AC, +10 walking speed, and claws and fangs that count as light simple weapons and deal 1d6 slashing or piercing damage respectively. Your natural weapon attacks count as magical for overcoming resistances. You can expend a Rage use to transform again prior to a rest.</description>
+      <description level="10">You can transform into Hybrid Form when you Rage, gaining +1 AC, +10 walking speed, and claws and fangs that count as light simple weapons and deal 1d6 slashing or piercing damage respectively. Your natural weapon attacks count as magical for overcoming resistances and deal 1d8 damage. You can choose to grow 1 size larger, you have +5 ft. reach on melee attacks and +10 ft. walking speed, and you regain +{{constitution:modifier}} hit points if you have less than half your health at the start of your turn. You can expend a Rage use to transform again prior to a rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Savage Instinct" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_LYCAN_SAVAGE_INSTINCT">
+    <description>
+      <p>The curse that flows in your veins empowers your senses. When you make a Wisdom (Perception) check that relies on your hearing, sight, or smell you gain a bonus to your roll equal to your Constitution modifier (minimum of +1).</p>
+      <p class="indent">Also, your natural weapon attacks in both your Animal and Hybrid Forms count as magical for the sake of overcoming resistance and immunity to non-magical attacks and damage.</p>
+    </description>
+    <sheet>
+      <description>+{{constitution:modifier}} to Wisdom (Perception) checks that relies on hearing, sight, or smell.</description>
+    </sheet>
+  </element>
+
+  <element name="Lycan Warrior" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_LYCAN_LYCAN_WARRIOR">
+    <description>
+      <p>You draw on the full power of your curse. When you shift into Animal or Hybrid Form, you gain these additional benefits:</p>
+      <ul>
+        <li>You can choose to grow by one size category.</li>
+        <li>The reach of your melee attacks increases by 5 feet.</li>
+        <li>Your walking speed increases by an additional 10 feet.</li>
+        <li>The damage of your natural weapons becomes 1d8.</li>
+        <li>If you have less than half of your hit points at the start of your turn, you instantly regain hit points equal to your Constitution modifier (minimum of 1 hit point).</li>
+      </ul>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Howl of Primal Fury" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_LYCAN_HOWL_OF_PRIMAL_FURY">
+    <description>
+      <p>When you expend a use of Rage, you can let forth a blood-curdling howl. Creatures of your choice that can hear you within 30 feet must succeed on a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier) or be frightened of you for up to 1 minute. They can repeat this saving throw at the end of each turn, ending the effect on a success.</p>
+      <p class="indent">Any creature that succeeds on its saving throw against this effect are immune to this feature for the next 24 hours.</p>
+    </description>
+    <sheet>
+      <description>When you expend a Rague use, force creatures of your choice to make a Wisdom saving throw (DC {{howl of primal fury:dc}}); if they fail, they are frightened of you for 1 minute. They repeat the saving throw at the end of each turn, ending the effect on a success. Creatures that succeed on the saving throw are immune for the next 24 hrs.</description>
+    </sheet>
+    <rules>
+      <stat name="howl of primal fury:dc" value="8" />
+      <stat name="howl of primal fury:dc" value="proficiency" />
+      <stat name="howl of primal fury:dc" value="constitution:modifier" />
+    </rules>
+  </element>
+
+  <element name="Path of the Mutant" type="Archetype" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTANT">
+    <supports>Primal Path</supports>
+    <description>
+      <p>Barbarians that follow this Primal Path make use of alchemy and dark transmutation magic to mutate their physical form. The savage fury of their Rage triggers massive physiological changes thanks to reagents in their blood. These mutants are often on a quest to evolve their bodies into the ultimate form.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTANT_ABERRANT_ALCHEMY" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTANT_ENDURING_MUTATION" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTANT_NOXIOUS_STRIKE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTANT_RAPID_MUTATION" />
+    </description>
+    <sheet display="false">
+      <description>Mutant Barbarians make use of alchemy and dark transmutation magic to mutate their physical form.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTANT_ABERRANT_ALCHEMY" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTANT_ENDURING_MUTATION" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTANT_NOXIOUS_STRIKE" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTANT_RAPID_MUTATION" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Aberrant Alchemy" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTANT_ABERRANT_ALCHEMY">
+    <description>
+      <p>You have a deep knowledge of sinister side of alchemy. You gain proficiency in Nature and with alchemist's supplies.</p>
+      <p class="indent">This knowledge allows you to create mutagens which, when combined with your Rage, radically alter your body.</p>
+      <p class="indent"><b><em>Mutations Known.</em></b> You know three Mutations of your choice from the list at the end of this subclass description.</p>
+      <p class="indent">During a long rest, so long as you have access to your alchemist's supplies, you can spend 1 hour to replace one Mutation you know with another Mutation of your choice.</p>
+      <p class="indent">You learn two additional Mutations of your choice when you reach 6th level, 10th level, and a final two at 14th level.</p>
+      <p class="indent"><b><em>Manifest Mutations.</em></b>When you Rage, you manifest a number of Mutations equal to your Constitution modifier. These Mutations last until the end of your current Rage.</p>
+    </description>
+    <sheet>
+      <description>When you Rage, manifest {{constitution:modifier}} Mutations from the ones you know that last until your Rage ends.&#13;&#10;You can replace one Mutation you know with anothe during a long rest with your alchemist's supplies.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+      <select type="Archetype Feature" name="Mutation (3rd Level)" supports="Aberrant Alchemy Mutation" number="3" />
+      <select type="Archetype Feature" name="Mutation (6th Level)" supports="Aberrant Alchemy Mutation" number="2" level="6" />
+      <select type="Archetype Feature" name="Mutation (10th Level)" supports="Aberrant Alchemy Mutation" number="2" level="10"  />
+      <select type="Archetype Feature" name="Mutation (14th Level)" supports="Aberrant Alchemy Mutation" number="2" level="14"  />
+    </rules>
+  </element>
+
+  <element name="Aberrant Sight" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTATION_ABERRANT_SIGHT">
+    <supports>Aberrant Alchemy Mutation</supports>
+    <description>
+      <p>You sprout unnatural eye stalks or manifest additional eyes. You gain darkvision out to a 60-foot radius. Should you have darkvision already, its range increases by 60 feet.</p>
+      <p class="indent">In addition, you have advantage on any Wisdom (Perception) checks you make that rely on your sense of sight.</p>
+    </description>
+    <sheet>
+      <description>Gain 60-ft. darkvision, or +60 ft. if you already have it.&#13;&#10;You have advantage on Wisdom (Perception) checks that rely on sight.</description>
+    </sheet>
+  </element>
+
+  <element name="Alchemical Resistance" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTATION_ALCHEMICAL_RESISTANCE">
+    <supports>Aberrant Alchemy Mutation</supports>
+    <description>
+      <p>Your experiments grant you elemental resistance. When you manifest this Mutation choose acid, cold, fire, poison, or lightning, and you gain resistance to that damage type.</p>
+    </description>
+    <sheet>
+      <description>You resist one of acid, cold, fire, poison, or lightning.</description>
+    </sheet>
+  </element>
+
+  <element name="Aquatic Adaptation" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTATION_AQUATIC_ADAPTATION">
+    <supports>Aberrant Alchemy Mutation</supports>
+    <description>
+      <p>You sprout unnatural gills or you skin becomes permeable and amphibious. You gain a swimming speed equal to your walking speed, and you can breathe both air and water.</p>
+    </description>
+    <sheet>
+      <description>You gain swimming speed equal to your walking speed and can breathe both air and water.</description>
+    </sheet>
+  </element>
+
+  <element name="Deviant Glide" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTATION_DEVIANT_GLIDE">
+    <supports>Aberrant Alchemy Mutation</supports>
+    <description>
+      <p>You grow bat or fish-like skin flaps that you use to glide. When you fall and are not incapacitated, you can subtract 100 feet from the fall when calculating fall damage, and you can move two feet horizontally for every foot you fall.</p>
+    </description>
+    <sheet>
+      <description>When you fall or are incapacitated, subtract 100 ft. from the fall damage calculation, and you can move 2 ft. for every foot descended.</description>
+    </sheet>
+  </element>
+
+  <element name="Enhanced Movement" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTATION_ENHANCED_MOVEMENT">
+    <supports>Aberrant Alchemy Mutation</supports>
+    <description>
+      <p>Your legs grow unnaturally thick or powerful. Your walking speed increases by a number of feet equal to 5 times your Constitution modifier (minimum of 5 feet), and you can add your Constitution modifier (minimum of +1) to the distance of any long jump or high jump you make.</p>
+    </description>
+    <sheet>
+      <description>Your walking speed increases by {{enhanced movement distance}} ft., and you can add {{constitution:modifier}} to your long jump and high jump distances.</description>
+    </sheet>
+    <rules>
+      <stat name="enhanced movement distance" value="constitution:modifier" />
+      <stat name="enhanced movement distance" value="constitution:modifier" />
+      <stat name="enhanced movement distance" value="constitution:modifier" />
+      <stat name="enhanced movement distance" value="constitution:modifier" />
+      <stat name="enhanced movement distance" value="constitution:modifier" />
+    </rules>
+  </element>
+
+  <element name="Oozing Form" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTATION_OOZING_FORM">
+    <supports>Aberrant Alchemy Mutation</supports>
+    <description>
+      <p>Your body becomes slimy and pliable. As a bonus action, you can automatically escape a grapple or nonmagical restraints. Also, your body, along with any equipment you are wearing or carrying, can squeeze through spaces as narrow as 1 inch.</p>
+    </description>
+    <sheet>
+      <description>You can use a bonus action to automatically escape a grapple or nonmagical restraints.&#13;&#10;Your body and any equipment on you can squeeze through 1-inch gaps.</description>
+    </sheet>
+  </element>
+
+  <element name="Synthetic Carapace" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTATION_SYNTHETIC_CARAPACE">
+    <supports>Aberrant Alchemy Mutation</supports>
+    <description>
+      <p>Your skin hardens resembling that of an terrible insectoid or reptilian creature. You gain a bonus to your Armor Class equal to half your Constitution modifier (rounded down).</p>
+    </description>
+    <sheet>
+      <description>Add 1/2 your Constitution modifier ({{constitution:modifier}}) rounded down to your AC.</description>
+    </sheet>
+  </element>
+
+  <element name="Unnatural Physicality" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTATION_UNNATURAL_PHYSICALITY">
+    <supports>Aberrant Alchemy Mutation</supports>
+    <description>
+      <p>Your muscles and veins engorge with toxic chemicals that grant you unnatural power and maneuverability. You gain a bonus to any Strength (Athletics) and Dexterity (Acrobatics) checks you make equal to your Constitution modifier.</p>
+    </description>
+    <sheet>
+      <description>+{{constitution:modifier}} to Strength (Athletics) and Dexterity (Acrobatics) checks.</description>
+    </sheet>
+  </element>
+
+  <element name="Unnatural Physicality" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTATION_UNNATURAL_PHYSICALITY">
+    <supports>Aberrant Alchemy Mutation</supports>
+    <requirements>[level:barbarian:6]</requirements>
+    <description>
+      <p>Your body can expel a corrosive acid at your foes. When a creature you can see within 30 feet hits you with an attack, you can use your reaction to deal acid damage to your attacker equal to 1d8 + your Constitution modifier.</p>
+    </description>
+    <sheet>
+      <description>When a creature you can see within 30 ft. hits you with an attack, use a reaction to deal 1d8 +{{constitution:modifier}} acid damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Inoculated Vigor" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTATION_INOCULATED_VIGOR">
+    <supports>Aberrant Alchemy Mutation</supports>
+    <requirements>[level:barbarian:6]</requirements>
+    <description>
+      <p>Your experiments have hardened your body against toxins. You gain resistance to acid and poison damage, and you have advantage on saving throws to resist the poisoned condition.</p>
+    </description>
+    <sheet>
+      <description>You resist acid and poison damage, and have advantage on saving throws against the poisoned condition.</description>
+    </sheet>
+  </element>
+
+  <element name="Toxic Vitality" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTATION_TOXIC_VITALITY">
+    <supports>Aberrant Alchemy Mutation</supports>
+    <requirements>[level:barbarian:6]</requirements>
+    <description>
+      <p>Your body mends itself as you fight. At the start of your turns while Raging, you gain temporary hit points equal to your Constitution modifier (minimum of 1 temporary hit point).</p>
+    </description>
+    <sheet>
+      <description>At the start of your turn while Raging, gain {{constitution:modifier}} temporary hit points.</description>
+    </sheet>
+  </element>
+
+  <element name="Viscous Grip" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTATION_VISCOUS_GRIP">
+    <supports>Aberrant Alchemy Mutation</supports>
+    <requirements>[level:barbarian:6]</requirements>
+    <description>
+      <p>Your hands and feet secrete a sticky substance. You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces without making an ability check.</p>
+    </description>
+    <sheet>
+      <description>Gain a climbing speed equal to your walking speed, and you can climb difficult surfaces without an ability check.</description>
+    </sheet>
+  </element>
+
+  <element name="Acidic Bile" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTATION_ACIDIC_BILE">
+    <supports>Aberrant Alchemy Mutation</supports>
+    <requirements>[level:barbarian:10]</requirements>
+    <description>
+      <p>You can spew a corrosive substance forth from your mouth. You learn the acid splash cantrip, and Constitution is your spellcasting modifier for it. You can cast this cantrip while Raging, and when you do, it deals additional damage equal to your Constitution modifier (minimum of +1).</p>
+    </description>
+    <sheet>
+      <description>Gain the acid splash cantrip, using Constitution as your spellcasting ability. You can cast this while Raging, and it deals an additional {{constitution:modifier}} damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Grappling Appendages" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTATION_GRAPPLING_APPENDAGES">
+    <supports>Aberrant Alchemy Mutation</supports>
+    <requirements>[level:barbarian:10]</requirements>
+    <description>
+      <p>You grow two appendages alongside your arms that resemble tentacles. They are natural weapons, which deal bludgeoning damage equal to your 1d6 + your Strength modifier on hit. If you hit a creature with a melee appendage attack, you can attempt to grapple it as a bonus action on that same turn. The appendages aren't dexterous enough to use weapons or specialized tools.</p>
+    </description>
+    <sheet>
+      <description>Grow two appendages that count as natural weapons and deal 1d6 + {{strength:modifier}} bludgeoning damage on hit. If you hit a creature with a melee appendage attack, you can try to grapple it as a bonus action that turn. the appendages cannot use weapons or specializezd tools.</description>
+    </sheet>
+  </element>
+
+  <element name="Perverted Flight" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTATION_PERVERTED_FLIGHT">
+    <supports>Aberrant Alchemy Mutation</supports>
+    <requirements>[level:barbarian:14]</requirements>
+    <description>
+      <p>You sprout leathery or insectoid wings. You gain a flying speed equal to your walking speed.</p>
+    </description>
+    <sheet>
+      <description>Gain a flying speed equal to your walking speed.</description>
+    </sheet>
+  </element>
+
+  <element name="Enduring Mutation" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTANT_ENDURING_MUTATION">
+    <description>
+      <p>Your advances in the dark alchemy of mutation have evolved. At the end of each long rest, choose one Mutation you know. You gain the benefits of that Mutation, even when you aren't Raging, until the end of your next long rest.</p>
+      <p class="indent">However, when you enter a Rage, your Enduring Mutation counts against the total number of Mutations you can manifest as part of that Rage.</p>
+    </description>
+    <sheet>
+      <description usage="1/Long Rest">At the end of a long rest, choose a known Mutation and gain its benefits even outside of Rage; it counts towards your maximum number of manifested Mutations when you do Rage.</description>
+    </sheet>
+  </element>
+
+  <element name="Noxious Strike" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTANT_NOXIOUS_STRIKE">
+    <description>
+      <p>You can weaponize the toxins in your blood to infect your foes. When you hit a creature with a melee attack, you can force it to make a Constitution saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). On a failed save, roll a d6, and the creature immediately suffers the corresponding condition from the table below:</p>
+      <table>
+        <thead>
+          <tr><td>d6</td><td>Effect</td><td>d6</td><td>Effect</td></tr>
+        </thead>
+        <tr><td>1</td><td>blinded</td><td>4</td><td>frightened</td></tr>
+        <tr><td>2</td><td>charmed</td><td>5</td><td>paralyzed</td></tr>
+        <tr><td>3</td><td>deafened</td><td>6</td><td>poisoned</td></tr>
+      </table>
+      <p class="indent">This effect lasts for 1 minute. The creature can repeat this saving throw at the end of each of its turns, ending the effect on a success. A creature that succeeds on its saving throw is immune to the effect of this ability for the next 24 hours.</p>
+      <p class="indent">You can use this feature a number of times equal to your Constitution modifier (minimum of once), and you regain all of your expended uses when you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description usage="{{constitution:modifier}}/Long Rest">When you hit a creature with a melee attack, force it to make a Constitution saving throw (DC {{noxious strike:c}}); if it fails, roll a d6 and afflict it with the corresponding condition (see table). The effect lasts for 1 minute, and the creature repeats the saving throw at the end of each of its turns, ending it on a success. Once a creature succeeds it is immune for 24 hrs.</description>
+    </sheet>
+    <rules>
+      <stat name="noxious strike:dc" value="8" />
+      <stat name="noxious strike:dc" value="proficiency" />
+      <stat name="noxious strike:dc" value="constitution:modifier" />
+    </rules>
+  </element>
+
+  <element name="Rapid Mutation" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_MUTANT_RAPID_MUTATION">
+    <description>
+      <p>You have gained mastery over your body's mutability. While Raging, you can use a bonus action to end one Mutation and replace it with another Mutation that you know.</p>
+      <p class="indent">You can use this ability a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description usage="{{constitution:modifier}}/Long Rest">While Raging, as a bonus action you can immediately replace a manifested Mutation with another you know.</description>
+    </sheet>
+  </element>
+
+  <element name="Path of the Packleader" type="Archetype" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_PACKLEADER">
+    <supports>Primal Path</supports>
+    <description>
+      <p>Wild warriors all, Barbarians fight with a primal ferocity not seen in civilized soldiers. For some, this savage spirit calls out to the beasts of the wild, and a bond is forged. Known as Packleaders, these primal warriors fight side by side with a Savage Companion, hunting their foes in deadly tandem.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_PACKLEADER_BEAST_WHISPERER" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_PACKLEADER_SAVAGE_COMPANION" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_PACKLEADER_WILD_FURY" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_PACKLEADER_PACK_TACTICS" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_PACKLEADER_PRIMAL_HOWL" />
+      <div element="ID_LASERLL_INFORMATION_BARBARIAN_SAVAGE_COMPANION" />
+    </description>
+    <sheet display="false">
+      <description>Packleader Barbarians fight side by side with a Savage Companion, hunting their foes in deadly tandem.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_PACKLEADER_BEAST_WHISPERER" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_PACKLEADER_SAVAGE_COMPANION" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_PACKLEADER_WILD_FURY" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_PACKLEADER_PACK_TACTICS" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_PACKLEADER_PRIMAL_HOWL" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Beast Whisperer" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_PACKLEADER_BEAST_WHISPERER">
+    <description>
+      <p>Your wild spirit grants you a special connection with wild beasts. You gain proficiency in Animal Handling, and when you make a Wisdom (Animal Handling) check related to wild animals, you add double you proficiency bonus to your roll.</p>
+    </description>
+    <sheet>
+      <description>+{{proficiency}} to Wisdom (Animal Handling) checks.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+    </rules>
+  </element>
+
+  <element name="Savage Companion" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_PACKLEADER_SAVAGE_COMPANION">
+    <description>
+      <p>You have forged a primal bond with a wild beast known as a Savage Companion. You determine its appearance, but this choice has no effect on its game statistics. Common Savage Companions are wolves, boars, bears, wildcats, and hyenas. Your Companion is friendly to you and your allies, and obeys your commands. It uses the Savage Companion stat block, which uses your proficiency bonus (PB) in several places.</p>
+      <p class="indent">In combat, your Savage Companion acts during your turn. It can move and use its reaction on its own, but it only takes the Dodge action unless you use a bonus action to command it to take an action from its stat block, or another action.</p>
+      <p class="indent">When you take the Attack action, you can command your Companion to take the Attack action in place of one attack. If you are incapacitated, your Companion acts on its own.</p>
+      <p class="indent">If your Companion is reduced to 0 hit points, it makes death saving throws like a player character would. If your Savage Companion dies, you can spend time during a long rest to seek out a worthy beast from the surrounding wilds to serve as your Savage Companion, so long as such a beast exists. Once you find and bond with such a wild beast, it uses the Savage Companion stat block.</p>
+    </description>
+    <sheet>
+      <description>Your Savage Companion acts during your turn and can be commanded with a bonus action; if not commanded, it will only Dodge. It makes death saving throws if reduced to 0 hit points, and if it dies, you can spend time in a long rest to tame a new Companion.</description>
+    </sheet>
+    <rules>
+      <select type="Companion" supports="Beast,Medium" default="ID_LASERLL_COMPANION_BARBARIAN_SAVAGE_COMPANION" />
+    </rules>
+  </element>
+
+  <element name="Savage Companion" type="Companion" source="laserllama's Primal Paths" id="ID_LASERLL_COMPANION_BARBARIAN_SAVAGE_COMPANION">
+    <description>
+      <p>You have forged a primal bond with a wild beast known as a Savage Companion.</p>
+    </description>
+    <setters>
+      <set name="size">Medium</set>
+      <set name="type">Beast</set>
+      <set name="alignment">Neutral</set>
+      <set name="challenge">0</set>
+      <set name="ac">13 + PB (natural armor)</set>
+      <set name="hp">5 + five times your Barbarian level</set>
+      <set name="speed">40 ft., swim 20 ft.</set>
+      <set name="strength">14</set>
+      <set name="dexterity">14</set>
+      <set name="constitution">15</set>
+      <set name="intelligence">8</set>
+      <set name="wisdom">14</set>
+      <set name="charisma">11</set>
+      <set name="senses">passive Perception 12</set>
+      <set name="languages">understands the languages you speak</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_BARBARIAN_SAVAGE_COMPANION_HIT_DICE,ID_LASERLL_COMPANION_TRAIT_BARBARIAN_SAVAGE_COMPANION_PRIMAL_BOND,ID_LASERLL_COMPANION_TRAIT_BARBARIAN_SAVAGE_COMPANION_KEEN_SENSES</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_BARBARIAN_SAVAGE_COMPANION_BITE,ID_LASERLL_COMPANION_ACTION_BARBARIAN_SAVAGE_COMPANION_MAUL</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="13" bonus="base" />
+      <stat name="companion:hp:max" value="5" />
+      <stat name="companion:speed" value="40" bonus="base" />
+      <stat name="companion:speed:swim" value="20" bonus="base" />
+
+      <stat name="companion:ac" value="13" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="additional:hp:max" value="level:barbarian" />
+      <stat name="additional:hp:max" value="level:barbarian" />
+      <stat name="additional:hp:max" value="level:barbarian" />
+      <stat name="additional:hp:max" value="level:barbarian" />
+      <stat name="additional:hp:max" value="level:barbarian" />
+    </rules>
+  </element>
+
+  <element name="Hit Dice" type="Companion Trait" source="laserllama's Primal Paths" id="ID_LASERLL_COMPANION_TRAIT_BARBARIAN_SAVAGE_COMPANION_HIT_DICE">
+    <description>
+      <p>Your Companion has a total number of d8 Hit Dice equal to your Barbarian level. It also gains all the normal benefits of both short and long rests.</p>
+    </description>
+    <sheet>
+      <description>Your Companion has a number d8 Hit Dice equal to your Barbarian level, and gains all benefits of short and long rests.</description>
+    </sheet>
+  </element>
+
+  <element name="Primal Bond" type="Companion Trait" source="laserllama's Primal Paths" id="ID_LASERLL_COMPANION_TRAIT_BARBARIAN_SAVAGE_COMPANION_PRIMAL_BOND">
+    <description>
+      <p>You add your PB to any ability check or saving throw your Companion makes.</p>
+    </description>
+    <sheet>
+      <description>Add your PB to any ability check or saving throw your Companion makes.</description>
+    </sheet>
+  </element>
+
+  <element name="Keen Senses" type="Companion Trait" source="laserllama's Primal Paths" id="ID_LASERLL_COMPANION_TRAIT_BARBARIAN_SAVAGE_COMPANION_KEEN_SENSES">
+    <description>
+      <p>Your Companion has advantage on any ability check that relies on sight, hearing, or smell.</p>
+    </description>
+    <sheet>
+      <description>Your Companion has advantage on ability checkS that rely on sight, hearing, or smell.</description>
+    </sheet>
+  </element>
+
+  <element name="Bite" type="Companion Action" source="laserllama's Primal Paths" id="ID_LASERLL_COMPANION_ACTION_BARBARIAN_SAVAGE_COMPANION_BITE">
+    <description>
+			<p><em>Melee Weapon Attack:</em> +2 +PB to hit, reach 5 ft., one target. Hit: 1d6 +2 +PB piercing damage.</p>
+      <p class="indent">On hit, the creature must succeed on a Strength saving throw (DC = 10 + PB) or be grappled. Your Companion can only grapple one target at a time.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +2 +PB to hit, reach 5 ft., one target. Hit: 1d6 +4 piercing damage. One hit, force the target to make a DC 10+PB Strength saving throw or be grappled (only one grappled target at a time).</description>
+		</sheet>
+  </element>
+
+  <element name="Maul" type="Companion Action" source="laserllama's Primal Paths" id="ID_LASERLL_COMPANION_ACTION_BARBARIAN_SAVAGE_COMPANION_MAUL">
+    <description>
+      <p><em>Melee Weapon Attack:</em> +2 +PB to hit, reach 5 ft., one target. Hit: 1d8 +2 +PB slashing damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: +2 +PB to hit, reach 5 ft., one target. Hit: 1d8 +2 +PB slashing damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Savage Companion" type="Information" source="laserllama's Primal Paths" id="ID_LASERLL_INFORMATION_BARBARIAN_SAVAGE_COMPANION">
+    <description>
+      <p style="margin-bottom:-5px"><em>Medium beast, Neutral</em></p>
+      <h4 style="margin-top:5px" />
+      <ul class="unstyled">
+        <li><strong>Armor Class</strong> 13 + PB (natural armor)</li>
+        <li><strong>Hit Points</strong> 5 + five times your Barbarian level</li>
+        <li><strong>Speed</strong> 40 ft., swim 20 ft.</li>
+      </ul>
+      <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+        <thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>DEX</td></tr></thead>
+        <tr><td>14 (+2)</td><td>14 (+2)</td><td>15 (+1)</td><td>8 (-1)</td><td>14 (+2)</td><td>11 (+0)</td></tr>
+      </table>
+      <ul class="unstyled">
+        <li><strong>Senses</strong> passive Perception 12</li>
+        <li><strong>Languages</strong> understands the languages you speak</li>
+      </ul>
+      <h4 style="margin-top:5px; margin-bottom:10px" />
+      <ul class="unstyled">
+        <li><strong><em>Hit Dice.</em></strong> Your Companion has a total number of d8 Hit Dice equal to your Barbarian level. It also gains all the normal benefits of both short and long rests.</li>
+        <li><strong><em>Primal Bond.</em></strong> You add your PB to any ability check or saving throw your Companion makes.</li>
+        <li><strong><em>Keen Senses.</em></strong> Your Companion has advantage on any ability check that relies on sight, hearing, or smell.</li>
+      </ul>
+      <h4 style="margin-top:10px">Actions</h4>
+      <ul class="unstyled">
+        <li><em><strong>Bite.</strong> Melee Weapon Attack:</em> +2 +PB to hit, reach 5 ft., one target. <em>Hit:</em> 1d6 +2 +PB piercing damage. On hit, the creature must succeed on a Strength saving throw (DC = 10 + PB) or be grappled. Your Companion can only grapple one target at a time.</li>
+        <li><em><strong>Maul.</strong> Melee Weapon Attack:</em> +2 +PB to hit, reach 5 ft., one target. <em>Hit:</em> 1d8 +2 +PB slashing damage.</li>
+      </ul>
+    </description>
+  </element>
+
+  <element name="Wild Fury" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_PACKLEADER_WILD_FURY">
+    <description>
+      <p>Your ferocity infects your Companion. While you are Raging, your Savage Companion also gains the benefits of Rage.</p>
+      <p class="indent">Moreover, when you Rage, your Savage Companion can use its reaction to immediately move up to its movement speed and make a Bite or Maul attack.</p>
+    </description>
+    <sheet>
+      <description>Your Savage Companion Rages when you Rage, with the same benefits; it  can also use its reaction when you Rage to immediately move its movement speed and make a Bite or Maul attack.</description>
+    </sheet>
+  </element>
+
+  <element name="Pack Tactics" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_PACKLEADER_PACK_TACTICS">
+    <description>
+      <p>You and your Companion fight as one in battle. Both you and your Savage Companion have advantage on your attack rolls against a creature if the other is within 5 feet of the target creature and they are not incapacitated.</p>
+    </description>
+    <sheet>
+      <description>You and your Savage Companion have advantage on attack rolls against targets that are within 5 ft. of the other, as long as they are not incapacitated.</description>
+    </sheet>
+  </element>
+
+  <element name="Primal Howl" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_PACKLEADER_PRIMAL_HOWL">
+    <description>
+      <p>You savage spirit rivals that of the great predators of the wild. When you Rage, either you or your Savage Companion can let forth a wild howl, and force creatures of your choice that can hear it within 30 feet to make a Wisdom saving throw (DC equals 8 + your proficiency bonus + your Constitution modifier). On a failed save, the creature is frightened of you or your Companion (whoever howled) for up to 1 minute.</p>
+      <p class="indent">A creature can repeat this saving throw at the start of each turn, ending the effect on a success. A creature that succeeds on this saving throw is immune to this effect for 24 hours.</p>
+    </description>
+    <sheet>
+      <description>When you Rage, either you or your Savage Companion howl and force creatures of your choice within 30 ft. to make a Wisdom saving throw (DC {{primal howl:dc}}); if they fail, they are frightened of the howler for 1 minute. They repeat the saving throw at the start of each turn and end the effect on a success; once they succeed on a saving throw they are immune for 24 hrs.</description>
+    </sheet>
+    <rules>
+      <stat name="primal howl:dc" value="8" />
+      <stat name="primal howl:dc" value="proficiency" />
+      <stat name="primal howl:dc" value="constitution:modifier" />
+    </rules>
+  </element>
+
+  <element name="Path of the Reaver" type="Archetype" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_REAVER">
+    <supports>Primal Path</supports>
+    <description>
+      <p>While most Barbarians focus on overcoming their foes with raw power and brute force, those known as Reavers augment their impressive strength with martial technique and tactical maneuvers. These fearless warriors are often employed as advance forces, and their combat skill and resilience strikes fear into the heart of any who stand against them in battle.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_REAVER_SWIFT_STRIDES" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_REAVER_SAVAGE_SUPERIORITY" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_REAVER_IMPROVED_TECHNIQUE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_REAVER_UNSTOPPABLE_WARRIOR" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_REAVER_STORM_OF_FLESH_AND_STEEL" />
+    </description>
+    <sheet display="false">
+      <description>Reavers augment their impressive strength with martial technique and tactical maneuvers.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_REAVER_SWIFT_STRIDES" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_REAVER_SAVAGE_SUPERIORITY" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_REAVER_IMPROVED_TECHNIQUE" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_REAVER_UNSTOPPABLE_WARRIOR" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_REAVER_STORM_OF_FLESH_AND_STEEL" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Swift Strides" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_REAVER_SWIFT_STRIDES">
+    <description>
+      <p>Rather than become blinded by Rage, you enter a heightened state of focus and move with purpose. When you are Raging, opportunity attacks against you are made at disadvantage, and whenever you make a Strength (Athletics) or Dexterity (Acrobatics) check to move or jump, you gain a bonus to the roll equal to your Constitution modifier (minimum of +1).</p>
+    </description>
+    <sheet>
+      <description>While Raging, opportunity attacks against you are made with disadvantage.&#13;&#10;Add +{{constitution:modifier}} to Strength (Athletics) or Dexterity (Acrobatics) checks to move or jump.</description>
+    </sheet>
+  </element>
+
+  <element name="Savage Superiority" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_REAVER_SAVAGE_SUPERIORITY">
+    <description>
+      <p>You have studied martial techniques to enhance your ability on the fields of battle. You gain the features below:</p>
+      <p><b><em>Maneuvers.</em></b> You learn two Maneuvers of your choice from the list at the end of this Primal Path. You can use only one Maneuver per attack. When you gain a level, you can replace one Maneuver you know with another Manuever of your choice.</p>
+      <p><b><em>Superiority Dice.</em></b> You have three Superiority Dice, which are d6s. You must expend one of your Superiority Dice to use one of the Maneuvers you know, and you regain all expended Superiority Dice when you finish a short or long rest.</p>
+      <p><b><em>Saving Throws.</em></b> Some of your Maneuvers require your target to make a saving throw to resist the Maneuver's effects. The saving throw DC is calculated as follows:</p>
+      <center>
+        <p><strong>Maneuver save DC</strong> = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice)</p>
+      </center>
+    </description>
+    <sheet>
+      <description>You have {{superiority dice:amount}} d{{superiority dice:size}} superiority dice, and the DC for your Maneuvers is {{superiority dice:dc}}. You can replace one Maneuver you know with another upon gaining a Barbarian level, and regain all expended Dice upon a short or long rest.</description>
+    </sheet>
+    <rules>
+      <stat name="superiority dice:amount" value="3" />
+      <stat name="superiority dice:amount" value="1" level="6" />
+      <stat name="superiority dice:amount" value="1" level="14" />
+      <stat name="superiority dice:size" value="6" bonus="size"/>
+      <stat name="superiority dice:size" value="8" bonus="size" level="6"/>
+      <stat name="superiority dice:size" value="10" bonus="size" level="14"/>
+      <stat name="superiority dice:dc" value="8" />
+      <stat name="superiority dice:dc" value="proficiency" />
+      <stat name="superiority dice:dc:ability" value="strength:modifier" bonus="ability"/>
+      <stat name="superiority dice:dc:ability" value="dexterity:modifier" bonus="ability"/>
+      <stat name="superiority dice:dc" value="superiority dice:dc:ability" />
+      <select type="Archetype Feature" name="Combat Superiority (Level 3)" supports="Maneuver,ReaverBarbarian" number="2" />
+      <select type="Archetype Feature" name="Combat Superiority (Level 6)" supports="Maneuver,ReaverBarbarian" level="6" />
+      <select type="Archetype Feature" name="Combat Superiority (Level 10)" supports="Maneuver,ReaverBarbarian" level="10" />
+      <select type="Archetype Feature" name="Combat Superiority (Level 14)" supports="Maneuver,ReaverBarbarian" level="14" />
+    </rules>
+  </element>
+
+  <append id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_MANEUVER_AMBUSH">
+    <supports>ReaverBarbarian</supports>
+  </append>
+  <append id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_MANEUVER_BAIT_AND_SWITCH">
+    <supports>ReaverBarbarian</supports>
+  </append>
+  <append id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_MANEUVER_BRACE">
+    <supports>ReaverBarbarian</supports>
+  </append>
+  <append id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_DISARMING_ATTACK">
+    <supports>ReaverBarbarian</supports>
+  </append>
+  <append id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_GOADING_ATTACK">
+    <supports>ReaverBarbarian</supports>
+  </append>
+  <append id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_MANEUVER_GRAPPLING_STRIKE">
+    <supports>ReaverBarbarian</supports>
+  </append>
+  <append id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_LUNGING_ATTACK">
+    <supports>ReaverBarbarian</supports>
+  </append>
+  <append id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MENACING_ATTACK">
+    <supports>ReaverBarbarian</supports>
+  </append>
+  <append id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_PARRY">
+    <supports>ReaverBarbarian</supports>
+  </append>
+  <append id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_PRECISION_ATTACK">
+    <supports>ReaverBarbarian</supports>
+  </append>
+  <append id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_PUSHING_ATTACK">
+    <supports>ReaverBarbarian</supports>
+  </append>
+  <append id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_RIPOSTE">
+    <supports>ReaverBarbarian</supports>
+  </append>
+  <append id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_SWEEPING_ATTACK">
+    <supports>ReaverBarbarian</supports>
+  </append>
+  <append id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_TRIPPING_ATTACK">
+    <supports>ReaverBarbarian</supports>
+  </append>
+
+  <element name="Improved Technique" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_REAVER_IMPROVED_TECHNIQUE">
+    <description>
+      <p>Your combat prowess rivals that of heroes of great renown. You gain one additional Superiority Die (for a total of four), and all of your Superiority Dice become d8s.</p>
+      <p class="indent">You also learn one additional Maneuver of your choice.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Unstoppable Warrior" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_REAVER_UNSTOPPABLE_WARRIOR">
+    <description>
+      <p>The chaos of battle heightens your reflexes. While you are Raging, you gain the benefits of freedom of movement.</p>
+      <p class="indent">You also learn one additional Maneuver of your choice.</p>
+      <div class="reference">
+				<div element="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" />
+			</div>
+    </description>
+    <sheet>
+      <description>Gain the benefits of freedom of movement while raging.</description>
+    </sheet>
+  </element>
+
+  <element name="Storm of Flesh and Steel" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_REAVER_STORM_OF_FLESH_AND_STEEL">
+    <description>
+      <p>You have reached the pinnacle of your training, and woe to any who stand against you on the field of battle. You gain a final Superiority Die (for a total of five), and your Superiority Dice become d10s. If you enter a Rage with no Superiority Dice remaining, you regain one Superiority Die.</p>
+      <p class="indent">You also learn one additional Maneuver of your choice.</p>
+      <div class="reference">
+				<div element="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" />
+			</div>
+    </description>
+    <sheet>
+      <description>If you Rage with no Superiority Die remaining, regain one.</description>
+    </sheet>
+  </element>
+
+  <element name="Path of the Titan (Alternate Path of the Giant)" type="Archetype" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN">
+    <supports>Primal Path</supports>
+    <description>
+      <p>Some Barbarians draw their Rage from their ancestry. Those who walk the Path of the Titan fuel their Rage with the giant blood that flows in their veins. While some Titanic warriors are direct descendants of giants, some are unaware of their heritage until it manifests with their Rage. Unusually tall or strong for their race, mortals with giant blood in their veins are fairly obvious once you know the signs to look for.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_FURY_OF_THE_TITANS" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_GIANT_BLOODLINE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_TITANIC_VITALITY" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_AWAKENED_BLOODLINE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_TITANIC_WRATH" />
+    </description>
+    <sheet display="false">
+      <description>Titanic Barbarians fuel their Rage with the giant blood that flows in their veins.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_FURY_OF_THE_TITANS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_GIANT_BLOODLINE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_TITANIC_VITALITY" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_AWAKENED_BLOODLINE_HILL" level="10" requirements="ID_LASERLL_ARCHETYPE_FEATURE_GIANT_BLOODLINE_HILL"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_AWAKENED_BLOODLINE_STONE" level="10" requirements="ID_LASERLL_ARCHETYPE_FEATURE_GIANT_BLOODLINE_STONE"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_AWAKENED_BLOODLINE_FROST" level="10" requirements="ID_LASERLL_ARCHETYPE_FEATURE_GIANT_BLOODLINE_FROST"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_AWAKENED_BLOODLINE_FIRE" level="10" requirements="ID_LASERLL_ARCHETYPE_FEATURE_GIANT_BLOODLINE_FIRE"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_AWAKENED_BLOODLINE_CLOUD" level="10" requirements="ID_LASERLL_ARCHETYPE_FEATURE_GIANT_BLOODLINE_CLOUD"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_AWAKENED_BLOODLINE_STORM" level="10" requirements="ID_LASERLL_ARCHETYPE_FEATURE_GIANT_BLOODLINE_STORM"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_TITANIC_WRATH" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Fury of the Titans" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_FURY_OF_THE_TITANS">
+    <description>
+      <p>The fury of your Rage draws out the ancient power of your bloodline. When you Rage, you gain the following benefits:</p>
+      <ul>
+        <li>If there is room, you can choose to grow by one size category for the duration of that Rage. For example, you grow from Medium to Large. Your physical size doubles in all dimensions, and your weight is multiplied by eight.</li>
+        <li>Your melee and thrown weapon attacks deal bonus damage depending on your current size: Medium (1d4), Large (1d6), Huge (1d12), and Gargantuan (2d12).</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>When you Rage, you can grow 1 size category, doubling your size and multiplying your weight by 8. Your melee and thrown weapon attacks deal bonus damage depending on size: Medium 1d4, Large 1d6, Huge 1d12, Gargantuan 2d12</description>
+    </sheet>
+  </element>
+
+  <element name="Giant Bloodline" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_GIANT_BLOODLINE">
+    <description>
+      <p>Whether by magic or ancestry, you bear the power of giants. Choose the option below that best fits the type of giant whose power resides in you. This choice will affect features you gain later from this Path. You gain resistance to the damage type associated with that giant. This choice is permanent and can't be changed short of a wish or the magic of elder giants.</p>
+      <table>
+        <thead>
+          <tr><td>Giant</td><td>Element</td><td>Giant</td><td>Element</td></tr>
+        </thead>
+        <tr><td>Hill</td><td>Bludgeoning</td><td>Fire</td><td>Fire</td></tr>
+        <tr><td>Stone</td><td>Psychic</td><td>Cloud</td><td>Thunder</td></tr>
+        <tr><td>Frost</td><td>Cold</td><td>Storm</td><td>Lightning</td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Giant Bloodline" supports="Giant Bloodline" />
+    </rules>
+  </element>
+
+  <element name="Hill Giant" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_FEATURE_GIANT_BLOODLINE_HILL">
+		<supports>Giant Bloodline</supports>
+		<description>
+			<p>You choose the hill giant as your ancestor. The bludgeoning damage type is used by features you gain later.</p>
+		</description>
+		<sheet>
+			<description>The hill giant is your ancestor.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+		</rules>
+	</element>
+
+  <element name="Stone Giant" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_FEATURE_GIANT_BLOODLINE_STONE">
+		<supports>Giant Bloodline</supports>
+		<description>
+			<p>You choose the stone giant as your ancestor. The psychic damage type is used by features you gain later.</p>
+		</description>
+		<sheet>
+			<description>The stone giant is your ancestor.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+
+  <element name="Frost Giant" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_FEATURE_GIANT_BLOODLINE_FROST">
+		<supports>Giant Bloodline</supports>
+		<description>
+			<p>You choose the frost giant as your ancestor. The cold damage type is used by features you gain later.</p>
+		</description>
+		<sheet>
+			<description>The frost giant is your ancestor.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+
+  <element name="Fire Giant" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_FEATURE_GIANT_BLOODLINE_FIRE">
+		<supports>Giant Bloodline</supports>
+		<description>
+			<p>You choose the fire giant as your ancestor. The fire damage type is used by features you gain later.</p>
+		</description>
+		<sheet>
+			<description>The fire giant is your ancestor.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+
+  <element name="Cloud Giant" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_FEATURE_GIANT_BLOODLINE_CLOUD">
+		<supports>Giant Bloodline</supports>
+		<description>
+			<p>You choose the cloud giant as your ancestor. The thunder damage type is used by features you gain later.</p>
+		</description>
+		<sheet>
+			<description>The cloud giant is your ancestor.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+		</rules>
+	</element>
+
+  <element name="Storm Giant" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_FEATURE_GIANT_BLOODLINE_STORM">
+		<supports>Giant Bloodline</supports>
+		<description>
+			<p>You choose the storm giant as your ancestor. The lightning damage type is used by features you gain later.</p>
+		</description>
+		<sheet>
+			<description>The storm giant is your ancestor.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_STORM" />
+		</rules>
+	</element>
+
+  <element name="Titanic Vitality" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_TITANIC_VITALITY">
+    <description>
+      <p>Your Rage draws out an ever-increasing amount of resilience from the power that flows in your blood. When you Rage, you gain temporary hit points equal to your Barbarian level.</p>
+    </description>
+    <sheet>
+      <description>When you Rage, gain {{level:barbarian}} temporary hit points.</description>
+    </sheet>
+  </element>
+
+  <element name="Awakened Bloodline" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_AWAKENED_BLOODLINE">
+    <description>
+      <p>The power of your blood is apparent at all times. You gain the features below that correspond to your Giant Bloodline:</p>
+      <h5>HILL GIANT</h5>
+      <p>Your body has grown strangely resilient. You have advantage on Constitution saving throws, and when you take damage while Raging, you can use a reaction to reduce the damage you take by your Constitution modifier (minimum of 1).</p>
+      <h5>STONE GIANT</h5>
+      <p>You have become thoughtful. You gain proficiency in Insight, and whenever you make a Wisdom (Insight) check you treat a roll of 7 or lower on the d20 as an 8. Moreover, whenever you make a Wisdom saving throw while Raging, you gain a bonus to your roll equal to your Constitution modifier.</p>
+      <h5>FROST GIANT</h5>
+      <p>You become especially savage in battle. When you hit a target with a weapon attack, you deal a bonus 1d6 cold damage on hit. If you deal cold damage to a creature while Raging, its speed is reduced by 10 feet until the start of your next turn.</p>
+      <h5>FIRE GIANT</h5>
+      <p>ou have become vindictive and cruel. While you are wearing armor you can use your Constitution, in place of Dexterity, to calculate your Armor Class. Also, when you are hit by a melee attack while Raging, you can use a reaction to deal fire damage to the attacker equal to your Constitution modifier.</p>
+      <h5>CLOUD GIANT</h5>
+      <p>You have become more whimsical and lighthearted. You gain resistance to falling damage, and while you are Raging, you can take the Dash or Disengage action as a bonus action.</p>
+      <h5>STORM GIANT</h5>
+      <p>You have grown in pride and presence. You gain a swimming speed equal to your walking speed, and you can breathe both air and water. Moreover, while you are Raging, you can cause any thrown weapon attacks you make to deal lighting damage in place of the normal damage for that weapon.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Awakened Bloodline" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_AWAKENED_BLOODLINE_HILL">
+    <description>
+      <p>Your body has grown strangely resilient. You have advantage on Constitution saving throws, and when you take damage while Raging, you can use a reaction to reduce the damage you take by your Constitution modifier (minimum of 1).</p>
+    </description>
+    <sheet>
+      <description>You have advantage on Constitution saving throws.&#13;&#10;When taking damage while Raging, you can use a reaction to reduce it by {{constitution:modifier}}.</description>
+    </sheet>
+  </element>
+
+  <element name="Awakened Bloodline" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_AWAKENED_BLOODLINE_STONE">
+    <description>
+      <p>You have become thoughtful. You gain proficiency in Insight, and whenever you make a Wisdom (Insight) check you treat a roll of 7 or lower on the d20 as an 8. Moreover, whenever you make a Wisdom saving throw while Raging, you gain a bonus to your roll equal to your Constitution modifier.</p>
+    </description>
+    <sheet>
+      <description>When you make a Wisdom (Insight) check, treat rolls of 7 or lower as 8s.&#13;&#10;When making a Wisdom saving throw while Raging, add +{{constitution:modifier}} to it.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+    </rules>
+  </element>
+
+  <element name="Awakened Bloodline" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_AWAKENED_BLOODLINE_FROST">
+    <description>
+      <p>You become especially savage in battle. When you hit a target with a weapon attack, you deal a bonus 1d6 cold damage on hit. If you deal cold damage to a creature while Raging, its speed is reduced by 10 feet until the start of your next turn.</p>
+    </description>
+    <sheet>
+      <description>When you hit a target with a weapon attack, deal 1d6 bonus cold damage If you deal cold damage while Raging, reduce the target's speed by 10 ft. until your next turn.</description>
+    </sheet>
+  </element>
+
+  <element name="Awakened Bloodline" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_AWAKENED_BLOODLINE_FIRE">
+    <description>
+      <p>You have become vindictive and cruel. While you are wearing armor you can use your Constitution, in place of Dexterity, to calculate your Armor Class. Also, when you are hit by a melee attack while Raging, you can use a reaction to deal fire damage to the attacker equal to your Constitution modifier.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When you are hit by a melee attack while Raging, deal {{constitution:modifier}} fire damage to the attacker.</description>
+    </sheet>
+    <rules>
+      <stat name="ac:awakened bloodline fire" value="ac" />
+      <stat name="ac:awakened bloodline fire" value="constitution:modifier" />
+      <stat name="ac:awakened bloodline fire" value="-dexterity:modifier" />
+      <stat name="ac:calculation" value="ac:awakened bloodline fire" bonus="calculation" alt="Awakened Bloodline (Fire Giant)" />
+    </rules>
+  </element>
+
+  <element name="Awakened Bloodline" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_AWAKENED_BLOODLINE_CLOUD">
+    <description>
+      <p>You have become more whimsical and lighthearted. You gain resistance to falling damage, and while you are Raging, you can take the Dash or Disengage action as a bonus action.</p>
+    </description>
+    <sheet>
+      <description>You resist fall damage.&#13;&#10;While Raging, you can Dash or Disengage as a bonus action.</description>
+    </sheet>
+  </element>
+
+  <element name="Awakened Bloodline" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_TITAN_AWAKENED_BLOODLINE_STORM">
+    <description>
+      <p>You have grown in pride and presence. You gain a swimming speed equal to your walking speed, and you can breathe both air and water. Moreover, while you are Raging, you can cause any thrown weapon attacks you make to deal lighting damage in place of the normal damage for that weapon.</p>
+    </description>
+    <sheet>
+      <description>You can breathe both air and water.&#13;&#10;While Raging, your thrown weapon attacks deal lightning damage instead of normal damage.</description>
+    </sheet>
+    <rules>
+      <stat name="speed:swim" value="speed" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Path of the Warden" type="Archetype" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WARDEN">
+    <supports>Primal Path</supports>
+    <description>
+      <p>Hailing from the wild places of the world where the power of nature reigns supreme, Wardens are servants of the natural order who use the raw power of their Rage to channel spirits of the natural world. They often serve as defenders of sacred groves, Druidic Circles, and other places of natural power.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_WARDEN_PRIMAL_MAGIC" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_WARDEN_PRIMAL_RAGE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_WARDEN_GUARDIANS_FURY" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_WARDEN_WARD_OF_THE_ANCIENTS" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_WARDEN_IMPROVED_GUARDIANS_FURY" />
+    </description>
+    <sheet display="false">
+      <description>Wardens are servants of the natural order who use the raw power of their Rage to channel spirits of the natural world.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WARDEN_PRIMAL_MAGIC" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WARDEN_PRIMAL_RAGE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WARDEN_GUARDIANS_FURY" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WARDEN_WARD_OF_THE_ANCIENTS" level="10" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WARDEN_IMPROVED_GUARDIANS_FURY" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Primal Magic" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WARDEN_PRIMAL_MAGIC">
+    <description>
+      <p>When you adopt this Primal Path, you learn to channel the primal power of spirits to cast spells, much like a Shaman.</p>
+      <h5>CANTRIPS</h5>
+      <p>You learn one cantrip of your choice from the Warden spell list. Upon reaching 10th level in this class you learn one additional Warden cantrip of your choice.</p>
+      <h5>SPELL SLOTS</h5>
+			<p>The Warden Primal Magic table shows how many spell slots you have, and the level of those spell slots. All of your spell slots from this feature are the same level. To cast one of the Warden spells you know of 1st-level or higher, you must expend a spell slot. You regain all of your expended spell slots each time you finish a short or long rest.</p>
+			<p class="indent">For example, when you are 7th level, you have two 2nd-level spell slots. To cast the 1st-level spell <em>thunderwave</em>, you must spend one of those slots, and cast it as a 2nd-level spell.</p>
+			<h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+			<p>You learn two 1st-level spells of your choice from the warden spell list. The Spells Known column of the Warden Spellcasting table shows when you learn more warden spells of 1st-level or higher. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level.</p>
+			<p class="indent">When you gain a level, you can choose a warden spell you know and replace it with another spell from the warden spell list, which must be of a level for which you have spell slots.</p>
+      <p class="indent">When you reach 7th level, for example, you learn a new Warden spell of your choice, which can be 1st or 2nd-level.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>As you draw your magic from your connection to primal spirits, Wisdom is your spellcasting ability for your warden spells. You use Wisdom when a spell refers to your spellcasting ability, when setting the saving throw DC for a spell, or when making an attack roll with one.</p>
+			<p class="indent">
+				<b>Spell save DC</b> = 8 + your proficiency bonus + your Wisdom modifier</p>
+			<p class="indent">
+				<b>Spell attack modifier</b> = your proficiency bonus + your Wisdom modifier</p>
+
+      <table class="class-features">
+        <thead>
+          <tr><td class="col-10">Barbarian Level</td><td class="col-10">Spells Known</td><td class="col-10">Spell Slots</td><td class="col-10">Slot Level</td></tr>
+        </thead>
+        <tr><td> 3rd</td><td>2</td><td>1</td><td>1st</td></tr>
+        <tr><td> 4th</td><td>2</td><td>2</td><td>1st</td></tr>
+        <tr><td> 5th</td><td>3</td><td>2</td><td>1st</td></tr>
+        <tr><td> 6th</td><td>3</td><td>2</td><td>1st</td></tr>
+        <tr><td> 7th</td><td>4</td><td>2</td><td>2nd</td></tr>
+        <tr><td> 8th</td><td>4</td><td>2</td><td>2nd</td></tr>
+        <tr><td> 9th</td><td>5</td><td>2</td><td>2nd</td></tr>
+        <tr><td> 10th</td><td>5</td><td>2</td><td>2nd</td></tr>
+        <tr><td> 11th</td><td>5</td><td>2</td><td>2nd</td></tr>
+        <tr><td> 12th</td><td>5</td><td>2</td><td>2nd</td></tr>
+        <tr><td> 13th</td><td>6</td><td>2</td><td>3rd</td></tr>
+        <tr><td> 14th</td><td>6</td><td>2</td><td>3rd</td></tr>
+        <tr><td> 15th</td><td>6</td><td>2</td><td>3rd</td></tr>
+        <tr><td> 16th</td><td>6</td><td>2</td><td>3rd</td></tr>
+        <tr><td> 17th</td><td>7</td><td>2</td><td>3rd</td></tr>
+        <tr><td> 18th</td><td>7</td><td>2</td><td>3rd</td></tr>
+        <tr><td> 19th</td><td>7</td><td>2</td><td>4th</td></tr>
+        <tr><td> 20th</td><td>7</td><td>2</td><td>4th</td></tr>
+      </table>
+    </description>
+    <sheet>
+      <description>Channeling primal spirits grants you facility with spells. You have {{shaman:spellcasting:slots:count}} slots of level {{shaman:spellcasting:slot}}.</description>
+    </sheet>
+    <spellcasting name="WardenBarbarian" ability="Wisdom" allowReplace="true">
+      <list>WardenBarbarian</list>
+    </spellcasting>
+    <rules>
+      <!-- add not full but single _not counting as multiclass spellcaster due to pact magic -->
+
+      <stat name="shaman:spellcasting:slots:count" value="1" level="3"/>
+      <stat name="shaman:spellcasting:slots:count" value="1" level="4"/>
+
+      <stat name="shaman:spellcasting:slot" value="1" level="3" />
+      <stat name="shaman:spellcasting:slot" value="1" level="7" />
+      <stat name="shaman:spellcasting:slot" value="1" level="13" />
+      <stat name="shaman:spellcasting:slot" value="1" level="19" />
+
+      <!-- negative count to remove slots -->
+      <stat name="shaman:spellcasting:slots:1" value="shaman:spellcasting:slots:count" level="3" />
+      <stat name="shaman:spellcasting:slots:1" value="-shaman:spellcasting:slots:count" level="7" />
+      <stat name="shaman:spellcasting:slots:2" value="shaman:spellcasting:slots:count" level="7" />
+      <stat name="shaman:spellcasting:slots:2" value="-shaman:spellcasting:slots:count" level="13" />
+      <stat name="shaman:spellcasting:slots:3" value="shaman:spellcasting:slots:count" level="13" />
+      <stat name="shaman:spellcasting:slots:3" value="-shaman:spellcasting:slots:count" level="19" />
+      <stat name="shaman:spellcasting:slots:4" value="shaman:spellcasting:slots:count" level="19" />
+
+      <select type="Spell" name="Cantrip (Warden Barbarian)" supports="$(spellcasting:list),0" level="3" spellcasting="WardenBarbarian" />
+      <select type="Spell" name="Cantrip (Warden Barbarian)" supports="$(spellcasting:list),0" level="10" spellcasting="WardenBarbarian" />
+
+      <select type="Spell" name="Spellcasting (Warden Barbarian)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" number="2" spellcasting="WardenBarbarian"/>
+      <select type="Spell" name="Spellcasting (Warden Barbarian)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="WardenBarbarian"/>
+      <select type="Spell" name="Spellcasting (Warden Barbarian)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="WardenBarbarian"/>
+      <select type="Spell" name="Spellcasting (Warden Barbarian)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="WardenBarbarian"/>
+      <select type="Spell" name="Spellcasting (Warden Barbarian)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="WardenBarbarian"/>
+      <select type="Spell" name="Spellcasting (Warden Barbarian)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="WardenBarbarian"/>
+    </rules>
+  </element>
+
+  <append id="ID_PHB_SPELL_BLADE_WARD">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_CONTROL_FLAMES">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_CREATE_BONFIRE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DRUIDCRAFT">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_FROSTBITE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_GUIDANCE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_GUST">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_MAGIC_STONE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_MOLD_EARTH">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_PRIMAL_SAVAGERY">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_SHAPE_WATER">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SHILLELAGH">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SPARE_THE_DYING">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_THAUMATURGY">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_THORN_WHIP">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_THUNDERCLAP">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_ABSORB_ELEMENTS">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ARMOR_OF_AGATHYS">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_COMMAND">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_COMPELLED_DUEL">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_CURE_WOUNDS">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_EARTH_TREMOR">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ENSNARING_STRIKE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ENTANGLE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FOG_CLOUD">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_HELLISH_REBUKE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_HEROISM">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_INFLICT_WOUNDS">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_SEARING_SMITE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_THUNDEROUS_SMITE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_THUNDERWAVE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_DUST_DEVIL">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_EARTHBIND">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FLAME_BLADE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_GUST_OF_WIND">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_MAGIC_WEAPON">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_PASS_WITHOUT_TRACE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_PROTECTION_FROM_POISON">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SHATTER">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_SHADOW_BLADE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SPIKE_GROWTH">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_WARDING_WIND">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_BLINDING_SMITE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ELEMENTAL_WEAPON">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_PLANT_GROWTH">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SLEET_STORM">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SLOW">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_THUNDER_STEP">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_TIDAL_WAVE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_WALL_OF_SAND">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_WALL_OF_WATER">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_WIND_WALL">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_CONTROL_WATER">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_ELEMENTAL_BANE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FIRE_SHIELD">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_GRASPING_VINE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_GUARDIAN_OF_NATURE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ICE_STORM">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_STAGGERING_SMITE">
+    <supports>WardenBarbarian</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_STORM_SPHERE">
+    <supports>WardenBarbarian</supports>
+  </append>
+
+  <element name="Primal Rage" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WARDEN_PRIMAL_RAGE">
+    <description>
+      <p>You have learned to draw on primal magic, even in your Rage. You can cast Warden spells while you're Raging, but you have disadvantage on any Constitution saving throws you make to maintain concentration on your Warden spells.</p>
+      <p class="indent">Also, casting a spell of 1st-level or higher allows your Rage to continue, even if you don't meet the other requirements</p>
+    </description>
+    <sheet>
+      <description>You can cast Warden spells even while Raging, but have disadvantage on Constitution saving throws to mantain concentration on them. Casting a spell sustains your Rage.</description>
+    </sheet>
+  </element>
+
+  <element name="Guardian's Fury" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WARDEN_GUARDIANS_FURY">
+    <description>
+      <p>Your instincts allow you to combine your primal magic with strikes. When you take the Attack action while Raging, you can cast a Warden cantrip in place of one of your attacks.</p>
+      <p class="indent">Moreover, you can use Reckless Attack when you cast a Warden spell that requires a spell attack roll.</p>
+    </description>
+    <sheet>
+      <description level="6">When you Attack while Raging, you can cast a Warden cantrip in place of one attack.&#13;&#10;You can use Reckless Attack when casting a Warden spell that requires a spell attack roll.</description>
+      <description level="14">When you Attack while Raging, you can cast a Warden spell in place of one attack.&#13;&#10;You can use Reckless Attack when casting a Warden spell that requires a spell attack roll.</description>
+    </sheet>
+  </element>
+
+  <element name="Ward of the Ancients" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WARDEN_WARD_OF_THE_ANCIENTS">
+    <description>
+      <p>You can draw upon your connection to the natural world to shield you from harmful magics. When a creature that you can see damages you with a spell, you can use your reaction to expend a spell slot of 1st-level or higher to grant yourself resistance to all damage from the triggering spell.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When a visible creature damages you with a spell, expend a 1st-level or higher spell slot to resist its damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Improved Guardian's Fury" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WARDEN_IMPROVED_GUARDIANS_FURY">
+    <description>
+      <p>Your Rage and connection with primal spirits have fused to become something that rivals the great destructive forces of nature. When you take the Attack action while Raging, you can cast a Warden spell in place of one of your attacks.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Path of the Wyrmblood" type="Archetype" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD">
+    <supports>Primal Path</supports>
+    <description>
+      <p>Not all who have their blood mingled with dragons manifest sorcerous power. Some instead find themselves imbued with an unquenchable spark of fury. These tyrannical warriors are known as Wyrmbloods, Barbarians fueled by draconic magic.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_DRACONIC_ANCESTRY" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_DRACONIC_FURY" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_TYRANNICAL_RESILIENCE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_WRYMBLOOD_BREATH_OF_THE_DRAGON" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_DRACONIC_WINGS" />
+    </description>
+    <sheet display="false">
+      <description>Wyrmbloods are tyrannical warriors fueled by draconic magic.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_DRACONIC_ANCESTRY" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_DRACONIC_FURY" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_TYRANNICAL_RESILIENCE" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WRYMBLOOD_BREATH_OF_THE_DRAGON" level="10" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_DRACONIC_WINGS" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Draconic Ancestry" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_DRACONIC_ANCESTRY">
+    <description>
+      <p>Whether by ritual, ancestry, or happenstance, your bloodline bears draconic power. Choose one of the Dragons below that best represents the dragon whose power resides within you. You gain resistance to your Dragon's associated Element.</p>
+      <p class="indent">You also learn to speak, read, and write Draconic.</p>
+      <table>
+        <thead>
+          <tr><td>Dragon</td><td>Element</td><td>Dragon</td><td>Element</td></tr>
+        </thead>
+        <tr><td>Amethyst</td><td>Force</td><td>Gold</td><td>Fire</td></tr>
+        <tr><td>Black</td><td>Acid</td><td>Green</td><td>Poison</td></tr>
+        <tr><td>Blue</td><td>Lightning</td><td>Red</td><td>Fire</td></tr>
+        <tr><td>Brass</td><td>Fire</td><td>Sapphire</td><td>Thunder</td></tr>
+        <tr><td>Bronze</td><td>Lightning</td><td>Silver</td><td>Cold</td></tr>
+        <tr><td>Copper</td><td>Acid</td><td>Steel</td><td>Acid</td></tr>
+        <tr><td>Crystal</td><td>Radiant</td><td>Topaz</td><td>Necrotic</td></tr>
+        <tr><td>Emerald</td><td>Psychic</td><td>White</td><td>Cold</td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Draconic Ancestry" supports="Dragon Ancestor" />
+      <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+    </rules>
+  </element>
+
+  <element name="Draconic Fury" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_DRACONIC_FURY">
+    <description>
+      <p>While Raging, you manifest chromatic scales that grant you a bonus to your Armor Class equal to your Rage damage bonus. Also, once per turn when you hit a creature with a weapon attack, you can deal a bonus 1d6 Element damage.</p>
+    </description>
+    <sheet>
+      <description>While Raging, gain +{{barbarian rage:damage}} AC.&#13;&#10;Once per turn when you hit a creature with a weapon attack, deal a bonus 1d6 {{dragon ancestor damage type}} damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Tyrannical Resilience" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_TYRANNICAL_RESILIENCE">
+    <description>
+      <p>Your blood protects you from magical effects. When you are forced to make an Intelligence, Wisdom, or Charisma saving throw against magic while Raging, you gain a bonus to your roll equal to your Constitution modifier (minimum of +1).</p>
+    </description>
+    <sheet>
+      <description>While Raging, +{{constitution:modifier}} to Intelligence, Wisdom, and Charisma saving throws against magic.</description>
+    </sheet>
+  </element>
+
+  <element name="Breath of the Dragon" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_BREATH_OF_THE_DRAGON">
+    <description>
+      <p>The magic of your bloodline allows you to exhale blasts of draconic energy. As a action, you can force creatures in an adjacent 30-foot cone to make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). Creatures take 8d6 damage of your Element type on a failed save, and half as much damage on a successful save.</p>
+      <p class="indent">Once you use this feature you must finish a short or long rest before you can use it again. If you have no uses left, you can expend a use of Rage to use this feature one more time.</p>
+    </description>
+    <sheet>
+      <description action="Action" usage="1/Short Rest">Force creatures in an adjacent 30-ft. cone to make a Dexterity saving throw (dc {{dragon breath:dc}}); if they fail, they take 8d6 {{dragon ancestor damage type}} damage, or half that on a success. You can expend a Rage use to reuse this feature before a rest.</description>
+    </sheet>
+    <rules>
+      <stat name="dragon breath:dc" value="8" />
+      <stat name="dragon breath:dc" value="proficiency" />
+      <stat name="dragon breath:dc" value="constitution:modifier" />
+    </rules>
+  </element>
+
+  <element name="Draconic Wings" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_DRACONIC_WINGS">
+    <description>
+      <p>You manifest the full power of your draconic bloodline. As a bonus action, you can manifest a pair of draconic wings. These wings grant you a flying speed equal to your walking speed, and last until you dismiss them as a bonus action.</p>
+      <p class="indent">Clothing or armor that is not made to accommodate your draconic wings might be destroyed when you manifest them.</p>
+    </description>
+    <sheet>
+      <description action="Bonus Action">Sprout a pair of wings that grant you flying speed equal to walking speed until dismissed with another bonus action. Clothing or armor not made to accomodate wings are destroyed when the wings are manifested.</description>
+    </sheet>
+  </element>
+
+  <element name="Path of the Battlerager (Alternate)" type="Archetype" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BATTLERAGER">
+    <supports>Primal Path</supports>
+    <prerequisites>Dwarf</prerequisites>
+		<requirements>ID_SRD_RACE_DWARF||ID_WOTC_SCAG_OPTION_BATTLERAGER</requirements>
+    <description>
+      <p>The Path of the Battlerager was originally published in the Sword Coast Adventurer's Guide, and is widely accepted as an underwhelming subclass for the Barbarian. The Alternate Battlerager presented here is an attempt to bring this Primal Path up to par with the other official barbarian subclasses.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_BATTLERAGER_SAVAGE_SMITH" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_BATTLERAGER_SPIKED_ARMOR" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_BATTLERAGER_RECKLESS_ABANDON" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_BATTLERAGER_BATTLERAGER_CHARGE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_BATTLERAGER_SPIKED_RETRIBUTION" />
+    </description>
+    <sheet display="false">
+      <description>Known as Kuldjargh (literally "axe idiot") in Dwarvish, battleragers are dwarf followers of the gods of war and take the Path of the Battlerager.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BATTLERAGER_SAVAGE_SMITH" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BATTLERAGER_SPIKED_ARMOR" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BATTLERAGER_RECKLESS_ABANDON" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BATTLERAGER_BATTLERAGER_CHARGE" level="10" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BATTLERAGER_SPIKED_RETRIBUTION" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Savage Smith" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BATTLERAGER_SAVAGE_SMITH">
+    <description>
+      <p>You are a student of both forge and fury, and have gained the skills necessary to maintain your unique Spiked Armor. You gain proficiency with smith's tools, and have advantage on any smith's tools checks you make related to armor.</p>
+      <p class="indent">You also gain proficiency with heavy armor, and can Rage while you are wearing heavy armor without the drawbacks.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on smith's tools checks you make related to armor.&#13;&#10;You can rage in heavy armor without the drawbacks.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+    </rules>
+  </element>
+
+  <element name="Spiked Armor" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BATTLERAGER_SPIKED_ARMOR">
+    <description>
+      <p>You have learned to modify your armor so you can use it as a weapon. Over the course of an hour, which can be during a short or long rest, you can use smith's tools to affix spikes to a set of armor, turning it into Spiked Armor. Spiked Armor has the following properties, but only when worn by you:</p>
+      <ul>
+        <li>It counts as a martial melee weapon with a reach of 5 feet, and on hit, a Spiked Armor attack deals piercing damage equal to 1d4 + your Strength modifier.</li>
+        <li>While you are Raging, you can use a bonus action on your turn to make a single Spiked Armor attack.</li>
+        <li>When you successfully initiate a grapple, the grappled creature also takes 1d4 piercing damage.</li>
+      </ul>
+      <p class="indent">At certain levels, the of your Spiked Armor increases: at 5th level (1d6), 11th level (1d8), and 17th level (1d12).</p>
+    </description>
+    <sheet>
+      <description level="3">You can affix spikes to a set of nonmagical armor during a rest with smith's tools, turning it into Spiked Armor. When worn by you:&#13;&#10;It counts as a martial melee weapon with 5 ft. range, dealing 1d4 + {{strength:modifier}} piercing damage;&#13;&#10;When Raging, you can use a bonus action to make a Spiked Armor attack;&#13;&#10;When you successfully grappe, the target also takes 1d4 piercing damage</description>
+      <description level="5">You can affix spikes to a set of armor during a rest with smith's tools, turning it into Spiked Armor. When worn by you:&#13;&#10;It counts as a martial melee weapon with 5 ft. range, dealing 1d6 + {{strength:modifier}} piercing damage;&#13;&#10;When Raging, you can use a bonus action to make a Spiked Armor attack;&#13;&#10;When you successfully grappe, the target also takes 1d4 piercing damage</description>
+      <description level="11">You can affix spikes to a set of armor during a rest with smith's tools, turning it into Spiked Armor. When worn by you:&#13;&#10;It counts as a martial melee weapon with 5 ft. range, dealing 1d8 + {{strength:modifier}} piercing damage;&#13;&#10;When Raging, you can use a bonus action to make a Spiked Armor attack;&#13;&#10;When you successfully grappe, the target also takes 1d4 piercing damage</description>
+      <description level="17">You can affix spikes to a set of armor during a rest with smith's tools, turning it into Spiked Armor. When worn by you:&#13;&#10;It counts as a martial melee weapon with 5 ft. range, dealing 1d12 + {{strength:modifier}} piercing damage;&#13;&#10;When Raging, you can use a bonus action to make a Spiked Armor attack;&#13;&#10;When you successfully grappe, the target also takes 1d4 piercing damage</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+    </rules>
+  </element>
+
+  <element name="Reckless Abandon" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BATTLERAGER_RECKLESS_ABANDON">
+    <description>
+      <p>The thrill and danger of battle ignite your fighting spirit. Once per turn when you make a Reckless Attack while Raging, you gain temporary hit points equal to your Constitution modifier (minimum of 1). If any of these temporary hit points remain when your Rage ends, the immediately dissipate.</p>
+      <p class="indent">In addition, you can turn magical armor into Spiked Armor.</p>
+    </description>
+    <sheet>
+      <description>Once per turn when you make a Reckless Attack while Raging, gain +{{constituion:modifier}} temporary hit points; they dissipate once your Rage ends.</description>
+    </sheet>
+  </element>
+
+  <element name="Battlerager Charge" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BATTLERAGER_BATTLERAGER_CHARGE">
+    <description>
+      <p>Your battle fury compels you to throw yourself into danger. You can take the Dash action as a bonus action while Raging.</p>
+    </description>
+    <sheet>
+      <description>While Raging, you can Dash as a bonus action.</description>
+    </sheet>
+  </element>
+
+  <element name="Spiked Retribution" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BATTLERAGER_SPIKED_RETRIBUTION">
+    <description>
+      <p>When a creature hits you with a melee attack while you are Raging and wearing your Spiked Armor, it takes piercing damage equal to your Strength modifier.</p>
+      <p class="indent">If you are conscious, you can use your reaction to replace this damage with the damage from a Spiked Armor attack.</p>
+    </description>
+    <sheet>
+      <description>While Raging in your Spiked Armor, creatures that hit you with a melee attack take {{strength:modifier}} piercing damage. If you are conscious, you can use a reaction to replace this with your Spiked Armor attack damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Path of the Berserker (Alternate)" type="Archetype" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BERSERKER">
+    <supports>Primal Path</supports>
+    <prerequisites>Dwarf</prerequisites>
+    <requirements>ID_SRD_RACE_DWARF||ID_WOTC_SCAG_OPTION_BATTLERAGER</requirements>
+    <description>
+      <p>The savage warriors known as berserkers live for the chaos of battle. For these Barbarians, their Rage is a manifestation of their lust for violence and destruction. Often found on the front lines of battle, berserkers only feel fully alive when they are risking life and limb to test their might against their foes.</p>
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_BERSERKER_FRENZIED_RAGE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_BERSERKER_MINDLESS_RAGE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_BERSERKER_MENACING_PRESENCE" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_BERSERKER_PRIMAL_RESTORATION" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_BERSERKER_FURIOUS_RETALIATION" />
+    </description>
+    <sheet display="false">
+      <description>Berserkers only feel fully alive when they are risking life and limb to test their might against their foes.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BERSERKER_FRENZIED_RAGE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BERSERKER_MINDLESS_RAGE" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BERSERKER_MENACING_PRESENCE" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BERSERKER_PRIMAL_RESTORATION" level="10" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BERSERKER_FURIOUS_RETALIATION" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Frenzied Rage" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BERSERKER_FRENZIED_RAGE">
+    <description>
+      <p>Your fury surpasses that of even other Barbarians. When you Rage, you can enter a Frenzied Rage. For the duration of a Frenzied Rage you can make a melee weapon attack as a bonus action on each turn, including the bonus action you used to enter your Frenzied Rage.</p>
+      <p class="indent">You can use this feature once with no negative effects, but for each additional time you do so before you finish a long rest, you suffer 1 level of exhaustion at the end of that Rage.</p>
+    </description>
+    <sheet>
+      <description usage="1/Long Rest" level="3">When you Rage, you can enter a Frenzied Rage; during this state you can make a melee weapon attack as a bonus attack each turn, including the initial one. For each additional time you enter a Frenzied Rage after the first before a long rest, gain 1 exhaustion level at its end.</description>
+      <description usage="1/Long Rest" level="6">When you Rage, you can enter a Frenzied Rage; during this state you can make a melee weapon attack as a bonus attack each turn, including the initial one. You also cannot be charmed or frightened; you ignore existing charmed, frightened, and exhaustion conditions while in a Frenzied Rage. For each additional time you enter a Frenzied Rage after the first before a long rest, gain 1 exhaustion level at its end.</description>
+    </sheet>
+  </element>
+
+  <element name="Mindless Rage" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BERSERKER_MINDLESS_RAGE">
+    <description>
+      <p>You give yourself over completely to your Rage. While Raging, you immune to the charmed and frightened conditions. If you are charmed or frightened when you enter a Rage, the effect is suspended for the duration of that Rage.</p>
+      <p class="indent">Moreover, while you are in a Frenzied Rage, you can ignore the effects of any levels of exhaustion you currently have.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Menacing Presence" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BERSERKER_MENACING_PRESENCE">
+    <description>
+      <p>Your menacing presence strikes fear into the hearts of your foes. As a bonus action, you can and force a creature within 30 feet that can see or hear you to make a Wisdom saving throw (DC equals 8 + your proficency bonus + your Strength modifier). On a failed save, the creature is frightened of you for one minute. It can repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
+      <p class="indent">If a creature succeeds on its saving throw against this feature, it is immune to this effect for the next 24 hours.</p>
+      <p class="indent">You can use this feature a number of times equal to you Constitution modifier (minimum of once), and you regain all of your expended uses each time you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description action="Bonus Action" usage="{{constitution:modifier}}/Long Rest">Force a creature that can see or hear you within 30 ft. to make a Wisdom saving throw (DC {{menacing presence:dc}}); if it fails, it is frightened of you for 1 minute. It repeats the saving throw at the end of each turn, ending it on a success; creatures that succeed are immune for 24 hrs.</description>
+    </sheet>
+    <rules>
+      <stat name="menacing presence:dc" value="8" />
+      <stat name="menacing presence:dc" value="proficiency" />
+      <stat name="menacing presence:dc" value="strength:modifier" />
+    </rules>
+  </element>
+
+  <element name="Primal Restoration" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BERSERKER_PRIMAL_RESTORATION">
+    <description>
+      <p>You can draw on the spark of fury within you to restore your stamina. Each time you finish a short rest, you can choose to reduce your current level of exhaustion by 1.</p>
+      <p class="indent">Once you use this feature to reduce your exhaustion level you must finish a long rest before you can do so again.</p>
+    </description>
+    <sheet>
+      <description usage="1/Long Rest">When you finish a short rest, reduce your exhaustion level by 1.</description>
+    </sheet>
+  </element>
+
+  <element name="Furious Retaliation" type="Archetype Feature" source="laserllama's Primal Paths" id="ID_LASERLL_ARCHETYPE_BARBARIAN_BERSERKER_FURIOUS_RETALIATION">
+    <description>
+      <p>Your fury knows no bounds. When you take damage from a creature you can see, you can use your reaction to make a single melee or thrown weapon attack against that creature. You can make this reaction attack as a Reckless Attack.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When you take damage from a creature you can see, make a melee or thrown weapon attack against it; you can make it a Reckless Attack.</description>
+    </sheet>
+  </element>
+
+</elements>

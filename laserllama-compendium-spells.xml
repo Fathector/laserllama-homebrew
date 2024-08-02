@@ -1,0 +1,1494 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="1.0">
+            <file name="laserllama-compendium-spells.xml" url="tmp.xml" />
+        </update>
+    </info>
+
+    <!--Version 1.0.0-->
+  <element name="Booming Blade" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_BOOMING_BLADE">
+		<supports>Artificer, Bard, Magus, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>As a bonus action, you wreathe the melee weapon used in the casting of this spell with thunderous magic. Until the start of your next turn, your attacks with that weapon deal thunder damage in place of the weapon's normal damage type.</p>
+      <p class="indent">Once per casting when you deal thunder damage with this spell, you can envelop your target in thunderous energy until the start of your next turn. If the target willingly moves 5 feet or more before then, this thunderous energy explodes and it takes 1d6 thunder damage, then the energy dissipates.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> The thunder damage dealt by this spell when the creature moves at least 5 feet increases at 5th level (1d8), 11th level (1d10), and 17th level (1d12).</p>
+		</description>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a simple or martial melee weapon</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+  <element name="Green-Flame Blade" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_GREENFLAME_BLADE">
+    <supports>Artificer, Magus, Sorcerer, Warlock, Wizard</supports>
+    <description>
+      <p>As a bonus action, you wreathe the melee weapon used in the casting of this spell with emerald flames. Until the start of your next turn, your attacks with that weapon deal fire damage in place of the weapon's normal damage type.</p>
+    <p class="indent">Once per casting when you deal fire damage with this spell, you can cause the flames to leap to another creature you can see within 5 feet of your target, dealing 1d6 fire damage to it.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> The fire damage dealt to the second creature by this spell increases at 5th level (1d8), 11th level (1d10), and 17th level (1d12).</p>
+    </description>
+    <setters>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 bonus action</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a simple or martial melee weapon</set>
+      <set name="duration">Instantaneous</set>
+    </setters>
+  </element>
+  <element name="Friends" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_FRIENDS">
+    <supports>Bard</supports>
+    <description>
+      <p>You lace your words with soothing magic and force a creature of your choice that can hear and understand you to make a Wisdom saving throw. On a failure, you have advantage on all Charisma checks directed at that creature for the duration.</p>
+      <p class="indent">On a successful save, the creature realizes that you used magic to attempt to influence it and becomes hostile toward you. A creature prone to violence might attack you, and other creatures might seek retribution against you in other ways.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">0</set>
+      <set name="school">Enchantment</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a small amount of makeup applied to the face as this spell is cast</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Glitterbeam" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_GLITTERBEAM">
+    <supports>Bard, Magus</supports>
+    <description>
+      <p>You project a beam of twinkling lights at a creature or object within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 radiant damage. Until a creature uses an action to remove the glitter, a target hit by this spell emits bright light in a 5-foot radius and has disadvantage on any Dexterity (Stealth) checks it makes to hide or conceal itself.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> At Higher Levels. The damage of this spell increases by 1d8 at 5th (2d8), 11th (3d8), and 17th level (4d8).</p>
+    </description>
+    <setters>
+      <set name="keywords">radiant</set>
+      <set name="level">0</set>
+      <set name="school">Enchantment</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">120 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Mind Thrust" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_MIND_THRUST">
+    <supports>Psion</supports>
+    <description>
+      <p>You batter a creature within range with a torrent of psionic power. Make a ranged spell attack against the target. On hit, the target takes 1d12 magical bludgeoning damage.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> This spell’s damage increases by 1d12 at 5th level (2d12), 11th level (3d12), and 17th level (4d12).</p>
+    </description>
+    <setters>
+      <set name="keywords">bludgeoning</set>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">120 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Otherworldly Grasp" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_OTHERWORLDLY_GRASP">
+    <supports>Shaman, Warlock</supports>
+    <description>
+      <p>You channel necrotic spiritual power to your hand, changing it into a withered specter of itself. Make a melee spell attack against a creature within your reach. On hit, the creature takes 1d8 necrotic damage, and you gain 1d4 temporary hit points which last for the duration of your concentration.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> The damage of this spell, and the temporary hit points you gain, increase by 1d8 and 1d4 respectively when you reach 5th level (2d8 and 2d4), 11th level (3d8 and 3d4), and 17th level (4d8 and 4d4).</p>
+    </description>
+    <setters>
+      <set name="keywords">necrotic</set>
+      <set name="level">0</set>
+      <set name="school">Necromancy</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">an empty hand</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Primal Savagery" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_PRIMAL_SAVAGERY">
+      <supports>Druid</supports>
+      <description>
+          <p>As part of an unarmed strike, you cause your teeth or fingers to transform into savage fangs or claws. On hit, this unarmed strike deals either magical piercing or slashing damage equal to 1d6 + your Strength modifier. Your teeth and fingers revert to normal after this unarmed strike. Alternately, you can use your Spellcasting ability, for the attack and damage roll.</p>
+          <p class="indent"><b><i>At Higher Levels.</i></b> The damage die of this spell increases at 5th level (1d8), 11th level (1d10), and 17th level (1d12).</p>
+      </description>
+      <setters>
+          <set name="keywords">piercing, slashing</set>
+          <set name="level">0</set>
+          <set name="school">Transmutation</set>
+          <set name="time">1 attack</set>
+          <set name="duration">Instantaneous</set>
+          <set name="range">Self</set>
+          <set name="hasVerbalComponent">false</set>
+          <set name="hasSomaticComponent">true</set>
+          <set name="hasMaterialComponent">true</set>
+          <set name="materialComponent">an empty hand</set>
+          <set name="isConcentration">false</set>
+          <set name="isRitual">false</set>
+      </setters>
+  </element>
+  <element name="Psionic Strike" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_PSIONIC_STRIKE">
+      <supports>Psion</supports>
+      <description>
+          <p>As part of an unarmed strike, you manifest a blade of psionic energy in your hand. On hit, the target takes psychic damage equal to 1d6 + your Strength modifier, in place of the normal damage of your unarmed strike. Your hand immediately reverts to its normal appearance at the end of the attack.</p>
+          <p class="indent"><b><i>At Higher Levels.</i></b> The damage die of this spell increases at 5th level (1d8), 11th level (1d10), and 17th level (1d12).</p>
+      </description>
+      <setters>
+          <set name="keywords">psychic</set>
+          <set name="level">0</set>
+          <set name="school">Evocation</set>
+          <set name="time">1 attack</set>
+          <set name="duration">Instantaneous</set>
+          <set name="range">Self</set>
+          <set name="hasVerbalComponent">false</set>
+          <set name="hasSomaticComponent">true</set>
+          <set name="hasMaterialComponent">true</set>
+          <set name="materialComponent">an empty hand</set>
+          <set name="isConcentration">false</set>
+          <set name="isRitual">false</set>
+      </setters>
+  </element>
+  <element name="Seance" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_SEANCE">
+      <supports>Shaman</supports>
+      <description>
+          <p>You channel minor spirits, allowing them to work through you so that they may once again affect change in the material world. You create one of the following effects within range:</p>
+          <ul>
+            <li>You create an instantaneous, harmless sensory effect, such as a flickering azure flame, an unnaturally chill breeze, rhythmic chanting, or the smell of incense.</li>
+            <li>A minor spirit briefly appears and fades away.</li>
+            <li>You instantaneously light or snuff out a candle, torch, or a small campfire.</li>
+            <li>A mote or iridescent light points to the closest place of spiritual power, recent death, or new birth.</li>
+            <li>Ley lines within range briefly reveal themselves as they flicker with otherworldly light.</li>
+          </ul>
+      </description>
+      <setters>
+          <set name="keywords"></set>
+          <set name="level">0</set>
+          <set name="school">Transmutation</set>
+          <set name="time">1 action</set>
+          <set name="duration">1 action</set>
+          <set name="range">30 feet</set>
+          <set name="hasVerbalComponent">true</set>
+          <set name="hasSomaticComponent">true</set>
+          <set name="hasMaterialComponent">false</set>
+          <set name="materialComponent" />
+          <set name="isConcentration">false</set>
+          <set name="isRitual">false</set>
+      </setters>
+  </element>
+  <element name="Tempestuous Blade" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_TEMPESTUOUS_BLADE">
+      <supports>Artificer, Magus, Sorcerer, Wizard</supports>
+      <description>
+          <p>As a bonus action, you infuse the melee weapon used in the casting of this spell with electrified magic. Until the start of your next turn, your attacks with that weapon deal lightning damage in place of the weapon's normal damage type.</p>
+          <p class="indent">Once per casting when you deal lightning damage with this spell, you can infuse your target with an electrical charge until the start of your next turn. If the target uses a reaction of any kind before then, this tempestuous charge is unleashed and it takes 1d6 lightning damage.</p>
+          <p class="indent"><b><i>At Higher Levels.</i></b>  The lightning damage dealt by this spell when the target uses its reaction increases at 5th level (1d8), 11th level (1d10), and 17th level (1d12).</p>
+      </description>
+      <setters>
+          <set name="keywords"></set>
+          <set name="level">0</set>
+          <set name="school">Evocation</set>
+          <set name="time">1 bonus attack</set>
+          <set name="duration">1 round</set>
+          <set name="range">Self</set>
+          <set name="hasVerbalComponent">true</set>
+          <set name="hasSomaticComponent">false</set>
+          <set name="hasMaterialComponent">true</set>
+          <set name="materialComponent">a simple or martial melee weapon</set>
+          <set name="isConcentration">false</set>
+          <set name="isRitual">false</set>
+      </setters>
+  </element>
+  <element name="True Strike" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_TRUE_STRIKE">
+    <supports>Bard, Magus, Sorcerer, Warlock, Wizard</supports>
+    <description>
+      <p>You infuse your weapon with divination magic and point it at one creature you can see. The next time you make a melee attack with this weapon against that target before the start of your next turn, you add 1d4 to your attack roll.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> This spell's attack roll bonus increases when you reach 5th (1d6), 11th (1d8), and 17th level (1d10).</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">0</set>
+      <set name="school">Divination</set>
+      <set name="time">1 bonus action</set>
+      <set name="duration">Concentration, up to 1 round</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">A melee weapon worth at least 1 sp</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Vicious Mockery" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_VICIOUS_MOCKERY">
+    <supports>Bard, Spell Saving Throw</supports>
+    <description>
+      <p>You unleash a string of provoking words at a creature that can hear and understand you within range. The target must succeed on a Wisdom saving throw, or it takes 1d4 psychic damage and have disadvantage on every attack roll against targets other than you until the start of your next turn.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> This spell’s damage increases by 1d4 when you reach 5th (2d4), 11th (3d4), and 17th level (4d4).</p>
+    </description>
+    <setters>
+      <set name="keywords">psychic</set>
+      <set name="level">0</set>
+      <set name="school">Enchantment</set>
+      <set name="time">1 bonus action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">30 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Arcane Lance" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_ARCANE_LANCE">
+    <supports>Magus, Sorcerer, Wizard</supports>
+    <description>
+      <p>You conjure a lance of pure arcane energy in your hand and make a ranged spell attack against a creature you can see within range. On hit, the target takes 5d4 force damage.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd-level or higher, the damage increases by 2d4 for each slot level above 1st.</p>
+    </description>
+    <setters>
+      <set name="keywords">force</set>
+      <set name="level">1</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">90 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a clear 1-inch crystal</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Divine Favor" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_DIVINE_FAVOR">
+    <supports>Paladin</supports>
+    <description>
+      <p>Your prayer empowers one weapon of your choice within 10 feet of you with divine radiance. Until the spell ends, attacks with that weapon deal an extra 1d4 radiant damage on a hit.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you target one additional weapon within 10 feet of you for each slot level above 1st.</p>
+    </description>
+    <setters>
+      <set name="keywords">radiant</set>
+      <set name="level">1</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 bonus action</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Ensnaring Strike" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_ENSNARING_STRIKE">
+    <supports>Artificer, Ranger, Spell Saving Throw</supports>
+    <description>
+      <p>When you hit a creature with a weapon attack, you can cause the point of impact to explode with a writhing mass of thorny vines. The target must succeed on a Strength saving throw or be restrained by the vines until the spell ends. Creatures that are Large or larger have advantage on this saving throw.</p>
+      <p class="indent">The restrained creature takes 1d6 piercing damage at the start of each of its turns. The restrained creature, or another creature within 5 feet, can use its action to make a Strength check against your Spell save DC, freeing it on a success.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd-level or higher, the damage it takes at the start of each turn increases by 1d6 for each slot level above 1st.</p>
+    </description>
+    <setters>
+      <set name="keywords">piercing</set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">On hit</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a weapon worth at least 1 sp</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Ethereal Anchor" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_ETHEREAL_ANCHOR">
+    <supports>Paladin, Vessel</supports>
+    <description>
+      <p>You hurl a bolt of pure spirit at a creature within range. Make a ranged spell attack against your target. On hit, it takes 3d6 radiant damage and for the duration, its speed is reduced to 0 as it is pinned in place by the spiritual bolt. As an action on its turn, the creature can make a Strength ability check against your Spell save DC, ending the spell on a success.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the radiant damage increases by 1d6 for each slot level above 1st.</p>
+    </description>
+    <setters>
+      <set name="keywords">radiant</set>
+      <set name="level">1</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a silver nail</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Ghastly Flight" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_GHASTLY_FLIGHT">
+    <supports>Shaman, Warlock, Spell Saving Throw</supports>
+    <description>
+      <p>You release a malevolent spirit that flies out from you in a direction of your choice in a 60-foot long, 5-foot wide line, at which point it fades away. Each creature within the line must make a Constitution saving throw. On a failed save, creatures take 2d8 necrotic damage and cannot regain hit points until the start of your next turn. On a success, creatures take half as much damage and can regain hit points as normal.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd-level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+    </description>
+    <setters>
+      <set name="keywords">necrotic</set>
+      <set name="level">1</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self (60 foot line)</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">the powdered remains of a creature</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+	<element name="Hail of Thorns" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_HAIL_OF_THORNS">
+		<supports>Ranger, Spell Saving Throw</supports>
+		<description>
+			<p>When you hit a creature within range with a ranged weapon attack, you can cause the piece of ammunition to explode into a hail of thorns. In addition to the normal effect of the attack, the target of your attack and each creature within 5 feet must make a Dexterity saving throw. Creatures take 1d10 piercing damage on a failure, or half as much damage on a success.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd-level or higher, the damage increases by 1d10 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">On hit</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+  <element name="Id Insinuation" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_ID_INSINUATION">
+		<supports>Psion, Spell Saving Throw</supports>
+		<description>
+			<p>You unleash conflicting desires within one creature you can see within range, impairing its ability to make decisions. It must succeed on a Wisdom saving throw or be incapacitated.</p>
+      <p class="indent">At the end of each of its turns, and each time it takes damage from a source other than this spell, it can make another Wisdom saving throw. It takes 1d6 psychic damage on a failed save, and the spell ends on a successful save.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>
+		</description>
+		<setters>
+			<set name="keywords">psychic</set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+  <element name="Inspiring Melody" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_INSPIRING_MELODY">
+		<supports>Bard</supports>
+		<description>
+			<p>You play a tune that inspires those who hear it to stand and fight. Creatures of your choice within range that can hear you gain temporary hit points equal to your spellcasting ability modifier (minimum of 1 temporary hit point).</p>
+      <p class="indent">As a bonus action on each subsequent turn, you can use an instrument to play this tune again and grant another creature that can hear you within range these temporary hit points.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd-level or higher, the range increases by 5 feet and you can grant one additional target temporary hit points each time you play, for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self (10 feet)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a musical instrument that you are proficient with</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+  <element name="Searing Smite" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_SEARING_SMITE">
+    <supports>Paladin, Spell Saving Throw</supports>
+    <description>
+      <p>When you hit with a melee weapon attack you can cause the weapon to ignite with white-hot intensity. This attack deals 1d8 additional fire damage and the target bursts into flames. At the start of each of its turns, it must make a Constitution saving throw. On a failed save, it takes 1d8 fire damage, but on a success, the flames are extinguished. Another creature can use an action to extinguish these magical flames.</p>
+      <p class="indent">If your target is a plant, both the initial fire damage and the fire damage dealt on a failed saving throw increase by 1d8.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd-level or higher, both the initial fire damage dealt
+      by the attack and the fire damage dealt to the creature on a failed saving throw increase by 1d8 for each slot.</p>
+    </description>
+    <setters>
+      <set name="keywords">fire</set>
+      <set name="level">1</set>
+      <set name="school">Evocation</set>
+      <set name="time">On hit</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">A melee weapon worth at least 1 sp</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Shield" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_SHIELD">
+    <supports>Magus, Psion, Sorcerer, Wizard</supports>
+    <description>
+      <p>A shimmering barrier of magical force appears to protect you. Until the end of the current turn, you gain a bonus to your Armor Class equal to 1 + your Spellcasting modifier and you take no damage from the <em>magic missile</em> spell.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd-level or higher, the bonus to your Armor Class increases by 1 for each slot level above 1st.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Abjuration</set>
+      <set name="time">1 reaction, which you take when you are hit by an attack you can see or targeted by the <i>magic missile</i> spell</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Thunderous Smite" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_THUNDEROUS_SMITE">
+    <supports>Bard, Paladin, Spell Saving Throw</supports>
+    <description>
+      <p>When you hit with a melee weapon attack, you can cause the weapon to explode with a thunderous shockwave audible out to 300 feet. This attack deals 1d8 additional thunder damage, and the target must succeed on a Strength saving throw or be pushed 10 feet away from you in a line and fall prone. Huge and larger targets have advantage on this saving throw.</p>
+      <p class="indent">If your target is a construct or an earth elemental the bonus thunder damage increases by 1d8 and it has disadvantage on the Strength saving throw.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd-level or higher, the thunder damage increases by 1d8, and the target is pushed an additional 10 feet away from you in a straight line for each spell slot level above 1</p>
+    </description>
+    <setters>
+      <set name="keywords">thunder</set>
+      <set name="level">1</set>
+      <set name="school">Evocation</set>
+      <set name="time">On hit</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">A melee weapon worth at least 1 sp</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Torrent" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_TORRENT">
+    <supports>Druid, Magus, Sorcerer, Spell Saving Throw</supports>
+    <description>
+      <p>A burst of elemental water erupts from you in a line 30 feet long and 5 feet wide in a direction you choose, forcing any creature in that area to make a Strength saving throw. On a failure, it takes 1d12 cold damage and is knocked back 10 feet in a straight line and falls prone. On a success, it takes half as much damage and is not moved or knocked prone. A Huge or larger creature has advantage on its saving throw.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd-level or higher, the damage increases by 1d12 and it knocks back 10 additional feet for each slot level above 1st.</p>
+    </description>
+    <setters>
+      <set name="keywords">cold</set>
+      <set name="level">1</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self (30 foot line)</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a mirror</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Witch Bolt" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_WITCH_BOLT">
+    <supports>Sorcerer, Warlock, Wizard, Ranged, Spell Attack</supports>
+    <description>
+      <p>A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and on each of your turns for the duration, you can use your action to deal 1d12 lightning damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell’s range or if it has total cover from you.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d12 for each slot level above 1st.</p>
+    </description>
+    <setters>
+      <set name="keywords">lightning</set>
+      <set name="level">1</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">30 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a twig from a tree that has been struck by lightning</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Wrathful Smite" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_WRATHFUL_SMITE">
+    <supports>Paladin, Spell Saving Throw</supports>
+    <description>
+      <p>When you hit with a melee weapon attack you can cause the weapon to strike at both body and mind. This attack deals an additional 1d8 psychic damage, and the target must succeed on a Wisdom saving throw, or it is frightened of you until the spell ends. As an action, the creature can repeat this Wisdom saving throw, ending the effects of the spell on a success.</p>
+      <p class="indent">If your target is an aberration or it can speak telepathically this bonus psychic damage increases by 1d8.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd-level or higher, the psychic damage increases by 1d8 for each spell slot level above 1st.</p>
+    </description>
+    <setters>
+      <set name="keywords">psychic</set>
+      <set name="level">1</set>
+      <set name="school">Evocation</set>
+      <set name="time">On hit</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">A melee weapon worth at least 1 sp</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Aura of Frost" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_AURA_OF_FROST">
+    <supports>Druid, Magus, Sorcerer, Spell Saving Throw</supports>
+    <description>
+      <p>Arcane frost, snow, and wind swirl about you in an aura with a 10-foot radius, and until the spell ends, the aura moves with you, centered on you. When a creature other than you, enters the area for the first time on a turn or starts its turn there, it must succeed on a Constitution saving throw or it takes 2d8 cold damage and have its speed is reduced by 20 feet until the start of its next turn. On a successful save, it takes half as much cold damage and its speed isn't reduced.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd-level or higher, a creature that fails its save takes an additional 1d8 cold damage and has its speed reduced by an additional 10 feet for each spell level above 2nd.</p>
+    </description>
+    <setters>
+      <set name="keywords">cold</set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">Self (10 foot radius)</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Branding Smite" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_BRANDING_SMITE">
+    <supports>Paladin</supports>
+    <description>
+      <p>When you hit with a melee weapon attack you can cause the weapon to gleam with an otherworldly astral radiance. This attack deals 2d8 bonus radiant damage, and the target sheds dim light out to a 5-foot radius until the spell ends. The target also becomes visible if it was invisible and it cannot become invisible by magical or mundane means for the duration.</p>
+      <p class="indent">If your target is a fiend or undead, or if it has the sunlight sensitivity trait, the bonus radiant damage increases by 1d8.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd-level or higher, the radiant damage increases by 1d8 for each spell slot level above 2nd.</p>
+    </description>
+    <setters>
+      <set name="keywords">radiant</set>
+      <set name="level">2</set>
+      <set name="school">Evocation</set>
+      <set name="time">On hit</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">A melee weapon worth at least 1 sp</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Chromatic Blade" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_CHROMATIC_BLADE">
+    <supports>Druid, Magus, Sorcerer, Wizard, Melee, Spell Attack</supports>
+    <description>
+      <p>You evoke an elemental blade in a free hand, choosing one of the following damage types: acid, cold, fire, lightning, poison, or thunder. The elemental blade appears as if it were made of the chosen element, and lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action without expending a spell slot.</p>
+      <p class="indent">Whenever you would make a melee attack,you can make a melee spell attack with the elemental blade against a target within your reach. On hit, it takes elemental damage of the chosen type equal to 2d6 + your spellcasting modifier.</p>
+      <p class="indent">While in your hand, the blade sheds bright light in a 10-foot radius and dim light an additional 10 feet beyond that.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for every two slot levels above 2nd.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 bonus action</set>
+      <set name="duration">Concentration, up to 10 minutes</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a charred wooden hilt</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Cordon of Arrows" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_CORDON_OF_ARROWS">
+		<supports>Artificer, Ranger, Spell Saving Throw</supports>
+		<description>
+			<p>You plant three pieces of ranged weapon ammunition in the ground within range and transmute them to protect the area. The first creature to move within 30 feet of this enchanted ammunition must make a Dexterity saving throw. The target takes 3d6 piercing damage on a failed save, and half as much piercing damage on a successful save.</p>
+			<p class="indent">As part of casting this spell, you can designate any number of creatures you choose, and the spell ignores them</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>When you cast this spell using a spell slot of 3rd-level or higher, the amount of ammunition that can be transmuted increases by two for each slot level above 2nd. For each additional piece of ammunition you transmute with this spell, the damage increases by 1d6.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">8 hours</set>
+			<set name="range">5 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">three or more arrows or bolts</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+  <element name="Find Steed" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_FIND_STEED">
+    <supports>Paladin</supports>
+    <description>
+      <p>You conjure a spirit in an unoccupied space within range that assumes the form of a supernaturally intelligent, strong, and loyal steed, which is instantly bonded to you. The Steed takes on the form of a Medium or Large quadrupedal beast that you have seen before with a CR of 1/2 or lower that does not have a climbing, flying, or swimming speed. Examples include: elk, camel, giant goat, mastiff, pony, or warhorse.</p>
+      <p class="indent">In combat, the Steed shares your initiative and acts during your turn. You control the Steed and choose how it acts, both in and out of combat. While mounted on it, you can make any spell you cast that targets only you also target your steed.</p>
+      <p class="indent">When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.</p>
+      <p class="indent">While you and your Steed are within 1 mile of one another, you can use a special form of telepathy to communicate.</p>
+      <p class="indent">If your Steed is reduced to 0 hit points it disappears. You can also use a bonus action to dismiss your Steed, causing it to disappear. Should you cast this spell again you can choose to either conjure the same Steed, and it reappears in range at its maximum hit points, or to conjure a new Steed, releasing your previous Steed from its bond in the process.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th-level or higher, your Steed can take on the form of any Medium or Large quadrupedal or winged beast, celestial, or monstrosity that you have seen before that has a CR of 2 or lower. Examples include: dire wolf, griffon, pegasus, peryton, polar bear, or rhinoceros.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 minute</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">30 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Flame Whip" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_FLAME_WHIP">
+    <supports>Druid, Vessel, Warlock, Melee, Spell Attack</supports>
+    <description>
+      <p>In place of an attack, you can evoke a whip of pure flame in a free hand, that lasts for the duration. If you let go of the whip, it disappears, but you can evoke this Flame Whip again in place of another attack without expending a spell slot.</p>
+      <p class="indent">Whenever you could make an attack, you can instead make a melee spell attack with your Flame Whip against one target within 10 feet that you can see. On hit, it takes fire damage equal to 1d10 + your spellcasting modifier, and if the target is Large or smaller you can instantly grapple it with the Whip.</p>
+      <p class="indent">You cannot attack with the Whip while it is grappling a creature, but a grappled creature takes 1d10 fire damage at the start of its turn and can use its action to make a Strength check against your spell save DC, escaping on a success.</p>
+      <p class="indent">While in your hand, your Flame Whip sheds bright light in a 10-foot radius and dim light for an additional 10 feet.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, both instances of fire damage dealt increase by 1d10 for every two slot levels above 2nd.</p>
+    </description>
+    <setters>
+        <set name="keywords">fire</set>
+        <set name="level">2</set>
+        <set name="school">Evocation</set>
+        <set name="time">1 attack</set>
+        <set name="duration">Concentration, up to 10 minutes</set>
+        <set name="range">Self</set>
+        <set name="hasVerbalComponent">true</set>
+        <set name="hasSomaticComponent">true</set>
+        <set name="hasMaterialComponent">true</set>
+        <set name="materialComponent">a charred wooden hilt</set>
+        <set name="isConcentration">true</set>
+        <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Locate Creature" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_LOCATE_CREATURE">
+    <supports>Bard, Cleric, Druid, Paladin, Ranger, Wizard</supports>
+    <description>
+      <p>Describe or name a specific kind of beast or plant. It can be a specific creature known to you, or the nearest creature of a specific kind (such as a bear, oak, or horse), so long as you have seen such a creature within 30 feet at least once.</p>
+      <p class="indent">If one is within 1 mile, the material component of this spell points to it as if it were a compass. If the target is in motion, it points to it for as long as it remains in range. If the creature is in a different form, such as under the effect of the polymorph spell, this spell doesn't locate the creature.</p>
+      <p class="indent">This spell can't locate its target if any thickness of lead or 10 feet of running water blocks a straight line to the target.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd-level or higher, the range and the type of creature you can locate increase as shown in the table below:</p>
+      <table>
+        <thead>
+          <tr><td>Slot Level</td><td>Range</td><td>Creature Types</td></tr>
+        </thead>
+        <tr><td>3rd</td><td>2 miles</td><td>Dragon, Giant, Humanoid, Monster, Ooze</td></tr>
+        <tr><td>4th</td><td>3 miles</td><td>Aberration, Construct, Undead</td></tr>
+        <tr><td>5th</td><td>5 miles</td><td>Celestial, Elemental, Fey, Fiend</td></tr>
+      </table>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Divination</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 hour</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a magnet dipped in holy water</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Magic Weapon" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_MAGIC_WEAPON">
+    <supports>Druid, Paladin, Magus, Ranger, Sorcerer, Wizard</supports>
+    <description>
+      <p>You touch a nonmagical weapon and imbue it with power and it becomes a magic weapon. Choose acid, cold, fire, lightning, poison, or thunder. Until the spell ends, the weapon has a +1 bonus to attack rolls, and deals the chosen type of damage in place of the weapon's normal damage type.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd-level or higher, the effects increase as shown below:</p>
+      <table>
+        <thead>
+          <tr><td>Slot Level</td><td>Attack Bonus</td><td>Bonus Damage</td></tr>
+        </thead>
+        <tr><td>3rd</td><td>+1</td><td>1d4</td></tr>
+        <tr><td>4th</td><td>+2</td><td>1d4</td></tr>
+        <tr><td>5th</td><td>+2</td><td>2d4</td></tr>
+        <tr><td>6th</td><td>+3</td><td>2d4</td></tr>
+        <tr><td>7th</td><td>+3</td><td>3d4</td></tr>
+      </table>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 bonus action</set>
+      <set name="duration">Concentration, up to 1 hour</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Pass without Trace" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_PASS_WITHOUT_TRACE">
+    <supports>Druid, Ranger</supports>
+    <description>
+      <p>A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, you and creatures of your choice within 30 feet are considered to be lightly obscured and gain a bonus to all Dexterity (Stealth) checks equal to your Spellcasting modifier. Creatures under the effect of this spell leave no trace of their passing.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Abjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 hour</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">ashes from a burned leaf of mistletoe</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Restoration" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_RESTORATION">
+    <supports>Bard, Cleric, Druid, Paladin, Ranger</supports>
+    <description>
+      <p>You touch a willing creature and instantly end one disease or one of the following conditions currently afflicting it: blinded, deafened, frightened, paralyzed, or poisoned.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd-level or higher, the conditions and effects you can end increase, but the spell requires you to expend diamond dust of a certain value, which is consumed during casting:</p>
+      <table>
+        <thead>
+          <tr><td>Slot Level</td><td>Value</td><td>Conditions/Effects</td></tr>
+        </thead>
+        <tr><td>3rd</td><td>10 gp</td><td>Charmed, Exhaustion (1 level)</td></tr>
+        <tr><td>4th</td><td>50 gp</td><td>Reduction to one Ability Score or Hit Point Maximum</td></tr>
+        <tr><td>5th</td><td>100 gp</td><td>Petrified, One Curse, or Attunement to a Cursed Item</td></tr>
+      </table>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Abjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Song of Confidence" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_SONG_OF_CONFIDENCE">
+    <supports>Bard</supports>
+    <description>
+      <p>You play a song that inspires those who hear it to live up to their full potential. Choose an ability score. Creatures of your choice within range that can hear you add your spellcasting modifier (minimum of +1) to ability checks or saving throws using the chosen ability score until the start of your next turn.</p>
+      <p class="indent">As a bonus action on each subsequent turn, you can use an instrument to play this tune again, choosing a new ability score and different creatures to gain this spell's benefits.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> At Higher Levels. When cast with a slot of 3rd-level or higher, its range increases by 10 feet for each level above 2nd.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Enchantment</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">Self (20 feet)</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a musical instrument that you are proficient with</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Totemic Cowl" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_TOTEMIC_COWL">
+    <supports>Shaman</supports>
+    <description>
+      <p>You touch a willing creature. Until the spell ends, it is cloaked in a ghostly cowl, and any damage it takes is reduced by 1.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd-level or higher, the damage reduction from the cowl increases by 1 for each slot level above 2nd.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Abjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 hour</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a leaf from the first day of fall</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Tower of Iron Will" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_TOWER_OF_IRON_WILL">
+    <supports>Psion</supports>
+    <description>
+      <p>You protect your mind with a mantra of mundane, repetitive thoughts in order to better resist mental assault. Until the beginning of your next turn, you have advantage on all Intelligence, Wisdom, and Charisma saving throws, and you gain resistance to psychic damage.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Abjuration</set>
+      <set name="time">1 reaction, when you are forced to make an Intelligence, Wisdom, or Charisma saving throw</set>
+      <set name="duration">1 round</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Blinding Smite" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_BLINDING_SMITE">
+    <supports>Paladin, Spell Saving Throw</supports>
+    <description>
+      <p>When you hit with a melee weapon attack you can cause the weapon to flare with an overwhelming blinding light. This attack deals 3d8 bonus radiant damage, and the target must succeed on a Constitution saving throw or become blinded until the spell ends. The target can repeat this saving throw at the end of each of its turns, ending the effect on a success.</p>
+      <p class="indent">When you cast this spell using a spell slot of 3rd-level or higher, the radiant damage increases by 1d8 for each spell slot level above 2nd.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th-level or higher, the damage of this spell increases by 1d8, and the radius of the cylinder increases by 5 feet for each slot level above 3rd.</p>
+    </description>
+    <setters>
+      <set name="keywords">radiant</set>
+      <set name="level">3</set>
+      <set name="school">Evocation</set>
+      <set name="time">On hit</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a melee weapon worth at least 1 sp</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Cerebral Blast" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_CEREBRAL_BLAST">
+    <supports>Psion, Spell Saving Throw</supports>
+    <description>
+      <p>Your mind unleashes a mental thrust of overwhelming force in a 30-foot cone. Each creature within the area of this spell must make a Strength saving throw. On a failure, a creature takes 5d8 magical bludgeoning damage and is pushed 20 feet directly away from you, and falls prone. On a successful save, a creature takes half damage and remains in place.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th-level or higher, the magical bludgeoning damage increases by 1d8 for each spell slot level above 3rd.</p>
+    </description>
+    <setters>
+      <set name="keywords">bludgeoning</set>
+      <set name="level">3</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self (30-foot cone)</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Conjure Volley" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_CONJURE_VOLLEY">
+  	<supports>Ranger, Spell Saving Throw</supports>
+  	<description>
+  		<p>You fire one piece of nonmagical ammunition from a ranged weapon or throw a nonmagical thrown weapon into the air and choose a point within the normal range of the weapon.</p>
+      <p class="indent">The ammunition or weapon explodes into a multitude of exact copies of it, which fall in a 30-foot-radius, 20-foot-high cylinder centered on the point you chose. Creatures within that area must make a Dexterity saving throw. They take 6d8 damage of the weapon or ammunition's type on a failed save, and half as much damage on a successful save. any pieces of ammunition or weapons created by this spell disintegrate once the effects of this spell are resolved.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th-level or higher, the damage of this spell increases by 1d8, and the radius of the cylinder increases by 5 feet for each slot level above 3rd.</p>
+  	</description>
+  	<setters>
+  		<set name="keywords"></set>
+  		<set name="level">3</set>
+  		<set name="school">Conjuration</set>
+  		<set name="time">1 action</set>
+  		<set name="duration">Instantaneous</set>
+  		<set name="range">Self</set>
+  		<set name="hasVerbalComponent">true</set>
+  		<set name="hasSomaticComponent">true</set>
+  		<set name="hasMaterialComponent">true</set>
+  		<set name="materialComponent">one piece of ammunition and a ranged weapon, or one thrown weapon</set>
+  		<set name="isConcentration">false</set>
+  		<set name="isRitual">false</set>
+  	</setters>
+  </element>
+  <element name="Corrosive Bolt" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_CORROSIVE_BOLT">
+    <supports>Magus, Sorcerer, Wizard</supports>
+    <description>
+      <p>You conjure a spear of caustic acid and make a ranged spell attack against a creature or object you can see within range. On hit, your target takes 4d10 acid damage and its Armor Class is reduced by 2. This spell cannot cause a creature to have an Armor Class lower then 10.</p>
+      <p class="indent">A creature can use an action to scrape the acid from this spell off the target, returning its Armor Class to normal.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th-level or higher, the damage increases by 1d10 and it further reduces the target's Armor Class by 1 for each slot level above 3rd.</p>
+    </description>
+    <setters>
+      <set name="keywords">acid</set>
+      <set name="level">3</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">90 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">the skin of a poisonous snake</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Dire Wail" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_DIRE_WAIL">
+    <supports>Bard, Shaman, Spell Saving Throw</supports>
+    <description>
+      <p>You let forth a wail filled with otherworldly power. Creatures of your choice within 30 feet must succeed on a Constitution saving throw or take 4d10 thunder damage and be deafened for the duration. At the end of each turn, targets can make a Constitution saving throw, ending the spell on a success. On a successful save, it takes half damage and is not deafened.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th-level or higher, the damage increases by 1d10 for each slot level above 3rd.</p>
+    </description>
+    <setters>
+      <set name="keywords">thunder</set>
+      <set name="level">3</set>
+      <set name="school">Necromancy</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">Self (30-foot radius)</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Flame Arrows" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_FLAME_ARROWS">
+      <supports>Druid, Ranger, Sorcerer, Wizard, Artificer, Magus</supports>
+      <description>
+          <p>You touch a quiver containing ranged weapon ammunition. The first twelve pieces of ammunition drawn from the quiver deal fire damage in place of their normal damage type, plus an additional 1d6 fire damage on hit. If fired into a flammable object, it bursts into flame on hit. The magic of this spell ends for each piece of ammunition when it hits or misses, and the spell ends after twelve pieces of ammunition are fired.</p>
+          <p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 4th-level or higher, you can draw two additional pieces of ammunition from the quiver for each slot level above 3rd.</p>
+      </description>
+      <setters>
+          <set name="keywords"></set>
+          <set name="level">3</set>
+          <set name="school">Transmutation</set>
+          <set name="time">1 bonus action</set>
+          <set name="duration">1 hour</set>
+          <set name="range">Touch</set>
+          <set name="hasVerbalComponent">true</set>
+          <set name="hasSomaticComponent">true</set>
+          <set name="hasMaterialComponent">false</set>
+          <set name="materialComponent"></set>
+          <set name="isConcentration">false</set>
+          <set name="isRitual">false</set>
+      </setters>
+  </element>
+  <element name="Heroic Anthem" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_HERIOC_ANTHEM">
+      <supports>Bard</supports>
+      <description>
+          <p>You play an anthem that inspires heroic action. Creatures of your choice within range that can hear you can add your spellcasting modifier (minimum of +1) to any attack rolls they make before the beginning of your next turn.</p>
+          <p class="indent">As a bonus action on each subsequent turn, you can use an instrument to continue this anthem and repeat its effect.</p>
+          <p class="indent"><b><i>At Higher Levels. </i></b>When cast with a slot of 4th-level or higher, its range increases by 10 feet for each level above 3rd.</p>
+      </description>
+      <setters>
+          <set name="keywords"></set>
+          <set name="level">3</set>
+          <set name="school">Enchantment</set>
+          <set name="time">1 action</set>
+          <set name="duration">Concentration, up to 1 minute</set>
+          <set name="range">Self (30 feet)</set>
+          <set name="hasVerbalComponent">true</set>
+          <set name="hasSomaticComponent">false</set>
+          <set name="hasMaterialComponent">true</set>
+          <set name="materialComponent">a musical instrument that you are proficient with</set>
+          <set name="isConcentration">true</set>
+          <set name="isRitual">false</set>
+      </setters>
+  </element>
+  <element name="Hunger of Hadar" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_HUNGER_OF_HADAR">
+    <supports>Warlock, Spell Saving Throw</supports>
+    <description>
+      <p>You open a gateway to the dark between the stars, a region infested with unknown horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered on a point with range and lasting for the duration. This void is filled with a cacophony of soft whispers and slurping noises that can be heard up to 30 feet away. No light, magical or otherwise, can illuminate the area, and creatures in the area are blinded.</p>
+      <p class="indent">The void creates a warp in the fabric of space, and the area is difficult terrain. Any creature that starts its turn in the area takes 2d6 cold damage. Any creature that ends its turn in the area must succeed on a Dexterity saving throw or take 2d6 acid damage as milky, otherworldly tentacles rub against it.</p>
+      <p class="indent">When you cast this spell using a spell slot of 4th level or higher, the radius of the spell increases by 5 feet and both the cold and acid damage each increase by 1d6 for each slot level above 3rd.</p>
+    </description>
+    <setters>
+      <set name="keywords">cold,acid</set>
+      <set name="level">3</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">120 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a pickled octopus tentacle</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Hypnotic Pattern" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_HYPNOTIC_PATTERN">
+  	<supports>Bard, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+  	<description>
+  		<p>You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. This psychedelic pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0.</p>
+      <p class="indent">An affected creature can repeat this saving throw at the end of each of its turns, ending the effect on a success. The spell also ends for an affected creature if it takes any damage or if someone else uses an action to shake it out of its stupor.</p>
+  	</description>
+  	<setters>
+  		<set name="keywords"></set>
+  		<set name="level">3</set>
+  		<set name="school">Illusion</set>
+  		<set name="time">1 action</set>
+  		<set name="duration">Concentration, up to 1 minute</set>
+  		<set name="range">120 feet</set>
+  		<set name="hasVerbalComponent">false</set>
+  		<set name="hasSomaticComponent">true</set>
+  		<set name="hasMaterialComponent">true</set>
+  		<set name="materialComponent">a glowing stick of incense</set>
+  		<set name="isConcentration">true</set>
+  		<set name="isRitual">false</set>
+  	</setters>
+  </element>
+  <element name="Lightning Arrow" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_LIGHTNING_ARROW">
+  	<supports>Artificer, Ranger, Spell Saving Throw</supports>
+  	<description>
+  		<p>As part of a ranged weapon attack, you can transmute a piece of ammunition, or the thrown weapon, into a bolt of lightning. On hit, the target takes the normal damage of the attack, plus a bonus 4d8 lighting damage. On a miss, the target takes half as much lightning damage, and none of the normal damage.</p>
+  		<p class="indent">Regardless if this attack hits or misses, all creatures within 10 feet of the target must make a Dexterity saving throw. On a failed save, creatures take 2d8 lighting damage, and half as much lighting damage on a success. The piece of ammunition or thrown weapon then returns to its normal form.</p>
+  		<p class="indent">Any creature that takes lighting damage from this spell cannot take reactions until the beginning of your next turn.</p>
+  		<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th-level or higher, the damage for both effects of the spell increases by 1d8 for each slot level above 3rd.</p>
+  	</description>
+  	<setters>
+  		<set name="keywords">lightning</set>
+  		<set name="level">3</set>
+  		<set name="school">Transmutation</set>
+  		<set name="time">1 attack</set>
+  		<set name="duration">Instantaneous</set>
+  		<set name="range">Self</set>
+  		<set name="hasVerbalComponent">true</set>
+  		<set name="hasSomaticComponent">true</set>
+  		<set name="hasMaterialComponent">false</set>
+  		<set name="materialComponent" />
+  		<set name="isConcentration">false</set>
+  		<set name="isRitual">false</set>
+  	</setters>
+  </element>
+  <element name="Sonic Wave" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_SONIC_WAVE">
+  	<supports>Bard, Magus, Sorcerer, Spell Saving Throw</supports>
+  	<description>
+  		<p>You forcefully clasp your hands and a shockwave of booming force shoots forth from you and emits a boom audible out to 500 feet. All creatures in a 30-foot cone must succeed on a Constitution saving throw or take 4d8 thunder damage, fall prone, and be deafened for 1 minute. On a success, creatures take half damage and are not knocked prone or deafened.</p>
+  		<p class="indent">A creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</p>
+  		<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th-level or higher, the damage increases by 1d8, and the cone increases by 5 feet for each slot level above 3rd.</p>
+  	</description>
+  	<setters>
+  		<set name="keywords">thunder</set>
+  		<set name="level">3</set>
+  		<set name="school">Conjuration</set>
+  		<set name="time">1 action</set>
+  		<set name="duration">Instantaneous</set>
+  		<set name="range">Self (30-foot cone)</set>
+  		<set name="hasVerbalComponent">true</set>
+  		<set name="hasSomaticComponent">true</set>
+  		<set name="hasMaterialComponent">false</set>
+  		<set name="materialComponent" />
+  		<set name="isConcentration">false</set>
+  		<set name="isRitual">false</set>
+  	</setters>
+  </element>
+  <element name="Spectral Passage" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_SPECTRAL_PASSAGE">
+  	<supports>Psion, Shaman, Sorcerer, Vessel</supports>
+  	<description>
+  		<p>You touch a willing creature. Until the spell ends, it becomes semi-incorporeal and can move through other creatures and objects as if they were difficult terrain. If the creature ends its movement inside another object or creature, it is immediately shunted to the nearest unoccupied space, taking 1d10 force damage for every 5 feet it was forced to travel.</p>
+  		<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th-level or higher, you can target one additional creature for each slot level above 3rd.</p>
+  	</description>
+  	<setters>
+  		<set name="keywords"></set>
+  		<set name="level">3</set>
+  		<set name="school">Transmutation</set>
+  		<set name="time">1 action</set>
+  		<set name="duration">Concentration, up to 1 minute</set>
+  		<set name="range">Touch</set>
+  		<set name="hasVerbalComponent">true</set>
+  		<set name="hasSomaticComponent">true</set>
+  		<set name="hasMaterialComponent">true</set>
+  		<set name="materialComponent">an object a spirit has passed through</set>
+  		<set name="isConcentration">true</set>
+  		<set name="isRitual">false</set>
+  	</setters>
+  </element>
+  <element name="Accursed Touch" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_ACCURSED_TOUCH">
+  	<supports>Druid, Clerick, Magus, Sorcerer, Spell Saving Throw</supports>
+  	<description>
+  		<p>You attempt to transmute a creature into stone. As an action, you touch a creature, forcing it to make a Constitution saving throw. On a failed save, the creature is restrained as its flesh begins to harden. On a successful save, it isn't affected.</p>
+      <p class="indent">A creature restrained by this spell must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails three saves, it is turned to stone and petrified. The successes and failures don't need to be consecutive; keep track of both until the creature fails or passes three saves.</p>
+      <p class="indent">If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state.</p>
+      <p class="indent">If you maintain your concentration for the entire duration, the creature is turned to stone until the effect is removed.</p>
+  		<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the number of saves it must fail before it is petrified is reduced by 1 (to a minimum of 1) for each level above 4th.</p>
+  	</description>
+  	<setters>
+  		<set name="keywords"></set>
+  		<set name="level">4</set>
+  		<set name="school">Transmutation</set>
+  		<set name="time">1 action</set>
+  		<set name="duration">Concentration, up to 1 minute</set>
+  		<set name="range">Touch</set>
+  		<set name="hasVerbalComponent">true</set>
+  		<set name="hasSomaticComponent">true</set>
+  		<set name="hasMaterialComponent">true</set>
+  		<set name="materialComponent">a basilisk scale</set>
+  		<set name="isConcentration">true</set>
+  		<set name="isRitual">false</set>
+  	</setters>
+  </element>
+  <element name="Eldritch Tentacles" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_ELDRITCH_TENTACLES">
+  	<supports>Warlock, Spell Saving Throw</supports>
+  	<description>
+  		<p>Alien tentacles fill a 20-foot square on the ground you can see within range. For the duration, this area is difficult terrain.</p>
+      <p class="indent">When a creature enters this area for the first time on a turn or starts its turn there, it must succeed on a Dexterity saving throw or take 3d6 bludgeoning damage and be restrained by the tentacles until the spell ends. Any creature that begins its turn in the area and is restrained by the tentacles takes 3d6 bludgeoning damage at the start of its turn.</p>
+      <p class="indent">A creature restrained by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself from the tentacles.</p>
+  		<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, both instances of damage from this spell increase by 1d6 for each slot level above 4th.</p>
+  	</description>
+  	<setters>
+  		<set name="keywords">bludgeoning</set>
+  		<set name="level">4</set>
+  		<set name="school">Conjuration</set>
+  		<set name="time">1 action</set>
+  		<set name="duration">Concentration, up to 1 minute</set>
+  		<set name="range">90 feet</set>
+  		<set name="hasVerbalComponent">true</set>
+  		<set name="hasSomaticComponent">true</set>
+  		<set name="hasMaterialComponent">true</set>
+  		<set name="materialComponent">a piece of tentacle from a giant squid</set>
+  		<set name="isConcentration">true</set>
+  		<set name="isRitual">false</set>
+  	</setters>
+  </element>
+  <element name="Ego Scourage" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_EGO_SCOURGE">
+  	<supports>Psion, Spell Saving Throw</supports>
+  	<description>
+  		<p>You strike at the mind of a creature you can see within range, attacking its very sense of self. The target must succeed on an Intelligence saving throw or suffer disadvantage on attack rolls and ability checks, and it cannot cast spells. At the end of each of its turns, the target can repeat the saving throw. On a successful save, this effect ends on the target.</p>
+  	</description>
+  	<setters>
+  		<set name="keywords"></set>
+  		<set name="level">4</set>
+  		<set name="school">Enchantment</set>
+  		<set name="time">1 action</set>
+  		<set name="duration">Concentration, up to 1 minute</set>
+  		<set name="range">30 feet</set>
+  		<set name="hasVerbalComponent">true</set>
+  		<set name="hasSomaticComponent">false</set>
+  		<set name="hasMaterialComponent">false</set>
+  		<set name="materialComponent" />
+  		<set name="isConcentration">true</set>
+  		<set name="isRitual">false</set>
+  	</setters>
+  </element>
+  <element name="Polymorph" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_POLYMORPH">
+    <supports>Bard, Druid, Magus, Sorcerer, Wizard, Spell Saving Throw</supports>
+    <description>
+      <p>This spell transforms one creature you can see within range into a new form of your choice. An unwilling creature must succeed on a Wisdom saving throw to resist this effect, but shapechangers automatically succeed on their saving throw. This spell has no affect on a target that has 0 hit points. The transformation lasts for the duration, but it ends early if the target drops to 0 hit points or dies.</p>
+      <p class="indent"><b><i>Form.</i></b> The new form can be any beast you have physically seen while it was living. It must have a Challenge Rating less than or equal to the target's level or its Challenge Rating.</p>
+      <p class="indent"><b><i>Statistics.</i></b> Its game statistics, including its mental ability scores are replaced by those of the beast, but it does retain its alignment and personality within the limitations of that beast.</p>
+      <p class="indent">The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it was transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. If this excess damage reduces its normal form to 0 hit points, it is knocked unconscious.</p>
+      <p class="indent"><b><i>Actions.</i></b> The actions the creature can take are limited to those its new form is able to perform. It cannot speak, cast spells, or take any actions that require hands or speech.</p>
+      <p class="indent"><b><i>Equipment.</i></b> Its clothing, weapons, armor, and objects it is holding meld into the new form. However, it can't activate, use, wield, or otherwise benefit from any of its equipment.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 10 minutes</set>
+      <set name="range">30 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a caterpillar cocoon</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Revitalizing Hymn" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_REVITALIZING_HYMN">
+    <supports>Bard</supports>
+    <description>
+      <p>You perform a hymn that inspires those who hear it to shake off potent effects. Creatures of your choice within range that can hear you can immediately repeat a saving throw to end one hostile effect or spell that is currently affecting it, adding your spellcasting modifier (minimum of +1) to their roll.</p>
+      <p class="indent">As a bonus action on each subsequent turn, you can use an instrument to continue the hymn and allow a creature of your choice that can hear you in range to gain these benefits again.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell with a 5th-level spell slot, the range of the spell increases by 10 feet.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Enchantment</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">Self (40 feet)</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a musical instrument that you are proficient with</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Staggering Smite" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_STAGGERING_SMITE">
+    <supports>Paladin, Spell Saving Throw</supports>
+    <description>
+      <p>When you hit with a melee weapon attack you can cause the weapon to pierce both body and mind. This attack deals 4d6 additional psychic damage, and the target must succeed on a Wisdom saving throw or until the start of its next turn, it has disadvantage on attack rolls and ability checks and it cannot take reactions.</p>
+      <p class="indent">If your target is an aberration or it can speak telepathically this bonus psychic damage increases by 1d6.</p>
+    </description>
+    <setters>
+      <set name="keywords">psychic</set>
+      <set name="level">4</set>
+      <set name="school">Evocation</set>
+      <set name="time">on hit</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">(a melee weapon worth at least 1 sp</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Banishing Smite" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_BANISHING_SMITE">
+    <supports>Paladin</supports>
+    <description>
+      <p>When you hit with a melee weapon attack you can cause the weapon to crackle with pure arcane force. This attack deals 5d10 bonus force damage, and if it reduces the target to 50 hit points or fewer, it is banished from the current plane.</p>
+      <p class="indent">If the target is native to a different plant of existence than the one you are currently on, it disappears, returning to its home plane. If the target is native to your current plane, it is banished to a harmless demiplane where it is incapacitated. When the spell ends, the target returns to the space it was banished from, or the nearest unoccupied space.</p>
+      <p class="indent">If the target is not native to your current plane of existence this bonus force damage increases by 1d10.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th-level or higher, the bonus force damage increases by 1d10 for each spell slot level above 5th.</p>
+    </description>
+    <setters>
+      <set name="keywords">force</set>
+      <set name="level">5</set>
+      <set name="school">Evocation</set>
+      <set name="time">On hit</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a melee weapon worth at least 1 sp</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Legendary Ballad" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_LEGENDARY_BALLAD">
+      <supports>Bard</supports>
+      <description>
+          <p>You perform a ballad that inspires those who can hear it to legendary feats of heroism. A number of creatures of your choice equal to your spellcasting ability modifier (minimum of 1) that can hear you can instantly make a single weapon attack or cast a spell of 1st-level or lower.</p>
+          <p class="indent">As a bonus action on each subsequent turn, you can use an instrument to continue this ballad and grant allow a creature that can hear you within range to immediately make a single weapon attack or cast a spell of 1st-level or lower.</p>
+      </description>
+      <setters>
+          <set name="keywords"></set>
+          <set name="level">5</set>
+          <set name="school">Enchantment</set>
+          <set name="time">1 action</set>
+          <set name="duration">Concentration, up to 1 minute</set>
+          <set name="range">Self (50 feet)</set>
+          <set name="hasVerbalComponent">true</set>
+          <set name="hasSomaticComponent">false</set>
+          <set name="hasMaterialComponent">true</set>
+          <set name="materialComponent">a musical instrument that you are proficient with</set>
+          <set name="isConcentration">false</set>
+          <set name="isRitual">false</set>
+      </setters>
+  </element>
+  <element name="Psychic Crush" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_PSYCHIC_CRUSH">
+      <supports>Psion, Spell Saving Throw</supports>
+      <description>
+          <p>You exert the full force of your will on a creature. The target must make a Strength saving taking 5d8 force damage on a failure, and half as much on a success. At the end of each of its turns, it must repeat the saving throw. It takes 2d8 force damage on a failed save, and on a success, the spell ends.</p>
+          <p class="indent">If this spell reduces a creature to 0 hit points they are crushed into a ball the size of your fist.</p>
+          <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th-level or higher, the initial force damage increases by 1d8 for each spell slot level above 5th.</p>
+      </description>
+      <setters>
+          <set name="keywords">psychic</set>
+          <set name="level">5</set>
+          <set name="school">Evocation</set>
+          <set name="time">1 action</set>
+          <set name="duration">Concentration, up to 1 minute</set>
+          <set name="range">90 feet</set>
+          <set name="hasVerbalComponent">true</set>
+          <set name="hasSomaticComponent">false</set>
+          <set name="hasMaterialComponent">false</set>
+          <set name="materialComponent" />
+          <set name="isConcentration">false</set>
+          <set name="isRitual">false</set>
+      </setters>
+  </element>
+  <element name="Spiritual Sundering" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_SPIRITUAL_SUNDERING">
+      <supports>Cleric, Shaman, Warlock, Spell Saving Throw</supports>
+      <description>
+          <p>Creatures in a 20-foot-radius sphere centered on a point of your choice within range have their soul rent, and must make a Charisma saving throw. On a failure, they take 8d6 necrotic damage, and for the next minute, they have a muddied sense of self and subtract 1d6 from any Intelligence, Wisdom, or Charisma saving throw they make. On a success, they take half damage and suffer no saving throw penalty.</p>
+          <p class="indent">Targets can make a Charisma saving throw at the end of each of their turns, ending the effect on a successful save.</p>
+      </description>
+      <setters>
+          <set name="keywords">necrotic</set>
+          <set name="level">5</set>
+          <set name="school">Enchantment</set>
+          <set name="time">1 action</set>
+          <set name="duration">Instantaneous</set>
+          <set name="range">120 feet</set>
+          <set name="hasVerbalComponent">true</set>
+          <set name="hasSomaticComponent">true</set>
+          <set name="hasMaterialComponent">false</set>
+          <set name="materialComponent" />
+          <set name="isConcentration">false</set>
+          <set name="isRitual">false</set>
+      </setters>
+  </element>
+  <element name="Steel Wind Strike" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_STEEL_WIND_STRIKE">
+      <supports>Magus, Ranger, Melee, Spell Attack</supports>
+      <description>
+          <p>You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee weapon attack against each target using the weapon used in the casting. On a hit, targets take the normal damage of an attack with that weapon plus an additional 5d10 force damage.</p>
+          <p class="indent">You can then teleport to an unoccupied space you can see within 5 feet of one of the targets you hit or missed.</p>
+      </description>
+      <setters>
+          <set name="keywords">force</set>
+          <set name="level">5</set>
+          <set name="school">Conjuration</set>
+          <set name="time">1 action</set>
+          <set name="duration">Instantaneous</set>
+          <set name="range">30 feet</set>
+          <set name="hasVerbalComponent">true</set>
+          <set name="hasSomaticComponent">false</set>
+          <set name="hasMaterialComponent">true</set>
+          <set name="materialComponent">a melee weapon worth at least 1 sp</set>
+          <set name="isConcentration">false</set>
+          <set name="isRitual">false</set>
+      </setters>
+  </element>
+  <element name="Swift Quiver" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_SWIFT_QUIVER">
+    <supports>Ranger</supports>
+    <description>
+      <p>You transmute your quiver so it produces an endless supply of nonmagical ammunition, which seems to leap into your hand when you reach for it.</p>
+      <p class="indent">On each of your turns until the spell ends, you can use a bonus action (including the bonus action used to cast this spell) to make two attacks with a ranged weapon that uses ammunition from the quiver. When you make such a ranged attack, your quiver magically replaces the piece of ammunition you used with a nonmagical copy of that ammunition. Pieces of ammunition created by this spell disintegrate when the spell ends. If the quiver leaves your possession, the spell ends.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">5</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 bonus action</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a quiver with a piece of ammunition</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Vorpal Blade" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_VORPAL_BLADE">
+    <supports>Magus, Paladin, Melee, Spell Attack</supports>
+    <description>
+      <p>You conjure a blade of pure negative energy in your empty hand and make one melee weapon attack against a creature within your reach, attempting to behead it. On hit, it takes force damage equal to 6d8 + your spellcasting modifier.</p>
+      <p class="indent">If this damage reduces the creature to 50 hit points or fewer, you instantly cut off one of its heads of your choice</p>
+      <p class="indent">The creature instantly dies if it cannot survive without the lost head. The creature's head is not removed if it is immune to slashing damage, or if it doesn't have or need a head.</p>
+    </description>
+    <setters>
+      <set name="keywords">force</set>
+      <set name="level">5</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 attack</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">the finger bone of a necromancer</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Wall of Force" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_WALL_OF_FORCE">
+    <supports>Magus, Wizard</supports>
+    <description>
+      <p>A shimmering opaque wall of force springs into existence at a point you choose within range and lasts for the duration.</p>
+      <p class="indent"><b><i>Orientation.</i></b> The wall appears in any orientation you choose, as a horizontal or vertical barrier or an angle. It can be free floating or rest on a solid surface. You can form it into a hemispherical dome, a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-by-10-foot panels. Each panel must be contiguous with another. In any form, the wall is 1/4 inch thick. Nothing can pass through the wall physically, and anything viewed through it is lightly obscured. The wall extends into the Ethereal Plane, blocking ethereal travel through the wall. If it cuts through a creature's space when it appears, the creatures must make a Dexterity saving throw. On a success, it chooses which side of the wall it moves to. On a failure, you choose the side it moves to.</p>
+      <p class="indent"><b><i>Statistics.</i></b> The wall has 150 hit points and its Armor Class equals your Spell save DC. It is immune to poison, psychic, and non-magical bludgeoning, piercing, and slashing damage, vulnerable to force and magical bludgeoning, piercing, and slashing damage, and resistant to all other damage types. It cannot be dispelled by a <em>dispel magic</em> spell, but a <em>disintegrate</em> spell destroys the wall it instantly.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th-level or higher, the hit points of the wall created by this spell increase by 25 for each spell slot level above 5th.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">5</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 10 minutes</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">powder from crushed clear gemstone</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Psionic Oppression" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_PSIONIC_OPPRESSION">
+    <supports>Psion</supports>
+    <description>
+      <p>You psionically overwhelm the mind of one creature you can see within range. The target must make an Intelligence saving throw. On a failed save, it takes 12d6 psychic damage and is stunned for 1 minute. On a successful save, the target takes half as much damage and isn’t stunned.</p>
+      <p class="indent">The stunned target can repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
+    </description>
+    <setters>
+      <set name="keywords">psychic</set>
+      <set name="level">6</set>
+      <set name="school">Enchantment</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Forcecage" type="Spell" source="Laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_FORCECAGE">
+    <supports>Warlock, Wizard</supports>
+    <description>
+      <p>A shimmering, immobile, cube-shaped prison composed of magical force springs into existence around an area of your choice within range. You choose whether this magic prison is shaped like a cage with bars or a solid box.</p>
+      <p class="indent"><b><i>Shape.</i></b> If you choose cage, it can be up to 20 feet on a side and made from 1/2-inch diameter bars spaced 1/2 inch apart. If you choose box, it can be up to 10 feet on a side, creating a solid barrier that prevents any matter from passing through it and blocking any spells cast into or out of the area. The cage extends into the Ethereal Plane, blocking ethereal travel.</p>
+      <p class="indent"><b><i>Creatures Inside.</i></b> When you cast the spell, any creatures that are completely inside the area of the cage are trapped. Any creatures partially within the area, or too large to fit are pushed away until they are completely outside of the cage.</p>
+      <p class="indent">A creature inside the cage cannot leave it by non-magical means. If the creature tries to use teleportation or interplanar travel to leave the cage, it must first make a Charisma saving throw. The spell or effect is wasted on a failed save, but on a success the creature uses the spell or effect to escape.</p>
+      <p class="indent"><b><i>Statistics.</i></b> The cage's Armor Class equals your Spell save DC and it has 200 hit points. It is immune to poison, psychic, and non-magical bludgeoning, piercing, and slashing damage, vulnerable to force and magical bludgeoning, piercing, and slashing damage, and resistant to all other damage types. It cannot be dispelled by a dispel magic spell, but a disintegrate spell destroys the cage it instantly.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 8th-level or higher, the hit points of the cage created by this spell increase by 25 for each spell slot level above 7th.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">7</set>
+      <set name="school">Cojuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 hour</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">an ornate jade box worth 1,500 gp</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+
+</elements>

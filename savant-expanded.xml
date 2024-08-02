@@ -1,0 +1,1948 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="5.2">
+            <file name="savant-expanded.xml" url="tmp.xml" />
+        </update>
+    </info>
+
+    <!--Version 5.2-->
+    <element name="Culinarian" type="Archetype" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_SAVANT_CULINARIAN">
+      <supports>Savant Academic Discipline</supports>
+      <description>
+          <p>The Savants known as Culinarians put their great intellects to work in the science of food and drink. Ever the adventurer, they leave their kitchens behind, venturing out into the world in a lifelong search for new wondrous and exotic ingredients. What strange and exciting recipes will you come to discover?</p>
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_CULINARIAN_STUDENT_OF_FLAVOR" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_CULINARIAN_CULINARIANS_COOK_BOOK" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_CULINARIAN_CUT_ABOVE" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_CULINARIAN_IMPROVED_RECIPES" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_CULINARIAN_MASTER_CULINARIAN" />
+      </description>
+      <sheet display="false">
+          <description>Culinarians put their great intellects to work in the science of food and drink.</description>
+      </sheet>
+      <rules>
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_CULINARIAN_STUDENT_OF_FLAVOR" level="3" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_CULINARIAN_CULINARIANS_COOK_BOOK" level="3" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_CULINARIAN_CUT_ABOVE" level="6" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_CULINARIAN_IMPROVED_RECIPES" level="10" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_CULINARIAN_MASTER_CULINARIAN" level="15" />
+      </rules>
+    </element>
+    <element name="Student of Flavor" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_CULINARIAN_STUDENT_OF_FLAVOR">
+        <description>
+            <p>You gain proficiency in Nature and cook's utensils. Whenever you make a check with either of these proficiencies you gain a bonus to your roll equal to one roll of your Intellect Die. If you are already proficient in Nature you gain proficiency in another skill from the Savant skill list in its place.</p>
+            <p class="indent">In addition, so long as you have access to cook’s utensils and edible ingredients, any creature that expends a Hit Die to regain hit points during a short rest with you also regains additional hit points equal to one roll of your Intellect Die.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} whenever you make an ability check in Nature or with cook's utensils.&#13;&#10;Any creature that expends a Hit Die to regain hit points during a short rest with you gains an additional 1d{{intellect die:size}} hit points as long as you have access to cook's utenisls and edible ingredients.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, Student of Flavor" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_NATURE" default="ID_PROFICIENCY_SKILL_NATURE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+        </rules>
+    </element>
+    <element name="Culinarian's Cook Book" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_CULINARIAN_CULINARIANS_COOK_BOOK">
+        <description>
+          <p>You are compiling a Cook Book which contains the exotic Recipes you discover during your adventures:</p>
+          <p class="indent"><strong><em>Recipes Known.</em></strong>You know two Recipes of your choice from the list at the end of this Discipline.</p>
+          <p class="indent"><strong><em>Adding a Recipe.</em></strong>As an action, you can harvest a Sample from a creature that died within the last minute. Before the end of your next long rest, you can spend 1 hour, which can be during a short or long rest, using cook's utensils and the Sample to add the corresponding Recipe that corresponds to the Sample's creature type to your Cook Book</p>
+          <p class="indent"><strong><em>Preparing a Morsel.</em></strong>At the end of each short or long rest, you prepare a number of Morsels equal to your Intelligence modifier. Each Morsel you prepare has the properties of one Recipe from your Cook Book.</p>
+          <p class="indent"> You don't need samples from a creature corresponding to a Recipe to prepare a Morsel with that Recipe. Any Morsels you prepare lose their potency at the end of the next short or long rest as they become inedible and bland.</p>
+          <p class="indent"><strong><em>Serving Morsels.</em></strong>As an action, any creature can eat a Morsel, or feed it to a willing creature within its reach. A creature that eats a Morsel gains the benefits detailed in the Recipe description. A creature can only benefit from one Morsel at a time, and eating another Morsel instantly ends any previous Morsel benefits.</p>
+          <p class="indent"><strong><em>Replacing a Cook Book.</em></strong>At the end of each short or long rest, you prepare a number of Morsels equal to your Intelligence modifier. Each Morsel you prepare has the properties of one Recipe from your Cook Book.</p>
+          <p class="indent">If your Cook Book is lost or destroyed, you can spend 1 hour adding each of your old Recipes to a new Cook Book from memory. You do not need to rediscover any Recipes that were lost.</p>
+        </description>
+        <sheet>
+            <description level="3">Use an Action to harvest a Sample from a creature that died in the last minute. Spending 1 hour, which can be during a rest, before the end of your next long rest with cook's utensils will add its corresponding Recipe to your Cook Book. At the end of each rest, you prepare {{intelligence:modifier}} Morsels from your Cook Book that last until your next rest.&#13;&#10;Eating or feeding the Morsel to a willing creature takes an Action, and a creature can only benefit from one Morsel at a time.&#13;&#10;If the Cook Book is lost, you can spend 1 hour adding each old Recipe to a new Cook Book from memory.</description>
+            <description level="6">Use an Action to harvest a Sample from a creature that died in the last minute. Spending 1 hour, which can be during a rest, before the end of your next long rest with cook's utensils will add its corresponding Recipe to your Cook Book. At the end of each rest, you prepare {{intelligence:modifier}} Morsels from your Cook Book that last until your next rest.&#13;&#10;Eating or feeding the Morsel to a willing creature takes an action, and a creature can only benefit from one Morsel at a time. If you are the one eating or feeding the morsel, you can make one weapon attack as a bonus action.&#13;&#10;If the Cook Book is lost, you can spend 1 hour adding each old Recipe to a new Cook Book from memory.</description>
+            <description level="10">Use an Action to harvest a Sample from a creature that died in the last minute. Spending 1 hour, which can be during a rest, before the end of your next long rest with cook's utensils will add its corresponding Recipe to your Cook Book. At the end of each rest, you prepare {{intelligence:modifier}} Morsels from your Cook Book that last until your next rest.&#13;&#10;Eating or feeding the Morsel to a willing creature takes an action, and a creature can only benefit from one Morsel at a time. All Morsels grants +{{level:savant}} temporary hit points. If you are the one eating or feeding the morsel, you can make one weapon attack as a bonus action.&#13;&#10;If the Cook Book is lost, you can spend 1 hour adding each old Recipe to a new Cook Book from memory.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, Student of Flavor" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_NATURE" default="ID_PROFICIENCY_SKILL_NATURE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+            <select type="Class Feature" name="Culinarian's Cookbook" supports="Culinarians Cook Book" level="3" number="2" />
+        </rules>
+    </element>
+    <element name="Cut Above" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_CULINARIAN_CUT_ABOVE">
+        <description>
+            <p>As an action, you can touch one of your Morsels with cook's utensils and change it to a Morsel of another Recipe.</p>
+            <p class="indent">Also, when you use your action to eat or feed a Morsel to a creature, you can make one weapon attack as a bonus action.</p>
+        </description>
+        <sheet>
+            <description usage="Action">Touch a Morsel with cook's utensils to change it into another.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, Student of Flavor" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_NATURE" default="ID_PROFICIENCY_SKILL_NATURE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+        </rules>
+    </element>
+    <element name="Improved Recipes" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_CULINARIAN_IMPROVED_RECIPES">
+        <description>
+            <p>Your Recipes invigorate your allies along with their normal benefits. A creature that eats one of your Morsels also gains temporary hit points equal to your Savant level.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Master Culinarian" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_CULINARIAN_MASTER_CULINARIAN">
+        <description>
+            <p>You are a master monster chef and can cook with anything, anywhere. Over the course of 1 hour, which can be during a short or long rest, you can use cook's utensils and any foods to prepare a monstrous feast that can feed yourself and a number of other creatures equal to your Savant level.</p>
+            <p class="indent">If a creature spends 10 minutes eating its meal, it is instantly cured of any poisons, diseases, or any other hostile condition that is effecting it, and for 24 hours, it is immune to both the frightened and poisoned conditions, and it adds one roll of your Intellect Die to any ability check or saving throw it makes that uses its Wisdom or Constitution.</p>
+        </description>
+        <sheet>
+            <description>Over the course of 1 hour, which can be during a rest, use cook's utensils to feed yourself and {{level:savant}} other creatures. Spending at least 10 minutes eating will cure all poisons, diseases, and other hostile conditions. Also grant immunity against the frightened and poisoned conditions, and +1d{{intellect die:size}} to ability checks and saving throws that use Wisdom or Constitution, for 24 hours. </description>
+        </sheet>
+    </element>
+
+    <!-- Morsels -->
+    <element name="Invigorating Morsel" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_INVIGORATING">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Beast without a flying or swimming speed</prerequisite>
+        <description>
+            <p><em>Sample: any Beast without a flying or swimming speed</em></p>
+            <p>The creature that eats this Morsel regains hit points equal to one roll of your Intellect Die + your Intelligence modifier.</p>
+        </description>
+        <sheet>
+            <description>The creature gains 1d{{intellect die:size}} + {{intelligence:modifier}} hit points.</description>
+        </sheet>
+    </element>
+    <element name="Limbering Morsel" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_LIMBERING">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Beast with a flying speed</prerequisite>
+        <description>
+            <p><em>Sample: any Beast with a flying speed</em></p>
+            <p>For 1 hour, the creature gains a bonus to its initiative rolls equal to your Intelligence modifier (minimum of +1), and its walking speed increases by 10 feet.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains +{{min 1 int}} to its initiative rolls and +10 ft. walking speed.</description>
+        </sheet>
+    </element>
+    <element name="Monstrous Morsel" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_MONSTROUS">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Monstrosity of CR 1 or higher</prerequisite>
+        <description>
+            <p><em>Sample: any Monstrosity of CR 1 or higher</em></p>
+            <p>For 1 hour, the creature gains the "Change Appearance" or "Natural Weapons" benefit from the <em>alter self</em> spell.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains the "Change Appearance" or "Natural Weapons" benefit from the alter self spell.</description>
+        </sheet>
+    </element>
+    <element name="Subterranean Morsel" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_SUBTERRANEAN">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Beast with a burrowing speed</prerequisite>
+        <description>
+            <p><em>Sample: any Beast with a burrowing speed</em></p>
+            <p>For 1 hour, the creature gains darkvision out to 60 feet. If a creature already has darkvision, its radius grows by 30 feet.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains 60 ft. darkvision, or +30 ft. if it already possesses it.</description>
+        </sheet>
+    </element>
+    <element name="Thalassic Morsel" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_THALASSIC">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Beast with a swimming speed</prerequisite>
+        <description>
+            <p><em>Sample: any Beast with a swimming speed</em></p>
+            <p>For 1 hour, the creature gains a swimming speed equal to its walking speed, and it can hold its breath for up to 10 minutes.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature that eats this Morsel gains a swimming speed equal to its walking speed and can hold its breath for 10 minutes.</description>
+        </sheet>
+    </element>
+    <element name="Verdant Morsel" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_VERDANT">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Plant with CR 1 or higher</prerequisite>
+        <description>
+            <p><em>Sample: any Plant with CR 1 or higher</em></p>
+            <p>The creature is instantly cured of the following conditions: blinded, deafened, paralyzed, petrified, poisoned, a reduction to an ability score, or a reduction to its hit point maximum.</p>
+        </description>
+        <sheet>
+            <description>The creature is instantly cured of the following conditions: blinded, deafened, paralyzed, petrified, poisoned, ability score reduction, or hit point maximum reduction.</description>
+        </sheet>
+    </element>
+    <element name="Draconic Morsel (Acid)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_DRACONIC_ACID">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Dragon with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Dragon with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature gains resistance to the damage type dealt by the Sample dragon's breath weapon attack.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different type of Dragon you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains resistance to Acid damage</description>
+        </sheet>
+    </element>
+    <element name="Draconic Morsel (Bludgeoning)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_DRACONIC_BLUDGEONING">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Dragon with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Dragon with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature gains resistance to the damage type dealt by the Sample dragon's breath weapon attack.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different type of Dragon you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains resistance to Bludgeoning damage</description>
+        </sheet>
+    </element>
+    <element name="Draconic Morsel (Cold)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_DRACONIC_COLD">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Dragon with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Dragon with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature gains resistance to the damage type dealt by the Sample dragon's breath weapon attack.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different type of Dragon you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains resistance to Cold damage</description>
+        </sheet>
+    </element>
+    <element name="Draconic Morsel (Fire)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_DRACONIC_FIRE">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Dragon with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Dragon with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature gains resistance to the damage type dealt by the Sample dragon's breath weapon attack.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different type of Dragon you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains resistance to Fire damage</description>
+        </sheet>
+    </element>
+    <element name="Draconic Morsel (Force)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_DRACONIC_FORCE">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Dragon with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Dragon with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature gains resistance to the damage type dealt by the Sample dragon's breath weapon attack.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different type of Dragon you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains resistance to Force damage</description>
+        </sheet>
+    </element>
+    <element name="Draconic Morsel (Lightning)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_DRACONIC_LIGHTNING">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Dragon with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Dragon with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature gains resistance to the damage type dealt by the Sample dragon's breath weapon attack.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different type of Dragon you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains resistance to Acid damage</description>
+        </sheet>
+    </element>
+    <element name="Draconic Morsel (Necrotic)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_DRACONIC_NECROTIC">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Dragon with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Dragon with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature gains resistance to the damage type dealt by the Sample dragon's breath weapon attack.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different type of Dragon you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains resistance to Acid damage</description>
+        </sheet>
+    </element>
+    <element name="Draconic Morsel (Piercing)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_DRACONIC_PIERCING">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Dragon with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Dragon with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature gains resistance to the damage type dealt by the Sample dragon's breath weapon attack.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different type of Dragon you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains resistance to Piercing damage</description>
+        </sheet>
+    </element>
+    <element name="Draconic Morsel (Poison)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_DRACONIC_POISON">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Dragon with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Dragon with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature gains resistance to the damage type dealt by the Sample dragon's breath weapon attack.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different type of Dragon you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains resistance to Poison damage</description>
+        </sheet>
+    </element>
+    <element name="Draconic Morsel (Psychic)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_DRACONIC_PSYCHIC">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Dragon with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Dragon with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature gains resistance to the damage type dealt by the Sample dragon's breath weapon attack.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different type of Dragon you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains resistance to Psychic damage</description>
+        </sheet>
+    </element>
+    <element name="Draconic Morsel (Radiant)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_DRACONIC_RADIANT">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Dragon with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Dragon with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature gains resistance to the damage type dealt by the Sample dragon's breath weapon attack.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different type of Dragon you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains resistance to Radiant damage</description>
+        </sheet>
+    </element>
+    <element name="Draconic Morsel (Slashing)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_DRACONIC_SLASHING">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Dragon with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Dragon with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature gains resistance to the damage type dealt by the Sample dragon's breath weapon attack.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different type of Dragon you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains resistance to Slashing damage</description>
+        </sheet>
+    </element>
+    <element name="Draconic Morsel (Thunder)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_DRACONIC_THUNDER">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Dragon with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Dragon with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature gains resistance to the damage type dealt by the Sample dragon's breath weapon attack.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different type of Dragon you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains resistance to Thunder damage</description>
+        </sheet>
+    </element>
+    <element name="Psionic Morsel" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_PSIONIC">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Aberration with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Aberration with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature can communicate telepathically with any creature within 30 feet. However, in order to respond to you, a creature must be able to speak at least one language.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature can communicate telepathically with any creature within 30 ft. The target must be able to speak a language to respond.</description>
+        </sheet>
+    </element>
+    <element name="Titanic Morsel (Tiny)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_TITANIC_TINY">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Giant with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Giant with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature grows in size to become the size of the Sample giant. While it is enlarged, it must concentrate on this effect as if it were concentrating on a spell. Moreover, the creature gains a bonus to its ability checks and saving throws that use its Strength equal to your Intelligence modifier.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different Giant you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature becomes Tiny, and must concentrating on this effect. It gains a +{{intelligence:modifier}} bonus to ability checks and saving throws that use its Strength.</description>
+        </sheet>
+    </element>
+    <element name="Titanic Morsel (Small)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_TITANIC_SMALL">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Giant with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Giant with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature grows in size to become the size of the Sample giant. While it is enlarged, it must concentrate on this effect as if it were concentrating on a spell. Moreover, the creature gains a bonus to its ability checks and saving throws that use its Strength equal to your Intelligence modifier.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different Giant you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature becomes Small, and must concentrating on this effect. It gains a +{{intelligence:modifier}} bonus to ability checks and saving throws that use its Strength.</description>
+        </sheet>
+    </element>
+    <element name="Titanic Morsel (Medium)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_TITANIC_Medium">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Giant with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Giant with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature grows in size to become the size of the Sample giant. While it is enlarged, it must concentrate on this effect as if it were concentrating on a spell. Moreover, the creature gains a bonus to its ability checks and saving throws that use its Strength equal to your Intelligence modifier.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different Giant you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature becomes Medium, and must concentrating on this effect. It gains a +{{intelligence:modifier}} bonus to ability checks and saving throws that use its Strength.</description>
+        </sheet>
+    </element>
+    <element name="Titanic Morsel (Large)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_TITANIC_LARGE">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Giant with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Giant with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature grows in size to become the size of the Sample giant. While it is enlarged, it must concentrate on this effect as if it were concentrating on a spell. Moreover, the creature gains a bonus to its ability checks and saving throws that use its Strength equal to your Intelligence modifier.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different Giant you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature becomes Large, and must concentrating on this effect. It gains a +{{intelligence:modifier}} bonus to ability checks and saving throws that use its Strength.</description>
+        </sheet>
+    </element>
+    <element name="Titanic Morsel (Huge)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_TITANIC_HUGE">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Giant with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Giant with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature grows in size to become the size of the Sample giant. While it is enlarged, it must concentrate on this effect as if it were concentrating on a spell. Moreover, the creature gains a bonus to its ability checks and saving throws that use its Strength equal to your Intelligence modifier.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different Giant you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature becomes Huge, and must concentrating on this effect. It gains a +{{intelligence:modifier}} bonus to ability checks and saving throws that use its Strength.</description>
+        </sheet>
+    </element>
+    <element name="Titanic Morsel (Gargantuan)" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_TITANIC_GARGANTUAN">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Giant with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Giant with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature grows in size to become the size of the Sample giant. While it is enlarged, it must concentrate on this effect as if it were concentrating on a spell. Moreover, the creature gains a bonus to its ability checks and saving throws that use its Strength equal to your Intelligence modifier.</p>
+            <p class="indent">You can create a unique Recipe in your Cook Book for each different Giant you have harvested a Sample from.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature becomes Gargantuan, and must concentrating on this effect. It gains a +{{intelligence:modifier}} bonus to ability checks and saving throws that use its Strength.</description>
+        </sheet>
+    </element>
+    <element name="Viscous Morsel" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_VISCOUS">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Ooze with CR 1 or higher</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Sample: any Ooze with CR 1 or higher</em></p>
+            <p>For 1 hour, when the creature takes acid, lightning, poison, or slashing damage, it can reduce the damage by an amount equal to your Intelligence modifier (minimum of 1 damage).</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature reduces acid, lightning, poison, and slashing damage by {{min 1 int}}.</description>
+        </sheet>
+    </element>
+    <element name="Aerial Morsel" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_AERIAL">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Air Elemental with CR 1 or higher</prerequisite>
+        <requirements>[level:10]</requirements>
+        <description>
+            <p><em>Prerequisite: 10th level</em></p>
+            <p><em>Sample: any Air Elemental with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature can take the Dash action as a bonus action on each turn, and it can hold its breath indefinitely.</p>
+          </description>
+        <sheet>
+            <description>For 1 hour, the creature can take the Dash action as a bonus action each turn, and hold its breath indefinitely.</description>
+        </sheet>
+    </element>
+    <element name="Aqueous Morsel" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_AQUEOUS">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Water Elemental with CR 1 or higher</prerequisite>
+        <requirements>[level:10]</requirements>
+        <description>
+            <p><em>Prerequisite: 10th level</em></p>
+            <p><em>Sample: any Water Elemental with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature can breathe both air and water, gains a swimming speed equal to its walking speed, and can use its reaction to turn a critical hit into a normal hit.</p>
+          </description>
+        <sheet>
+            <description>For 1 hour, the creature can breathe both air and water, has a swimming speed equal to its walking speed, and can use its reaction to turn a critical hit into a normal hit.</description>
+        </sheet>
+    </element>
+    <element name="Ignan Morsel" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_IGNAN">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Fire Elemental with CR 1 or higher</prerequisite>
+        <requirements>[level:10]</requirements>
+        <description>
+            <p><em>Prerequisite: 10th level</em></p>
+            <p><em>Sample: any Fire Elemental with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature gains resistance to fire damage, and it gains immunity to the charmed and frightened conditions.</p>
+        </description>
+        <sheet>
+            <description>For 1 hour, the creature gains resistance to Fire damage and is immune to the charmed and frightened conditions.</description>
+        </sheet>
+    </element>
+    <element name="Terran Morsel" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_TERRAN">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Earth Elemental with CR 1 or higher</prerequisite>
+        <requirements>[level:10]</requirements>
+        <description>
+            <p><em>Prerequisite: 10th level</em></p>
+            <p><em>Sample: any Earth Elemental with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature gains tremorsense out to a 15-foot radius, and it gains resistance to nonmagical bludgeoning, piercing, and slashing damage.</p>
+          </description>
+        <sheet>
+            <description>For 1 hour, the creature gains 15-foot tremorsense and resistance to nonmagical bludgeoning, piercing, and slashing damage.</description>
+        </sheet>
+    </element>
+    <element name="Celestial Morsel" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_CELESTIAL">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Celestial with CR 1 or higher</prerequisite>
+        <requirements>[level:15]</requirements>
+        <description>
+            <p><em>Prerequisite: 15th level</em></p>
+            <p><em>Sample: any Celestial with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature manifests a pair of ethereal angelic wings which grant it a flying speed equal to its walking speed.</p>
+          </description>
+        <sheet>
+            <description>For 1 hour, the creature gains a flying speed equal to its walking speed.</description>
+        </sheet>
+    </element>
+    <element name="Infernal Morsel" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_INFERNAL">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Celestial with CR 1 or higher</prerequisite>
+        <requirements>[level:15]</requirements>
+        <description>
+            <p><em>Prerequisite: 15th level</em></p>
+            <p><em>Sample: any Infernal with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature has advantage on any saving throw it is forced to make to resist a spell and other magical effect.</p>
+          </description>
+        <sheet>
+            <description>For 1 hour, the creature has advantage on saving throws against resisting spells and other magical effects.</description>
+        </sheet>
+    </element>
+    <element name="Sylvan Morsel" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_MORSEL_SYLVAN">
+        <supports>Culinarians Cook Book</supports>
+        <prerequisite>Sample: any Fey with CR 1 or higher</prerequisite>
+        <requirements>[level:15]</requirements>
+        <description>
+            <p><em>Prerequisite: 15th level</em></p>
+            <p><em>Sample: any Fey with CR 1 or higher</em></p>
+            <p>For 1 hour, the creature can use a bonus action on each turn to teleport up to 30 feet to an unoccupied space it can see.</p>
+          </description>
+        <sheet>
+            <description>For 1 hour, the creature can use ae bonus action to teleport to an unoccupied space it can see within 30 ft.</description>
+        </sheet>
+    </element>
+
+    <element name="Mentor" type="Archetype" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_SAVANT_MENTOR">
+      <supports>Savant Academic Discipline</supports>
+      <description>
+          <p>While most Savants use their vast intellect in pursuit of their chosen discipline, those known as Mentors use their intellect in the service of others. Most often, Mentors are past their prime and are looking to pass their knowledge on to the next generation. Whether you are an elder in your community, a retired adventurer, or just someone with knowledge beyond your years, you are ready to gently guide those around you.</p>
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_STUDENT_OF_LIFE" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_ASTUTE_ADVICE" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_ADEPT_ASSISTANCE" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_SOOTHING_PRESENCE" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_MYSTICAL_INTUITION" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_MASTER_MENTOR" />
+      </description>
+      <sheet display="false">
+          <description>Mentors use their intellect to guide those around them, passing on their knowledge to the next generation.</description>
+      </sheet>
+      <rules>
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_STUDENT_OF_LIFE" level="3" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_ASTUTE_ADVICE" level="3" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_ADEPT_ASSISTANCE" level="6" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_SOOTHING_PRESENCE" level="6" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_MYSTICAL_INTUITION" level="10" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_MASTER_MENTOR" level="15" />
+      </rules>
+    </element>
+    <element name="Student of Life" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_STUDENT_OF_LIFE">
+        <description>
+            <p>You gain proficiency in both History and Insight. Whenever you make a check with either of these proficiencies you gain a bonus to your roll equal to one roll of your Intellect Die. If you are already proficient in either skill you gain proficiency in another skill from the Savant skill list in its place.</p>
+            <p class="indent">Your knowledge of life also grants you the benefits below:</p>
+            <ul>
+              <li>You master the Instruction Scholarly Pursuit. If you have already mastered this Scholarly Pursuit, you can instead master your choice of Perfect Recall or Quick Study.</li>
+              <li>Whenever you use Instruction you can teach the chosen language, skill, tool, or weapon to a number of creatures equal to your Intelligence modifier, instead of just one.</li>
+              <li>When you use Potent Observation or Wondrous Insight and you roll a 1, you can re-roll your Intellect Die. You must use this new roll, even if you roll another 1.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} whenever you make an ability check in History or Insight.&#13;&#10;You can use Instruction to teach {{intelligence:modifier}} creatures instead of just one.&#13;&#10;When you roll a 1 when using Potent Observation or Wonrous Insight, you can roll again, and must use the new result if you do so.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, Student of Logic" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION" default="ID_PROFICIENCY_SKILL_HISTORY" />
+            <select type="Proficiency" name="Skill Proficiency, Student of Logic" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION" default="ID_PROFICIENCY_SKILL_INSIGHT" />
+            <select type="Class Feature" name="Scholarly Pursuit, Student of Logic" supports="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_INSTRUCTION|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_PERFECT_RECALL|ID_LASERLL_CLID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_QUICK_STUDY" default="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_INSTRUCTION" />
+        </rules>
+    </element>
+    <element name="Astute Advice" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_ASTUTE_ADVICE">
+        <description>
+            <p>You know just what to say to help your allies learn from their failures. Whenever another creature that can hear you within 30 feet misses with an attack roll, or fails an ability check or saving throw, you can use a reaction to have it re-roll the d20, adding one roll of your Intellect Die to the result.</p>
+            <p class="indent">You can use this reaction a number of times equal to your Intelligence modifier (a minimum of once), and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description usage="{{astute advice:usage}}/Long Rest" action="Reaction" level="3">When another creature within 30 ft. you can hear misses an attack roll or fails an ability check or saving throw, allow it to reroll the d20, adding 1d{{intellect die:size}} to the result.</description>
+            <description usage="{{astute advice:usage}}/Short Rest" action="Reaction" level="10">When another creature within 30 ft. you can hear misses an attack roll or fails an ability check or saving throw, allow it to reroll the d20, adding 1d{{intellect die:size}} to the result.</description>
+            <description usage="{{astute advice:usage}}/Short Rest" action="Reaction" level="15">When another creature within 30 ft. you can hear misses an attack roll or fails an ability check or saving throw, allow it to reroll the d20, adding 1d{{intellect die:size}} to the result. The target also gains {{min 1 int}} temporary hit points.</description>
+        </sheet>
+        <rules>
+          <stat name="astute advice:usage" value="1" bonus="astute advice" />
+          <stat name="astute advice:usage" value="intelligence:modifier" bonus="astute advice" />
+        </rules>
+    </element>
+    <element name="Adept Assistance" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_ADEPT_ASSISTANCE">
+        <description>
+            <p>You can target two creatures, instead of just one, whenever you use an action on your turn to take the Help action.</p>
+        </description>
+        <sheet>
+            <description level="6">You can target two creatures instead of just one when using the Help action on your turn.</description>
+            <description level="15">You can target two creatures instead of just one when using the Help action on your turn. Targets of your Help action also gain {{min 1 int}} temporary hit points.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element name="Soothing Presence" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_SOOTHING_PRESENCE">
+        <description>
+            <p>Your calming presence allows others to truly relax. Creatures that complete a short rest with you have advantage on any Hit Die rolls they make to regain their hit points. They also gain a number of temporary hit points equal to your Savant level.</p>
+        </description>
+        <sheet>
+            <description>Creatures that complete a short rest with you have advantage when rolling Hit Die to regain hit points. They also gain {{level:savant}} temporary hit points.</description>
+        </sheet>
+    </element>
+    <element name="Mystical Intuition" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_MYSTICAL_INTUITION">
+        <description>
+            <p>Your life experience and extraordinary intuition can give you mystical insights into the world around you. You can spend 1 minute meditating on a question you have, or a question that another creature has asked you. At the end of the meditation, you mystically intuit the answer to the question as if you had cast the <em>commune</em> spell. However, unlike <em>commune</em>, you can only intuit an answer if it is known to another mortal being.</p>
+            <p class="indent">Once you gain an answer to a question using this feature, you must finish a long rest before you can do so again.</p>
+            <p class="indent">Finally, you regain all expended uses of your Astute Advice feature whenever you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest" level="10">You may spend 1 minute meditating on a question and intuit the answer as if you had cast the commune spell if the answer is known to another mortal being.</description>
+            <description usage="1/Short Rest" level="15">You may spend 1 minute meditating on a question and intuit the answer as if you had cast the commune spell if the answer is known to another mortal being.</description>
+        </sheet>
+    </element>
+    <element name="Master Mentor" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_MENTOR_MASTER_MENTOR">
+        <description>
+            <p>Your advice is legendary and is desired throughout the land. Creatures of your choice within 15 feet of you gain a bonus to all ability checks and saving throws equal to your Intelligence modifier (minimum of +1), so long as they can hear you.</p>
+            <p class="indent">Moreover, whenever you target an allied creature with the Help action or Astute Advice, you can grant it temporary hit points equal to your Intelligence modifier (minimum of 1).</p>
+            <p>Lastly, you regain the use of your Mystical Intuition feature whenever you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>Creatures of your choice within 15 ft. that can hear you gain a +{{min 1 int}} bonus to all ability checks and saving throws.</description>
+        </sheet>
+    </element>
+
+    <element name="Orator" type="Archetype" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_SAVANT_ORATOR">
+      <supports>Savant Academic Discipline</supports>
+      <description>
+          <p>Orators are true masters of linguistics and the spoken word. These wordsmiths use nothing but their wit and mastery of rhetoric to rebuff foes and empower their allies. With utmost confidence, they stride boldly into hostile situations, confident that they can win anyone with their eloquence.</p>
+          <p class="indent">Unlike those who use their charm to cajole, Orators embolden their allies and win over their enemies with nothing but reasonable logic and convincing rhetoric.</p>
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_ORATOR_STUDENT_OF_LOGIC" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_ORATOR_RHETORICAL_SUPERIORITY" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_ORATOR_IRON_LOGIC" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_ORATOR_PEERLESS_RHETORIC" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_ORATOR_MASTER_ORATOR" />
+      </description>
+      <sheet display="false">
+          <description>Orators embolden their allies and win over their enemies with nothing but reasonable logic and convincing rhetoric.</description>
+      </sheet>
+      <rules>
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_ORATOR_STUDENT_OF_LOGIC" level="3" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_ORATOR_RHETORICAL_SUPERIORITY" level="3" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_ORATOR_IRON_LOGIC" level="6" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_ORATOR_PEERLESS_RHETORIC" level="10" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_ORATOR_MASTER_ORATOR" level="15" />
+      </rules>
+    </element>
+    <element name="Student of Logic" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_ORATOR_STUDENT_OF_LOGIC">
+        <description>
+            <p>You gain proficiency in both Deception and Persuasion, and whenever you make a check with either proficiency you gain a bonus to your roll equal to one roll of your Intellect Die. If you are already proficient in either skill you gain proficiency in another skill from the Savant skill list in its place.</p>
+            <p class="indent">Your mastery over words grants you the benefits below:</p>
+            <ul>
+              <li>Whenever you make a Deception or Persuasion check you can use your Intelligence in place of Charisma.</li>
+              <li>You master your choice of the Instruction, Riddles, or Traditions Scholarly Pursuit, even if you do not meet the normal level prerequisite for that Pursuit.</li>
+              <li>You learn to speak, read, and write a number of extra languages equal to your Intelligence modifier.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} whenever you make an ability check in Deception or Persuasion, and you may use Intelligence in place of Charisma for these checks.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, Student of Logic" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_DECEPTION" default="ID_PROFICIENCY_SKILL_DECEPTION" />
+            <select type="Proficiency" name="Skill Proficiency, Student of Logic" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION" default="ID_PROFICIENCY_SKILL_PERSUASION" />
+            <select type="Class Feature" name="Scholarly Pursuit, Student of Logic" supports="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_INSTRUCTION|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_RIDDLES_NOREQ|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_TRADITIONS_NOREQ" />
+            <select type="Language" name="Language Proficiency (Student of Logic +1)" requirements="[int:12]"/>
+            <select type="Language" name="Language Proficiency (Student of Logic +2)" requirements="[int:14]"/>
+            <select type="Language" name="Language Proficiency (Student of Logic +3)" requirements="[int:16]"/>
+            <select type="Language" name="Language Proficiency (Student of Logic +4)" requirements="[int:18]"/>
+            <select type="Language" name="Language Proficiency (Student of Logic +5)" requirements="[int:20]"/>
+            <select type="Language" name="Language Proficiency (Student of Logic +6)" requirements="[int:22]"/>
+            <select type="Language" name="Language Proficiency (Student of Logic +7)" requirements="[int:24]"/>
+            <select type="Language" name="Language Proficiency (Student of Logic +8)" requirements="[int:26]"/>
+            <select type="Language" name="Language Proficiency (Student of Logic +9)" requirements="[int:28]"/>
+            <select type="Language" name="Language Proficiency (Student of Logic +10)" requirements="[int:30]"/>
+        </rules>
+    </element>
+    <element name="Rhetorical Superiority" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_ORATOR_RHETORICAL_SUPERIORITY">
+      <description>
+          <p>Your mastery of various languages allows you to inspire, dominate, and charm with words. You gain the rhetorical abilities below, which use your Intellect save DC and can affect any creature that can both hear and understand you.</p>
+          <h5 class="caption">CONVINCING CONVERSATION</h5>
+          <p>If you spend at least 1 minute talking with a creature that is not hostile toward you, you can force it to unknowingly make a Wisdom saving throw. On a failed save, it is charmed by you for 1 hour, or until you or your allies do anything harmful to the charmed creature or any of its allies.</p>
+          <p class="indent">You can have only one creature charmed this way at a time. Charming another target ends this effect for other creatures.</p>
+          <h5 class="caption">CUTTING RETORT</h5>
+          <p>When a creature you can see within 30 feet makes an attack, you can use your reaction to distract it with a cutting remark. It must succeed on a Wisdom saving throw or subtract one roll of your Intellect Die from the triggering attack roll.</p>
+          <p class="indent">Once a creature succeeds on this Wisdom saving throw, it is immune to the effects of this ability it for 24 hours.</p>
+          <h5 class="caption">INVIGORATING WORD</h5>
+          <p>When a creature you can see within 30 feet takes damage from a hostile creature, you can use your reaction to grant it temporary hit points equal to one roll of your Intellect Die.</p>
+          <p class="indent">A creature must have at least 1 hit point remaining after taking damage in order to benefit from this ability.</p>
+          <h5 class="caption">UPLIFTING REMARK</h5>
+          <p>When another creature you can see within 30 feet makes an Intelligence, Wisdom, or Charisma saving throw, you can use a reaction to add one roll of your Intellect Die to its roll.</p>
+      </description>
+      <sheet>
+          <description level="3">The following abilities can affect any creature that can both hear and understand you.</description>
+          <description level="15">The following abilities can affect any creature that can both hear and understand you. Targets whose Intelligence and Wisdom scores are both lower than {{intelligence:score}} have disadvantage on their saving throws against them.</description>
+      </sheet>
+      <rules>
+          <select type="Class Feature" name="Rhetorical Superiority (Convincing Conversation)" supports="ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_CONVINCING_CONVERSATION|ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_CUTTING_RETORT|ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_INVIGORATING_WORD|ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_UPLIFTING_REMARK" default="ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_CONVINCING_CONVERSATION" />
+          <select type="Class Feature" name="Rhetorical Superiority (Cutting Retort)" supports="ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_CONVINCING_CONVERSATION|ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_CUTTING_RETORT|ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_INVIGORATING_WORD|ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_UPLIFTING_REMARK" default="ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_CUTTING_RETORT" />
+          <select type="Class Feature" name="Rhetorical Superiority (Invigorating Word)" supports="ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_CONVINCING_CONVERSATION|ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_CUTTING_RETORT|ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_INVIGORATING_WORD|ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_UPLIFTING_REMARK" default="ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_INVIGORATING_WORD" />
+          <select type="Class Feature" name="Rhetorical Superiority (Uplifting Remark)" supports="ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_CONVINCING_CONVERSATION|ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_CUTTING_RETORT|ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_INVIGORATING_WORD|ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_UPLIFTING_REMARK" default="ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_UPLIFTING_REMARK" />
+      </rules>
+    </element>
+
+    <!-- Rhetorical Superiority -->
+    <element name="Convincing Conversation" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_CONVINCING_CONVERSATION">
+      <supports>Rhetorical Superiority</supports>
+      <description>
+        <p>If you spend at least 1 minute talking with a creature that is not hostile toward you, you can force it to unknowingly make a Wisdom saving throw. On a failed save, it is charmed by you for 1 hour, or until you or your allies do anything harmful to the charmed creature or any of its allies.</p>
+        <p class="indent">You can have only one creature charmed this way at a time. Charming another target ends this effect for other creatures.</p>
+      </description>
+      <sheet>
+        <description>If you spend at least 1 minute talking to a non-hostile creature, you can force it to make a secret Wisdom saving throw (DC {{intellect die:dc}}); if it fails, it is charmed until you or your allies harm it or its allies. Only one creature can be charmed this way at a time.</description>
+      </sheet>
+    </element>
+    <element name="Cutting Retort" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_CUTTING_RETORT">
+      <supports>Rhetorical Superiority</supports>
+      <description>
+        <p>When a creature you can see within 30 feet makes an attack, you can use your reaction to distract it with a cutting remark. It must succeed on a Wisdom saving throw or subtract one roll of your Intellect Die from the triggering attack roll.</p>
+        <p class="indent">Once a creature succeeds on this Wisdom saving throw, it is immune to the effects of this ability it for 24 hours.</p>
+      </description>
+      <sheet>
+        <description action="Reaction">When a creature you can see within 30 ft. attacks, force it to make a Wisdom saving throw (DC {{intellect die:dc}}); if it fails, subtract 1d{{intellect die:size}} from its attack roll. A creature that succeeds is immune to this ability for 24 hours.</description>
+      </sheet>
+    </element>
+    <element name="Invigorating Word" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_INVIGORATING_WORD">
+      <supports>Rhetorical Superiority</supports>
+      <description>
+        <p>When a creature you can see within 30 feet takes damage from a hostile creature, grant it temporary hit points equal to one roll of your Intellect Die.</p>
+        <p class="indent">A creature must have at least 1 hit point remaining after taking damage in order to benefit from this ability.</p>
+      </description>
+      <sheet>
+        <description action="Reaction">When a creature you can see within 30 ft. takes damage from a hostile creature and survives with at least 1 hit point, grant it 1d{{intellect die:size}} temporary hit points.</description>
+      </sheet>
+    </element>
+    <element name="Uplifting Remark" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SAVANT_RHETORICAL_SUPERIORITY_UPLIFTING_REMARK">
+      <supports>Rhetorical Superiority</supports>
+      <description>
+          <p>When another creature you can see within 30 feet makes an Intelligence, Wisdom, or Charisma saving throw, you can use a reaction to add one roll of your Intellect Die to its roll.</p>
+      </description>
+      <sheet>
+        <description action="Reaction" level="3">When a creature you can see within 30 ft. makes an Intelligence, Wisdom, or Charisma saving throw, grant it 1d{{intellect die:size}} temporary hit points.</description>
+        <description action="Reaction" level="6">When a creature you can see within 30 ft. makes an Intelligence, Wisdom, or Charisma saving throw, roll 1d{{intellect die:size}} twice and grant it the higher of the two in temporary hit points.</description>
+      </sheet>
+    </element>
+
+    <element name="Iron Logic" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_ORATOR_IRON_LOGIC">
+      <description>
+          <p>Your masterful grasp of logic allows you to resist all but the strongest mind-altering effects. You have advantage on any saving throw you are forced to make to resist enchantment spells, and you are immune to the charmed condition.</p>
+          <p class="indent">Also, whenever you use Uplifting Remark, the creature can roll the Intellect Die twice and use the higher result.</p>
+      </description>
+      <sheet>
+          <description>You have advantage on saving throws against enchantment spells.</description>
+      </sheet>
+      <rules>
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_CHARMED" />
+      </rules>
+    </element>
+    <element name="Peerless Rhetoric" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_ORATOR_PEERLESS_RHETORIC">
+      <description>
+          <p>You can bend the masses to your will with your words. If you speak to a group of creatures who can hear and understand you for 1 minute, you can choose to inspire or persuade a number of creatures in that crowd equal to your Savant level, as detailed below. Once you do so, you must finish a short or long rest before you can use this ability on a crowd again.</p>
+          <p class="indent"><strong><em>Inspire.</em></strong> Creatures gain a number of temporary hit points equal to your Savant level, and while the temporary hit points remain, creatures have advantage on saving throws to resist enchantment spells and are immune to being frightened.</p>
+          <p class="indent"><strong><em>Persuade.</em></strong> Creatures must succeed on a Wisdom saving throw against your Intellect save DC or be charmed by you for up to 24 hours as if by the <em>mass suggestion</em> spell.</p>
+      </description>
+      <sheet>
+          <description usage="1/Short Rest">You can speak to a group of creatures for 1 minute, and either Inspire or Persuade {{level:savant}} of them who can hear or understand you.</description>
+      </sheet>
+      <rules>
+          <select type="Class Feature" name="Peerless Rhetoric (Inspire)" supports="ID_LASERLL_CLASS_FEATURE_SAVANT_PEERLESS_RHETORIC_INSPIRE|ID_LASERLL_CLASS_FEATURE_SAVANT_PEERLESS_RHETORIC_PERSUADE" default="ID_LASERLL_CLASS_FEATURE_SAVANT_PEERLESS_RHETORIC_INSPIRE" />
+          <select type="Class Feature" name="Peerless Rhetoric (Inspire)" supports="ID_LASERLL_CLASS_FEATURE_SAVANT_PEERLESS_RHETORIC_INSPIRE|ID_LASERLL_CLASS_FEATURE_SAVANT_PEERLESS_RHETORIC_PERSUADE" default="ID_LASERLL_CLASS_FEATURE_SAVANT_PEERLESS_RHETORIC_PERSUADE" />
+        </rules>
+    </element>
+
+    <!-- Peerless Rhetoric -->
+    <element name="Inspire" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SAVANT_PEERLESS_RHETORIC_INSPIRE">
+      <supports>Peerless Rhetoric</supports>
+      <description>
+          <p>Creatures gain a number of temporary hit points equal to your Savant level, and while the temporary hit points remain, creatures have advantage on saving throws to resist enchantment spells and are immune to being frightened.</p>
+      </description>
+      <sheet>
+        <description>Creatures gain {{level:savant}} temporary hit points, and while these remain, they have advantage on saving throws to resist enchantment spells and are immune to being frightened.</description>
+      </sheet>
+      <rules>
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FRIGHTENED" />
+      </rules>
+    </element>
+    <element name="Persuade" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SAVANT_PEERLESS_RHETORIC_PERSUADE">
+      <supports>Peerless Rhetoric</supports>
+      <description>
+          <p>Creatures must succeed on a Wisdom saving throw against your Intellect save DC or be charmed by you for up to 24 hours as if by the <em>mass suggestion</em> spell.</p>
+      </description>
+      <sheet>
+        <description level="10">Creatures must succeed on a Wisdom saving throw (DC {{intellect die:dc}}) or be charmed by you for up to 24 hours as if by the mass suggestion spell.</description>
+        <description level="15">Creatures must succeed on a Wisdom saving throw (DC {{intellect die:dc}}) or be charmed by you for up to 24 hours as if by the mass suggestion spell. Targets whose Intelligence and Wisdom scores are both lower than {{intelligence:score}} have disadvantage on their saving throws against this.</description>
+      </sheet>
+    </element>
+
+    <element name="Master Orator" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_ORATOR_MASTER_ORATOR">
+      <description>
+          <p>Your absolute mastery over the spoken word allows you to bend all but the strongest creatures to your will. When you force a creature to make a saving throw to resist one of your Rhetorical Superiority abilities or Peerless Rhetoric, it has disadvantage on the roll if both its Intelligence and Wisdom scores are lower than your Intelligence score.</p>
+      </description>
+      <sheet display="false"></sheet>
+    </element>
+
+    <element name="Philosopher" type="Archetype" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_SAVANT_PHILOSOPHER">
+      <supports>Savant Academic Discipline</supports>
+      <description>
+          <p>Philosophy is considered by many to be the purest Discipline a Savant can pursue. They expend their genius pondering the deep questions of existence; the purpose of life, the nature of the multiverse, and the relationships between mortal beings and gods. Through the study of the multiverse, Philosophers try to perfect mortal knowledge of the true nature of reality.</p>
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_PHILOSOPHER_STUDENT_OF_THOUGHT" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_PHILOSOPHER_WORDS_OF_POWER" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_PHILOSOPHER_UNWAVERING_FOCUS" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_PHILOSOPHER_SUPREME_UNDERSTANDING" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_PHILOSOPHER_MASTER_PHILOSOPHER" />
+      </description>
+      <sheet display="false">
+          <description>Philosophers try to perfect mortal knowledge of the true nature of reality.</description>
+      </sheet>
+      <rules>
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_PHILOSOPHER_STUDENT_OF_THOUGHT" level="3" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_PHILOSOPHER_WORDS_OF_POWER" level="3" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_PHILOSOPHER_UNWAVERING_FOCUS" level="6" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_PHILOSOPHER_SUPREME_UNDERSTANDING" level="10" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_PHILOSOPHER_MASTER_PHILOSOPHER" level="15" />
+      </rules>
+    </element>
+    <element name="Student of Thought" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_PHILOSOPHER_STUDENT_OF_THOUGHT">
+        <description>
+            <p>You gain proficiency in both Arcana and Religion. Whenever you make a check with either of these proficiencies you gain a bonus to your roll equal to one roll of your Intellect Die. If you are already proficient in either skill you gain proficiency in another skill from the Savant skill list in its place.</p>
+            <p class="indent">Your grasp of reality also grants you the following benefits:</p>
+            <ul>
+              <li>Whenever you make an ability check to communicate with a creature that is not native to the material plane you gain a bonus to your roll equal to one roll of your Intellect Die.</li>
+              <li>You can also learn the following characteristics about your Focus with Adroit Analysis: its alignment, its native plane of existence, or its spellcasting ability (if it has one) and the level of the highest spell that it can cast.</li>
+              <li>You learn to speak, read, and write either Celestial, Infernal, Primordial, or Sylvan.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} whenever you make an ability check in Arcana or Religion, or when you make an ability check to communicate with a creature not native to the material plane.&#13;&#10;Your Adroit Analysis can also reveal the following about your Focus: its alignment, native plane of existence, or its spellcasting ability and the highest spell level it can cast at.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, Student of Thought" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION" default="ID_PROFICIENCY_SKILL_ARCANA" />
+            <select type="Proficiency" name="Skill Proficiency, Student of Thought" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION" default="ID_PROFICIENCY_SKILL_RELIGION" />
+            <select type="Proficiency" name="Language Proficiency, Student of Thought" supports= "ID_LANGUAGE_CELESTIAL|ID_LANGUAGE_INFERNAL|ID_LANGUAGE_PRIMORDIAL|ID_LANGUAGE_SYLVAN" />
+        </rules>
+    </element>
+    <element name="Words of Power" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_PHILOSOPHER_WORDS_OF_POWER">
+        <description>
+            <p>In your study, you have learned to speak the Words of Power below that were used in shaping the multiverse. If your Focus is within 30 feet and it can hear you, you can speak one Word of Power at it, forcing it to make a saving throw against your Intellect save DC, or suffer the Word of Power's effects.</p>
+            <p class="indent">Your grasp of reality also grants you the following benefits:</p>
+            <ul>
+              <li>Whenever you make an ability check to communicate with a creature that is not native to the material plane you gain a bonus to your roll equal to one roll of your Intellect Die.</li>
+              <li>You can also learn the following characteristics about your Focus with Adroit Analysis: its alignment, its native plane of existence, or its spellcasting ability (if it has one) and the level of the highest spell that it can cast.</li>
+              <li>You learn to speak, read, and write either Celestial, Infernal, Primordial, or Sylvan.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description level="3">You can speak one Word of Power at your Focus if it is within 30 ft. and can hear you.</description>
+            <description level="6">You can speak one Word of Power at a creature if it is within 30 ft. and can hear you. If the target is your Focus, it takes an additional 1d{{intellect die:size}} psychic damage, and still takes half of this roll if it is successful on its saving throw against the Word. </description>
+            <description level="15">You can speak one Word of Power at a creature if it is within 30 ft. and can hear you. If the target is your Focus, it takes an additional 1d{{intellect die:size}} psychic damage, and still takes half of this roll if it is successful on its saving throw against the Word. &#13;&#10;Whenever any creature takes psychic damage from one of your Words of Power, it takes an additional {{min 1 int}} damage.</description>
+
+            focus, failed save: 2d{{intellect die:size}} + {{intelligence:modifier}}
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Words of Power (Level 3)" supports="ID_LASERLL_CLASS_FEATURE_POWER_WORD_CONFOUND|ID_LASERLL_CLASS_FEATURE_POWER_WORD_DISORIENT|ID_LASERLL_CLASS_FEATURE_POWER_WORD_DREAD|ID_LASERLL_CLASS_FEATURE_POWER_WORD_HALT" default="ID_LASERLL_CLASS_FEATURE_POWER_WORD_CONFOUND" level="3" />
+            <select type="Class Feature" name="Words of Power (Level 3)" supports="ID_LASERLL_CLASS_FEATURE_POWER_WORD_CONFOUND|ID_LASERLL_CLASS_FEATURE_POWER_WORD_DISORIENT|ID_LASERLL_CLASS_FEATURE_POWER_WORD_DREAD|ID_LASERLL_CLASS_FEATURE_POWER_WORD_HALT" default="ID_LASERLL_CLASS_FEATURE_POWER_WORD_DISORIENT" level="3" />
+            <select type="Class Feature" name="Words of Power (Level 3)" supports="ID_LASERLL_CLASS_FEATURE_POWER_WORD_CONFOUND|ID_LASERLL_CLASS_FEATURE_POWER_WORD_DISORIENT|ID_LASERLL_CLASS_FEATURE_POWER_WORD_DREAD|ID_LASERLL_CLASS_FEATURE_POWER_WORD_HALT" default="ID_LASERLL_CLASS_FEATURE_POWER_WORD_DREAD" level="3" />
+            <select type="Class Feature" name="Words of Power (Level 3)" supports="ID_LASERLL_CLASS_FEATURE_POWER_WORD_CONFOUND|ID_LASERLL_CLASS_FEATURE_POWER_WORD_DISORIENT|ID_LASERLL_CLASS_FEATURE_POWER_WORD_DREAD|ID_LASERLL_CLASS_FEATURE_POWER_WORD_HALT" default="ID_LASERLL_CLASS_FEATURE_POWER_WORD_HALT" level="3" />
+            <select type="Class Feature" name="Words of Power (Level 10)" supports="ID_LASERLL_CLASS_FEATURE_POWER_WORD_ENFEEBLE|ID_LASERLL_CLASS_FEATURE_POWER_WORD_SHUNT" default="ID_LASERLL_CLASS_FEATURE_POWER_WORD_ENFEEBLE" level="10" />
+            <select type="Class Feature" name="Words of Power (Level 10)" supports="ID_LASERLL_CLASS_FEATURE_POWER_WORD_ENFEEBLE|ID_LASERLL_CLASS_FEATURE_POWER_WORD_SHUNT" default="ID_LASERLL_CLASS_FEATURE_POWER_WORD_SHUNT" level="10" />
+        </rules>
+    </element>
+    <!-- Words of Power -->
+    <element name="Power Word: Confound" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_POWER_WORD_CONFOUND">
+        <supports>Word of Power</supports>
+        <description>
+            <p>Whenever your Focus makes an ability check or attack roll, you can use your reaction to force it to make an Intelligence saving throw. On a failure, it takes psychic damage equal to one roll of your Intellect Die and it suffers disadvantage on the triggering ability check or attack roll.</p>
+        </description>
+        <sheet>
+            <description action="Reaction">Force a target that is making an ability check or attack roll to make an Intelligence saving throw (DC {{intellect die:dc}}). On a failure it takes 1d{{intellect die:size}} psychic damage and suffers disadvantage on that check or roll.</description>
+        </sheet>
+    </element>
+    <element name="Power Word: Disorient" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_POWER_WORD_DISORIENT">
+        <supports>Word of Power</supports>
+        <description>
+            <p>As an action, you force your Focus to make a Wisdom saving throw. On a failure, it takes psychic damage equal to one roll of your Intellect Die, and has disadvantage on the first saving throw it makes before the beginning of your next turn.</p>
+        </description>
+        <sheet>
+            <description action="Action">Force a target to make a Wisdom saving throw (DC {{intellect die:dc}}). On a failure it takes 1d{{intellect die:size}} psychic damage and suffers disadvantage on the first saving throw it makes before your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Power Word: Dread" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_POWER_WORD_DREAD">
+        <supports>Word of Power</supports>
+        <description>
+            <p>As an action, you force your Focus to make a Wisdom saving throw. On a failure, it takes psychic damage equal to one roll of your Intellect Die and it is frightened of another creature it can see (your choice) until the beginning of your next turn.</p>
+        </description>
+        <sheet>
+            <description action="Action">Force a target to make a Wisdom saving throw (DC {{intellect die:dc}}). On a failure it takes 1d{{intellect die:size}} psychic damage and becomes frightened of another creature it can see of your choosing until your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Power Word: Halt" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_POWER_WORD_HALT">
+        <supports>Word of Power</supports>
+        <description>
+            <p>When your Focus attempts to move, you can use a reaction to force it to make a Strength saving throw. On a failure, it takes psychic damage equal to one roll of your Intellect Die and its speed is reduced to zero until the beginning of your next turn.</p>
+        </description>
+        <sheet>
+            <description action="Reaction">Force a target Strength saving throw (DC {{intellect die:dc}}). On a failure it takes 1d{{intellect die:size}} psychic damage and its speed is reduced to 0 until your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Power Word: Enfeeble" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_POWER_WORD_ENFEEBLE">
+        <supports>Word of Power</supports>
+        <prerequisite>10th level</prerequisite>
+        <requirements>[level:10]</requirements>
+        <description>
+            <p>As an action, you force your Focus to make an Intelligence saving throw. On a failed save, it is stunned for 1 minute.</p>
+            <p>It can choose to repeat this saving throw at the end of each of its turns. On a success, this effect ends, but, on a failure, it takes psychic damage equal to two rolls of your Intellect Die.</p>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest" action="Action">Use your action to force a target to make an Intelligence saving throw (DC {{intellect die:dc}}). On a failure it is stunned for 1 minute. It can choose to repeat this saving throw at the end of each of its turn, ending the effect on a success but taking 2d{{intellect die:size}} psychic damage on a failure.</description>
+        </sheet>
+    </element>
+    <element name="Power Word: Shunt" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_POWER_WORD_SHUNT">
+        <supports>Word of Power</supports>
+        <prerequisite>10th level</prerequisite>
+        <requirements>[level:10]</requirements>
+        <description>
+            <p>As an action, you can force your Focus to make a Charisma saving throw. On a failed save, it is shunted from the current plane for up to 1 minute. If it is native to the current plane, it is banished to a harmless demiplane. If it is not native to the current plane, it is banished to its native plane of existence.</p>
+            <p>It can choose to repeat this saving throw at the end of each of its turns. On a success, it returns to the space that it was shunted from, or the closest unoccupied space. On a failure, it takes psychic damage equal to two rolls of your Intellect Die.</p>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest" action="Action">Use your action to force a target to make an Charisma saving throw (DC {{intellect die:dc}}). On a failure it is shunted from this plane of existence for up to 1 minute. It can choose to repeat this saving throw at the end of each of its turn, returning to the closest unoccupied space on a success but taking 2d{{intellect die:size}} psychic damage on a failure.</description>
+        </sheet>
+    </element>
+
+    <element name="Unwavering Focus" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_PHILOSOPHER_UNWAVERING_FOCUS">
+        <description>
+            <p>Your resolute sense of purpose bolsters your Words of Power. You can speak your Words of Power at any creature that can hear you within 30 feet, instead of just your current Focus.</p>
+            <p class="indent">Moreover, if you speak a Word of Power at your Focus, it takes additional psychic damage equal to one roll of your Intellect Die on a failed save, and half as much psychic damage on a successful save.</p>
+        </description>
+        <sheet display="false"></sheet>
+    </element>
+    <element name="Supreme Understanding" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_PHILOSOPHER_SUPREME_UNDERSTANDING">
+        <description>
+            <p>Your ever-deepening understanding of the nature of reality grants you knowledge of more potent Words of Power. You learn the Words of Power Enfeeble and Shunt, and you can speak each of them once between each short or long rest.</p>
+        </description>
+        <sheet display="false"></sheet>
+    </element>
+    <element name="Master Philosopher" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_PHILOSOPHER_MASTER_PHILOSOPHER">
+        <description>
+            <p>Your willpower rivals that of powerful extraplanar beings. You are always under the effect of <em>protection from evil and good</em>.</p>
+            <p class="indent">Also, whenever a creature takes psychic damage from one of your Words of Power, it takes additional psychic damage equal to your Intelligence modifier (minimum of +1).</p>
+            <div class="reference">
+              <div element="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
+            </div>
+        </description>
+        <sheet>
+          <description>You are permanently under the effect of the spell <em>protection from evil and good</em>.</description>
+        </sheet>
+    </element>
+
+    <element name="Rune Scribe" type="Archetype" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_SAVANT_RUNE_SCRIBE">
+      <supports>Savant Academic Discipline</supports>
+      <description>
+          <p>Legends say that rune magic is the most ancient arcane art to have been mastered by mortals. Savants that dedicate their lives to the study of these Runes are known as Rune Scribes. They learn all they can about these ancient sigils that embody the magic of creation. The magic of runes isn't widely known, and its secrets are jealously guarded by those who master it.</p>
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_RUNE_SCRIBE_STUDENT_OF_RUNE_MAGIC" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_RUNE_SCRIBE_RUNE_CARVING" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_RUNE_SCRIBE_ELDER_MAGICKS" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_RUNE_SCRIBE_RUNIC_WARD" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_RUNE_SCRIBE_MASTER_RUNE_SCRIBE" />
+      </description>
+      <sheet display="false">
+          <description>These Savants have dedicated their lives to unlocking the secrets of the ancient, arcane art of rune magic.</description>
+      </sheet>
+      <rules>
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_RUNE_SCRIBE_STUDENT_OF_RUNE_MAGIC" level="3" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_RUNE_SCRIBE_RUNE_CARVING" level="3" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_RUNE_SCRIBE_ELDER_MAGICKS" level="6" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_RUNE_SCRIBE_RUNIC_WARD" level="10" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_RUNE_SCRIBE_MASTER_RUNE_SCRIBE" level="15" />
+      </rules>
+    </element>
+    <element name="Student of Rune Magic" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_RUNE_SCRIBE_STUDENT_OF_RUNE_MAGIC">
+        <description>
+            <p>You gain proficiency with Arcana and calligrapher's supplies. Whenever you make a check with either proficiency you gain a bonus to the roll equal to one roll of your Intellect Die. If you are already proficient in Arcana you gain proficiency in another skill from the Savant skill list in its place.</p>
+            <p class="indent">You also learn to speak, read, and write two of the following Runic Languages, which are used to inscribe the Runes you learn: Draconic, Druidic, Dwarvish, Giant, or Primordial.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} whenever you make an ability check in Arcana or with calligrapher's supplies.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, Student of Rune Magic" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION" default="ID_PROFICIENCY_SKILL_ARCANA" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+            <select type="Proficiency" name="Language Proficiency, Student of Rune Magic" supports= "ID_LANGUAGE_DRACONIC|ID_LANGUAGE_DRUIDIC|ID_LANGUAGE_DWARVISH|ID_LANGUAGE_GIANT|ID_LANGUAGE_PRIMORDIAL" number="2" />
+        </rules>
+    </element>
+    <element name="Rune Carving" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SAVANT_RUNE_SCRIBE_RUNE_CARVING">
+      	<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_LASERLL_SAVANT_RUNE_CARVING</requirements>
+  		<description>
+  			<p>You have learned the artful and ancient magic of Runes.</p>
+  			<p class="indent"><strong><em>Runes Known.</em></strong>You learn two Runes of your choice from the list at the end of this Discipline. Some Runes have a Savant level prerequisite, which you can learn as soon as you reach that Savant level.</p>
+        <p class="indent">You learn one additional Rune of your choice at 6th, 10th, 15th, and 18th level in this class.</p>
+        <p class="indent">Whenever you gain a level in this class, you can replace one of the Runes you know with another Rune of your choice.</p>
+        <p class="indent"><strong><em>Inscribing a Rune.</em></strong>Over the course of 1 hour, you can use your calligrapher's supplies to inscribe a Rune you know into a weapon, suit of armor, or an object that you can wear or hold. A creature that wears or wields a Runic object gains the benefits of the inscribed Rune.</p>
+        <p class="indent">Each of the Runes you know can only be inscribed in one object. Inscribing a Rune again dispels any previous inscriptions.</p>
+        <p class="indent"><strong><em>Invoking Runes.</em></strong>If the creature bearing one of your Runic objects speaks the language the Rune is inscribed in, it can Invoke the Rune to gain its benefits.</p>
+        <p class="indent">Once a Rune has been Invoked, it cannot be Invoked again until the Rune Scribe who inscribed it finishes a long rest, even if the Rune is inscribed onto a different object.</p>
+        <p class="indent"><strong><em>Runic Casting.</em></strong>You can cast and concentrate on spells from your Runes, even when you have a Focus. If a Rune requires a target to make a saving throw, it does so against your Intellect save DC. If a Rune requires an attack roll, the the Invoking creature uses its Intelligence as follows:</p>
+        <center>
+          <p><strong>Runic attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+        </center>
+  		</description>
+      <sheet>
+        <description level="3">Spend 1 hour to carve a known rune into an object and grant its wielder the Rune's benefits. Each Rune can only be inscribed into one object at a time. If the wielder speaks the Rune's language, it can Invoke the Rune for an additional effect once per long rest. &#13;&#10;You can cast and concentrate on spells from your Runes even when you have a Focus.&#13;&#10;You may replace a learned Rune with another when you gain a Savant level.</description>
+        <description level="6">Spend 1 hour to carve a known rune into an object, making it magical and granting its wielder the Rune's benefits. Each Rune can only be inscribed into one object at a time. If the wielder speaks the Rune's language, it can Invoke the Rune for an additional effect once per long rest. &#13;&#10;You can cast and concentrate on spells from your Runes even when you have a Focus.&#13;&#10;You may replace a learned Rune with another when you finish a long rest or gain a Savant level.</description>
+        <description level="10">Spend 1 hour to carve a known rune into an object, making it magical and granting its wielder the Rune's benefits. The wielder also gains a +{{min 1 int}} bonus to saving throws against spells and magical effects. Each Rune can only be inscribed into one object at a time. If the wielder speaks the Rune's language, it can Invoke the Rune for an additional effect once per long rest. &#13;&#10;You can cast and concentrate on spells from your Runes even when you have a Focus.&#13;&#10;You may replace a learned Rune with another when you finish a long rest or gain a Savant level.</description>
+      </sheet>
+  		<rules>
+  			<select type="Class Feature" name="Rune Carvings (Level 3)" supports="Rune Carving" level="3" number="2" />
+  			<select type="Class Feature" name="Rune Carvings (Level 6)" supports="Rune Carving" level="6" />
+  			<select type="Class Feature" name="Rune Carvings (Level 10)" supports="Rune Carving" level="10" />
+  			<select type="Class Feature" name="Rune Carvings (Level 15)" supports="Rune Carving" level="15" />
+  			<select type="Class Feature" name="Rune Carvings (Level 18)" supports="Rune Carving" level="18" />
+  		</rules>
+	  </element>
+
+    <!-- Rune Carvings -->
+    <element name="Rune of Enchantment" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_RUNE_CARVING_ENCHANTMENT">
+        <supports>Rune Carving</supports>
+        <prerequisite>Item: a bracelet, diadem, necklace, or ring</prerequisite>
+        <description>
+            <p><em>Item: a bracelet, diadem, necklace, or ring</em></p>
+            <p>Creatures will treat the bearer of this Runic object one stage friendlier than normal. For example, an indifferent creature might treat the bearer as a friend, or a hostile creature might treat the bearer indifferently. This special treatment instantly ends if the bearer attacks the creature.</p>
+            <p class="indent"><strong><em>Invoking this Rune.</em></strong>As an action, the bearer can Invoke the Rune to cast either the calm emotions, charm person or command spell, targeting a number of creatures equal to the Rune Scribe's Intelligence modifier (minimum of 1 creature).</p>
+        </description>
+        <sheet>
+            <description>Creatures treat the bearer of this Runic object one stage friendlier than normal, until the bearer attacks the creature.&#13;&#10;Invoke: Use an action to cast <em>calm emotions</em>,<em>charm person</em>, or <em>command</em> targeting {{min 1 int}} creatures.</description>
+        </sheet>
+    </element>
+    <element name="Rune of Illusion" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_RUNE_CARVING_ILLUSION">
+        <supports>Rune Carving</supports>
+        <prerequisite>Item: a cloak, robe, or suit of armor</prerequisite>
+        <description>
+            <p><em>Item: a cloak, robe, or suit of armor</em></p>
+            <p>As an action, the bearer of this Runic object can change its physical appearance to match that of a creature it has seen before, so long as it has the same arrangement of limbs as the bearer. The bearer can determine the specifics of these changes, including race, coloration, hair length, sex, height, and weight, but it cannot change its size. This illusion does not affect clothing, equipment, or game statistics.</p>
+            <p class="indent">The illusion can be detected with a successful Intelligence (Investigation) check vs. the Rune Scribe's Intellect save DC.</p>
+            <p class="indent"><strong><em>Invoking this Rune.</em></strong>As an action, the bearer of this Runic object can Invoke this Rune to turn invisible for 10 minutes. This invisibility ends if they attack or force a saving throw.</p>
+        </description>
+        <sheet>
+            <description>The bearer can change its appearance to match that of a creature it has seen before, as long as it has the same arrangement of limbs; the bearer cannot change size, and the illusion does not affect game statistics. Others can detect the illusion with a successful Intelligence (Investigation) check, DC {{intellect die:dc}}&#13;&#10;Invoke: Use an action to turn invisible for 10 minutes, ending if the bearer attacks or forces a saving throw.</description>
+        </sheet>
+    </element>
+    <element name="Rune of Necromancy" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_RUNE_CARVING_NECROMANCY">
+        <supports>Rune Carving</supports>
+        <prerequisite>Item: a belt, ring, or suit of armor</prerequisite>
+        <description>
+            <p><em>Item: a belt, ring, or suit of armor</em></p>
+            <p>The bearer of this Runic object can use a bonus action to grant itself temporary hit points equal to the Rune Scribe's Intelligence modifier (minimum of 1 temporary hit point).</p>
+            <p class="indent"><strong><em>Invoking this Rune.</em></strong>When the bearer of this Runic object is reduced to 0 hit points, but it is not killed outright, it can Invoke this Rune to fall to 1 hit point instead of 0.</p>
+        </description>
+        <sheet>
+            <description>The bearer can use a bonus action to grant itself {{min 1 int}} temporary hit points.&#13;&#10;Invoke: If reduced to 0 hit points but not killed outright, Invoke this Rune to fall to 1 hit point instead.</description>
+        </sheet>
+    </element>
+    <element name="Rune of Abjuration" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_RUNE_CARVING_ABJURATION">
+        <supports>Rune Carving</supports>
+        <prerequisite>6th level, Item: a cloak, robe, shield, or suit of armor</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Item: a cloak, robe, shield, or suit of armor</em></p>
+            <p>Once per turn, the bearer of this Runic object can reduce the damage from a spell or another magical effect by an amount equal the Rune Scribe's Intelligence modifier (minimum of 1)</p>
+            <p class="indent"><strong><em>Invoking this Rune.</em></strong>When a creature within 30 feet of the bearer of this Runic object casts a spell, the bearer can use its reaction to Invoke this Rune and force the creature that cast the spell to make a Constitution saving throw. On a failure, the triggering spell fails and has no effect.</p>
+        </description>
+        <sheet>
+            <description>Once per turn, the bearer can reduce the damage from a spell or magical effect by {{min 1 int}}.&#13;&#10;Invoke: When a creature within 30 ft. of the bearer casts a spell, the bearer can use a reaction to force that creature to make a Constitution saving throw (DC {{intellect die:dc}}), and negate the spell on a failure.</description>
+        </sheet>
+    </element>
+    <element name="Rune of Conjuration" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_RUNE_CARVING_CONJURATION">
+        <supports>Rune Carving</supports>
+        <prerequisite>6th level, Item: a belt, cloak, ring, or suit of armor</prerequisite>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p><em>Item: a belt, cloak, ring, or suit of armor</em></p>
+            <p>As an action, the bearer of this Runic object can expend any amount of its remaining movement speed to instantly teleport to an unoccupied space it can see within that distance.</p>
+            <p class="indent"><strong><em>Invoking this Rune.</em></strong>As an action, the bearer can Invoke the Rune and force two creatures it can see within 60 feet to make a Charisma saving throw, which a creature can choose to fail. If both fail, they instantly switch places.</p>
+        </description>
+        <sheet>
+            <description>The bearer can teleport any amount of their remaining movement to teleport to a visible, unoccupied space that far away.&#13;&#10;Invoke: Force two creatures within 60 ft. to make Charisma saving throws of DC {{intellect die:dc}}, which they can choose to fail. If both fail, they switch places.</description>
+        </sheet>
+    </element>
+    <element name="Rune of Divination" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_RUNE_CARVING_DIVINATION">
+        <supports>Rune Carving</supports>
+        <prerequisite>10th level, Item: a wand, staff, robe, or spellcasting focus</prerequisite>
+        <requirements>[level:10]</requirements>
+        <description>
+            <p><em>Prerequisite: 10th level</em></p>
+            <p><em>Item: a wand, staff, robe, or spellcasting focus</em></p>
+            <p>The bearer of this Runic object can use it as a spellcasting focus to cast the comprehend languages, detect magic and identify spells as rituals, without the material components.</p>
+            <p class="indent"><strong><em>Invoking this Rune.</em></strong>As an action, the bearer can Invoke the Rune to empower their vision. For 1 hour, the bearer has truesight, sees secret doors and traps hidden by magic, and can see into the Ethereal Plane, all out to a range of 120 feet.</p>
+        </description>
+        <sheet>
+            <description>The bearer can use this object as a spellcasting focus to cast <em>comprehend languages</em>, <em>detect magic</em>, and <em>identify</em> as rituals without the material components.&#13;&#10;Invoke: Use an action to gain truesight, see hidden doors and traps, and glimpse into the Ethereal plane; these last for 1 hour and extend to 120 ft.</description>
+        </sheet>
+    </element>
+    <element name="Rune of Conjuration" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_RUNE_CARVING_CONJURATION">
+        <supports>Rune Carving</supports>
+        <prerequisite>10th level, Item: a bracelet, diadem, ring, or necklace</prerequisite>
+        <requirements>[level:10]</requirements>
+        <description>
+            <p><em>Prerequisite: 10th level</em></p>
+            <p><em>Item: a bracelet, diadem, ring, or necklace</em></p>
+            <p>The bearer of this Runic object gains its choice of a 30-foot swimming speed, a 30-foot climbing speed, or has its walking speed increased by 10 feet. As a bonus action, the bearer can switch its current benefit for another from the above list.</p>
+            <p class="indent"><strong><em>Invoking this Rune.</em></strong>As an action, the bearer can Invoke this Rune to transform itself into a beast with a CR equal to the Rune Scribe's Savant level or lower, but otherwise using the rules of the polymorph spell. However, unlike polymorph, this transformation does not require concentration.</p>
+        </description>
+        <sheet>
+            <description>The bearer gains a 30-ft. swimming speed, 30-ft. climbing speed, or +10 ft. to its walking speed. It can use a bonus action to switch between them.&#13;&#10;Invoke: The bearer uses an action to transform itself into a beast with a CR of {{level:savant}} or lower. This uses the rules of the <em>polymorph</em> spell but does not require concentration.</description>
+        </sheet>
+    </element>
+
+    <element name="Elder Magicks" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_RUNE_SCRIBE_ELDER_MAGICKS">
+        <description>
+            <p>The power imbued within your Runes has grown. Your Runic objects count as magical for as long as the Rune is inscribed.</p>
+            <p class="indent">Also, during the course of a short rest, you can perform a short 10-minute ritual to reawaken the magic of a Rune that has already been Invoked for the day, and it can be Invoked one additional time before the end of your next long rest.</p>
+        </description>
+        <sheet>
+            <description>During a short rest, you can perform a 10-minute ritual to reawaken an Invoked Rune and allow it to be Invoked once more before your next long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Runic Ward" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_RUNE_SCRIBE_RUNIC_WARD">
+        <description>
+            <p>Your Runes offer a measure of protection to those that bear them. If a creature bearing at least one of your Runic objects is forced to make a saving throw to resist the effects of a spell or another magical effect, they gain a bonus to their roll equal to your Intelligence modifier (minimum of +1).</p>
+            <p class="indent">Moreover, each time you finish a long rest, you can replace one Rune you know with another Rune of your choice.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+    </element>
+
+    <element name="Master Rune Scribe" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_RUNE_SCRIBE_MASTER_RUNE_SCRIBE">
+        <description>
+            <p>You can draw on the magic of your Runes to protect yourself in times of great need. When you are reduced to 0 hit points but not killed outright, you can draw on the power of a Runic object within 60 feet of you, instantly dispelling the Rune and any of its effects, and you fall to 1 hit point instead of 0.</p>
+        </description>
+        <sheet>
+            <description>If reduced to 0 hit points but not killed outright, you can dispell an inscribed Rune within 60 feet of you to fall to 1 hit point instead.</description>
+        </sheet>
+    </element>
+
+    <element name="Virtuoso" type="Archetype" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_SAVANT_VIRTUOSO">
+      <supports>Savant Academic Discipline</supports>
+      <description>
+          <p>Bending their impressive intellect toward the study of music, Virtuosos are known for the impressively complex music they write and perform. These masterful composers know how to manipulate the emotions of their listeners with themes, and, with the right sequence of notes, they can fill a listener with feelings of sorrow, anger, indifference, or absolute adoration.</p>
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_VIRTUOSO_STUDENT_OF_MUSIC" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_VIRTUOSO_WONDROUS_THEME" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_VIRTUOSO_DISARMING_MELODY" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_VIRTUOSO_EMPOWERED_THEME" />
+          <div element="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_VIRTUOSO_MASTER_VIRTUOSO" />
+      </description>
+      <sheet display="false">
+          <description>These masterful composers know how to manipulate the emotions of their listeners with their impressively complex music.</description>
+      </sheet>
+      <rules>
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_VIRTUOSO_STUDENT_OF_MUSIC" level="3" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_VIRTUOSO_WONDROUS_THEME" level="3" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_VIRTUOSO_DISARMING_MELODY" level="6" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_VIRTUOSO_EMPOWERED_THEME" level="10" />
+          <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_VIRTUOSO_MASTER_VIRTUOSO" level="15" />
+      </rules>
+    </element>
+
+    <element name="Student of Music" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_VIRTUOSO_STUDENT_OF_MUSIC">
+        <description>
+            <p>You gain proficiency in Insight and Performance. Whenever you make a check with either of these proficiencies you gain a bonus to your roll equal to one roll of your Intellect Die. If you are already proficient in either skill you gain proficiency in another skill from the Savant skill list in its place.</p>
+            <p class="indent">Your intuitive understanding of musical composition and performance also grants you the benefits below:</p>
+            <ul>
+              <li>Whenever you would make a Performance check you can choose to use your Intelligence in place of your Charisma.</li>
+              <li>You gain proficiency with three musical instruments.</li>
+              <li>If you spend 1 hour practicing with a musical instrument, you are considered proficient with it. However, only one instrument can benefit from this feature at a time.</li>
+              <li>Whenever you make an ability check that incorporates a musical instrument that you are proficient with, you can treat a roll of 9 or lower on the d20 as a 10.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} whenever you make an ability check in Insight or Performance. &#13;&#10;Whenever you make an Performance check, you can choose to use your Intelligence in place of Charisma. &#13;&#10;You can spend 1 hour practicing with a musical instrument to become proficient with it; this can only apply to one instrument at a time.&#13;&#10;When making an ability check with a musical instrument you are proficient with, you can treat d20 rolls of 9 or lower as a 10.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, Student of Music" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION" default="ID_PROFICIENCY_SKILL_INSIGHT" />
+            <select type="Proficiency" name="Skill Proficiency, Student of Music" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERFORMANCE" default="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+            <select type="Proficiency" name="Musical Instrument (Student of Music)" supports="Musical Instrument" number="3"/>
+
+        </rules>
+    </element>
+
+    <element name="Wondrous Theme" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_VIRTUOSO_WONDROUS_THEME">
+        <description>
+            <p>You have composed powerful Themes that stir the hearts of any creature that can hear them. As an action, you can begin to play this Theme, which continues until the start of your next turn, unless you choose to end it (no action required).</p>
+            <p class="indent">If you are already playing your Theme, you can use a bonus action to extend its duration until the start of your next turn.</p>
+            <p class="indent">Your Theme can be heard up to 120 feet away, but it only influences creatures within 30 feet that can hear the Theme.</p>
+            <p class="indent">If one of your Theme's effects requires a creature to make a saving throw, it does so against your Intellect save DC.</p>
+            <p class="indent">While you are performing your Theme, you can use your reaction to alter its sound in the following ways:</p>
+            <h5 class="caption">DISCORDANT NOTE</h5>
+            <p>When a creature under the influence of your Theme attacks another creature you can see, you can use your reaction to subtract one roll of your Intellect Die from its attack roll.</p>
+            <h5 class="caption">INSPIRING TUNE</h5>
+            <p>When a creature under the influence of your Theme takes damage from a source you can see, you can use a reaction to reduce the damage it takes by one roll of your Intellect Die.</p>
+            <h5 class="caption">UPLIFTING MELODY</h5>
+            <p>When a creature under the influence of your Theme makes a saving throw to resist being charmed, frightened, or stunned, you can use a reaction to have it automatically succeed.</p>
+        </description>
+        <sheet>
+            <description level="3">You can use this action to play your Theme, continuing until your next turn unless you choose to end it early. If it is already playing at the start of your turn, you can instead use a Bonus Action to continue it. While performing, you can take the reactions below to alter its sound.&#13;&#10;Your Theme influences creatures within 30 ft. that can hear it, but is audible within 120 ft.</description>
+            <description level="10">You can use this action to play your Theme, continuing until your next turn unless you choose to end it early. If it is already playing at the start of your turn, you can instead use a Bonus Action to continue it. While performing, you can take the reactions below to alter its sound, and grant one influenced creature +{{intelligence:modifier}} temporary hit points each time you do so.&#13;&#10;Your Theme influences creatures within 60 ft. that can hear it, but is audible within 120 ft.</description>
+            <description level="15">You can use this action to play your Theme, continuing until your next turn unless you choose to end it early. If it is already playing at the start of your turn, you can instead use a Bonus Action to continue it. While performing, you can take the reactions below to alter its sound, and grant one influenced creature +{{intelligence:modifier}} temporary hit points each time you do so.&#13;&#10;Your Theme influences creatures within 60 ft. even if they cannot hear it, and is audible within 120 ft.</description>
+        </sheet>
+        <rules>
+          <select type="Class Feature" name="Wondrous Theme (Discordant Note)" supports="ID_LASERLL_CLASS_FEATURE_SAVANT_WONDROUS_THEME_DISCORDANT_NOTE|ID_LASERLL_CLASS_FEATURE_SAVANT_WONDROUS_THEME_INSPIRING_TUNE|ID_LASERLL_CLASS_FEATURE_SAVANT_WONDROUS_THEME_UPLIFTING_MELODY" default="ID_LASERLL_CLASS_FEATURE_SAVANT_WONDROUS_THEME_DISCORDANT_NOTE" />
+          <select type="Class Feature" name="Wondrous Theme (Inspiring Tune)" supports="ID_LASERLL_CLASS_FEATURE_SAVANT_WONDROUS_THEME_DISCORDANT_NOTE|ID_LASERLL_CLASS_FEATURE_SAVANT_WONDROUS_THEME_INSPIRING_TUNE|ID_LASERLL_CLASS_FEATURE_SAVANT_WONDROUS_THEME_UPLIFTING_MELODY" default="ID_LASERLL_CLASS_FEATURE_SAVANT_WONDROUS_THEME_INSPIRING_TUNE" />
+          <select type="Class Feature" name="Wondrous Theme (Uplifting Melody)" supports="ID_LASERLL_CLASS_FEATURE_SAVANT_WONDROUS_THEME_DISCORDANT_NOTE|ID_LASERLL_CLASS_FEATURE_SAVANT_WONDROUS_THEME_INSPIRING_TUNE|ID_LASERLL_CLASS_FEATURE_SAVANT_WONDROUS_THEME_UPLIFTING_MELODY" default="ID_LASERLL_CLASS_FEATURE_SAVANT_WONDROUS_THEME_UPLIFTING_MELODY" />
+        </rules>
+    </element>
+
+    <!-- Wondrous Theme -->
+    <element name="Discordant Note" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SAVANT_WONDROUS_THEME_DISCORDANT_NOTE">
+      <supports>Wondrous Theme</supports>
+      <description>
+        <p>When a creature under the influence of your Theme attacks another creature you can see, you can use your reaction to subtract one roll of your Intellect Die from its attack roll.</p>
+      </description>
+      <sheet>
+        <description action="Reaction">When a creature under your Theme's influence attacks another creature you can see, subtract 1d{{intellect die:size}} from its attack roll.</description>
+      </sheet>
+    </element>
+    <element name="Inspiring Tune" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SAVANT_WONDROUS_THEME_INSPIRING_TUNE">
+      <supports>Wondrous Theme</supports>
+      <description>
+        <p>When a creature under the influence of your Theme takes damage from a source you can see, you can use a reaction to reduce the damage it takes by one roll of your Intellect Die.</p>
+      </description>
+      <sheet>
+        <description action="Reaction">When a creature under your Theme's influence attacks takes damage from a source you can see, subtract 1d{{intellect die:size}} from its damage.</description>
+      </sheet>
+    </element>
+    <element name="Uplifting Melody" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SAVANT_WONDROUS_THEME_UPLIFTING_MELODY">
+      <supports>Wondrous Theme</supports>
+      <description>
+        <p>When a creature under the influence of your Theme makes a saving throw to resist being charmed, frightened, or stunned, you can use a reaction to have it automatically succeed.</p>
+      </description>
+      <sheet>
+        <description action="Reaction">When a creature under your Theme's influence makes a saving throw to resist being charmed, frightened, or stunned, make it automatically succeed.</description>
+      </sheet>
+    </element>
+
+    <element name="Disarming Melody" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_VIRTUOSO_DISARMING_MELODY">
+      <description>
+        <p>You have woven threads of disarming music into your Theme. If a creature under the influence of your Theme attacks you, it must succeed on a Wisdom saving throw or attack another target of its choice within range. If there isn't another target in range its attack misses. Any creature that succeeds on this saving throw is immune to this effect for 24 hours.</p>
+        <p class="indent">Additionally, whenever you use your action to begin your Theme or your bonus action to continue the Theme, you can target one creature under its influence with a burst of sound, forcing it to make a Constitution saving throw. On a failure, it takes thunder damage equal to two rolls of your Intellect Die.</p>
+      </description>
+      <sheet>
+        <description level="6">If a creature under your Theme's influence attacks you, it must succeed on a Wisdom saving throw (DC {{intellect die:dc}}) or it is forced to attack another target of its choice within range (it will miss if no other targets are in range). Once it succeeds on the saving throw, it is immune to this effect for 24 hours.&#13;&#10;When you begin or continue your Theme, target one creature and force it to make a Constitution saving throw (DC {{intellect die:dc}}). On a failure, it takes 2d{{intellect die:size}} thunder damage.</description>
+        <description level="15">If a creature under your Theme's influence attacks you, it must succeed on a Wisdom saving throw (DC {{intellect die:dc}}) or it is forced to attack another target of its choice within range (it will miss if no other targets are in range). Once it succeeds on the saving throw, it is immune to this effect for 24 hours.&#13;&#10;When you begin or continue your Theme, target one creature and force it to make a Constitution saving throw (DC {{intellect die:dc}}). On a failure, it takes 3d{{intellect die:size}} thunder damage.</description>
+      </sheet>
+    </element>
+
+    <element name="Empowered Theme" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_VIRTUOSO_EMPOWERED_THEME">
+      <description>
+        <p>The strength and beauty of your Theme has increased, and it now affects any creature within 60 feet that can hear it.</p>
+        <p class="indent">Also, whenever you use a Wondrous Theme reaction, you can grant one creature under the influence of your Theme temporary hit points equal to your Intelligence modifier.</p>
+      </description>
+      <sheet display="false" />
+    </element>
+
+    <element name="Master Virtuoso" type="Archetype Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_ARCHETYPE_FEATURE_SAVANT_VIRTUOSO_MASTER_VIRTUOSO">
+      <description>
+        <p>Your musical genius and the complexity of your compositions is without peer. You gain the following additional benefits:</p>
+          <ul>
+            <li>Creatures within range of your Theme are still considered to be under its influence, even if they cannot hear it.</li>
+            <li>When a creature fails its saving throw against Disarming Melody it takes (additional) thunder damage equal to one roll of your Intellect Die.</li>
+          </ul>
+      </description>
+      <sheet display="false" />
+    </element>
+
+    <p class="indent"></p>
+
+    <!-- Scholarly Pursuits -->
+    <element name="Polymath" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_POLYMATH">
+        <supports>Scholarly Pursuit</supports>
+        <description>
+            <p>You have a knack for picking up new skills, though you may not be a master of them all. You gain proficiency in one skill from the Savant skill list, one tool of your choice, and you learn to speak, read, and write one language of your choice.</p>
+        </description>
+        <sheet display="false">
+        </sheet>
+        <rules>
+          <select type="Proficiency" name="Skill Proficiency (Polymath)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION" />
+          <select type="Proficiency" name="Tool Proficiency (Polymath)" supports="Tool" />
+          <select type="Language" name="Language Proficiency (Polymath)" />
+        </rules>
+    </element>
+    <element name="Bushcraft" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_BUSHCRAFT">
+        <supports>Scholarly Pursuit</supports>
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:savant:4]</requirements>
+        <description>
+            <p><em>Prerequisite: 4th level</em></p>
+            <p class="indent">You can use your knowledge of nature to thrive in the wilds. You gain proficiency in Nature, and whenever you make an Intelligence (Nature) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">Over the course of 10 minutes, which can be during a short or long rest, you can gather natural material and use a dagger or handaxe to create one of the following objects: a club, 1d4 darts, a javelin, a net, 10 feet of rope, or a Bushcraft Snare.</p>
+            <p class="indent">As an action, you can set a Bushcraft Snare in an adjacent, unoccupied, 5-foot space. The first Large or smaller creature to move into the space must make a Dexterity saving throw against your Intellect save DC or be restrained by the Snare.</p>
+            <p class="indent">As an action, a creature can make a Strength check against your Intellect save DC, escaping from the Snare on a success.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Intelligence (Nature) checks. Over the course of 10 minutes, which can be during a rest, you can create a club, 1d4 darts, a javelin, a net, 10 ft. of rope, or a Bushcraft Snare. You can set the Snare in an adjacent, unoccupied 5-foot space as an action, and the first Large or smaller creature to enter the space must make a Dexterity saving throw (DC {{intellect die:dc}}) or become restrained.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+        </rules>
+    </element>
+    <element name="Equestrianism" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_EQUESTRIANISM">
+        <supports>Scholarly Pursuit</supports>
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:savant:4]</requirements>
+        <description>
+            <p><em>Prerequisite: 4th level</em></p>
+            <p class="indent">You have learned to tend to horses and other trained mounts. You gain proficiency in Animal Handling, and whenever you make a Wisdom (Animal Handling) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">When you are riding a trained mount, your mount shares your initiative in combat and acts during your turn. Whenever it makes an ability check, damage roll, or saving throw, it can add one roll of your Intellect Die to its roll, and you can use a bonus action on each of your turns to command your mount to attack, or to use another action from its stat block.</p>
+            <p class="indent">Finally, if you spend 8 hours training a friendly quadruped creature and spend 50 gold on necessary training materials and food, it is considered to be a trained mount for you.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Wisdom (Animal Handling) checks. You can spend 8 hours and 50 gold training a friendly quadruped to make it a trained mount for yourself. When riding a mount, it shares your combat initiative and acts during your turn. It adds 1d{{intellect die:size}} to its ability checks, damage rolls, and saving throws, and you can use a bonus action on your turn to command it.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+        </rules>
+    </element>
+    <element name="First Aid" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_FIRST_AID">
+        <supports>Scholarly Pursuit</supports>
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:savant:4]</requirements>
+        <description>
+            <p><em>Prerequisite: 4th level</em></p>
+            <p class="indent">You have learned basic medicinal techniques to aid your allies. You gain proficiency in Medicine, and whenever you make a Wisdom (Medicine) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">During a long rest, you can spend 1 hour using a Healer's Kit to produce a number of potions of healing equal to your Intelligence modifier (minimum of 1). Any unused potions of healing expire 24 hours after you created them.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Wisdom (Medicine) checks. You can spend 1 hour during a long rest using a Healer's Kit to produce {{min 1 int}} potions of healing, which expire after 24 hours.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+        </rules>
+    </element>
+    <element name="Marksmanship" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_MARKSMANSHIP">
+        <supports>Scholarly Pursuit</supports>
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:savant:4]</requirements>
+        <description>
+            <p><em>Prerequisite: 4th level</em></p>
+            <p class="indent">You bring your intellect to bear in the use of ranged weapons. You gain proficiency in Sleight of Hand. Whenever you make a Dexterity (Sleight of Hand) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent>">You also gain proficiency with all martial ranged weapons, and whenever you make a ranged weapon attack, you can use your Intellect Die in place of the weapon's damage die.</p>
+            <p class="indent">Finally, if your setting includes firearms, and your Savant has been exposed to the inner workings of such devices, they are considered proficient with simple and martial firearms.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Dexterity (Sleight of Hand) checks. You can use a 1d{{intellect die:size}} in place of the damage die when you make a ranged weapon attack.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+            <select type="Proficiency" name="Martial Ranged Proficiency, Marksmanship" supports="ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED" />
+        </rules>
+    </element>
+    <element name="Mercantilism" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_MERCANTILISM">
+        <supports>Scholarly Pursuit</supports>
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:savant:4]</requirements>
+        <description>
+            <p><em>Prerequisite: 4th level</em></p>
+            <p class="indent">You are an astute scholar of economics, trade routes, and the marketplace. You gain proficiency in Insight, and whenever you make a Wisdom (Insight) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">While you are trading with a creature whose Intelligence and Wisdom are both lower than your Intelligence, items you purchase from that creature cost 10 percent less, and items you sell are purchased for 10 percent more than usual.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Wisdom (Insight) checks. While trading with a creature whose Intelligence and Wisdom are both lower than {{intelligence:score}}, receive a 10% discount on purchases and 10% bonuses on sales.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+        </rules>
+    </element>
+    <element name="Musicianship" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_MUSICIANSHIP">
+        <supports>Scholarly Pursuit</supports>
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:savant:4]</requirements>
+        <description>
+            <p><em>Prerequisite: 4th level</em></p>
+            <p class="indent">You have talent for music and song. You gain proficiency in Performance and with one musical instrument. Whenever you make an ability check with either, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">Also, when you play a musical instrument or perform for a creature for 1 minute or longer, you have advantage on any ability checks you make to interact socially with that creature for 1 hour. This benefit instantly ends if you or your allies do anything harmful to the creature or to its allies.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Performance checks or checks related to your chosen musical instrument. When playing an instrument for a creature for at least 1 minute, you have advantage on any ability checks made to interact with that creature, until you or your allies harm it or its allies.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+            <select type="Proficiency" name="Musical Instrument (Musicianship)" supports="Musical Instrument"/>
+        </rules>
+    </element>
+    <element name="Traditions" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_TRADITIONS_NOREQ">
+        <compendium display="false" />
+        <description>
+            <p>You are a student of local cultures, politics, and traditions. You gain proficiency in History, and whenever you make an Intelligence (History) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">Whenever you make a Charisma check to interact with a local ruler or otherwise important figure and you incorporate a local custom or tradition, you have advantage on your roll.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Intelligence (History) checks. When you make a Charisma check to interact with an important figure and you incorporate a local custom or tradition, roll with advantage.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+        </rules>
+    </element>
+    <element name="Riddles" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_RIDDLES_NOREQ">
+        <compendium display="false" />
+        <description>
+            <p>You have spent a great deal of time learning to speak in both riddles and rhymes. You gain proficiency in Deception. When you make a Charisma (Deception) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">Also, when you speak, you can choose to speak in Riddles. When you do so, you appear to be speaking normally, but you include hidden messages laced in your rhyming words.</p>
+            <p class="indent">Over the course of 1 hour, which can be during a short or long rest, you can teach a creature with an Intelligence of 11 or higher to understand your Riddles and respond in kind.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Charisma (Deception) checks. You may speak in Riddles to secretly hide messages in your rhyming words. Over the course of one hour, which can be during a rest, you can teach a creature with an Intelligence of 11 of higher to understand and respond in kind to your Riddles.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+        </rules>
+    </element>
+
+    <element name="Astrology" type="Class Feature" source="laserllama's Savant" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_ASTROLOGY_SCHOLAR_OF_LORE">
+        <compendium display="false" />
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You are a disciple of heavenly bodies and use this knowledge to twist fate. You gain proficiency in Arcana, and whenever you make an Intelligence (Arcana) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">During each long rest that you can see the night sky, roll a d20 and record that number. Once before the end of the next long rest, you can choose to use that roll in place of the d20 for ability check, attack roll, or saving throw before you roll.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Intelligence (Arcana) checks. During each long rest during which you can see the night sky, roll a d20 and record that number. One before the end of your next long rest, you can choose to use that roll prior to and in place of rolling the d20 used for an ability check, attack roll, or saving throw.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+        </rules>
+    </element>
+    <element name="Falconry" type="Class Feature" source="laserllama's Savant" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_FALCONRY_SCHOLAR_OF_LORE">
+      <compendium display="false" />
+      <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You have spent many months learning to train birds of prey. You gain proficiency in Perception, and whenever you make a Wisdom (Perception) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">You gain a trained Falcon which uses the Hawk statblock from the Player's Handbook, but it has an Intelligence score of 8. You and your Falcon can communicate simple ideas with each other using simple gestures and sounds. Your Falcon is unwaveringly loyal to you and obeys your commands.</p>
+            <p class="indent">In combat, your Falcon shares your initiative and acts on your turn. It can move and use its reaction on its own, but it only takes the Dodge action unless you use a bonus action to command it to take an action from its stat block, or another action. If you are incapacitated, your Falcon acts on its own.</p>
+            <p class="indent">If your Falcon falls to 0 hit points it makes death saving throws as a player character would. Should your Falcon die, your special skills allow you to track and train another Falcon over the course of an 8-hour period using 5 gp worth of bait.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Wisdom (Perception) checks. You have a trained Falcon that is loyal to you and obeys your commands. If it dies, you can train another over an 8-hour period using 5gp of bait.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+	           <select type="Companion" name="Falcon" supports="Falcon" default="ID_LASERLL_COMPANION_SAVANT_FALCON" />
+        </rules>
+    </element>
+    <element name="Linguistics" type="Class Feature" source="laserllama's Savant" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_LINGUISTICS_SCHOLAR_OF_LORE">
+      <compendium display="false" />
+      <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+          	<p><em>Prerequisite: 4th level</em></p>
+            <p>You are a student of language and the art of the spoken word. You gain proficiency in Persuasion, and whenever you make a Charisma (Persuasion) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">You also know how to speak, read, and write a number of additional languages equal to your Intelligence modifier.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Charisma (Persuasion) checks. You can speak, read, and write in {{intelligence:modifier}} additional languages.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+        </rules>
+    </element>
+    <element name="Physical Fitness" type="Class Feature" source="laserllama's Savant" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_PHYSICAL_FITNESS_SCHOLAR_OF_LORE">
+      <compendium display="false" />
+      <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You know that the key to a healthy mind is a healthy body. You gain proficiency in either Athletics or Acrobatics. Whenever you make an ability check with that skill, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">Also, you gain a climbing speed and a swimming speed equal to your walking speed, and when you make a running jump, you add your Intelligence modifier to the distance.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to checks in your chosen skill (Athletics or Acrobatics). Add {{intelligence:modifier}} ft. to your distance when making a running jump.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Physical Fitness (Scholarly Pursuit)" supports="Physical Fitness"></select>
+            <stat name="speed:swim" value="speed" bonus="base" />
+            <stat name="speed:climb" value="speed" bonus="base" />
+        </rules>
+    </element>
+    <element name="Traditions" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_TRADITIONS_SCHOLAR_OF_LORE">
+        <compendium display="false" />
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You are a student of local cultures, politics, and traditions. You gain proficiency in History, and whenever you make an Intelligence (History) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">Whenever you make a Charisma check to interact with a local ruler or otherwise important figure and you incorporate a local custom or tradition, you have advantage on your roll.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Intelligence (History) checks. When you make a Charisma check to interact with an important figure and you incorporate a local custom or tradition, roll with advantage.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+        </rules>
+    </element>
+    <element name="Riddles" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_RIDDLES_SCHOLAR_OF_LORE">
+        <compendium display="false" />
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You have spent a great deal of time learning to speak in both riddles and rhymes. You gain proficiency in Deception. When you make a Charisma (Deception) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">Also, when you speak, you can choose to speak in Riddles. When you do so, you appear to be speaking normally, but you include hidden messages laced in your rhyming words.</p>
+            <p class="indent">Over the course of 1 hour, which can be during a short or long rest, you can teach a creature with an Intelligence of 11 or higher to understand your Riddles and respond in kind.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Charisma (Deception) checks. You may speak in Riddles to secretly hide messages in your rhyming words. Over the course of one hour, which can be during a rest, you can teach a creature with an Intelligence of 11 of higher to understand and respond in kind to your Riddles.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+        </rules>
+    </element>
+    <element name="Secrets and Whispers" type="Class Feature" source="laserllama's Savant" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_SECRETS_AND_WHISPERS_SCHOLAR_OF_LORE">
+        <compendium display="false" />
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You have a knack for knowing where to eavesdrop and the right person to bribe. You gain proficiency in Stealth. When you make a Dexterity (Stealth) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">Whenever you spend a long rest in a settlement, you can spend 1 hour gathering local rumors to learn of a significant, even secret, event which occurred in there in the last week.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Dexterity (Stealth) checks. When you spend a long rest in a settlment, you can spend 1 hour gathering local rumors of a significant event which occurred there in the last week.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+        </rules>
+    </element>
+    <element name="Theology" type="Class Feature" source="laserllama's Savant" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_THEOLOGY_SCHOLAR_OF_LORE">
+        <compendium display="false" />
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You are a dedicated scholar of various holy texts and sacred rituals. You gain proficiency in Religion, and whenever you make an Intelligence (Religion) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">You also learn to speak, read, and write Celestial. Finally, you learn the ceremony spell, but you can only cast it as a ritual. For you, the ritual only takes 10 minutes, and you can cast it without the material components once per long rest.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Intelligence (Religion) checks. You can speak, read, and write in Celestial. You learn the <em>ceremony</em> spell and can only cast it as a ritual, which takes 10 minutes.</description>
+        </sheet>
+        <sheet usage="1/Long Rest"><description>You may cast the <em>ceremony</em> spell without the material components once per long rest.</description></sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+            <grant type="Language" id="ID_LANGUAGE_CELESTIAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Spell" id="ID_PHB_SPELL_CEREMONY" />
+        </rules>
+    </element>
+    <element name="Bushcraft" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_BUSHCRAFT_SCHOLAR_OF_LORE">
+        <compendium display="false" />
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p class="indent">You can use your knowledge of nature to thrive in the wilds. You gain proficiency in Nature, and whenever you make an Intelligence (Nature) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">Over the course of 10 minutes, which can be during a short or long rest, you can gather natural material and use a dagger or handaxe to create one of the following objects: a club, 1d4 darts, a javelin, a net, 10 feet of rope, or a Bushcraft Snare.</p>
+            <p class="indent">As an action, you can set a Bushcraft Snare in an adjacent, unoccupied, 5-foot space. The first Large or smaller creature to move into the space must make a Dexterity saving throw against your Intellect save DC or be restrained by the Snare.</p>
+            <p class="indent">As an action, a creature can make a Strength check against your Intellect save DC, escaping from the Snare on a success.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Intelligence (Nature) checks. Over the course of 10 minutes, which can be during a rest, you can create a club, 1d4 darts, a javelin, a net, 10 ft. of rope, or a Bushcraft Snare. You can set the Snare in an adjacent, unoccupied 5-foot space as an action, and the first Large or smaller creature to enter the space must make a Dexterity saving throw (DC {{intellect die:dc}}) or become restrained.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+        </rules>
+    </element>
+    <element name="Equestrianism" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_EQUESTRIANISM_SCHOLAR_OF_LORE">
+        <compendium display="false" />
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p class="indent">You have learned to tend to horses and other trained mounts. You gain proficiency in Animal Handling, and whenever you make a Wisdom (Animal Handling) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">When you are riding a trained mount, your mount shares your initiative in combat and acts during your turn. Whenever it makes an ability check, damage roll, or saving throw, it can add one roll of your Intellect Die to its roll, and you can use a bonus action on each of your turns to command your mount to attack, or to use another action from its stat block.</p>
+            <p class="indent">Finally, if you spend 8 hours training a friendly quadruped creature and spend 50 gold on necessary training materials and food, it is considered to be a trained mount for you.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Wisdom (Animal Handling) checks. You can spend 8 hours and 50 gold training a friendly quadruped to make it a trained mount for yourself. When riding a mount, it shares your combat initiative and acts during your turn. It adds 1d{{intellect die:size}} to its ability checks, damage rolls, and saving throws, and you can use a bonus action on your turn to command it.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+        </rules>
+    </element>
+    <element name="First Aid" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_FIRST_AID_SCHOLAR_OF_LORE">
+        <compendium display="false" />
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p class="indent">You have learned basic medicinal techniques to aid your allies. You gain proficiency in Medicine, and whenever you make a Wisdom (Medicine) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">During a long rest, you can spend 1 hour using a Healer's Kit to produce a number of potions of healing equal to your Intelligence modifier (minimum of 1). Any unused potions of healing expire 24 hours after you created them.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Wisdom (Medicine) checks. You can spend 1 hour during a long rest using a Healer's Kit to produce {{min 1 int}} potions of healing, which expire after 24 hours.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+        </rules>
+    </element>
+    <element name="Marksmanship" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_MARKSMANSHIP_SCHOLAR_OF_LORE">
+        <compendium display="false" />
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p><em>Prerequisite: 4th level</em></p>
+            <p class="indent">You bring your intellect to bear in the use of ranged weapons. You gain proficiency in Sleight of Hand. Whenever you make a Dexterity (Sleight of Hand) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent>">You also gain proficiency with all martial ranged weapons, and whenever you make a ranged weapon attack, you can use your Intellect Die in place of the weapon's damage die.</p>
+            <p class="indent">Finally, if your setting includes firearms, and your Savant has been exposed to the inner workings of such devices, they are considered proficient with simple and martial firearms.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Dexterity (Sleight of Hand) checks. You can use a 1d{{intellect die:size}} in place of the damage die when you make a ranged weapon attack.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+            <select type="Proficiency" name="Martial Ranged Proficiency, Marksmanship" supports="ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED" />
+        </rules>
+    </element>
+    <element name="Mercantilism" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_MERCANTILISM_SCHOLAR_OF_LORE">
+        <compendium display="false" />
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p class="indent">You are an astute scholar of economics, trade routes, and the marketplace. You gain proficiency in Insight, and whenever you make a Wisdom (Insight) check, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">While you are trading with a creature whose Intelligence and Wisdom are both lower than your Intelligence, items you purchase from that creature cost 10 percent less, and items you sell are purchased for 10 percent more than usual.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Wisdom (Insight) checks. While trading with a creature whose Intelligence and Wisdom are both lower than {{intelligence:score}}, receive a 10% discount on purchases and 10% bonuses on sales.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+        </rules>
+    </element>
+    <element name="Musicianship" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_MUSICIANSHIP_SCHOLAR_OF_LORE">
+        <compendium display="false" />
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p class="indent">You have talent for music and song. You gain proficiency in Performance and with one musical instrument. Whenever you make an ability check with either, you gain a bonus to your roll equal to one roll of your Intellect Die.</p>
+            <p class="indent">Also, when you play a musical instrument or perform for a creature for 1 minute or longer, you have advantage on any ability checks you make to interact socially with that creature for 1 hour. This benefit instantly ends if you or your allies do anything harmful to the creature or to its allies.</p>
+        </description>
+        <sheet>
+            <description>Add 1d{{intellect die:size}} to Performance checks or checks related to your chosen musical instrument. When playing an instrument for a creature for at least 1 minute, you have advantage on any ability checks made to interact with that creature, until you or your allies harm it or its allies.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+            <select type="Proficiency" name="Musical Instrument (Musicianship)" supports="Musical Instrument"/>
+        </rules>
+    </element>
+
+    <!-- Feats -->
+    <element name="Classical Artist" type="Feat" source="Laserllama's Savant Expanded" id="ID_LASERLL_FEAT_CLASSICAL_ARTIST">
+      <description>
+        <p>Your great intellect has allowed you to master what many would consider the fine arts. You gain the following benefits:</p>
+        <ul>
+          <li>Increase your Intelligence score by 1, to a maximum of 20.</li>
+          <li>You gain proficiency with both mason's tools and painter's supplies. Whenever you make an ability check with either tool, you can treat a roll of 9 or lower on the d20 as a 10.</li>
+          <li>You can use mason's tools or painter's supplies and the appropriate materials to create a work of fine art worth
+          50 gp for each 8-hour workday you spend working on it.</li>
+          <li>You have advantage on checks to assess the value of art.</li>
+        </ul>
+      </description>
+      <sheet>
+        <description>When you make an ability check using mason's tools or painter's supplies, treat rolls of 9 or lower as 10s. &#13;&#10;You can use these tools and the necessary materials to create a work of art worth 50gp per 8 hours spent. &#13;&#10;You have advantage on checks to assess the value of art.</description>
+      </sheet>
+      <rules>
+        <stat name="intelligence" value="1" alt="Classical Artist"/>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES" />
+      </rules>
+    </element>
+    <element name="Helpful Insights" type="Feat" source="Laserllama's Savant Expanded" id="ID_LASERLL_FEAT_HELPFUL_INSIGHTS">
+      <description>
+        <p>You always seem to have helpful advice for any situation. You gain the benefits below:</p>
+        <ul>
+          <li>You increase your Intelligence or Wisdom score by 1, up to a maximum of 20.</li>
+          <li>You can take the Help action as a bonus action on each of your turns.</li>
+          <li>When you use a Help action to give advantage on an ability check with a skill or tool you are proficient in, the target can treat a result of 7 or lower on the d20 as an 8.</li>
+        </ul>
+      </description>
+      <sheet>
+        <description>You can take the Help action as a bonus action on your turns.&#13;&#10;If you are Helping the target to give advantage with a skill or tool you are proficient in, the target can treat rolls of 7 or lower as 8s.</description>
+      </sheet>
+      <rules>
+        <select type="Ability Score Improvement" name="Helpful Insights" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
+      </rules>
+    </element>
+    <element name="Lifelong Learner" type="Feat" source="Laserllama's Savant Expanded" id="ID_LASERLL_FEAT_LIFELONG_LEARNER">
+      <description>
+        <p>You have made a vow to never stop learning, no matter how old or educated you become. You gain the benefits from the table below that correspond to your Intelligence modifier and lower. If your Intelligence modifier increases, the benefits you gain from this Feat also increase with your modifier:</p>
+        <table class="feat-features">
+            <thead>
+                <tr><td class="col-5">Modifier</td><td class="col-60 left">Benefit</td></tr>
+            </thead>
+            <tr><td>+1</td><td>You learn to speak, read, and write one additional language of your choice.</td></tr>
+            <tr><td>+2</td><td>You gain proficiency with one set of artisan's tools of your choice.</td></tr>
+            <tr><td>+3</td><td>You gain proficiency in one skill of your choice.</td></tr>
+            <tr><td>+4</td><td>For one skill proficiency of your choice, you treat a roll of 7 or lower on the d20 as an 8.</td></tr>
+            <tr><td>+5</td><td>Whenever you are forced to make a Wisdom saving throw, you can choose to make an Intelligence saving throw instead.</td></tr>
+        </table>
+      </description>
+      <sheet>
+        <description int="16">Treat rolls of 7 or lower on the 20 in your chosen skill proficiency as 8s.</description>
+        <description int="18">Treat rolls of 7 or lower on the 20 in your chosen skill proficiency as 8s.&#13;&#10;When you make a Wisdom saving throw, you may make an Intelligence saving throw instead.</description>
+      </sheet>
+      <rules>
+            <select type="Language" name="Language Proficiency (Lifelong Learner)" requirements="[int:12]"/>
+            <select type="Proficiency" name="Tool Proficiency (Lifelong Learner)" supports="Artisan tools" requirements="[int:14]"/>
+            <select type="Skill" name="Skill Proficiency (Lifelong Learner)" supports="Skill" requirements="[int:16]"/>
+      </rules>
+    </element>
+    <element name="Mental Acuity" type="Feat" source="Laserllama's Savant Expanded" id="ID_LASERLL_FEAT_MENTAL_ACUITY">
+      <description>
+        <p>Your mind is a wonderful thing, capable of bursts of insight and mental fortitude. You gain the following benefits:</p>
+        <ul>
+          <li>Increase your Intelligence score by 1, to a maximum of 20.</li>
+          <li>You gain proficiency in two of the following skills: Arcana, History, Investigation, Medicine, Nature, or Religion.</li>
+          <li>Choose any two skills from the list above. Whenever you make an ability check with either of the chosen skills you can treat a roll of 7 or lower on the d20 as an 8.</li>
+        </ul>
+      </description>
+      <sheet>
+        <description>When you make an ability check in either of your chosen skills from this feat, treat rolls of 7 or lower as 8s.</description>
+      </sheet>
+      <rules>
+        <stat name="intelligence" value="1" alt="Mental Acuity"/>
+        <select type="Proficiency" name="Skill Proficiency,  Mental Acuity" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" />
+        <select type="Proficiency" name="Skill Proficiency,  Mental Acuity" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" />
+      </rules>
+    </element>
+    <element name="Scholar of Lore" type="Feat" source="Laserllama's Savant Expanded" id="ID_LASERLL_FEAT_SCHOLAR_OF_LORE">
+      <description>
+        <p>You have spent time learning everything there is to know about a specific area of study. You gain the following benefits:</p>
+        <ul>
+          <li>Increase your Intelligence score by 1, to a maximum of 20.</li>
+          <li>You master a Scholarly Pursuit of your choice from those available to the Savant. If the Pursuit has a Savant level prerequisite, you can learn it if your total level meets or exceeds the prerequisite level for that Scholarly Pursuit.</li>
+          <li>If the Scholarly Pursuit requires that you roll an Intellect Die, you roll a d4 unless your Intellect Die is higher.</li>
+        </ul>
+      </description>
+      <sheet display="false">
+        <description></description>
+      </sheet>
+      <rules>
+        <stat name="intelligence" value="1" alt="Scholar of Lore"/>
+        <select type="Class Feature" name="Scholarly Pursuit, Scholar of Lore" supports="ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_INSTRUCTION|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PERFECT_RECALL|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_QUICK_STUDY|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_ASTROLOGY_SCHOLAR_OF_LORE|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_FALCONRY_SCHOLAR_OF_LORE|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_LINGUISTICS_SCHOLAR_OF_LORE|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_PHYSICAL_FITNESS|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_SECRETS_AND_WHISPERS_SCHOLAR_OF_LORE|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_THEOLOGY_SCHOLAR_OF_LORE|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_RIDDLES_SCHOLAR_OF_LORE|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_TRADITIONS_SCHOLAR_OF_LORE|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_POLYMATH|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_BUSHCRAFT_SCHOLAR_OF_LORE|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_EQUESTRIANISM_SCHOLAR_OF_LORE|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_FIRST_AID_SCHOLAR_OF_LORE|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_MARKSMANSHIP_SCHOLAR_OF_LORE|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_MERCANTILISM_SCHOLAR_OF_LORE|ID_LASERLL_CLASS_FEATURE_SCHOLARLY_PURSUIT_MUSICIANSHIP_SCHOLAR_OF_LORE" />
+        <stat name="intellect die:size" value="4" bonus="size"/>
+      </rules>
+    </element>
+
+    <!-- Magic Items -->
+    <element name="Blade of the Scribe" type="Magic Item" source="Laserllama's Savant Expanded" id="ID_LASERLL_MAGIC_ITEM_BLADE_OF_THE_SCRIBE">
+      <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+      <description>
+        <p>The handle of this elegant rapier is fashioned from silver and steel, and the hollow blade is filled with ink. It bears an Elvish inscription that, when translated, reads "The pen is mightier than the sword, but this is mightier still". You gain a +1 bonus to both attack and damage rolls with this magic weapon.</p>
+        <p class="indent">This magic rapier has 4 Charges. When you hit a target with this weapon, you can expend 1 Charge to release a blast of ink. The target must succeed on a DC 15 Dexterity saving throw or be blinded for 1 minute. This effect ends early if the creature uses its action to wipe the ink from its eyes.</p>
+        <p class="indent">This magic rapier regains 1d4 Charges daily, at dawn.</p>
+      </description>
+      <setters>
+        <set name="keywords">rapier, attack, damage, charges, dexterity, saving throw</set>
+        <set name="category">Magic Weapons</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="type" addition="Rapier">Weapon</set>
+    		<set name="attunement" addition="by a savant">true</set>
+        <set name="rarity">Rare</set>
+        <set name="charges">4</set>
+        <set name="enhancement">1</set>
+        <set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+        <set name="name-format">Blade of the Scribe</set>
+      </setters>
+    </element>
+
+    <element name="Doctoral Robes" type="Magic Item" source="Laserllama's Savant Expanded" id="ID_LASERLL_MAGIC_ITEM_DOCTORAL_ROBES">
+      <description>
+        <p>These luxurious robes were fashioned by a long-forgotten empire for the headmaster of an academy of higher learning.</p>
+        <p class="indent">While attuned to the robes you gain the following benefits:</p>
+        <ul class="unstyled" style="margin-bottom: 20px">
+          <li>So long as you are not wearing any armor, your Armor Class is equal to 15 + your Intelligence modifier.</li>
+          <li>When you are forced to make a saving throw you gain a bonus to your roll equal to your Intelligence modifier.</li>
+          <li>When another creature that can hear you within 30 feet makes an ability check, you can use your reaction to add your Intelligence modifier to the result of its roll.</li>
+        </ul>
+      </description>
+      <setters>
+        <set name="keywords">AC, armor, intelligence, saving throw, cloak</set>
+        <set name="category">Wondrous Items</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="weight" lb="0">0 lb.</set>
+    		<set name="attunement" addition="by a savant">true</set>
+        <set name="type">Wondrous Item</set>
+        <set name="rarity">Rare</set>
+        <set name="slot">shoulders</set>
+        <set name="attunement">true</set>
+      </setters>
+      <rules>
+    		<stat name="ac:doctoral robes" value="15" />
+    		<stat name="ac:doctoral robes" value="intelligence:modifier" />
+    		<stat name="ac:calculation" value="ac:doctoral robes" bonus="calculation" equipped="[armor:none]" alt="Doctoral Robes" />
+      </rules>
+    </element>
+
+    <element name="Living Quill" type="Magic Item" source="Laserllama's Savant Expanded" id="ID_LASERLL_MAGIC_ITEM_LIVING_QUILL">
+      <description>
+        <p>This fanciful quill looks to be made from the feather of a bird of mysterious origin. As an action, you can speak the Quill's command word and touch the Quill to a piece of paper or parchment. As long as the Quill can hear you, it transcribes your words exactly. The Quill transcribes for 1 hour, but it stops sooner if you speak its command word again.</p>
+      </description>
+      <setters>
+        <set name="keywords">quill</set>
+        <set name="category">Wondrous Items</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="weight" lb="0">0 lb.</set>
+        <set name="type">Wondrous Item</set>
+        <set name="rarity">Common</set>
+      </setters>
+    </element>
+
+    <element name="Monocle of the Linguist" type="Magic Item" source="Laserllama's Savant Expanded" id="ID_LASERLL_MAGIC_ITEM_MONOCLE_OF_THE_LINGUIST">
+      <description><p>This elegantly constructed single eyeglass allows you to read and understand all writing you view through it as if it were your native tongue.</p>
+      </description>
+      <setters>
+        <set name="keywords">monocle</set>
+        <set name="category">Wondrous Items</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="weight" lb="0">0 lb.</set>
+        <set name="type">Wondrous Item</set>
+        <set name="rarity">Uncommon</set>
+        <set name="attunement">true</set>
+      </setters>
+    </element>
+
+    <element name="Staff of Headmaster" type="Magic Item" source="Laserllama's Savant Expanded" id="ID_WOTC_XGTE_MAGIC_ITEM_STAFF_OF_THE_HEADMASTER">
+      <description>
+        <p>This staff was once a symbol of the headmaster at an imperial academy. The staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. When holding it, you have a +2 bonus to any ability checks that use your Intelligence or Wisdom.</p>
+        <p class="indent">Moreover, you can use an action to plunge this staff into the ground, producing the effect of <em>private sanctum</em> within a 30-foot radius of that point. The area within the spell appears as an ornate study in addition to the normal effects of the spell.</p>
+        <p class="indent">Once you use the staff to cast private sanctum in this way, the staff cannot do so again until the following dawn.</p>
+        <div class="reference">
+          <div element="ID_PHB_SPELL_PRIVATE_SANCTUM" />
+        </div>
+      </description>
+      <setters>
+        <set name="keywords">staff, intelligence, wisdom</set>
+        <set name="category">Staffs</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="weight" lb="4">4 lb.</set>
+        <set name="type">Staff</set>
+        <set name="rarity">Very Rare</set>
+        <set name="slot">onehand</set>
+        <set name="weapon">Quarterstaff</set>
+        <set name="attunement" addition="by a savant">true</set>
+        <set name="attunement">true</set>
+    		<set name="enhancement">2</set>
+      </setters>
+    </element>
+
+    <element name="Tome of Everlasting Genius" type="Magic Item" source="Laserllama's Savant Expanded" id="ID_WOTC_XGTE_MAGIC_ITEM_TOME_OF_EVERLASTING_GENIUS">
+      <description>
+        <p>This elegantly made ageless tome has been passed down by generations of geniuses, each adding more information to its pages. This tome contains 1d4 +1 entries from those listed below. You can roll randomly, or the DM can choose them.</p>
+        <p class="indent">For each entry in the tome, you gain proficiency in the skill that corresponds with the genius who wrote the entry, and an additional +5 bonus to any checks you make with that skill.</p>
+        <ul class="unstyled" style="margin-bottom: 20px">
+          <li>Actor (Performance)</li>
+          <li>Astronomer (Nature)</li>
+          <li>Cultist (Perception)</li>
+          <li>Linguist (Persuasion)</li>
+          <li>Magistrate (History)</li>
+          <li>Psychologist (Insight)</li>
+          <li>Surgeon (Medicine)</li>
+          <li>Researcher (Investigation)</li>
+          <li>Ritualist (Arcana)</li>
+          <li>Theologian (Religion)</li>
+        </ul>
+        <p class="indent">Once you are attuned to this tome for a year and a day, you can add your own entry into the tome detailing your area of expertise, choosing one skill that you are proficient in to add.</p>
+      </description>
+      <setters>
+        <set name="keywords">tome, performance, nature, perception, persuasion, history, insight, medicine, investigation, arcana, religion</set>
+        <set name="category">Wondrous Items</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="weight" lb="0">4 lb.</set>
+        <set name="type">Wondrous Item</set>
+        <set name="rarity">Very Rare</set>
+        <set name="attunement" addition="by a savant">true</set>
+        <set name="attunement">true</set>
+      </setters>
+    </element>
+
+    <!-- backgrounds -->
+  	<element name="Savant Quirks" type="Class Feature" source="laserllama's Savant Expanded" id="ID_LASERLL_SAVANT_QUIRKS">
+  		<description>
+  			<p>Having trouble creating a personality for your Savant, or just looking for inspiration? Choose an Obsession, Eccentricity, and an Irrational Fear from the tables presented here.</p>
+  			<h5>OBSESSIONS</h5>
+  			<p>In their desire to answer every question, Savants can develop obsessions. These inexplicable questions and phenomena gnaw at a Savant until they find the answers that they seek.</p>
+        <h5>ECCENTRICITIES</h5>
+  			<p>Often, with great intellect and intense mental focus comes some strange habits. A Savant's eccentricities are usually the result of them spending too much time on their field of study.</p>
+        <h5>GOOD LUCK CHARMS</h5>
+  			<p>Often, despite their intellect, Savants develop attachments to mundane charms, objects, or clothing they perceive as lucky.</p>
+        <h5>IRRATIONAL FEARS</h5>
+  			<p>Despite their impressive minds, Savants tend to develop fears that anyone with common sense would find totally irrational.</p>
+  		</description>
+  		<rules>
+  			<select type="List" name="Obsessions" optional="true">
+  				<item id="1">You discovered a strange script in the margin of a book. The best scholars cannot identify it.</item>
+  				<item id="2">As a child you saw a majestic golden bird fly across the sky that left a rainbow in its wake.</item>
+  				<item id="3">Your father charged you to find the legendary, and most likely fictional, chalice of Bahamut.</item>
+  				<item id="4">You use the word "inconceivable" all the time even though you aren't exactly sure what it means.</item>
+  			</select>
+  			<select type="List" name="Eccentricity" optional="true">
+  				<item id="1">I would die to recover an ancient relic of my faith that was lost long ago.</item>
+  				<item id="2">You have a really bad habit of only speaking in the technical jargon of your field.</item>
+  				<item id="3">You don't understand children.</item>
+  				<item id="4">When someone doesn't understand something you just haven't explained it enough times.</item>
+  				<item id="5">You take diligent notes on everything even when it isn't socially appropriate.</item>
+  				<item id="6">You are so dedicated to your field of study that you find yourself explaining things to your foes.</item>
+  			</select>
+  			<select type="List" name="Good Luck Charms" optional="true">
+  				<item id="1">You refuse to place your faith in a single deity so you carry a multitude of holy symbols.</item>
+  				<item id="2">Your father was a farmer who paid for your education. You wear his hat in his memory.</item>
+  				<item id="3">Despite its ineffectiveness, you carry a whip to impress and intimidate others.</item>
+  				<item id="4">You carry a scroll of insane ramblings. One day you <em>will</em> figure out its meaning.</item>
+  				<item id="5">You wear a pair of crystal spectacles even though you have perfect vision.</item>
+  				<item id="6">You never leave home without a copy of your mentor's thesis on owlbear anatomy.</item>
+  			</select>
+        <select type="List" name="Irrational Fears" optional="true">
+  				<item id="1">You are <em>convinced</em> you contracted a minor form of lycanthropy from a dog that bit you as a child.</item>
+  				<item id="2">You will do literally anything to avoid interacting with fire magic.</item>
+  				<item id="3">You always make sure to sleep with a silver coin in your hand to ward off night hags.</item>
+  				<item id="4">You hate snakes and snake-like creatures.</item>
+  				<item id="5">You are so afraid of undead that the sight of them causes you to vomit.</item>
+  				<item id="6">You give out code words to your allies so they can prove they aren't doppelgangers.</item>
+  			</select>
+  		</rules>
+  	</element>
+
+</elements>

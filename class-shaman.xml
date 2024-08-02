@@ -1,0 +1,2366 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="5.7">
+            <file name="class-shaman.xml" url="tmp.xml" />
+        </update>
+    </info>
+
+    <!--Version 5.7.0-->
+    <element name="Shaman" type="Class" source="laserllama's Shaman" id="ID_LASERLL_CLASS_SHAMAN">
+        <description>
+    <p>The half-orc silently moved through the forest, her tattoos shimmering in the moonlight. Gripping the ancestral war club of her tribe, she called upon the spirits of previous champions to empower her strikes. A cold wind came over the hobgoblin camp as the half-orc walked into their midst. These raiders who had dared to take lumber from the ancestral forest of her people would not live to see the dawn.</p>
+    <p class="indent">The hunched-over, elderly halfling clung to his walking stick as the massive ogre came barreling toward him. Just before the monster fell upon him, the elder embraced the spirit of the Great Beast and shapeshifted into a supernaturally massive bear. The two collided with thunderous force, but only one would survive. The eyes of the great bear flashed with a momentary green light and as suddenly as it had appeared, an elderly halfling stood in its place, his eyes glowing with green light.</p>
+    <p class="indent">The thin elf stood on a cliff overlooking the great battle below. The great dragon had all but decimated the battalion of guards that had come to defend their home. A single man stood and thrust his spear toward the terrifying wyrm, but before the dragon could deflect the blow, the elf unleashed a powerful spirit from within one of her Totems. In an instant, the spirit had enveloped the dragon, temporarily sapping its strength. In its weakened state, the spear pierced the great beast's heart, ending its campaign of terror. The elf made her way back to her solitary cave, content knowing that the town she guarded in secret would be safe for another season.</p>
+    <p class="indent">The three characters above are examples of the spiritual conduits known as Shamans. Using ancient knowledge they are able to bind and channel the power of primal spirits.</p>
+    <h4>ANCIENT POWER</h4>
+    <p>Before the gods took notice of mortals and bestowed power on Clerics and Paladins, Shamans served as protectors and guides. Using ancient techniques, Shamans were able to bind spirits to Totems, small objects of spiritual significance, and channel that power for good of their people. This ancient art was passed from elder to elder in a continuous chain, down to the Shamans of today. Those who master the powers of shamanism are part of a truly ancient spiritual tradition.</p>
+    <h4>SPIRITUAL EXISTENCE</h4>
+    <p>Shamans spend their lives maintaining the delicate balance between the physical mortal world, and the ethereal spiritual world. They are trained to recognize the spirits that dwell in every living thing and use this spiritual sight to protect those they love from sinister spirits who seek to destroy all life.</p>
+    <p class="indent">Sometimes, Shamans will seek out spirits of love and life that willingly bind themselves to Totems so that they may aid the Shaman in their spiritual warfare. Other malevolent and vile spirits are bound to Totems against their will and used by Shamans to help defeat other spirits of destruction.</p>
+    <h4>CREATING A SHAMAN</h4>
+    <p>When creating your Shaman, consider how you first learned to wield the power of spirits. Were you trained from birth to become the next elder of your people, destined to inherit the power of your ancestors? Were you raised by a vile hag, and taught to manipulate spirits of darkness and death to curse and hex your foes? Or did you study under an ancient hermit, learning to draw upon the spiritual power within in all living things in order to heal the spiritually and physically broken?</p>
+    <p class="indent">No matter the origin, you should decide how your Shaman views the spiritual world. Have they dedicated themselves to maintaining a balance between the physical and ethereal? Or, do they view spirits as tools to be bound and used, a source of power that Shamans can wield in whatever way they choose?</p>
+    <h5 class="caption">QUICK BUILD</h5>
+    <p>You can make a Shaman quickly by using these suggestions. First, make Wisdom your highest ability score, followed by your Constitution. Second, choose the Hermit background. Third, choose the Body as your Sacred Focus and Totem of the Bear and Totem of the Mountain as your Totems.</p>
+
+    <h2>CLASS FEATURES</h2>
+    <p>As a Shaman, you gain the following class features.</p>
+    <h5 class="caption">HIT POINTS</h5>
+    <ul class="unstyled">
+        <li><strong>Hit Dice:</strong> 1d8 per Shaman level</li>
+        <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+        <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per Shaman level after 1st</li>
+    </ul>
+    <h5 class="caption">PROFICIENCIES</h5>
+    <ul class="unstyled mb">
+        <li><strong>Armor:</strong> Light armor, shields</li>
+        <li><strong>Weapons:</strong>  Simple weapons, blow guns, nets</li>
+        <li><strong>Tools:</strong> None</li>
+    </ul>
+    <ul class="unstyled">
+        <li><strong>Saving Throws:</strong> Wisdom, Charisma</li>
+        <li><strong>Skills:</strong> Choose two from Animal Handling, Arcana, Insight, Medicine, Nature, Performance, or Religion</li>
+    </ul>
+    <h5 class="caption">EQUIPMENT</h5>
+    <p>As a Shaman, you start with the following equipment:</p>
+    <ul>
+        <li>(a) a quarterstaff or (b) any simple weapon</li>
+        <li>(a) a shortbow and 20 arrows or (b) 5 javelins</li>
+        <li>(a) priest's pack or (b) an explorer's pack</li>
+        <li>Leather armor and one object used as a Totem.</li>
+    </ul>
+        <h5 class="caption">THE SHAMAN</h5>
+        <table class="class-features">
+            <thead>
+                <tr><td class="col-5">Level</td><td class="col-5">PB</td><td class="col-60 left">Features</td><td class="col-5">Bound Totems</td><td class="col-5">Cantrips Known</td><td class="col-5">Spells Known</td><td class="col-5">Spell Slots</td><td class="col-5">Slot Level</td></tr>
+            </thead>
+            <tr><td> 1st</td><td>+2</td><td class="left">Sacred Focus, Totems</td><td>2</td><td>─</td><td>─</td><td>─</td><td>─</td></tr>
+            <tr><td> 2nd</td><td>+2</td><td class="left">Primal Magic</td><td>2</td><td>2</td><td>3</td><td>2</td><td>1st</td></tr>
+            <tr><td> 3rd</td><td>+2</td><td class="left">Spirituality</td><td>2</td><td>2</td><td>4</td><td>2</td><td>2nd</td></tr>
+            <tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>3</td><td>3</td><td>5</td><td>2</td><td>2nd</td></tr>
+            <tr><td> 5th</td><td>+3</td><td class="left">Totemic Versatility</td><td>3</td><td>3</td><td>6</td><td>2</td><td>3rd</td></tr>
+            <tr><td> 6th</td><td>+3</td><td class="left">Spirituality Feature</td><td>4</td><td>3</td><td>6</td><td>2</td><td>3rd</td></tr>
+            <tr><td> 7th</td><td>+3</td><td class="left">─</td><td>4</td><td>3</td><td>7</td><td>2</td><td>4th</td></tr>
+            <tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>4</td><td>3</td><td>7</td><td>2</td><td>4th</td></tr>
+            <tr><td> 9th</td><td>+4</td><td class="left">─</td><td>5</td><td>3</td><td>8</td><td>2</td><td>5th</td></tr>
+            <tr><td>10th</td><td>+4</td><td class="left">Spirituality Feature</td><td>5</td><td>4</td><td>8</td><td>2</td><td>5th</td></tr>
+            <tr><td>11th</td><td>+4</td><td class="left">Greater Totem Spirit (6th-level)</td><td>5</td><td>4</td><td>9</td><td>3</td><td>5th</td></tr>
+            <tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>6</td><td>9</td><td>9</td><td>3</td><td>5th</td></tr>
+            <tr><td>13th</td><td>+5</td><td class="left">Greater Totem Spirit (7th-level)</td><td>6</td><td>4</td><td>10</td><td>3</td><td>5th</td></tr>
+            <tr><td>14th</td><td>+5</td><td class="left">Spirituality Feature</td><td>6</td><td>4</td><td>10</td><td>3</td><td>5th</td></tr>
+            <tr><td>15th</td><td>+5</td><td class="left">Greater Totem Spirit (8th-level)</td><td>7</td><td>4</td><td>11</td><td>3</td><td>5th</td></tr>
+            <tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>7</td><td>4</td><td>11</td><td>3</td><td>5th</td></tr>
+            <tr><td>17th</td><td>+6</td><td class="left">Greater Totem Spirit (9th-level)</td><td>7</td><td>4</td><td>11</td><td>4</td><td>5th</td></tr>
+            <tr><td>18th</td><td>+6</td><td class="left">─</td><td>8</td><td>4</td><td>12</td><td>4</td><td>5th</td></tr>
+            <tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td><td>8</td><td>4</td><td>12</td><td>4</td><td>5th</td></tr>
+            <tr><td>20th</td><td>+6</td><td class="left">Spiritual Ascension</td><td>8</td><td>4</td><td>12</td><td>4</td><td>5th</td></tr>
+        </table>
+            <div element="ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS" />
+            <div element="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEMS" />
+            <div element="ID_LASERLL_CLASS_FEATURE_SHAMAN_PRIMAL_MAGIC" />
+            <div element="ID_LASERLL_CLASS_FEATURE_SHAMAN_SPIRITUALITY" />
+            <div element="ID_LASERLL_CLASS_FEATURE_SHAMAN_ASI" />
+            <div element="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEMIC_VERSATILITY" />
+            <div element="ID_LASERLL_CLASS_FEATURE_SHAMAN_GREATER_TOTEM_SPIRIT" />
+            <div element="ID_LASERLL_CLASS_FEATURE_SHAMAN_SPIRITUAL_ASCENSION" />
+        </description>
+        <setters>
+            <set name="hd">d8</set>
+            <set name="short">A mystic that bind spirits to Totems and channels that power for the good of their people.</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_LASERLL_MULTICLASS_SHAMAN" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_LASERLL_MULTICLASS_SHAMAN" />
+            <select type="Proficiency" name="Skill Proficiency, Shaman" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_RELIGION" requirements="!ID_LASERLL_MULTICLASS_SHAMAN" number="2" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_LASERLL_MULTICLASS_SHAMAN" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_LASERLL_MULTICLASS_SHAMAN" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_LASERLL_MULTICLASS_SHAMAN" />
+            <select type="Proficiency" name="Blow Gun Proficiency, Shaman" supports="Blow guns" />
+            <select type="Proficiency" name="Net Proficiency, Shaman" supports="Nets" />
+            <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS" level="1" />
+            <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEMS" level="1" />
+            <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_PRIMAL_MAGIC" level="2" />
+            <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_SPIRITUALITY" level="3" />
+            <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_ASI" level="4" />
+            <grant type="Class Feature" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEMIC_VERSATILITY" level="5" />
+            <grant type="Class Feature"  id="ID_LASERLL_CLASS_FEATURE_SHAMAN_GREATER_TOTEM_SPIRIT" level="11" />
+            <grant type="Class Feature"  id="ID_LASERLL_CLASS_FEATURE_SHAMAN_SPIRITUAL_ASCENSION" level="20" />
+        </rules>
+        <multiclass id="ID_LASERLL_MULTICLASS_SHAMAN">
+            <prerequisite>wisdom 13</prerequisite>
+            <requirements>[wis:13]</requirements>
+            <setters>
+                <set name="multiclass proficiencies">light armor, shields, and simple weapons.</set>
+            </setters>
+            <rules>
+                <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            </rules>
+        </multiclass>
+    </element>
+    <element name="Sacred Focus" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_LASERLL_SHAMAN_SACRED_FOCUS</requirements>
+      <description>
+        <p>In order to channel the supernatural power of spirits without being consumed, Shamans must draw this wondrous power through the strongest aspect of themselves. At 1st level, you choose a Sacred Focus from the options listed below.</p>
+        <h5 class="caption">BODY</h5>
+        <p>You channel spiritual power through your body, bending the spirits to your will with physical might. When you choose this Sacred Focus your hit point maximum increases by 1, and it increases by 1 again each time you gain a level in this class.</p>
+        <h5 class="caption">HEART</h5>
+        <p>You channel spiritual power into your heart and overwhelm spirits with powerful emotions. When you are forced to make a saving throw to resist the charmed or frightened condition, you gain a bonus to your roll equal to your Wisdom modifier.</p>
+        <h5 class="caption">MIND</h5>
+        <p>You channel spiritual power through your mind, manipulating the spirits with your wit. Whenever you would make an ability check or a saving throw that uses your Intelligence score, you can choose to use your Wisdom score instead.</p>
+        <h5 class="caption">SOUL</h5>
+        <p>You channel spiritual power through your soul, your serenity soothes spirits and wards you from harm. While not wearing armor or wielding a shield, your Armor Class is equal to 10 + your Dexterity modifier + your Wisdom modifier.</p>
+      </description>
+      <sheet display="false"></sheet>
+      <rules>
+        <select type="Class Feature" name="Sacred Focus" supports="ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS_BODY|ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS_HEART|ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS_MIND|ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS_SOUL"/>
+      </rules>
+    </element>
+
+    <element name="Sacred Focus (Body)" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS_BODY">
+      <supports>Sacred Focus</supports>
+      <description>
+        <p>You channel spiritual power through your body, bending the spirits to your will with physical might. When you choose this Sacred Focus your hit point maximum increases by 1, and it increases by 1 again each time you gain a level in this class.</p>
+      </description>
+      <sheet display="false"></sheet>
+      <rules>
+        <stat name="hp" value="1" level="1"/>
+        <stat name="hp" value="1" level="2"/>
+        <stat name="hp" value="1" level="3"/>
+        <stat name="hp" value="1" level="4"/>
+        <stat name="hp" value="1" level="5"/>
+        <stat name="hp" value="1" level="6"/>
+        <stat name="hp" value="1" level="7"/>
+        <stat name="hp" value="1" level="8"/>
+        <stat name="hp" value="1" level="9"/>
+        <stat name="hp" value="1" level="10"/>
+        <stat name="hp" value="1" level="11"/>
+        <stat name="hp" value="1" level="12"/>
+        <stat name="hp" value="1" level="13"/>
+        <stat name="hp" value="1" level="14"/>
+        <stat name="hp" value="1" level="15"/>
+        <stat name="hp" value="1" level="16"/>
+        <stat name="hp" value="1" level="17"/>
+        <stat name="hp" value="1" level="18"/>
+        <stat name="hp" value="1" level="19"/>
+        <stat name="hp" value="1" level="20"/>
+      </rules>
+    </element>
+
+    <element name="Sacred Focus (Heart)" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS_HEART">
+      <supports>Sacred Focus</supports>
+      <description>
+        <p>You channel spiritual power into your heart and overwhelm spirits with powerful emotions. When you are forced to make a saving throw to resist the charmed or frightened condition, you gain a bonus to your roll equal to your Wisdom modifier.</p>
+      </description>
+      <sheet>
+        <description>Add +{{wisdom:modifier}} to saving throws against the charmed and frightened conditions.</description>
+      </sheet>
+    </element>
+
+    <element name="Sacred Focus (Mind)" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS_MIND">
+      <supports>Sacred Focus</supports>
+      <description>
+        <p>You channel spiritual power through your mind, manipulating the spirits with your wit. Whenever you would make an ability check or a saving throw that uses your Intelligence score, you can choose to use your Wisdom score instead.</p>
+      </description>
+      <sheet>
+        <description>You can use your Wisdom score instead for saving throws and ability checks that require Intelligence.</description>
+      </sheet>
+    </element>
+
+    <element name="Sacred Focus (Soul)" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS_SOUL">
+      <supports>Sacred Focus</supports>
+      <description>
+        <p>You channel spiritual power through your soul, your serenity soothes spirits and wards you from harm. While not wearing armor or wielding a shield, your Armor Class is equal to 10 + your Dexterity modifier + your Wisdom modifier.</p>
+      </description>
+      <rules>
+  			<stat name="ac:unarmored defense shaman soul:base" value="10" />
+  			<stat name="ac:unarmored defense shaman soul:dexterity" value="dexterity:modifier" />
+  			<stat name="ac:unarmored defense shaman soul:wisdom" value="wisdom:modifier" />
+  			<stat name="ac:unarmored defense shaman soul" value="ac:unarmored defense shaman soul:base" />
+  			<stat name="ac:unarmored defense shaman soul" value="ac:unarmored defense shaman soul:dexterity" />
+  			<stat name="ac:unarmored defense shaman soul" value="ac:unarmored defense shaman soul:wisdom" />
+  			<stat name="ac:calculation" value="ac:unarmored defense shaman soul" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Shaman, Soul)" />
+  		</rules>
+    </element>
+
+    <element name="Totems" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEMS">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_LASERLL_SHAMAN_TOTEMS</requirements>
+      <description>
+        <p>At 1st level, you learn to bind primal nature spirits into sacred Totems so that you may safely channel their mystical abilities. Any Tiny object of your choice can be a Totem, but most often they are objects reminiscent of the spirit within.</p>
+        <p class="indent">At 1st level, you know two Totems of your choice from the list at the end of the class. If a Totem has any prerequisites, you must meet them in order to learn that Totem.</p>
+        <p class="indent">You learn additional Totems as you gain Shaman levels, as shown in the Bound Totems column of the Shaman Table on the page above.</p>
+        <p class="indent"><strong><em>Saving Throws.</em></strong>If a Totem requires a creature to make a saving throw, the DC is calculated as follows:</p>
+        <center>
+          <p><strong>Totemic save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier.</p>
+        </center>
+        <h5 class="caption">TOTEMIC ASSAULT</h5>
+        <p>You can temporarily unleash the primal spirits bound within your Totems to assault your foes. While you are holding one of your Totems, you can use your action to force one creature you can see within 60 feet to make a Charisma saving throw. On a failed save, it takes 1d8 necrotic damage.</p>
+        <p class="indent">At certain Shaman levels, this damage increases: at 5th level (2d8), at 11th level (3d8), and at 17th level (4d8).</p>
+      </description>
+      <sheet>
+        <description>You can bind your Totems to Tiny objects.</description>
+      </sheet>
+      <rules>
+        <stat name="totemic save:dc" value="8" />
+        <stat name="totemic save:dc" value="proficiency" />
+        <stat name="totemic save:dc:ability" value="wisdom:modifier" bonus="ability"/>
+        <stat name="totemic save:dc" value="totemic save:dc:ability" />
+
+        <select type="Class Feature" name="Totem (Level 1)" supports="Totem" level="1" number="2"/>
+        <select type="Class Feature" name="Totem (Level 4)" supports="Totem" level="4" />
+        <select type="Class Feature" name="Totem (Level 6)" supports="Totem" level="6" />
+        <select type="Class Feature" name="Totem (Level 9)" supports="Totem" level="9" />
+        <select type="Class Feature" name="Totem (Level 12)" supports="Totem" level="12" />
+        <select type="Class Feature" name="Totem (Level 15)" supports="Totem" level="15" />
+        <select type="Class Feature" name="Totem (Level 18)" supports="Totem" level="18" />
+
+        <select type="Class Feature" name="Totemic Assault" supports="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEMS_TOTEMIC_ASSAULT"/>
+      </rules>
+  </element>
+
+  <element name="Totemic Assault" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEMS_TOTEMIC_ASSAULT">
+    <supports>Totems</supports>
+    <description>
+      <p>You can temporarily unleash the primal spirits bound within your Totems to assault your foes. While you are holding one of your Totems, you can use your action to force one creature you can see within 60 feet to make a Charisma saving throw. On a failed save, it takes 1d8 necrotic damage.</p>
+      <p class="indent">At certain Shaman levels, this damage increases: at 5th level (2d8), at 11th level (3d8), and at 17th level (4d8).</p>
+    </description>
+    <sheet>
+      <description level="1" action="Action">While holding a Totem use your Action to force a creature within 60 ft. to make a Charisma saving throw (DC {{totemic save:dc}}); it takes 1d8 necrotic damage on a failure.</description>
+      <description level="5" action="Action">While holding a Totem use your Action to force a creature within 60 ft. to make a Charisma saving throw (DC {{totemic save:dc}}); it takes 2d8 necrotic damage on a failure.</description>
+      <description level="11" action="Action">While holding a Totem use your Action to force a creature within 60 ft. to make a Charisma saving throw (DC {{totemic save:dc}}); it takes 3d8 necrotic damage on a failure.</description>
+      <description level="17" action="Action">While holding a Totem use your Action to force a creature within 60 ft. to make a Charisma saving throw (DC {{totemic save:dc}}); it takes 4d8 necrotic damage on a failure.</description>
+    </sheet>
+  </element>
+
+  <element name="Primal Magic" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_PRIMAL_MAGIC">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHAMAN_PRIMAL_MAGIC</requirements>
+    <description>
+      <p>You have learned to channel the primal spirits present in all things. Beginning at the 2nd level, this spiritual power allows you to produce spells. See the <em>Player's Handbook</em> for the rules of spellcasting. The Shaman spell list is at the end of the class.</p>
+      <h5>CANTRIPS</h5>
+      <p>At 2nd level, you learn two cantrips of your choice from the Shaman spell list. You learn an additional Shaman cantrip of your choice when you reach 4th level and again at 10th level.</p>
+      <h5>SPELL SLOTS</h5>
+			<p>The Shaman table above shows the number of spell slots you have to cast your Shaman spells of 1st through 5th-level. The Shaman table also shows what the level of those slots is; all of your spell slots are the same level. To cast a Shaman spell of 1st-level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.</p>
+			<p class="indent">For example, at 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell <em>cure wounds</em>, you must expend one of your 3rd-level spell slots, and cast <em>cure wounds</em> at 3rd-level.</p>
+			<h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+			<p>At 2nd level, you learn three 1st-level spells of your choice from the Shaman spell list at the end of this class. The Spells Known column of the Shaman table shows when you learn additional shaman spells of your choice of 1st-level and higher. A spell you choose must be of a level no higher than what’s shown in the table’s Slot Level column for your level. For example, when you reach 6th level, you learn a new Shaman spell, which can be 1st, 2nd, or 3rd-level.</p>
+			<p class="indent">Additionally, when you gain a level in this class, you can choose one of the Shaman spells you know and replace it with another spell of your choice from the Shaman spell list, which also must be of a level for which you have spell slots.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>As you draw your magic from your understanding of primal spirits, Wisdom is your spellcasting ability for your Shaman spells. You use your Wisdom whenever a spell refers to your spellcasting ability, when setting the saving throw DC for a Shaman spell, and when making an attack roll with one.</p>
+			<p class="indent">
+				<b>Spell save DC</b> = 8 + your proficiency bonus + your Wisdom modifier</p>
+			<p class="indent">
+				<b>Spell attack modifier</b> = your proficiency bonus + your Wisdom modifier</p>
+      <h5>RITUAL CASTING</h5>
+      <p>You use your spiritual knowledge to cast the ritual version of any Shaman spell you know so long as it has the ritual tag.</p>
+			<h5>SPELLCASTING FOCUS</h5>
+      <p>You can use any Totem to which you have bound a spirit as the spellcasting focus for your Shaman spells. See the Totem feature for a description of what can be used as a Totem.</p>
+		</description>
+		<sheet display="false">
+			<description>Channeling primal spirits grants you facility with spells. You have {{shaman:spellcasting:slots:count}} slots of level {{shaman:spellcasting:slot}}</description>
+		</sheet>
+		<spellcasting name="Shaman" ability="Wisdom" allowReplace="true">
+			<list>Shaman</list>
+		</spellcasting>
+		<rules>
+			<!-- add not full but single _not counting as multiclass spellcaster due to pact magic -->
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_SOLO" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+
+			<stat name="shaman:spellcasting:slots:count" value="2" level="2"/>
+			<stat name="shaman:spellcasting:slots:count" value="1" level="11"/>
+			<stat name="shaman:spellcasting:slots:count" value="1" level="17"/>
+
+			<stat name="shaman:spellcasting:slot" value="1" level="2" />
+			<stat name="shaman:spellcasting:slot" value="1" level="3" />
+  		<stat name="shaman:spellcasting:slot" value="1" level="5" />
+			<stat name="shaman:spellcasting:slot" value="1" level="7" />
+			<stat name="shaman:spellcasting:slot" value="1" level="9" />
+
+			<!-- negative count to remove slots -->
+  		<stat name="shaman:spellcasting:slots:1" value="shaman:spellcasting:slots:count" level="2" />
+			<stat name="shaman:spellcasting:slots:1" value="-shaman:spellcasting:slots:count" level="3" />
+			<stat name="shaman:spellcasting:slots:2" value="shaman:spellcasting:slots:count" level="3" />
+			<stat name="shaman:spellcasting:slots:2" value="-shaman:spellcasting:slots:count" level="5" />
+			<stat name="shaman:spellcasting:slots:3" value="shaman:spellcasting:slots:count" level="5" />
+			<stat name="shaman:spellcasting:slots:3" value="-shaman:spellcasting:slots:count" level="7" />
+			<stat name="shaman:spellcasting:slots:4" value="shaman:spellcasting:slots:count" level="7" />
+			<stat name="shaman:spellcasting:slots:4" value="-shaman:spellcasting:slots:count" level="9" />
+			<stat name="shaman:spellcasting:slots:5" value="shaman:spellcasting:slots:count" level="9" />
+
+			<select type="Spell" name="Cantrip (Shaman)" supports="$(spellcasting:list),0" level="1" number="2" spellcasting="Shaman" />
+			<select type="Spell" name="Cantrip (Shaman)" supports="$(spellcasting:list),0" level="4" spellcasting="Shaman" />
+			<select type="Spell" name="Cantrip (Shaman)" supports="$(spellcasting:list),0" level="10" spellcasting="Shaman" />
+
+			<select type="Spell" name="Spellcasting (Shaman)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" number="3" spellcasting="Shaman"/>
+			<select type="Spell" name="Spellcasting (Shaman)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Shaman"/>
+			<select type="Spell" name="Spellcasting (Shaman)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Shaman"/>
+			<select type="Spell" name="Spellcasting (Shaman)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Shaman"/>
+			<select type="Spell" name="Spellcasting (Shaman)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Shaman"/>
+			<select type="Spell" name="Spellcasting (Shaman)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Shaman"/>
+			<select type="Spell" name="Spellcasting (Shaman)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Shaman"/>
+			<select type="Spell" name="Spellcasting (Shaman)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Shaman"/>
+			<select type="Spell" name="Spellcasting (Shaman)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Shaman"/>
+			<select type="Spell" name="Spellcasting (Shaman)" supports="$(spellcasting:list),$(spellcasting:slots)" level="18" spellcasting="Shaman"/>
+		</rules>
+	</element>
+
+  <element name="Spirituality" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_SPIRITUALITY">
+      <description>
+          <p>At 3rd level, you choose the Spirituality, that best represents the discipline you use to channel spirits: Curse Binder, Spirit Warrior, Wild Heart, or Witch Doctor, each of which is detailed at the end of this class.</p>
+          <p class="indent">Your Spirituality grants you features at 3rd level, and again when you reach 6th, 10th, and 14th level in this class.</p>
+          <p class="indent">More Spirituality options, including Elementalist, Far Seer, and Spirit Guide, can be found in the Shaman Expanded.</p>
+          <h5>SPIRITUALITY SPELLS</h5>
+          <p>Each Spirituality has a list of spells that you learn at the Shaman levels noted in the Spirituality description. These Spirituality Spells count as Shaman spells for you, but they do not count against your total number of Spells Known.</p>
+      </description>
+      <sheet display="false">
+          <description>Choose between Curse Binder, Spirit Warrior, Wild Heart, or Witch Doctor, each of which is detailed at the end of the class description.</description>
+      </sheet>
+      <rules>
+          <select type="Archetype" name="Spirituality" supports="Spirituality" />
+      </rules>
+  </element>
+  <element name="Ability Score Improvement" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_ASI">
+      <compendium display="false" />
+    <description>
+      <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Class Feature" name="Improvement Option (Shaman 4)" supports="Improvement Option,Shaman,4" level="4" />
+      <select type="Class Feature" name="Improvement Option (Shaman 8)" supports="Improvement Option,Shaman,8" level="8" />
+      <select type="Class Feature" name="Improvement Option (Shaman 12)" supports="Improvement Option,Shaman,12" level="12" />
+      <select type="Class Feature" name="Improvement Option (Shaman 16)" supports="Improvement Option,Shaman,16" level="16" />
+      <select type="Class Feature" name="Improvement Option (Shaman 19)" supports="Improvement Option,Shaman,19" level="19" />
+    </rules>
+  </element>
+  <element name="Totemic Versatility" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEMIC_VERSATILITY">
+    <description>
+      <p>You have gained greater control over the spirit world. Starting at 5th level, at the end of a long rest, you can replace a Totem you know with another Totem of your choice.</p>
+    </description>
+    <sheet>
+      <description usage="1/Long Rest" level="5">
+        You may replace a Totem you know with another of your choice at the end of a long rest. Effects in '[]' have already been applied to this character sheet.</description>
+        <description usage="1/Long Rest" level="11">
+          You may replace a Totem or your Greater Totem Spirit you know with another of your choice at the end of a long rest. Effects in '[]' have already been applied to this character sheet.</description>
+    </sheet>
+  </element>
+  <element name="Greater Totem Spirit" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_GREATER_TOTEM_SPIRIT">
+    <description>
+      <p>Your understanding of the spirit world allows you to conjure and bind greater primal spirits to one of your Totems. At 11th level, choose a Greater Totem Spirit from the list at the end of this class to bind to one of your Totems. Your Greater Totem Spirit doesn't count against your number of Bound Totems.</p>
+      <p class="indent">Each Greater Totem Spirit includes a list of four Greater Totem Spells, one for each spell level from 6th through 9th, that you learn at the Shaman levels listed in the description, which do not count against your number of Spells Known.</p>
+      <p class="indent">Once you reach the Shaman levels in your Greater Totem Spirit's description, you can cast that spell once, at its lowest level, without expending a spell slot. Once you do so you must finish a long rest before you can cast that spell again.</p>
+      <p class="indent">For example, if you choose the Greater Spirit of the Sun at 11th level, you can cast <em>sunbeam</em> once per long rest.</p>
+      <p class="indent">When you finish a long rest, in place of using your Totemic Versatility feature, you can replace your Greater Totem Spirit with another Greater Totem Spirit of your choice.</p>
+    </description>
+    <sheet>
+      <description>You can cast each of the following once per long rest at its lowest level:</description>
+    </sheet>
+    <rules>
+      <select type="Class Feature" name="Greater Totem Spirit" supports="Greater Totem Spirit" />
+    </rules>
+  </element>
+  <element name="Spiritual Ascension" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_SPIRITUAL_ASCENSION">
+      <description>
+          <p>You have transcended the need for a corporeal form. At 20th level, your physical body no longer ages, and you are immune to all disease, the poisoned condition, and poison damage.</p>
+          <p class="indent">When you finish a long rest, you can choose to reduce your number of Bound Totems by one to create a special Totem that is attuned to your soul. Should you die, that Totem grows into an exact replica of your body, though it lacks a soul.</p>
+          <p class="indent">When you die, you become an incorporeal spirit, unable to interact with the world around you. If you can return to the replica of your body, you return to life at the following dawn.</p>
+          <p class="indent">If you do not return to the replica of your body, you die at the following dawn.</p>
+      </description>
+      <sheet>
+          <description>You are immune to all diseases.&#13;&#10;After a long rest you can reduce your Bound Totem total by 1 to create a replica of your body. When you die, you become a spirit, and can return to life at the following dawn if you are able to reach this replica; you die if you are unable to return to it.</description>
+      </sheet>
+      <rules>
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISONED" />
+      </rules>
+  </element>
+
+  <!-- Greater Totem Spirit -->
+  <element name="Greater Spirit of Death" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_GREATER_TOTEM_SPIRIT_DEATH">
+      <supports>Greater Totem Spirit</supports>
+      <description>
+          <p>Spirits of Death are drawn from the Shadowfell, the Hells, or the Abyss. They lend Shamans their powerful sinister magic.</p>
+          <table class="feat-features">
+              <thead>
+                  <tr><td class="col-5">Shaman Level</td><td class="col-60 left">Spell</td></tr>
+              </thead>
+              <tr><td>11th</td><td><em>flesh to stone</em></td></tr>
+              <tr><td>13th</td><td><em>finger of death</em></td></tr>
+              <tr><td>15th</td><td><em>horrid writing<sup>XGE</sup></em></td></tr>
+              <tr><td>17th</td><td><em>power word: kill</em></td></tr>
+          </table>
+      </description>
+      <sheet>
+        <description level="11">flesh to stone</description>
+        <description level="13">flesh to stone, finger of death</description>
+        <description level="15">flesh to stone, finger of death, horrid writing</description>
+        <description level="17">flesh to stone, finger of death, horrid writing, power word: kill</description>
+      </sheet>
+  </element>
+
+  <element name="Greater Spirit of Life" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_GREATER_TOTEM_SPIRIT_LIFE">
+      <supports>Greater Totem Spirit</supports>
+      <description>
+          <p>Spirits of Life come to aid Shamans from the upper planes or the Feywild. They bless Shamans with mystic healing magic.</p>
+          <table class="feat-features">
+              <thead>
+                  <tr><td class="col-5">Shaman Level</td><td class="col-60 left">Spell</td></tr>
+              </thead>
+              <tr><td>11th</td><td><em>heal</em></td></tr>
+              <tr><td>13th</td><td><em>regenerate</em></td></tr>
+              <tr><td>15th</td><td><em>holy word</em></td></tr>
+              <tr><td>17th</td><td><em>power word: heal</em></td></tr>
+          </table>
+      </description>
+      <sheet>
+        <description level="11">heal</description>
+        <description level="13">heal, regenerate</description>
+        <description level="15">heal, regenerate, ;holy word</description>
+        <description level="17">heal, regenerate, holy word, power word: heal</description>
+      </sheet>
+  </element>
+
+  <element name="Greater Spirit of the Moon" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_GREATER_TOTEM_SPIRIT_MOON">
+      <supports>Greater Totem Spirit</supports>
+      <description>
+          <p>Spirits of the Moon can be summoned from the Astral Sea or Etherial Plane. They grant Shamans wondrous magic power.</p>
+          <table class="feat-features">
+              <thead>
+                  <tr><td class="col-5">Shaman Level</td><td class="col-60 left">Spell</td></tr>
+              </thead>
+              <tr><td>11th</td><td><em>primordial ward<sup>XGE</sup></em></td></tr>
+              <tr><td>13th</td><td><em>reverse gravity</em></td></tr>
+              <tr><td>15th</td><td><em>antimagic field</em></td></tr>
+              <tr><td>17th</td><td><em>astral projection</em></td></tr>
+          </table>
+      </description>
+      <sheet>
+        <description level="11">primordial ward</description>
+        <description level="13">primordial ward, reverse gravity</description>
+        <description level="15">primordial ward, reverse gravity, antimagic field</description>
+        <description level="17">primordial ward, reverse gravity, antimagic field, ;astral projection</description>
+      </sheet>
+  </element>
+
+  <element name="Greater Spirit of the Sun" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_GREATER_TOTEM_SPIRIT_SUN">
+      <supports>Greater Totem Spirit</supports>
+      <description>
+          <p>Spirits of the Sun are drawn from places of powerful radiant magic. They lend Shamans restorative and purifying power.</p>
+          <table class="feat-features">
+              <thead>
+                  <tr><td class="col-5">Shaman Level</td><td class="col-60 left">Spell</td></tr>
+              </thead>
+              <tr><td>11th</td><td><em>sunbeam</em></td></tr>
+              <tr><td>13th</td><td><em>resurrection</em></td></tr>
+              <tr><td>15th</td><td><em>sunburst</em></td></tr>
+              <tr><td>17th</td><td><em>true resurrection</em></td></tr>
+          </table>
+      </description>
+      <sheet>
+        <description level="11">sunbeam</description>
+        <description level="13">sunbeam, resurrection</description>
+        <description level="15">sunbeam, resurrection, sunburst</description>
+        <description level="17">sunbeam, resurrection, sunburst, true resurrection</description>
+      </sheet>
+  </element>
+
+  <element name="Curse Binder" type="Archetype" source="Laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER">
+		<supports>Spirituality</supports>
+		<description>
+			<p>While most Shamans use the power of spirits to work magics and heal the sick, some twist this connection, binding sinister spirits to their foes. Known as Curse Binders, these Shamans wield the sinister spiritual power present in the world. Often apprentices of hags or entities from the Shadowfell, they use ancient techniques to afflict their foes with hexes and curses.</p>
+			<div element="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_CURSE_BINDER_SPELLS" />
+			<div element="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_EVIL_EYE" />
+			<div element="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_TOTEMIC_CURSE" />
+			<div element="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_SINISTER_SPELLCASTING" />
+			<div element="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_SHAMANISTIC_WARD" />
+			<div element="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_FOUL_CONJURATION" />
+		</description>
+		<sheet display="false">
+			<description>Curse Binders use ancient techniques to afflict their foes with hexes and curses.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_CURSE_BINDER_SPELLS" level="3"/>
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_EVIL_EYE" level="3"/>
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_TOTEMIC_CURSE" level="3"/>
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_SINISTER_SPELLCASTING" level="6"/>
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_SHAMANISTIC_WARD" level="10"/>
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_FOUL_CONJURATION" level="14"/>
+		</rules>
+	</element>
+
+  <element name="Curse Binder Spells" type="Archetype Feature" source="Laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_CURSE_BINDER_SPELLS">
+    <supports>Shaman</supports>
+    <description>
+      <p>When you gain a level in this class, you can replace one spell from this feature with an enchantment or necromancy spell of the same level from the Shaman or Warlock spell list.</p>
+      <table>
+        <thead>
+          <tr><td>Shaman Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>blindness/deafness, ray of enfeeblement</em></td></tr>
+        <tr><td>5th</td><td><em>bestow curse, vampiric touch</em></td></tr>
+        <tr><td>7th</td><td><em>blight, phantasmal killer</em></td></tr>
+        <tr><td>9th</td><td><em>contagion, enervation</em></td></tr>
+      </table>
+    </description>
+    <sheet>
+      <description>When you gain a Shaman level, you can replace one spell from this feature with an enchantment or necromancy spell of the same level from the Shaman or Warlock spell lists.</description>
+    </sheet>
+    <rules>
+			<select type="Spell" name="1st Additional Spell (Curse Binder)" supports="2,(Enchantment||Necromancy),(Shaman||Warlock)||BlindnessDeafness" level="3" default="ID_PHB_SPELL_BLINDNESS_DEAFNESS" spellcasting="Shaman" allowReplace="false" />
+			<select type="Spell" name="2nd Additional Spell (Curse Binder)" supports="2,(Enchantment||Necromancy),(Shaman||Warlock)||Ray of Enfeeblement" level="3" default="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" spellcasting="Shaman" allowReplace="false" />
+			<select type="Spell" name="3rd Additional Spell (Curse Binder)" supports="3,(Enchantment||Necromancy),(Shaman||Warlock)||Bestow Curse" level="5" default="ID_PHB_SPELL_BESTOW_CURSE" spellcasting="Shaman" allowReplace="false" />
+			<select type="Spell" name="4th Additional Spell (Curse Binder)" supports="3,(Enchantment||Necromancy),(Shaman||Warlock)||Vampiric Touch" level="5" default="ID_PHB_SPELL_VAMPIRIC_TOUCH" spellcasting="Shaman" allowReplace="false" />
+			<select type="Spell" name="5th Additional Spell (Curse Binder)" supports="4,(Enchantment||Necromancy),(Shaman||Warlock)||Blight" level="7" default="ID_PHB_SPELL_BLIGHT" spellcasting="Shaman" allowReplace="false" />
+			<select type="Spell" name="6th Additional Spell (Curse Binder)" supports="4,(Enchantment||Necromancy),(Shaman||Warlock)||Phantasmal Killer" level="7" default="ID_PHB_SPELL_PHANTASMAL_KILLER" spellcasting="Shaman" allowReplace="false" />
+			<select type="Spell" name="7th Additional Spell (Curse Binder)" supports="5,(Enchantment||Necromancy),(Shaman||Warlock)||Contagion" level="9" default="ID_PHB_SPELL_CONTAGION" spellcasting="Shaman" allowReplace="false" />
+			<select type="Spell" name="8th Additional Spell (Curse Binder)" supports="5,(Enchantment||Necromancy),(Shaman||Warlock)||Enervation" level="9" default="ID_XGTE_SPELL_ENERVATION" spellcasting="Shaman" allowReplace="false" />
+		</rules>
+  </element>
+
+  <append id="ID_PHB_SPELL_BLINDNESS_DEAFNESS">
+    <supports>BlindnessDeafness</supports>
+  </append>
+  <append id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT">
+    <supports>Ray of Enfeeblement</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BESTOW_CURSE">
+    <supports>Bestow Curse</supports>
+  </append>
+  <append id="ID_PHB_SPELL_VAMPIRIC_TOUCH">
+    <supports>Vampiric Touch</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BLIGHT">
+    <supports>Blight</supports>
+  </append>
+  <append id="ID_PHB_SPELL_PHANTASMAL_KILLER">
+    <supports>Phantasmal Killer</supports>
+  </append>
+  <append id="ID_PHB_SPELL_CONTAGION">
+    <supports>Contagion</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_ENERVATION">
+    <supports>Enervation</supports>
+  </append>
+
+  <element name="Evil Eye" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_EVIL_EYE">
+    <description>
+      <p>You can curse with a glance. As a reaction, when a creature you can see within 60 feet makes an ability check, attack roll, or saving throw, you can impose disadvantage on its roll.</p>
+      <p class="indent">You can use this reaction a number of times equal to your Wisdom modifier (a minimum of once), and you regain all expended uses when you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description usage="{{min 1 wis}}/Long Rest" action="Reaction">Impose disadvantage on the ability check, attack roll, or saving throw of a creature you can see within 60 ft.</description>
+    </sheet>
+    <rules>
+      <stat name="min 1 wis" value="1" bonus="min 1 wis" />
+      <stat name="min 1 wis" value="wisdom:modifier" bonus="min 1 wis" />
+    </rules>
+  </element>
+
+  <element name="Totemic Curse" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_TOTEMIC_CURSE">
+    <description>
+      <p>You bind spirits of pain, suffering, and despair to your will, using them to inflict curses upon your enemies. When a creature fails its saving throw against Totemic Assault, you can inflict it with one of the following conditions of your choice until the start of your next turn:</p>
+      <ul>
+        <li>Its speed is reduced by a total number of feet equal to 5 times your Wisdom modifier.</li>
+        <li>It cannot regain hit points, and when it takes damage it takes an additional 1d4 necrotic damage.</li>
+        <li>Whenever it makes an ability check or an attack roll, it must subtract your Wisdom modifier from the result of its roll.</li>
+      </ul>
+      <p class="indent">The conditions inflicted by this feature can be ended early with <em>lesser restoration</em> or <em>remove curse</em>. The afflicted creature can repeat the saving throw as an action on its turn, ending the effect on a success.</p>
+    </description>
+    <sheet>
+      <description>When a creature fails its saving throw against Totemic Assault, afflict it with one of the following until your next turn; the creature can end the effect early by repeating the saving throw as an action on its turn and succeeding:&#13;&#10;Reduce its movement speed by {{totemic curse:reduction}}.&#13;&#10;It cannot regain hit points and takes an additional 1d4 necrotic damage whenever it takes damage.&#13;&#10;Subtract {{wisdom:modifier}} from its ability checks and attack rolls.</description>
+    </sheet>
+    <rules>
+      <stat name="totemic curse:reduction" value="wisdom:modifier" bonus="totemic curse" />
+      <stat name="totemic curse:reduction" value="wisdom:modifier" bonus="totemic curse" />
+      <stat name="totemic curse:reduction" value="wisdom:modifier" bonus="totemic curse" />
+      <stat name="totemic curse:reduction" value="wisdom:modifier" bonus="totemic curse" />
+      <stat name="totemic curse:reduction" value="wisdom:modifier" bonus="totemic curse" />
+    </rules>
+  </element>
+
+  <element name="Sinister Spellcasting" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_SINISTER_SPELLCASTING">
+    <description>
+      <p>Sinister spirits empower your magic. You gain the Totem of Wrath, but it doesn't count against your number of Totems Known. If you already know this Totem, you learn another Totem of your choice for which you meet the prerequisties.</p>
+    </description>
+    <sheet display="false">
+      <description></description>
+    </sheet>
+    <rules>
+			<select type="Class Feature" name="Sinister Spellcasting" supports="Totem" default="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_WRATH" />
+    </rules>
+  </element>
+
+  <element name="Shamanistic Ward" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_SHAMANISTIC_WARD">
+    <description>
+      <p>Sinister spirits ward you against elemental assaults. At the end of each long rest, choose either acid, cold, fire, lightning, necrotic, poison, psychic, radiant, or thunder. Until the end of your next long rest, you are resistant to that damage.</p>
+      <p class="indent">When you take damage of a type that you resist, you can use Totemic Assault as a reaction, targeting your attacker.</p>
+    </description>
+    <sheet>
+      <description>At the end of a long rest choose one of acid, cold, fire, lightning, necrotic, poison, psychic, radiant, or thunder; you are resistant to that damage until your next long rest.&#13;&#10;When you take resisted damage, you can use Totemic Assault as a reaction against your attacker.</description>
+    </sheet>
+  </element>
+
+  <element name="Foul Conjuration" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_CURSE_BINDER_FOUL_CONJURATION">
+    <description>
+      <p>You have reached the apex of sinister shamanism, the ability to create corporeal bodies for the spirits you conjure. As an action on your turn, you can cast <em>create undead</em> at 6th-level, without expending a spell slot or the material components.</p>
+      <p class="indent">Once you cast <em>create undead</em> in this way, you must finish a long rest before you can cast it in this way again.</p>
+      <div class="reference">
+        <div element="ID_PHB_SPELL_CREATE_UNDEAD" />
+      </div>
+    </description>
+    <sheet>
+      <description usage="1/Long Rest" action="Action">You can cast 6th-level create undead as an action without expending a spell slot or using material components.</description>
+    </sheet>
+  </element>
+
+  <element name="Spirit Warrior" type="Archetype" source="Laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR">
+		<supports>Spirituality</supports>
+		<description>
+			<p>Serving as the guardians of sacred groves and places of great spiritual power, Spirit Warriors draw on the power of ancient spirits to enhance their physical form. When they allow these incorporeal beings to walk the world through their physical bodies, they gain increased physical and martial abilities.</p>
+      <div element="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_ANCESTRAL_KNOWLEDGE" />
+			<div element="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_SPIRIT_WARRIOR_SPELLS" />
+			<div element="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_TOTEMIC_WEAPON" />
+			<div element="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_EXTRA_ATTACK" />
+			<div element="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_WARRIOR_OF_THE_GRAVE" />
+			<div element="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_SPIRITUAL_CHAMPION" />
+		</description>
+		<sheet display="false">
+			<description>Spirit Warriors draw on the power of ancient spirits to enhance their physical form.</description>
+		</sheet>
+		<rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_ANCESTRAL_KNOWLEDGE" level="3"/>
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_SPIRIT_WARRIOR_SPELLS" level="3"/>
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_TOTEMIC_WEAPON" level="3"/>
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_EXTRA_ATTACK" level="6"/>
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_WARRIOR_OF_THE_GRAVE" level="10"/>
+			<grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_SPIRITUAL_CHAMPION" level="14"/>
+		</rules>
+	</element>
+
+  <element name="Ancestral Knowledge" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_ANCESTRAL_KNOWLEDGE">
+    <description>
+      <p>When you adopt this Spirituality, spirits of ancient warriors grant you their lifetimes' worth of combat experience. You gain proficiency with medium armor and all martial weapons.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+    </rules>
+  </element>
+
+  <element name="Spirit Warrior Spells" type="Archetype Feature" source="Laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_SPIRIT_WARRIOR_SPELLS">
+    <supports>Shaman</supports>
+    <description>
+      <p>When you gain a level in this class, you can replace one spell from this feature with an abjuration or evocation spell of the same level from the Shaman or Paladin spell list.</p>
+      <table>
+        <thead>
+          <tr><td>Shaman Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>magical weapon<sup>LL</sup>, spiritual weapon</em></td></tr>
+        <tr><td>5th</td><td><em>clairvoyance, spirit shroud<sup>TCE</sup></em></td></tr>
+        <tr><td>7th</td><td><em>guardian of faith, staggering smite<sup>LL</sup></em></td></tr>
+        <tr><td>9th</td><td><em>contact other plane, steel wind strike<sup>LL</sup></em></td></tr>
+      </table>
+    </description>
+    <sheet>
+      <description>When you gain a Shaman level, you can replace one spell from this feature with an abjuration or evocation spell of the same level from the Shaman or Paladin spell lists.</description>
+    </sheet>
+    <rules>
+			<select type="Spell" name="1st Additional Spell (Spirit Warrior)" supports="2,(Abjuration||Evocation),(Shaman||Paladin)||Magic Weapon" level="3" default="ID_LASERLL_SPELL_MAGIC_WEAPON" spellcasting="Shaman" allowReplace="false" />
+			<select type="Spell" name="2nd Additional Spell (Spirit Warrior)" supports="2,(Abjuration||Evocation),(Shaman||Paladin)||Spiritual Weapon" level="3" default="ID_PHB_SPELL_SPIRITUAL_WEAPON" spellcasting="Shaman" allowReplace="false" />
+			<select type="Spell" name="3rd Additional Spell (Spirit Warrior)" supports="3,(Abjuration||Evocation),(Shaman||Paladin)||Clairvoyance" level="5" default="ID_PHB_SPELL_CLAIRVOYANCE" spellcasting="Shaman" allowReplace="false" />
+			<select type="Spell" name="4th Additional Spell (Spirit Warrior)" supports="3,(Abjuration||Evocation),(Shaman||Paladin)||Spirit Shroud" level="5" default="ID_WOTC_TCOE_SPELL_SPIRIT_SHROUD" spellcasting="Shaman" allowReplace="false" />
+			<select type="Spell" name="5th Additional Spell (Spirit Warrior)" supports="4,(Abjuration||Evocation),(Shaman||Paladin)||Guardian of Faith" level="7" default="ID_PHB_SPELL_GUARDIAN_OF_FAITH" spellcasting="Shaman" allowReplace="false" />
+			<select type="Spell" name="6th Additional Spell (Spirit Warrior)" supports="4,(Abjuration||Evocation),(Shaman||Paladin)||Staggering Smite" level="7" default="ID_LASERLL_SPELL_STAGGERING_SMITE" spellcasting="Shaman" allowReplace="false" />
+			<select type="Spell" name="7th Additional Spell (Spirit Warrior)" supports="5,(Abjuration||Evocation),(Shaman||Paladin)||Contact Other Plane" level="9" default="ID_PHB_SPELL_CONTACT_OTHER_PLANE" spellcasting="Shaman" allowReplace="false" />
+			<select type="Spell" name="8th Additional Spell (Spirit Warrior)" supports="5,(Abjuration||Evocation),(Shaman||Paladin)||Steel Wind Strike" level="9" default="ID_LASERLL_SPELL_STEEL_WIND_STRIKE" spellcasting="Shaman" allowReplace="false" />
+		</rules>
+  </element>
+
+  <append id="ID_LASERLL_SPELL_MAGIC_WEAPON">
+    <supports>Magic Weapon</supports>
+  </append>
+  <append id="ID_PHB_SPELL_Spiritual Weapon">
+    <supports>Spiritual Weapon</supports>
+  </append>
+  <append id="ID_PHB_SPELL_CLAIRVOYANCE">
+    <supports>Clairvoyance</supports>
+  </append>
+  <append id="ID_WOTC_TCOE_SPELL_SPIRIT_SHROUD">
+    <supports>Spirit Shroud</supports>
+  </append>
+  <append id="ID_PHB_SPELL_GUARDIAN_OF_FAITH">
+    <supports>Guardian of Faith</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_STAGGERING_SMITE">
+    <supports>Staggering Smite</supports>
+  </append>
+  <append id="ID_PHB_SPELL_CONTACT_OTHER_PLANE">
+    <supports>Contact Other Plane</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_STEEL_WIND_STRIKE">
+    <supports>Steel Wind Strike</supports>
+  </append>
+
+  <element name="Totemic Weapon" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_TOTEMIC_WEAPON">
+    <description>
+      <p>You can bind powerful spirits to your weapons for use in battle. At the end of a long rest, you can perform a ritual to bind one of the spirits below to a melee weapon you touch. The benefits last until the end of your next long rest.</p>
+      <p class="indent">Moreover, you can use your Wisdom, in place of Strength, for attack and damage rolls with your Totemic Weapon, and attacks with your Totemic Weapon count as magical for the sake of overcoming resistances and immunities.</p>
+    </description>
+    <sheet>
+      <description usage="1/Long Rest">You can perform a ritual to bind the spirit below to a melee weapon; use your Wisdom instead of Strength for attack and damage rolls with this weapon, and its damage counts as magical when overcoming resistances and immunities. You can change this spirit once per long rest.</description>
+    </sheet>
+    <rules>
+			<select type="Class Feature" name="Totemic Weapon Spirit" supports="Totemic Weapon Spirit" />
+    </rules>
+  </element>
+
+  <element name="Spirit of Challenge" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_FEATURE_SHAMAN_SPIRIT_WARRIOR_SPIRIT_CHALLENGE">
+      <description>
+          <p>This spirit compels your foes to stand and fight against you. When you hit a creature with an attack with this weapon, it has disadvantage on any attacks it makes against creatures other than you until the beginning of your next turn.</p>
+      </description>
+      <sheet>
+          <description>When this weapon strikes a creature, that creature has disadvantage on any attacks on creatures other than you until your next turn.</description>
+      </sheet>
+  </element>
+  <element name="Spirit of Draining" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_FEATURE_SHAMAN_SPIRIT_WARRIOR_SPIRIT_DRAINING">
+      <description>
+          <p>This spirit siphons the life force of other creatures to restore you. Once per turn when you hit a creature with this weapon, you can cause the damage of the attack to be necrotic, and you gain temporary hit points equal to your Wisdom modifier.</p>
+      </description>
+      <sheet>
+          <description>Once per turn when this weapons strike a creature, the damage can be converted to necrotic damage, and you gain {{wisdom:modifier}} temporary hit points.</description>
+      </sheet>
+  </element>
+  <element name="Spirit of Might" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_FEATURE_SHAMAN_SPIRIT_WARRIOR_SPIRIT_MIGHT">
+      <description>
+          <p>This spirit draws out the full potential of your body. While wielding this weapon you gain a bonus to Strength checks and saving throws equal to your Wisdom modifier.</p>
+          <p class="indent">Moreover, you have advantage on attack rolls with this weapon against any creature that is grappled by you.</p>
+      </description>
+      <sheet>
+          <description>While wielding this weapon, gain +{{wisdom:modifier}} to Strength checks and saving throws. You have advantage on attack rolls with this weapon against creatures that are grappled by you.</description>
+      </sheet>
+  </element>
+
+  <element name="Extra Attack" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_EXTRA_ATTACK">
+    <description>
+      <p>You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast a Shaman cantrip you know, or use Totemic Assault in place of one of your attacks.</p>
+    </description>
+    <sheet>
+      <description>You can cast a Shaman cantrip or use Totemic Assault in place of one of your attacks.</description>
+    </sheet>
+    <rules>
+  	   <stat name="extra attack:count" value="2" level="6" bonus="extra attack" />
+    </rules>
+  </element>
+
+  <element name="Warrior of the Grave" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_WARRIOR_OF_THE_GRAVE">
+    <description>
+      <p>You can offer your very life force to the spirit realm to resist the grasp of death. When you are reduced to 0 hit points but not killed outright, you can expend one of your Hit Dice to drop to 1 hit point instead of falling to 0.</p>
+    </description>
+    <sheet>
+      <description>If reduced to 0 hit points but not killed outright, expend one Hit Dice to fall to 1 hit point instead.</description>
+    </sheet>
+  </element>
+
+  <element name="Spiritual Champion" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_SPIRIT_WARRIOR_SPIRITUAL_CHAMPION">
+    <description>
+      <p>You can offer the spirits full control of your body, granting you temporary mystical power. As a bonus action, you can enter a possessed state, gaining the following benefits for 1 minute:</p>
+      <ul>
+        <li>You can take the Dash action as a bonus action.</li>
+        <li>You gain resistance to all bludgeoning, piercing, and slashing damage from non-silvered attacks.</li>
+        <li>Once per turn when you hit a creature with your Totemic Weapon, you can apply the effects of Totemic Assault as if the creature had failed its Charisma saving throw.</li>
+      </ul>
+      <p class="indent">Once you use this feature you must finish a short or long rest before you can use it again. If you have no uses left, you can expend a Primal Magic slot to use this feature again.</p>
+    </description>
+    <sheet>
+      <description usage="1/Short Rest">Enter a possessed state for 1 minute and gain the following for the duration; you can expend a Primal Magic slot or complete a rest to regain usage:&#13;&#10;You can take the Dash action as a bonus action&#13;&#10;You gain resistance to all bludgeoning, piercing, and slashing damage from non-silvered attacks&#13;&#10;You can apply the effects the Totemic Assault when hitting a creature with your Totemic Weapon as if it had failed its saving throw.</description>
+    </sheet>
+  </element>
+
+  <element name="Wild Heart" type="Archetype" source="Laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART">
+    <supports>Spirituality</supports>
+    <description>
+      <p>Often raised by, or closely with, wild beasts, Shamans known as Wild Hearts develop an intense spiritual connection with the wild. This intense devotion, when combined with spiritual power, allows a Wild Heart to transform into the Great Beast, a legendary guardian of the wild animals of the natural world.</p>
+      <div element="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_WILD_HEART_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_BESTIAL_ADAPTATIONS" />
+      <div element="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_TOTEMIC_WILD_SHAPE" />
+      <div element="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_SAVAGE_STRIKES" />
+      <div element="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_FURY_OF_THE_WILD" />
+      <div element="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_APEX_PREDATOR" />
+    </description>
+    <sheet display="false">
+      <description>Wild Hearts can transform into Great Beasts, legendary guardians of the wild animals of the natural world.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_WILD_HEART_SPELLS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_BESTIAL_ADAPTATIONS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_TOTEMIC_WILD_SHAPE" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_SAVAGE_STRIKES" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_FURY_OF_THE_WILD" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_APEX_PREDATOR" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Wild Heart Spells" type="Archetype Feature" source="Laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_WILD_HEART_SPELLS">
+    <supports>Shaman</supports>
+    <description>
+      <p>When you gain a level in this class, you can replace one spell from this feature with an abjuration or divination spell of the same level from either the Ranger or Shaman spell list.</p>
+      <table>
+        <thead>
+          <tr><td>Shaman Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>animal messenger, beast sense</em></td></tr>
+        <tr><td>5th</td><td><em>conjure animals, fear</em></td></tr>
+        <tr><td>7th</td><td><em>dominate beast, locate creature</em></td></tr>
+        <tr><td>9th</td><td><em>hold monster, tree stride</em></td></tr>
+      </table>
+    </description>
+    <sheet>
+      <description>When you gain a Shaman level, you can replace one spell from this feature with an abjuration or divination spell of the same level from the Ranger or Shaman spell lists.</description>
+    </sheet>
+    <rules>
+      <select type="Spell" name="1st Additional Spell (Wild Heart)" supports="2,(Abjuration||Divination),(Shaman||Ranger)||Animal Messenger" level="3" default="ID_PHB_SPELL_ANIMAL_MESSENGER" spellcasting="Shaman" allowReplace="false" />
+      <select type="Spell" name="2nd Additional Spell (Wild Heart)" supports="2,(Abjuration||Divination),(Shaman||Ranger)||Beast Sense" level="3" default="ID_PHB_SPELL_BEAST_SENSE" spellcasting="Shaman" allowReplace="false" />
+      <select type="Spell" name="3rd Additional Spell (Wild Heart)" supports="3,(Abjuration||Divination),(Shaman||Ranger)||Conjure Animals" level="5" default="ID_PHB_SPELL_CONJURE_ANIMALS" spellcasting="Shaman" allowReplace="false" />
+      <select type="Spell" name="4th Additional Spell (Wild Heart)" supports="3,(Abjuration||Divination),(Shaman||Ranger)||Fear" level="5" default="ID_PHB_SPELL_FEAR" spellcasting="Shaman" allowReplace="false" />
+      <select type="Spell" name="5th Additional Spell (Wild Heart)" supports="4,(Abjuration||Divination),(Shaman||Ranger)||Dominate Beast" level="7" default="ID_PHB_SPELL_DOMINATE_BEAST" spellcasting="Shaman" allowReplace="false" />
+      <select type="Spell" name="6th Additional Spell (Wild Heart)" supports="4,(Abjuration||Divination),(Shaman||Ranger)||Locate Creature" level="7" default="ID_PHB_SPELL_LOCATE_CREATURE" spellcasting="Shaman" allowReplace="false" />
+      <select type="Spell" name="7th Additional Spell (Wild Heart)" supports="5,(Abjuration||Divination),(Shaman||Ranger)||Hold Monster" level="9" default="ID_PHB_SPELL_HOLD_MONSTER" spellcasting="Shaman" allowReplace="false" />
+      <select type="Spell" name="8th Additional Spell (Wild Heart)" supports="5,(Abjuration||Divination),(Shaman||Ranger)||Tree Stride" level="9" default="ID_PHB_SPELL_TREE_STRIDE" spellcasting="Shaman" allowReplace="false" />
+    </rules>
+  </element>
+
+  <append id="ID_PHB_SPELL_ANIMAL_MESSENGER">
+    <supports>Animal Messenger</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BEAST_SENSE">
+    <supports>Beast Sense</supports>
+  </append>
+  <append id="ID_PHB_SPELL_CONJURE_ANIMALS">
+    <supports>Conjure Animals</supports>
+  </append>
+  <append id="ID_PHB_SPELL_FEAR">
+    <supports>Fear</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DOMINATE_BEAST">
+    <supports>Dominate Beast</supports>
+  </append>
+  <append id="ID_PHB_SPELL_LOCATE_CREATURE">
+    <supports>Locate Creature</supports>
+  </append>
+  <append id="ID_PHB_SPELL_HOLD_MONSTER">
+    <supports>Hold Monsterr</supports>
+  </append>
+  <append id="ID_PHB_SPELL_TREE_STRIDE">
+    <supports>Tree Stride</supports>
+  </append>
+
+  <element name="Bestial Adaptations" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_BESTIAL_ADAPTATIONS">
+    <description>
+      <p>Your time spent in the wild has given you bestial qualities. You gain an Adaptation of your choice from the list below. You gain another Adaptation at 6th level and 10th level.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+			<select type="Class Feature" name="Bestial Adaptations (Level 3)" supports="Bestial Adaptation" level="3" />
+			<select type="Class Feature" name="Bestial Adaptations (Level 6)" supports="Bestial Adaptation" level="6" />
+			<select type="Class Feature" name="Bestial Adaptations (Level 10)" supports="Bestial Adaptation" level="10" />
+    </rules>
+  </element>
+
+  <element name="Agile Adaptation" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_FEATURE_SHAMAN_WILD_HEART_BESTIAL_ADAPTATION_AGILE">
+      <supports>Bestial Adaptation</supports>
+      <description>
+          <p>Your speed, long jump, and high jump distances increase by 10 feet, and you can ignore the effects of all difficult terrain.</p>
+      </description>
+      <sheet>
+          <description>Your long jump and high jump distances increase by 10 ft.&#13;&#10;You ignore the effects of difficult terrain.</description>
+      </sheet>
+      <rules>
+         <stat name="innate speed:misc" value="10"/>
+      </rules>
+  </element>
+  <element name="Alpine Adaptation" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_FEATURE_SHAMAN_WILD_HEART_BESTIAL_ADAPTATION_ALPINE">
+      <supports>Bestial Adaptation</supports>
+      <description>
+          <p>You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including sheer surfaces and upside down on ceilings, without making an ability check.</p>
+      </description>
+      <sheet>
+          <description>You can climb difficult surfaces, including sheer surfaces and ceilings, without making an ability check.</description>
+      </sheet>
+      <rules>
+          <stat name="speed:climb" value="speed" bonus="base" />
+      </rules>
+  </element>
+  <element name="Aquatic Adaptation" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_FEATURE_SHAMAN_WILD_HEART_BESTIAL_ADAPTATION_AQUATIC">
+      <supports>Bestial Adaptation</supports>
+      <description>
+          <p>You gain a swimming speed equal to your walking speed, and while you are underwater you can take the Dash action as a bonus action, and you can hold your breath for up to 1 hour.</p>
+      </description>
+      <sheet>
+          <description>You can take the Dash action as a bonus action underwater.&#13;&#10;You can hold your breath for 1 hour.</description>
+      </sheet>
+      <rules>
+          <stat name="speed:swim" value="speed" bonus="base" />
+      </rules>
+  </element>
+
+  <element name="Totemic Wild Shape" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_TOTEMIC_WILD_SHAPE">
+    <description>
+      <p>Your connection with the spirits of the wild allows you to take on the shape of the Great Beast, the legendary guardian of all wild creatures. As a bonus action, you can expend a Primal Magic spell slot to transform into the Great Beast.</p>
+      <p class="indent">While you are transformed, you use the Great Beast stat block on the next page. It uses your proficiency bonus (PB) in several places. You determine the appearance of your Great Beast, but this has no effect on its abilities. For the duration of your transformation the following rules apply:</p>
+      <ul>
+        <li>The Great Beast gains a number of Bestial Traits from the list at the end of this Spirituality equal to the level of the spell slot expended to transform.</li>
+        <li>You use the Strength, Dexterity, and Constitution scores on the Great Beast stat block, but you retain your Intelligence, Wisdom, and Charisma scores, and all of your skill and saving throw proficiencies.</li>
+        <li>You assume the hit points and Hit Dice of the Great Beast. When you revert to your normal form, you return to the number of hit points you had before you transformed. If the Great Beast drops to 0 hit points, you revert to your normal form, and any excess damage carries over to your normal form.</li>
+        <li>You can't cast spells, and your ability to speak or take any action requiring hands is limited to the capabilities of your Great Best form. Transforming doesn't break your concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell.</li>
+        <li>You retain the benefit of any features from your class, race, or other source and can use them if the Great Beast is capable of doing so, including your Totems and Totemic Assault. However, you cannot use any of your special senses unless the Great Beast also has that sense.</li>
+        <li>Any equipment you are wearing or carrying merges into your Great Beast form. Equipment that merges with the Great Beast form has no effect while transformed.</li>
+      </ul>
+      <p class="indent">Your Great Beast form lasts for 1 hour. You then revert to your normal form unless you expend another Primal Magic slot to extend the duration of your transformation. You can also revert to your normal form as a bonus action.</p>
+      <div element="ID_LASERLL_INFORMATION_SHAMAN_GREAT_BEAST" />
+    </description>
+    <sheet>
+      <description action="Bonus Action">Expend a Primal Magic slot and transform into the Great Beast with a number of Bestial Traits equal to the level of the expended spell slot. You can use your Totems and Totemic Assault, but not your special senses, if the Great Beast is able to. The form lasts 1 hour and can be extended with another Primal Magic slot; you can also revert to your normal form as a bonus action. Great Beast ability saving throw DC is {{totemic save:dc}}; it has your Intelligence, Wisdom, and Charisma scores, your skill/saving throw proficiencies, and {{}}</description>
+    </sheet>
+    <rules>
+      <select type="Companion" supports="Beast,Medium" default="ID_LASERLL_COMPANION_SHAMAN_GREAT_BEAST" requirements="!ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_APEX_PREDATOR"/>
+
+      <stat name="companion:intelligence" value="1" requirements="[int:2]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:3]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:4]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:5]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:6]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:7]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:8]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:9]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:10]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:11]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:12]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:13]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:14]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:15]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:16]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:17]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:18]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:19]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:20]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:21]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:22]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:23]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:24]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:25]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:26]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:27]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:28]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:29]" />
+      <stat name="companion:intelligence" value="1" requirements="[int:30]" />
+
+      <stat name="companion:wisdom" value="1" requirements="[wis:2]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:3]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:4]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:5]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:6]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:7]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:8]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:9]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:10]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:11]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:12]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:13]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:14]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:15]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:16]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:17]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:18]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:19]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:20]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:21]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:22]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:23]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:24]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:25]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:26]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:27]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:28]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:29]" />
+      <stat name="companion:wisdom" value="1" requirements="[wis:30]" />
+
+      <stat name="companion:charisma" value="1" requirements="[cha:2]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:3]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:4]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:5]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:6]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:7]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:8]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:9]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:10]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:11]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:12]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:13]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:14]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:15]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:16]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:17]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:18]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:19]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:20]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:21]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:22]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:23]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:24]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:25]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:26]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:27]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:28]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:29]" />
+      <stat name="companion:charisma" value="1" requirements="[cha:30]" />
+    </rules>
+  </element>
+
+  <element name="The Great Beast" type="Companion" source="laserllama's Shaman" id="ID_LASERLL_COMPANION_SHAMAN_GREAT_BEAST">
+    <supports>Totemic Wild Shape</supports>
+    <description>
+      <p>Your connection with the spirits of the wild allows you to take on the shape of a Great Beast.</p>
+    </description>
+    <setters>
+      <set name="size">Medium</set>
+      <set name="type">Beast</set>
+      <set name="alignment">unaligned</set>
+      <set name="challenge">0</set>
+      <set name="ac">13 + PB (natural armor)</set>
+      <set name="hp">10 + six times your Shaman level.</set>
+      <set name="speed">40 ft.</set>
+      <set name="strength">18</set>
+      <set name="dexterity">14</set>
+      <set name="constitution">16</set>
+      <set name="intelligence">1</set>
+      <set name="wisdom">1</set>
+      <set name="charisma">1</set>
+      <set name="senses">darkvision 60 ft.</set>
+      <set name="languages">understands the languages you speak, but the Great Beast cannot speak itself</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_SHAMAN_GREAT_BEAST_BESTIAL_TRAITS,ID_LASERLL_COMPANION_TRAIT_SHAMAN_GREAT_BEAST_PRIMAL_FURY</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_SHAMAN_GREAT_BEAST_BITE,ID_LASERLL_COMPANION_ACTION_SHAMAN_GREAT_BEAST_MAUL</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="13" bonus="base" />
+      <stat name="companion:hp:max" value="10" />
+      <stat name="companion:speed" value="40" bonus="base" />
+
+      <stat name="companion:intelligence" value="[int]" bonus="base" />
+      <stat name="companion:wisdom" value="[wis]" bonus="base" />
+      <stat name="companion:charisma" value="[cha]" bonus="base" />
+      <stat name="companion:ac" value="13" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="additional:hp:max" value="level:shaman" />
+      <stat name="additional:hp:max" value="level:shaman" />
+      <stat name="additional:hp:max" value="level:shaman" />
+      <stat name="additional:hp:max" value="level:shaman" />
+      <stat name="additional:hp:max" value="level:shaman" />
+      <stat name="additional:hp:max" value="level:shaman" />
+    </rules>
+  </element>
+
+  <element name="The Great Beast" type="Companion" source="laserllama's Shaman" id="ID_LASERLL_COMPANION_SHAMAN_GREAT_BEAST_APEX">
+    <supports>Totemic Wild Shape</supports>
+    <description>
+      <p>Your connection with the spirits of the wild allows you to take on the shape of a Great Beast.</p>
+    </description>
+    <setters>
+      <set name="size">Medium</set>
+      <set name="type">Beast</set>
+      <set name="alignment">unaligned</set>
+      <set name="challenge">0</set>
+      <set name="ac">13 + PB (natural armor)</set>
+      <set name="hp">10 + six times your Shaman level.</set>
+      <set name="speed">40 ft.</set>
+      <set name="strength">20</set>
+      <set name="dexterity">16</set>
+      <set name="constitution">18</set>
+      <set name="intelligence">1</set>
+      <set name="wisdom">1</set>
+      <set name="charisma">1</set>
+      <set name="senses">darkvision 60 ft.</set>
+      <set name="languages">understands the languages you speak, but the Great Beast cannot speak itself</set>
+      <set name="traits">ID_LASERLL_COMPANION_TRAIT_SHAMAN_GREAT_BEAST_BESTIAL_TRAITS,ID_LASERLL_COMPANION_TRAIT_SHAMAN_GREAT_BEAST_PRIMAL_FURY</set>
+      <set name="actions">ID_LASERLL_COMPANION_ACTION_SHAMAN_GREAT_BEAST_APEX_BITE ,ID_LASERLL_COMPANION_ACTION_SHAMAN_GREAT_BEAST_APEX_MAUL</set>
+    </setters>
+    <rules>
+      <stat name="companion:ac" value="13" bonus="base" />
+      <stat name="companion:hp:max" value="10" />
+      <stat name="companion:speed" value="40" bonus="base" />
+
+      <stat name="companion:intelligence" value="intelligence:score" bonus="base" />
+      <stat name="companion:wisdom" value="wisdom:score" bonus="base" />
+      <stat name="companion:charisma" value="charisma:score" bonus="base" />
+      <stat name="companion:ac" value="13" bonus="base" />
+      <stat name="companion:ac" value="proficiency" />
+      <stat name="companion:proficiency" value="proficiency" />
+      <stat name="companion:hp:max" value="level:shaman" />
+      <stat name="companion:hp:max" value="level:shaman" />
+      <stat name="companion:hp:max" value="level:shaman" />
+      <stat name="companion:hp:max" value="level:shaman" />
+      <stat name="companion:hp:max" value="level:shaman" />
+      <stat name="companion:hp:max" value="level:shaman" />
+    </rules>
+  </element>
+
+  <element name="Bestial Traits" type="Companion Trait" source="laserllama's Shaman" id="ID_LASERLL_COMPANION_TRAIT_SHAMAN_GREAT_BEAST_BESTIAL_TRAITS">
+    <description>
+      <p>The Great Beast has a number of Bestial Traits equal to the level of the Primal Magic spell slot you expended to transform.</p>
+      <h5>AGGRESSIVE</h5>
+      <p class="indent">As a bonus action, the Great Beast can move up to its speed toward a hostile creature that it can see, hear, or smell.</p>
+      <h5>AMPHIBIOUS</h5>
+      <p class="indent">The Great Beast gains a swimming speed equal to its walking speed, and it can breathe both air and water.</p>
+      <h5>CHARGE</h5>
+      <p class="indent">When the Great Beast moves at least 20 feet in a straight line toward a target and hits it with a Maul attack it deals an extra 1d6 damage. A creature that is the Great Beast's size, or smaller, must make a Strength saving throw or fall prone.</p>
+      <h5>KEEN SENSES</h5>
+      <p class="indent">The Great Beast has advantage on Wisdom (Perception) or Wisdom (Survival) checks that rely on its hearing or smell.</p>
+      <h5>LARGE</h5>
+      <p class="indent">The Great Beast becomes a Large creature. If it is ridden as a mount, the Great Beast can act independently of its rider.</p>
+      <h5>LIGHT STEP</h5>
+      <p class="indent">The Great Beast has advantage on Dexterity (Stealth) checks while it is lightly obscured by natural foliage or weather.</p>
+      <h5>PACK TACTICS</h5>
+      <p class="indent">The Great Beast has advantage on attack rolls against any target that has one of its conscious allies within 5 feet of it.</p>
+      <h5>POWERFUL BUILD</h5>
+      <p class="indent">The Great Beast counts as one size larger when determining creatures it can grapple, and the weight it can move or lift.</p>
+      <h5>SAVAGE GRIP</h5>
+      <p class="indent">The Great Beast gains a climbing speed equal to its walking speed, and it can climb sheer surfaces and upside down on ceilings without making an ability check. The Great Beast also has advantage on saving throws to resist being moved against its will, grappled, restrained, or knocked prone.</p>
+      <h5>STANDING LEAP</h5>
+      <p class="indent">The Great Beast has a minimum long jump of 15 feet, and a minimum high jump of 10 feet, even without a running start.</p>
+      <h5>VICIOUS BITE</h5>
+      <p class="indent">If the Great Beast hits a creature equal to its size or smaller with a Bite attack, it can grapple the target. Until the grapple ends, the target is restrained, and the Great Beast cannot Bite targets other than the creature it is currently grappling.</p>
+    </description>
+    <sheet>
+      <description>The Great Beast has a number of Bestial Traits equal to the level of the Primal Magic spell slot you expended to transform.</description>
+    </sheet>
+  </element>
+
+  <element name="Primal Fury" type="Companion Trait" source="laserllama's Shaman" id="ID_LASERLL_COMPANION_TRAIT_SHAMAN_GREAT_BEAST_PRIMAL_FURY">
+    <description>
+      <p>When the Great Beast makes an ability check or saving throw that uses Strength, Dexterity, or Constitution, it can add your PB to the roll.</p>
+    </description>
+    <sheet>
+      <description>When the Great Beast makes an ability check or saving throw that uses Strength, Dexterity, or Constitution, add +PB to the roll.</description>
+    </sheet>
+    <rules>
+      <stat name="primal fury:proficiency" value="proficiency" />
+    </rules>
+  </element>
+
+  <element name="Bite" type="Companion Action" source="laserllama's Shaman" id="ID_LASERLL_COMPANION_ACTION_SHAMAN_GREAT_BEAST_BITE">
+    <description>
+			<p><em>Melee Weapon Attack:</em> +4 plus PB to hit, reach 5 ft., one target. Hit: 1d6 +4 piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 +PB to hit, reach 5 ft., one target. Hit: 1d6 +4 piercing damage.</description>
+		</sheet>
+    <rules>
+      <stat name="bite:proficiency" value="4" bonus="base" />
+      <stat name="bite:proficiency" value="proficiency" />
+    </rules>
+  </element>
+
+  <element name="Bite" type="Companion Action" source="laserllama's Shaman" id="ID_LASERLL_COMPANION_ACTION_SHAMAN_GREAT_BEAST_APEX_BITE">
+    <description>
+      <p><em>Melee Weapon Attack:</em> +5 plus PB to hit, reach 5 ft., one target. Hit: 2d6 +5 piercing damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: +5 +PB to hit, reach 5 ft., one target. Hit: 2d6 +5 piercing damage.</description>
+    </sheet>
+    <rules>
+      <stat name="biteapex:proficiency" value="5" bonus="base" />
+      <stat name="biteapex:proficiency" value="proficiency" />
+    </rules>
+  </element>
+
+  <element name="Maul" type="Companion Action" source="laserllama's Shaman" id="ID_LASERLL_COMPANION_ACTION_SHAMAN_GREAT_BEAST_MAUL">
+    <description>
+      <p><em>Melee Weapon Attack:</em> +4 plus PB to hit, reach 5 ft., one target. Hit: 2d6 +4 slashing damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: +4 +PB to hit, reach 5 ft., one target. Hit: 2d6 +4 slashing damage.</description>
+    </sheet>
+    <rules>
+      <stat name="maul:proficiency" value="4" bonus="base" />
+      <stat name="maul:proficiency" value="proficiency" />
+    </rules>
+  </element>
+
+  <element name="Maul" type="Companion Action" source="laserllama's Shaman" id="ID_LASERLL_COMPANION_ACTION_SHAMAN_GREAT_BEAST_APEX_MAUL">
+    <description>
+      <p><em>Melee Weapon Attack:</em> +5 plus PB to hit, reach 5 ft., one target. Hit: 3d6 +5 slashing damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: +5 +PB to hit, reach 5 ft., one target. Hit: 3d6 +5 slashing damage.</description>
+    </sheet>
+    <rules>
+      <stat name="maulapex:proficiency" value="5" bonus="base" />
+      <stat name="maulapex:proficiency" value="proficiency" />
+    </rules>
+  </element>
+
+  <element name="The Great Beast" type="Information" source="laserllama's Shaman" id="ID_LASERLL_INFORMATION_SHAMAN_GREAT_BEAST">
+    <description>
+      <p style="margin-bottom:-5px"><em>Medium beast</em></p>
+      <h4 style="margin-top:5px" />
+      <ul class="unstyled">
+        <li><strong>Armor Class</strong> 13 + PB (natural armor)</li>
+        <li><strong>Hit Points</strong> 10 + six times your Shaman level.</li>
+        <li><strong>Speed</strong> 40 ft.</li>
+      </ul>
+      <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+        <thead><tr><td>STR</td><td>DEX</td><td>CON</td></tr></thead>
+        <tr><td>18 (+4)</td><td>14 (+2)</td><td>16 (+3)</td></tr>
+      </table>
+      <ul class="unstyled">
+        <li><strong>Senses</strong> darkvision 60 ft.</li>
+        <li><strong>Languages</strong>understands the languages you speak, but the Great Beast cannot speak itself</li>
+      </ul>
+      <h4 style="margin-top:5px; margin-bottom:10px" />
+      <ul class="unstyled">
+        <li><strong><em>Bestial Traits.</em></strong> The Great Beast has a number of Bestial Traits equal to the level of the Primal Magic spell slot you expended to transform.</li>
+        <li><strong><em>Primal Fury.</em></strong> When the Great Beast makes an ability check or saving throw that uses Strength, Dexterity, or Constitution, it can add your PB to the roll.</li>
+      </ul>
+      <h4 style="margin-top:10px">Actions</h4>
+      <ul class="unstyled">
+        <li><em><strong>Bite.</strong> Melee Weapon Attack:</em> +4 plus PB to hit, reach 5 ft., one target. <em>Hit:</em> 1d6 +4 piercing damage.</li>
+        <li><em><strong>Maul.</strong> Melee Weapon Attack:</em> +4 plus PB to hit, reach 5 ft., one target. <em>Hit:</em> 2d6 +4 slashing damage.</li>
+      </ul>
+    </description>
+  </element>
+
+  <element name="The Great Beast" type="Information" source="laserllama's Shaman" id="ID_LASERLL_INFORMATION_SHAMAN_GREAT_BEAST_APEX">
+    <description>
+      <p style="margin-bottom:-5px"><em>Medium beast</em></p>
+      <h4 style="margin-top:5px" />
+      <ul class="unstyled">
+        <li><strong>Armor Class</strong> 13 + PB (natural armor)</li>
+        <li><strong>Hit Points</strong> 10 + six times your Shaman level.</li>
+        <li><strong>Speed</strong> 40 ft.</li>
+      </ul>
+      <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+        <thead><tr><td>STR</td><td>DEX</td><td>CON</td></tr></thead>
+        <tr><td>20 (+5)</td><td>16 (+3)</td><td>18 (+4)</td></tr>
+      </table>
+      <ul class="unstyled">
+        <li><strong>Senses</strong> darkvision 60 ft.</li>
+        <li><strong>Languages</strong>understands the languages you speak, but the Great Beast cannot speak itself</li>
+      </ul>
+      <h4 style="margin-top:5px; margin-bottom:10px" />
+      <ul class="unstyled">
+        <li><strong><em>Bestial Traits.</em></strong> The Great Beast has a number of Bestial Traits equal to the level of the Primal Magic spell slot you expended to transform.</li>
+        <li><strong><em>Primal Fury.</em></strong> When the Great Beast makes an ability check or saving throw that uses Strength, Dexterity, or Constitution, it can add your PB to the roll.</li>
+      </ul>
+      <h4 style="margin-top:10px">Actions</h4>
+      <ul class="unstyled">
+        <li><em><strong>Bite.</strong> Melee Weapon Attack:</em> +5 plus PB to hit, reach 5 ft., one target. <em>Hit:</em> 2d6 +5 piercing damage.</li>
+        <li><em><strong>Maul.</strong> Melee Weapon Attack:</em> +5 plus PB to hit, reach 5 ft., one target. <em>Hit:</em> 3d6 +5 slashing damage.</li>
+      </ul>
+    </description>
+  </element>
+
+  <element name="Savage Strikes" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_SAVAGE_STRIKES">
+    <description>
+      <p>When you are in Great Beast form and you take the Bite or Maul action, you can make one additional Bite or Maul attack as part of that action. Attacks in Great Beast form also count as magical for overcoming resistances and immunities.</p>
+    </description>
+    <sheet>
+      <description>While in Great Beast form, when you take the Bite or Maul action, you can take an additional Bite or Maul action immediately. Great Beast form attacks count as magical when overcoming resistances and immunities.</description>
+    </sheet>
+  </element>
+
+  <element name="Fury of the Wild" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_FURY_OF_THE_WILD">
+    <description>
+      <p>You can draw upon your pain to fuel your drive. As a bonus action, you can expend a Hit Die to regain hit points equal to your Hit Die roll + your Wisdom modifier (minimum of 1).</p>
+      <p class="index">Any hit points you regain from this feature that exceed your maximum hit points become temporary hit points for you.</p>
+    </description>
+    <sheet>
+      <description action="Bonus Action">Expend a hit die and gain your Hit Die roll + {{min 1 wis}} hit points; if you exceed your maximum, the excess becomes temporary hit points.</description>
+    </sheet>
+  </element>
+
+  <element name="Apex Predator" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_WILD_HEART_APEX_PREDATOR">
+    <description>
+      <p>Your Great Beast stands as a legendary guardian of the wild. When you transform into your Great Beast form, its Strength, Dexterity, and Constitution scores are all increased by 2, to a maximum of 20 (this increases both the attack and a damage bonus of the Great Beast's Bite and Maul attack by 1).</p>
+      <p class="index">Also, the damage of its Bite and Maul increase by 1d6.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <select type="Companion" supports="Beast,Medium" default="ID_LASERLL_COMPANION_SHAMAN_GREAT_BEAST_APEX" />
+    </rules>
+  </element>
+
+  <element name="Witch Doctor" type="Archetype" source="Laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR">
+    <supports>Spirituality</supports>
+    <description>
+      <p>Long before the gods took notice of mortals, Witch Doctors wandered the land, providing spiritual healing and medicine. Working in tandem with spirits of life, Witch Doctors heal the wounded and grant their allies mystical abilities. These sages are peaceful in nature and can often be found traveling the wilds tending to the spiritual needs of those they meet.</p>
+      <div element="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_WITCH_DOCTOR_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_LIFE_BEARER" />
+      <div element="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_TOTEMIC_BLESSING" />
+      <div element="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_MYSTICAL_FOCUS" />
+      <div element="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_EMPOWERED_BLESSING" />
+      <div element="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_SELFLESS_WARD" />
+      <div element="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_SPIRITUAL_AWAKENING" />
+    </description>
+    <sheet display="false">
+      <description>Witch Doctors heal the wounded and grant their allies mystical abilities.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_WITCH_DOCTOR_SPELLS" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_LIFE_BEARER" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_TOTEMIC_BLESSING" level="3"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_MYSTICAL_FOCUS" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_EMPOWERED_BLESSING" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_SELFLESS_WARD" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_SPIRITUAL_AWAKENING" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Witch Doctor Spells" type="Archetype Feature" source="Laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_WITCH_DOCTOR_SPELLS">
+    <supports>Shaman</supports>
+    <description>
+      <p>When you gain a level in this class, you can replace one spell from this feature with an abjuration or enchantment spell of the same level from either the Cleric or Shaman spell list.</p>
+      <table>
+        <thead>
+          <tr><td>Shaman Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>3rd</td><td><em>restoration<sup>LL</sup>, warding bond</em></td></tr>
+        <tr><td>5th</td><td><em>beacon of hope, revivify</em></td></tr>
+        <tr><td>7th</td><td><em>aura of life, death ward</em></td></tr>
+        <tr><td>9th</td><td><em>circle of power, creation</em></td></tr>
+      </table>
+    </description>
+    <sheet>
+      <description>When you gain a Shaman level, you can replace one spell from this feature with an abjuration or enchantment spell of the same level from the Cleric or Shaman spell lists.</description>
+    </sheet>
+    <rules>
+      <select type="Spell" name="1st Additional Spell (Witch Doctor)" supports="2,(Abjuration||Enchantment),(Shaman||Cleric)||Restoration" level="3" default="ID_LASERLL_SPELL_RESTORATION" spellcasting="Shaman" allowReplace="false" />
+      <select type="Spell" name="2nd Additional Spell (Witch Doctor)" supports="2,(Abjuration||Enchantment),(Shaman||Cleric)||Warding Bond" level="3" default="ID_PHB_SPELL_WARDING_BOND" spellcasting="Shaman" allowReplace="false" />
+      <select type="Spell" name="3rd Additional Spell (Witch Doctor)" supports="3,(Abjuration||Enchantment),(Shaman||Cleric)||Beacon of Hope" level="5" default="ID_PHB_SPELL_BEACON_OF_HOPE" spellcasting="Shaman" allowReplace="false" />
+      <select type="Spell" name="4th Additional Spell (Witch Doctor)" supports="3,(Abjuration||Enchantment),(Shaman||Cleric)||Revivify" level="5" default="ID_PHB_SPELL_REVIVIFY" spellcasting="Shaman" allowReplace="false" />
+      <select type="Spell" name="5th Additional Spell (Witch Doctor)" supports="4,(Abjuration||Enchantment),(Shaman||Cleric)||Aura of Life" level="7" default="ID_PHB_SPELL_AURA_OF_LIFE" spellcasting="Shaman" allowReplace="false" />
+      <select type="Spell" name="6th Additional Spell (Witch Doctor)" supports="4,(Abjuration||Enchantment),(Shaman||Cleric)||Death Ward" level="7" default="ID_PHB_SPELL_DEATH_WARD" spellcasting="Shaman" allowReplace="false" />
+      <select type="Spell" name="7th Additional Spell (Witch Doctor)" supports="5,(Abjuration||Enchantment),(Shaman||Cleric)||Circle of Power" level="9" default="ID_PHB_SPELL_CIRCLE_OF_POWER" spellcasting="Shaman" allowReplace="false" />
+      <select type="Spell" name="8th Additional Spell (Witch Doctor)" supports="5,(Abjuration||Enchantment),(Shaman||Cleric)||Creation" level="9" default="ID_PHB_SPELL_CREATION" spellcasting="Shaman" allowReplace="false" />
+    </rules>
+  </element>
+
+  <append id="ID_LASERLL_SPELL_RESTORATION">
+    <supports>Restoration</supports>
+  </append>
+  <append id="ID_PHB_SPELL_WARDING_BOND">
+    <supports>Warding Bond</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BEACON_OF_HOPE">
+    <supports>Beacon of Hope</supports>
+  </append>
+  <append id="ID_PHB_SPELL_REVIVIFY">
+    <supports>Revivify</supports>
+  </append>
+  <append id="ID_PHB_SPELL_AURA_OF_LIFE">
+    <supports>Aura of Life</supports>
+  </append>
+  <append id="ID_PHB_SPELL_DEATH_WARD">
+    <supports>Death Ward</supports>
+  </append>
+  <append id="ID_PHB_SPELL_CIRCLE_OF_POWER">
+    <supports>Circle of Power</supports>
+  </append>
+  <append id="ID_PHB_SPELL_CREATION">
+    <supports>Creation</supports>
+  </append>
+
+  <element name="Life Bearer" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_LIFE_BEARER">
+    <description>
+      <p>You can channel spirits of abundance and life to heal others. As an action, you can touch a creature and cause it to regain hit points equal to 1d8 + your Wisdom modifier. This feature has no effect on undead creatures or constructs.</p>
+      <p class="indent">You can use this feature a number of times equal to your level, and you regain all uses when you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description usage="{{level}}/Long Rest" action="Action">Touch a creature to heal it 1d8 + {{wisdom:modifier}}; it does not effect undead creatures or constructs.</description>
+    </sheet>
+  </element>
+
+  <element name="Totemic Blessing" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_TOTEMIC_BLESSING">
+    <description>
+      <p>You bind only willing spirits to the Totems you wield. Your Totemic Assault deals radiant damage on a failed save.</p>
+      <p class="indent">You can also bind Totems to your allies, allowing them to make use of their mystical power. At the end of a long rest, you can bind one of your Bound Totems to a willing creature you touch, losing the Totem abilities for yourself. The Totem remains bound to the creature until the end of your next long rest, at which point the power of the Totem returns to you.</p>
+      <p class="indent">At certain Shaman levels, the number of Totems you can bind to other creatures increases: at 6th level (2 Totems), at 12th level (3 Totems), and finally at 18th level (4 Totems).</p>
+      <p class="indent">A single Totem can only be bound to one creature at a time, and a creature can only have a single Totem bound to them.</p>
+    </description>
+    <sheet>
+      <description level="3">You may bind a Totem to an ally until your next long rest, transferring its benefits to them. Benefits in [] should be subtracted as they are already calculated into this sheet.</description>
+      <description level="6">You may bind 2 different Totems to different allies until your next long rest, transferring their benefits to them. Benefits in [] should be subtracted as they are already calculated into this sheet.</description>
+      <description level="12">You may bind 3 different Totems to different allies until your next long rest, transferring their benefits to them. Benefits in [] should be subtracted as they are already calculated into this sheet.</description>
+      <description level="18">You may bind 4 different Totems to different allies until your next long rest, transferring their benefits to them. Benefits in [] should be subtracted as they are already calculated into this sheet.</description>
+    </sheet>
+  </element>
+
+  <element name="Mystical Focus" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_MYSTICAL_FOCUS">
+    <description>
+      <p>You work in tandem with the spirits bound to you, drawing out more of their power. When you use your action to cast one of your Witch Doctor Spells, or to restore hit points to a creature, you can use Totemic Assault as a bonus action on that turn.</p>
+    </description>
+    <sheet>
+      <description action="Bonus Action">When you use your action to cast a Witch Doctor spell or restore hit points, you can use Totemic Assault.</description>
+    </sheet>
+  </element>
+
+  <element name="Empowered Blessing" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_EMPOWERED_BLESSING">
+    <description>
+      <p>Your allies can channel the spiritual power within your Totems. As an action on its turn, a creature that has one of your Totems bound to it can use Totemic Assault, using your Totemic save DC.</p>
+      <p class="indent">Other creatures only gain the benefits from Totems that improve Totemic Assault if they are bound to the Totem that grants those benefits</p>
+    </description>
+    <sheet>
+      <description>Allies bound to Totems can also use Totemic Assault, with your Totemic save DC, as an action on their turn.</description>
+    </sheet>
+  </element>
+
+  <element name="Selfless Ward" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_SELFLESS_WARD">
+    <description>
+      <p>Your spirit is invigorated by the binding of Totems to your allies. You gain a +1 bonus to all saving throws for each of the Totems that you bind to another creature.</p>
+      <p class="indent">This includes any death saving throws you make.</p>
+    </description>
+    <sheet>
+      <description>You gain +1 to all saving throws, including death saving throws, for each Totem bound to another creature.</description>
+    </sheet>
+  </element>
+
+  <element name="Spiritual Awakening" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_ARCHETYPE_SHAMAN_WITCH_DOCTOR_SPIRITUAL_AWAKENING">
+    <description>
+      <p>Your spiritual practice has filled you with an abundance of life-giving energy. As a reaction when a creature you can see makes a death saving throw, you can move up to your full speed and touch the creature, imbuing it with life-giving energy. The creature instantly regains hit points equal to your Shaman level + your Wisdom modifier and can stand up.</p>
+      <p class="indent">You can use this feature on yourself, without requiring your reaction, when you are forced to make a death saving throw.</p>
+      <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest. When you have no uses remaining, you can expend a Primal Magic spell slot to use this feature again.</p>
+    </description>
+    <sheet>
+      <description usage="1/Long Rest" action="Rection">When you see a creature make a death saving throw, move up to your full speed and touch them, granting them {{level:shaman}} + {{modifier:wisdom}}hit points and letting them stand up. You can expend a Primal Magic slot to regain use of this ability before a long rest.</description>
+    </sheet>
+  </element>
+
+  <!-- Totems -->
+  <element name="Totem of the Bear" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_BEAR">
+      <supports>Totem</supports>
+      <description>
+        <p>You bind a minor bestial spirit that grants you the ferocity of a bear. As a bonus action, you can grow claws from your fingers. With your claws, your unarmed strikes deal magical slashing damage equal to 1d6 + your Strength modifier on hit. If you have two free hands, the d6 becomes a d8. You can use another bonus action to cause the claws to disappear.</p>
+      </description>
+      <sheet>
+          <description action="Bonus Action">Grow claws that make your unarmed strikes deal 1d6 + your strength modifier ({{strength:modifier}}) magical slashing damage, 1d8 + your strength modifier ({{strength:modifier}}) if both hands are free. Retract the claws with another bonus action.</description>
+      </sheet>
+  </element>
+
+  <element name="Totem of the Crossroads" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_CROSSROADS">
+    <supports>Totem</supports>
+    <prerequisite>Heart Sacred Focus</prerequisite>
+		<requirements>ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS_HEART</requirements>
+		<description>
+			<p><i>Prerequisite: Heart Sacred Focus</i></p>
+        <p>You bind a minor Fey spirit that allows you to converse with wild creatures in your own tongue. You are always under the effect of <em>speak with animals</em> while you are conscious.</p>
+        <p class="index">At 5th level in this class, you are also always under the effects of speak with plants while you are conscious.</p>
+      </description>
+      <sheet>
+          <description level="1">You are always under the effect of speak with animals.</description>
+          <description level="5">You are always under the effects of both speak with animals and speak with plants.</description>
+      </sheet>
+  </element>
+
+  <element name="Totem of the Eagle" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_EAGLE">
+    <supports>Totem</supports>
+      <description>
+        <p>You bind a minor bestial spirit that grants you the sight of an eagle. You gain proficiency in Perception, and you have advantage on Wisdom (Perception) checks that rely on sight.</p>
+      </description>
+      <sheet>
+          <description>You have advantage on Wisdom (Perception) checks that rely on sight. [You are proficient in Perception.]</description>
+      </sheet>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+      </rules>
+  </element>
+
+  <element name="Totem of the Earthquake" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_EARTHQUAKE">
+    <supports>Totem</supports>
+      <description>
+        <p>You bind a spirit of earth that grants you destructive power. Once per turn when you hit with a melee weapon attack, you can deal an additional 1d6 damage of your weapon's type.</p>
+        <p class="indent">This damage bonus increases as you gain Shaman levels; at 6th level (1d8), 11th level (1d10), and 17th level (1d12).</p>
+      </description>
+      <sheet>
+          <description level="1">Once per turn when youu hit with a melee weapon attack, deal an additional 1d6 damage in your weapon's type.</description>
+          <description level="6">Once per turn when youu hit with a melee weapon attack, deal an additional 1d8 damage in your weapon's type.</description>
+          <description level="11">Once per turn when youu hit with a melee weapon attack, deal an additional 1d10 damage in your weapon's type.</description>
+          <description level="17">Once per turn when youu hit with a melee weapon attack, deal an additional 1d12 damage in your weapon's type.</description>
+      </sheet>
+  </element>
+
+  <element name="Totem of the Harvest" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_HARVEST">
+    <supports>Totem</supports>
+    <prerequisite>Soul Sacred Focus</prerequisite>
+    <requirements>ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS_SOUL</requirements>
+    <description>
+      <p><i>Prerequisite: Soul Sacred Focus</i></p>
+        <p>You bind a minor spirit of wild growth and bounty. When you finish short or long rest, you automatically cast <em>goodberry</em> without expending a spell slot or material components.</p>
+        <p class="index">The berries from this spell last until the end of your next short or long rest, at which point they wither into nothing.</p>
+      </description>
+      <sheet>
+          <description usage="1/Short Rest">You automatically cast goodberry at the end of a rest at no cost; the berries last until your next rest.</description>
+      </sheet>
+  </element>
+
+  <element name="Totem of the Hound" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_HOUND">
+    <supports>Totem</supports>
+      <description>
+        <p>You bind a minor bestial spirit that grants you the senses of a hound. You gain proficiency in Survival and have advantage on Wisdom (Survival) checks while in natural environments.</p>
+      </description>
+      <sheet>
+          <description>You have advantage on Wisdom (Survival) checks while in natural environments. [You are proficient in Survival.]</description>
+      </sheet>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+      </rules>
+  </element>
+
+  <element name="Totem of the Mountain" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_MOUNTAIN">
+    <supports>Totem</supports>
+    <prerequisite>Body Sacred Focus</prerequisite>
+    <requirements>ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS_BODY</requirements>
+    <description>
+      <p><i>Prerequisite: Body Sacred Focus</i></p>
+        <p>You bind a minor spirit of the earth that hardens your skin like that of solid rock. So long as you are not wearing any armor or wielding a shield, your Armor Class is equal to 13 + your Constitution modifier.</p>
+      </description>
+      <sheet><description>[If you are unarmored and not wielding a shield, your Armor Class is equal to 13 + your Constitution modifier ({{constitution:modifier}}).]</description></sheet>
+      <rules>
+        <stat name="ac:unarmored defense mountain totem:base" value="13" />
+  			<stat name="ac:unarmored defense mountain totem:constitution" value="constitution:modifier" />
+  			<stat name="ac:unarmored defense mountain totem" value="ac:unarmored defense mountain totem:base" />
+  			<stat name="ac:unarmored defense mountain totem" value="ac:unarmored defense mountain totem:constitution" />
+  			<stat name="ac:calculation" value="ac:unarmored defense mountain totem" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Shaman, Totem of the Mountain)" />
+      </rules>
+    </element>
+
+    <element name="Totem of the Panther" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_PANTHER">
+      <supports>Totem</supports>
+        <description>
+          <p>You bind a minor bestial spirit that grants you the steps of a panther. You gain proficiency in Stealth, and have advantage on Dexterity (Stealth) checks to hide in natural environments.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Dexterity (Stealth) checks while in natural environments. [You are proficient in Stealth.]</description>
+        </sheet>
+        <rules>
+          <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+        </rules>
+    </element>
+
+    <element name="Totem of the Pond" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_POND">
+      <supports>Totem</supports>
+        <description>
+          <p>You bind a minor spirit of water that grants you a protective viscous coating. While underwater, you can hold your breath for up to 1 hour, and you have advantage on any ability check or saving throw you make to resist being grappled.</p>
+        </description>
+        <sheet>
+            <description>You can hold your breath for up to 1 hour underwater.&#13;&#10;You have advantage on ability checks and saving throws against being grappled.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Quagmire" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_QUAGMIRE">
+      <supports>Totem</supports>
+      <prerequisite>Mind Sacred Focus</prerequisite>
+      <requirements>ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS_MIND</requirements>
+      <description>
+        <p><i>Prerequisite: Mind Sacred Focus</i></p>
+          <p>You bind a minor spirit of darkness that guards your mind. You are immune to any effect that would read your thoughts, sense your emotions, or detect your alignment, as well as any divination spell that you refuse. Moreover, if a creature makes a Wisdom (Insight) check to ascertain your true intentions or sincerity it does so at disadvantage.</p>
+        </description>
+        <sheet>
+            <description>You are immune to divination spells and effects that read your thoughts, sense your emotions, or detect your alignment.&#13;&#10;Wisdom (Insight) checks against your to assess your intentions or sincerity are rolled with disadvantage.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Rains" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_RAINS">
+      <supports>Totem</supports>
+        <description>
+          <p>You bind a minor spirit of water that washes poison away like rain. You gain resistance to acid and poison damage, and you have advantage on saving throws to resist being poisoned.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws to resist being poisoned. [You resist acid and poison damage.]</description>
+        </sheet>
+        <rules>
+          <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+          <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+    </element>
+
+    <element name="Totem of Twilight" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_TWILIGHT">
+      <supports>Totem</supports>
+        <description>
+          <p>You bind a minor spirit of darkness that grants you enhanced sight in the shadows. You gain Darkvision out to a radius of 120 feet, within which you can see in dim light as if it were bright light, and in darkness as if it were dim light.</p>
+          <p class="indent">Starting at 9th level, you can see in magical darkness.</p>
+        </description>
+        <sheet>
+            <description level="9">You can see in magical darkness. [You gain 120 ft. Darkvision.]</description>
+        </sheet>
+        <rules>
+          <grant type="Vision" id="ID_VISION_DARKVISION" />
+          <stat name="darkvision:range" value="120" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Totem of the Waves" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_WAVES">
+      <supports>Totem</supports>
+        <description>
+          <p>You bind a minor spirit of water that allows you to shift like the sea. As a reaction when you take a critical hit, you can to turn it into a normal hit. Once you use this feature you must finish a short or long rest before you can do so again.</p>
+          <p class="indent">When you reach 12th level in this class, you can use this reaction twice between each short or long rest.</p>
+        </description>
+        <sheet>
+            <description action="Reaction" usage="1/Short Rest" level="1">Turn a critical hit into a normal hit.</description>
+            <description action="Reaction" usage="2/Short Rest" level="12">Turn a critical hit into a normal hit.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Whirlwind" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_WHIRLWIND">
+      <supports>Totem</supports>
+        <description>
+          <p>You bind a minor spirit of air that speeds your strikes. When you score a critical hit with a melee weapon attack, you can use your reaction to make another attack against that target.</p>
+        </description>
+        <sheet>
+            <description action="Reaction">When you score a critical hit with a melee weapon attack, make another attack on the target.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Winds" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_WINDS">
+      <supports>Totem</supports>
+        <description>
+          <p>You bind a minor spirit of the air which lends speed to your steps with a gust of mighty wind. Your walking speed increases by 5 feet.</p>
+          <p class="indent">This bonus to your speed increases as you gain Shaman levels; at 5th level (10 feet), 11th level (15 feet), and finally at 17th level (20 feet).</p>
+        </description>
+        <sheet>
+          <description level="1">[Gain 5 ft. of walking speed.]</description>
+          <description level="5">[Gain 10 ft. of walking speed.]</description>
+          <description level="11">[Gain 15 ft. of walking speed.]</description>
+          <description level="17">[Gain 20 ft. of walking speed.]</description>
+        </sheet>
+        <rules>
+			       <stat name="innate speed:misc" value="5" level="1" />
+			       <stat name="innate speed:misc" value="5" level="5" />
+			       <stat name="innate speed:misc" value="5" level="11" />
+			       <stat name="innate speed:misc" value="5" level="17" />
+        </rules>
+    </element>
+
+    <element name="Totem of the Bloom" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_BLOOM">
+      <supports>Totem</supports>
+      <prerequisite>5th level Shaman, Soul Sacred Focus</prerequisite>
+      <requirements>[level:shaman:5],ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS_SOUL</requirements>
+      <description>
+        <p><i>Prerequisites: 5th level Shaman, Soul Sacred Focus</i></p>
+          <p>You bind a spirit of wild growth that enriches the land around you. You can cast plant growth without expending a spell slot.</p>
+          <p class="indent">Once you cast <em>plant growth</em> in this way, you must finish a short or long rest before you can cast it in this way again.</p>
+          <p class="indent">If you begin a long rest and have not used this feature to cast <em>plant growth</em> since your previous long rest, the 8-hour version of plant growth takes effect on the land immediately surrounding you during the course of your long rest.</p>
+          <div class="reference">
+            <div element="ID_PHB_SPELL_PLANT_GROWTH" />
+          </div>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest">You can cast plant growth without expending a spell slot. If you begin a long rest without using this, the 8-hour version of plant growth takes place immediately surrounding you during your long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Eruption" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_ERUPTION">
+      <supports>Totem</supports>
+      <prerequisite>5th level Shaman</prerequisite>
+      <requirements>[level:shaman:5]</requirements>
+      <description>
+        <p><i>Prerequisites: 5th level Shaman</i></p>
+          <p>You bind an elemental spirit that lends you its destructive power. Once per turn, when you hit a creature with a melee weapon attack, you can expend one of your Primal Magic spell slots to deal additional cold, fire, lightning, magical bludgeoning, or thunder damage (your choice) to the target.</p>
+          <p class="indent">The extra damage is 1d8 for a 1st-level slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8.</p>
+        </description>
+        <sheet>
+            <description>Once per turn when you hit with a melee weapon attack, you can expend a Primal Magic slot to deal an additonal 1d8 damage per spell slot level (max 5d8) of your choice of cold, fire, lightning, magical bludgeoning, or thunder damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of Growth" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_GROWTH">
+      <supports>Totem</supports>
+      <prerequisite>5th level Shaman, Body Sacred Focus</prerequisite>
+      <requirements>[level:shaman:5],ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS_BODY</requirements>
+      <description>
+        <p><i>Prerequisites: 5th level Shaman, Body Sacred Focus</i></p>
+          <p>You bind a spirit of wild growth that can temporarily increase your size. You can cast the 'enlarge' version of <em>enlarge/reduce</em> as a bonus action, targeting only yourself, without expending a spell slot. This effect does not require your concentration.</p>
+          <p class="indent">Once you cast <em>enlarge/reduce</em> in this way, you must finish a short or long rest before you can cast it in this way again.</p>
+          <div class="reference">
+            <div element="ID_PHB_SPELL_ENLARGE_REDUCE" />
+          </div>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest" action="Bonus Action">You can cast enlarge on yourself without expending a spell slot. It does not require concentration.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Grave" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_GRAVE">
+      <supports>Totem</supports>
+      <prerequisite>5th level Shaman</prerequisite>
+      <requirements>[level:shaman:5]</requirements>
+      <description>
+        <p><i>Prerequisites: 5th level Shaman</i></p>
+          <p>You bind a spirit of undead power which you can summon to your service. You can expend one of your Primal Magic spell slots to cast <em>animate dead</em>, without providing the normal material components required for this spell.</p>
+          <p class="indent">Once you cast <em>animate dead</em> in this way, you must finish a long rest before you can cast it in this way again.</p>
+          <div class="reference">
+            <div element="ID_PHB_SPELL_ANIMATE_DEAD" />
+          </div>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest" action="Bonus Action">You can cast animate dead using one of your Primal Magic spell slots without material components.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of Light" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_LIGHT">
+      <supports>Totem</supports>
+      <prerequisite>5th level Shaman</prerequisite>
+      <requirements>[level:shaman:5]</requirements>
+      <description>
+        <p><i>Prerequisites: 5th level Shaman</i></p>
+          <p>You bind a spirit of radiance that restores your spirit when you aid others. When you cast a spell of 1st-level or higher that restores hit points to a creature other then yourself, you gain temporary hit points equal to your Wisdom modifier.</p>
+        </description>
+        <sheet>
+            <description>When you cast a 1st-level spell or higher to restore hit points to another creature, you gain a number of temporary hit points equal to your Wisdom modifier ({{wisdom:modifier}}).</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of Mirth" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_MIRTH">
+      <supports>Totem</supports>
+      <prerequisite>5th level Shaman, Heart Sacred Focus</prerequisite>
+      <requirements>[level:shaman:5],ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS_HEART</requirements>
+      <description>
+        <p><i>Prerequisites: 5th level Shaman, Heart Sacred Focus</i></p>
+          <p>You bind a spirit of revelry and life that grants you renewed vigor. Once per long rest, you can use a bonus action to grant yourself temporary hit points equal to your Shaman level.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest" action="Bonus Action">Grant yourself {{level:shaman}} temporary hit points.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Mystic" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_MYSTIC">
+      <supports>Totem</supports>
+      <prerequisite>5th level Shaman, Mind Sacred Focus</prerequisite>
+      <requirements>[level:shaman:5],ID_LASERLL_CLASS_FEATURE_SHAMAN_SACRED_FOCUS_MIND</requirements>
+      <description>
+        <p><i>Prerequisites: 5th level Shaman, Mind Sacred Focus</i></p>
+          <p>You bind a spirit of secret knowledge that grants you the ability to peer into the minds of others. As an action, you can cast <em>detect thoughts</em> without expending a spell slot, or requiring the normal verbal or somatic components.</p>
+          <p class="indent">Once you cast <em>detect thoughts</em> in this way, you must finish a short or long rest before you can cast it in this way again.</p>
+          <div class="reference">
+            <div element="ID_PHB_SPELL_DETECT_THOUGHTS" />
+          </div>
+        </description>
+        <sheet>
+          <description usage="1/Short Rest" action="Action">You can cast detect thoughts as an action without expending a spell slot or requiring the verbal or somatic components.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Swamp" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_SWAMP">
+      <supports>Totem</supports>
+      <prerequisite>5th level Shaman</prerequisite>
+      <requirements>[level:shaman:5]</requirements>
+      <description>
+        <p><i>Prerequisites: 5th level Shaman</i></p>
+          <p>You bind a spirit of disease which can poison foes. As an action, you can exude noxious gas and force creatures within 15 feet to make a Constitution saving throw. On a failed save, they are poisoned until the beginning of your next turn. On a success, they are immune to this effect for 24 hours.</p>
+        </description>
+        <sheet>
+            <description usage="Action">Force creatures within 15 feet to make a Constitution saving throw (DC {{totemic save:dc}}). On a failure, they are poisoned until your next turn; on a success, they are immune for 24 hours.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Wild" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_WILD">
+      <supports>Totem</supports>
+      <prerequisite>5th level Shaman</prerequisite>
+      <requirements>[level:shaman:5]</requirements>
+      <description>
+        <p><i>Prerequisites: 5th level Shaman</i></p>
+          <p>You bind a bestial spirit which you can call to your aid. You can cast <em>summon beast</em> at a level equal to your Primal Magic slots, without expending a spell slot or material components.</p>
+          <p>Once you cast <em>summon beast</em> in this way, you must finish a long rest before you can cast it in this way again.</p>
+          <div class="reference">
+            <div element="ID_PHB_SPELL_DETECT_THOUGHTS" />
+          </div>
+        </description>
+        <sheet>
+          <description usage="1/Long Rest">You can cast {{shaman:spellcasting:slot}}-level summon beast without expending a spell slot or using material components.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Wrath" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_WRATH">
+      <supports>Totem</supports>
+      <prerequisite>5th level Shaman</prerequisite>
+      <requirements>[level:shaman:5]</requirements>
+      <description>
+        <p><i>Prerequisites: 5th level Shaman</i></p>
+          <p>You bind a spirit of anger that increases your power. When a creature fails its saving throw against Totemic Assault, you can add your Wisdom modifier to the damage roll.</p>
+        </description>
+        <sheet>
+            <description>When a creature fails its saving throw against Totemic Assault, add your Wisdom modifier (+{{wisdom:modifier}}) to the damage roll.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Hunt" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_HUNT">
+      <supports>Totem</supports>
+      <prerequisite>7th level Shaman</prerequisite>
+      <requirements>[level:shaman:7]</requirements>
+      <description>
+        <p><i>Prerequisites: 7th level Shaman</i></p>
+          <p>You bind a spirit of the Wild Hunt that enhances your ferocity. Once per turn, you can grant yourself advantage on an attack roll if your target is within 5 feet of one of your allies.</p>
+        </description>
+        <sheet>
+            <description>Gain advantage on an attack roll once per turn if the target is within 5 ft. of an ally.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Ooze" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_OOZE">
+      <supports>Totem</supports>
+      <prerequisite>7th level Shaman</prerequisite>
+      <requirements>[level:shaman:7]</requirements>
+      <description>
+        <p><i>Prerequisites: 7th level Shaman</i></p>
+          <p>You bind a spirit of elemental water which allows your body to flow like ooze. As a bonus action, you can cause your body to become pliable. You can move through spaces as narrow as 1 inch without squeezing, and escape from nonmagical restraints or a grapple by expending 5 feet of movement.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">Pass through 1-inch openings without squeezing, and escape from nonmagical restraints or grappling, by expending 5 ft. of movement.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the River" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_RIVER">
+      <supports>Totem</supports>
+      <prerequisite>7th level Shaman</prerequisite>
+      <requirements>[level:shaman:7]</requirements>
+      <description>
+        <p><i>Prerequisites: 7th level Shaman</i></p>
+          <p>You bind a spirit of elemental water which allows you to live underwater. You can breathe both air and water, and you gain a swimming speed equal to your walking speed.</p>
+        </description>
+        <sheet>
+            <description>You can breathe both air and water. [Your swimming speed is equal to your walking speed.]</description>
+        </sheet>
+        <rules>
+          <stat name="speed:swim" value="speed" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Totem of the Cave" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_CAVE">
+      <supports>Totem</supports>
+      <prerequisite>9th level Shaman</prerequisite>
+      <requirements>[level:shaman:9]</requirements>
+      <description>
+        <p><i>Prerequisites: 9th level Shaman</i></p>
+          <p>You bind a spirit of elemental earth that lends you its ability to sense movement through the ground. So long as you are touching the ground, you gain tremorsense out to a radius of 30 feet, allowing you to sense anything touching the ground.</p>
+        </description>
+        <sheet>
+            <description>[You can 30 ft. tremorsense.]</description>
+        </sheet>
+        <rules>
+          <grant type="Vision" id="ID_VISION_TREMORSENSE" />
+          <stat name="tremorsense:range" value="15" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Totem of the Dawn" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_DAWN">
+      <supports>Totem</supports>
+      <prerequisite>9th level Shaman</prerequisite>
+      <requirements>[level:shaman:9]</requirements>
+      <description>
+        <p><i>Prerequisites: 9th level Shaman</i></p>
+          <p>You bind a spirit of radiance which you can shield creatures from death. At the end of a long rest, you can cast <em>death ward</em> on a creature of your choice, without expending a spell slot.</p>
+          <div class="reference">
+            <div element="ID_PHB_SPELL_DEATH_WARD" />
+          </div>
+        </description>
+        <sheet>
+          <description usage="1/Long Rest">You can cast death ward at the end of a long rest without expending a spell slot.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Faerie" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_FAERIE">
+      <supports>Totem</supports>
+      <prerequisite>9th level Shaman</prerequisite>
+      <requirements>[level:shaman:9]</requirements>
+      <description>
+        <p><i>Prerequisites: 9th level Shaman</i></p>
+          <p>You bind a fey spirit which you can call to your aid. You can cast <em>summon fey</em> at a level equal to your Primal Magic slots, without expending a spell slot or material components.</p>
+          <p class="indent">Once you cast <em>summon fey</em> in this way, you must finish a long rest before you can cast it in this way again.</p>
+          <div class="reference">
+            <div element="ID_PHB_SPELL_SUMMON_FEY" />
+          </div>
+        </description>
+        <sheet>
+          <description usage="1/Long Rest">You can cast {{shaman:spellcasting:slot}}-level summon fey without expending a spell slot or using material components.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Sun" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_SUN">
+      <supports>Totem</supports>
+      <prerequisite>9th level Shaman</prerequisite>
+      <requirements>[level:shaman:9]</requirements>
+      <description>
+        <p><i>Prerequisites: 9th level Shaman</i></p>
+        <p>You bind a spirit of radiance that allows you to succeed when all hope seems lost. When you fail a saving throw, you can choose to re-roll, possibly turning a failure into a success.</p>
+        <p class="indent">Once you use this feature to re-roll a saving throw you must finish a short or long rest before you can use it again.</p>
+        <p class="indent">When you reach 15th level in this class, you can use this feature twice between each short or long rest.</p>
+        </description>
+        <sheet>
+          <description usage="1/Short Rest" level="9">You can reroll a failed saving throw.</description>
+          <description usage="2/Short Rest" level="15">You can reroll a failed saving throw.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Vine" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_VINE">
+      <supports>Totem</supports>
+      <prerequisite>9th level Shaman</prerequisite>
+      <requirements>[level:shaman:9]</requirements>
+      <description>
+        <p><i>Prerequisites: 9th level Shaman</i></p>
+          <p>YYou bind a spirit of wild growth which lends you the power to restrain your foes. You can cast ensnaring strike at 1st-level, at will, without expending a spell slot.</p>
+          <div class="reference">
+            <div element="ID_PHB_SPELL_ENSNARING_STRIKE" />
+          </div>
+        </description>
+        <sheet>
+          <description>You can cast 1st-level ensnaring strike at will without expending a spell slot.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of Binding" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_BINDING">
+      <supports>Totem</supports>
+      <prerequisite>15th level Shaman</prerequisite>
+      <requirements>[level:shaman:15]</requirements>
+      <description>
+        <p><i>Prerequisites: 15th level Shaman</i></p>
+          <p>You can quickly bind a spirit to regain some of your power. Once per long rest, you can use an action to regain one of your expended Primal Magic spell slots.</p>
+        </description>
+        <sheet>
+          <description usage="1/Long Rest" action="Action">Use an action to regain an expended Primal Magic spell slot.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Eclipse" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_ECLIPSE">
+      <supports>Totem</supports>
+      <prerequisite>15th level Shaman</prerequisite>
+      <requirements>[level:shaman:15]</requirements>
+      <description>
+        <p><i>Prerequisites: 15th level Shaman</i></p>
+          <p>You bind a powerful spirit that grants you resistance to the arcane. You gain resistance to all damage from spells.</p>
+        </description>
+        <sheet>
+          <description>You resist all spell damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Elements" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_ELEMENTS">
+      <supports>Totem</supports>
+      <prerequisite>15th level Shaman</prerequisite>
+      <requirements>[level:shaman:15]</requirements>
+      <description>
+        <p><i>Prerequisites: 15th level Shaman</i></p>
+          <p>You bind an elemental spirit which you can call to your aid. You can cast <em>summon elemental</em> at a level equal to your Primal Magic slots, without expending a spell slot or material components.</p>
+          <p class="indent">Once you cast <em>summon elemental</em> in this way, you must finish a short or long rest before you can cast it in this way again.</p>
+          <div class="reference">
+            <div element="ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL" />
+          </div>
+        </description>
+        <sheet>
+          <description usage="1/Short Rest">You can cast {{shaman:spellcasting:slot}}-level summon elemental without expending a spell slot or using material components.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Sapling" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_SAPLING">
+      <supports>Totem</supports>
+      <prerequisite>15th level Shaman</prerequisite>
+      <requirements>[level:shaman:15]</requirements>
+      <description>
+        <p><i>Prerequisites: 15th level Shaman</i></p>
+          <p>You bind a powerful spirit of wild growth which blesses your body with wondrous regeneration. At the start of each of your turns, you regain hit points equal to your Wisdom modifier, so long as you have no more than half of your hit points left.</p>
+          <p class="indent">You do not gain this benefit if you have 0 hit points.</p>
+        </description>
+        <sheet>
+          <description>You resgain your Wisdom modifier (+{{wisdom:modifier}}) in hit points per turn, as long as you have more than 0 and less than or equal to half.</description>
+        </sheet>
+    </element>
+
+    <element name="Totem of the Skies" type="Class Feature" source="laserllama's Shaman" id="ID_LASERLL_CLASS_FEATURE_SHAMAN_TOTEM_SKIES">
+      <supports>Totem</supports>
+      <prerequisite>15th level Shaman</prerequisite>
+      <requirements>[level:shaman:15]</requirements>
+      <description>
+        <p><i>Prerequisites: 15th level Shaman</i></p>
+          <p>You bind a powerful spirit of elemental air which propels you through the air. You gain a flying speed equal to your walking speed, and whenever you take falling damage you reduce the damage by an amount equal to your Shaman level.</p>
+        </description>
+        <sheet>
+          <description>Reduce falling damage by {{level:shaman}}. [You gain a flying speed equal to your walking speed.]</description>
+        </sheet>
+        <rules>
+          <stat name="speed:fly" value="speed" bonus="base" />
+        </rules>
+    </element>
+
+    <append id="ID_PHB_SPELL_BLADE_WARD">
+		    <supports>Shaman</supports>
+	  </append>
+    <append id="ID_PHB_SPELL_CHILL_TOUCH">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_CONTROL_FLAMES">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_CREATE_BONFIRE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_FROSTBITE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GUIDANCE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_GUST">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_MAGIC_STONE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_MOLD_EARTH">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_POISON_SPRAY">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PRODUCE_FLAME">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_SHAPE_WATER">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SHILLELAGH">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SPARE_THE_DYING">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_THAUMATURGY">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_THORN_WHIP">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_THUNDERCLAP">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_WOTC_TCOE_SPELL_TOLL_THE_DEAD">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_ABSORB_ELEMENTS">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ANIMAL_FRIENDSHIP">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ARMOR_OF_AGATHYS">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BANE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_BEAST_BOND">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BLESS">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_CAUSE_FEAR">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_WOTC_TCOE_SPELL_TASHAS_CAUSTIC_BREW">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_CEREMONY">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_COMMAND">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CURE_WOUNDS">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DISSONANT_WHISPERS">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ENTANGLE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FALSE_LIFE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FIND_FAMILIAR">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FOG_CLOUD">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HEROISM">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HEX">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_INFLICT_WOUNDS">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LONGSTRIDER">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SHIELD_OF_FAITH">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SLEEP">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_AID">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ALTER_SELF">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_AUGURY">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BARKSKIN">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BLUR">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONTINUAL_FLAME">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DARKNESS">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_DUST_DEVIL">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_EARTHBIND">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ENHANCE_ABILITY">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FLAME_BLADE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GENTLE_REPOSE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GUST_OF_WIND">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HEAT_METAL">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LOCATE_ANIMALS_OR_PLANTS">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MISTY_STEP">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MOONBEAM">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PROTECTION_FROM_POISON">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SPIKE_GROWTH">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_WARDING_WIND">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CLAIRVOYANCE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DAYLIGHT">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DISPEL_MAGIC">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ELEMENTAL_WEAPON">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FEIGN_DEATH">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GASEOUS_FORM">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HASTE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_LIFE_TRANSFERENCE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MELD_INTO_STONE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_NONDETECTION">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PLANT_GROWTH">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_REMOVE_CURSE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SLEET_STORM">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SLOW">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SPEAK_WITH_DEAD">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SPIRIT_GUARDIANS">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_STINKING_CLOUD">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_THUNDER_STEP">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_TIDAL_WAVE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LEOMONDS_TINY_HUT">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_WALL_OF_SAND">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_WALL_OF_WATER">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WIND_WALL">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ARCANE_EYE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BANISHMENT">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONTROL_WATER">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DIVINATION">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_ELEMENTAL_BANE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MORDENKAINENS_FAITHFUL_HOUND">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FIRE_SHIELD">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GIANT_INSECT">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GRASPING_VINE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_GUARDIAN_OF_NATURE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ICE_STORM">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_SICKENING_RADIANCE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_STONESKIN">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_WATERY_SPHERE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ANTILIFE_SHELL">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_AWAKEN">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CLOUDKILL">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_COMMUNE_WITH_NATURE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_DAWN">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DREAM">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_FAR_STEP">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_MAELSTROM">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PLANAR_BINDING">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_REINCARNATE">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SCRYING">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_SKILL_EMPOWERMENT">
+        <supports>Shaman</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_WRATH_OF_NATURE">
+        <supports>Shaman</supports>
+    </append>
+
+
+</elements>

@@ -1,0 +1,1560 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+      <name></name>
+      <update version="1.5.0">
+          <file name="subclasses-cleric-laserll.xml" url="tmp.xml" />
+      </update>
+  </info>
+
+  <element name="Beauty Domain" type="Archetype" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY">
+    <supports>Divine Domain</supports>
+    <description>
+      <p>Beauty is a concept that is interpreted differently by different cultures, creeds, and people. For some beauty is an objective standard, unchanging and permanent. For others, true beauty must be fleeting and temporary in order to be appreciated.</p>
+      <p class="indent">Clerics of Beauty recognize that all things are beautiful in their own way, and will go to great lengths to avoid violence. When compelled to fight, Beauty Clerics look to end conflicts quickly and decisively with powerful enchantment magic.</p>
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_BONUS_CANTRIP" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_BEAUTY_DOMAIN_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_SHELTER_THE_BEAUTIFUL" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_CHANNEL_DIVINITY_IMPULSIVE_INFATUATION" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_ENCHANTING_PRESENCE" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_POTENT_SPELLCASTING" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_RESPLENDENT_BEAUTY" />
+    </description>
+    <sheet display="false">
+      <description>Beauty Clerics look to end conflicts quickly and decisively with powerful enchantment magic.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_BONUS_CANTRIP" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_BEAUTY_DOMAIN_SPELLS" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_SHELTER_THE_BEAUTIFUL" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_CHANNEL_DIVINITY_IMPULSIVE_INFATUATION" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_ENCHANTING_PRESENCE" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_POTENT_SPELLCASTING" level="8"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_RESPLENDENT_BEAUTY" level="17"/>
+    </rules>
+  </element>
+
+  <element name="Bonus Cantrip" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_BONUS_CANTRIP">
+    <description>
+      <p>Your Domain grants you an affinity with enchantments. You learn the <em>friends</em> cantrip. It counts as a Cleric cantrip for you, but it doesn't count against your number of Cantrips Known.</p>
+      <p class="indent">When you cast friends targeting a creature that is already friendly towards you, it doesn't realize that it was charmed and doesn't become hostile toward you when the spell ends.</p>
+      <div class="reference">
+        <div element="ID_LASERLL_SPELL_FRIENDS" />
+      </div>
+    </description>
+    <sheet>
+      <description>When you cast friends on a creature already friendly towards you, it will not realize it was charmed and will not become hostile when the spell ends.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_LASERLL_SPELL_FRIENDS" spellcasting="Cleric" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Beauty Domain Spells" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_BEAUTY_DOMAIN_SPELLS">
+    <description>
+      <p>You always have the spells from the table below prepared once you reach certain levels in this class. See the Divine Domain class feature for how Domain Spells work.</p>
+      <table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>friends, charm person, heroism</em></td></tr>
+				<tr><td>3rd</td><td><em>enthrall, suggestion</em></td></tr>
+				<tr><td>5th</td><td><em>beacon of hope, hypnotic pattern</em></td></tr>
+				<tr><td>7th</td><td><em>charm monster<sup>XGTE</sup>, compulsion</em></td></tr>
+				<tr><td>9th</td><td><em>dominate person, hold monster</em></td></tr>
+			</table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+  			<grant type="Spell" id="ID_LASERLL_SPELL_FRIENDS" level="0" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" level="1" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="1" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_PHB_SPELL_ENTHRALL" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" level="3" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="5" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" level="5" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_XGTE_SPELL_CHARM_MONSTER" level="7" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_PHB_SPELL_COMPULSION" level="7" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Cleric" prepared="true" />
+  		</rules>
+  </element>
+
+  <element name="Shelter the Beautiful" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_SHELTER_THE_BEAUTIFUL">
+    <description>
+      <p>You rebuke any who attempt to destroy beauty. As a reaction when a creature you can see within 60 feet is hit by an attack, you can grant the creature a bonus to its Armor Class equal to your Wisdom modifier (minimum of +1) against the attack.</p>
+      <p class="indent">Once you use this reaction, you must finish a short or long rest before you can use it again. If you have no uses left, you can expend a spell slot of 1st-level or higher to use it again.</p>
+    </description>
+    <sheet>
+      <description usage="1/Short Rest" action="Reaction">When a visible creature within 60 ft. is hit by an attack, grant it +{{wisdom:modifier}} AC against that attack. You can expend a 1st-level spell slot of higher to regain use of this without resting.</description>
+    </sheet>
+  </element>
+
+  <element name="Channel Divinity: Impulsive Infatuation" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_CHANNEL_DIVINITY_IMPULSIVE_INFATUATION">
+    <supports>Heretic Channel Divinity</supports>
+    <description>
+      <p>You can use your Channel Divinity to overwhelm a creature with a flash of intense admiration for you, driving it to rash action in your defense. As an action, you can present your holy symbol and force one creature that can see you within 30 feet to make a Wisdom saving throw. On a failed save, the creature is charmed by you until the start of your next turn, and it must immediately use its reaction to make a melee weapon attack against a target of your choice. If there are no targets, it uses its reaction to admire you.</p>
+    </description>
+    <sheet>
+      <description alt="Impulsive Infatuation" action="Action" usage="Channel Divinity">Force a creature you can see within 30 ft. to make a Wisdom saving throw; if it fails, it is charmed by you until your next turn. It also must immediately use its reaction to make a melee weapon attack against a target of your choice, or use its reaction to admire you if no targets are available.</description>
+    </sheet>
+  </element>
+
+  <element name="Enchanting Presence" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_ENCHANTING_PRESENCE">
+    <description>
+      <p>You have been blessed with an otherworldly elegance that disarms those who behold you. When you cast an enchantment spell of 1st-level or higher, and the target is within 5 feet of you and can see you, you can impose disadvantage on its saving throw against that spell.</p>
+      <p class="indent">Once a target to fails a saving throw you must finish a short or long rest before you can use this again.</p>
+    </description>
+    <sheet>
+      <description usage="1/Short Rest">When you cast a 1st-level or higher enchantment spell on a target within 5 ft. that can see you, you can impose disadvantage on the spell saving throw; once a target fails, you must rest before you can use this again.</description>
+    </sheet>
+  </element>
+
+  <element name="Potent Spellcasting" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_POTENT_SPELLCASTING">
+    <description>
+      <p>You add your Wisdom modifier (minimum of +1) to the damage you deal with any Cleric cantrip.</p>
+    </description>
+    <sheet>
+      <description>+{{wisdom:modifier}} to Cleric cantrip damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Resplendent Beauty" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_BEAUTY_RESPLENDENT_BEAUTY">
+    <description>
+      <p>Your foes attack you with uncertainty, fearful of damaging the beauty they behold. When a creature that can see you targets you with an attack, you can use your reaction to force it to make a Wisdom saving throw. On a failure, it must choose another target within its range. If there is no other target in range, then its attack misses or fails.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When a creature that can see you targets you with an attack, force it to make a Wisdom saving throw; if it fails; it must choose another target in range, or the attack misses/fails if no targets are available.</description>
+    </sheet>
+  </element>
+
+  <element name="Blood Domain" type="Archetype" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD">
+    <supports>Divine Domain</supports>
+    <description>
+      <p>Clerics that serve gods of this Domain draw upon the power of life-blood to perform great and terrible feats. When there are no creatures from which to draw blood, these Clerics must sacrifice their own vitality to work their magic. Blood Clerics often serve gods that revel in suffering, but some wield this ancient power to serve noble ends.</p>
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_BONUS_PROFICIENCIES" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_BLOOD_DOMAIN_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_BLOODWELL" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_CHANNEL_DIVINITY_BLOOD_CURSE" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_SANGUINE_REBUKE" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_DIVINE_STRIKE" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_VAMPIRIC_MASTERY" />
+    </description>
+    <sheet display="false">
+      <description>Blood Clerics sacrifice their own vitality to work their magic.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_BONUS_PROFICIENCIES" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_BLOOD_DOMAIN_SPELLS" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_BLOODWELL" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_CHANNEL_DIVINITY_BLOOD_CURSE" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_SANGUINE_REBUKE" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_DIVINE_STRIKE" level="8"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_VAMPIRIC_MASTERY" level="17"/>
+    </rules>
+  </element>
+
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_BONUS_PROFICIENCIES">
+    <description>
+      <p>Clerics of the Blood Domain are familiar with implements of all sorts that draw blood. You gain proficiency with all martial weapons that deal either slashing or piercing damage.</p>
+    </description>
+    <sheet>
+      <description>You have proficiency with all martial weapons that deal slashing or piercing damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Blood Domain Spells" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_BLOOD_DOMAIN_SPELLS">
+    <description>
+      <p>You always have the spells from the table below prepared once you reach certain levels in this class. See the Divine Domain class feature for how Domain Spells work.</p>
+      <table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>inflict wounds, ray of sickness</em></td></tr>
+				<tr><td>3rd</td><td><em>hold person, ray of enfeeblement</em></td></tr>
+				<tr><td>5th</td><td><em>bestow curse, vampiric touch</em></td></tr>
+				<tr><td>7th</td><td><em>blight, dominate beast</em></td></tr>
+				<tr><td>9th</td><td><em>dominate person, hold monster</em></td></tr>
+			</table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+  			<grant type="Spell" id="ID_PHB_SPELL_INFLICT_WOUNDS" level="1" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" level="1" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="3" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" level="5" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" level="7" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" prepared="true" />
+  			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Cleric" prepared="true" />
+  		</rules>
+  </element>
+
+  <element name="Bloodwell" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_BLOODWELL">
+    <description>
+      <p>When you draw blood you can channel it into a sinister ward, known as a Bloodwell. Whenever you deal necrotic, piercing, or slashing damage to a creature with blood in its veins, your Bloodwell gains hit points equal to half the damage you dealt to the creature. Whenever you take damage, your Bloodwell takes the damage first, and if it is reduced to 0 hit points, you take any remaining damage.</p>
+      <p class="indent">Your Bloodwell can have a maximum number of hit points equal to your Wisdom modifier + your Cleric level.</p>
+      <p class="indent">You can sacrifice your own life to fuel your Bloodwell. As a bonus action, you can expend a Hit Die to add hit points to your Bloodwell equal to 1d8 + your Wisdom modifier.</p>
+    </description>
+    <sheet>
+      <description>When you deal necrotic, piercing, or slashing damage to a creature that has blood, store half of the damage in your Bloodwell (max {{bloodwell max}}). When you take damage, the Bloodwell takes damage first. You can also use a bonus action to expend a Hit Die and add 1d8 + {{wisdom:modifier}} to your Bloodwell.</description>
+    </sheet>
+    <rules>
+      <stat name="bloodwell max" value="level:cleric" />
+      <stat name="bloodwell max" value="wisdom:modifier" />
+    </rules>
+  </element>
+
+  <element name="Channel Divinity: Blood Curse" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_CHANNEL_DIVINITY_BLOOD_CURSE">
+    <supports>Heretic Channel Divinity</supports>
+    <description>
+      <p>As an action, you can grasp your holy symbol and force a target within 60 feet to make a Constitution saving throw, so long as it has blood in its veins. On a failure, it is restrained for 1 minute as its blood congeals in its body.</p>
+      <p class="indent">A restrained creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</p>
+    </description>
+    <sheet>
+      <description alt="Blood Curse" action="Action" usage="Channel Divinity">Force a creature within 60 ft. that has blood to make a Constitution saving throw; if it fails, it is restrained for 1 minute. It repeats the saving throw at the end of each of its turn, ending the effect when it succeeds.</description>
+    </sheet>
+  </element>
+
+  <element name="Sanguine Rebuke" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_SANGUINE_REBUKE">
+    <description>
+      <p>Your Bloodwell rebukes those who dare to strike you. When a creature deals damage to your Bloodwell with a melee attack, you can use a reaction to force it to make a Dexterity saving throw. On a failed save, it takes 2d10 necrotic damage.</p>
+      <p class="indent">You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all of your expended uses when you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description usage="{{wisdom:modifier}}/Long Rest" action="Reaction">When a creature damages your Bloodwell with a melee attack, force it to make a Dexterity saving throw; if it fails, it takes 2d10 necrotic damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Divine Strike" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_DIVINE_STRIKE">
+    <description>
+      <p>Your god imbues your weapon attacks with divine wrath. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 necrotic damage to the target.</p>
+      <p class="indent">At 14th level, the extra necrotic damage increases to 2d8.</p>
+    </description>
+    <sheet>
+      <description level="8">Once per turn when you hit a creature with a weapon attack, deal an additional 1d8 necrotic damage.</description>
+      <description level="14">Once per turn when you hit a creature with a weapon attack, deal an additional 2d8 necrotic damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Vampiric Mastery" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_BLOOD_VAMPIRIC_MASTERY">
+    <description>
+      <p>You can draw power from death. When you kill a creature with a necromancy spell of 2nd-level or higher, you can use your reaction to regain one of your expended spell slots.</p>
+      <p class="indent">The spell slot you recover must be at least one level lower than the spell you cast to kill the creature.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When you kill a creature with a 2nd-level or higher necromancy spell, regain one of your expended spell slots of at most one level lower than the spell that was cast to kill the creature.</description>
+    </sheet>
+  </element>
+
+  <element name="Cataclysm Domain" type="Archetype" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM">
+    <supports>Divine Domain</supports>
+    <description>
+      <p>Gods of the Cataclysm Domain rule over the primal elements of stone and flame. These deities are nearly always chaotic in nature and revel in the destruction caused by their Clerics.</p>
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_BONUS_PROFICIENCIES" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_CATACLYSM_DOMAIN_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_EARTHEN_REBUKE" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_CHANNEL_DIVINITY_CATACLYSMIC_ERUPTION" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_VOLCANIC_STRIKE" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_DIVINE_STRIKE" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_AVATAR_OF_STONE_AND_FLAME" />
+    </description>
+    <sheet display="false">
+      <description>Blood Clerics sacrifice their own vitality to work their magic.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_BONUS_PROFICIENCIES" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_CATACLYSM_DOMAIN_SPELLS" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_EARTHEN_REBUKE" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_CHANNEL_DIVINITY_CATACLYSMIC_ERUPTION" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_VOLCANIC_STRIKE" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_DIVINE_STRIKE" level="8"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_AVATAR_OF_STONE_AND_FLAME" level="17"/>
+    </rules>
+  </element>
+
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_BONUS_PROFICIENCIES">
+    <description>
+      <p>When you adopt this Divine Domain you gain proficiency with all martial weapons and with heavy armor.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+    </rules>
+  </element>
+
+  <element name="Cataclysm Domain Spells" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_CATACLYSM_DOMAIN_SPELLS">
+    <description>
+      <p>You always have the spells from the table below prepared once you reach certain levels in this class. See the Divine Domain class feature for how Domain Spells work.</p>
+      <table>
+        <thead>
+          <tr><td>Cleric Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>earth tremor<sup>XGTE</sup>, searing smite</em></td></tr>
+        <tr><td>3rd</td><td><em>flaming sphere, spike growth</em></td></tr>
+        <tr><td>5th</td><td><em>erupting earth<sup>XGTE</sup>minute meteors<sup>XGTE</sup></em></td></tr>
+        <tr><td>7th</td><td><em>stone shape, wall of fire</em></td></tr>
+        <tr><td>9th</td><td><em>immolation<sup>XGTE</sup>, wall of stone</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+        <grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" level="1" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_LASERLL_SPELL_SEARING_SMITE" level="1" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_SPIKE_GROWTH" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_XGTE_SPELL_ERUPTING_EARTH" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_XGTE_SPELL_MELFS_MINUTE_METEORS" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_STONE_SHAPE" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_XGTE_SPELL_IMMOLATION" level="9" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" level="9" spellcasting="Cleric" prepared="true" />
+      </rules>
+  </element>
+
+  <element name="Earthen Rebuke" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_EARTHEN_REBUKE">
+    <description>
+      <p>You can rebuke your foes with stone and flame. As a reaction when a creature within 5 feet of you hits you with an attack, you can force it to make a Strength saving throw. On a failed save, it takes 1d8 bludgeoning or fire damage (your choice) and is knocked prone. On a success, the creature takes half as much damage and doesn't fall prone.</p>
+      <p class="indent">You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest. If you have no uses left, you can spend a spell slot to use this feature again.</p>
+    </description>
+    <sheet>
+      <description usage="{{wisdom:modifier}}/Long Rest" action="Reaction">When a creature within 5 ft. hits you with an attack, force it to make a Strength saving throw; if it fails, it takes 1d8 bludgeoning or fire damage and is knocked prone. If it succeeds it takes half this and doesn't fall prone. You can expend a spell slot to regain use of this before a long rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Channel Divinity: Cataclysmic Eruption" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_CHANNEL_DIVINITY_CATACYLSMIC_ERUPTION">
+    <supports>Heretic Channel Divinity</supports>
+    <description>
+      <p>When you deal fire or bludgeoning damage with a feature, attack, or a Cleric spell, you can invoke this Channel Divinity to cause that feature, attack, or Cleric spell to deal maximum possible damage in place of rolling.</p>
+    </description>
+    <sheet>
+      <description alt="Cataclysmic Eruption" usage="Channel Divinity">When you deal fire or bludgeoning damage with a feature, attack, or Cleric spell, cause it to deal maximum possible damage instead of rolling.</description>
+    </sheet>
+  </element>
+
+  <element name="Volcanic Strike" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_VOLCANIC_STRIKE">
+    <description>
+      <p>Once per turn when you deal bludgeoning or fire damage to a Large or smaller creature, you can cover it in volcanic slag, reducing its walking speed by 10 feet until the beginning of your next turn. As an action, a creature can touch the target and scrape the slag off to end this effect early.</p>
+      <p class="indent">A creature covered in this slag cannot take reactions.</p>
+    </description>
+    <sheet>
+      <description>Once per turn when dealing bludgeoning or fire damage to a Large or smaller creature, cover it in volcanic slag to reduce its walking speed by 10 and prevent it from taking reactions until your next turn. A creature can use an action to touch the target and scrape the slag off, ending the effect.</description>
+    </sheet>
+  </element>
+
+  <element name="Divine Strike" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_DIVINE_STRIKE">
+    <description>
+      <p>Your god imbues your weapon attacks with divine wrath. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 fire damage to the target.</p>
+      <p class="indent">At 14th level, the extra fire damage increases to 2d8.</p>
+    </description>
+    <sheet>
+      <description level="8">Once per turn when you hit a creature with a weapon attack, deal an additional 1d8 fire damage.</description>
+      <description level="14">Once per turn when you hit a creature with a weapon attack, deal an additional 2d8 fire damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Avatar of Stone and Flame" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CATACLYSM_AVATAR_OF_STONE_AND_FLAME">
+    <description>
+      <p>You have become one with elemental stone and flame. You gain resistance to fire damage and nonmagical bludgeoning, piercing, and slashing damage. You are also immune to the fire and bludgeoning damage from any Cleric spell you cast.</p>
+    </description>
+    <sheet>
+      <description>You are immune to fire and bludgeoning damage from any our your own Cleric spells, as well as all nonmagical bludgeoning, piercing, and slashing damage.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+    </rules>
+  </element>
+
+  <element name="Chaos Domain" type="Archetype" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS">
+    <supports>Divine Domain</supports>
+    <description>
+      <p>Only worshiped by the most unhinged devotees, or believers in pure anarchy, gods (and other entities) of Chaos, care little for the wellbeing of their followers. Their desires are often incomprehensible to mortals, and for the Clerics who access the power that comes from the Chaos Domain, it is only a matter of time before they are overtaken by insanity.</p>
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_WORD_OF_CHAOS" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_CHAOS_DOMAIN_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_SHATTERED_MIND" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_CHANNEL_DINIVITY_TOUCH_OF_MADNESS" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_CHANNEL_DINIVITY_DISCORDIA" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_POTENT_SPELLCASTING" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_MANTLE_OF_INSANITY" />
+    </description>
+    <sheet display="false">
+      <description>Chaos Clerics sacrifice are believers in pure anarchy.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_WORD_OF_CHAOS" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_CHAOS_DOMAIN_SPELLS" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_SHATTERED_MIND" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_CHANNEL_DINIVITY_TOUCH_OF_MADNESS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_CHANNEL_DINIVITY_DISCORDIA" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_POTENT_SPELLCASTING" level="8"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_MANTLE_OF_INSANITY" level="17"/>
+    </rules>
+  </element>
+
+  <element name="Word of Chaos" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_WORD_OF_CHAOS">
+    <description>
+      <p>You can project the chaos within your mind into the world through your twisted words. You learn the <em>vicious mockery</em> cantrip. It counts as a Cleric spell for you, but it does not count against your total number of Cantrips Known.</p>
+    <div class="reference">
+      <div element="ID_LASERLL_SPELL_VICIOUS_MOCKERY" />
+    </div>
+  </description>
+  <sheet display="false">
+  </sheet>
+  <rules>
+    <grant type="Spell" id="ID_LASERLL_SPELL_VICIOUS_MOCKERY" spellcasting="Cleric" prepared="true" />
+  </rules>
+</element>
+  <element name="Chaos Domain Spells" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_CHAOS_DOMAIN_SPELLS">
+    <description>
+      <p>You always have the spells from the table below prepared once you reach certain levels in this class. See the Divine Domain class feature for how Domain Spells work.</p>
+      <table>
+        <thead>
+          <tr><td>Cleric Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>vicious mockery, dissonant whispers, hideous laughter</em></td></tr>
+        <tr><td>3rd</td><td><em>crown of madness, phantasmal force</em></td></tr>
+        <tr><td>5th</td><td><em>bestow curse, fear</em></td></tr>
+        <tr><td>7th</td><td><em>confusion, hallucinatory terrain</em></td></tr>
+        <tr><td>9th</td><td><em>antilife shell, synaptic static<sup>XGTE</sup></em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+        <grant type="Spell" id="ID_LASERLL_SPELL_VICIOUS_MOCKERY" level="0" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_DISSONANT_WHISPERS" level="1" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" level="1" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_CROWN_OF_MADNESS" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_FORCE" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_ANTILIFE_SHELL" level="9" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_XGTE_SPELL_SYNAPTIC_STATIC" level="9" spellcasting="Cleric" prepared="true" />
+      </rules>
+  </element>
+
+  <element name="Shattered Mind" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_SHATTERED_MIND">
+    <description>
+      <p>At the end of each long rest, you can choose to roll on the Indefinite Madness table from the <em>Dungeon Master's Guide</em>. Until the end of your next long rest, you gain the Madness effect, but you also gain resistance to psychic damage and immunity to having your thoughts read unless you allow it.</p>
+    </description>
+    <sheet>
+      <description usage="1/Long Rest">You can choose at the end of a long rest to roll on the Indefinite Madness table; if you do so, you gain this effect until your next long rest, but also gain psychic damage resistance and immunity to having your thoughts read unwillingly.</description>
+    </sheet>
+  </element>
+
+  <element name="Channel Divinity: Touch of Madness" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_CHANNEL_DIVINITY_TOUCH_OF_MADNESS">
+    <supports>Heretic Channel Divinity</supports>
+    <description>
+      <p>As an action on your turn, you can grasp your holy symbol and force a creature that can hear you within 30 feet to make a Wisdom saving throw. On a failed save, the madness of your god infects its mind, and it is incapacitated for 1 minute.</p>
+      <p class="indent">While incapacitated the creature babbles incoherently and uses its full movement to move in a random direction.</p>
+      <p class="indent">At the end of each turn, the creature can repeat the saving throw, ending this effect on a successful save.</p>
+    </description>
+    <sheet>
+      <description alt="Touch of Madness" action="Action" usage="Channel Divinity">Force a creature that can hear you within 30 ft. to make a Wisdom saving throw; if it fails, it is incapacitated for 1 minute and babbles incoherently while using its full movement to move randomly. It repeats the saving throw at the end of each turn and ends the effect on a save.</description>
+    </sheet>
+  </element>
+
+  <element name="Channel Divinity: Discordia" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_CHANNEL_DIVINITY_DISCORDIA">
+    <supports>Heretic Channel Divinity</supports>
+    <description>
+      <p>When you are forced to make an Intelligence, Wisdom, or Charisma saving throw, you can use your reaction to invoke this Channel Divinity, forcing a creature of your choice within 30 feet to make the saving throw in your place, becoming the target of the spell in your place.</p>
+    </description>
+    <sheet>
+      <description alt="Discordia" action="Reaction" usage="Channel Divinity">When forced to make an Intelligence, Wisdom, or Charisma saving throw, force a creature of your choice within 30 ft. to become the target the saving throw in your stead.</description>
+    </sheet>
+  </element>
+
+  <element name="Potent Spellcasting" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_POTENT_SPELLCASTING">
+    <description>
+      <p>The madness that festers in your mind empowers your magics. You add your Wisdom modifier to the damage you deal with any Cleric cantrip.</p>
+    </description>
+    <sheet>
+      <description>+{{wisdom:modifier}} to Cleric cantrip damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Mantle of Insanity" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS_MANTLE_OF_INSANITY">
+    <description>
+      <p>You are a conduit for Chaos to enter the world. When a creature you can see within 60 feet targets you with an attack, you can use your reaction to force it to make a Wisdom saving throw. On a failed save, it attacks a target of your choice within its attack's range.</p>
+      <p class="indent">You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description usage="{{wisdom:modifier}}/Long Rest" action="Reaction">When a creature you can see within 60 ft. targets you with an attack, force it to make a Wisdom saving throw; if it fails, it attacks a target of your choice within its range.</description>
+    </sheet>
+  </element>
+
+  <element name="Chaos Domain" type="Archetype" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_CHAOS">
+    <supports>Divine Domain</supports>
+    <description>
+      <p>Gods of the Hearth are patrons of all those who offer shelter to others. Clerics of the Hearth Domain are often selfless individuals that put the comfort of their companions before all else. They strive to shelter the weak and bolster the spirits of those who are weary. Hearth Clerics see themselves as the first line of defense in the cosmic battle against evildoers that seek to destroy the warm, cozy, and safe places of the world.</p>
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_BONUS_PROFICIENCIES" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_HEARTHS_BLESSING" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_HEARTH_DOMAIN_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_CHANNEL_DIVINITY_RESTFUL_SOJOURN" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_SELFLESS_HEALER" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_DIVINE_STRIKE" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_BEACON_OF_HOSPITALITY" />
+    </description>
+    <sheet display="false">
+      <description>Hearth Clerics strive to shelter the weak and bolster the spirits of those who are weary.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_BONUS_PROFICIENCIES" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_HEARTHS_BLESSING" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_HEARTH_DOMAIN_SPELLS" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_CHANNEL_DIVINITY_RESTFUL_SOJOURN" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_SELFLESS_HEALER" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_DIVINE_STRIKE" level="8"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_BEACON_OF_HOSPITALITY" level="17"/>
+    </rules>
+  </element>
+
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_BONUS_PROFICIENCIES">
+    <description>
+      <p>A host has certain obligations to their guests, and you must be able to provide comfort and warmth to your friends. When you adopt this Divine Domain level you gain proficiency with the herbalism kit, cook's utensils, and with heavy armor.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HERBALISM_KIT" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_COOKS_UTENSILS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+    </rules>
+  </element>
+
+  <element name="Hearths Blessing" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_HEARTHS_BLESSING">
+    <description>
+      <p>Your presence allows your companions to rest without care. At the end of each short rest, you can choose a number of creatures equal to your Wisdom modifier (minimum of 1). Their level of exhaustion, if any, reduced by 1, and regain (additional) hit points equal to your Cleric level.</p>
+      <p class="indent">In addition, you learn the <em>create bonfire</em> cantrip. It counts as a Cleric cantrip for you, but it does not count against your total number of Cantrips Known.</p>
+      <div class="reference">
+        <div element="ID_XGTE_SPELL_CREATE_BONFIRE" />
+      </div>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_CREATE_BONFIRE" spellcasting="Cleric" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Hearth Domain Spells" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_HEARTH_DOMAIN_SPELLS">
+    <description>
+      <p>You always have the spells from the table below prepared once you reach certain levels in this class. See the Divine Domain class feature for how Domain Spells work.</p>
+      <table>
+        <thead>
+          <tr><td>Cleric Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>create bonfire<sup>XGTE</sup>, goodberry, sanctuary</em></td></tr>
+        <tr><td>3rd</td><td><em>healing spirit<sup>XGTE</sup>, rope trick</em></td></tr>
+        <tr><td>5th</td><td><em>catnap<sup>XGTE</sup>, tiny hut</em></td></tr>
+        <tr><td>7th</td><td><em>faithful hound, private sanctum</em></td></tr>
+        <tr><td>9th</td><td><em>circle of power, hallow</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+        <grant type="Spell" id="ID_XGTE_SPELL_CREATE_BONFIRE" level="0" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_GOODBERRY" level="1" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" level="1" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_XGTE_SPELL_HEALING_SPIRIT" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_ROPE_TRICK" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_XGTE_SPELL_CATNAP" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_LEOMONDS_TINY_HUT" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_MORDENKAINENS_FAITHFUL_HOUND" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_PRIVATE_SANCTUM" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_CIRCLE_OF_POWER" level="9" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_HALLOW" level="9" spellcasting="Cleric" prepared="true" />
+      </rules>
+  </element>
+
+  <element name="Channel Divinity: Restful Sojourn" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_CHANNEL_DIVINITY_RESTFUL_SOJOURN">
+    <supports>Heretic Channel Divinity</supports>
+    <description>
+      <p>As an action on your turn, you can touch your holy symbol to a willing creature, causing it to fall under the effects of the catnap spell. When you cast <em>catnap</em> in this way, the spell has its duration reduced to 1 minute.</p>
+      <div class="reference">
+        <div element="ID_XGTE_SPELL_CATNAP" />
+      </div>
+    </description>
+    <sheet>
+      <description alt="Restful Sojourn" action="Action" usage="Channel Divinity">Cause a creature to fall asleep under the catnap spell, at a reduced duration of 1 minute.</description>
+    </sheet>
+  </element>
+
+  <element name="Selfless Healer" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_SELFLESS_HEALER">
+    <description>
+      <p>Your god protects you when you protect others. Whenever you cast a Cleric spell that restores hit points or stabilizes a creature, you also gain the benefits of the Dodge action until the beginning of your next turn.</p>
+    </description>
+    <sheet>
+      <description>When you cast a Cleric spell that restores hit points or stabilizes a creature, gain the benefits of the Dodge action until your next turn.</description>
+    </sheet>
+  </element>
+
+  <element name="Divine Strike" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_DIVINE_STRIKE">
+    <description>
+      <p>You channel the warmth of the Hearth into your strikes. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 fire damage to the target.</p>
+      <p class="indent">At 14th level, the extra fire damage increases to 2d8.</p>
+    </description>
+    <sheet>
+      <description level="8">Once per turn when you hit a creature with a weapon attack, deal an additional 1d8 fire damage.</description>
+      <description level="14">Once per turn when you hit a creature with a weapon attack, deal an additional 2d8 fire damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Beacon of Hospitality" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_HEARTH_BEACON_OF_HOSPITALITY">
+    <description>
+      <p>Your god has blessed you with unmatched hearty resilience. You gain resistance to fire and poison damage, and you have advantage on any saving throw you make to resist becoming frightened, paralyzed, restrained, or stunned.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on saving throws against being frightened, paralyzed, restrained, or stunned.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+    </rules>
+  </element>
+
+  <element name="Luck Domain" type="Archetype" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_LUCK">
+    <supports>Divine Domain</supports>
+    <description>
+      <p>Clerics that serve the fickle and spontaneous deities of Luck rarely resemble their fellow Clerics. Their holy symbols are usually sets of dice, pieces from gaming sets, or strange lucky charms. For those who embrace this Domain, the greater the risk, the greater the thrill. Gambling with their lives brings great joy, and they live to encourage rash decisions in others.</p>
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_BONUS_PROFICIENCIES" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_LUCK_DOMAIN_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_TIP_THE_SCALES" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_CHANNEL_DIVINITY_STROKE_OF_LUCK" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_LUCKY_STREAK" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_POTENT_IMPROVISATION" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_DIVINE_ROULETTE" />
+    </description>
+    <sheet display="false">
+      <description>Luck Clerics live to encourage rash decisions in others.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_BONUS_PROFICIENCIES" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_LUCK_DOMAIN_SPELLS" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_TIP_THE_SCALES" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_CHANNEL_DIVINITY_STROKE_OF_LUCK" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_LUCKY_STREAK" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_POTENT_IMPROVISATION" level="8"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_DIVINE_ROULETTE" level="17"/>
+    </rules>
+  </element>
+
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_BONUS_PROFICIENCIES">
+    <description>
+      <p>In the game of life, sometimes you win, and sometimes you need to improvise. You gain proficiency in Sleight of Hand, improvised weapons, and one gaming set of your choice.</p>
+      <p class="indent">Also, if you spend 1 minute observing or playing a game you add double your proficiency bonus to any ability check you make related to that game until the end of your next long rest. Only one game can benefit from this feature at a time.</p>
+    </description>
+    <sheet>
+      <description>Observe or play a game for 1 minute to gain +{{proficiency}} on ability checks related to it until your next long rest (one game at a time).</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+      <select type="Proficiency" name="Gaming Set, Tactician" supports="Gaming Set" number="2"/>
+    </rules>
+  </element>
+
+  <element name="Luck Domain Spells" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_LUCK_DOMAIN_SPELLS">
+    <description>
+      <p>You always have the spells from the table below prepared once you reach certain levels in this class. See the Divine Domain class feature for how Domain Spells work.</p>
+      <table>
+        <thead>
+          <tr><td>Cleric Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>bane, bless</em></td></tr>
+        <tr><td>3rd</td><td><em>enhance ability, rope trick</em></td></tr>
+        <tr><td>5th</td><td><em>bestow curse, remove curse</em></td></tr>
+        <tr><td>7th</td><td><em>banishment, dimension door</em></td></tr>
+        <tr><td>9th</td><td><em>reincarnate, skill empowerment</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+        <grant type="Spell" id="ID_PHB_SPELL_BANE" level="1" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_BLESS" level="1" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_ROPE_TRICK" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_REMOVE_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_REINCARNATE" level="9" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_XGTE_SPELL_SKILL_EMPOWERMENT" level="9" spellcasting="Cleric" prepared="true" />
+      </rules>
+  </element>
+
+  <element name="Tip the Scales" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_TIP_THE_SCALES">
+    <description>
+      <p>Your luck empowers those blessed by your spells. When you cast a spell of 1st-level or higher that restores hit points, one target of the spell has advantage on its next ability check, attack roll, or saving throw.</p>
+    </description>
+    <sheet>
+      <description>When you cast a 1st-level spell or higher that restores hit points, one of the spell's targets gains advantage on its next ability check, attack roll, or saving throw.</description>
+    </sheet>
+  </element>
+
+  <element name="Channel Divinity: Stroke of Luck" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_CHANNEL_DIVINITY_STROKE_OF_LUCK">
+    <supports>Heretic Channel Divinity</supports>
+    <description>
+      <p>When you or a creature within 60 feet that you can see makes an ability check, attack roll, or saving throw, you can use your reaction to hold aloft your holy symbol and grant it advantage, or impose disadvantage, on the target's roll.</p>
+    </description>
+    <sheet>
+      <description alt="Stroke of Luck" action="Rection" usage="Channel Divinity">When a creature within 60 ft. you can see makes an ability check, attack roll, or saving throw, grant it advantage or disadvantage.</description>
+    </sheet>
+  </element>
+
+  <element name="Lucky Streak" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_LUCKY_STREAK">
+    <description>
+      <p>Your attack rolls score a critical hit on a roll of 7 or 20 on the d20, but your rolls of 13 and 1 on the d20 are critical failures.</p>
+    </description>
+    <sheet>
+      <description>You score critical hits on rolls of 7 or 20, and critical failures on rolls of 13 or 1.</description>
+    </sheet>
+  </element>
+
+  <element name="Potent Improvisation" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_POTENT_IMPROVISATION">
+    <description>
+      <p>You can use your Wisdom modifier, in place of Strength, for attack and damage rolls with improvised weapons, and your improvised weapon attacks count as magical for the sake of overcoming resistances and immunities.</p>
+      <p class="indent">Also, once per turn when you hit a creature with a weapon attack, you deal a bonus 1d8 radiant damage to the target.</p>
+      <p class="indent">At 14th level, the bonus radiant damage becomes 2d8.</p>
+    </description>
+    <sheet>
+      <description level="8">You can use Wisdom in place of Strength for attack and damage rolls with improvised weapons, and improvised weapon attacks count as magical for overcoming resistances.&#13;&#10;Once per turn when you hit a creature with a weapon attack, deal an additional 1d8 radiant damage.</description>
+      <description level="14">You can use Wisdom in place of Strength for attack and damage rolls with improvised weapons, and improvised weapon attacks count as magical for overcoming resistances.&#13;&#10;Once per turn when you hit a creature with a weapon attack, deal an additional 2d8 radiant damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Divine Roulette" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_LUCK_DIVINE_ROULETTE">
+    <description>
+      <p>You can push your luck to its limit in a divine game of chance. As an action, you can hold aloft your holy symbol and invoke Divine Roulette. Roll a d10, and the corresponding spell from the Divine Roulette table below immediately takes effect as if cast as a Cleric spell by you. You can choose the target of the spell after you know the spell Divine Roulette will produce.</p>
+      <table>
+        <thead>
+            <tr><td class="col-5">d10</td><td class="col-15">Spell</td><td class="col-5">d10</td><td class="col-15">Spell</td></tr>
+        </thead>
+        <tr><td>1</td><td>no effect</td><td>6</td><td>power word: kill</td></tr>
+        <tr><td>2</td><td>imprisonment</td><td>7</td><td>time stop</td></tr>
+        <tr><td>3</td><td>invulnerability</td><td>8</td><td>true polymorph</td></tr>
+        <tr><td>4</td><td>mass word heal</td><td>9</td><td>weird</td></tr>
+        <tr><td>5</td><td>power word: heal</td><td>10</td><td>wish</td></tr>
+      </table>
+      <p class="indent">Once used, you must finish a long rest before you can use this feature again unless you expend a 9th-level spell slot.</p>
+    </description>
+    <sheet>
+      <description usage="1/Long Rest" action="Action">Roll a d10; the corresponding spell in the Divine Roulette table immediately takes effect as if cast as a Cleric spell; you can choose the target. You can expend a 9th-level spell slot to regain use of this feature before a long rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Mysticism Domain" type="Archetype" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM">
+    <supports>Divine Domain</supports>
+    <description>
+      <p>While almost all Clerics draw their power from worship of a specific god, there are some secretive sects of hermits that derive power from their belief in themselves. They spend their lives in quiet solitude, mastering their minds and striving for enlightenment. After years of training and meditation, these monastic masters are able to awaken the inner potential of their minds, and can use this power to produce divine magic.</p>
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_AWAKENING" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_MYSTICISM_DOMAIN_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_UNARMORED_DEFENSE" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_CHANNEL_DIVINITY_ENLIGHTENED_SPELL" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_AURA_OF_PSIONIC_DEFENSE" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_POTENT_SPELLCASTING" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_MYSTIC_ENLIGHTENMENT" />
+    </description>
+    <sheet display="false">
+      <description>Mysticism Clerics awaken the inner potential of their minds, and can use this power to produce divine magic.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_AWAKENING" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_MYSTICISM_DOMAIN_SPELLS" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_UNARMORED_DEFENSE" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_CHANNEL_DIVINITY_ENLIGHTENED_SPELL" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_AURA_OF_PSIONIC_DEFENSE" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_POTENT_SPELLCASTING" level="8"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_MYSTIC_ENLIGHTENMENT" level="17"/>
+    </rules>
+  </element>
+
+  <element name="Awakening" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_AWAKENING">
+    <description>
+      <p>You have awakened the wondrous true potential of your mind. Whenever you cast a Cleric cantrip or Cleric spell that deals radiant damage it deals psychic damage instead.</p>
+    </description>
+  <sheet>
+    <description>Your Cleric cantrips and spells that deal radiant damage deal psychic damage instead.</description>
+  </sheet>
+</element>
+  <element name="Mysticism Domain Spells" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_MYSTICISM_DOMAIN_SPELLS">
+    <description>
+      <p>You always have the spells from the table below prepared once you reach certain levels in this class. See the Divine Domain class feature for how Domain Spells work.</p>
+      <table>
+        <thead>
+          <tr><td>Cleric Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>catapult<sup>XGTE</sup>, dissonant whispers</em></td></tr>
+        <tr><td>3rd</td><td><em>detect thoughts, hold person</em></td></tr>
+        <tr><td>5th</td><td><em>clairvoyance, enemies abound<sup>XGTE</sup></em></td></tr>
+        <tr><td>7th</td><td><em>confusion, phantasmal killer</em></td></tr>
+        <tr><td>9th</td><td><em>dominate person, telekinesis</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+        <grant type="Spell" id="ID_XGTE_SPELL_CATAPULT" level="1" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_DISSONANT_WHISPERS" level="1" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_XGTE_SPELL_ENEMIES_ABOUND" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_KILLER" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_TELEKINESIS" level="9" spellcasting="Cleric" prepared="true" />
+      </rules>
+  </element>
+
+  <element name="Unarmored Defense" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_UNARMORED_DEFENSE">
+    <description>
+      <p>You have gained minor precognitive abilities. So long as you are not wearing armor, your Armor Class equals 10 + your Dexterity modifier + your Wisdom modifier.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <stat name="ac:unarmored defense mysticism cleric:base" value="10" />
+      <stat name="ac:unarmored defense mysticism cleric:dexterity" value="dexterity:modifier" />
+      <stat name="ac:unarmored defense mysticism cleric:wisdom" value="wisdom:modifier" />
+      <stat name="ac:unarmored defense mysticism cleric" value="ac:unarmored defense mysticism cleric:base" />
+      <stat name="ac:unarmored defense mysticism cleric" value="ac:unarmored defense mysticism cleric:dexterity" />
+      <stat name="ac:unarmored defense mysticism cleric" value="ac:unarmored defense mysticism cleric:wisdom" />
+      <stat name="ac:calculation" value="ac:unarmored defense mysticism cleric" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Cleric, Mysticism)" />
+    </rules>
+  </element>
+
+  <element name="Channel Divinity: Enlightened Spell" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_CHANNEL_DIVINITY_ENLIGHTENED_SPELL">
+    <supports>Heretic Channel Divinity</supports>
+    <description>
+      <p>When you cast one of your Mysticism Domain Spells, you can expend a use of your Channel Divinity to cast the spell so that it requires no verbal or somatic components, and no material components unless they are consumed by the spell.</p>
+    </description>
+    <sheet>
+      <description alt="Touch of Madness" usage="Channel Divinity">When you cast a Mysticism Domain spell, cast it without verbal, somatic, or non-consumed material components.</description>
+    </sheet>
+  </element>
+
+  <element name="Aura of Psionic Defense" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_AURA_OF_PSIONIC_DEFENSE">
+    <description>
+      <p>Your mind is a powerful defense for you and your allies. You gain resistance to psychic damage, and when you or a creature you can see within 15 feet makes an Intelligence, Wisdom, or Charisma saving throw, you can use a reaction to add your Wisdom modifier (minimum of +1) to its roll.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When a creature within 15 ft. makes an Intelligence, Wisdom, or Charisma saving throw, add {{wisdom:modifier}} to it.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+    </rules>
+  </element>
+
+  <element name="Potent Spellcasting" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_POTENT_SPELLCASTING">
+    <description>
+      <p>The wondrous power of your mind bolsters your cantrips. When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll.</p>
+    </description>
+    <sheet>
+      <description>+{{wisdom:modifier}} to Cleric cantrip damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Mystic Enlightenment" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_MYSTICISM_MYSTIC_ENLIGHTENMENT">
+    <description>
+      <p>Your mind and body have become saturated with psionic power. You are immune to psychic damage, and so long as you are not wearing armor, you are resistant to bludgeoning, piercing, and slashing damage from non-magical attacks.</p>
+    </description>
+  <sheet>
+    <description action="Reaction">While unarmored you are resistant to bludgeoning, piercing, and slashing damage from nonmagical attacks.</description>
+  </sheet>
+  </element>
+  <rules>
+    <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PSYCHIC" />
+  </rules>
+
+  <element name="Poverty Domain" type="Archetype" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY">
+    <supports>Divine Domain</supports>
+    <description>
+      <p>Deities of the Poverty Domain value quality of devotion over quantity and have strict requirements for their Clerics. They are required to give up all material possessions beyond basic necessities. Usually, Clerics of Poverty are only armed with a quarterstaff and carry only a small amount of food and water and a cloak on their back. These fervently devout Clerics are bound by divine law to seek peace above all, resorting to violence only when all other options have been exhausted.</p>
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_BONUS_PROFICIENCIES" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_POVERTY_DOMAIN_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_MANTLE_OF_POVERTY" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_CHANNEL_DIVINITY_GUARDIANS_SHIELD" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_WARRIOR_OF_MERCY" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_DIVINE_STRIKE" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_ASCETIC_MASTER" />
+    </description>
+    <sheet display="false">
+      <description>Poverty Clerics are required to give up all material possessions beyond basic necessities.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_BONUS_PROFICIENCIES" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_POVERTY_DOMAIN_SPELLS" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_MANTLE_OF_POVERTY" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_CHANNEL_DIVINITY_GUARDIANS_SHIELD" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_WARRIOR_OF_MERCY" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_DIVINE_STRIKE" level="8"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_ASCETIC_MASTER" level="17"/>
+    </rules>
+  </element>
+
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_BONUS_PROFICIENCIES">
+    <description>
+      <p>You are blessed with supernatural insight into the hearts of others, so that you may avoid violence at all costs. You gain proficiency in Insight, and you add double your proficiency bonus to any Wisdom (Insight) checks that you make.</p>
+    </description>
+    <sheet>
+      <description>+{{proficiency}} to Wisdom (Insight) checks.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+    </rules>
+  </element>
+
+  <element name="Poverty Domain Spells" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_POVERTY_DOMAIN_SPELLS">
+    <description>
+      <p>You always have the spells from the table below prepared once you reach certain levels in this class. See the Divine Domain class feature for how Domain Spells work.</p>
+      <table>
+        <thead>
+          <tr><td>Cleric Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>sanctuary, sleep</em></td></tr>
+        <tr><td>3rd</td><td><em>hold person, ray of enfeeblement</em></td></tr>
+        <tr><td>5th</td><td><em>hypnotic pattern, slow</em></td></tr>
+        <tr><td>7th</td><td><em>death ward, resilient sphere</em></td></tr>
+        <tr><td>9th</td><td><em>hold monster, wall of force</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+        <grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" level="1" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_SLEEP" level="1" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_LASERLL_SPELL_HYPNOTIC_PATTERN" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_LASERLL_SPELL_WALL_OF_FORCE" level="9" spellcasting="Cleric" prepared="true" />
+      </rules>
+  </element>
+
+  <element name="Mantle of Poverty" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_MANTLE_OF_POVERTY">
+    <description>
+      <p>As a devout follower of the way of Poverty, your god has blessed you with a special measure of protection against bodily harm. So long as you are not wearing armor, using a shield, and are wielding only a simple weapon (such as a quarterstaff or club), your Armor Class equals 10 + your Constitution modifier + your Wisdom modifier.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <stat name="ac:unarmored defense poverty cleric:base" value="10" />
+      <stat name="ac:unarmored defense poverty cleric:constitution" value="constitution:modifier" />
+      <stat name="ac:unarmored defense poverty cleric:wisdom" value="wisdom:modifier" />
+      <stat name="ac:unarmored defense poverty cleric" value="ac:unarmored defense poverty cleric:base" />
+      <stat name="ac:unarmored defense poverty cleric" value="ac:unarmored defense poverty cleric:constitution" />
+      <stat name="ac:unarmored defense poverty cleric" value="ac:unarmored defense poverty cleric:wisdom" />
+      <stat name="ac:calculation" value="ac:unarmored defense poverty cleric" bonus="calculation" equipped="[armor:none],[shield:none],[weapon:simple]" alt="Unarmored Defense (Cleric, Poverty)" />
+    </rules>
+  </element>
+
+  <element name="Channel Divinity: Guardian's Shield" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_CHANNEL_DIVINITY_GUARDIANS_SHIELD">
+    <supports>Heretic Channel Divinity</supports>
+    <description>
+      <p>When a creature you can see within 30 feet takes damage, you can use your reaction to clutch your holy symbol and invoke this Channel Divinity. You then take the full damage of the triggering attack but are considered to be resistant to any damage you take during this reaction.</p>
+    </description>
+    <sheet>
+      <description alt="Guardian's Shield" action="Reaction" usage="Channel Divinity">When a creature you can see within 30 ft. takes damage, take the full damage in their stead, resisting it.</description>
+    </sheet>
+  </element>
+
+  <element name="Warrior of Mercy" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_WARRIOR_OF_MERCY">
+    <description>
+      <p>You can bless your enemies with supernatural mercy. When you reduce a creature to 0 hit points with a simple weapon or Cleric spell, you can choose to charm the creature in place of killing it.</p>
+      <p class="indent">Instead of falling unconscious, the creature falls to 1 hit point and is charmed for 10 minutes. It is docile and will refuse to do anything unless you use a bonus action to command it. You cannot order it to attack, cast a spell, or cause damage of any kind. This effect ends early if the charmed creature takes damage. If it still has hit points remaining when the effect ends the creature falls unconscious.</p>
+      <p class="indent">Once you use this feature you must finish a short or long rest before you can use it again.</p>
+    </description>
+    <sheet>
+      <description>When you reduce a creature to 0 hit points with a simple weapon or Cleric spell, you can instead reduce it to 1 hit point and Charm it for 10 minutes; it will only act if commanded to do so with a bonus action, and cannot be ordered to attack, cast a spell, or cause damage. The effect ends early the creature it takes damage; it falls unconscious even if it still has remaining hit points at the effect's end.</description>
+    </sheet>
+  </element>
+
+  <element name="Divine Strike" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_DIVINE_STRIKE">
+    <description>
+      <p>You god chastises those you choose to strike. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 radiant damage to the target.</p>
+      <p class="indent">At 14th level, the bonus radiant damage becomes 2d8.</p>
+    </description>
+    <sheet>
+      <description level="8">Once per turn when you hit a creature with a weapon attack, deal an additional 1d8 radiant damage.</description>
+      <description level="14">Once per turn when you hit a creature with a weapon attack, deal an additional 2d8 radiant damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Ascetic Master" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_ASCETIC_MASTER">
+    <description>
+      <p>Your ascetic lifestyle has hardened your body against worldly harm. You gain immunity to poison damage and the poisoned condition, and you gain resistance to bludgeoning, piercing, and slashing damage.</p>
+      <p class="indent">Moreover, you are always under the effects of <em>sanctuary</em>. However, should you deal damage to a creature you lose the benefits of sanctuary until you finish a short or long rest</p>
+    </description>
+    <sheet>
+      <description>You are always under the effects off sanctuary unless you damage a creature, which will cause you to lose its benefits until your next rest.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISONED" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+    </rules>
+  </element>
+
+  <element name="Immunity (Poisoned)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISONED">
+    <supports>Immunity</supports>
+  </element>
+
+  <element name="Prosperity Domain" type="Archetype" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY">
+    <supports>Divine Domain</supports>
+    <description>
+      <p>With enough gold, most mortal creatures can be motivated to do almost anything. Prosperity Clerics live their lives by this great truth, dedicating their lives to amassing great fortunes. In the service of gods of riches, greed, and trade, they enact divine will through the mercantile arts. Prosperity chooses its Clerics from all walks of life; the wealthy aristocrat, a leader of a crime syndicate, the merchant, or the master artisan. Prosperity Clerics value gold above all else, and view their economic success, or lack thereof, as a sign of divine favor, or disdain.</p>
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_BONUS_PROFICIENCIES" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_PROSPERITY_DOMAIN_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_GILDED_STRIKE" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_CHANNEL_DIVINITY_DISTIILLED_FORTUNE" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_CHANNEL_DIVINITY_DIVINE_VAULT" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_POTENT_SPELLCASTING" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_GILDED_GUARDIAN" />
+    </description>
+    <sheet display="false">
+      <description>Prosperity Clerics live their lives by this great truth, dedicating their lives to amassing great fortunes.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_BONUS_PROFICIENCIES" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_PROSPERITY_DOMAIN_SPELLS" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_GILDED_STRIKE" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_CHANNEL_DIVINITY_DISTIILLED_FORTUNE" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_CHANNEL_DIVINITY_DIVINE_VAULT" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_POTENT_SPELLCASTING" level="8"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_GILDED_GUARDIAN" level="17"/>
+    </rules>
+  </element>
+
+  <element name="Bonus Proficiencies" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_POVERTY_BONUS_PROFICIENCIES">
+    <description>
+      <p>When you adopt the Prosperity Domain, you gain proficiency in Insight, and whenever you make a Wisdom (Insight) check related to assessing the value of an item you can add double your proficiency bonus to the roll.</p>
+      <p class="indent">In addition, whenever you make a Charisma check related to negotiating a trade or exchange of goods you gain a bonus to the roll equal to your Wisdom modifier (minimum of +1).</p>
+    </description>
+    <sheet>
+      <description>+{{proficiency}} to Wisdom (Insight) checks related to assessing the value of an item.&#13;&#10;+{{wisdom:modifier}} to Charisma checks related to negotiating trade.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+    </rules>
+  </element>
+
+  <element name="Prosperity Domain Spells" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_PROSPERITY_DOMAIN_SPELLS">
+    <description>
+      <p>You always have the spells from the table below prepared once you reach certain levels in this class. See the Divine Domain class feature for how Domain Spells work.</p>
+      <table>
+        <thead>
+          <tr><td>Cleric Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>magic stone<sup>XGTE</sup>, alarm, identify</em></td></tr>
+        <tr><td>3rd</td><td><em>arcane lock, heat metal</em></td></tr>
+        <tr><td>5th</td><td><em>sending, tiny servant<sup>XGTE</sup></em></td></tr>
+        <tr><td>7th</td><td><em>resilient sphere, secret chest</em></td></tr>
+        <tr><td>9th</td><td><em>animate objects, legend lore</em></td></tr>
+        <tr><td>17th</td><td><em>summon construct (metal only)<sup>TCOE</sup></em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+        <grant type="Spell" id="ID_XGTE_SPELL_MAGIC_STONE" level="0" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_ALARM" level="1" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="1" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_ARCANE_LOCK" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_HEAT_METAL" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_SENDING" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_XGTE_SPELL_TINY_SERVANT" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" level="9" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="9" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_CONSTRUCT" level="9" spellcasting="Cleric" prepared="true" />
+      </rules>
+  </element>
+
+  <element name="Gilded Strike" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_GILDED_STRIKE">
+    <description>
+      <p>Your divinely inspired desire for material fortune is imbued in each coin you touch. You learn the <em>magic stone</em> cantrip. It counts as a Cleric cantrip for you, but it does not count against your total number of Cantrips Known.</p>
+      <p class="indent">However, when you cast magic stone, you use must coins in place of stones, increasing the damage based on its value: copper (1d6), silver (1d8), gold (1d10), gems (2d6).</p>
+      <div class="reference">
+        <div element="ID_XGTE_SPELL_MAGIC_STONE" />
+      </div>
+    </description>
+    <sheet>
+      <description>You muse use coins in place of stones for magic stone; it deals 1d6 for copper, 1d8 for silver, 1d10 for gold, and 2d6 for gems.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_MAGIC_STONE" spellcasting="Cleric" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Channel Divinity: Distilled Fortune" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_CHANNEL_DIVINITY_DISTIILLED_FORTUNE">
+    <supports>Heretic Channel Divinity</supports>
+    <description>
+      <p>As an action, you can touch your holy symbol to one Large or smaller non-magical object, that is not being worn, carried, or part of a structure. It is transfigured into a tiny precious gemstone worth the exact monetary value of the item.</p>
+      <p class="indent">As an action, a creature can crush the gemstone, causing the object to reappear on an empty flat surface within 5 feet.</p>
+      <p class="indent">You can have a total number of objects transfigured in this way equal to your Wisdom modifier (minimum of 1). You can't transfigure an additional object while at your maximum.</p>
+    </description>
+    <sheet>
+      <description alt="Distilled Fortune" action="Action" usage="Channel Divinity">Touch your holy symbol to a Large or smaller non-magical object, transfiguring it into a tiny gemstone with the same monetary value. A creature can as an action crush the gemstone and cause the object to reappear on a flat empty space within 5 ft. You can have {{wisdom:modifier}} transfigured object at once.</description>
+    </sheet>
+  </element>
+
+  <element name="Channel Divinity: Divine Vault" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_CHANNEL_DIVINITY_DIVINE_VAULT">
+    <supports>Heretic Channel Divinity</supports>
+    <description>
+      <p>When you cast a spell that requires a material component with a gold cost, you can use this Channel Divinity to draw upon the Divine Vault of your god, substituting the material component of the spell with an object from their vault.</p>
+      <p class="indent">This Channel Divinity can be used to substitute material components worth up to 50 times your Cleric level in gold.</p>
+    </description>
+    <sheet>
+      <description alt="Divine Vault" action="Action" usage="Channel Divinity">When you cast a spell with a gold cost, substitute material components worth up to {{divine vault value}} gold.</description>
+    </sheet>
+    <stat name="divine vault value" value="50" level="[level:cleric:1]"/>
+    <stat name="divine vault value" value="100" level="[level:cleric:2]"/>
+    <stat name="divine vault value" value="150" level="[level:cleric:3]"/>
+    <stat name="divine vault value" value="200" level="[level:cleric:4]"/>
+    <stat name="divine vault value" value="250" level="[level:cleric:5]"/>
+    <stat name="divine vault value" value="300" level="[level:cleric:6]"/>
+    <stat name="divine vault value" value="350" level="[level:cleric:7]"/>
+    <stat name="divine vault value" value="400" level="[level:cleric:8]"/>
+    <stat name="divine vault value" value="450" level="[level:cleric:9]"/>
+    <stat name="divine vault value" value="500" level="[level:cleric:10]"/>
+    <stat name="divine vault value" value="550" level="[level:cleric:11]"/>
+    <stat name="divine vault value" value="600" level="[level:cleric:12]"/>
+    <stat name="divine vault value" value="650" level="[level:cleric:13]"/>
+    <stat name="divine vault value" value="700" level="[level:cleric:14]"/>
+    <stat name="divine vault value" value="750" level="[level:cleric:15]"/>
+    <stat name="divine vault value" value="800" level="[level:cleric:16]"/>
+    <stat name="divine vault value" value="850" level="[level:cleric:17]"/>
+    <stat name="divine vault value" value="900" level="[level:cleric:18]"/>
+    <stat name="divine vault value" value="950" level="[level:cleric:19]"/>
+    <stat name="divine vault value" value="1000" level="[level:cleric:20]"/>
+  </element>
+
+  <element name="Potent Spellcasting" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_POTENT_SPELLCASTING">
+    <description>
+      <p>Your god empowers your magic with their burning lust for wealth. When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll.</p>
+    </description>
+    <sheet>
+      <description>+{{wisdom:modifier}} to Cleric cantrip damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Gilded Guardian" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_GILDED_GUARDIAN">
+    <description>
+      <p>You can summon one of the Gilded Guardians that protect the Divine Vault of your god. Once per long rest, when you cast summon construct (metal), you can cast it at 7th-level, without expending a spell slot. When cast in this way, summon construct has the following changes:</p>
+      <ul>
+        <li>The Guardian is constructed from gold, gems, valuables, and other miscellaneous treasure.</li>
+        <li>The spell does not require your concentration.</li>
+        <li>The duration of the spell becomes 8 hours.</li>
+        <li>As an action, the Guardian can consume nearby treasure as an action, regaining hit points equal to the gold value of the treasure.</li>
+      </ul>
+      <p class="indent">You can only have one construct from summon construct conjured at a time, casting the spell again causes any other constructs, including your Gilded Guardian, to instantly disappear.</p>
+    </description>
+    <sheet>
+      <description action="1/Long Rest">You can cast a modified 7th-level summon construct (metal) without expending a spell slot: it is constructed from your treasure, does not require concentraiton, and lasts 8 hours. As an action, it can consume nearby treasure and regain its gold value in hit points. You can only have one construct at a time.</description>
+    </sheet>
+  </element>
+
+  <element name="Shadow Domain" type="Archetype" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW">
+    <supports>Divine Domain</supports>
+    <description>
+      <p>Followers of Shadow worship many gods. Some are gods of twilight and dusk that work in tandem with the forces of the natural world. Others are sinister gods worshiped by those that live underground, who fear and despise the light of day above all. Whether good or evil, Clerics of Shadow wield the darkness as an extension of themselves, using its power to sow fear and confusion. They blot out the light and instill terror in any who work against the will of their gods.</p>
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_EYES_OF_NIGHT" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_SHADOW_DOMAIN_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_SHROUD_OF_SHADOW" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_CHANNEL_DIVINITY_CLOYING_DARKNESS" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_IMPROVED_SHROUD" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_POTENT_SPELLCASTING" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_TERROR_OF_THE_VOID" />
+    </description>
+    <sheet display="false">
+      <description>Clerics of Shadow wield the darkness as an extension of themselves, using its power to sow fear and confusion.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_EYES_OF_NIGHT" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_SHADOW_DOMAIN_SPELLS" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_SHROUD_OF_SHADOW" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_CHANNEL_DIVINITY_CLOYING_DARKNESS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_IMPROVED_SHROUD" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_POTENT_SPELLCASTING" level="8"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_TERROR_OF_THE_VOID" level="17"/>
+    </rules>
+  </element>
+
+  <element name="Eyes of Night" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_EYES_OF_NIGHT">
+    <description>
+      <p>Your god grants you enhanced sight so you may serve in the shadows. You gain darkvision out to a distance of 120 feet. If you already have darkvision its range becomes 120 feet.</p>
+      <p class="indent">When you reach 6th level in this class, your darkvision allows you to see in magical, as well as mundane, darkness.</p>
+    </description>
+    <sheet>
+      <description level="6">You can see in both magical and mundane darkness.</description>
+    </sheet>
+    <rules>
+      <grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="120" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Shadow Domain Spells" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_SHADOW_DOMAIN_SPELLS">
+    <description>
+      <p>You always have the spells from the table below prepared once you reach certain levels in this class. See the Divine Domain class feature for how Domain Spells work.</p>
+      <table>
+        <thead>
+          <tr><td>Cleric Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>arms of hadar, cause fear<sup>XGTE</sup></em></td></tr>
+        <tr><td>3rd</td><td><em>darkness, shadow blade<sup>XGTE</sup></em></td></tr>
+        <tr><td>5th</td><td><em>enemies abound<sup>XGTE</sup>, fear</em></td></tr>
+        <tr><td>7th</td><td><em>black tentacles, phantasmal killer</em></td></tr>
+        <tr><td>9th</td><td><em>dream, enervation<sup>XGTE</sup></em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+        <grant type="Spell" id="ID_PHB_SPELL_ARMS_OF_HADAR" level="0" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_XGTE_SPELL_CAUSE_FEAR" level="1" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_XGTE_SPELL_SHADOW_BLADE" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_XGTE_SPELL_ENEMIES_ABOUND" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_KILLER" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_DREAM" level="9" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_XGTE_SPELL_ENERVATION" level="9" spellcasting="Cleric" prepared="true" />
+      </rules>
+  </element>
+
+  <element name="Shroud of Shadow" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_SHROUD_OF_SHADOW">
+    <description>
+      <p>You conjure the darkness of your god to defend yourself from assaults. When a creature you can see within 30 feet targets you with an attack, you can use your reaction to conjure a cloud of darkness that billows around you and imposes disadvantage on the creature's attack roll. Creatures that can see through magical darkness are immune to this feature.</p>
+      <p class="indent">You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description usage="{{wisdom:modifier}}/Long Rest" action="Reaction" level="1">When a creature within 30 ft. targets you with an attack, conjure a cloud of darkness that imposes disadvantage on its attack roll if it cannot see in magical darkness.</description>
+      <description usage="{{wisdom:modifier}}/Long Rest" action="Reaction" level="6">When a creature within 30 ft. targets another visible creature with an attack, conjure a cloud of darkness that imposes disadvantage on its attack roll if it cannot see in magical darkness.</description>
+    </sheet>
+  </element>
+
+  <element name="Channel Divinity: Cloying Darkness" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_PROSPERITY_CHANNEL_DIVINITY_CLOYING_DARKNESS">
+    <supports>Heretic Channel Divinity</supports>
+    <description>
+      <p>As an action, you can grasp your holy symbol and conjure a cloud of advanced darkness. All light sources within 30 feet are extinguished, and magical lights produced by a spell of a level equal to half your Cleric level or lower are dispelled.</p>
+      <p class="indent">Moreover, when you use this Channel Divinity, creatures of your choice within 30 feet must make a Constitution saving throw. Creatures take necrotic damage equal to 2d10 + your Cleric level on a failed save, and half as much on a success.</p>
+    </description>
+    <sheet>
+      <description alt="Cloying Darkness" action="Action" usage="Channel Divinity">Extinguish all light sources and dispell magical lights produced by spells of level {{level:half}} or lower within 30 ft.; creatures within this range must also make a Constitution saving throw; if they fail, they take 2d10 + {{level}} necrotic damage, and half that on a success.</description>
+    </sheet>
+  </element>
+
+  <element name="Improved Shroud" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_IMPROVED_SHROUD">
+    <description>
+      <p>When a creature you can see within 30 feet attacks another creature you can see, you can use your reaction to conjure Shroud of Shadow around the target creature and impose disadvantage on the creature's attack roll.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Potent Spellcasting" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_POTENT_SPELLCASTING">
+    <description>
+      <p>When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll.</p>
+    </description>
+    <sheet>
+      <description>+{{wisdom:modifier}} to Cleric cantrip damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Terror of the Void" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_SHADOW_TERROR_OF_THE_VOID">
+    <description>
+      <p>You can momentarily open a window into the void between the stars. As an action, you can produce an aura of magical darkness that emanates out from you in a 60-foot radius. Creatures of your choice within the aura have disadvantage on saving throws against spells that deal cold or necrotic damage or cause the frightened condition.</p>
+      <p class="indent">This aura of darkness lasts for 1 minute, or until you are incapacitated or choose to end it as an action on your turn.</p>
+    </description>
+    <sheet>
+      <description action="Action">Cloak yourself in a 60 ft.-radius shroud of magical darkness; creatures within of your choice have disadvantage on saving thrwos against spells that deal cold or necrotic damage or cause the frightened condition. It lasts for 1 minute, or until you are incapacitated or end it with another action.</description>
+    </sheet>
+  </element>
+
+  <element name="Thieves Domain" type="Archetype" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES">
+    <supports>Divine Domain</supports>
+    <description>
+      <p>Not all who serve the gods do so for upright reasons. Thieves guilds are often founded on the worship of deities of larceny and will offer a portion of proceeds to their god. Sometimes, an especially talented, or desperate thief is granted the boon of divine aid and made a Cleric of the Domain of Thieves.</p>
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_CUNNING_SKILL" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_THIEVES_DOMAIN_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_LARCENOUS_BLESSING" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_CHANNEL_DIVINITY_CLOAK_OF_THIEVES" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_LIGHT_FEET" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_DIVINE_STRIKE" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_PILFER_POTENTIAL" />
+    </description>
+    <sheet display="false">
+      <description>Clerics of Thieves worship of deities of larceny and will offer a portion of proceeds to their god.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_CUNNING_SKILL" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_THIEVES_DOMAIN_SPELLS" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_LARCENOUS_BLESSING" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_CHANNEL_DIVINITY_CLOAK_OF_THIEVES" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_LIGHT_FEET" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_DIVINE_STRIKE" level="8"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_PILFER_POTENTIAL" level="17"/>
+    </rules>
+  </element>
+
+  <element name="Cunning Skill" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_CUNNING_SKILL">
+    <description>
+      <p>You gain proficiency in thieves' tools and one of the following skills: Acrobatics, Deception, Sleight of Hand, or Stealth.</p>
+      <p class="indent">You also learn to speak, write, and decipher Thieves' Cant, the secret code of thieves' guilds and other rapscallions.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+      <select type="Proficiency" name="Skill Proficiency, Cunning Skill" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" />
+      <grant type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
+    </rules>
+  </element>
+
+  <element name="Larcenous Blessing" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_LARCENOUS_BLESSING">
+    <description>
+      <p>Whenever you make a Dexterity (Stealth), Dexterity (Sleight of Hand), or thieves' tools check, you can add your Wisdom modifier (minimum of +1) to the result of your roll.</p>
+      <p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain your expended uses when you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description usage="{{wisdom:modifier}}/Long Rest">+{{wisdom:modifier}} to a Dexterity (Stealth), Dexterity (Sleight of Hand), or thieves' tools check.</description>
+    </sheet>
+  </element>
+
+  <element name="Thieves Domain Spells" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_THIEVES_DOMAIN_SPELLS">
+    <description>
+      <p>You always have the spells from the table below prepared once you reach certain levels in this class. See the Divine Domain class feature for how Domain Spells work.</p>
+      <table>
+        <thead>
+          <tr><td>Cleric Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>fog cloud, sleep</em></td></tr>
+        <tr><td>3rd</td><td><em>arcane lock, pass without trace</em></td></tr>
+        <tr><td>5th</td><td><em>gaseous form, nondetection</em></td></tr>
+        <tr><td>7th</td><td><em>greater invisibility, secret chest</em></td></tr>
+        <tr><td>9th</td><td><em>legend lore, passwall</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+        <grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="0" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_SLEEP" level="1" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_ARCANE_LOCK" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_LASERLL_SPELL_PASS_WITHOUT_TRACE" level="3" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_GASEOUS_FORM" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" level="5" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST" level="7" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="9" spellcasting="Cleric" prepared="true" />
+        <grant type="Spell" id="ID_PHB_SPELL_PASSWALL" level="9" spellcasting="Cleric" prepared="true" />
+      </rules>
+  </element>
+
+  <element name="Channel Divinity: Cloak of Thieves" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_CHANNEL_DIVINITY_CLOAK_OF_THIEVES">
+    <supports>Heretic Channel Divinity</supports>
+    <description>
+      <p>As an action on your turn, you can grasp your holy symbol and cloak yourself in the mantle of your god. For 1 minute, you become invisible and your movement does not produce any sound. This effect instantly ends early if you attack, cast a spell, or force a creature or object to make a saving throw.</p>
+    </description>
+    <sheet>
+      <description alt="Cloak of Thieves" action="Action" usage="Channel Divinity">For 1 minute or until you attack, cast a spell, or force a creature to make a saving throw, you are invisible and your movement is soundless.</description>
+    </sheet>
+  </element>
+
+  <element name="Light Feet" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_LIGHT_FEET">
+    <description>
+      <p>Any good thief knows they must be light on their feet. So long as you are not wearing medium or heavy armor or wielding a shield or a weapon with the heavy property, you can take the Disengage or Dash action as a bonus action on your turn.</p>
+    </description>
+    <sheet>
+      <description>If not wearing medium or heavy armor, or wielding a shield or a heavy weapon, you can Disengage or Dash as a bonus action on your turn.</description>
+    </sheet>
+  </element>
+
+  <element name="Divine Strike" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_DIVINE_STRIKE">
+    <description>
+      <p>When deceit fails your weapons strike true. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 damage of your weapon's damage type.</p>
+      <p class="indent">At 14th level, this additional damage becomes 2d8.</p>
+    </description>
+    <sheet>
+      <description level="8">Once per turn when you hit a creature with a weapon attack, deal an additional 1d8 damage of your weapon's type.</description>
+      <description level="14">Once per turn when you hit a creature with a weapon attack, deal an additional 2d8 damage of your weapon's type.</description>
+    </sheet>
+  </element>
+
+  <element name="Pilfer Potential" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_THIEVES_PILFER_POTENTIAL">
+    <description>
+      <p>Your larcenous skills rival those of the gods themselves, and you gain the ability to steal magical potential itself. As an action, you can touch a creature or magic item and steal one of its unexpended spell slots of 5th-level or lower. If you have an expended spell slot of that level, you regain it.</p>
+      <p class="indent">If you do not have an expended spell slot of that level, you temporarily gain a spell slot of that level, which you must use within the next minute. If you do not use it, it is dispelled.</p>
+      <p class="indent">Once you use this feature to steal a spell slot you must finish a long rest before you can use it again.</p>
+      <p class="indent">When you use this feature on a creature or object that does not have any unexpended spell slots, it fails, but you do not expend the use of this feature.</p>
+    </description>
+    <sheet>
+      <description usage="1/Long Rest" action="Action">Touch a creature or magic item to steal an unexpended spell slot of 5th-level or higher, gaining it yourself if you have capactity. If you do not, you temporarily have that spell slot for 1 minute. Usage is not expended if used on an entity without unexpended spell slots.</description>
+    </sheet>
+  </element>
+
+  <element name="Arcana Domain (Alternate)" type="Archetype" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA">
+    <supports>Divine Domain</supports>
+    <description>
+      <p>The Arcana Domain for the Cleric was originally published in the Sword Coast Adventurer's Guide, and is widely accepted as an underwhelming subclass for the Cleric. The Alternate Arcana Domain is an attempt to bring the Divine Domain up to par with other officially published Cleric subclasses.</p>
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_ARCANA_DOMAIN_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_ARCANA_INITIATE" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_CHANNEL_DIVINITY_ARCANE_ABJURATION" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_SPELL_BREAKER" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_POTENT_SPELLCASTING" />
+      <div element="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_ARCANE_MASTERY" />
+    </description>
+    <sheet display="false">
+      <description>The Alternate Arcana Domain is an attempt to bring the Divine Domain up to par with other officially published Cleric subclasses.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_ARCANA_DOMAIN_SPELLS" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_ARCANA_INITIATE" level="1"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_CHANNEL_DIVINITY_ARCANE_ABJURATION" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_SPELL_BREAKER" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_POTENT_SPELLCASTING" level="8"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_ARCANE_MASTERY" level="17"/>
+    </rules>
+  </element>
+
+  <element name="Arcana Domain Spells" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_ARCANA_DOMAIN_SPELLS">
+    <description>
+      <p>You always have the spells from the table below prepared once you reach certain levels in this class. See the Divine Domain class feature for how Domain Spells work.</p>
+      <p class="indent">When you gain a Cleric level, you can replace one spell from this feature with an abjuration, transmutation, or divination spell of the same level from the Wizard spell list</p>
+      <table>
+        <thead>
+          <tr><td>Cleric Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>magic missile, shield</em></td></tr>
+        <tr><td>3rd</td><td><em>magic weapon, rope trick</em></td></tr>
+        <tr><td>5th</td><td><em>counterspell, tiny servant<sup>XGTE</sup></em></td></tr>
+        <tr><td>7th</td><td><em>arcane eye, resilient sphere</em></td></tr>
+        <tr><td>9th</td><td><em>arcane hand, wall of force</em></td></tr>
+      </table>
+    </description>
+    <sheet>
+      <description>You can replace a spell from this feature with an abjuration, transmutation, or divination spell from the Wizard spell list of the same level.</description>
+    </sheet>
+    <rules>
+        <select type="Spell" name="1st Additional Spell (Arcana Domain)" supports="1,(Abjuration||Transmutation,Divination),Wizard||Magic Missile" level="1" default="ID_PHB_SPELL_MAGIC_MISSILE" spellcasting="Cleric" allowReplace="false" />
+        <select type="Spell" name="1st Additional Spell (Arcana Domain)" supports="1,(Abjuration||Transmutation,Divination),Wizard||Shield" level="1" default="ID_PHB_SPELL_SHIELD" spellcasting="Cleric" allowReplace="false" />
+        <select type="Spell" name="1st Additional Spell (Arcana Domain)" supports="2,(Abjuration||Transmutation,Divination),Wizard||Magic Weapon" level="3" default="ID_LASERLL_SPELL_MAGIC_WEAPON" spellcasting="Cleric" allowReplace="false" />
+        <select type="Spell" name="1st Additional Spell (Arcana Domain)" supports="2,(Abjuration||Transmutation,Divination),Wizard||Rope Trick" level="3" default="ID_PHB_SPELL_ROPE_TRICK" spellcasting="Cleric" allowReplace="false" />
+        <select type="Spell" name="1st Additional Spell (Arcana Domain)" supports="3,(Abjuration||Transmutation,Divination),Wizard||Counterspell" level="5" default="ID_PHB_SPELL_COUNTERSPELL" spellcasting="Cleric" allowReplace="false" />
+        <select type="Spell" name="1st Additional Spell (Arcana Domain)" supports="3,(Abjuration||Transmutation,Divination),Wizard||Tiny Servant" level="5" default="ID_XGTE_SPELL_TINY_SERVANT" spellcasting="Cleric" allowReplace="false" />
+        <select type="Spell" name="1st Additional Spell (Arcana Domain)" supports="4,(Abjuration||Transmutation,Divination),Wizard||Arcane Eye" level="7" default="ID_PHB_SPELL_ARCANE_EYE" spellcasting="Cleric" allowReplace="false" />
+        <select type="Spell" name="1st Additional Spell (Arcana Domain)" supports="4,(Abjuration||Transmutation,Divination),Wizard||Otilukes Resilient Sphere" level="7" default="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" spellcasting="Cleric" allowReplace="false" />
+        <select type="Spell" name="1st Additional Spell (Arcana Domain)" supports="2,(Abjuration||Transmutation,Divination),Wizard||Bigbys Hand" level="9" default="ID_PHB_SPELL_BIGBYS_HAND" spellcasting="Cleric" allowReplace="false" />
+        <select type="Spell" name="1st Additional Spell (Arcana Domain)" supports="2,(Abjuration||Transmutation,Divination),Wizard||Wall of Force" level="9" default="ID_LASERLL_SPELL_WALL_OF_FORCE" spellcasting="Cleric" allowReplace="false" />
+      </rules>
+  </element>
+
+  <append id="ID_PHB_SPELL_MAGIC_MISSILE">
+    <supports>Magic Missile</supports>
+  </append>
+  <append id="ID_PHB_SPELL_SHIELD">
+    <supports>Shield</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_MAGIC_WEAPON">
+    <supports>Magic Weapon</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ROPE_TRICK">
+    <supports>Rope Trick</supports>
+  </append>
+  <append id="ID_PHB_SPELL_COUNTERSPELL">
+    <supports>Counterspell</supports>
+  </append>
+  <append id="ID_XGTE_SPELL_TINY_SERVANT">
+    <supports>Tiny Servant</supports>
+  </append>
+  <append id="ID_PHB_SPELL_ARCANE_EYE">
+    <supports>Arcane Eye</supports>
+  </append>
+  <append id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE">
+    <supports>Otilukes Reslient Sphere</supports>
+  </append>
+  <append id="ID_PHB_SPELL_BIGBYS_HAND">
+    <supports>Bigbys Hand</supports>
+  </append>
+  <append id="ID_LASERLL_SPELL_WALL_OF_FORCE">
+    <supports>Wall of Force</supports>
+  </append>
+
+  <element name="Arcane Initiate" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_ARCANE_INITIATE">
+    <description>
+      <p>You gain proficiency in Arcana, and you learn two cantrips from the Wizard spell list. They count as Cleric spells for you, but they don't count against your number of Cantrips Known</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+      <select type="Spell" name="Cantrip (Arcane Initiate)" supports="Wizard,0" spellcasting="Cleric" />
+      <select type="Spell" name="Cantrip (Arcane Initiate)" supports="Wizard,0" spellcasting="Cleric" />
+    </rules>
+  </element>
+
+  <element name="Channel Divinity: Arcane Abjuration" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_CHANNEL_DIVINITY_ARCANE_ABJURATION">
+    <supports>Heretic Channel Divinity</supports>
+    <description>
+      <p>As an action, you can hold aloft your holy symbol and attempt to turn one celestial, elemental, fey, or fiend that can see or hear you within 30 feet. It must succeed on a Wisdom saving throw or be turned as if by your Turn Undead feature.</p>
+      <p class="indent">As you gain levels in this class, this Channel Divinity can destroy a celestial, elemental, fey, or fiend if its CR is equal to or less than the CR of your Destroy Undead feature.</p>
+    </description>
+    <sheet>
+      <description alt="Impulsive Infatuation" action="Action" usage="Channel Divinity">Force a celestial, elemental, fey, or fiend within 30 ft. to make a Wisdom saving throw or be turned as if by Turn Undead. It destroys targets with CRs equal to or less than the CR of Destroy Undead.</description>
+    </sheet>
+  </element>
+
+  <element name="Spell Breaker" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_SPELL_BREAKER">
+    <description>
+      <p>Your magic dispels all but the most potent curses and spells. When you restore hit points to a creature with a Cleric spell, you can also end a spell of your choice affecting that creature of a level equal to the spell slot you expended or lower.</p>
+    </description>
+    <sheet>
+      <description>When you restore hit points to a creature with a Cleric spell, you can also end a spell affecting it equal to or lower than the expended spell slot.</description>
+    </sheet>
+  </element>
+
+  <element name="Potent Spellcasting" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_POTENT_SPELLCASTING">
+    <description>
+      <p>Your divine knowledge of the arcane empowers your spell.When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll.</p>
+    </description>
+    <sheet>
+      <description>+{{wisdom:modifier}} to Cleric cantrip damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Arcane Mastery" type="Archetype Feature" source="laserllama's Divine Domains" id="ID_LASERLL_ARCHETYPE_CLERIC_ARCANA_ARCANE_MASTERY">
+    <description>
+      <p>Your god grants you an understanding of arcane magic rivals that of the most powerful archmages. You add one spell of your choice of 6th-level, 7th-level, 8th-level, and 9th-level from the Wizard spell list to your list of Arcana Domain spells.</p>
+      <p class="indent">However, these spells must be chosen from the abjuration, divination, or transmutation schools of magic.</p>
+      <p class="indent">Like the rest of your Arcana Domain Spells, each time you gain a level in this class, you can replace one of the spells you gained from this feature with another spell of the same level from the Wizard spell list, from the spell schools above.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <select type="Spell" name="Spell (Arcane Mastery)" supports="Wizard,6" spellcasting="Cleric" />
+      <select type="Spell" name="Spell (Arcane Mastery)" supports="Wizard,7" spellcasting="Cleric" />
+      <select type="Spell" name="Spell (Arcane Mastery)" supports="Wizard,8" spellcasting="Cleric" />
+      <select type="Spell" name="Spell (Arcane Mastery)" supports="Wizard,9" spellcasting="Cleric" />
+    </rules>
+  </element>
+
+</elements>

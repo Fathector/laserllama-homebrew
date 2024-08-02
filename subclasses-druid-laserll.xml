@@ -1,0 +1,1509 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+      <name></name>
+      <update version="2.1.0">
+          <file name="subclasses-druid-laserll.xml" url="tmp.xml" />
+      </update>
+  </info>
+
+  <element name="Circle of the Ancients" type="Archetype" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS">
+    <supports>Druid Circle</supports>
+    <description>
+      <p>Deep in the unexplored jungles of the world, lizardfolk tribes are led by a fearsome Circle of Druids that worship ancient reptiles known as dinosaurs. Members of this Circle draw upon the memory of these ancient beasts that flows within their own blood to strike fear into the hearts of their foes.</p>
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_CIRCLE_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_ANCIENT_FORMS" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_PRIMITIVE_ADAPTATIONS" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_PRIMAL_STRIKES" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_DREADFUL_WILD_SHAPE" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_MONSTROUS_FORM" />
+    </description>
+    <sheet display="false">
+      <description>Druids of the Ancients draw upon the memory of ancient beasts to strike fear into the hearts of their foes.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_CIRCLE_SPELLS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_ANCIENT_FORMS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_PRIMITIVE_ADAPTATIONS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_PRIMAL_STRIKES" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_DREADFUL_WILD_SHAPE" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_MONSTROUS_FORM" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Circle Spells" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_CIRCLE_SPELLS">
+		<description>
+			<p>When you reach certain Druid levels, you gain access to the spells listed below. They count as Druid spells for you, and you always have them prepared, but they don't count against the number of spells you prepare each day.</p>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><em>cause fear<sup>XGTE</sup></em></td></tr>
+				<tr><td>3rd</td><td><em>enlarge/reduce</em></td></tr>
+				<tr><td>5th</td><td><em>fear</em></td></tr>
+				<tr><td>7th</td><td><em>dominate beast</em></td></tr>
+        <tr><td>9th</td><td><em>commune with nature</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_CAUSE_FEAR" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+  <element name="Ancient Forms" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_ANCIENT_FORMS">
+		<description>
+			<p>Whether by heritage or ceremony, your bloodline now bears the memory of ancient dinosaurs. As a bonus action, you can expend a use of Wild Shape to take the form of a dinosaur or another reptilian beast with a Challenge Rating as high as 1. You can ignore the Max. CR column of the Beast Shapes table, but you must abide by all other limitations.</p>
+      <p class="indent">You do not need to have seen a dinosaur before to Wild Shape into it. However, you are limited to Wild Shaping only into dinosaurs and their descendants: birds and reptiles. Examples include velociraptors, crocodiles, and vultures.</p>
+      <p class="indent">At 6th level, you can Wild Shape into an Ancient Form with a CR as high as your Druid level divided by 3, rounded down.</p>
+		</description>
+		<sheet>
+      <description action="Bonus Action" level="2">Expend a Wild Shape use to take the form of a dinosaur, reptilian beast, or bird with a CR of 1 or lower even if you have not seen it before.</description>
+      <description action="Bonus Action" level="6">Expend a Wild Shape use to take the form of a dinosaur, reptilian beast, or bird with a CR of 1/3 of your druid level ({{level:druid}}) or lower even if you have not seen it before.</description>
+      <description action="Bonus Action" level="10">Expend a Wild Shape use to take the form of a dinosaur, reptilian beast, or bird with a CR of 1/3 of your druid level ({{level:druid}}) or lower even if you have not seen it before; you can expend two Wild Shape uses to choose a form with a CR of half your druid level instead.</description>
+    </sheet>
+	</element>
+
+  <element name="Primitive Adaptation" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_PRIMITIVE_ADAPTATION">
+		<description>
+			<p>Your fingers elongate into savage claws which count as natural weapons and deal 1d6 slashing damage on hit. You also gain a climbing speed equal to your walking speed.</p>
+		</description>
+		<sheet>
+      <description>Your fingers grow into claws that count as natural weapons, dealing 1d6 slashing damage on hit.</description>
+    </sheet>
+    <rules>
+      <stat name="speed:climb" value="speed" bonus="base" />
+    </rules>
+	</element>
+
+  <element name="Primal Strikes" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_PRIMAL_STRIKES">
+		<description>
+			<p>You have learned to draw forth more of the ancient power in your blood. Your natural weapon attacks in your normal form and Ancient Form attacks count as magical for the sake of overcoming resistance and immunity to nonmagical attacks.</p>
+		</description>
+		<sheet>
+      <description>Your natural weapon attacks in your normal and Ancient Forms count as magical for overcoming resistances.</description>
+    </sheet>
+	</element>
+
+  <element name="Dreadful Wild Shape" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_DREADFUL_WILD_SHAPE">
+		<description>
+			<p>Your connection with the great reptiles of ancient days grows stronger. As a bonus action, you can expend two uses of Wild Shape to transform into an Ancient Form with a Challenge Rating equal to your Druid level divided by 2 (rounded down).</p>
+		</description>
+		<sheet display="false">
+    </sheet>
+	</element>
+
+  <element name="Monstrous Form" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_DREADFUL_MONSTTROUS_FORM">
+		<description>
+			<p>Beginning at 14th level, you can enhance your Ancient Form with druidic power. While in Ancient Form, you can cast the enlarge portion of enlarge/reduce, targeting only yourself, without expending a spell slot or material components.</p>
+      <p class="indent">You can cast enlarge/reduce in this way a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet>
+      <description usage="{{wisdom:modifier}}/Long Rest">Cast the enlarge portion of enlarge/reduce, on yourself, without expending a spell slot or material components.</description>
+    </sheet>
+	</element>
+
+  <element name="Circle of the Depths" type="Archetype" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_DEPTHS">
+    <supports>Druid Circle</supports>
+    <description>
+      <p>From the high mountain peaks to ancient forest groves, and to blistering deserts, Circles of Druids can be found in every environment. The strangest of these Druidic Circles is found in the darkest depths, where blind things gnaw at the roots of the world. Druids of the Depths spend their lives monitoring the strange ecosystems that exist in the deep and wield the aberrant powers that develop in the never-ending darkness.</p>
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_DEPTHS_ABERRANT_FORM" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_DEPTHS_CIRCLE_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_DEPTHS_ALIEN_STRIKES" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_DEPTHS_ABHORRENT_WILD_SHAPE" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_DEPTHS_ABERRANT_EVOLUTION" />
+    </description>
+    <sheet display="false">
+      <description>Druids of the Depths spend their lives monitoring the strange ecosystems that exist in the deep.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_CIRCLE_SPELLS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_ANCIENT_FORMS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_PRIMITIVE_ADAPTATIONS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_PRIMAL_STRIKES" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_DREADFUL_WILD_SHAPE" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_MONSTROUS_FORM" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Aberrant Form" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_DEPTHS_ABERRANT_FORM">
+		<description>
+			<p>The dark power of your Circle allows you to adopt aberrant beast forms. As a bonus action, you can expend a use of Wild Shape to transform into a beast with a Challenge Rating as high as 1. You can ignore the Max. CR column of the Beast Shapes table, but you must abide by all other limitations.</p>
+      <p class="indent">When you use Wild Shape in this way, you transform into the Aberrant Form of that beast. You use the beast's normal stat block, but it gains the sunlight sensitivity trait (as below), and one additional trait of your choice from the following list:</p>
+      <h5 class="caption">SUNLIGHT SENSITIVITY</h5>
+      <p>The beast has disadvantage on Wisdom (Perception) checks and attack rolls that rely on sight when the beast, its target, or whatever it is attempting to perceive is in direct sunlight.</p>
+      <h5 class="caption">AMPHIBIOUS SKIN</h5>
+      <p>The beast's skin becomes completely translucent. It gains a swimming speed of 10 feet, and it can breathe air and water.</p>
+      <h5 class="caption">ARACHNOID GRIP</h5>
+      <p>The beast sprouts additional insectoid legs. It gains a 30 foot climbing speed, and it can climb difficult surfaces, including upside down, without needing to make an ability check.</p>
+      <h5 class="caption">GNAWING HUNGER</h5>
+      <p>The beast grows serrated mouths at the end of each of its limbs. When it deals damage with a natural weapon attack, it gains temporary hit points equal to half the damage dealt.</p>
+      <h5 class="caption">INSECTILE CARAPACE</h5>
+      <p>The beast grows a chitinous shell or plates in place of its fur or scales. It gains a +2 bonus to its natural Armor Class.</p>
+      <h5 class="caption">PSIONIC AWAKENING</h5>
+      <p>The beast appears emaciated and its eyes become milky and white. You can cast your Circle of the Depths Spells as normal while in this form.</p>
+      <h5 class="caption">QUIVERING FLESH</h5>
+      <p>The beast's flesh quivers as if it is made of slime or viscous ooze. It can move through gaps as narrow as 1-inch wide without having to squeeze, without expending extra movement.</p>
+      <h5 class="caption">UNNATURAL SIGHT</h5>
+      <p>The beast has only empty sockets where its eyes would be. It cannot see normally or perceive things normally, but it gains blindsight out to a 10-foot radius.</p>
+		</description>
+		<sheet>
+      <description action="Bonus Action" level="2">Expend a Wild Shape use to take the form of a beast with a CR or 1 or lower you have seen before; it has the sunlight sensitivity trait and one additional trait from the Aberrant Form list.</description>
+      <description action="Bonus Action" level="6">Expend a Wild Shape use to take the form of a beast with a CR or 1/3 your Druid level ({{level:druid}}) or lower you have seen before; it has the sunlight sensitivity trait and one additional trait from the Aberrant Form list.</description>
+      <description action="Bonus Action" level="10">Expend a Wild Shape use to take the form of a beast with a CR or 1/3 your Druid level ({{level:druid}}) or lower you have seen before; it has the sunlight sensitivity trait and two additional traits from the Aberrant Form list; you can expend two Wild Shape uses to choose an aberration you have seen before of CR 5 or lower (no traits gained).</description>
+      <description action="Bonus Action" level="14">Expend a Wild Shape use to take the form of a beast with a CR or 1/3 your Druid level ({{level:druid}}) or lower you have seen before; it has three traits from the Aberrant Form list; you can expend two Wild Shape uses to choose an aberration you have seen before of CR 5 or lower (no traits gained).</description>
+    </sheet>
+	</element>
+
+  <element name="Circle Spells" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_DEPTHS_CIRCLE_SPELLS">
+		<description>
+			<p>When you reach certain Druid levels, you gain access to the spells listed below. They count as Druid spells for you, and you always have them prepared, but they don't count against the number of spells you prepare each day.</p>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><em>mind sliver<sup>TCOE</sup></em></td></tr>
+				<tr><td>3rd</td><td><em>mind whip<sup>TCOE</sup></em></td></tr>
+				<tr><td>5th</td><td><em>hunger of hadar</em></td></tr>
+				<tr><td>7th</td><td><em>evard's black tentacles</em></td></tr>
+        <tr><td>9th</td><td><em>telekinesis</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_MIND_SLIVER" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_MIND_WHIP" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HUNGER_OF_HADAR" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TELEKINESIS" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+  <element name="Alien Strikes" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_DEPTHS_ALIEN_STRIKES">
+		<description>
+			<p>Eldritch energies empower your aberrant transformations. The natural weapon attacks of your Aberrant Forms count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks.</p>
+      <p class="indent">In addition, you can Wild Shape into the Aberrant Form of any beast you have seen before with a Challenge Rating as high as your Druid level divided by 3 (rounded down).</p>
+		</description>
+		<sheet>
+      <description>Your natural weapon attacks in your normal and Aberrant Forms count as magical for overcoming resistances.</description>
+    </sheet>
+	</element>
+
+  <element name="Abhorrent Wild Shape" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_DEPTHS_ABHORRENT_WILD_SHAPE">
+		<description>
+			<p>You have forged a strange connection with the unnatural and alien creatures of the depths. As a bonus action, you can expend two uses of Wild Shape at the same time to take the form of an aberration you have seen with a CR of 5 or lower.</p>
+      <p class="indent">Moreover, when you use Aberrant Form to Wild Shape into the Aberrant Form of a beast, it gains two Aberrant Form traits of your choice (in addition to sunlight sensitivity).</p>
+		</description>
+    <sheet display="false">
+    </sheet>
+	</element>
+
+  <element name="Abhorrent Evolution" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_DEPTHS_ABHORRENT_EVOLUTION">
+		<description>
+			<p>Your Aberrant Forms have evolved to thrive in sunlight as well as darkness. When you Wild Shape into the Aberrant Form of a beast, it no longer gains the sunlight sensitivity feature, and it instead gains an additional Aberrant trait of your choice from the list (for a total of three traits).</p>
+		</description>
+		<sheet display="false">
+    </sheet>
+	</element>
+
+  <element name="Circle of Guardians" type="Archetype" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS">
+    <supports>Druid Circle</supports>
+    <description>
+      <p>While all Druids forge a relationship with the natural world, those who join the Circle of Guardians dedicate their lives to protecting the elder forests and sacred groves that serve as sources of druidic magic. Known simply as Guardians, these Druids are as stalwart and resilient as the trees they defend.</p>
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_ELDER_LIMBS" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_CIRCLE_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_GUARDIAN_FORM" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_ARBOREAL_STRIKES" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_GRASP_OF_THE_FOREST" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_VERDANT_MASTERY" />
+    </description>
+    <sheet display="false">
+      <description>Guardians are as stalwart and resilient as the trees they defend.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_ELDER_LIMBS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_CIRCLE_SPELLS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_GUARDIAN_FORM" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_ARBOREAL_STRIKES" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_GRASP_OF_THE_FOREST" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_VERDANT_MASTERY" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Elder Limbs" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_ELDER_LIMBS">
+		<description>
+			<p>The magic of the elder forest you guard empowers your body with primeval power. Your unarmed strikes deal bludgeoning damage equal to 1d8 + your Strength modifier on hit.</p>
+      <p>Moreover, when you hit a creature with an unarmed strike, you can expend a spell slot to cast ensnaring strike on your target as part of your unarmed strike attack.</p>
+		</description>
+		<sheet>
+      <description>Your unarmed strikes deal 1d8 + {{strength:modifier}} on hit; you can expend a spell slot when hitting a creature with an unarmed strike to cast ensnaring strike as part of the strike.</description>
+    </sheet>
+	</element>
+
+  <element name="Circle Spells" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_CIRCLE_SPELLS">
+		<description>
+			<p>Your link with your primal grove grants you access to certain spells. When you reach certain Druid levels, you gain access to the spells in the table below. They count as Druid spells for you, and you always have them prepared, but they don't count against the total number of spells you prepare each day.</p>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><em>compelled duel, ensnaring strike</em></td></tr>
+				<tr><td>3rd</td><td><em>earthbind<sup>XGTE</sup>, warding bond</em></td></tr>
+				<tr><td>5th</td><td><em>erupting earth<sup>XGTE</sup>, plant growth</em></td></tr>
+				<tr><td>7th</td><td><em>aura of life, grasping vine</em></td></tr>
+        <tr><td>9th</td><td><em>tree stride, wrath of nature<sup>XGTE</sup></em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMPELLED_DUEL" level="2" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_ENSNARING_STRIKE" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_EARTHBIND" level="3" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ERUPTING_EARTH" level="5" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_PLANT_GROWTH" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_LIFE" level="7" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_GRASPING_VINE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TREE_STRIDE" level="9" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_XGTE_SPELL_WRATH_OF_NATURE" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+  <element name="Guardian Form" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_GUARDIAN_FORM">
+		<description>
+			<p>The primordial forests you protect can lend you their elder powers. As a bonus action, you can expend a use of Wild Shape and transform into a treelike Guardian Form, which grants you the following benefits for 10 minutes:</p>
+      <ul>
+        <li>Your flesh is covered in bark. Your Armor Class equals 10 + your Constitution modifier + your Wisdom modifier.</li>
+        <li>As a bonus action, you can grant yourself temporary hit points equal to your Wisdom modifier (minimum of 1).</li>
+        <li>The reach of your unarmed strikes increases by 5 feet.</li>
+        <li>You can use your Wisdom, in place of Strength, for the attack and damage rolls for your unarmed strikes.</li>
+      </ul>
+      <p class="indent">Your Guardian Form transformation ends early if you are reduced to 0 hit points, or you use a bonus action on your turn to revert to your normal form.</p>
+		</description>
+		<sheet>
+      <description action="Bonus Action" level="2">Expend a Wild Shape use to enter Guardian Form for 10 minutes, or until you are reduced to 0 hit points or end it with another bonus action. Gain the following:&#13;&#10;Your AC is {{guardian form ac}};&#13;&#10;As a bonus action you can crant yourself {{wisdom:modifier}} temporary hit points;&#13;&#10;Your unarmed strike reach increases by 5 ft.;&#13;&#10;You can use Wisdom instead of Strength for unarmed strike attack and damage rolls</description>
+      <description action="Bonus Action" level="14">Expend a Wild Shape use to enter Guardian Form for 1 hr., or until you are reduced to 0 hit points or end it with another bonus action. Gain the following:&#13;&#10;You grow one size;&#13;&#10;Your AC is {{guardian form ac}};&#13;&#10;As a bonus action you can crant yourself {{wisdom:modifier}} temporary hit points;&#13;&#10;Your unarmed strike reach increases by 5 ft.;&#13;&#10;You can use Wisdom instead of Strength for unarmed strike attack and damage rolls;&#13;&#10;You resist all bludgeoning, piercing, and slashing damage;&#13;&#10;You can speak to plants in Druidic</description>
+    </sheet>
+    <rules>
+      <stat name="guardian form ac" value="10" />
+      <stat name="guardian form ac" value="constitution:modifier" />
+      <stat name="guardian form ac" value="wisdom:modifier" />
+    </rules>
+	</element>
+
+  <element name="Arboreal Strikes" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_ARBOREAL_STRIKES">
+		<description>
+			<p>The elder grove you defend enhances your combat abilities. You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your Druid cantrips in place of one of those attacks.</p>
+      <p class="indent">Also, your unarmed strikes count as magic for the sake of overcoming resistance and immunity to nonmagical attacks.</p>
+		</description>
+		<sheet>
+      <description>You can cast a cantrip in place of one of your attacks.&#13;&#10;Your unarmed strikes count as magical for overcoming resistances.</description>
+    </sheet>
+    <rules>
+  	   <stat name="extra attack:count" value="2" level="6" bonus="extra attack" />
+    </rules>
+	</element>
+
+  <element name="Grasp of the Forest" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_GRASP_OF_THE_FOREST">
+		<description>
+			<p>Your elder magic stimulates wild growth. As an action, you can expend a use of Wild Shape to cast plant growth. When you do, you can choose a number of creatures equal to your Wisdom modifier (minimum of 1) that can ignore the difficult terrain created, as the plant move and allow them to pass by.</p>
+      <div class="reference">
+				<div element="ID_PHB_SPELL_PLANT_GROWTH" />
+			</div>
+		</description>
+		<sheet>
+      <description action="Action">Expend a Wild Shape use to cast plant growth, choosing {{wisdom:modifier}} creatures that can ignore the created difficult terrain.</description>
+    </sheet>
+	</element>
+
+  <element name="Verdant Mastery" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_VERDANT_MASTERY">
+		<description>
+			<p>Your body is completely suffused with elder druidic magic. When you transform into Guardian Form, you grow by one size category, for example from Medium to Large, and you resemble an ancient treant. You also gain resistance to all bludgeoning, piercing, poison, and slashing damage.</p>
+      <p class="indent">Finally, the duration of your Guardian Form transformation increases to 1 hour, and while you are in Guardian Form, you can speak to plants as if you were under the effects of the speak to plants spell, so long as you speak in Druidic.</p>
+		</description>
+		<sheet display="false">
+    </sheet>
+	</element>
+
+  <element name="Circle of the Harvest" type="Archetype" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_HARVEST">
+    <supports>Druid Circle</supports>
+    <description>
+      <p>The cyclical nature of life is a central belief of every Druid, no matter their Circle. However, to members of the Circle of the Harvest, this cycle is of utmost importance. They stand as the protectors of natural law and look to destroy any who would violate the cycle of life with necromancy or other dark magic.</p>
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_HARVEST_DRUIDIC_AVENGER" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_HARVEST_HARVEST_SCYTHE" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_HARVEST_EXTRA_ATTACK" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_HARVEST_MANTLE_OF_DEFENSE" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_HARVEST_CULL_THE_UNNATURAL" />
+    </description>
+    <sheet display="false">
+      <description>Druids of the Harvest are the protectors of natural law and look to destroy any who would violate the cycle of life.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_HARVEST_DRUIDIC_AVENGER" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_HARVEST_HARVEST_SCYTHE" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_CLASS_FEATURE_MAGUS_EXTRA_ATTACK" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_HARVEST_MANTLE_OF_DEFENSE" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_HARVEST_CULL_THE_UNNATURAL" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Druidic Avenger" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_HARVEST_DRUIDIC_AVENGER">
+		<description>
+			<p>You have taken up the ancient mantle of the Druidic Avenger. As a bonus action, you can expend a use of your Wild Shape to transform into your Avenger Form. While in this Form, you retain your game statistics, but you gain the benefits below:</p>
+      <ul>
+        <li>Your walking speed increases by 10 feet.</li>
+        <li>So long as you are not wearing medium or heavy armor or wielding a shield, you gain a bonus to your Armor Class equal to your Wisdom modifier (minimum of +1).</li>
+        <li>When you make a Constitution saving throw to maintain your concentration, you gain a bonus to your roll equal to your Wisdom modifier (minimum of +1).</li>
+      </ul>
+      <p class="indent">This Form lasts for 1 minute. It ends early if you are incapacitated or you end it as a bonus action.</p>
+		</description>
+		<sheet>
+      <description action="Bonus Action" level="2">Expend a Wild Shape use to transform into your Avenger Form, maintaining your stats; it lasts for 1 minute or until you are incapacitated or end it as a bonus action. You gain +10 ft. walking speed, +{{wisdom:modifier}} AC when not not wearing medium or heavy armor or wielding a shield, and +{{wisdom:modifier}} to Constitution saving throws to maintain concentration.</description>
+      <description action="Bonus Action" level="14">Expend a Wild Shape use to transform into your Avenger Form, maintaining your stats; it lasts for 1 minute or until you are incapacitated or end it as a bonus action. You gain +10 ft. walking speed, +{{wisdom:modifier}} AC when not not wearing medium or heavy armor or wielding a shield, +{{wisdom:modifier}} to Constitution saving throws to maintain concentration, and resistance to necrotic damage..</description>
+    </sheet>
+	</element>
+
+  <element name="Harvest Scythe" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_HARVEST_HARVEST_SCYTHE">
+		<description>
+			<p>Over the course of 1 hour, which can be during a short or long rest, you can perform an ancient ritual to conjure a Harvest Scythe. It is a magic weapon with the finesse and versatile properties and deals 1d8 (1d10) slashing damage on hit. This Scythe can be used as a spellcasting focus by you, and you gain the following benefits while you wield it:</p>
+      <ul>
+        <li>You know chill touch. It counts as a Druid spell for you, but it doesn't count against your Cantrips Known.</li>
+        <li>You always have inflict wounds prepared. It counts as a Druid spell for you, but it doesn't count against the total number of Druid spells you can prepare each day.</li>
+      </ul>
+      <p class="indent">If you lose your Scythe, you can perform a 1-hour ritual and conjure another, and the previous Scythe turns to ash.</p>
+      <div class="reference">
+				<div element="ID_PHB_SPELL_CHILL_TOUCH" />
+			</div>
+      <div class="reference">
+				<div element="ID_PHB_SPELL_INFLICT_WOUNDS" />
+			</div>
+		</description>
+		<sheet>
+      <description level="2">Conjure a Harvest Scythe over 1 hr., which can be during a rest; you can only have one at a time. It is a magic, versatile, finesse weapon that deals 1d8 (1d10) slashing damage on hit that you can use as a spellcasting focus. While wielding it, you know chill touch and inflict wounds, and always have them prepared.</description>
+      <description level="14">Conjure a Harvest Scythe over 1 hr., which can be during a rest; you can only have one at a time. It is a magic, versatile, finesse weapon that deals 1d8 (1d10) slashing damage on hit, with an additional +{{wisdom:modifier) damage if used in Avenger Form. You can use it as a spellcasting focus. While wielding it, you know chill touch and inflict wounds, and always have them prepared.</description>
+    </sheet>
+	</element>
+
+  <element name="Extra Attack" type="Archetype Feature" source="laserllama's Psion" id="ID_LASERLL_ARCHETYPE_DRUID_HARVEST_EXTRA_ATTACK">
+    <description>
+      <p>You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your Druid cantrips in place of one of those attacks.</p>
+    </description>
+    <sheet>
+      <description>You can cast a cantrip in place of one of your attacks.</description>
+    </sheet>
+    <rules>
+  	   <stat name="extra attack:count" value="2" level="6" bonus="extra attack" />
+    </rules>
+  </element>
+
+  <element name="Mantle of Defense" type="Archetype Feature" source="laserllama's Psion" id="ID_LASERLL_ARCHETYPE_DRUID_HARVEST_MANTLE_OF_DEFENSE">
+    <description>
+      <p>You can channel druidic magic to absorb incoming blows As a reaction when you take damage in your Avenger Form, you can expend a spell slot to reduce the incoming damage by five times the level of the spell slot you expended.</p>
+    </description>
+    <sheet>
+      <description action="Reaction">When in Avenger form, expend a spell slot when you take damage to reduce it by 5 times to slot level expended.</description>
+    </sheet>
+  </element>
+
+  <element name="Cull the Unnatural" type="Archetype Feature" source="laserllama's Psion" id="ID_LASERLL_ARCHETYPE_DRUID_HARVEST_CULL_THE_UNNATURAL">
+    <description>
+      <p>Your desire to destroy the enemies of nature empowers your attacks. You add your Wisdom modifier (minimum of +1) to the damage of any attacks you make with your Harvest Scythe while you are in your Avenger Form.</p>
+      <p class="indent">Finally, your ancient magic grants you resistance to unnatural powers. you gain resistance to necrotic damage when you are in your Avenger Form.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+  </element>
+
+  <element name="Circle of Scales" type="Archetype" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES">
+    <supports>Druid Circle</supports>
+    <description>
+      <p>While most Druids protect places of natural power or wield the forces of nature, some form Circles in service of ancient dragons. In an effort to defend their lair, elder dragons will bestow some of their power upon Druids who maintain its territory. The older the dragon, the larger its Druidic Circle.</p>
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_SCALES_CIRCLE_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_SCALES_DRACONIC_WILD_SHAPE" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_SCALES_INFUSED_STRIKES" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_SCALES_TERRIFYING_WILD_SHAPE" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_SCALES_ELDER_POWER" />
+    </description>
+    <sheet display="false">
+      <description>Druids of Scales are in service of ancient dragons.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_CIRCLE_SPELLS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_DRACONIC_WILD_SHAPE" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_INFUSED_STRIKES" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_TERRIFYING_WILD_SHAPE" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_ELDER_POWER" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Circle Spells" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_CIRCLE_SPELLS">
+		<description>
+			<p>Your elder dragon grants you access to certain spells. When you reach certain Druid levels, you gain access to the spells listed below. They count as Druid spells for you, and you always have them prepared, but they don't count against the number of spells you prepare each day.</p>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><em>thaumaturgy</em></td></tr>
+				<tr><td>3rd</td><td><em>dragon's breath<sup>XGTE</sup></em></td></tr>
+				<tr><td>5th</td><td><em>fear</em></td></tr>
+				<tr><td>7th</td><td><em>elemental bane<sup>XGTE</sup></em></td></tr>
+        <tr><td>9th</td><td><em>dominate person</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_DRAGONS_BREATH" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ELEMENTAL_BANE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+  <element name="Gift of the Elder Dragon" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON">
+    <description>
+      <p>When you join this Circle you pledge yourself in service to a great dragon. Choose the scale color of the dragon you serve. You gain resistance to the damage type associated with your elder dragon's Element on the table below.</p>
+      <table>
+        <thead>
+          <tr><td>Color</td><td>Element</td><td>Color</td><td>Element</td></tr>
+        </thead>
+        <tr><td>Amethyst</td><td>Force</td><td>Gold</td><td>Fire</td></tr>
+        <tr><td>Black</td><td>Acid</td><td>Green</td><td>Poison</td></tr>
+        <tr><td>Blue</td><td>Lightning</td><td>Red</td><td>Fire</td></tr>
+        <tr><td>Brass</td><td>Fire</td><td>Sapphire</td><td>Thunder</td></tr>
+        <tr><td>Bronze</td><td>Lightning</td><td>Silver</td><td>Cold</td></tr>
+        <tr><td>Copper</td><td>Acid</td><td>Steel</td><td>Acid</td></tr>
+        <tr><td>Crystal</td><td>Radiant</td><td>Topaz</td><td>Necrotic</td></tr>
+        <tr><td>Emerald</td><td>Psychic</td><td>White</td><td>Cold</td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+    </sheet>
+    <rules>
+      <select type="Archetype Feature" name="Gift of the Elder Dragon Scale Color" supports="Gift of the Elder Dragon" />
+    </rules>
+  </element>
+
+  <element name="Amethyst" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON_AMETHYST">
+    <compendium display="false" />
+		<description />
+		<sheet display="false" />
+    <rules>
+      <stat inline="true" name="dragon gift color" value="amethyst" />
+      <stat inline="true" name="dragon gift damage type" value="force" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+    </rules>
+	</element>
+
+  <element name="Black" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON_BLACK">
+    <compendium display="false" />
+		<description />
+		<sheet display="false" />
+    <rules>
+      <stat inline="true" name="dragon gift color" value="black" />
+      <stat inline="true" name="dragon gift damage type" value="acid" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+    </rules>
+	</element>
+
+  <element name="Blue" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON_BLUE">
+    <compendium display="false" />
+		<description />
+		<sheet display="false" />
+    <rules>
+      <stat inline="true" name="dragon gift color" value="blue" />
+      <stat inline="true" name="dragon gift damage type" value="lightning" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+    </rules>
+	</element>
+
+  <element name="Brass" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON_BRASS">
+    <compendium display="false" />
+		<description />
+		<sheet display="false" />
+    <rules>
+      <stat inline="true" name="dragon gift color" value="brass" />
+      <stat inline="true" name="dragon gift damage type" value="fire" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+    </rules>
+	</element>
+
+  <element name="Bronze" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON_BRONZE">
+    <compendium display="false" />
+		<description />
+		<sheet display="false" />
+    <rules>
+      <stat inline="true" name="dragon gift color" value="bronze" />
+      <stat inline="true" name="dragon gift damage type" value="lightning" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+    </rules>
+	</element>
+
+  <element name="Copper" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON_COPPER">
+    <compendium display="false" />
+		<description />
+		<sheet display="false" />
+    <rules>
+      <stat inline="true" name="dragon gift color" value="copper" />
+      <stat inline="true" name="dragon gift damage type" value="acid" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+    </rules>
+	</element>
+
+
+  <element name="Crystal" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON_CRYSTAL">
+    <compendium display="false" />
+		<description />
+		<sheet display="false" />
+    <rules>
+      <stat inline="true" name="dragon gift color" value="crystal" />
+      <stat inline="true" name="dragon gift damage type" value="radiant" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+    </rules>
+	</element>
+
+  <element name="Emerald" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON_EMERALD">
+    <compendium display="false" />
+		<description />
+		<sheet display="false" />
+    <rules>
+      <stat inline="true" name="dragon gift color" value="emerald" />
+      <stat inline="true" name="dragon gift damage type" value="psychic" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+    </rules>
+	</element>
+
+  <element name="Gold" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON_GOLD">
+    <compendium display="false" />
+		<description />
+		<sheet display="false" />
+    <rules>
+      <stat inline="true" name="dragon gift color" value="gold" />
+      <stat inline="true" name="dragon gift damage type" value="fire" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+    </rules>
+	</element>
+
+  <element name="Green" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON_GREEN">
+    <compendium display="false" />
+		<description />
+		<sheet display="false" />
+    <rules>
+      <stat inline="true" name="dragon gift color" value="green" />
+      <stat inline="true" name="dragon gift damage type" value="poison" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+    </rules>
+	</element>
+
+  <element name="Red" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON_RED">
+    <compendium display="false" />
+		<description />
+		<sheet display="false" />
+    <rules>
+      <stat inline="true" name="dragon gift color" value="red" />
+      <stat inline="true" name="dragon gift damage type" value="fire" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+    </rules>
+	</element>
+
+  <element name="Sapphire" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON_SAPPHIRE">
+    <compendium display="false" />
+		<description />
+		<sheet display="false" />
+    <rules>
+      <stat inline="true" name="dragon gift color" value="sapphire" />
+      <stat inline="true" name="dragon gift damage type" value="thunder" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+    </rules>
+	</element>
+
+  <element name="Silver" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON_SILVER">
+    <compendium display="false" />
+		<description />
+		<sheet display="false" />
+    <rules>
+      <stat inline="true" name="dragon gift color" value="silver" />
+      <stat inline="true" name="dragon gift damage type" value="cold" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+    </rules>
+	</element>
+
+  <element name="Steel" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON_STEEL">
+    <compendium display="false" />
+		<description />
+		<sheet display="false" />
+    <rules>
+      <stat inline="true" name="dragon gift color" value="steel" />
+      <stat inline="true" name="dragon gift damage type" value="acid" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+    </rules>
+	</element>
+
+  <element name="Topaz" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON_TOPAZ">
+    <compendium display="false" />
+		<description />
+		<sheet display="false" />
+    <rules>
+      <stat inline="true" name="dragon gift color" value="topaz" />
+      <stat inline="true" name="dragon gift damage type" value="necrotic" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+    </rules>
+	</element>
+
+  <element name="White" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_GIFT_OF_THE_ELDER_DRAGON_WHITE">
+    <compendium display="false" />
+		<description />
+		<sheet display="false" />
+    <rules>
+      <stat inline="true" name="dragon gift color" value="white" />
+      <stat inline="true" name="dragon gift damage type" value="cold" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+    </rules>
+	</element>
+
+  <element name="Draconic Wild Shape" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_DRACONIC_WILD_SHAPE">
+		<description>
+			<p>The draconic power you have been gifted allows you to adopt more powerful forms. As a bonus action, you can use Wild Shape to transform into a beast with a Challenge Rating as high as 1. You can ignore the Max. CR column of the Beast Shapes table, but you must abide by all other limitations.</p>
+      <p class="indent">Also, when you use Wild Shape to transform into a beast, you can expend a spell slot of 1st-level or higher to empower your transformation with the draconic magic of your Circle, granting your beast form the following additional benefits:</p>
+      <ul>
+        <li>The beast is covered in a thin sheen of draconic scales that resemble those of the dragon you serve. The beast's Armor Class is equal to 13 + it's Dexterity modifier unless its natural Armor Class was already higher.</li>
+        <li>The beast gains resistance to the damage type associated with the Element of the elder dragon you serve.</li>
+        <li>The beast gains temporary hit points equal to five times the level of the spell slot you used to empower this form.</li>
+        <li>As a bonus action, you can expend a spell slot of 1st-level or higher to grant your beast form temporary hit points equal to five times the level of the spell slot you expend.</li>
+      </ul>
+      <p class="indent">Once you empower your Wild Shape in this way you must finish a short or long rest before you can do so again.</p>
+		</description>
+		<sheet>
+      <description action="Bonus Action" level="2">Expend a Wild Shape use to take the form of a beast with CR 1 or less. You can expend a spell slot to empower it as follows:&#13;&#10;It is covered in {{dragon gift color}} scales and has AC 13 + its dexterity modifier unless its natural AC was higher;&#13;&#10;It resists {{dragon gift damage type}} damage;&#13;&#10;it gains 5 times the expended slot's level in temporary hit points; you can use a bonus action to expend another spell slot and grant it 5 times that slot's level again</description>
+      <description action="Bonus Action" level="6">Expend a Wild Shape use to take the form of a beast with CR of 1/3 your Druid level ({{level:druid}}) or less. You can expend a spell slot to empower it as follows:&#13;&#10;It is covered in {{dragon gift color}} scales and has AC 13 + its dexterity modifier unless its natural AC was higher;&#13;&#10;It resists {{dragon gift damage type}} damage;&#13;&#10;it gains 5 times the expended slot's level in temporary hit points; you can use a bonus action to expend another spell slot and grant it 5 times that slot's level again</description>
+      <description action="Bonus Action" level="10">Expend a Wild Shape use to take the form of a beast with CR of 1/3 your Druid level ({{level:druid}}) or less, or two uses for a beast with CR 5 or less. If the form is a dragon with a breath weapon, it can deal {{dragon gift damage type}} instead. You can expend a spell slot to empower it as follows:&#13;&#10;It is covered in {{dragon gift color}} scales and has AC 13 + its dexterity modifier unless its natural AC was higher;&#13;&#10;It resists {{dragon gift damage type}} damage;&#13;&#10;it gains 5 times the expended slot's level in temporary hit points; you can use a bonus action to expend another spell slot and grant it 5 times that slot's level again</description>
+      <description action="Bonus Action" level="14">Expend a Wild Shape use to take the form of a beast with CR of 1/3 your Druid level ({{level:druid}}) or less, or two uses for a beast with CR 5 or less. If the form is a dragon with a breath weapon, it can deal {{dragon gift damage type}} instead. You can expend a spell slot to empower it as follows:&#13;&#10;It is covered in {{dragon gift color}} scales and has AC 13 + its dexterity modifier unless its natural AC was higher;&#13;&#10;It gains either 40 ft. flying or swimming speed&#13;&#10;It resists {{dragon gift damage type}} damage;&#13;&#10;it gains 5 times the expended slot's level in temporary hit points; you can use a bonus action to expend another spell slot and grant it 5 times that slot's level again</description>
+    </sheet>
+	</element>
+
+  <element name="Infused Strikes" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_INFUSED_STRIKES">
+		<description>
+			<p>When you empower your Wild Shape transformation with draconic magic, your beast's natural weapon attacks deal the damage type of your dragon's Element.</p>
+      <p class="indent">In addition, you can now Wild Shape into a beast with a CR as high as your Druid level divided by 3, rounded down.</p>
+		</description>
+		<sheet>
+      <description>Your beast's natural weapon attacks deal {{dragon gift damage type}} damage.</description>
+    </sheet>
+	</element>
+
+  <element name="Terrifying Wild Shape" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_TERRIFYING_WILD_SHAPE">
+		<description>
+			<p>Your mastery over the draconic magic you wield allows you to take on the form of a true dragon. As a bonus action, you can expend two uses of Wild Shape at the same time to take the form of a dragon with a CR of 5 or lower.</p>
+      <p class="indent">If you Wild Shape into a dragon with a breath weapon, you can choose for its breath weapon to deal the damage type of your elder dragon's Element in place of the normal damage.</p>
+		</description>
+		<sheet display="false">
+    </sheet>
+	</element>
+
+  <element name="Elder Power" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SCALES_ELDER_POWER">
+		<description>
+			<p>You have become one of the most loyal servants of your elder dragon and are given increased power. When you empower your Wild Shape transformation with draconic magic, the beast sprouts a leathery pair of draconic wings and gains a 40-foot flying or swimming speed (your choice).</p>
+		</description>
+		<sheet description="false">
+    </sheet>
+	</element>
+
+  <element name="Circle of the Sower" type="Archetype" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER">
+    <supports>Druid Circle</supports>
+    <description>
+      <p>The Druid Circle that is most revered by civilized peoples is that of the Sowers. Folktales tell of an ancient druidic sage that guided mortals to the discovery of agriculture. Drawing on their mystical knowledge of the natural world, this Druid led ancient peoples to establish the first farms and towns.</p>
+      <p class="indent">Those who join the Circle of the Sower follow the example of that ancient sage. They wander the countryside and offer magical aid to farmers, gardeners, and all who till the soil.</p>
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_SOWER_WANDERING_SAGE" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_SOWER_MYSTIC_HARVEST" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_GUARDIANS_CIRCLE_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_SOWER_WILD_GROWTH" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_SOWER_ABUNDANT_HARVEST" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_SOWER_VERDANT_GRASP" />
+    </description>
+    <sheet display="false">
+      <description>Druids of the Sower wander the countryside and offer magical aid to farmers, gardeners, and all who till the soil.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_WANDERING_SAGE" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_MYSTIC_HARVEST" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_CIRCLE_SPELLS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_WILD_GROWTH" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_ABUNDANT_HARVEST" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_VERDANT_GRASP" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Wandering Sage" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_WANDERING_SAGE">
+		<description>
+			<p>You gain a mystical understanding of the natural cycle of life, growth, and death. You gain proficiency in Nature. Whenever you make an Intelligence (Nature) check you gain a bonus to your roll equal to your Wisdom modifier (minimum of +1).</p>
+		</description>
+		<sheet>
+      <description>+{{proficiency}} to Intelligence (Nature) checks.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+    </rules>
+	</element>
+
+  <element name="Mystic Harvest" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_MYSTIC_HARVEST">
+		<description>
+			<p>When you join this Circle, you learn to use druidic magic to produce wondrous fruits. As a bonus action, you can expend a use of Wild Shape to produce one Mystical Fruit from the list below in your empty hand. The Fruit can be eaten as an action. Any uneaten Fruit spoils after 1 minute.</p>
+      <p class="indent">When you use Wild Shape in this way, you transform into the Aberrant Form of that beast. You use the beast's normal stat block, but it gains the sunlight sensitivity trait (as below), and one additional trait of your choice from the following list:</p>
+      <h5 class="caption">INVIGORATING FRUIT</h5>
+      <p>The creature that eats this Fruit regains hit points equal to your Wisdom modifier + your Druid level. Any hit points over its hit point maximum become temporary hit points.</p>
+      <h5 class="caption">MYSTIC FRUIT</h5>
+      <p>The creature that eats this Fruit regains a single expended spell slot of a level equal to your Wisdom modifier or lower. Once a creature benefits from this Fruit it must complete a long rest before it can do so again.</p>
+      <h5 class="caption">REVITALIZING FRUIT</h5>
+      <p>The creature that eats this Fruit is instantly cured of one of the following conditions: blinded, deafened, paralyzed, petrified, poisoned, a reduction to an ability score or its hit point maximum, or its exhaustion is reduced by 1.</p>
+		</description>
+		<sheet>
+      <description action="Bonus Action">Expend a Wild Shape use produce one of the following Fruit in your hand, which can be eaten as an action and spoil after one minute.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_MYTHIC_HARVEST_INVIGORATING_FRUIT" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_MYTHIC_HARVEST_MYSTIC_FRUIT" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_MYTHIC_HARVEST_REVITALIZING_FRUIT" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_MYTHIC_HARVEST_INVIGORATING_FRUIT" level="10" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_MYTHIC_HARVEST_INVIGORATING_FRUIT" level="10" />
+    </rules>
+	</element>
+
+  <element name="Invigorating Fruit" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_MYTHIC_HARVEST_INVIGORATING_FRUIT">
+		<description>
+			<p>The creature that eats this Fruit regains hit points equal to your Wisdom modifier + your Druid level. Any hit points over its hit point maximum become temporary hit points.</p>
+		</description>
+		<sheet>
+      <description>The consumer regains {{invigorating fruit hp}}; any excess becomes temporary hit points.</description>
+    </sheet>
+    <rules>
+      <stat name="invigorating fruit hp" value="wisdom:modifier" />
+      <stat name="invigorating fruit hp" value="level:druid" />
+    </rules>
+	</element>
+
+  <element name="Invigorating Fruit" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_MYTHIC_HARVEST_INVIGORATING_FRUIT">
+		<description>
+			<p>The creature that eats this Fruit regains a single expended spell slot of a level equal to your Wisdom modifier or lower. Once a creature benefits from this Fruit it must complete a long rest before it can do so again.</p>
+		</description>
+		<sheet>
+      <description>The consumer regains a single spell slot of level {{wisdom:modifier}} or lower; it must complete a long rest before benefiting from this again.</description>
+    </sheet>
+	</element>
+
+  <element name="Invigorating Fruit" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_MYTHIC_HARVEST_INVIGORATING_FRUIT">
+		<description>
+			<p>The creature that eats this Fruit is instantly cured of one of the following conditions: blinded, deafened, paralyzed, petrified, poisoned, a reduction to an ability score or its hit point maximum, or its exhaustion is reduced by 1.</p>
+		</description>
+		<sheet>
+      <description>The consumer is cured of one condition: blinded, deafened, paralyzed, petrified, poisoned, ability score or hit point maximum reduction, or one exhaustion level.</description>
+    </sheet>
+	</element>
+
+  <element name="Invigorating Fruit" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_MYTHIC_HARVEST_INVIGORATING_FRUIT">
+		<description>
+			<p>The creature that eats this Fruit is instantly cured of one of the following conditions: blinded, deafened, paralyzed, petrified, poisoned, a reduction to an ability score or its hit point maximum, or its exhaustion is reduced by 1.</p>
+		</description>
+		<sheet>
+      <description>The consumer is cured of one condition: blinded, deafened, paralyzed, petrified, poisoned, ability score or hit point maximum reduction, or one exhaustion level.</description>
+    </sheet>
+	</element>
+
+  <element name="Emboldening Fruit" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_MYTHIC_HARVEST_EMBOLDENING_FRUIT">
+		<description>
+			<p>The next time the creature that eats this Fruit rolls a d20, it can choose to substitute its d20 roll with your Druid level.</p>
+		</description>
+		<sheet>
+      <description>The consumer can substitute its next d20 roll with {{level:druid}}.</description>
+    </sheet>
+	</element>
+
+  <element name="Primal Fruit" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_MYTHIC_HARVEST_PRIMAL_FRUIT">
+		<description>
+			<p>The creature that eats this Fruit is resistant to bludgeoning, piercing, and slashing damage for the next minute.</p>
+		</description>
+		<sheet>
+      <description>The consumer resists bludgeoning, piercing, and slashing damage for 1 minute.</description>
+    </sheet>
+	</element>
+
+  <element name="Wild Growth" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_WILD_GROWTH">
+    <description>
+      <p>You cause plants to blossom and thrive wherever you travel. When you take a short or long rest, the effects of the 8-hour casting of plant growth immediately take effect in the area around you, unless you choose to withhold them.</p>
+      <p class="indent">Your connection with plant life also grants you immunity to poison damage, the poisoned condition, and natural poisons.</p>
+    </description>
+    <sheet>
+      <description>After completing a rest the effects of 8-hour plant growth take effect unless you suppress them.&#13;&#10;You are immune to poisons.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISONED" />
+    </rules>
+  </element>
+
+  <element name="Immunity (Poisoned)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISONED">
+    <supports>Immunity</supports>
+  </element>
+
+  <element name="Abundant Harvest" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_ABUNDANT_HARVEST">
+		<description>
+			<p>You can use the magic of your Wild Shape to produce more potent produce. When you produce a Mystic Fruit you can choose from the following additional options:</p>
+      <p class="indent">When you use Wild Shape in this way, you transform into the Aberrant Form of that beast. You use the beast's normal stat block, but it gains the sunlight sensitivity trait (as below), and one additional trait of your choice from the following list:</p>
+      <h5 class="caption">EMBOLDENING FRUIT</h5>
+      <p>The next time the creature that eats this Fruit rolls a d20, it can choose to substitute its d20 roll with your Druid level.</p>
+      <h5 class="caption">PRIMAL FRUIT</h5>
+      <p>The creature that eats this Fruit is resistant to bludgeoning, piercing, and slashing damage for the next minute.</p>
+		</description>
+		<sheet display="false">
+    </sheet>
+	</element>
+
+  <element name="Verdant Grasp" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_VERDANT_GRASP">
+    <description>
+      <p>You have an unparalleled command over plant life. You can cast grasping vine without expending a spell slot a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+      <p class="indent">When you cast grasping vine, you can conjure two vines at once in separate locations within range of the spell. You can direct both vines at once with the same bonus action.</p>
+      <div class="reference">
+				<div element="ID_PHB_SPELL_GRASPING_VINE" />
+			</div>
+    </description>
+    <sheet>
+      <description usage="{{wisdom:modifier}}/Long Rest">Cast grasping vine without expending a spell slot; you can conjure two vines simultaneously in separate locations within the spell's range, and direct both at once with the same bonus action.</description>
+    </sheet>
+  </element>
+
+  <element name="Circle Spells" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SOWER_CIRCLE_SPELLS">
+    <description>
+      <p>Your link with your primal grove grants you access to certain spells. When you reach certain Druid levels, you gain access to the spells in the table below. They count as Druid spells for you, and you always have them prepared, but they don't count against the total number of spells you prepare each day.</p>
+      <table>
+        <thead>
+          <tr><td>Druid Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>2nd</td><td><em>entangle, goodberry</em></td></tr>
+        <tr><td>3rd</td><td><em>lesser restoration, spike growth</em></td></tr>
+        <tr><td>5th</td><td><em>create food and water, plant growth</em></td></tr>
+        <tr><td>7th</td><td><em>aura of life, grasping vine</em></td></tr>
+        <tr><td>9th</td><td><em>greater restoration, tree stride</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_ENTANGLE" level="2" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_GOODBERRY" level="2" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" level="3" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_SPIKE_GROWTH" level="3" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_CREATE_FOOD_AND_WATER" level="5" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_PLANT_GROWTH" level="5" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_AURA_OF_LIFE" level="7" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_GRASPING_VINE" level="7" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="9" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_TREE_STRIDE" level="9" spellcasting="Druid" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Circle of the Swarm" type="Archetype" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SWARM">
+    <supports>Druid Circle</supports>
+    <description>
+      <p>Druids defend every life, no matter how small or unseemly it may be. Some take this call more seriously than others and join a Circle of the Swarm. Often centered around sewers of great settlements or among festering swamps, these Druids have an affinity for vermin with many legs or gnawing teeth.</p>
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_SWARM_SWARMCALLER" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_SWARM_CIRCLE_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_SWARM_GREATER_SWARM" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_SWARM_EYES_OF_THE_SWARM" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_SWARM_FROM_MANY_ONE" />
+    </description>
+    <sheet display="false">
+      <description>Swarm Druids have an affinity for vermin with many legs or gnawing teeth.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SWARM_SWARMCALLER_INFESTATION" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SWARM_SWARMCALLER" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SWARM_CIRCLE_SPELLS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SWARM_GREATER_SWARM" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SWARM_EYES_OF_THE_SWARM" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_SWARM_FROM_MANY_ONE" level="14"/>
+    </rules>
+  </element>
+  <element name="Swarmcaller" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SWARM_SWARMCALLER_INFESTATION">
+		<description>
+			<p>The swarms of pests you defend are never far. You learn the <em>infestation</em> cantrip, but it does not count against your total number of Cantrips Known. When you cast <em>infestation</em>, you can target two creatures that are within 5 feet of each other, and when a creature fails its saving throw against this spell, you can choose which direction it moves.</p>
+      <p class="indent">Moreover, you can use a bonus action on your turn to use Wild Shape to turn into a swarm of beasts, such as a swarm of rats. When you do so, it gains the following benefits:</p>
+      <ul>
+        <li>It gains a number of bonus hit points equal to 1 + your Druid level.</li>
+        <li>It can add your Wisdom modifier to all ability checks, attack rolls, and saving throws</li>
+      </ul>
+		</description>
+		<sheet>
+      <description>When you cast infestation, you can target two creatures within 5 ft. of one another; when a creature fails its saving throw against it, you can choose the direction it moves.</description>
+    </sheet>
+    <rules>
+      <stat name="swarmcaller hp" value="1" />
+      <stat name="swarmcaller hp" value="level:druid" />
+    </rules>
+	</element>
+
+  <element name="Swarmcaller" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SWARM_SWARMCALLER">
+		<description>
+			<p>The swarms of pests you defend are never far. You learn the infestation cantrip, but it does not count against your total number of Cantrips Known. When you cast infestation, you can target two creatures that are within 5 feet of each other, and when a creature fails its saving throw against this spell, you can choose which direction it moves.</p>
+      <p class="indent">Moreover, you can use a bonus action on your turn to use Wild Shape to turn into a swarm of beasts, such as a swarm of rats. When you do so, it gains the following benefits:</p>
+      <ul>
+        <li>It gains a number of bonus hit points equal to 1 + your Druid level.</li>
+        <li>It can add your Wisdom modifier to all ability checks, attack rolls, and saving throws</li>
+      </ul>
+		</description>
+		<sheet>
+      <description action="Bonus Action" level="2">Use Wild Shape to turn into a swarm of beasts, which gains {{swarmcaller hp}} temporary hit points and can add {{wisdom:modifier}} to all ability checks, attack rolls, and saving throws it makes.</description>
+      <description action="Bonus Action" level="6">Use Wild Shape to turn into a swarm of beasts, which gains {{swarmcaller hp}} temporary hit points and can add {{wisdom:modifier}} to all ability checks, attack rolls, and saving throws it makes. You can cast infestation and your Circle spells even while Wild Shaped into a swarm.&#13;&#10;Your attacks in this form count as magical for overcoming resistances.</description>
+    </sheet>
+    <rules>
+      <stat name="swarmcaller hp" value="1" />
+      <stat name="swarmcaller hp" value="level:druid" />
+    </rules>
+	</element>
+
+  <element name="Circle Spells" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SWARM_CIRCLE_SPELLS">
+		<description>
+			<p>Your link with your primal grove grants you access to certain spells. When you reach certain Druid levels, you gain access to the spells in the table below. They count as Druid spells for you, and you always have them prepared, but they don't count against the total number of spells you prepare each day.</p>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><em>infestation, faerie fire, ray of sickness</em></td></tr>
+				<tr><td>3rd</td><td><em>blur, web</em></td></tr>
+				<tr><td>5th</td><td><em>gaseous form, slow</em></td></tr>
+				<tr><td>7th</td><td><em>arcane eye, giant insect</em></td></tr>
+        <tr><td>9th</td><td><em>commune with nature, insect plague</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_INFESTATION" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="2" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLUR" level="3" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_WEB" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GASEOUS_FORM" level="5" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" level="7" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_GIANT_INSECT" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" level="9" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_INSECT_PLAGUE" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+  <element name="Greater Swarm" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SWARM_GREATER_SWARM">
+		<description>
+			<p>You call and the swarm answers. While you are Wild Shaped into a swarm, you can cast infestation and your Circle Spells as normal, and their effects manifest as part of your swarm.</p>
+      <p class="indent">Also, your attacks while you are Wild Shaped into a swarm count as magical for the sake of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+		</description>
+		<sheet display="false">
+    </sheet>
+	</element>
+
+  <element name="Eyes of the Swarm" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SWARM_EYES_OF_THE_SWARM">
+		<description>
+			<p>Your vermin are always gathering information for you. When you finish a short or long rest, you gain information about the surrounding area as if you had cast commune with nature.</p>
+      <p class="indent">When cast in this way, the spell works even where nature has been replaced by construction, such as cities and towns.</p>
+		</description>
+		<sheet>
+      <description usage="1/Short Rest">After resting you gain information about your surroundings as if you had cast commune with nature, even in urban environments.</description>
+    </sheet>
+	</element>
+
+  <element name="From Many, One" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_SWARM_FROM_MANY_ONE">
+		<description>
+			<p>You and the multitudes you protect have become one being. When you are reduced to 0 hit points, but are not killed outright, you can expend a use of Wild Shape to turn into a swarm of beasts with a Challenge Rating of 1/2 or lower, and immediately move up to the swarm's walking, flying, or climbing speed without provoking opportunity attacks. Once you use this feature you must finish a long rest before you can use your Wild Shape in this way again</p>
+		</description>
+		<sheet>
+      <description usage="1/Long Rest">When reduced to 0 hit points but not killed outright, expend a Wild Shape use to turn into a swarm of beasts with  CR 1/2 or lower and immediately move up to its walking, climbing, or flying speed without triggering opportunity attacks.</description>
+    </sheet>
+	</element>
+
+  <element name="Circle of the Tempest" type="Archetype" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST">
+    <supports>Druid Circle</supports>
+    <description>
+      <p>Drawn to the most destructive forces of the natural world, the Tempest Druids wield the power of storms. They often view themselves as great defenders of nature and use their power to strike back when civilization encroaches upon the wilds. Theirs is the power of lightning, thunder, ice, and wind, and woe to any who stand against these acolytes of destruction.</p>
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_CIRCLE_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_NATURES_WRATH" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_TEMPESTUOUS_REBUKE" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_THUNDEROUS_STRIKE" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_TEMPESTUOUS_FORM" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_ONE_WITH_THE_STORM" />
+    </description>
+    <sheet display="false">
+      <description> Tempest Druids wield the power of storms, drawn to the most destructive forces of the natural world.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_CIRCLE_SPELLS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_NATURES_WRATH" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_TEMPESTUOUS_REBUKE" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_THUNDEROUS_STRIKE" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_TEMPESTUOUS_FORM" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_ONE_WITH_THE_STORM" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Circle Spells" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_CIRCLE_SPELLS">
+		<description>
+      <p class="indent">When you reach certain Druid levels, you gain access to the spells in the table below. They count as Druid spells for you, and you always have them prepared, but they do not count against the total number of spells you prepare each day.</p>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><em>fog cloud, thunderwave</em></td></tr>
+				<tr><td>3rd</td><td><em>shatter, warding wind<sup>XGTE</sup></em></td></tr>
+				<tr><td>5th</td><td><em>lightning bolt, thunder step<sup>XGTE</sup></em></td></tr>
+				<tr><td>7th</td><td><em>ice storm, storm sphere<sup>XGTE</sup></em></td></tr>
+        <tr><td>9th</td><td><em>control winds<sup>XGTE</sup>, maelstrom<sup>XGTE</sup></em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="2" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="3" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_XGTE_SPELL_WARDING_WIND" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="5" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_XGTE_SPELL_THUNDER_STEP" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="7" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" level="9" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_XGTE_SPELL_MAELSTROM" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+  <element name="Nature's Wrath" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_NATURES_WRATH">
+		<description>
+			<p>You can channel the destructive power of nature. When you cast a Druid spell that deals lightning or thunder damage, you can expend a use of Wild Shape and cause it to deal maximum damage to one target, instead of rolling.</p>
+		</description>
+		<sheet>
+      <description level="2">When you cast a druid spell that deals lightning or thunder damage, expend a Wild Shape use to deal maximum damage to a target.</description>
+      <description level="14">When you cast a druid spell that deals lightning or thunder damage, expend a Wild Shape use to deal maximum damage to all targets.</description>
+    </sheet>
+	</element>
+
+  <element name="Tempestuous Rebuke" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_TEMPESTUOUS_REBUKE">
+		<description>
+			<p>The elemental powers rebuke those who strike at you, their acolyte. When a creature within 5 feet that you can see hits you with an attack, you can use your reaction to force it to make a Dexterity saving throw. It takes 2d8 thunder damage on a failed save, and half as much on a successful save.</p>
+      <p class="indent">You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all of your expended uses when you finish a long rest.</p>
+		</description>
+		<sheet>
+      <description action="Reaction" usage="{{wisdom:modifier}}/Long Rest">When a visible creature within 5 ft. hits you with an attack, force it to make a Dexterity saving throw; if it fails, it takes 2d8 thunder damage, and half that on a success.</description>
+    </sheet>
+	</element>
+
+  <element name="Thunderous Strike" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_THUNDEROUS_STRIKE">
+		<description>
+			<p>You carry the fury of the storm. Once per turn, when you hit a Large or smaller creature with a melee attack, you can also push it up to 10 feet away from you in a straight line.</p>
+		</description>
+		<sheet>
+      <description>Once per turn, when you hit a Large or smaller creature with a melee attack, push it 10 ft. away in a straight line.</description>
+    </sheet>
+	</element>
+
+  <element name="Tempestuous Form" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_TEMPESTUOUS_FORM">
+		<description>
+			<p>You can use druidic magic to transform into a minor version of the tempest you serve. As an action, you can expend two uses of Wild Shape to transform into an air elemental.</p>
+		</description>
+		<sheet>
+      <description action="Action">Expend two Wild Shape uses to transform into an Air Elemental.</description>
+    </sheet>
+	</element>
+
+  <element name="One with the Storm" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_TEMPEST_ONE_WITH_THE_STORM">
+		<description>
+			<p>You have become one with the destructive power of nature. You gain a flying speed equal to your walking speed.</p>
+      <p class="indent">In addition, whenever you use Nature's Wrath, the spell deals maximum damage to every target, instead of just one.</p>
+		</description>
+		<sheet description="false">
+    </sheet>
+    <rules>
+      <stat name="speed:fly" value="speed" bonus="base" />
+    </rules>
+	</element>
+
+  <element name="Circle of Tides" type="Archetype" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_TIDES">
+    <supports>Druid Circle</supports>
+    <description>
+      <p>Few natural forces exert as much influence over mortals as the waters of the world. Rain for crops, raging storms, and winding rivers all influence the lives of mortals. Tidal Druids monitor the relationship between civilization and the waters of oceans, rivers, and lakes. They are often found using the innate magic found in the waters to heal the sick, provide rest to the weary, and nurture the crops of common folk.</p>
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_TIDES_DISCIPLE_OF_THE_SEA" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_TIDES_CIRCLE_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_TIDES_TIDAL_AURA" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_TIDES_UNDERTOW" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_TIDES_WATERS_OF_LIFE" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_TIDES_MASTER_OF_THE_WAVES" />
+    </description>
+    <sheet display="false">
+      <description>Tidal Druids monitor the relationship between civilization and the waters of oceans, rivers, and lakes.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_TIDES_DISCIPLE_OF_THE_SEA" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_TIDES_CIRCLE_SPELLS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_TIDES_TIDAL_AURA" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_TIDES_UNDERTOW" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_TIDES_WATERS_OF_LIFE" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_TIDES_MASTER_OF_THE_WAVES" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Disciple of the Sea" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_TIDES_DISCIPLE_OF_THE_SEA">
+		<description>
+			<p>The magic of the elder forest you guard empowers your body with primeval power. Your unarmed strikes deal bludgeoning damage equal to 1d8 + your Strength modifier on hit.</p>
+      <p>Moreover, when you hit a creature with an unarmed strike, you can expend a spell slot to cast ensnaring strike on your target as part of your unarmed strike attack.</p>
+		</description>
+		<sheet>
+      <description>Your unarmed strikes deal 1d8 + {{strength:modifier}} on hit; you can expend a spell slot when hitting a creature with an unarmed strike to cast ensnaring strike as part of the strike.</description>
+    </sheet>
+	</element>
+
+  <element name="Circle Spells" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_TIDES_CIRCLE_SPELLS">
+		<description>
+			<p>Your connection with the primal waters grants you access to certain spells. You learn the shape water cantrip, but it does not count against your total number of Cantrips Known.</p>
+      <p class="indent">When you reach certain Druid levels, you gain access to the spells in the table below. They count as Druid spells for you, and you always have them prepared, but they don't count against the total number of spells you prepare each day.</p>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><em>fog cloud, healing word</em></td></tr>
+				<tr><td>3rd</td><td><em>misty step, prayer of healing</em></td></tr>
+				<tr><td>5th</td><td><em>mass healing word, tidal wave<sup>XGTE</sup></em></td></tr>
+				<tr><td>7th</td><td><em>control water, watery sphere<sup>XGTE</sup></em></td></tr>
+        <tr><td>9th</td><td><em>maelstrom<sup>XGTE</sup>, raise dead</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="2" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_HEALING_WORD" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="3" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_PRAYER_OF_HEALING" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_HEALING_WORD" level="5" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_XGTE_SPELL_TIDAL_WAVE" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" level="7" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_XGTE_SPELL_WATERY_SPHERE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_MAELSTROM" level="9" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+  <element name="Tidal Aura" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_TIDES_TIDAL_AURA">
+		<description>
+			<p>As a bonus action, you can expend a use of Wild Shape to exude a mystical watery force in a 15-foot radius. Creatures of your choice within this Aura treat it as difficult terrain. If a creature has a swimming speed it ignores this effect.</p>
+      <p class="indent">Your Tidal Aura also enhances your healing powers. When you cast a spell that restores hit points to a creature within this Tidal Aura, one target within the Aura regains additional hit points equal to your Wisdom modifier (minimum of 1).</p>
+      <p class="indent">Your Tidal Aura lasts for 1 minute. Its effects end early if you end it as a bonus action, or if you are incapacitated.</p>
+		</description>
+		<sheet>
+      <description action="Bonus Action" level="2">Expend a Wild Shape use to exude a 15 ft. aura that lasts foe 1 minute, forcing creatures of your choice within to treat it as difficult terrain unless they have a swimming speed. It ends early if you are incapacitated or use a bonus action to do so.&#13;&#10;When you cast a healing spell targeting a creature within the aura, one of the spell's targets regains an additional {{wisdom:modifier}} hit points.</description>
+      <description action="Bonus Action" level="10">Expend a Wild Shape use to exude a 15 ft. aura that lasts foe 1 minute, forcing creatures of your choice within to treat it as difficult terrain unless they have a swimming speed. Upon activation, gain a pool of {{waters of life pool}} temporary hit points you can distibute to creatures within the aura. The aura ends early if you are incapacitated or use a bonus action to do so; the temporary hit points are dispelled along with the aura.&#13;&#10;When you cast a healing spell targeting a creature within the aura, one of the spell's targets regains an additional {{wisdom:modifier}} hit points.</description>
+      <description action="Bonus Action" level="14">Expend a Wild Shape use to exude a 30 ft. aura that lasts foe 1 minute, forcing creatures of your choice within to treat it as difficult terrain. Upon activation, gain a pool of {{waters of life pool}} temporary hit points you can distibute to creatures within the aura. The aura ends early if you are incapacitated or use a bonus action to do so; the temporary hit points are dispelled along with the aura.&#13;&#10;When you cast a healing spell targeting a creature within the aura, one of the spell's targets regains an additional {{wisdom:modifier}} hit points.</description>
+    </sheet>
+    <rules>
+      <stat name="waters of life pool" value="level:druid" />
+      <stat name="waters of life pool" value="wisdom:modifier" />
+    </rules>
+	</element>
+
+  <element name="Undertow" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_TIDES_UNDERTOW">
+		<description>
+			<p>Your Tidal magic has grown in power. When you cast a spell that forces a creature in your Tidal Aura to make a Strength, Dexterity, or Constitution saving throw, you can empower the spell. Any creature within your Tidal Aura makes their initial saving throw against the empowered spell at disadvantage.</p>
+      <p class="indent">You can empower a spell in this way a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet>
+      <description usage="{{wisdom:modifier}}/Long Rest">When you cast a spell that forces a creature in your Tidal Aura to make a Strength, Dexterity, or Constitution saving throw, force them to roll with disadvantage.</description>
+    </sheet>
+	</element>
+
+  <element name="Waters of Life" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_TIDES_WATERS_OF_LIFE">
+		<description>
+			<p>You can wield the magic of primal water to rejuvenate your alies as you hinder your foes. When you activate your Tidal Aura, you gain a pool of temporary hit points equal to your Druid level + your Wisdom modifier that you can distribute to creatures of your choice within your Tidal Aura.</p>
+      <p class="indent">When your Tidal Aura ends, any remaining temporary hit points from this feature are immediately dispelled.</p>
+		</description>
+		<sheet display="false">
+    </sheet>
+	</element>
+
+  <element name="Master of the Waves" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_TIDES_MASTER_OF_THE_WAVES">
+		<description>
+			<p> Your bond with the mystical waters has reached its apex. You can cast control water at will, without expending a spell slot, so long as you target a body of water of sufficient size.</p>
+      <p class="indent">Also, the radius of your Tidal Aura increases to 30 feet, and creatures of your choice treat the area of your Tidal Aura as difficult terrain even if they have a swimming speed.</p>
+      <div class="reference">
+				<div element="ID_PHB_SPELL_CONTROL_WATER" />
+			</div>
+		</description>
+		<sheet>
+      <description>You can cast control water at will by targeting a sufficiently-sized body of water.</description>
+    </sheet>
+	</element>
+
+  <element name="Circle of the Land (Alternate)" type="Archetype" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_LAND">
+    <supports>Druid Circle</supports>
+    <description>
+      <p>Druids of the Circle of the Land are the most common Druid, if Druids can be considered common at all. These sages of the natural world are able to attune themselves to almost any environment, giving them an increased ability to draw out the natural magic of the flora and fauna that surround them.</p>
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_LAND_LOCALIZED_SPELLS" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_LAND_NATURAL_RECOVERY" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_LAND_ACOLYTE_OF_NATURE" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_LAND_NATURES_WARD" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_LAND_NATURES_SANCTUARY" />
+      <div element="ID_LASERLL_ARCHETYPE_DRUID_ANCIENTS_MONSTROUS_FORM" />
+    </description>
+    <sheet display="false">
+      <description>These sages of the natural world are able to attune themselves to almost any environment.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_LAND_LOCALIZED_SPELLS" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_LAND_NATURAL_RECOVERY" level="2"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_LAND_ACOLYTE_OF_NATURE" level="6"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_LAND_NATURES_WARD" level="10"/>
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_DRUID_LAND_NATURES_SANCTUARY" level="14"/>
+    </rules>
+  </element>
+
+  <element name="Localized Spells" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_LAND_LOCALIZED_SPELLS">
+		<description>
+			<p>You have mastered a greater amount of druidic magic. You learn one additional Druid cantrip of your choice, but it does not count against your total number of Cantrips Known.</p>
+      <p class="indent">In addition, you are infused with the ability to cast certain spells based on your environment. When you finish a long rest, you can attune to the local environment, choosing the option that best represents your surroundings: arctic, cave, coast, desert, forest, grassland, mountain, or swamp.</p>
+      <p class="indent">While attuned to that environment you gain access to the corresponding spells on the Localized Spells table below. These spells count as Druid spells for you and you always have them prepared, but they don't count against the total number of Druid spells you can prepare each day.</p>
+		</description>
+		<sheet>
+      <description usage="1/Long Rest">Upon completing a long rest, attune to the local enviornment and gain spells associated with it; you also ignore difficult terrain in this environment and have advantage on saving throws related to enduring it.</description>
+    </sheet>
+    <rules>
+      <select type="Spell" name="Bonus Cantrip (Druid)" supports="0,Druid" spellcasting="Druid" />
+      <select type="Archetype Feature" name="Localized Spell Circle" supports="Laserll Circle Spells" />
+    </rules>
+	</element>
+
+  <element name="Natural Recovery" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_LAND_NATURAL_RECOVERY">
+		<description>
+			<p>You can regain some of your druidic magic by communing with nature. At the end of a short rest, you can choose to recover a number of expended spell slots with a combined level less than or equal to half your Druid level rounded up. Spell slots you regain must be 5th-level or lower.</p>
+      <p class="indent">Once you use this feature to recover spell slots you must finish a long rest before you can use it again.</p>
+		</description>
+		<sheet>
+      <description usage="1/Long Rest">At the end of a short rest you can recover spell slots with up to a combined level of {{level:druid:half:up}}, each of 5th-level or lower.</description>
+    </sheet>
+	</element>
+
+  <element name="Acolyte of Nature" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_LAND_ACOLYTE_OF_NATURE">
+		<description>
+			<p>You move effortlessly through the wild. You ignore the effects of difficult terrain imposed by your attuned environment.</p>
+      <p class="indent">Moreover, you have advantage on saving throws to resist the harmful effects of your attuned environment. Examples include extreme temperatures and weather, hostile flora, or other magical environmental effects.</p>
+    </description>
+    <sheet display="false">
+    </sheet>
+	</element>
+
+  <element name="Nature's Ward" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_LAND_NATURES_WARD">
+		<description>
+			<p>You are able to adapt to the hostile effects of nearly any wild place. When you finish a short or long rest, choose one of the following damage types: acid, cold, fire, lightning, poison, or thunder. You gain resistance to that type of damage until the end of your next short or long rest.</p>
+    </description>
+    <sheet>
+      <description usage="1/Short Rest">Choose acid, cold, fire, lightning, poison, or thunder, and resist that damage type until your next rest.</description>
+    </sheet>
+	</element>
+
+  <element name="Nature's Sanctuary" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_LASERLL_ARCHETYPE_DRUID_LAND_NATURES_SANCTUARY">
+		<description>
+			<p>Creatures of the natural world can sense your devotion to nature and are hesitant to attack you. When a beast or plant attacks you, you can force it to make a Wisdom saving throw. On a failure, the attack automatically misses. On a success, the creature is immune to this effect for 24 hours.</p>
+      <p class="indent">Beasts and plants with a Wisdom of 4 or higher are aware of this effect before they make their attack against you.</p>
+    </description>
+    <sheet>
+      <description>When a beast or plant attacks you, force it to make a Wisdom saving throw; if it fails, the attack misses. On a success the creature is immune to this effect for 24 hrs.; creatures with a Wisdom of higher than 4 are aware of this effect before they attack you.</description>
+    </sheet>
+	</element>
+
+  <element name="Arctic Circle" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_WOTC_PHB_ARCHETYPE_DRUID_LAND_LOCALIZED_SPELLS_ARCTIC">
+		<supports>Laserll Circle Spells</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><em>armor of agathys</em></td></tr>
+				<tr><td>3rd</td><td><em>hold person</em></td></tr>
+				<tr><td>5th</td><td><em>slow</em></td></tr>
+        <tr><td>7th</td><td><em>ice storm</em></td></tr>
+				<tr><td>9th</td><td><em>cone of cold</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ARMOR_OF_AGATHYS" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+  <element name="Cave Circle" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_WOTC_PHB_ARCHETYPE_DRUID_LAND_LOCALIZED_SPELLS_CAVE">
+		<supports>Laserll Circle Spells</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><em>cause fear<sup>XGTE</sup></em></td></tr>
+				<tr><td>3rd</td><td><em>web</em></td></tr>
+				<tr><td>5th</td><td><em>fear</em></td></tr>
+        <tr><td>7th</td><td><em>giant insect</em></td></tr>
+				<tr><td>9th</td><td><em>passwall</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_CAUSE_FEAR" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WEB" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GIANT_INSECT" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASSWALL" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+  <element name="Coast Circle" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_WOTC_PHB_ARCHETYPE_DRUID_LAND_LOCALIZED_SPELLS_COAST">
+		<supports>Laserll Circle Spells</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+        <tr><td>2nd</td><td><em>fog cloud</em></td></tr>
+				<tr><td>3rd</td><td><em>misty step</em></td></tr>
+				<tr><td>5th</td><td><em>tidal wave<sup>XGTE</sup></em></td></tr>
+				<tr><td>7th</td><td><em>watery sphere<sup>XGTE</sup></em></td></tr>
+				<tr><td>9th</td><td><em>maelstrom<sup>XGTE</sup></em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_TIDAL_WAVE" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_WATERY_SPHERE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_MAELSTROM" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+  <element name="Desert Circle" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_WOTC_PHB_ARCHETYPE_DRUID_LAND_LOCALIZED_SPELLS_DESERT">
+		<supports>Laserll Circle Spells</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+        <tr><td>2nd</td><td><em>silent image</em></td></tr>
+				<tr><td>3rd</td><td><em>dust devil<sup>XGTE</sup></em></td></tr>
+				<tr><td>5th</td><td><em>daylight</em></td></tr>
+				<tr><td>7th</td><td><em>hallucinatory terrain</em></td></tr>
+				<tr><td>9th</td><td><em>seeming</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_DUST_DEVIL" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEEMING" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+  <element name="Forest Circle" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_WOTC_PHB_ARCHETYPE_DRUID_LAND_LOCALIZED_SPELLS_FOREST">
+		<supports>Laserll Circle Spells</supports>
+		<description>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+        <tr><td>2nd</td><td><em>entangle</em></td></tr>
+				<tr><td>3rd</td><td><em>spider climb</em></td></tr>
+				<tr><td>5th</td><td><em>plant growth</em></td></tr>
+				<tr><td>7th</td><td><em>guardian of nature<sup>XGTE</sup></em></td></tr>
+				<tr><td>9th</td><td><em>tree stride</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ENTANGLE" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PLANT_GROWTH" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PLANT_GROWTH" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_GUARDIAN_OF_NATURE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TREE_STRIDE" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+  <element name="Grassland Circle" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_WOTC_PHB_ARCHETYPE_DRUID_LAND_LOCALIZED_SPELLS_GRASSLAND">
+    <supports>Laserll Circle Spells</supports>
+    <description>
+      <table>
+        <thead>
+          <tr><td>Druid Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>2nd</td><td><em>longstrider</em></td></tr>
+        <tr><td>3rd</td><td><em>pass without trace</em></td></tr>
+        <tr><td>5th</td><td><em>haste</em></td></tr>
+        <tr><td>7th</td><td><em>freedom of movement</em></td></tr>
+        <tr><td>9th</td><td><em>far step</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" level="2" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_LASERLL_SPELL_PASS_WITHOUT_TRACE" level="3" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_HASTE" level="5" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_XGTE_SPELL_FAR_STEP" level="9" spellcasting="Druid" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Mountain Circle" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_WOTC_PHB_ARCHETYPE_DRUID_LAND_LOCALIZED_SPELLS_MOUNTAIN">
+    <supports>Laserll Circle Spells</supports>
+    <description>
+      <table>
+        <thead>
+          <tr><td>Druid Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>2nd</td><td><em>earth tremor<sup>XGTE</sup></em></td></tr>
+        <tr><td>3rd</td><td><em>earthen grasp<sup>XGTE</sup></em></td></tr>
+        <tr><td>5th</td><td><em>call lightning</em></td></tr>
+        <tr><td>7th</td><td><em>stone shape</em></td></tr>
+        <tr><td>9th</td><td><em>wall of stone</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" level="2" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_XGTE_SPELL_EARTHEN_GRASP" level="3" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" level="5" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_STONE_SHAPE" level="7" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" level="9" spellcasting="Druid" prepared="true" />
+    </rules>
+  </element>
+
+  <element name="Swamp Circle" type="Archetype Feature" source="laserllama's Druid Circles" id="ID_WOTC_PHB_ARCHETYPE_DRUID_LAND_LOCALIZED_SPELLS_SWAMP">
+    <supports>Laserll Circle Spells</supports>
+    <description>
+      <table>
+        <thead>
+          <tr><td>Druid Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>2nd</td><td><em>caustic brew<sup>TCOE</sup></em></td></tr>
+        <tr><td>3rd</td><td><em>acid arrow</em></td></tr>
+        <tr><td>5th</td><td><em>stinking cloud</em></td></tr>
+        <tr><td>7th</td><td><em>blight</em></td></tr>
+        <tr><td>9th</td><td><em>insect plague</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_WOTC_TCOE_SPELL_TASHAS_CAUSTIC_BREW" level="2" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_MELFS_ACID_ARROW" level="3" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_STINKING_CLOUD" level="5" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Druid" prepared="true" />
+      <grant type="Spell" id="ID_PHB_SPELL_INSECT_PLAGUE" level="9" spellcasting="Druid" prepared="true" />
+    </rules>
+  </element>
+
+</elements>

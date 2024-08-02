@@ -3,12 +3,12 @@
     <info>
         <name></name>
         <update version="1.0">
-            <file name="llaserlama-compendium-spells.xml" url="tmp.xml" />
+            <file name="laserllama-compendium-spells.xml" url="tmp.xml" />
         </update>
     </info>
 
     <!--Version 1.0.0-->
-  <element name="Booming Blade" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_BOOMING_BLADE">
+  <element name="Booming Blade" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_BOOMING_BLADE">
 		<supports>Artificer, Bard, Magus, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>As a bonus action, you wreathe the melee weapon used in the casting of this spell with thunderous magic. Until the start of your next turn, your attacks with that weapon deal thunder damage in place of the weapon's normal damage type.</p>
@@ -27,7 +27,7 @@
 			<set name="duration">1 round</set>
 		</setters>
 	</element>
-  <element name="Green-Flame Blade" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_GREENFLAME_BLADE">
+  <element name="Green-Flame Blade" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_GREENFLAME_BLADE">
     <supports>Artificer, Magus, Sorcerer, Warlock, Wizard</supports>
     <description>
       <p>As a bonus action, you wreathe the melee weapon used in the casting of this spell with emerald flames. Until the start of your next turn, your attacks with that weapon deal fire damage in place of the weapon's normal damage type.</p>
@@ -46,7 +46,7 @@
       <set name="duration">Instantaneous</set>
     </setters>
   </element>
-  <element name="Friends" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_FRIENDS">
+  <element name="Friends" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_FRIENDS">
     <supports>Bard</supports>
     <description>
       <p>You lace your words with soothing magic and force a creature of your choice that can hear and understand you to make a Wisdom saving throw. On a failure, you have advantage on all Charisma checks directed at that creature for the duration.</p>
@@ -67,7 +67,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Glitterbeam" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_GLITTERBEAM">
+  <element name="Glitterbeam" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_GLITTERBEAM">
     <supports>Bard, Magus</supports>
     <description>
       <p>You project a beam of twinkling lights at a creature or object within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 radiant damage. Until a creature uses an action to remove the glitter, a target hit by this spell emits bright light in a 5-foot radius and has disadvantage on any Dexterity (Stealth) checks it makes to hide or conceal itself.</p>
@@ -88,7 +88,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Mind Thrust" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_MIND_THRUST">
+  <element name="Mind Thrust" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_MIND_THRUST">
     <supports>Psion</supports>
     <description>
       <p>You batter a creature within range with a torrent of psionic power. Make a ranged spell attack against the target. On hit, the target takes 1d12 magical bludgeoning damage.</p>
@@ -109,7 +109,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Otherworldly Grasp" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_OTHERWORLDLY_GRASP">
+  <element name="Otherworldly Grasp" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_OTHERWORLDLY_GRASP">
     <supports>Shaman, Warlock</supports>
     <description>
       <p>You channel necrotic spiritual power to your hand, changing it into a withered specter of itself. Make a melee spell attack against a creature within your reach. On hit, the creature takes 1d8 necrotic damage, and you gain 1d4 temporary hit points which last for the duration of your concentration.</p>
@@ -130,7 +130,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Primal Savagery" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_PRIMAL_SAVAGERY">
+  <element name="Primal Savagery" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_PRIMAL_SAVAGERY">
       <supports>Druid</supports>
       <description>
           <p>As part of an unarmed strike, you cause your teeth or fingers to transform into savage fangs or claws. On hit, this unarmed strike deals either magical piercing or slashing damage equal to 1d6 + your Strength modifier. Your teeth and fingers revert to normal after this unarmed strike. Alternately, you can use your Spellcasting ability, for the attack and damage roll.</p>
@@ -151,7 +151,7 @@
           <set name="isRitual">false</set>
       </setters>
   </element>
-  <element name="Psionic Strike" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_PSIONIC_STRIKE">
+  <element name="Psionic Strike" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_PSIONIC_STRIKE">
       <supports>Psion</supports>
       <description>
           <p>As part of an unarmed strike, you manifest a blade of psionic energy in your hand. On hit, the target takes psychic damage equal to 1d6 + your Strength modifier, in place of the normal damage of your unarmed strike. Your hand immediately reverts to its normal appearance at the end of the attack.</p>
@@ -172,7 +172,7 @@
           <set name="isRitual">false</set>
       </setters>
   </element>
-  <element name="Seance" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_SEANCE">
+  <element name="Seance" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_SEANCE">
       <supports>Shaman</supports>
       <description>
           <p>You channel minor spirits, allowing them to work through you so that they may once again affect change in the material world. You create one of the following effects within range:</p>
@@ -199,7 +199,7 @@
           <set name="isRitual">false</set>
       </setters>
   </element>
-  <element name="Tempestuous Blade" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_TEMPESTUOUS_BLADE">
+  <element name="Tempestuous Blade" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_TEMPESTUOUS_BLADE">
       <supports>Artificer, Magus, Sorcerer, Wizard</supports>
       <description>
           <p>As a bonus action, you infuse the melee weapon used in the casting of this spell with electrified magic. Until the start of your next turn, your attacks with that weapon deal lightning damage in place of the weapon's normal damage type.</p>
@@ -221,7 +221,7 @@
           <set name="isRitual">false</set>
       </setters>
   </element>
-  <element name="True Strike" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_TRUE_STRIKE">
+  <element name="True Strike" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_TRUE_STRIKE">
     <supports>Bard, Magus, Sorcerer, Warlock, Wizard</supports>
     <description>
       <p>You infuse your weapon with divination magic and point it at one creature you can see. The next time you make a melee attack with this weapon against that target before the start of your next turn, you add 1d4 to your attack roll.</p>
@@ -242,7 +242,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Vicious Mockery" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_VICIOUS_MOCKERY">
+  <element name="Vicious Mockery" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_VICIOUS_MOCKERY">
     <supports>Bard, Spell Saving Throw</supports>
     <description>
       <p>You unleash a string of provoking words at a creature that can hear and understand you within range. The target must succeed on a Wisdom saving throw, or it takes 1d4 psychic damage and have disadvantage on every attack roll against targets other than you until the start of your next turn.</p>
@@ -263,7 +263,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Arcane Lance" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_ARCANE_LANCE">
+  <element name="Arcane Lance" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_ARCANE_LANCE">
     <supports>Magus, Sorcerer, Wizard</supports>
     <description>
       <p>You conjure a lance of pure arcane energy in your hand and make a ranged spell attack against a creature you can see within range. On hit, the target takes 5d4 force damage.</p>
@@ -284,7 +284,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Divine Favor" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_DIVINE_FAVOR">
+  <element name="Divine Favor" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_DIVINE_FAVOR">
     <supports>Paladin</supports>
     <description>
       <p>Your prayer empowers one weapon of your choice within 10 feet of you with divine radiance. Until the spell ends, attacks with that weapon deal an extra 1d4 radiant damage on a hit.</p>
@@ -305,7 +305,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Ensnaring Strike" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_ENSNARING_STRIKE">
+  <element name="Ensnaring Strike" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_ENSNARING_STRIKE">
     <supports>Artificer, Ranger, Spell Saving Throw</supports>
     <description>
       <p>When you hit a creature with a weapon attack, you can cause the point of impact to explode with a writhing mass of thorny vines. The target must succeed on a Strength saving throw or be restrained by the vines until the spell ends. Creatures that are Large or larger have advantage on this saving throw.</p>
@@ -327,7 +327,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Ethereal Anchor" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_ETHEREAL_ANCHOR">
+  <element name="Ethereal Anchor" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_ETHEREAL_ANCHOR">
     <supports>Paladin, Vessel</supports>
     <description>
       <p>You hurl a bolt of pure spirit at a creature within range. Make a ranged spell attack against your target. On hit, it takes 3d6 radiant damage and for the duration, its speed is reduced to 0 as it is pinned in place by the spiritual bolt. As an action on its turn, the creature can make a Strength ability check against your Spell save DC, ending the spell on a success.</p>
@@ -348,7 +348,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Ghastly Flight" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_GHASTLY_FLIGHT">
+  <element name="Ghastly Flight" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_GHASTLY_FLIGHT">
     <supports>Shaman, Warlock, Spell Saving Throw</supports>
     <description>
       <p>You release a malevolent spirit that flies out from you in a direction of your choice in a 60-foot long, 5-foot wide line, at which point it fades away. Each creature within the line must make a Constitution saving throw. On a failed save, creatures take 2d8 necrotic damage and cannot regain hit points until the start of your next turn. On a success, creatures take half as much damage and can regain hit points as normal.</p>
@@ -369,7 +369,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-	<element name="Hail of Thorns" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_HAIL_OF_THORNS">
+	<element name="Hail of Thorns" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_HAIL_OF_THORNS">
 		<supports>Ranger, Spell Saving Throw</supports>
 		<description>
 			<p>When you hit a creature within range with a ranged weapon attack, you can cause the piece of ammunition to explode into a hail of thorns. In addition to the normal effect of the attack, the target of your attack and each creature within 5 feet must make a Dexterity saving throw. Creatures take 1d10 piercing damage on a failure, or half as much damage on a success.</p>
@@ -390,7 +390,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-  <element name="Id Insinuation" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_ID_INSINUATION">
+  <element name="Id Insinuation" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_ID_INSINUATION">
 		<supports>Psion, Spell Saving Throw</supports>
 		<description>
 			<p>You unleash conflicting desires within one creature you can see within range, impairing its ability to make decisions. It must succeed on a Wisdom saving throw or be incapacitated.</p>
@@ -412,7 +412,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-  <element name="Inspiring Melody" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_INSPIRING_MELODY">
+  <element name="Inspiring Melody" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_INSPIRING_MELODY">
 		<supports>Bard</supports>
 		<description>
 			<p>You play a tune that inspires those who hear it to stand and fight. Creatures of your choice within range that can hear you gain temporary hit points equal to your spellcasting ability modifier (minimum of 1 temporary hit point).</p>
@@ -434,7 +434,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-  <element name="Searing Smite" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_SEARING_SMITE">
+  <element name="Searing Smite" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_SEARING_SMITE">
     <supports>Paladin, Spell Saving Throw</supports>
     <description>
       <p>When you hit with a melee weapon attack you can cause the weapon to ignite with white-hot intensity. This attack deals 1d8 additional fire damage and the target bursts into flames. At the start of each of its turns, it must make a Constitution saving throw. On a failed save, it takes 1d8 fire damage, but on a success, the flames are extinguished. Another creature can use an action to extinguish these magical flames.</p>
@@ -457,7 +457,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Shield" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_SHIELD">
+  <element name="Shield" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_SHIELD">
     <supports>Magus, Psion, Sorcerer, Wizard</supports>
     <description>
       <p>A shimmering barrier of magical force appears to protect you. Until the end of the current turn, you gain a bonus to your Armor Class equal to 1 + your Spellcasting modifier and you take no damage from the <em>magic missile</em> spell.</p>
@@ -478,7 +478,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Thunderous Smite" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_THUNDEROUS_SMITE">
+  <element name="Thunderous Smite" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_THUNDEROUS_SMITE">
     <supports>Bard, Paladin, Spell Saving Throw</supports>
     <description>
       <p>When you hit with a melee weapon attack, you can cause the weapon to explode with a thunderous shockwave audible out to 300 feet. This attack deals 1d8 additional thunder damage, and the target must succeed on a Strength saving throw or be pushed 10 feet away from you in a line and fall prone. Huge and larger targets have advantage on this saving throw.</p>
@@ -500,7 +500,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Torrent" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_TORRENT">
+  <element name="Torrent" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_TORRENT">
     <supports>Druid, Magus, Sorcerer, Spell Saving Throw</supports>
     <description>
       <p>A burst of elemental water erupts from you in a line 30 feet long and 5 feet wide in a direction you choose, forcing any creature in that area to make a Strength saving throw. On a failure, it takes 1d12 cold damage and is knocked back 10 feet in a straight line and falls prone. On a success, it takes half as much damage and is not moved or knocked prone. A Huge or larger creature has advantage on its saving throw.</p>
@@ -521,7 +521,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Witch Bolt" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_WITCH_BOLT">
+  <element name="Witch Bolt" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_WITCH_BOLT">
     <supports>Sorcerer, Warlock, Wizard, Ranged, Spell Attack</supports>
     <description>
       <p>A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and on each of your turns for the duration, you can use your action to deal 1d12 lightning damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell’s range or if it has total cover from you.</p>
@@ -542,7 +542,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Wrathful Smite" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_WRATHFUL_SMITE">
+  <element name="Wrathful Smite" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_WRATHFUL_SMITE">
     <supports>Paladin, Spell Saving Throw</supports>
     <description>
       <p>When you hit with a melee weapon attack you can cause the weapon to strike at both body and mind. This attack deals an additional 1d8 psychic damage, and the target must succeed on a Wisdom saving throw, or it is frightened of you until the spell ends. As an action, the creature can repeat this Wisdom saving throw, ending the effects of the spell on a success.</p>
@@ -564,7 +564,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Aura of Frost" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_AURA_OF_FROST">
+  <element name="Aura of Frost" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_AURA_OF_FROST">
     <supports>Druid, Magus, Sorcerer, Spell Saving Throw</supports>
     <description>
       <p>Arcane frost, snow, and wind swirl about you in an aura with a 10-foot radius, and until the spell ends, the aura moves with you, centered on you. When a creature other than you, enters the area for the first time on a turn or starts its turn there, it must succeed on a Constitution saving throw or it takes 2d8 cold damage and have its speed is reduced by 20 feet until the start of its next turn. On a successful save, it takes half as much cold damage and its speed isn't reduced.</p>
@@ -585,7 +585,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Branding Smite" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_BRANDING_SMITE">
+  <element name="Branding Smite" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_BRANDING_SMITE">
     <supports>Paladin</supports>
     <description>
       <p>When you hit with a melee weapon attack you can cause the weapon to gleam with an otherworldly astral radiance. This attack deals 2d8 bonus radiant damage, and the target sheds dim light out to a 5-foot radius until the spell ends. The target also becomes visible if it was invisible and it cannot become invisible by magical or mundane means for the duration.</p>
@@ -607,7 +607,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Chromatic Blade" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_CHROMATIC_BLADE">
+  <element name="Chromatic Blade" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_CHROMATIC_BLADE">
     <supports>Druid, Magus, Sorcerer, Wizard, Melee, Spell Attack</supports>
     <description>
       <p>You evoke an elemental blade in a free hand, choosing one of the following damage types: acid, cold, fire, lightning, poison, or thunder. The elemental blade appears as if it were made of the chosen element, and lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action without expending a spell slot.</p>
@@ -630,7 +630,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Cordon of Arrows" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_CORDON_OF_ARROWS">
+  <element name="Cordon of Arrows" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_CORDON_OF_ARROWS">
 		<supports>Artificer, Ranger, Spell Saving Throw</supports>
 		<description>
 			<p>You plant three pieces of ranged weapon ammunition in the ground within range and transmute them to protect the area. The first creature to move within 30 feet of this enchanted ammunition must make a Dexterity saving throw. The target takes 3d6 piercing damage on a failed save, and half as much piercing damage on a successful save.</p>
@@ -652,7 +652,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-  <element name="Find Steed" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_FIND_STEED">
+  <element name="Find Steed" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_FIND_STEED">
     <supports>Paladin</supports>
     <description>
       <p>You conjure a spirit in an unoccupied space within range that assumes the form of a supernaturally intelligent, strong, and loyal steed, which is instantly bonded to you. The Steed takes on the form of a Medium or Large quadrupedal beast that you have seen before with a CR of 1/2 or lower that does not have a climbing, flying, or swimming speed. Examples include: elk, camel, giant goat, mastiff, pony, or warhorse.</p>
@@ -677,7 +677,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Flame Whip" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_FLAME_WHIP">
+  <element name="Flame Whip" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_FLAME_WHIP">
     <supports>Druid, Vessel, Warlock, Melee, Spell Attack</supports>
     <description>
       <p>In place of an attack, you can evoke a whip of pure flame in a free hand, that lasts for the duration. If you let go of the whip, it disappears, but you can evoke this Flame Whip again in place of another attack without expending a spell slot.</p>
@@ -701,7 +701,7 @@
         <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Locate Creature" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_LOCATE_CREATURE">
+  <element name="Locate Creature" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_LOCATE_CREATURE">
     <supports>Bard, Cleric, Druid, Paladin, Ranger, Wizard</supports>
     <description>
       <p>Describe or name a specific kind of beast or plant. It can be a specific creature known to you, or the nearest creature of a specific kind (such as a bear, oak, or horse), so long as you have seen such a creature within 30 feet at least once.</p>
@@ -732,7 +732,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Magic Weapon" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_MAGIC_WEAPON">
+  <element name="Magic Weapon" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_MAGIC_WEAPON">
     <supports>Druid, Paladin, Magus, Ranger, Sorcerer, Wizard</supports>
     <description>
       <p>You touch a nonmagical weapon and imbue it with power and it becomes a magic weapon. Choose acid, cold, fire, lightning, poison, or thunder. Until the spell ends, the weapon has a +1 bonus to attack rolls, and deals the chosen type of damage in place of the weapon's normal damage type.</p>
@@ -763,7 +763,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Pass without Trace" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_PASS_WITHOUT_TRACE">
+  <element name="Pass without Trace" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_PASS_WITHOUT_TRACE">
     <supports>Druid, Ranger</supports>
     <description>
       <p>A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, you and creatures of your choice within 30 feet are considered to be lightly obscured and gain a bonus to all Dexterity (Stealth) checks equal to your Spellcasting modifier. Creatures under the effect of this spell leave no trace of their passing.</p>
@@ -783,7 +783,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Restoration" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_RESTORATION">
+  <element name="Restoration" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_RESTORATION">
     <supports>Bard, Cleric, Druid, Paladin, Ranger</supports>
     <description>
       <p>You touch a willing creature and instantly end one disease or one of the following conditions currently afflicting it: blinded, deafened, frightened, paralyzed, or poisoned.</p>
@@ -812,7 +812,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Song of Confidence" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_SONG_OF_CONFIDENCE">
+  <element name="Song of Confidence" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_SONG_OF_CONFIDENCE">
     <supports>Bard</supports>
     <description>
       <p>You play a song that inspires those who hear it to live up to their full potential. Choose an ability score. Creatures of your choice within range that can hear you add your spellcasting modifier (minimum of +1) to ability checks or saving throws using the chosen ability score until the start of your next turn.</p>
@@ -834,7 +834,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Totemic Cowl" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_TOTEMIC_COWL">
+  <element name="Totemic Cowl" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_TOTEMIC_COWL">
     <supports>Shaman</supports>
     <description>
       <p>You touch a willing creature. Until the spell ends, it is cloaked in a ghostly cowl, and any damage it takes is reduced by 1.</p>
@@ -855,7 +855,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Tower of Iron Will" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_TOWER_OF_IRON_WILL">
+  <element name="Tower of Iron Will" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_TOWER_OF_IRON_WILL">
     <supports>Psion</supports>
     <description>
       <p>You protect your mind with a mantra of mundane, repetitive thoughts in order to better resist mental assault. Until the beginning of your next turn, you have advantage on all Intelligence, Wisdom, and Charisma saving throws, and you gain resistance to psychic damage.</p>
@@ -875,7 +875,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Blinding Smite" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_BLINDING_SMITE">
+  <element name="Blinding Smite" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_BLINDING_SMITE">
     <supports>Paladin, Spell Saving Throw</supports>
     <description>
       <p>When you hit with a melee weapon attack you can cause the weapon to flare with an overwhelming blinding light. This attack deals 3d8 bonus radiant damage, and the target must succeed on a Constitution saving throw or become blinded until the spell ends. The target can repeat this saving throw at the end of each of its turns, ending the effect on a success.</p>
@@ -897,7 +897,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Cerebral Blast" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_CEREBRAL_BLAST">
+  <element name="Cerebral Blast" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_CEREBRAL_BLAST">
     <supports>Psion, Spell Saving Throw</supports>
     <description>
       <p>Your mind unleashes a mental thrust of overwhelming force in a 30-foot cone. Each creature within the area of this spell must make a Strength saving throw. On a failure, a creature takes 5d8 magical bludgeoning damage and is pushed 20 feet directly away from you, and falls prone. On a successful save, a creature takes half damage and remains in place.</p>
@@ -918,7 +918,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Conjure Volley" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_CONJURE_VOLLEY">
+  <element name="Conjure Volley" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_CONJURE_VOLLEY">
   	<supports>Ranger, Spell Saving Throw</supports>
   	<description>
   		<p>You fire one piece of nonmagical ammunition from a ranged weapon or throw a nonmagical thrown weapon into the air and choose a point within the normal range of the weapon.</p>
@@ -940,7 +940,7 @@
   		<set name="isRitual">false</set>
   	</setters>
   </element>
-  <element name="Corrosive Bolt" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_CORROSIVE_BOLT">
+  <element name="Corrosive Bolt" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_CORROSIVE_BOLT">
     <supports>Magus, Sorcerer, Wizard</supports>
     <description>
       <p>You conjure a spear of caustic acid and make a ranged spell attack against a creature or object you can see within range. On hit, your target takes 4d10 acid damage and its Armor Class is reduced by 2. This spell cannot cause a creature to have an Armor Class lower then 10.</p>
@@ -962,7 +962,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Dire Wail" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_DIRE_WAIL">
+  <element name="Dire Wail" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_DIRE_WAIL">
     <supports>Bard, Shaman, Spell Saving Throw</supports>
     <description>
       <p>You let forth a wail filled with otherworldly power. Creatures of your choice within 30 feet must succeed on a Constitution saving throw or take 4d10 thunder damage and be deafened for the duration. At the end of each turn, targets can make a Constitution saving throw, ending the spell on a success. On a successful save, it takes half damage and is not deafened.</p>
@@ -983,7 +983,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Flame Arrows" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_FLAME_ARROWS">
+  <element name="Flame Arrows" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_FLAME_ARROWS">
       <supports>Druid, Ranger, Sorcerer, Wizard, Artificer, Magus</supports>
       <description>
           <p>You touch a quiver containing ranged weapon ammunition. The first twelve pieces of ammunition drawn from the quiver deal fire damage in place of their normal damage type, plus an additional 1d6 fire damage on hit. If fired into a flammable object, it bursts into flame on hit. The magic of this spell ends for each piece of ammunition when it hits or misses, and the spell ends after twelve pieces of ammunition are fired.</p>
@@ -1004,7 +1004,7 @@
           <set name="isRitual">false</set>
       </setters>
   </element>
-  <element name="Heroic Anthem" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_HERIOC_ANTHEM">
+  <element name="Heroic Anthem" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_HERIOC_ANTHEM">
       <supports>Bard</supports>
       <description>
           <p>You play an anthem that inspires heroic action. Creatures of your choice within range that can hear you can add your spellcasting modifier (minimum of +1) to any attack rolls they make before the beginning of your next turn.</p>
@@ -1026,7 +1026,7 @@
           <set name="isRitual">false</set>
       </setters>
   </element>
-  <element name="Hunger of Hadar" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_HUNGER_OF_HADAR">
+  <element name="Hunger of Hadar" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_HUNGER_OF_HADAR">
     <supports>Warlock, Spell Saving Throw</supports>
     <description>
       <p>You open a gateway to the dark between the stars, a region infested with unknown horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered on a point with range and lasting for the duration. This void is filled with a cacophony of soft whispers and slurping noises that can be heard up to 30 feet away. No light, magical or otherwise, can illuminate the area, and creatures in the area are blinded.</p>
@@ -1048,7 +1048,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Hypnotic Pattern" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_HYPNOTIC_PATTERN">
+  <element name="Hypnotic Pattern" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_HYPNOTIC_PATTERN">
   	<supports>Bard, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
   	<description>
   		<p>You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. This psychedelic pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0.</p>
@@ -1069,7 +1069,7 @@
   		<set name="isRitual">false</set>
   	</setters>
   </element>
-  <element name="Lightning Arrow" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_LIGHTNING_ARROW">
+  <element name="Lightning Arrow" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_LIGHTNING_ARROW">
   	<supports>Artificer, Ranger, Spell Saving Throw</supports>
   	<description>
   		<p>As part of a ranged weapon attack, you can transmute a piece of ammunition, or the thrown weapon, into a bolt of lightning. On hit, the target takes the normal damage of the attack, plus a bonus 4d8 lighting damage. On a miss, the target takes half as much lightning damage, and none of the normal damage.</p>
@@ -1092,7 +1092,7 @@
   		<set name="isRitual">false</set>
   	</setters>
   </element>
-  <element name="Sonic Wave" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_SONIC_WAVE">
+  <element name="Sonic Wave" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_SONIC_WAVE">
   	<supports>Bard, Magus, Sorcerer, Spell Saving Throw</supports>
   	<description>
   		<p>You forcefully clasp your hands and a shockwave of booming force shoots forth from you and emits a boom audible out to 500 feet. All creatures in a 30-foot cone must succeed on a Constitution saving throw or take 4d8 thunder damage, fall prone, and be deafened for 1 minute. On a success, creatures take half damage and are not knocked prone or deafened.</p>
@@ -1114,7 +1114,7 @@
   		<set name="isRitual">false</set>
   	</setters>
   </element>
-  <element name="Spectral Passage" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_SPECTRAL_PASSAGE">
+  <element name="Spectral Passage" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_SPECTRAL_PASSAGE">
   	<supports>Psion, Shaman, Sorcerer, Vessel</supports>
   	<description>
   		<p>You touch a willing creature. Until the spell ends, it becomes semi-incorporeal and can move through other creatures and objects as if they were difficult terrain. If the creature ends its movement inside another object or creature, it is immediately shunted to the nearest unoccupied space, taking 1d10 force damage for every 5 feet it was forced to travel.</p>
@@ -1135,7 +1135,7 @@
   		<set name="isRitual">false</set>
   	</setters>
   </element>
-  <element name="Accursed Touch" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_ACCURSED_TOUCH">
+  <element name="Accursed Touch" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_ACCURSED_TOUCH">
   	<supports>Druid, Clerick, Magus, Sorcerer, Spell Saving Throw</supports>
   	<description>
   		<p>You attempt to transmute a creature into stone. As an action, you touch a creature, forcing it to make a Constitution saving throw. On a failed save, the creature is restrained as its flesh begins to harden. On a successful save, it isn't affected.</p>
@@ -1159,7 +1159,7 @@
   		<set name="isRitual">false</set>
   	</setters>
   </element>
-  <element name="Eldritch Tentacles" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_ELDRITCH_TENTACLES">
+  <element name="Eldritch Tentacles" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_ELDRITCH_TENTACLES">
   	<supports>Warlock, Spell Saving Throw</supports>
   	<description>
   		<p>Alien tentacles fill a 20-foot square on the ground you can see within range. For the duration, this area is difficult terrain.</p>
@@ -1182,7 +1182,7 @@
   		<set name="isRitual">false</set>
   	</setters>
   </element>
-  <element name="Ego Scourage" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_EGO_SCOURGE">
+  <element name="Ego Scourage" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_EGO_SCOURGE">
   	<supports>Psion, Spell Saving Throw</supports>
   	<description>
   		<p>You strike at the mind of a creature you can see within range, attacking its very sense of self. The target must succeed on an Intelligence saving throw or suffer disadvantage on attack rolls and ability checks, and it cannot cast spells. At the end of each of its turns, the target can repeat the saving throw. On a successful save, this effect ends on the target.</p>
@@ -1202,7 +1202,7 @@
   		<set name="isRitual">false</set>
   	</setters>
   </element>
-  <element name="Polymorph" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_POLYMORPH">
+  <element name="Polymorph" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_POLYMORPH">
     <supports>Bard, Druid, Magus, Sorcerer, Wizard, Spell Saving Throw</supports>
     <description>
       <p>This spell transforms one creature you can see within range into a new form of your choice. An unwilling creature must succeed on a Wisdom saving throw to resist this effect, but shapechangers automatically succeed on their saving throw. This spell has no affect on a target that has 0 hit points. The transformation lasts for the duration, but it ends early if the target drops to 0 hit points or dies.</p>
@@ -1227,7 +1227,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Revitalizing Hymn" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_REVITALIZING_HYMN">
+  <element name="Revitalizing Hymn" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_REVITALIZING_HYMN">
     <supports>Bard</supports>
     <description>
       <p>You perform a hymn that inspires those who hear it to shake off potent effects. Creatures of your choice within range that can hear you can immediately repeat a saving throw to end one hostile effect or spell that is currently affecting it, adding your spellcasting modifier (minimum of +1) to their roll.</p>
@@ -1249,7 +1249,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Staggering Smite" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_STAGGERING_SMITE">
+  <element name="Staggering Smite" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_STAGGERING_SMITE">
     <supports>Paladin, Spell Saving Throw</supports>
     <description>
       <p>When you hit with a melee weapon attack you can cause the weapon to pierce both body and mind. This attack deals 4d6 additional psychic damage, and the target must succeed on a Wisdom saving throw or until the start of its next turn, it has disadvantage on attack rolls and ability checks and it cannot take reactions.</p>
@@ -1270,7 +1270,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Banishing Smite" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_BANISHING_SMITE">
+  <element name="Banishing Smite" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_BANISHING_SMITE">
     <supports>Paladin</supports>
     <description>
       <p>When you hit with a melee weapon attack you can cause the weapon to crackle with pure arcane force. This attack deals 5d10 bonus force damage, and if it reduces the target to 50 hit points or fewer, it is banished from the current plane.</p>
@@ -1293,7 +1293,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Legendary Ballad" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_LEGENDARY_BALLAD">
+  <element name="Legendary Ballad" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_LEGENDARY_BALLAD">
       <supports>Bard</supports>
       <description>
           <p>You perform a ballad that inspires those who can hear it to legendary feats of heroism. A number of creatures of your choice equal to your spellcasting ability modifier (minimum of 1) that can hear you can instantly make a single weapon attack or cast a spell of 1st-level or lower.</p>
@@ -1314,7 +1314,7 @@
           <set name="isRitual">false</set>
       </setters>
   </element>
-  <element name="Psychic Crush" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_PSYCHIC_CRUSH">
+  <element name="Psychic Crush" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_PSYCHIC_CRUSH">
       <supports>Psion, Spell Saving Throw</supports>
       <description>
           <p>You exert the full force of your will on a creature. The target must make a Strength saving taking 5d8 force damage on a failure, and half as much on a success. At the end of each of its turns, it must repeat the saving throw. It takes 2d8 force damage on a failed save, and on a success, the spell ends.</p>
@@ -1336,7 +1336,7 @@
           <set name="isRitual">false</set>
       </setters>
   </element>
-  <element name="Spiritual Sundering" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_SPIRITUAL_SUNDERING">
+  <element name="Spiritual Sundering" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_SPIRITUAL_SUNDERING">
       <supports>Cleric, Shaman, Warlock, Spell Saving Throw</supports>
       <description>
           <p>Creatures in a 20-foot-radius sphere centered on a point of your choice within range have their soul rent, and must make a Charisma saving throw. On a failure, they take 8d6 necrotic damage, and for the next minute, they have a muddied sense of self and subtract 1d6 from any Intelligence, Wisdom, or Charisma saving throw they make. On a success, they take half damage and suffer no saving throw penalty.</p>
@@ -1357,7 +1357,7 @@
           <set name="isRitual">false</set>
       </setters>
   </element>
-  <element name="Steel Wind Strike" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_STEEL_WIND_STRIKE">
+  <element name="Steel Wind Strike" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_STEEL_WIND_STRIKE">
       <supports>Magus, Ranger, Melee, Spell Attack</supports>
       <description>
           <p>You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee weapon attack against each target using the weapon used in the casting. On a hit, targets take the normal damage of an attack with that weapon plus an additional 5d10 force damage.</p>
@@ -1378,7 +1378,7 @@
           <set name="isRitual">false</set>
       </setters>
   </element>
-  <element name="Swift Quiver" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_SWIFT_QUIVER">
+  <element name="Swift Quiver" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_SWIFT_QUIVER">
     <supports>Ranger</supports>
     <description>
       <p>You transmute your quiver so it produces an endless supply of nonmagical ammunition, which seems to leap into your hand when you reach for it.</p>
@@ -1399,7 +1399,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Vorpal Blade" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_VORPAL_BLADE">
+  <element name="Vorpal Blade" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_VORPAL_BLADE">
     <supports>Magus, Paladin, Melee, Spell Attack</supports>
     <description>
       <p>You conjure a blade of pure negative energy in your empty hand and make one melee weapon attack against a creature within your reach, attempting to behead it. On hit, it takes force damage equal to 6d8 + your spellcasting modifier.</p>
@@ -1421,7 +1421,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Wall of Force" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_WALL_OF_FORCE">
+  <element name="Wall of Force" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_WALL_OF_FORCE">
     <supports>Magus, Wizard</supports>
     <description>
       <p>A shimmering opaque wall of force springs into existence at a point you choose within range and lasts for the duration.</p>
@@ -1444,7 +1444,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Psionic Oppression" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_PSIONIC_OPPRESSION">
+  <element name="Psionic Oppression" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_PSIONIC_OPPRESSION">
     <supports>Psion</supports>
     <description>
       <p>You psionically overwhelm the mind of one creature you can see within range. The target must make an Intelligence saving throw. On a failed save, it takes 12d6 psychic damage and is stunned for 1 minute. On a successful save, the target takes half as much damage and isn’t stunned.</p>
@@ -1465,7 +1465,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Forcecage" type="Spell" source="llaserlama's Compendium of Spells" id="ID_LASERLL_SPELL_FORCECAGE">
+  <element name="Forcecage" type="Spell" source="laserllama's Compendium of Spells" id="ID_LASERLL_SPELL_FORCECAGE">
     <supports>Warlock, Wizard</supports>
     <description>
       <p>A shimmering, immobile, cube-shaped prison composed of magical force springs into existence around an area of your choice within range. You choose whether this magic prison is shaped like a cage with bars or a solid box.</p>

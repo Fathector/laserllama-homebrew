@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
+    <name>laserllama</name>
     <update version="1.0">
       <file name="laserllama-clap.index" url="http://hosting.com/files/laserllama-clap.index" />
     </update>

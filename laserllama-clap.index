@@ -29,7 +29,7 @@
     <file name="class-shaman.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/class-shaman.xml" />
     <file name="shaman-expanded.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/shaman-expanded.xml" />
     <file name="class-vessel.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/class-vessel.xml" />
-    <file name="class-warlock.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/class-warlock.xml" />
+    <file name="class-warlord.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/class-warlord.xml" />
     <file name="companion-modifiers-by-level.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/companion-modifiers-by-level.xml" />
     <file name="laserllama-compendium-spells.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/laserllama-compendium-spells.xml" />
   </files>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <info>
+    <update version="1.0">
+      <file name="laserllama-clap.index" url="http://hosting.com/files/laserllama-clap.index" />
+    </update>
+  </info>
+  <files>
+    <file name="subclasses-artificer-laserll.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/subclasses-artificer-laserll.xml" />
+    <file name="subclasses-barbarian-laserll.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/subclasses-barbarian-laserll.xml" />
+    <file name="subclasses-bard-laserll.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/subclasses-bard-laserll.xml" />
+    <file name="subclasses-cleric-laserll.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/subclasses-cleric-laserll.xml" />
+    <file name="subclasses-druid-laserll.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/subclasses-druid-laserll.xml" />
+    <file name="subclasses-fighter-laserll.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/subclasses-fighter-laserll.xml" />
+    <file name="subclasses-monk-laserll.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/subclasses-monk-laserll.xml" />
+    <file name="subclasses-paladin-laserll.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/subclasses-paladin-laserll.xml" />
+    <file name="subclasses-ranger-laserll.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/subclasses-ranger-laserll.xml" />
+    <file name="subclasses-rogue-laserll.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/subclasses-rogue-laserll.xml" />
+    <file name="subclasses-sorcerer-laserll.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/subclasses-sorcerer-laserll.xml" />
+    <file name="subclasses-wizard-laserll.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/subclasses-wizard-laserll.xml" />
+    <file name="subclasses-warlock-laserll.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/subclasses-warlock-laserll.xml" />
+    <file name="class-blood-hunter-alternate.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/class-blood-hunter-alternate.xml" />
+    <file name="class-magus.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/class-magus.xml" />
+    <file name="magus-expanded.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/magus-expanded.xml" />
+    <file name="class-psion.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/class-psion.xml" />
+    <file name="class-savant.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/class-savant.xml" />
+    <file name="savant-expanded.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/savant-expanded.xml" />
+    <file name="class-shaman.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/class-shaman.xml" />
+    <file name="shaman-expanded.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/shaman-expanded.xml" />
+    <file name="class-vessel.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/class-vessel.xml" />
+    <file name="class-warlock.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/class-warlock.xml" />
+    <file name="companion-modifiers-by-level.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/companion-modifiers-by-level.xml" />
+    <file name="laserllama-compendium-spells.xml" url="https://raw.githubusercontent.com/clapyourhands/laserllama-homebrew/main/laserllama-compendium-spells.xml" />
+  </files>
+</index>

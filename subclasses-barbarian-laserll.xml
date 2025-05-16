@@ -1732,7 +1732,7 @@
       <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_DRACONIC_ANCESTRY" />
       <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_DRACONIC_FURY" />
       <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_TYRANNICAL_RESILIENCE" />
-      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_WRYMBLOOD_BREATH_OF_THE_DRAGON" />
+      <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_BREATH_OF_THE_DRAGON" />
       <div element="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_DRACONIC_WINGS" />
     </description>
     <sheet display="false">
@@ -1742,7 +1742,7 @@
       <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_DRACONIC_ANCESTRY" level="3"/>
       <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_DRACONIC_FURY" level="3"/>
       <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_TYRANNICAL_RESILIENCE" level="6"/>
-      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WRYMBLOOD_BREATH_OF_THE_DRAGON" level="10" />
+      <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_BREATH_OF_THE_DRAGON" level="10" />
       <grant type="Archetype Feature" id="ID_LASERLL_ARCHETYPE_BARBARIAN_WYRMBLOOD_DRACONIC_WINGS" level="14"/>
     </rules>
   </element>
